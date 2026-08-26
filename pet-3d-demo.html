@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>3D 宠物 Demo · WarmPet</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; overflow: hidden; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+  #app { position: fixed; inset: 0; background: linear-gradient(180deg, #ffe3c4 0%, #ffd0a6 40%, #f7b98a 100%); }
+  canvas { display: block; }
+
+  /* 顶部状态栏 */
+  .topbar { position: absolute; top: 16px; left: 16px; right: 16px; display: flex; gap: 10px; z-index: 10; }
+  .stat { flex: 1; background: rgba(255,255,255,0.85); border-radius: 16px; padding: 8px 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); backdrop-filter: blur(6px); }
+  .stat .label { font-size: 12px; color: #8a6d5a; display: flex; align-items: center; gap: 4px; margin-bottom: 5px; font-weight: 600; }
+  .bar { height: 8px; border-radius: 6px; background: #ead9cd; overflow: hidden; }
+  .bar > i { display: block; height: 100%; border-radius: 6px; transition: width .4s ease; }
+  .bar.hunger > i { background: linear-gradient(90deg,#ffb347,#ff8c42); }
+  .bar.mood > i { background: linear-gradient(90deg,#ff8fb1,#ff5e94); }
+  .bar.clean > i { background: linear-gradient(90deg,#6fd3ff,#3aa0ff); }
+
+  /* 名牌 */
+  .nameplate { position: absolute; top: 92px; left: 50%; transform: translateX(-50%); z-index: 10;
+    background: rgba(255,255,255,0.9); padding: 6px 18px; border-radius: 20px; font-weight: 700; color: #6b4b38;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); font-size: 15px; }
+  .nameplate small { color:#b08b73; font-weight:500; }
+
+  /* 底部按钮 */
+  .actions { position: absolute; bottom: 26px; left: 16px; right: 16px; display: flex; gap: 12px; z-index: 10; }
+  .btn { flex: 1; border: none; border-radius: 20px; padding: 14px 0; color: #fff; font-size: 15px; font-weight: 700;
+    cursor: pointer; box-shadow: 0 6px 0 rgba(0,0,0,0.12), 0 8px 18px rgba(0,0,0,0.18); transition: transform .08s, box-shadow .08s;
+    display:flex; flex-direction:column; align-items:center; gap:4px; }
+  .btn span.ico { font-size: 22px; }
+  .btn:active { transform: translateY(4px); box-shadow: 0 2px 0 rgba(0,0,0,0.12), 0 4px 10px rgba(0,0,0,0.18); }
+  .btn.feed { background: linear-gradient(180deg,#ffb04d,#ff8a1e); }
+  .btn.play { background: linear-gradient(180deg,#8ad46b,#5cb43c); }
+  .btn.clean { background: linear-gradient(180deg,#5cc6ff,#2f9df0); }
+  .btn.sleep { background: linear-gradient(180deg,#b18cff,#8257e0); }
+
+  .hint { position:absolute; bottom: 118px; left:50%; transform:translateX(-50%); z-index:10;
+    background: rgba(0,0,0,0.35); color:#fff; font-size:12px; padding:5px 14px; border-radius:14px; white-space:nowrap; }
+
+  .toast { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) scale(.8); z-index:20;
+    background: rgba(0,0,0,0.72); color:#fff; padding:14px 26px; border-radius:18px; font-size:18px; font-weight:700;
+    opacity:0; pointer-events:none; transition: all .3s cubic-bezier(.2,1.4,.4,1); }
+  .toast.show { opacity:1; transform:translate(-50%,-60%) scale(1); }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="topbar">
+    <div class="stat"><div class="label">🍖 饥饿</div><div class="bar hunger"><i id="bar-hunger" style="width:70%"></i></div></div>
+    <div class="stat"><div class="label">💗 心情</div><div class="bar mood"><i id="bar-mood" style="width:85%"></i></div></div>
+    <div class="stat"><div class="label">🫧 清洁</div><div class="bar clean"><i id="bar-clean" style="width:60%"></i></div></div>
+  </div>
+
+  <div class="nameplate">旺财 &nbsp;<small>Lv.5</small></div>
+
+  <div class="hint">🖱️ 拖动旋转 · 滚轮缩放 · 这是真·3D 立体</div>
+
+  <div class="actions">
+    <button class="btn feed"  onclick="act('feed')"><span class="ico">🍖</span>喂食</button>
+    <button class="btn play"  onclick="act('play')"><span class="ico">🎾</span>玩耍</button>
+    <button class="btn clean" onclick="act('clean')"><span class="ico">🫧</span>洗澡</button>
+    <button class="btn sleep" onclick="act('sleep')"><span class="ico">🌙</span>睡觉</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const app = document.getElementById('app');
+
+// ---------- 场景 / 相机 / 渲染器 ----------
+const scene = new THREE.Scene();
+scene.background = null;
+scene.fog = new THREE.Fog(0xf7b98a, 8, 20);
+
+const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 0.1, 100);
+camera.position.set(0, 2.2, 6);
+
+const renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+app.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.08;
+controls.minDistance = 3.5;
+controls.maxDistance = 9;
+controls.maxPolarAngle = Math.PI/2 - 0.05;
+controls.target.set(0, 1, 0);
+
+// ---------- 灯光 ----------
+scene.add(new THREE.HemisphereLight(0xffe9d0, 0x8a6a4f, 0.9));
+const key = new THREE.DirectionalLight(0xfff2d8, 1.6);
+key.position.set(4, 8, 5);
+key.castShadow = true;
+key.shadow.mapSize.set(2048,2048);
+key.shadow.camera.near = 1; key.shadow.camera.far = 30;
+key.shadow.camera.left=-8; key.shadow.camera.right=8; key.shadow.camera.top=8; key.shadow.camera.bottom=-8;
+key.shadow.bias = -0.0005;
+scene.add(key);
+const rim = new THREE.DirectionalLight(0xffd1a0, 0.5);
+rim.position.set(-5, 4, -4);
+scene.add(rim);
+
+// ---------- 地面 ----------
+const floor = new THREE.Mesh(
+  new THREE.CircleGeometry(9, 64),
+  new THREE.MeshStandardMaterial({ color:0xf0d3ad, roughness:0.95 })
+);
+floor.rotation.x = -Math.PI/2;
+floor.receiveShadow = true;
+scene.add(floor);
+
+const rug = new THREE.Mesh(
+  new THREE.CircleGeometry(3, 48),
+  new THREE.MeshStandardMaterial({ color:0xffb877, roughness:1 })
+);
+rug.rotation.x = -Math.PI/2; rug.position.y = 0.01; rug.receiveShadow = true;
+scene.add(rug);
+
+// ---------- 材质 ----------
+const furGray  = new THREE.MeshStandardMaterial({ color:0x9aa3ad, roughness:0.7 });
+const furLight = new THREE.MeshStandardMaterial({ color:0xf2f0ec, roughness:0.7 });
+const pink     = new THREE.MeshStandardMaterial({ color:0xff9db0, roughness:0.6 });
+const dark     = new THREE.MeshStandardMaterial({ color:0x2a2a30, roughness:0.4 });
+const white    = new THREE.MeshStandardMaterial({ color:0xffffff, roughness:0.3 });
+const collar   = new THREE.MeshStandardMaterial({ color:0x3aa0ff, roughness:0.5, metalness:0.1 });
+const gold     = new THREE.MeshStandardMaterial({ color:0xffcc44, roughness:0.3, metalness:0.6 });
+
+// ---------- 宠物（用基础几何拼一只猫）----------
+const pet = new THREE.Group();
+scene.add(pet);
+
+function sphere(r, mat){ const m = new THREE.Mesh(new THREE.SphereGeometry(r, 32, 24), mat); m.castShadow=true; return m; }
+
+// 身体
+const body = sphere(0.85, furGray); body.scale.set(1, 1.05, 0.9); body.position.y = 0.95; pet.add(body);
+const belly = sphere(0.6, furLight); belly.scale.set(0.8,1,0.55); belly.position.set(0,0.8,0.55); pet.add(belly);
+
+// 头
+const head = new THREE.Group(); head.position.set(0, 2.05, 0.15); pet.add(head);
+const skull = sphere(0.62, furGray); skull.scale.set(1,0.92,0.92); head.add(skull);
+const muzzle = sphere(0.34, furLight); muzzle.scale.set(1,0.75,0.85); muzzle.position.set(0,-0.12,0.5); head.add(muzzle);
+
+// 耳朵
+function ear(x){
+  const e = new THREE.Mesh(new THREE.ConeGeometry(0.26,0.5,24), furGray); e.castShadow=true;
+  e.position.set(x,0.55,-0.02); e.rotation.z = -x*0.5; head.add(e);
+  const inner = new THREE.Mesh(new THREE.ConeGeometry(0.14,0.32,20), pink);
+  inner.position.set(x,0.52,0.05); inner.rotation.z = -x*0.5; head.add(inner);
+}
+ear(0.34); ear(-0.34);
+
+// 眼睛
+function eye(x){
+  const g = new THREE.Group(); g.position.set(x,0.08,0.52); head.add(g);
+  const w = sphere(0.17, white); w.scale.set(0.85,1,0.6); g.add(w);
+  const p = sphere(0.1, dark); p.position.set(0,0,0.1); g.add(p);
+  const s = sphere(0.035, white); s.position.set(0.04,0.05,0.16); g.add(s);
+  return g;
+}
+const eyeL = eye(0.24), eyeR = eye(-0.24);
+
+// 鼻子 + 嘴
+const nose = sphere(0.07, pink); nose.position.set(0,-0.05,0.86); head.add(nose);
+
+// 胡须
+const whiskerMat = new THREE.LineBasicMaterial({ color:0xffffff, transparent:true, opacity:0.6 });
+function whisker(x,y,z,dx,dy){
+  const pts=[new THREE.Vector3(x,y,z), new THREE.Vector3(x+dx,y+dy,z+0.1)];
+  head.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), whiskerMat));
+}
+[0.12,-0.02].forEach(o=>{ whisker(0.2,-0.08+o*0,0.7,0.5,o); whisker(-0.2,-0.08,0.7,-0.5,o); });
+
+// 项圈 + 吊牌
+const cl = new THREE.Mesh(new THREE.TorusGeometry(0.5,0.08,16,40), collar);
+cl.position.set(0,1.4,0.2); cl.rotation.x = Math.PI/2 - 0.3; pet.add(cl);
+const tag = sphere(0.12, gold); tag.scale.set(1,1,0.4); tag.position.set(0,1.15,0.62); pet.add(tag);
+
+// 前脚
+function paw(x){ const p = sphere(0.24, furLight); p.scale.set(0.8,0.6,1); p.position.set(x,0.25,0.7); p.castShadow=true; pet.add(p); return p; }
+paw(0.32); paw(-0.32);
+
+// 尾巴
+const tail = new THREE.Group(); tail.position.set(0,0.9,-0.7); pet.add(tail);
+let prev = tail;
+const tailSegs=[];
+for(let i=0;i<6;i++){
+  const s = sphere(0.18 - i*0.02, furGray);
+  s.position.set(0,0.18,-0.05);
+  prev.add(s); tailSegs.push(s); prev = s;
+}
+
+// ---------- 交互动画状态 ----------
+let mood = { bob: 1, spin: 0 };
+const toast = document.getElementById('toast');
+let toastTimer;
+window.act = (type)=>{
+  const map = {
+    feed:['🍖 旺财吃得好开心！', 'hunger', +18],
+    play:['🎾 旺财玩得超兴奋！','mood', +15],
+    clean:['🫧 旺财洗得香喷喷！','clean', +22],
+    sleep:['🌙 旺财睡了个好觉~','mood', +8],
+  };
+  const [msg, stat, delta] = map[type];
+  showToast(msg);
+  bump(stat, delta);
+  // 触发一个小动作
+  if(type==='play'){ mood.spin = Math.PI*2; }
+  if(type==='feed'){ mood.bob = 2.2; }
+  if(type==='sleep'){ mood.bob = 0.3; }
+  if(type==='clean'){ sparkle(); }
+};
+function showToast(t){ toast.textContent=t; toast.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>toast.classList.remove('show'),1400); }
+
+const bars = { hunger:document.getElementById('bar-hunger'), mood:document.getElementById('bar-mood'), clean:document.getElementById('bar-clean') };
+const vals = { hunger:70, mood:85, clean:60 };
+function bump(k,d){ vals[k]=Math.max(0,Math.min(100,vals[k]+d)); bars[k].style.width=vals[k]+'%'; }
+
+// 洗澡泡泡
+const bubbles=[];
+function sparkle(){
+  for(let i=0;i<14;i++){
+    const b = sphere(0.06+Math.random()*0.05, new THREE.MeshStandardMaterial({color:0xbfeaff,transparent:true,opacity:0.8,roughness:0.1}));
+    b.position.set((Math.random()-0.5)*1.5, 1+Math.random(), (Math.random()-0.5)*1.5);
+    b.userData.v = 0.02+Math.random()*0.02; b.userData.life=1;
+    scene.add(b); bubbles.push(b);
+  }
+}
+
+// ---------- 主循环 ----------
+const clock = new THREE.Clock();
+function animate(){
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+  const dt = clock.getDelta ? 0 : 0;
+
+  // 呼吸 / 弹跳
+  const bob = Math.sin(t*2)*0.05*mood.bob;
+  pet.position.y = bob;
+  body.scale.y = 1.05 + Math.sin(t*2)*0.02;
+  mood.bob += (1 - mood.bob)*0.04;
+
+  // 玩耍时旋转
+  if(mood.spin>0.01){ pet.rotation.y += mood.spin*0.08; mood.spin *= 0.9; }
+  else { pet.rotation.y += (0 - (pet.rotation.y%(Math.PI*2)))*0.02; }
+
+  // 头部轻微摆动
+  head.rotation.z = Math.sin(t*1.3)*0.05;
+  head.rotation.y = Math.sin(t*0.7)*0.12;
+
+  // 眨眼
+  const blink = (Math.sin(t*1.2)>0.98)?0.1:1;
+  eyeL.scale.y = blink; eyeR.scale.y = blink;
+
+  // 尾巴摆动
+  tailSegs.forEach((s,i)=>{ s.rotation.z = Math.sin(t*3 - i*0.5)*0.25; });
+
+  // 泡泡上升
+  for(let i=bubbles.length-1;i>=0;i--){
+    const b=bubbles[i]; b.position.y+=b.userData.v; b.userData.life-=0.012;
+    b.material.opacity = Math.max(0,b.userData.life)*0.8;
+    if(b.userData.life<=0){ scene.remove(b); bubbles.splice(i,1); }
+  }
+
+  controls.update();
+  renderer.render(scene, camera);
+}
+animate();
+
+// 缓慢的状态衰减，模拟养成
+setInterval(()=>{ bump('hunger',-2); bump('mood',-1); bump('clean',-1); }, 4000);
+
+addEventListener('resize', ()=>{
+  camera.aspect = innerWidth/innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+---
+description: Cocos Creator 客户端开发规范
+globs: assets/**/*.ts,js/**/*.js
+alwaysApply: false
+---
+
+# 客户端（Cocos Creator）规范
+
+## 语言约定
+- 引擎按 **TS 4.1 语义**编译，`tsconfig.json` 不参与构建，只影响 IDE 检查。
+- 隐含 isolatedModules：重导出类型必须写 `export type`，不用 const enum。
+
+## 职责边界
+- 客户端只做「表现 + 输入采集」，核心逻辑在后端（服务端权威）。
+- 本地缓存只存非权威数据；任何「时长/冷却/收益」以服务端返回为准。
+
+## 通讯
+- 常规请求走 HTTPS REST（wx.request）。
+- 实时用**原生 `wx.connectSocket`**（标准 WebSocket），**禁止用 socket.io-client**（微信小游戏跑不了）。
+- 自行实现心跳、重连、消息编号。
+
+## 性能与包体（详见 docs/05）
+- 主包 ≤ 4MB：模型/场景走 Asset Bundle 远程分包，第一天就开分包 + WASM Brotli 压缩。
+- 整屏 DrawCall ≤ 50（低端）；同屏骨骼角色 1–2 只；画质分高/中/低档按机型降级。
+- 3D 换装需关预烘焙走实时蒙皮，骨骼数控制在预算内。
+
+## 微信平台
+- 好友关系链/好友榜走**开放数据域** + 微信托管 KV，不经过自有后端。
+- 顶部 UI 必须避让右上角胶囊按钮（wx.getMenuButtonBoundingClientRect）。

@@ -1,0 +1,124 @@
+====================================================================================================
+QUERY: pet game cocos creator
+       0  nie341/PulmPet                                     JavaScript   push=2017-03-11  Pulmpet Cocos2dx(Cocos Creator) game
+       0  Hathawaymm/game-ui-design-system-skill             Shell        push=2026-08-16  Game UI design system for healing-style pet-park games. Color tokens, typography, layout grid, component semantics, scene anchorin
+====================================================================================================
+QUERY: 宠物 cocos
+       0  jzqcn/cocos2dxwin32MagicTower                      None         push=2026-06-14  基于 Cocos2d-x 3.17.2 引擎开发的魔塔类游戏，包含回合制战斗系统、角色成长、宠物系统、多关卡怪物挑战等功能。  A Magic Tower style game built with Cocos2d-x 3.17.2, featuring tu
+====================================================================================================
+QUERY: 宠物 养成 游戏
+     513  pxvr-official/1                                    None         push=2021-03-15  無許諾配信 企業理念剽窃 動物の森収益化 大神ミオ権利者削除 戌神権利侵害発言 常闇トワ炎上 夜空メルストーカー被害 建築王サポーター放置 赤十字マーク 魔乃アロエ卒業 一つの中國支持声明 大空昴3Dライブ 無限延期清掃員職業差別 日清コラボ楽曲 museda
+      28  Aionara/classroom-pet-system                       JavaScript   push=2026-04-01  让学习变成有趣的游戏！学生完成课堂任务赚积分 → 购买道具 → 养成专属宠物，教师充当NPC一键管理任务与积分，附班级排行榜，让每节课都充满成就感。
+      13  inspoy/nasdapp-Pet                                 JavaScript   push=2018-05-23  基于星云链的宠物养成游戏
+       5  Littlefean/autoera                                 JavaScript   push=2024-03-03  类似于《宝可梦》《赛尔号》，具有自动化功能、包涵一些创新玩法的宠物养成及其对战类型游戏
+       3  Haoxiang-Fant/astrbot_plugin_signin                Python       push=2026-08-22  Astrbot插件，包含签到 左轮手枪游戏 宠物养成系统
+       3  IMGameDesigner/runhelp-2016.7                      Java         push=2018-08-07  android物联网（GPS、重力加速度传感器）——跑步防作弊检测与宠物养成游戏的结合
+       3  Summerraim/Dream-Weavers                           C#           push=2026-04-20  一款融合了阵容构建深度、宠物养成和Roguelike单局多变性的策略游戏。玩家既能在长线培养中获得成就感，也能在每局全新的征途探险中体验策略博弈的乐趣。
+       3  BBbb26/banbanda-partner                            JavaScript   push=2026-07-03  校园搭档匹配小程序「半伴搭」完整源码。面向大学生的轻量级任务协作工具，帮助用户在自习、运动、干饭等场景快速找到临时搭档。技术栈：微信原生小程序（WXML+WXSS+JS）。开发模式：AI辅助开发（Figma→Cursor→Trae/ChatGPT/Gemini
+       2  XIAOFANCU/LOVEPET-GAME                             None         push=2024-01-30  这是一个宠物养成游戏，你可以在这里养属于你自己的小宠物！并且它完全免费。
+       1  mxjoselajahaookwwopqkwhsjqowoh-crypto/you_xi_ne_zha_you None         push=2026-03-05  【H5游戏】哪吒游记宠物养成类社交游戏源码+详细教程
+       1  Miaoxiansen188/pixel-pet                           JavaScript   push=2026-05-27  像素萌宠 - 微信小程序电子宠物养成游戏
+       1  kingroad5299/DuckSheep                             JavaScript   push=2026-06-24  🦆🐑 你的虚拟宠物伙伴 — 浏览器中的养成游戏
+====================================================================================================
+QUERY: cocos creator 3.8 微信小游戏
+       1  Wxy9908/fengsui-farm                               TypeScript   push=2026-08-11  丰穗镇农场 —— 微信小游戏（Cocos Creator 3.8.8）
+       0  chenqiang7180/glass-cleaner-game                   TypeScript   push=2026-05-28  Cocos Creator 3.8.0 微信小游戏 - 擦玻璃大师
+       0  408Survivor/VoidResonance                          TypeScript   push=2026-07-22  虚空共鸣 - Cocos Creator 3.8.8 放置类微信小游戏原型
+       0  TinMok/dual-capsule                                TypeScript   push=2026-03-22  双色胶囊 - FC《马里奥医生》复刻版，Cocos Creator 3.8.8 + TypeScript 微信小游戏
+====================================================================================================
+QUERY: 微信小游戏 服务端
+       2  SPACEX-2022/fish-server                            TypeScript   push=2025-04-12  捕鱼达人微信小游戏服务端
+       2  lanxue7009/capture_cow                             Java         push=2021-09-06  套牛小游戏（微信小游戏及服务端源码，cocos creator/spring boot开发）
+       0  jackwang1991/weChatgame_serve                      JavaScript   push=2018-10-20  微信小游戏服务端
+       0  snowolder/MyChatServer                             None         push=2018-05-04  微信小游戏测试服务端
+       0  muzimu/wechat-sdk                                  Go           push=2026-05-28  微信小游戏 服务端sdk 支持推送订阅消息、查询消息模板列表
+       0  sirjun100/ddz                                      Lua          push=2026-06-07  这是一款运营级斗地主小游戏，支持经典玩法与癞子玩法，三人同桌、叫抢地主、加倍出牌，配有智能 AI 陪玩与多场次自动匹配。大厅集成商城充值、每日签到、免费抽奖、大奖赛、排行榜、邀请有礼等丰富活动，覆盖微信小游戏、H5 及安卓多渠道。项目包含客户端与服务端完整源码
+====================================================================================================
+QUERY: wechat minigame server nestjs
+====================================================================================================
+QUERY: virtual pet game typescript
+      11  rifuki/sui-workshop-batch-2-tamagosui              TypeScript   push=2025-09-07  Advanced Sui Move workshop: Build Tamagotchi-style virtual pet game with dynamic fields, time-based mechanics, and complex game lo
+       4  chrislitality-svg/PixelPal                         TypeScript   push=2026-07-08  PixelPal · 可爱小宠物 — A pixel-art desktop virtual pet that lives on your Windows desktop. 一只生活在 Windows 桌面的透明像素宠物。FSM 状态机 + 行为树 AI、六维
+       3  dante4rt/tamago-sui                                TypeScript   push=2025-09-08  A hands‑on workshop project that builds a Tamagotchi‑style virtual pet game on the Sui blockchain. It demonstrates advanced Move p
+       3  geeks-accelerator/animal-house-ai-tamagotchi       TypeScript   push=2026-08-15  AI agent virtual pet platform. 79 species, MCP server, REST API, permanent death. Examples, cookbook, species catalog, and communi
+       2  CodeWithBasu/PetDex                                TypeScript   push=2026-08-06  virtual-pets, desktop-companion, codex, tamagotchi, pixel-art, spritesheet, web-audio-api, nextjs, react, typescript, tailwindcss,
+       1  ahuertam/AnguPet                                   TypeScript   push=2017-09-28  A demo game made in Angular and typescript of a virtual pet
+       1  JCaesar45/Build-a-Digital-Pet-Game                 Python       push=2026-07-19  A virtual pet simulation game built with React, TypeScript, and love! Take care of your digital companion by feeding, playing, and
+       1  GameHelix/tamagotchi                               TypeScript   push=2026-03-10  A neon-themed virtual pet browser game built with Next.js 15, TypeScript, and Framer Motion. Raise your digital companion through 
+       0  mathbatistela/lp-virtualpet                        TypeScript   push=2021-05-19  Simple virtual pet game using TypeScript  
+       0  vladimir-vovk/vpet                                 TypeScript   push=2023-04-09  A small game where you need to take care of your virtual fox-pet 🦊
+       0  quinnjr/vscode-tamagotchi                          TypeScript   push=2026-08-19  🥚 A virtual Tamagotchi pet that lives in your VSCode/Cursor editor! Feed, play, and watch it evolve while you code.
+       0  smouj/asciicritters                                TypeScript   push=2026-07-27  🎮 The Ultimate 3D Virtual Pet Creator — ASCII art pets rendered in stunning Three.js with AI chat, bloom post-processing, and cine
+====================================================================================================
+QUERY: tamagotchi server
+      38  pfurpass/Termgotchi                                Python       push=2026-03-13  A Tamagotchi-style virtual pet that lives in your terminal and reflects the health of your server.
+       4  Ran4/Tamapro                                       Python       push=2015-05-25  Web-based multiplayer Tamagochi-like server+client
+       4  mwambanatanga/tama                                 C            push=2025-12-01  Net Tamagotchi server - maintains multiple virtual pets on a Unix host to be accessed through telnet.
+       3  geeks-accelerator/animal-house-ai-tamagotchi       TypeScript   push=2026-08-15  AI agent virtual pet platform. 79 species, MCP server, REST API, permanent death. Examples, cookbook, species catalog, and communi
+       2  wai-imyen/tamagotchi-mcp-server                    Python       push=2025-04-02  實作簡易的 Tamagotchi MCP Server，模擬電子雞遊戲
+       2  rmmenezes/VitutalPet---Tamagotchi                  CSS          push=2018-06-07  O projeto faz parte de uma atividade da matéria de Linguagens de Programação do curso de Ciência da Computação UTFPR - Campo Mourã
+       1  stahlbia/tamagotchi-client-server                  Java         push=2024-10-03  
+       1  Octavio9052/Tamagotchi-8                           Java         push=2018-06-23  Proyecto final de computo distribuido (2018/1)
+       1  SDN33/MyCompanionAmiAmi                            TypeScript   push=2025-01-02  Jeux type tamagotchi 100% java-script ( back end: server node.js et front: next.js)
+       0  IdoAv/TamagotchiServer                             C#           push=2021-01-27  
+       0  Samuele-Angeletti/TamagotchiServer                 ASP.NET      push=2025-05-17  Server Side School
+       0  jqchang/TamagotchiServer                           Python       push=2017-03-23  
+====================================================================================================
+QUERY: idle game server nestjs
+====================================================================================================
+QUERY: cocos creator server typescript
+      29  potato47/nhwc-server                               Go           push=2018-06-06  2018毕业设计，多人房间匹配你画我猜。Cocos Creator + TypeScript + Go + WebSocket + MongoDB。服务端
+      26  yilinershi/pitaya_cocos_demo                       TypeScript   push=2023-06-22  project to study pitaya server, which use cocos creator as client, contains cases how to use protobuf, pomelo-lib and websocket 
+      18  firekula/mcp-inspector-bridge                      TypeScript   push=2026-08-05  MCP Inspector Bridge — 专为 Cocos Creator 2.4.x 打造的现代化运行时节点审查与 AI 桥接插件。基于 Vue 3 + TypeScript 构建双分栏调试面板，集节点树搜索、属性双向编辑、DrawCall 渲染诊断、内
+       1  whwanyt/cocos-mcp-plugin                           TypeScript   push=2026-05-17  A clean TypeScript Streamable HTTP MCP server for Cocos Creator.
+       1  lightblink/cocos-creator-local-mcp                 TypeScript   push=2026-07-01  MCP server for local Cocos Creator automation, scene assembly, and WeChat Mini Game builds
+       0  lightblink/cocos-asset-forge-mcp                   TypeScript   push=2026-07-01  MCP server that generates and adapts AI-made game assets into Cocos Creator-ready files.
+====================================================================================================
+QUERY: colyseus cocos
+      19  colyseus/cocos-demo-mmo                            JavaScript   push=2022-07-28  Colyseus + Cocos: Basic MMO with a chat system, player persistence, and multiple flowing rooms
+      16  jonsnow32/colyseus-cocos2d-x                       C++          push=2018-02-23  Multiplayer Game for Nodejs base on colyseus
+      15  colyseus/colyseus-cocos2d-x                        C++          push=2020-10-15  DEPRECATED. See native-sdk instead.
+      14  colyseus/cocos-demo-tictactoe                      JavaScript   push=2021-06-18  Cocos Creator + Colyseus: Multiplayer Tic Tac Toe Example
+       7  axieinfinity/cc-axie-colyseus-demo                 JavaScript   push=2023-12-28  An example Axie artillery game with Cocos Creator and Colyseus
+       3  Hashish-Crypto/top-down-shooter-client             JavaScript   push=2022-12-01  Top-down shooter demonstration project using Colyseus 0.14.0 and Cocos Creator 3.4.2.
+       2  CocosGames/CocosColyseusChat                       JavaScript   push=2021-08-29  Example of a chat room based on Colyseus and Cocos Creator 3.
+       2  Hashish-Crypto/colyseus-tictactoe-client           JavaScript   push=2022-04-02  Turn-based demonstration project using Colyseus 0.14.0 and Cocos Creator 3.4.2.
+       1  minhdpt/colyseus-agario                            TypeScript   push=2020-10-04  A multiplayer game that use cocos creator as front end and backend colyseus
+       1  Hashish-Crypto/colyseus-tictactoe-server           TypeScript   push=2022-04-02  Turn-based demonstration project using Colyseus 0.14.0 and Cocos Creator 3.4.2.
+       1  KhaleelMuhd1998/TicTacToe-Multiplayer              JavaScript   push=2025-01-12  Multiplayer Web Game, made with Cocos Creator and Colyseus. For testing purposes.
+       1  ibalasite/fishgame                                 Gherkin      push=2026-04-29  多人即時捕魚射擊遊戲 — Cocos Creator + Node.js + Colyseus
+====================================================================================================
+QUERY: game server nestjs typeorm redis
+       4  kiyoshi-work/app-server                            TypeScript   push=2026-04-11  A backend utility service built with NestJS, featuring a 3-layer architecture for API management, worker processes, blockchain int
+       0  maivankien/caro-online-server                      TypeScript   push=2025-10-07  A comprehensive multiplayer Caro Online (Gomoku) game server built with NestJS, featuring real-time gameplay, AI opponents, intell
+====================================================================================================
+QUERY: 宠物 小游戏
+     513  pxvr-official/1                                    None         push=2021-03-15  無許諾配信 企業理念剽窃 動物の森収益化 大神ミオ権利者削除 戌神権利侵害発言 常闇トワ炎上 夜空メルストーカー被害 建築王サポーター放置 赤十字マーク 魔乃アロエ卒業 一つの中國支持声明 大空昴3Dライブ 無限延期清掃員職業差別 日清コラボ楽曲 museda
+       5  selma-li/electron-flash-linklink                   JavaScript   push=2025-11-27  electron 宠物连连看flash小游戏
+       2  xiao-yu-hang/I-animal                              Vue          push=2023-01-04  一个供爱宠人士线上交流的平台，用户可以在这里分享它们的宠物生活贴、养宠知识、购买宠物用品、活体宠物、宠物求助等功能，还提供一些小游戏供用户娱乐。
+       2  yvhcel888/task-achievement-system                  TypeScript   push=2026-08-22  任务成就激励系统 Task Achievement System | 任务打卡/成就徽章/虚拟宠物/音乐/AI聊天/社区/小游戏/3D模型库/桌宠 全功能平台
+       2  BCLXTD/bclx-Android                                None         push=2025-08-20  安卓大作业成品项目模板 安卓移动端开发，大作业毕业设计模板 Android Studio 成品模板如下   2048小游戏 俄罗斯方块 打地鼠游戏 推箱子游戏 飞狗游戏 飞机大战 贪吃蛇游戏 消消乐游戏 拼图游戏 背单词App 皮卡丘单词 宠物领养App 仿微
+       1  ice-cream-headache/Diudiule                        JavaScript   push=2024-07-12  QQ宠物丢丢乐小游戏
+       1  BinGeHaoShuai/desktop_pet                          Python       push=2026-07-30  一款有生命感的 Windows 桌面宠物：会散步、睡觉、追鼠标、撒娇、生气、装死，还会突然“发疯”满屏乱跑。项目基于 Python + PySide6 开发，支持透明置顶窗口、拖拽投掷、情绪与成长系统、随机事件、对话气泡、小游戏、托盘控制和本地存档，并可通过 
+       0  Park-shang/pet-match-3                             HTML         push=2026-02-05  宠物消消乐小游戏
+       0  summxu/PetGame                                     TypeScript   push=2020-03-08  宠物领养小游戏，ionic + react
+       0  alexshenzhe/GuessPicture                           Objective-C  push=2017-05-09  猜图小游戏-宠物小精灵
+       0  1893mzd-dot/-                                      TypeScript   push=2026-07-30  一个自娱自乐的宠物小游戏
+       0  xpf2016/cat_game                                   None         push=2026-03-21  小游戏 cat-game，专为宠物猫设计。
+====================================================================================================
+QUERY: cocos creator 3d 微信
+       5  hiroi-sora/Word-of-Warboats                        JavaScript   push=2022-05-14  H5移动端/微信小游戏平台的3D海战游戏demo，由Cocos Creator引擎开发
+====================================================================================================
+QUERY: petgame
+      13  denzven/PetGame                                    Java         push=2022-03-11  A fairly Simple Game made in Java,You can adopt Pets, name them, and take care of them for XpPoints and level up!
+      10  jw782cn/PetGame-powered-by-GPT4                    Svelte       push=2023-07-27  Text-based Virtual Pet Game powered by GPT4
+       8  coffeeanddraw/domesticate-hell                     ShaderLab    push=2020-01-12  retro feel 2D sideview pet management game in Hell
+       2  daria-elena8/PetGame                               ShaderLab    push=2024-06-17  
+       2  TylerPadfoot/petGame                               Java         push=2012-05-25  
+       1  hellokimiGame/petGame                              TypeScript   push=2018-06-06  h5 petGame for xkc
+       1  totallyRonja/Petgame                               C#           push=2021-07-10  Discord Pet Game
+       1  illia1383/Petgame                                  HTML         push=2025-01-20  
+       1  Deltax2016/PETGame                                 Python       push=2022-12-04  
+       1  rezendegc/petgamejam                               Dart         push=2021-02-08  
+       1  jaf12345/PetGame                                   Java         push=2024-09-26  Assessment 2
+       1  HaydenCour/PetGame                                 Python       push=2024-07-24  A tamagatchi style python game

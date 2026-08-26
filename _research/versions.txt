@@ -1,0 +1,20 @@
+typescript                   latest=7.0.2          released=2026-07-08  last_publish=2026-08-22
+@nestjs/core                 latest=11.2.1         released=2026-08-14  last_publish=2026-08-14
+@nestjs/schedule             latest=6.1.3          released=2026-04-15  last_publish=2026-04-15
+@nestjs/config               latest=4.0.4          released=2026-04-09  last_publish=2026-06-01
+typeorm                      latest=1.1.0          released=2026-07-13  last_publish=2026-08-22
+prisma                       latest=7.9.1          released=2026-07-27  last_publish=2026-08-22
+drizzle-orm                  latest=0.45.2         released=2026-03-27  last_publish=2026-08-12
+socket.io                    latest=4.8.3          released=2025-12-23  last_publish=2025-12-23
+ioredis                      latest=6.0.0          released=2026-07-31  last_publish=2026-07-31
+class-validator              latest=0.15.1         released=2026-02-26  last_publish=2026-02-26
+colyseus                     latest=0.17.10        released=2026-04-20  last_publish=2026-08-20
+jest                         latest=30.4.2         released=2026-05-09  last_publish=2026-05-09
+vitest                       latest=4.1.11         released=2026-08-18  last_publish=2026-08-18
+eslint                       latest=10.9.0         released=2026-08-21  last_publish=2026-08-21
+prettier                     latest=3.9.6          released=2026-07-21  last_publish=2026-07-21
+axios                        latest=1.19.0         released=2026-07-29  last_publish=2026-07-29
+weapp.socket.io              latest=2.2.1          released=2023-03-18  last_publish=2023-03-18
+@socket.io/redis-adapter     latest=8.3.0          released=2024-03-13  last_publish=2024-03-13
+
+cocos-engine tags: waic, v3.6_conan_0, v3.6_conan_linux_2, v3.6_conan_linux_1, v3.6_conan_linux_0, v3.5.1-nx, v2.4.6-jiangyu, v1.7.1, v0.8.2, v0.8.1, seperate-point, separate-point, release-v3.6_conan_0, release-v3.6_conan_linux_2, release-v3.6_conan_linux_1, release-3d-v1.1.1, original-v2.2.0-non-native-renderer, edu-1.8-release, deleted-branch-v2.4.8, deleted-branch-v2.4.7, deleted-branch-v2.4.6, deleted-branch-v2.4.5, deleted-branch-v2.4.4, deleted-branch-v2.4.3-release, deleted-branch-v2.4.1-release

@@ -1,0 +1,29 @@
+---
+description: NestJS 后端开发规范
+globs: src/**/*.ts,backend/**/*.ts,server/**/*.ts
+alwaysApply: false
+---
+
+# 后端（NestJS）规范
+
+## 架构
+- 模块化单体，按域分模块：account / pet / gameplay / economy / social / marketing / common。
+- 域间只走薄接口，边界守死（将来可拆服务或换语言）。
+
+## 数据与一致性
+- TypeORM `synchronize: false`，表结构一律走 migration 并纳入 CI。
+- 积分账本复式记账：**余额是流水的结果，永不直接改余额字段**；每笔记借/贷。
+- 发/扣接口必须幂等：全局唯一 `bizId` + 数据库唯一索引。
+- 同一玩家的结算必须串行：Redis 分布式锁 或 `SELECT ... FOR UPDATE`，防并发刷收益。
+
+## 时间与权威
+- 所有「时长/冷却/收益」用**服务端时钟服务**，禁用客户端上报时间。
+- 离线结算取 `min(客户端申报, now − lastSeenAtServer)`。
+
+## 安全
+- `WECHAT_SECRET` / `JWT_SECRET` / DB 密码只在服务端环境变量，绝不进客户端或 git。
+- `access_token` 用 Redis 缓存复用（有频率限制）。
+- 校验用 class-validator DTO；绝不信任客户端上报的数值。
+
+## 定时任务
+- `@nestjs/schedule` 多实例会各跑一遍，全服级任务需 Redis 分布式锁选主。

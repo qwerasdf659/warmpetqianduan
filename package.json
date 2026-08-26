@@ -1,0 +1,10 @@
+{
+  "name": "warmpet",
+  "description": "WarmPet 宠物养成 3D 微信小游戏",
+  "uuid": "c4f89c89-091d-4c01-8e39-cfe55d02b27f",
+  "version": "3.8.8",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "type": "module"
+}

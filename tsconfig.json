@@ -1,0 +1,13 @@
+{
+  /* Base configuration. Do not edit this field. */
+  "extends": "./temp/tsconfig.cocos.json",
+
+  /* 引擎按 TS 4.1 语义编译，这份 tsconfig 不参与构建，只影响 IDE 检查。
+     隐含 isolatedModules：重导出类型必须写 export type，不要用 const enum。 */
+  "compilerOptions": {
+    "strict": false,
+    "noImplicitAny": false,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

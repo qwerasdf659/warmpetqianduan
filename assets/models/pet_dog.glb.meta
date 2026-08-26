@@ -1,0 +1,150 @@
+{
+  "ver": "2.3.14",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "1206af76-c10c-41ac-b54e-4136316487c1",
+  "files": [],
+  "subMetas": {
+    "105c3": {
+      "importer": "gltf-mesh",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@105c3",
+      "displayName": "",
+      "id": "105c3",
+      "name": "part_body.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 264
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "31d5a": {
+      "importer": "gltf-mesh",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@31d5a",
+      "displayName": "",
+      "id": "31d5a",
+      "name": "part_ears.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 24
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "38f0e": {
+      "importer": "gltf-mesh",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@38f0e",
+      "displayName": "",
+      "id": "38f0e",
+      "name": "part_neck.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 12
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9d1d": {
+      "importer": "gltf-skeleton",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@f9d1d",
+      "displayName": "",
+      "id": "f9d1d",
+      "name": "Armature.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 28
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8ea07": {
+      "importer": "gltf-material",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@8ea07",
+      "displayName": "",
+      "id": "8ea07",
+      "name": "pet_body.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a6301": {
+      "importer": "gltf-scene",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@a6301",
+      "displayName": "",
+      "id": "a6301",
+      "name": "pet_dog.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "1206af76-c10c-41ac-b54e-4136316487c1@105c3",
+        "1206af76-c10c-41ac-b54e-4136316487c1@31d5a",
+        "1206af76-c10c-41ac-b54e-4136316487c1@38f0e"
+      ],
+      "skeletons": [
+        "1206af76-c10c-41ac-b54e-4136316487c1@f9d1d"
+      ],
+      "textures": [],
+      "materials": [
+        "1206af76-c10c-41ac-b54e-4136316487c1@8ea07"
+      ],
+      "scenes": [
+        "1206af76-c10c-41ac-b54e-4136316487c1@a6301"
+      ]
+    }
+  }
+}
