@@ -42,20 +42,58 @@ PART_GROUPS = {
     ],
 }
 
-# 三个部件共用一个材质球，材质数保持为 1（文档 5.4 上限是 2）。
+# 两个材质球，正好卡在文档 5.4 的上限。
 # 参数照 3.4 节：PBR、粗糙度 0.9、金属度 0，不用 unlit。
-MATERIAL_NAME = "pet_body"
-MATERIAL_BASE_COLOR = (0.851, 0.745, 0.588, 1.0)  # #D9BE96 占位毛色
+MATERIALS = {
+    "pet_body": (0.851, 0.745, 0.588, 1.0),    # #D9BE96 占位毛色
+    "pet_detail": (0.180, 0.130, 0.098, 1.0),  # #2E2119 眼睛、鼻子
+}
 MATERIAL_ROUGHNESS = 0.9
 MATERIAL_METALLIC = 0.0
 
-BONE_RADIUS = {
-    "hips": 0.22, "spine_01": 0.22, "spine_02": 0.20,
-    "neck": 0.12, "head": 0.26, "jaw": 0.10,
-    "ear_L": 0.07, "ear_R": 0.07,
-    "tail_01": 0.06, "tail_02": 0.05, "tail_03": 0.04,
-}
-DEFAULT_RADIUS = 0.08
+SPHERE_SEGMENTS = 10
+SPHERE_RINGS = 6
+
+# 占位造型。盒子拼的模型再准也读不出幼态——养成品类的「可爱」几乎全来自
+# 大眼睛和圆润轮廓（docs/06 §5.2），所以占位模型也要圆、眼睛也要有。
+#
+# 每个部件刚性绑定到一根骨头（权重 1），这样呼吸、摇头、摆尾都能带动对应部位。
+# 眼睛和鼻子绑在 head / jaw 上，摇头时会跟着转，这是「活着」最直接的信号。
+#
+# 坐标是 Cocos 空间（Y 上、Z 前），和 rig_spec 一致。
+SHAPES = [
+    # (bone, 材质, 形状, 中心, 半轴)
+    ("hips",        "pet_body",   "sphere", (0.00, 0.82, -0.28), (0.27, 0.26, 0.30)),
+    ("spine_01",    "pet_body",   "sphere", (0.00, 0.86, -0.05), (0.29, 0.28, 0.30)),
+    ("spine_02",    "pet_body",   "sphere", (0.00, 0.89,  0.20), (0.27, 0.26, 0.28)),
+    ("head",        "pet_body",   "sphere", (0.00, 1.36,  0.44), (0.36, 0.34, 0.34)),
+    ("jaw",         "pet_body",   "sphere", (0.00, 1.24,  0.66), (0.17, 0.14, 0.17)),
+    # 眼睛突出球面一点，正面才有存在感
+    ("head",        "pet_detail", "sphere", (0.15, 1.42,  0.70), (0.085, 0.095, 0.085)),
+    ("head",        "pet_detail", "sphere", (-0.15, 1.42, 0.70), (0.085, 0.095, 0.085)),
+    # 高光用毛色材质，浅色点在深色眼球上就是高光，不用第三个材质球
+    ("head",        "pet_body",   "sphere", (0.185, 1.46, 0.755), (0.032, 0.032, 0.032)),
+    ("head",        "pet_body",   "sphere", (-0.115, 1.46, 0.755), (0.032, 0.032, 0.032)),
+    ("jaw",         "pet_detail", "sphere", (0.00, 1.27,  0.80), (0.055, 0.045, 0.050)),
+    ("paw_front_L", "pet_body",   "sphere", (0.20, 0.09,  0.28), (0.10, 0.08, 0.13)),
+    ("paw_front_R", "pet_body",   "sphere", (-0.20, 0.09, 0.28), (0.10, 0.08, 0.13)),
+    ("paw_back_L",  "pet_body",   "sphere", (0.18, 0.09, -0.30), (0.10, 0.08, 0.13)),
+    ("paw_back_R",  "pet_body",   "sphere", (-0.18, 0.09, -0.30), (0.10, 0.08, 0.13)),
+    ("tail_01",     "pet_body",   "sphere", (0.00, 0.80, -0.43), (0.075, 0.075, 0.075)),
+    ("tail_02",     "pet_body",   "sphere", (0.00, 0.66, -0.57), (0.060, 0.060, 0.060)),
+    ("tail_03",     "pet_body",   "sphere", (0.00, 0.50, -0.64), (0.045, 0.045, 0.045)),
+    ("neck",        "pet_body",   "sphere", (0.00, 1.02,  0.37), (0.155, 0.16, 0.155)),
+    ("ear_L",       "pet_body",   "cone",   (0.17, 1.62,  0.38), (0.105, 0.30, 0.105)),
+    ("ear_R",       "pet_body",   "cone",   (-0.17, 1.62, 0.38), (0.105, 0.30, 0.105)),
+]
+
+# 四肢用锥台连接，比球串起来更像腿
+LIMBS = [
+    ("leg_front_L_01", 0.10, 0.085), ("leg_front_L_02", 0.085, 0.070),
+    ("leg_front_R_01", 0.10, 0.085), ("leg_front_R_02", 0.085, 0.070),
+    ("leg_back_L_01", 0.11, 0.090), ("leg_back_L_02", 0.090, 0.072),
+    ("leg_back_R_01", 0.11, 0.090), ("leg_back_R_02", 0.090, 0.072),
+]
 
 
 def reset_scene():
@@ -114,14 +152,64 @@ def box_for_bone(bone_name, head, tail, radius):
     return obj
 
 
-def make_material():
-    mat = bpy.data.materials.new(MATERIAL_NAME)
-    mat.use_nodes = True
-    bsdf = mat.node_tree.nodes["Principled BSDF"]
-    bsdf.inputs["Base Color"].default_value = MATERIAL_BASE_COLOR
-    bsdf.inputs["Roughness"].default_value = MATERIAL_ROUGHNESS
-    bsdf.inputs["Metallic"].default_value = MATERIAL_METALLIC
-    return mat
+def make_materials():
+    made = {}
+    for name, color in MATERIALS.items():
+        mat = bpy.data.materials.new(name)
+        mat.use_nodes = True
+        bsdf = mat.node_tree.nodes["Principled BSDF"]
+        bsdf.inputs["Base Color"].default_value = color
+        bsdf.inputs["Roughness"].default_value = MATERIAL_ROUGHNESS
+        bsdf.inputs["Metallic"].default_value = MATERIAL_METALLIC
+        made[name] = mat
+    return made
+
+
+def bind_to_bone(obj, bone_name):
+    """整块刚性绑定到一根骨头，权重 1。占位模型不需要渐变权重。"""
+    vg = obj.vertex_groups.new(name=bone_name)
+    vg.add(range(len(obj.data.vertices)), 1.0, "REPLACE")
+    return obj
+
+
+def add_sphere(center, radii):
+    bpy.ops.mesh.primitive_uv_sphere_add(
+        segments=SPHERE_SEGMENTS, ring_count=SPHERE_RINGS, radius=1.0)
+    obj = bpy.context.active_object
+    obj.scale = radii
+    obj.location = to_blender(center)
+    bpy.ops.object.transform_apply(location=True, scale=True)
+    bpy.ops.object.shade_smooth()
+    return obj
+
+
+def add_cone(center, radii):
+    """耳朵用锥体。尖立的剪影是猫狗最主要的辨识点（docs/06 §5.2）。"""
+    bpy.ops.mesh.primitive_cone_add(vertices=SPHERE_SEGMENTS, radius1=1.0, depth=1.0)
+    obj = bpy.context.active_object
+    obj.scale = (radii[0], radii[2], radii[1])
+    obj.location = to_blender(center)
+    bpy.ops.object.transform_apply(location=True, scale=True)
+    bpy.ops.object.shade_smooth()
+    return obj
+
+
+def add_limb(bone_name, r_top, r_bottom):
+    """沿骨骼方向建一段锥台。"""
+    spec = {b[1]: b for b in rig_spec.BONES}[bone_name]
+    head, tail = to_blender(spec[3]), to_blender(spec[4])
+    axis = tail - head
+    length = axis.length
+
+    bpy.ops.mesh.primitive_cone_add(
+        vertices=SPHERE_SEGMENTS, radius1=r_top, radius2=r_bottom, depth=length)
+    obj = bpy.context.active_object
+    obj.rotation_mode = "QUATERNION"
+    obj.rotation_quaternion = Vector((0, 0, 1)).rotation_difference(axis.normalized())
+    obj.location = head + axis * 0.5
+    bpy.ops.object.transform_apply(location=True, rotation=True)
+    bpy.ops.object.shade_smooth()
+    return obj
 
 
 def build_placeholder(arm_obj):
