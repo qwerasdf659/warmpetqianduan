@@ -224,6 +224,70 @@ def fuse(objs, name, voxel_size, tri_budget, smooth_iters):
     return obj
 
 
+def build_skin_part(graph, name, subdiv, tri_budget):
+    """用 Skin 修改器 + 细分曲面从骨架图长出一个部件。
+
+    这是比「摆一堆球 + 体素重构」高一档的做法：
+
+    - Skin 沿着边生成包裹的管状表面，**分叉点自动做成过渡的枢纽**，
+      四肢和躯干的连接是连续曲面，不是两个球泡在一起
+    - 出来是四边形网格、有边流，细分之后光滑，UV 密度也才可能均匀
+    - 体素重构那条路的表面是一格一格堆的，法线里全是台阶，
+      平滑只能缓解，而且拓扑是三角汤
+
+    输入正好是手上已有的东西：关节坐标 + 每个关节的粗细。
+    """
+    nodes = graph["nodes"]
+    order = list(nodes.keys())
+    index = {n: i for i, n in enumerate(order)}
+    verts = [to_blender(nodes[n][0]) for n in order]
+
+    edges = set()
+    for chain in graph["chains"]:
+        for a, b in zip(chain, chain[1:]):
+            edges.add(tuple(sorted((index[a], index[b]))))
+
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata([tuple(v) for v in verts], sorted(edges), [])
+    mesh.update()
+
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.collection.objects.link(obj)
+    bpy.ops.object.select_all(action="DESELECT")
+    obj.select_set(True)
+    bpy.context.view_layer.objects.active = obj
+
+    skin = obj.modifiers.new(name="Skin", type="SKIN")
+    skin.use_smooth_shade = True
+
+    # skin_vertices 这一层是**加了修改器之后**才存在的，提前访问会 KeyError
+    layer = mesh.skin_vertices[0].data
+    for n, i in index.items():
+        r = nodes[n][1] * rig_spec.RIG_SCALE
+        layer[i].radius = (r, r)
+    # 必须指定一个根顶点，否则 Skin 不知道从哪里开始生成
+    layer[0].use_root = True
+
+    bpy.ops.object.modifier_apply(modifier=skin.name)
+
+    if subdiv:
+        sub = obj.modifiers.new(name="Subdiv", type="SUBSURF")
+        sub.levels = subdiv
+        sub.render_levels = subdiv
+        bpy.ops.object.modifier_apply(modifier=sub.name)
+
+    obj.data.calc_loop_triangles()
+    tris = len(obj.data.loop_triangles)
+    if tris > tri_budget:
+        dec = obj.modifiers.new(name="Decimate", type="DECIMATE")
+        dec.decimate_type = "COLLAPSE"
+        dec.ratio = tri_budget / tris
+        bpy.ops.object.modifier_apply(modifier=dec.name)
+
+    bpy.ops.object.shade_smooth()
+    return obj
+
+
 def pack_uv(parts):
     """三个部件一起展开，打包进同一个 0-1 空间。
 
@@ -313,8 +377,67 @@ def part_of(bone_name):
     return "part_body"
 
 
-def build_placeholder(arm_obj, profile, tex_dir=None, tex_name=None):
+def make_shape(kind, params):
+    if kind == "sphere":
+        return add_sphere(*params)
+    if kind == "taper":
+        return add_taper(*params)
+    raise ValueError("unknown shape kind: %s" % kind)
+
+
+# 细分一级就够。二级面数翻四倍，直接顶穿 3000 的预算，
+# 而在两百多像素的屏幕上看不出区别。
+SKIN_SUBDIV = 1
+SKIN_BUDGET = {"part_body": 2000, "part_neck": 200}
+
+
+def build_placeholder_skin(arm_obj, profile, materials):
+    """身体和颈部用 Skin + 细分长出来，耳朵仍是压扁的锥台，五官仍是小图元。
+
+    Skin 只会长管子，长不出扁平的耳廓，也长不出眼球这种独立小件，
+    所以这三类各用最合适的做法，不强求统一。
+    """
+    parts = [
+        build_skin_part(profile["skin_body"], "part_body",
+                        SKIN_SUBDIV, SKIN_BUDGET["part_body"]),
+        build_skin_part(profile["skin_neck"], "part_neck",
+                        SKIN_SUBDIV, SKIN_BUDGET["part_neck"]),
+    ]
+    for part in parts:
+        part.data.materials.clear()
+        part.data.materials.append(materials["pet_body"])
+
+    voxel, budget, smooth = profile["fuse"]["part_ears"]
+    ears = [make_shape(kind, params)
+            for kind, _bone, _mat, params in profile["ear_shapes"]]
+    ear_part = fuse(ears, "part_ears", voxel * rig_spec.RIG_SCALE, budget, smooth)
+    ear_part.data.materials.clear()
+    ear_part.data.materials.append(materials["pet_body"])
+    parts.append(ear_part)
+
+    # 五官整块并进身体，各自保留材质槽，作为独立的面片岛存在
+    face = []
+    for kind, _bone, mat_name, params in profile["face_shapes"]:
+        obj = make_shape(kind, params)
+        obj.data.materials.append(materials[mat_name])
+        face.append(obj)
+
+    body = parts[0]
+    bpy.ops.object.select_all(action="DESELECT")
+    for obj in face:
+        obj.select_set(True)
+    body.select_set(True)
+    bpy.context.view_layer.objects.active = body
+    bpy.ops.object.join()
+
+    return parts
+
+
+def build_placeholder(arm_obj, profile, body="skin", tex_dir=None, tex_name=None):
     materials = make_materials()
+    if body == "skin":
+        parts = build_placeholder_skin(arm_obj, profile, materials)
+        return _finish_placeholder(parts, arm_obj, profile, materials, tex_dir, tex_name)
 
     # 融合的体素尺寸按部件大小给：身体大、可以粗一点，耳朵薄、太粗会被抹平。
     # 猫的尖立三角耳尤其吃这个数——体素粗了尖会被直接抹圆，就变成狗耳了。
