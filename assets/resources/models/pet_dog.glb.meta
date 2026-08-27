@@ -3,7 +3,9 @@
   "importer": "gltf",
   "imported": true,
   "uuid": "1206af76-c10c-41ac-b54e-4136316487c1",
-  "files": [],
+  "files": [
+    "__original-animation-0.bin"
+  ],
   "subMetas": {
     "105c3": {
       "importer": "gltf-mesh",
@@ -56,6 +58,29 @@
       "files": [
         ".bin",
         ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f586": {
+      "importer": "gltf-animation",
+      "uuid": "1206af76-c10c-41ac-b54e-4136316487c1@1f586",
+      "displayName": "",
+      "id": "1f586",
+      "name": "idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 2.4000000953674316
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
       ],
       "subMetas": {}
     },
@@ -145,6 +170,22 @@
       "scenes": [
         "1206af76-c10c-41ac-b54e-4136316487c1@a6301"
       ]
-    }
+    },
+    "animationImportSettings": [
+      {
+        "name": "idle",
+        "duration": 2.4000000953674316,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "idle",
+            "from": 0,
+            "to": 2.4000000953674316,
+            "wrapMode": 2,
+            "previousId": "1f586"
+          }
+        ]
+      }
+    ]
   }
 }

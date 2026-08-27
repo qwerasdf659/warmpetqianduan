@@ -17,6 +17,7 @@ from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import rig_spec  # noqa: E402
+import animations  # noqa: E402
 
 # 文档用 Cocos 坐标系描述骨架（Y 上、Z 前）；Blender 是 Z 上、-Y 前。
 # 建模时转到 Blender 空间，导出时再由 FBX 的 axis 设置转回去。
@@ -214,27 +215,39 @@ def main():
     ap.add_argument("--name", default="pet_dog")
     ap.add_argument("--skeleton-only", action="store_true")
     ap.add_argument("--also-fbx", action="store_true")
+    ap.add_argument("--no-anim", action="store_true")
+    ap.add_argument("--anim-gain", type=float, default=1.0,
+                    help="动画幅度增益，调试时放大用，正式资源保持 1.0")
     args = ap.parse_args(argv)
+
+    animations.set_gain(args.anim_gain)
 
     reset_scene()
     arm_obj = build_armature()
     parts = [] if args.skeleton_only else build_placeholder(arm_obj)
 
+    clips = []
+    if not args.no_anim:
+        for name, builder in animations.BUILDERS.items():
+            builder(arm_obj)
+            clips.append(name)
+
     os.makedirs(args.out, exist_ok=True)
     written = []
 
     glb_path = os.path.join(args.out, args.name + ".glb")
-    export_glb(glb_path)
+    export_glb(glb_path, has_anim=bool(clips))
     written.append(glb_path)
 
     if args.also_fbx:
         fbx_path = os.path.join(args.out, args.name + ".fbx")
-        export_fbx(fbx_path)
+        export_fbx(fbx_path, has_anim=bool(clips))
         written.append(fbx_path)
 
     print("BUILD_OK")
     print("  bones      : %d (limit %d)" % (len(arm_obj.data.bones), rig_spec.MAX_JOINTS))
     print("  mesh parts : %s" % ([p.name for p in parts] or "none (skeleton only)"))
+    print("  clips      : %s" % (clips or "none"))
     for w in written:
         print("  exported   : %s" % w)
 

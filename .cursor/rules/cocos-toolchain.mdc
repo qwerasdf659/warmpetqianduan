@@ -1,0 +1,62 @@
+---
+description: Cocos 工程的构建、预览与缓存操作纪律
+alwaysApply: true
+---
+
+# Cocos 工程操作纪律
+
+以下每一条都在本项目实际造成过白屏或返工，不是理论建议。
+
+## 绝不在编辑器打开工程时跑 CLI 构建
+
+`CocosCreator.exe --project ... --build` 会启动**另一个 Cocos 实例**，
+和编辑器抢同一个 `temp/` `library/`，编译产物互相覆盖。
+症状是预览白屏 + 控制台报 `Unable to resolve bare specifier '__unresolved_N'`，
+而且报错指向引擎自己的 `cce:/internal/x/cc`，很容易误判成代码问题。
+
+要验证构建，二选一：
+
+- 先确认编辑器已关闭（`Get-Process *Cocos*` 只剩 `CocosDashboard` 才算关干净）
+- 或把工程复制到临时目录再构建，不碰工作副本
+
+日常出包让用户在编辑器的**构建面板**里做。
+
+## 类型检查不在构建流程里，必须单独跑
+
+Cocos 构建**只转译、不做类型检查**。调用引擎上不存在的方法，
+构建照样"成功"，运行时才抛异常、界面画一半停住。
+
+改完 `assets/scripts/**` 必须跑：
+
+```
+npx -y -p typescript@5.6 tsc -p _research/tsconfig.check.json
+```
+
+这份配置引的是编辑器自带的 `cc.d.ts`，不依赖 `temp/declarations`
+（那个要编辑器手动生成，默认是空的）。
+
+## 预览坏掉时的恢复步骤
+
+1. 关闭 Cocos Creator（Dashboard 可以留着）
+2. 删除 `temp/` `library/` `build/`
+3. 重新打开工程，等导入完成（全删后会比平时慢）
+
+**不要删 `.meta` 文件**——资源 UUID 在里面，删了场景就找不到脚本，
+所有组件会变成 Missing Script。
+
+## 改引擎模块配置后必须重新导入
+
+改 `settings/v2/packages/engine.json` 的 `includeModules` 之后，
+编辑器要重新编译引擎。配置和已编译引擎不一致时，
+引擎 barrel 模块会解析失败。
+
+## package.json 的 version 是编辑器版本
+
+Cocos 工程的 `package.json` 不是 npm 包描述文件。
+`version` 和 `creator.version` 必须是 `3.8.8`；
+写成应用版本号（如 `0.1.0`）会让 Dashboard 显示「缺失编辑器」打不开工程。
+
+## Windows / PowerShell 注意
+
+- `curl` 是 `Invoke-WebRequest` 的别名，要用真 curl 得写 `curl.exe`
+- 传 JSON body 时 PowerShell 的引号转义很容易出错，优先写进临时文件再 `--data-binary "@file"`

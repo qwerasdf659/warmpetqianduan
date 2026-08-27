@@ -9,7 +9,7 @@
  * 并打日志，不要让它悄无声息地失败。
  */
 
-import { Node, Layers, SkeletalAnimation, SkinnedMeshRenderer } from 'cc';
+import { Node, Layers, Vec3, Quat, SkeletalAnimation, SkinnedMeshRenderer } from 'cc';
 
 /** 遮挡规则：戴上某件配饰要藏起宠物的哪些部位（docs/06 §5.5）。 */
 export const ACCESSORY_HIDES: Record<string, string[]> = {
@@ -62,6 +62,21 @@ export function createSocketNode(
   const socket = new SkeletalAnimation.Socket(path, target);
   anim.sockets = anim.sockets.concat([socket]);
   return target;
+}
+
+/**
+ * 把配饰挂到挂点节点下。
+ *
+ * 配饰是按「原点在与挂点的接触面中心」建模的，所以局部变换必须归零才在正确位置。
+ * `setParent` 默认保留世界变换，会把局部坐标反算成一个偏移量，配饰就留在原地不动了——
+ * 这一步漏掉的话，帽子会浮在场景原点而不是戴在头上。
+ */
+export function mountAccessory(socketNode: Node, accessory: Node) {
+  accessory.setParent(socketNode);
+  accessory.setPosition(Vec3.ZERO);
+  accessory.setRotation(Quat.IDENTITY);
+  accessory.setScale(Vec3.ONE);
+  accessory.layer = Layers.Enum.DEFAULT;
 }
 
 /** 按配饰的遮挡声明隐藏宠物部位；传空数组即恢复全部显示。 */

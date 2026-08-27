@@ -21,5 +21,21 @@ alwaysApply: true
 - 客户端：Cocos Creator 3.8.8 + TypeScript（引擎按 TS 4.1 语义编译）。
 - 后端：NestJS 11 + TS 5.9 + PostgreSQL + Redis + TypeORM；REST 为主，实时用**原生 WebSocket**（不用 Socket.IO 客户端）。
 
-## 设计文档
-所有详细设计在 `docs/`（01 商业合规、02 积分、03 功能、04 架构、05 3D预算、06 UI、07 玩法、08 技术路线、09 后端搭建）。改动涉及这些主题时先对照对应文档。
+## 工程现状
+- 客户端是 **Cocos Creator 3.8.8 工程**（`assets/` + `settings/`），
+  已不是原生小游戏工程，`js/`、`game.js`、`project.config.json` 都由构建产出。
+- 网络层与全部 60+ 接口封装已完成，见 `assets/scripts/net/`。
+- 后端服务在 `docs/后端配合需求清单.md` 记录的地址；不可用时用
+  `node _research/mock-server.mjs` 起本地假后端，切换只改 `net/config.ts` 的 `DEV_BASE_URL`。
+
+## 设计文档（`docs/`，只列实际存在的）
+| 文档 | 内容 |
+| --- | --- |
+| `06-UI设计规范.md` | 设计 token、3D 模型/骨架/动画/贴图规范、美术交付与验收 |
+| `玩法扩展设计.md` | P0–P13 十四项玩法的落地方案与接口契约 |
+| `竞品玩法梳理.md` | Neopets / Adopt Me! / 模拟人生猫狗的玩法对照 |
+| `后端配合需求清单.md` | 需要后端回复的问题、接口契约问题、故障证据 |
+
+`前端对接文档.md`（仓库根目录）是后端提供的 API 契约，以它为准。
+
+改动涉及上述主题时先对照对应文档；**文档与代码不一致时，两边一起改**。

@@ -63,6 +63,30 @@ TRI_BUDGET = {"pet": 3000, "accessory": 400, "furniture": 800, "petpet": 300}
 MAX_SUBMESHES = 3
 MAX_MATERIALS = 2
 
+# 动画清单，对应 docs/06 §5.6。猫狗共用，只做一套。
+ANIM_FPS = 30
+CLIP_SPEC = {
+    # 第一批 · 基础
+    "idle":        {"duration": (2.0, 3.0), "loop": True},
+    "idle_hungry": {"duration": (2.0, 3.0), "loop": True},
+    "idle_sick":   {"duration": (2.0, 3.0), "loop": True},
+    "feed":        {"duration": (1.5, 2.0), "loop": False},
+    "bath":        {"duration": (1.5, 2.0), "loop": False},
+    "pet":         {"duration": (1.0, 1.5), "loop": False},
+    "play":        {"duration": (1.5, 2.5), "loop": False},
+    "happy":       {"duration": (1.0, 1.5), "loop": False},
+    # 第二批 · 性格变体
+    "idle_lively": {"duration": (2.0, 3.0), "loop": True},
+    "idle_timid":  {"duration": (2.0, 3.0), "loop": True},
+    "idle_lazy":   {"duration": (2.0, 3.0), "loop": True},
+    # 第三批 · 训练技巧
+    "trick_sit":   {"duration": (1.0, 1.5), "loop": False},
+    "trick_shake": {"duration": (1.0, 1.5), "loop": False},
+    "trick_roll":  {"duration": (1.5, 2.0), "loop": False},
+    "trick_jump":  {"duration": (1.5, 2.0), "loop": False},
+    "trick_dance": {"duration": (2.5, 3.5), "loop": True},
+}
+
 
 def check_name(name):
     """返回不合规的原因，合规则返回 None。"""

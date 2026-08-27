@@ -52,10 +52,21 @@ const BARS: StatBar[] = [
 
 const MARGIN = 32;
 const BAR_H = 18;
-const BAR_GAP = 46;
 const BTN_H = 96;
 const BTN_GAP = 12;
 const BOTTOM_MARGIN = 48;
+
+/**
+ * 属性条排成 2×2 而不是竖着堆四行。
+ *
+ * 四行要占 208，几乎吃掉屏幕中段——而文档 2.1 要求「UI 退居边缘，中间大片留给宠物」。
+ * 两列之后面板只有 130 上下，中间给宠物腾出近 80 的高度。
+ * 四条属性本来就是并列关系，网格排列读起来也不比竖排差。
+ */
+const BAR_COLS = 2;
+const BAR_ROW_H = 44;
+const BAR_COL_GAP = 16;
+const PANEL_PAD = 18;
 
 /** 一次算好所有位置，绘制和文字共用同一份，避免两处各算一遍算歪 */
 interface Layout {
@@ -67,11 +78,11 @@ interface Layout {
   levelY: number;
   expBarY: number;
   petCenterY: number;
-  petRadius: number;
   bubbleY: number;
   panelBottom: number;
   panelH: number;
   barsTop: number;
+  barCellW: number;
   btnY: number;
   btnW: number;
 }
@@ -105,6 +116,8 @@ export class MainView extends Component {
     // 3D 舞台要先建：它会把 UI 相机改成「只清深度」，
     // 之后 UI 才能正确地叠在 3D 画面上。
     this.stage = this.node.addComponent(PetStage);
+    // 相机取景对齐 UI 留出的那块空当，否则可视高度一变宠物就被面板压住
+    this.stage.frameTo(this.L.petCenterY, this.L.h);
 
     // 顺序即渲染层级：两个 Graphics 先挂，Label 全部在它们之上。
     // 反过来的话按钮文字会被按钮底色盖住，而且 Label 之间也没法合批。
@@ -147,15 +160,18 @@ export class MainView extends Component {
     const expBarY = top - inset - 74;
 
     const btnY = -h / 2 + BOTTOM_MARGIN;
-    const panelH = BAR_GAP * BARS.length + 24;
+    const barRows = Math.ceil(BARS.length / BAR_COLS);
+    const panelH = BAR_ROW_H * barRows + PANEL_PAD * 2;
     const panelBottom = btnY + BTN_H + 24;
     const panelTop = panelBottom + panelH;
-    const barsTop = panelTop - 34;
+    const barsTop = panelTop - PANEL_PAD - 16;
 
-    const bubbleY = panelTop + 30;
-    const petAreaTop = expBarY - 24;
-    const petAreaBottom = bubbleY + 22;
-    const petRadius = Math.max(28, Math.min(130, (petAreaTop - petAreaBottom) / 2 - 8));
+    const panelW = w - MARGIN * 2;
+    const barCellW = (panelW - PANEL_PAD * 2 - BAR_COL_GAP * (BAR_COLS - 1)) / BAR_COLS;
+
+    const bubbleY = panelTop + 26;
+    const petAreaTop = expBarY - 20;
+    const petAreaBottom = bubbleY + 24;
     const petCenterY = (petAreaTop + petAreaBottom) / 2;
 
     return {
@@ -167,13 +183,24 @@ export class MainView extends Component {
       levelY,
       expBarY,
       petCenterY,
-      petRadius,
       bubbleY,
       panelBottom,
       panelH,
       barsTop,
+      barCellW,
       btnY,
       btnW: (w - MARGIN * 2 - BTN_GAP * 3) / 4,
+    };
+  }
+
+  /** 属性条按 2×2 排布，索引 0..3 映射到左上、右上、左下、右下 */
+  private barCell(index: number): { x: number; y: number } {
+    const L = this.L;
+    const col = index % BAR_COLS;
+    const row = Math.floor(index / BAR_COLS);
+    return {
+      x: L.left + PANEL_PAD + col * (L.barCellW + BAR_COL_GAP),
+      y: L.barsTop - row * BAR_ROW_H,
     };
   }
 
@@ -215,13 +242,13 @@ export class MainView extends Component {
 
     // 状态条的名称固定不动，数值每次重画时更新
     this.barValueLabels = BARS.map((bar, i) => {
-      const y = L.barsTop - i * BAR_GAP;
+      const cell = this.barCell(i);
       makeLabel(bar.name, this.node, { size: 15, color: COLOR.dim }).node.setPosition(
-        L.left + 18,
-        y + 14,
+        cell.x,
+        cell.y + 13,
       );
       const value = makeLabel('', this.node, { size: 15, color: COLOR.text, align: 'right' });
-      value.node.setPosition(L.right - 18, y + 14);
+      value.node.setPosition(cell.x + L.barCellW, cell.y + 13);
       return value;
     });
 
@@ -338,11 +365,12 @@ export class MainView extends Component {
 
   private drawStatBars(g: Graphics, pet: PetStateView) {
     const L = this.L;
-    const x = L.left + 18;
-    const barW = L.w - MARGIN * 2 - 36;
+    const barW = L.barCellW;
 
     BARS.forEach((bar, i) => {
-      const y = L.barsTop - i * BAR_GAP - 10;
+      const cell = this.barCell(i);
+      const x = cell.x;
+      const y = cell.y - 10;
       const value = pet[bar.key];
       const max = bar.key === 'stamina' ? pet.staminaMax : 100;
       const ratio = max > 0 ? Math.min(1, value / max) : 0;

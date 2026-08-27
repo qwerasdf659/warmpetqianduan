@@ -19,6 +19,7 @@ import { onApiError } from './net/request';
 import { bootstrap, refreshOnShow } from './core/bootstrap';
 import { showError } from './ui/toast';
 import { onShow } from './platform/minigame';
+import { initDevConsole } from './platform/devConsole';
 import { COLOR, makeNode, makeLabel } from './ui/widgets';
 import { toApiError } from './net/errors';
 
@@ -30,6 +31,7 @@ export class Main extends Component {
   private mainView: MainView | null = null;
 
   onLoad() {
+    initDevConsole();
     this.watchGlobalErrors();
     this.watchAppState();
     this.showLoading();

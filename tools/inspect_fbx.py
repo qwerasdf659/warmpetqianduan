@@ -33,6 +33,9 @@ def check(passed, label, detail=""):
 
 def load(path):
     bpy.ops.wm.read_factory_settings(use_empty=True)
+    # glTF 的关键帧时间以秒记录，导入时按当前场景帧率重新采样。
+    # 不先对齐帧率的话，量出来的是导入方的帧率，和创作时的无关。
+    bpy.context.scene.render.fps = rig_spec.ANIM_FPS
     ext = os.path.splitext(path)[1].lower()
     if ext == ".fbx":
         bpy.ops.import_scene.fbx(filepath=path)
@@ -160,6 +163,51 @@ def inspect_meshes(meshes):
     check(not over4, "at most 4 bone influences per vertex", "exceeded on %s" % over4)
 
 
+def inspect_animations():
+    actions = list(bpy.data.actions)
+    print("\nANIMATIONS")
+    if not actions:
+        print("  (none)")
+        return
+
+    fps = bpy.context.scene.render.fps
+    for action in actions:
+        start, end = action.frame_range
+        duration = (end - start) / fps if fps else 0
+        print("  %-16s frames=%.0f..%.0f  %.2fs @ %dfps  curves=%d"
+              % (action.name, start, end, duration, fps, len(action.fcurves)))
+
+    print("\nANIMATION CHECKS")
+    check(fps == rig_spec.ANIM_FPS, "authored at %d fps" % rig_spec.ANIM_FPS,
+          "found %d" % fps)
+
+    for action in actions:
+        spec = rig_spec.CLIP_SPEC.get(action.name)
+        if not spec:
+            check(False, "clip '%s' is in the approved list" % action.name,
+                  "not in docs 5.6 animation list")
+            continue
+
+        start, end = action.frame_range
+        duration = (end - start) / fps if fps else 0
+        lo, hi = spec["duration"]
+        check(lo <= duration <= hi, "clip '%s' duration within %.1f-%.1fs" % (action.name, lo, hi),
+              "found %.2fs" % duration)
+
+        if spec["loop"]:
+            # 首尾帧不一致的循环动画每圈都会跳一下，肉眼很难定位到是动画的问题。
+            drift = []
+            for fc in action.fcurves:
+                a = fc.evaluate(start)
+                b = fc.evaluate(end)
+                if abs(a - b) > 1e-4:
+                    drift.append("%s[%d] %.4f->%.4f" % (fc.data_path.split('"')[1]
+                                                        if '"' in fc.data_path else fc.data_path,
+                                                        fc.array_index, a, b))
+            check(not drift, "clip '%s' loops seamlessly (first frame == last)" % action.name,
+                  "%d curve(s) drift, e.g. %s" % (len(drift), drift[:3]))
+
+
 def report_bounds(objs):
     xs, ys, zs = [], [], []
     for o in objs:
@@ -194,6 +242,8 @@ def main():
         print("\nNo armature found -- this file is a static mesh.")
     for arm in armatures:
         bone_names = inspect_armature(arm)
+
+    inspect_animations()
 
     if meshes:
         inspect_meshes(meshes)

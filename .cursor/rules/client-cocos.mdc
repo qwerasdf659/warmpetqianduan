@@ -1,6 +1,6 @@
 ---
 description: Cocos Creator 客户端开发规范
-globs: assets/**/*.ts,js/**/*.js
+globs: assets/**/*.ts
 alwaysApply: false
 ---
 
@@ -9,21 +9,108 @@ alwaysApply: false
 ## 语言约定
 - 引擎按 **TS 4.1 语义**编译，`tsconfig.json` 不参与构建，只影响 IDE 检查。
 - 隐含 isolatedModules：重导出类型必须写 `export type`，不用 const enum。
+- 引用类型一律 `import type`，避免打包器误判。
 
 ## 职责边界
 - 客户端只做「表现 + 输入采集」，核心逻辑在后端（服务端权威）。
 - 本地缓存只存非权威数据；任何「时长/冷却/收益」以服务端返回为准。
+- 本地预测（属性衰减等）只用于视觉平滑，**不能拿预测值做业务判定**。
 
 ## 通讯
 - 常规请求走 HTTPS REST（wx.request）。
 - 实时用**原生 `wx.connectSocket`**（标准 WebSocket），**禁止用 socket.io-client**（微信小游戏跑不了）。
 - 自行实现心跳、重连、消息编号。
+- 平台差异走 `assets/scripts/platform/minigame.ts` 适配层，
+  业务代码不直接碰 `wx.*`——否则编辑器预览（浏览器里没有 wx）跑不起来。
 
-## 性能与包体（详见 docs/05）
-- 主包 ≤ 4MB：模型/场景走 Asset Bundle 远程分包，第一天就开分包 + WASM Brotli 压缩。
-- 整屏 DrawCall ≤ 50（低端）；同屏骨骼角色 1–2 只；画质分高/中/低档按机型降级。
-- 3D 换装需关预烘焙走实时蒙皮，骨骼数控制在预算内。
+---
 
-## 微信平台
+# 引擎 API 陷阱
+
+以下都是本项目踩过的，构建期不报错、运行时才炸。
+
+## Graphics 不是 Canvas 2D
+
+可用方法只有：`moveTo` `lineTo` `arc` `ellipse` `circle` `rect` `roundRect` `close` `stroke` `fill`。
+
+**没有 `arcTo`。** 圆角矩形用内置的 `roundRect(x, y, w, h, r)`，不要按 Canvas 习惯手拼。
+调用不存在的方法时构建不报错，运行时抛异常且**绘制会停在出错那一行**——
+表现为界面画了一半，很难一眼看出原因。
+
+## Label 默认锚点是 (0.5, 0.5)
+
+左对齐文字摆在左边距坐标上，实际会有一半跑到屏幕外；右对齐同理会被裁掉。
+
+锚点要跟着对齐方式走：`left → (0, 0.5)`、`center → (0.5, 0.5)`、`right → (1, 0.5)`。
+这样调用方传的坐标才是文字那一侧的边。
+
+## 渲染顺序 = 兄弟节点次序
+
+后加的节点画在上面。**懒加载创建的 Graphics 会盖住先创建的 Label**
+（典型症状：按钮有底色但没文字）。
+
+统一「**先挂完所有 Graphics，再挂所有 Label**」——既保证层级正确，也利于合批。
+
+## 运行时创建的节点默认是 DEFAULT 层
+
+`new Node()` 的 layer 是 `Layers.Enum.DEFAULT`（3D 层），不是 UI_2D。
+UI 节点必须显式设 `node.layer = Layers.Enum.UI_2D`，
+否则 3D 相机会把它们也算进可见范围。
+
+## fitWidth 下可视高度随机型变化
+
+`view.getVisibleSize()` 返回的高度**不等于**设计分辨率的 1280，
+它由设备宽高比算出来，编辑器预览窗口矮的时候可能只有六百多。
+
+纵向布局不能写死偏移：顶部自上而下排、底部自下而上排、中间吃剩余空间。
+
+## 禁止只有副作用的 import
+
+`import './x'`（不导入任何符号）打包器解析不了，运行时报
+`Unable to resolve bare specifier '__unresolved_N'`，**整个模块起不来、全黑屏**。
+
+需要触发模块副作用时，正常 import 它导出的东西即可——
+ESM 保证被依赖模块先于依赖方求值。
+
+## 继承内置 Error 要补原型链
+
+TS 4.1 目标下 `class X extends Error` 会丢原型链，`instanceof` 静默失效。
+构造函数末尾补 `Object.setPrototypeOf(this, X.prototype)`。
+
+## 场景里引用脚本用 23 字符压缩 uuid
+
+场景 JSON 里组件的 `__type__` 是脚本资源 uuid 的压缩形式：
+**保留 5 位十六进制头 + 18 位 base64 = 23 字符**。
+
+引擎 `decodeUuid` 文档里那个 22 字符形式（保留 2 位头）是另一套，用错会报
+`Script "xxx" attached to "yyy" is missing or invalid`。
+生成器见 `_research/gen-meta.mjs`，里面有对照引擎产物的自检断言。
+
+## 场景全局配置的颜色是 Vec4 不是 Color
+
+`director.getScene().globals.ambient.skyColor` 要的是**归一化 Vec4（0–1）**，
+不是 0–255 的 `Color`。传错类型不会报错，但效果不生效。
+
+---
+
+# 性能与包体（详见 docs/06-UI设计规范.md）
+
+- 主包 ≤ 4MB；**所有包合计 ≤ 20MB**（30MB 那档需开通虚拟支付，本项目铁律不接支付）
+- 整屏 DrawCall ≤ 50（低端机）；同屏骨骼角色 1–2 只
+- **骨骼 ≤ 30 根**（`JOINT_UNIFORM_CAPACITY`，超过会退化成贴图蒙皮，低端机明显掉性能）
+- 3D 换装需关预烘焙走实时蒙皮（`useBakedAnimation = false`）
+- 贴图**正方形且 2 的幂**（iOS PVRTC 硬性要求，非标尺寸转换后体积反而暴涨）
+- 纹理压缩效果**必须真机验证**——开发者工具不支持 ASTC 会回退成未压缩，数据不可信
+
+## 合批与重绘
+
+- Cocos 按渲染顺序合批，中间插入不同类型组件会断批
+- 不要用 RichText 的颜色标签渲染整页文本（每个 `<color>` 切一次批，一页能到 128 DrawCall）
+- 每帧变化的内容先算「看得见的变化」签名（数值取整、冷却取秒），没变就跳过重绘
+
+# 微信平台
+
 - 好友关系链/好友榜走**开放数据域** + 微信托管 KV，不经过自有后端。
-- 顶部 UI 必须避让右上角胶囊按钮（wx.getMenuButtonBoundingClientRect）。
+  开放数据域是独立渲染环境，访问不到主域变量，UI 要单独实现一遍。
+- 顶部 UI 必须避让右上角胶囊按钮（`wx.getMenuButtonBoundingClientRect`）。
+  胶囊坐标是屏幕物理像素，要按「可视尺寸 / 窗口尺寸」换算成设计分辨率单位。
