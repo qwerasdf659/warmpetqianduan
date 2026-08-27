@@ -26,7 +26,9 @@ let offlineClaimed = false;
 const pet = {
   id: '482',
   nickname: '小白',
-  species: 'default',
+  // 后端目前返回 "default"，PetStage 认不出就退回狗。
+  // 想在预览里看猫：MOCK_SPECIES=cat node _research/mock-server.mjs
+  species: process.env.MOCK_SPECIES || 'default',
   isActive: true,
   hunger: 19,
   cleanliness: 47,

@@ -56,7 +56,57 @@ Cocos 工程的 `package.json` 不是 npm 包描述文件。
 `version` 和 `creator.version` 必须是 `3.8.8`；
 写成应用版本号（如 `0.1.0`）会让 Dashboard 显示「缺失编辑器」打不开工程。
 
+## WebGL 上下文有数量上限
+
+多开几个浏览器预览标签，加上编辑器自己的场景视图，很快就会把上下文用光。
+症状是画面突然变白 + 控制台 `CONTEXT_LOST_WEBGL`，编辑器也会弹
+「WebGL context of the scene view has been lost」。
+
+**同时只留一个预览标签。** 这不是代码问题，跟它较劲会白白浪费好几轮。
+
+## 「网络异常」先怀疑假后端挂了
+
+开发期连的是 `node _research/mock-server.mjs`（`net/config.ts` 的 `DEV_BASE_URL`
+指向 `127.0.0.1:8899`）。它是个前台 node 进程，**关终端、重启机器就没了**，
+而且不会有任何提示。
+
+症状：游戏卡在「网络异常，请检查网络后重试」，控制台一片
+`ERR_CONNECTION_REFUSED 127.0.0.1:8899`。
+
+别从控制台一条条往回查，先看端口：
+
+```
+Get-NetTCPConnection -LocalPort 8899 -State Listen
+```
+
+起来之后 `GET /pet/state` 返回 **401 是正常的**——那个接口要带 token，
+游戏会先走 `/auth/mini` 拿。能返回 401 就说明服务在正常处理请求了。
+
+## 预览页要强制刷新
+
+换了模型或贴图之后按 `Ctrl+Shift+R`。普通刷新会复用缓存里的旧资源——
+文件名没变、内容变了，浏览器不会重新下载，改动等于没生效。
+
+## gen-meta.mjs 会重写 main.scene
+
+`_research/gen-meta.mjs` 不只是补 `.meta`，它把 `assets/scenes/main.scene`
+整个文件重新生成一遍。**在编辑器里对场景做的任何修改，跑一次这个脚本就没了。**
+
+跑它之前先确认 main.scene 没有想保留的改动。
+
+## npm 官方源在国内会超时
+
+`registry.npmjs.org` 经常 `EIDLETIMEOUT`，尤其是装 `@cocos/creator-types`
+这种几万文件的大包。统一加国内镜像：
+
+```
+npm install --registry=https://registry.npmmirror.com
+```
+
 ## Windows / PowerShell 注意
 
 - `curl` 是 `Invoke-WebRequest` 的别名，要用真 curl 得写 `curl.exe`
 - 传 JSON body 时 PowerShell 的引号转义很容易出错，优先写进临时文件再 `--data-binary "@file"`
+- **不要用 `node -e` 传含引号的脚本**。PowerShell 会吃掉反引号和双引号，
+  报的错还指向被截断后的乱码，完全看不出是转义问题。
+  改文件用编辑工具，非要跑脚本就先写进 `.mjs` 文件再执行。

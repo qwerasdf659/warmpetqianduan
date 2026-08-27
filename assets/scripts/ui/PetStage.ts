@@ -30,6 +30,7 @@ import {
   instantiate,
   resources,
   EffectAsset,
+  Texture2D,
   tween,
   Tween,
   director,
@@ -74,6 +75,12 @@ const EFFECT_NAME = 'builtin-standard';
 
 /** 相机基准参数，docs/06 §3.4 */
 const CAM = { y: 1.75, z: 5.4, pitch: -9, fov: 38 };
+
+const BG_NAME = 'bg_room';
+/** 背景板放在宠物后方多远。够远才不会被地台的透视穿帮，又不至于糊成一片 */
+const BACKDROP_Z_OFFSET = 3.2;
+/** 背景板整体下移一点，让画面里的地平线落在地台附近而不是宠物腰上 */
+const BACKDROP_DROP = 1.15;
 
 @ccclass('PetStage')
 export class PetStage extends Component {
@@ -245,6 +252,56 @@ export class PetStage extends Component {
     return node;
   }
 
+  /**
+   * 背景是一张贴在宠物后方的四边形，不是 UI 层的图。
+   *
+   * UI 相机在 3D 相机之后渲染，任何 UI 底图都会把宠物盖住，所以背景只能待在 3D 层。
+   *
+   * 材质用 unlit：这张图本身已经画好了光影，再吃一遍实时光会脏。
+   * 文档 3.4 说「不要用 unlit」，那条针对的是宠物——平涂会让模型失去立体感；
+   * 背景恰恰相反，它就该是平的。
+   */
+  private buildBackdrop() {
+    const distance = BACKDROP_Z_OFFSET + CAM.z;
+    // 视锥在该距离上的可视高度；方形贴图按高度铺满，两侧多出的部分被裁掉，
+    // 所以构图的安全区是中间那条竖带（docs/06 §6.5）
+    const height = 2 * distance * Math.tan((CAM.fov / 2) * (Math.PI / 180));
+
+    const node = new Node('Backdrop');
+    node.layer = Layers.Enum.DEFAULT;
+    node.parent = this.root!;
+    node.setPosition(0, height / 2 - BACKDROP_DROP, -BACKDROP_Z_OFFSET);
+
+    const mr = node.addComponent(MeshRenderer);
+    mr.mesh = utils.createMesh(
+      primitives.plane({ width: height, length: height, widthSegments: 1, lengthSegments: 1 }),
+    );
+    // plane 默认躺在 XZ 平面上，立起来才能当背景板
+    node.setRotationFromEuler(90, 0, 0);
+
+    resources.load(`bg/${BG_NAME}/texture`, Texture2D, (err, tex) => {
+      if (this.disposed || !node.isValid) return;
+      if (err || !tex) {
+        console.warn(`[PetStage] 背景 ${BG_NAME} 加载失败，保留纯色底`, err);
+        node.destroy();
+        return;
+      }
+
+      const effect = EffectAsset.get('builtin-unlit');
+      if (!effect) {
+        console.warn('[PetStage] 找不到 builtin-unlit，背景改用纯色底');
+        node.destroy();
+        return;
+      }
+
+      const mat = new Material();
+      mat.initialize({ effectAsset: effect });
+      mat.setProperty('mainTexture', tex);
+      mat.setProperty('mainColor', Color.WHITE);
+      mr.material = mat;
+    });
+  }
+
   private buildGround() {
     // 用一个很扁的圆柱当地台，比平面多一点厚度，边缘能吃到光
     const mesh = utils.createMesh(primitives.cylinder(2.3, 2.3, 0.14, { radialSegments: 48 }));
@@ -263,6 +320,7 @@ export class PetStage extends Component {
 
       if (err || !prefab) {
         console.warn(`[PetStage] 模型 ${modelName} 加载失败，退回占位几何体`, err);
+        this.buildBackdrop();
         this.buildGround();
         this.buildPlaceholderPet();
         this.playPlaceholderIdle();
@@ -270,6 +328,7 @@ export class PetStage extends Component {
         return;
       }
 
+      this.buildBackdrop();
       this.buildGround();
       this.mountModel(instantiate(prefab));
       this.syncFromStore();

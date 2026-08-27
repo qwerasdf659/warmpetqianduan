@@ -77,7 +77,15 @@ def build_cap():
     brim.select_set(True)
     bpy.context.view_layer.objects.active = dome
     bpy.ops.object.join()
-    return bpy.context.active_object
+    obj = bpy.context.active_object
+
+    # 图元自带的 UV 各自铺满 0-1，join 之后球和盒子的 UV 完全叠在一起。
+    # 现在没贴图看不出问题，等 §7 要求的 256² 配饰贴图一上就会互相覆盖。
+    bpy.ops.object.mode_set(mode="EDIT")
+    bpy.ops.mesh.select_all(action="SELECT")
+    bpy.ops.uv.smart_project(angle_limit=1.15, island_margin=0.02)
+    bpy.ops.object.mode_set(mode="OBJECT")
+    return obj
 
 
 BUILDERS = {"acc_cap": build_cap}

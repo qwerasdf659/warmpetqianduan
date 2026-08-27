@@ -7,7 +7,18 @@
  * 点击后的所有状态同步都交给 core/actions，UI 只根据返回值播表现。
  */
 
-import { _decorator, Component, Node, Label, Graphics, Color, view } from 'cc';
+import {
+  _decorator,
+  Component,
+  Node,
+  Label,
+  Graphics,
+  Color,
+  Sprite,
+  SpriteFrame,
+  resources,
+  view,
+} from 'cc';
 import {
   COLOR,
   STAT_COLOR,
@@ -55,6 +66,8 @@ const BAR_H = 18;
 const BTN_H = 96;
 const BTN_GAP = 12;
 const BOTTOM_MARGIN = 48;
+/** 图标显示尺寸，docs/06 §6.2 */
+const ICON_SIZE = 48;
 
 /**
  * 属性条排成 2×2 而不是竖着堆四行。
@@ -119,10 +132,11 @@ export class MainView extends Component {
     // 相机取景对齐 UI 留出的那块空当，否则可视高度一变宠物就被面板压住
     this.stage.frameTo(this.L.petCenterY, this.L.h);
 
-    // 顺序即渲染层级：两个 Graphics 先挂，Label 全部在它们之上。
-    // 反过来的话按钮文字会被按钮底色盖住，而且 Label 之间也没法合批。
+    // 顺序即渲染层级，也决定能不能合批：先所有 Graphics，再所有 Sprite，最后所有 Label。
+    // 三类渲染组件各自用不同的材质与图集，交叉挂载会把批次切碎（docs/06 §4.4）。
     this.buildStatic();
     this.gfxDynamic = makeGraphics('GfxDynamic', this.node);
+    this.buildIcons();
     this.buildLabels();
     this.buildHitAreas();
 
@@ -217,6 +231,36 @@ export class MainView extends Component {
     fillRoundRect(g, L.left, L.panelBottom, L.w - MARGIN * 2, L.panelH, 20, COLOR.panelGlass);
   }
 
+  /**
+   * 互动按钮上的图标。
+   *
+   * 异步加载，到货前按钮只有文字——这也是加载失败时的最终形态。
+   * 图标是锦上添花，缺了不该让按钮不可用（铁律「软失败不死亡」）。
+   */
+  private buildIcons() {
+    const L = this.L;
+
+    ACTIONS.forEach((action, i) => {
+      const node = makeNode(`Icon_${action.key}`, this.node, ICON_SIZE, ICON_SIZE);
+      node.setPosition(this.buttonCenterX(i), L.btnY + BTN_H - ICON_SIZE / 2 - 10);
+
+      const sprite = node.addComponent(Sprite);
+      sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+      sprite.trim = false;
+      node.active = false;
+
+      resources.load(`icons/icon_${action.key}/spriteFrame`, SpriteFrame, (err, frame) => {
+        if (!node.isValid) return;
+        if (err || !frame) {
+          console.warn(`[MainView] 图标 icon_${action.key} 加载失败，按钮保持纯文字`, err);
+          return;
+        }
+        sprite.spriteFrame = frame;
+        node.active = true;
+      });
+    });
+  }
+
   private buildLabels() {
     const L = this.L;
 
@@ -262,11 +306,12 @@ export class MainView extends Component {
         align: 'center',
         bold: true,
       });
-      main.node.setPosition(cx, L.btnY + BTN_H / 2 + 12);
+      // 图标占了按钮上半部，文字整体下移让位
+      main.node.setPosition(cx, L.btnY + 30);
       this.btnLabels.push(main);
 
       const sub = makeLabel('', this.node, { size: 14, color: COLOR.accentText, align: 'center' });
-      sub.node.setPosition(cx, L.btnY + BTN_H / 2 - 18);
+      sub.node.setPosition(cx, L.btnY + 12);
       this.btnSubLabels.push(sub);
     });
   }

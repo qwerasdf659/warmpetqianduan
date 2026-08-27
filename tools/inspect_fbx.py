@@ -106,7 +106,8 @@ def inspect_armature(armature):
     return names
 
 
-def inspect_meshes(meshes):
+def inspect_meshes(meshes, kind):
+    limits = rig_spec.PART_LIMITS[kind]
     print("\nMESHES")
     total_tris = 0
     for obj in meshes:
@@ -119,28 +120,34 @@ def inspect_meshes(meshes):
               % (obj.name, tris, len(mesh.materials), uv_layers or "NONE"))
 
     print("\nMESH CHECKS")
-    check(total_tris <= rig_spec.TRI_BUDGET["pet"],
-          "total triangles within pet budget (%d)" % rig_spec.TRI_BUDGET["pet"],
+    check(total_tris <= rig_spec.TRI_BUDGET[kind],
+          "total triangles within %s budget (%d)" % (kind, rig_spec.TRI_BUDGET[kind]),
           "found %d" % total_tris)
 
-    check(len(meshes) <= rig_spec.MAX_SUBMESHES,
-          "submesh count within budget (%d)" % rig_spec.MAX_SUBMESHES,
+    check(len(meshes) <= limits["submeshes"],
+          "submesh count within budget (%d)" % limits["submeshes"],
           "found %d" % len(meshes))
 
     materials = {m.name for o in meshes for m in o.data.materials if m}
     check(materials, "meshes have materials assigned",
           "" if materials else "engine will render magenta placeholder")
-    check(len(materials) <= rig_spec.MAX_MATERIALS,
-          "material count within budget (%d)" % rig_spec.MAX_MATERIALS,
+    check(len(materials) <= limits["materials"],
+          "material count within budget (%d)" % limits["materials"],
           "found %d: %s" % (len(materials), sorted(materials)))
 
     names = [o.name for o in meshes]
-    for part in rig_spec.REQUIRED_MESH_PARTS:
+    for part in limits["required"]:
         check(part in names, "separate mesh node '%s' exists" % part,
               "" if part in names else "occlusion rule 5.5 cannot work without it")
 
-    multi_uv = [o.name for o in meshes if len(o.data.uv_layers) > 1]
-    check(not multi_uv, "single UV set per mesh", "multiple on %s" % multi_uv)
+    # 只查「不超过一套」会漏掉一套都没有的情况——体素重构就会把 UV 抹掉，
+    # 而没有 UV 的网格根本没法贴图，属于交付不合格。
+    bad_uv = [
+        "%s(%d)" % (o.name, len(o.data.uv_layers))
+        for o in meshes
+        if len(o.data.uv_layers) != 1
+    ]
+    check(not bad_uv, "exactly one UV set per mesh", "found %s" % bad_uv)
 
     # socket 骨骼上挂了权重，配饰会跟着网格变形，等于挂点失效。
     leaked = []
@@ -161,6 +168,142 @@ def inspect_meshes(meshes):
                 over4.append(obj.name)
                 break
     check(not over4, "at most 4 bone influences per vertex", "exceeded on %s" % over4)
+
+
+def _is_pow2(n):
+    return n > 0 and (n & (n - 1)) == 0
+
+
+def inspect_textures(meshes, kind):
+    """贴图规格（§5.8）。PVRTC 要求正方形且为 2 的幂，不满足会被强行拉到
+    更大的正方形，体积反而暴涨。"""
+    limit = rig_spec.TEX_SIZE[kind]
+    images = {}
+    for obj in meshes:
+        for mat in obj.data.materials:
+            if not mat or not mat.use_nodes:
+                continue
+            for node in mat.node_tree.nodes:
+                if node.type == "TEX_IMAGE" and node.image:
+                    images[node.image.name] = node.image
+
+    print("\nTEXTURES")
+    if not images:
+        print("  (none -- flat colour materials only)")
+        return
+    for name, img in sorted(images.items()):
+        print("  %-30s %dx%d  %s" % (name, img.size[0], img.size[1],
+                                     img.colorspace_settings.name))
+
+    print("\nTEXTURE CHECKS")
+    bad = ["%s(%dx%d)" % (n, i.size[0], i.size[1]) for n, i in sorted(images.items())
+           if i.size[0] != i.size[1] or not _is_pow2(i.size[0])]
+    check(not bad, "textures are square powers of two", "found %s" % bad)
+
+    over = ["%s(%d)" % (n, i.size[0]) for n, i in sorted(images.items())
+            if i.size[0] > limit]
+    check(not over, "textures within %s budget (%d)" % (kind, limit),
+          "found %s" % over)
+
+
+GRID = 256
+
+
+def _inside(px, py, a, b, c):
+    denom = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+    if abs(denom) < 1e-12:
+        return False
+    w0 = ((b[1] - c[1]) * (px - c[0]) + (c[0] - b[0]) * (py - c[1])) / denom
+    w1 = ((c[1] - a[1]) * (px - c[0]) + (a[0] - c[0]) * (py - c[1])) / denom
+    return w0 >= 0.0 and w1 >= 0.0 and (w0 + w1) <= 1.0
+
+
+def _uv_coverage(obj):
+    """把每个材质槽的 UV 三角形栅格化，返回 {材质名: {格子: 命中次数}} 和越界标记。
+
+    栅格化而不是只看包围盒，是因为「UV 不重叠」这条要判的是实际覆盖面积——
+    两组 UV 壳的包围盒几乎必然相交，但islands 之间留着边距就不算重叠。
+    """
+    mesh = obj.data
+    if not mesh.uv_layers:
+        return {}, False
+    mesh.calc_loop_triangles()
+    uvs = mesh.uv_layers[0].data
+
+    coverage = {}
+    out_of_range = False
+    for tri in mesh.loop_triangles:
+        pts = [tuple(uvs[li].uv) for li in tri.loops]
+        for u, v in pts:
+            if u < -1e-4 or u > 1.0001 or v < -1e-4 or v > 1.0001:
+                out_of_range = True
+
+        slot = tri.material_index
+        mat = mesh.materials[slot] if slot < len(mesh.materials) else None
+        key = mat.name if mat else "<none>"
+        cells = coverage.setdefault(key, {})
+
+        us = [p[0] for p in pts]
+        vs = [p[1] for p in pts]
+        x0 = max(0, int(min(us) * GRID)); x1 = min(GRID - 1, int(max(us) * GRID))
+        y0 = max(0, int(min(vs) * GRID)); y1 = min(GRID - 1, int(max(vs) * GRID))
+        for ix in range(x0, x1 + 1):
+            px = (ix + 0.5) / GRID
+            for iy in range(y0, y1 + 1):
+                py = (iy + 0.5) / GRID
+                if _inside(px, py, pts[0], pts[1], pts[2]):
+                    cells[(ix, iy)] = cells.get((ix, iy), 0) + 1
+
+    return coverage, out_of_range
+
+
+def inspect_uv_layout(meshes):
+    """UV 必须在 0-1 内，且共用同一材质的网格之间不能重叠（§5.8）。
+
+    重叠这条对我们尤其致命：三个部件共用一个材质球，也就共用一张贴图。
+    UV 叠在一起时烘焙会互相覆盖，耳朵上会印出一块肚子的颜色。
+    """
+    print("\nUV CHECKS")
+    per_obj = {}
+    out_of_range = []
+    for obj in meshes:
+        coverage, bad = _uv_coverage(obj)
+        per_obj[obj.name] = coverage
+        if bad:
+            out_of_range.append(obj.name)
+
+    check(not out_of_range, "all UVs inside 0-1", "outside on %s" % out_of_range)
+
+    # 允许极少量误报：格子中心正好落在两个相邻三角形的公共边上会被数两次
+    tolerance = 0.005
+
+    self_overlap = []
+    for name, coverage in per_obj.items():
+        for mat_name, cells in coverage.items():
+            if not cells:
+                continue
+            doubled = sum(1 for c in cells.values() if c > 1)
+            if doubled > len(cells) * tolerance:
+                self_overlap.append("%s/%s %d/%d" % (name, mat_name, doubled, len(cells)))
+    check(not self_overlap, "no UV shells overlap within a mesh (no mirrored UVs)",
+          "found %s" % self_overlap)
+
+    by_material = {}
+    for name, coverage in per_obj.items():
+        for mat_name, cells in coverage.items():
+            by_material.setdefault(mat_name, []).append((name, set(cells)))
+
+    cross = []
+    for mat_name, entries in sorted(by_material.items()):
+        for i in range(len(entries)):
+            for j in range(i + 1, len(entries)):
+                (na, ca), (nb, cb) = entries[i], entries[j]
+                shared = ca & cb
+                smaller = min(len(ca), len(cb)) or 1
+                if len(shared) > smaller * tolerance:
+                    cross.append("%s: %s^%s %d cells" % (mat_name, na, nb, len(shared)))
+    check(not cross, "meshes sharing a material do not overlap in UV space",
+          "found %s" % cross)
 
 
 def inspect_animations():
@@ -208,7 +351,7 @@ def inspect_animations():
                   "%d curve(s) drift, e.g. %s" % (len(drift), drift[:3]))
 
 
-def report_bounds(objs):
+def report_bounds(objs, kind):
     xs, ys, zs = [], [], []
     for o in objs:
         for corner in o.bound_box:
@@ -216,21 +359,31 @@ def report_bounds(objs):
             xs.append(wc.x); ys.append(wc.y); zs.append(wc.z)
     if not xs:
         return
+    height = max(zs) - min(zs)
     print("\nBOUNDS (Blender space, Z is up)")
     print("  x [%.3f, %.3f]  y [%.3f, %.3f]  z [%.3f, %.3f]"
           % (min(xs), max(xs), min(ys), max(ys), min(zs), max(zs)))
     print("  height=%.3f  origin_at_feet=%s"
-          % (max(zs) - min(zs), "yes" if abs(min(zs)) < 0.02 else "NO (min z=%.3f)" % min(zs)))
+          % (height, "yes" if abs(min(zs)) < 0.02 else "NO (min z=%.3f)" % min(zs)))
+
+    if kind == "pet":
+        lo, hi = rig_spec.HEIGHT_RANGE
+        check(lo <= height <= hi,
+              "overall height within %.2f-%.2f (baseline %.1f)"
+              % (lo, hi, rig_spec.TARGET_HEIGHT),
+              "found %.3f" % height)
 
 
 def main():
     argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
     ap = argparse.ArgumentParser()
     ap.add_argument("--file", required=True)
+    ap.add_argument("--kind", default="pet", choices=sorted(rig_spec.PART_LIMITS),
+                    help="按哪一类资源的预算校验，默认宠物")
     args = ap.parse_args(argv)
 
     print("=" * 68)
-    print("INSPECT: %s" % args.file)
+    print("INSPECT: %s  (kind=%s)" % (args.file, args.kind))
     print("=" * 68)
     load(args.file)
 
@@ -246,8 +399,10 @@ def main():
     inspect_animations()
 
     if meshes:
-        inspect_meshes(meshes)
-        report_bounds(meshes)
+        inspect_meshes(meshes, args.kind)
+        inspect_textures(meshes, args.kind)
+        inspect_uv_layout(meshes)
+        report_bounds(meshes, args.kind)
     else:
         print("\nNo meshes in file (skeleton-only export).")
 

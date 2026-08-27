@@ -91,6 +91,86 @@ TS 4.1 目标下 `class X extends Error` 会丢原型链，`instanceof` 静默�
 `director.getScene().globals.ambient.skyColor` 要的是**归一化 Vec4（0–1）**，
 不是 0–255 的 `Color`。传错类型不会报错，但效果不生效。
 
+## `useBakedAnimation` 必须在节点挂进场景**之前**设置
+
+组件激活时会按当时的 bake 标志初始化动画状态，而引擎在预烘焙分支里
+**直接跳过求值器的创建**（`skeletal-animation-state.ts`：`_doNotCreateEval = baked`）。
+那一步只跑一次，事后再改标志只是换了采样函数，求值器不存在，采样等于空转。
+
+prefab 里序列化的默认值是 `true`，所以顺序必须是：
+
+```ts
+const anim = pet.getComponent(SkeletalAnimation);
+anim.useBakedAnimation = false;   // 先设
+pet.parent = stageRoot;           // 再挂进场景
+anim.play('idle');
+```
+
+症状极具迷惑性：`isPlaying === true`、`time` 正常推进、`wrapMode` 正确、
+把动画幅度放大 8 倍也一样，骨骼纹丝不动，全程零报错。
+这条查了五轮，最后是读引擎源码才定位到的。
+
+## glTF 导入的动画默认播一次就停
+
+`AnimationClip.wrapMode` 默认是 `Normal`，播完停在最后一帧，
+一个周期之后看起来和静止完全一样。循环要在运行时显式设：
+
+```ts
+clip.wrapMode = AnimationClip.WrapMode.Loop;
+anim.play(name);
+anim.getState(name).wrapMode = clip.wrapMode;
+```
+
+## builtin-standard 的颜色属性叫 `mainColor`
+
+不是 `albedo`——那是 effect 里的 shader uniform 名，不是材质对外的属性名。
+传错只打一句 `illegal property name`，材质保持默认白色，很容易被当成灯光问题。
+
+`roughness` / `metallic` 则是对的，可以直接传。
+
+## 运行时只有被资源引用到的 effect 才会打进包
+
+`new Material().initialize({ effectName: 'builtin-standard' })` 在没有任何
+使用该 effect 的材质资源加载之前，拿不到 EffectAsset，做出来的材质没有有效 pass。
+把它赋给 `MeshRenderer` 会在引擎内部抛 `Cannot read properties of undefined
+(reading 'localSetLayout')`，堆栈离真正的原因隔了六层，完全看不出是加载顺序问题。
+
+所以运行时建材质前要先 `EffectAsset.get()` 判空并给出可读的报错，
+需要 PBR 材质的东西排在模型加载**之后**再建。
+
+## 组件 onLoad 抛异常会静默中断宿主的构建流程
+
+`addComponent()` 会同步执行 onLoad。如果宿主是「先挂组件、再建自己的 UI」的写法，
+子组件一抛异常，宿主后面的代码全部不执行——表现为界面只剩一片底色，
+而报错藏在控制台里毫不起眼。
+
+**次要组件的 onLoad 要自己兜住异常**，不要让它有机会带走宿主。
+
+## `setParent` 默认保留世界变换
+
+配饰挂到骨骼挂点之后必须把局部变换归零，否则引擎会反算出一个抵消偏移，
+配饰留在原地不动。配饰是按「原点在挂点接触面中心」建模的，局部变换为零才落位正确。
+
+## 模型子资源的 resources 路径要多一层
+
+`pet_dog.glb` 里的 prefab 是子资源，运行时路径是 `models/pet_dog/pet_dog`——
+`.glb` 被剥掉，末尾再跟一层子资源名。写成 `models/pet_dog` 加载不到。
+
+## UI 相机在 3D 相机之后渲染
+
+任何铺满屏幕的 UI 底图都会把 3D 内容盖住。**3D 场景的背景只能待在 3D 层**，
+做成一块贴在主体后方的四边形，材质用 unlit（图本身已经画好光影，
+再吃一遍实时光会脏）。
+
+## UI 布局和 3D 相机取景是两套坐标系
+
+UI 按 `view.getVisibleSize()` 排版，随机型变化；3D 相机却是固定的。
+两边各算各的，视口一矮主体就会被 UI 面板压住。
+
+必须由 UI 把预留区域的中心显式告诉 3D 侧，相机按视锥换算出垂直偏移对齐。
+反直觉的一点：**相机往下移，主体在画面里反而往上走**——
+主体没动，是取景中心跟着相机降了下去。
+
 ---
 
 # 性能与包体（详见 docs/06-UI设计规范.md）
