@@ -1,0 +1,58 @@
+{
+  "//": [
+    "由 tools/sync_resources.py 生成，勿手改。",
+    "这是「哪份产物是当前出包的那份」的唯一事实来源。",
+    "rebuild 字段是重建该产物的确切命令。"
+  ],
+  "generatedAt": "2026-08-28T07:14:42+00:00",
+  "models": {
+    "assets/resources/models/acc_cap.glb": {
+      "sha256": "c8f32b787868cc8188ac73305e6f906990e66559b0e111e5cf54725f4d9002c7",
+      "bytes": 6644,
+      "builtFrom": "assets-src/accessory/acc_cap.glb",
+      "rebuild": "tools\\blender.ps1 build_accessory.py --out assets-src/accessory"
+    },
+    "assets/resources/models/pet_cat.glb": {
+      "sha256": "51c03446c02e64a0c6729e0a563626d1e6a0bbb362ff084381a9b2666968eb26",
+      "bytes": 345684,
+      "builtFrom": "assets-src/pet/pet_cat.glb",
+      "rebuild": "tools\\blender.ps1 build_pet_from_source.py --source assets-src/pet/source/cat_normalized.glb --out assets-src/pet --name pet_cat"
+    },
+    "assets/resources/models/pet_dog.glb": {
+      "sha256": "ed1ced97da004d125a271a13addb7f12405e8b72d1f0a78fd70aca7ea093c2d5",
+      "bytes": 385104,
+      "builtFrom": "assets-src/pet/pet_dog.glb",
+      "rebuild": "tools\\blender.ps1 build_skeleton.py --out assets-src/pet --species dog"
+    }
+  },
+  "bakeInputs": {
+    "assets-src/pet/tex/pet_cat_basecolor.jpg": {
+      "sha256": "1f9187c92101ac117ae3e858ebf87722e4283f6b44327b502da89469c25be907",
+      "bytes": 42980
+    },
+    "assets-src/pet/tex/pet_cat_normal.jpg": {
+      "sha256": "743af3faa76731f70878f29636fa6632c8c3f603e999fe354831789a3927286f",
+      "bytes": 55220
+    },
+    "assets-src/pet/tex/pet_dog_basecolor.jpg": {
+      "sha256": "7d392e79cebe756f7eb2d2bb0cad9d4b12b436150047b48ef0507dd8b0d132c5",
+      "bytes": 50689
+    },
+    "assets-src/pet/tex/pet_dog_normal.jpg": {
+      "sha256": "d941b2b634b583548cf9004d0c83f9ea36ac63fd24cf8ff25b185bc8e69cabf7",
+      "bytes": 88321
+    },
+    "assets-src/pet/tex/fur_detail.png": {
+      "sha256": "e757cf520cbf298cb25ee252b1996258ca5bd05e10ab6bb530a2e481b49566c4",
+      "bytes": 317760
+    },
+    "assets-src/pet/tex/eye_detail.png": {
+      "sha256": "f6a338cc07b663123df6cf4adc39ef0549d47a88e4a1261bfb43e2c1cc8def9f",
+      "bytes": 11812
+    },
+    "assets-src/pet/source/cat_normalized.glb": {
+      "sha256": "9ec30e4c6cf4fae762cbc5bdca7e30981172107de0a48da3013db8093b3e4f00",
+      "bytes": 43028
+    }
+  }
+}

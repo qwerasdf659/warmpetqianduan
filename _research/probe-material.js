@@ -16,7 +16,9 @@ async function inspect(model) {
     pattern: root + '/**',
   });
 
-  const mat = assets.find((a) => a.name === 'pet_body.material');
+  // 别写死材质名：外来模型的材质叫什么都有可能（这只猫叫 lambert2SG），
+  // 按后缀找才通用。
+  const mat = assets.find((a) => (a.name || '').endsWith('.material'));
   let material = null;
   if (mat) {
     const info = await Editor.Message.request('asset-db', 'query-asset-info', mat.uuid);

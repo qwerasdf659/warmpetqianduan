@@ -3,8 +3,12 @@
     "独立的类型检查配置。",
     "Cocos 构建只做转译不做类型检查，像 Graphics.arcTo 这种「引擎根本没这个方法」的错误",
     "在构建期一声不吭，跑起来才半截白屏，很难定位。这份配置把这类问题提前到编译期。",
-    "cc 的类型声明直接引编辑器自带的那份，不依赖 temp/declarations（那个要编辑器手动生成、默认是空的）。",
-    "跑法：npx -y -p typescript@5.6 tsc -p _research/tsconfig.check.json"
+    "",
+    "不要直接 tsc -p 这个文件——它缺 cc.d.ts 那一项，引擎类型全是 any，检查会静默通过。",
+    "跑法：node _research/typecheck.mjs",
+    "",
+    "那个脚本按本机 Creator 安装位置解析 cc.d.ts，生成 tsconfig.check.local.json 再调 tsc。",
+    "cc 的类型声明用编辑器自带的那份，不依赖 temp/declarations（那个要编辑器手动生成、默认是空的）。"
   ],
   "compilerOptions": {
     "target": "ES2017",
@@ -19,8 +23,5 @@
     "strict": false,
     "noImplicitAny": false
   },
-  "include": ["../assets/scripts/**/*.ts"],
-  "files": [
-    "C:/ProgramData/cocos/editors/Creator/3.8.8/resources/resources/3d/engine/bin/.declarations/cc.d.ts"
-  ]
+  "include": ["../assets/scripts/**/*.ts"]
 }

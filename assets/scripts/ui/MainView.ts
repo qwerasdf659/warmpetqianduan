@@ -27,6 +27,9 @@ import {
   makeGraphics,
   makeLabel,
   fillRoundRect,
+  fillRoundRectRim,
+  softShadow,
+  pillPlate,
   floatText,
   pop,
 } from './widgets';
@@ -81,6 +84,18 @@ const BAR_ROW_H = 44;
 const BAR_COL_GAP = 16;
 const PANEL_PAD = 18;
 
+/**
+ * 货币计数器做成药丸形：图标 + 数字，外面一圈厚亮边加投影。
+ *
+ * 之所以只显示数字、不写「游戏币」三个字：图标和颜色已经把两个池区分开了
+ * （金币是暖金 + 爪印，积分是冷紫 + 星徽），文字纯属重复，还把顶部塞满。
+ * 两个池必须一眼可分是铁律，靠的是色相差不是文案。
+ */
+const PILL_W = 132;
+const PILL_H = 34;
+const PILL_ICON = 22;
+const PILL_PAD = 9;
+
 /** 一次算好所有位置，绘制和文字共用同一份，避免两处各算一遍算歪 */
 interface Layout {
   w: number;
@@ -98,6 +113,11 @@ interface Layout {
   barCellW: number;
   btnY: number;
   btnW: number;
+  /** 药丸左边缘，两个药丸共用 */
+  pillX: number;
+  /** 药丸底边（不是中心），画圆角矩形要的是底边 */
+  coinPillY: number;
+  pointPillY: number;
 }
 
 @ccclass('MainView')
@@ -115,6 +135,8 @@ export class MainView extends Component {
   private barValueLabels: Label[] = [];
   private btnLabels: Label[] = [];
   private btnSubLabels: Label[] = [];
+  /** 按压时图标要跟着按钮一起下移，所以得留引用 */
+  private btnIcons: Node[] = [];
 
   /** 正在请求中的动作，防止连点重复提交 */
   private busy: Record<string, boolean> = {};
@@ -204,6 +226,9 @@ export class MainView extends Component {
       barCellW,
       btnY,
       btnW: (w - MARGIN * 2 - BTN_GAP * 3) / 4,
+      pillX: w / 2 - MARGIN - PILL_W,
+      coinPillY: nameY - PILL_H / 2,
+      pointPillY: levelY - PILL_H / 2,
     };
   }
 
@@ -227,8 +252,14 @@ export class MainView extends Component {
   private buildStatic() {
     const L = this.L;
     const g = makeGraphics('GfxStatic', this.node);
+    const panelW = L.w - MARGIN * 2;
 
-    fillRoundRect(g, L.left, L.panelBottom, L.w - MARGIN * 2, L.panelH, 20, COLOR.panelGlass);
+    // 投影必须先画：Graphics 是按调用顺序叠的，后画的盖在先画的上面
+    softShadow(g, L.left, L.panelBottom, panelW, L.panelH, 20, 8);
+    fillRoundRectRim(g, L.left, L.panelBottom, panelW, L.panelH, 20, COLOR.panelGlass, 3);
+
+    pillPlate(g, L.pillX, L.coinPillY, PILL_W, PILL_H, COLOR.panel);
+    pillPlate(g, L.pillX, L.pointPillY, PILL_W, PILL_H, COLOR.panel);
   }
 
   /**
@@ -240,13 +271,21 @@ export class MainView extends Component {
   private buildIcons() {
     const L = this.L;
 
-    ACTIONS.forEach((action, i) => {
+    // 货币图标。资源是单色剪影，颜色在这里上——一份剪影供两处用不同色，
+    // 比出两张带色的图省一半资源，也不会有抠像残留的紫边。
+    this.loadIcon('icon_coin', PILL_ICON, COLOR.coin,
+      L.pillX + PILL_PAD + PILL_ICON / 2, L.coinPillY + PILL_H / 2);
+    this.loadIcon('icon_point', PILL_ICON, COLOR.point,
+      L.pillX + PILL_PAD + PILL_ICON / 2, L.pointPillY + PILL_H / 2);
+
+    this.btnIcons = ACTIONS.map((action, i) => {
       const node = makeNode(`Icon_${action.key}`, this.node, ICON_SIZE, ICON_SIZE);
       node.setPosition(this.buttonCenterX(i), L.btnY + BTN_H - ICON_SIZE / 2 - 10);
 
       const sprite = node.addComponent(Sprite);
       sprite.sizeMode = Sprite.SizeMode.CUSTOM;
       sprite.trim = false;
+      sprite.color = COLOR.accentText;
       node.active = false;
 
       resources.load(`icons/icon_${action.key}/spriteFrame`, SpriteFrame, (err, frame) => {
@@ -258,6 +297,34 @@ export class MainView extends Component {
         sprite.spriteFrame = frame;
         node.active = true;
       });
+      return node;
+    });
+  }
+
+  /**
+   * 加载一个图标并染色。
+   *
+   * 到货前节点是隐藏的，加载失败就一直隐藏——图标是锦上添花，
+   * 缺了不能让计数器或按钮不可用（铁律「软失败不死亡」）。
+   */
+  private loadIcon(key: string, size: number, tint: Color, x: number, y: number) {
+    const node = makeNode(`Icon_${key}`, this.node, size, size);
+    node.setPosition(x, y);
+
+    const sprite = node.addComponent(Sprite);
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    sprite.trim = false;
+    sprite.color = tint;
+    node.active = false;
+
+    resources.load(`icons/${key}/spriteFrame`, SpriteFrame, (err, frame) => {
+      if (!node.isValid) return;
+      if (err || !frame) {
+        console.warn(`[MainView] 图标 ${key} 加载失败，改用纯文字`, err);
+        return;
+      }
+      sprite.spriteFrame = frame;
+      node.active = true;
     });
   }
 
@@ -270,11 +337,16 @@ export class MainView extends Component {
     this.levelLabel = makeLabel('', this.node, { size: 16, color: COLOR.dim });
     this.levelLabel.node.setPosition(L.left, L.levelY);
 
-    this.coinLabel = makeLabel('', this.node, { size: 20, color: COLOR.coin, align: 'right' });
-    this.coinLabel.node.setPosition(L.right, L.nameY);
+    // 药丸里的数字右对齐贴在右内边，图标占左边——数字位数变化时左右都不跳
+    this.coinLabel = makeLabel('', this.node, {
+      size: 19, color: COLOR.title, align: 'right', bold: true,
+    });
+    this.coinLabel.node.setPosition(L.pillX + PILL_W - PILL_PAD, L.coinPillY + PILL_H / 2);
 
-    this.pointLabel = makeLabel('', this.node, { size: 16, color: COLOR.point, align: 'right' });
-    this.pointLabel.node.setPosition(L.right, L.levelY);
+    this.pointLabel = makeLabel('', this.node, {
+      size: 19, color: COLOR.title, align: 'right', bold: true,
+    });
+    this.pointLabel.node.setPosition(L.pillX + PILL_W - PILL_PAD, L.pointPillY + PILL_H / 2);
 
     this.bubbleLabel = makeLabel('', this.node, {
       size: 19,
@@ -359,8 +431,8 @@ export class MainView extends Component {
         ? `Lv${pet.level} 满级 · 亲密度 ${pet.intimacy}`
         : `Lv${pet.level} · 还需 ${pet.expToNext} 经验 · 亲密度 ${pet.intimacy}`;
     }
-    if (this.coinLabel) this.coinLabel.string = `游戏币 ${store.wallet.gameCoin}`;
-    if (this.pointLabel) this.pointLabel.string = `营销积分 ${store.wallet.marketingPoint}`;
+    if (this.coinLabel) this.coinLabel.string = `${store.wallet.gameCoin}`;
+    if (this.pointLabel) this.pointLabel.string = `${store.wallet.marketingPoint}`;
     if (this.bubbleLabel) this.bubbleLabel.string = describeMood(pet);
   }
 
@@ -444,17 +516,33 @@ export class MainView extends Component {
       const ready = remain <= 0 && !this.busy[action.key];
       const down = ready && this.pressed === action.key;
 
-      // 按下时缩进 3px 并换成加深的主色，手感上「陷下去」
-      const inset = down ? 3 : 0;
+      // 按下时整块下移 3px、投影收窄，手感上「陷下去」。
+      // 上一版是四边同时缩进，看着像按钮变小而不是被按下——真实的按压
+      // 是位置变了、体积没变，所以现在只挪 y 并压掉投影。
+      const drop = down ? 3 : 0;
       const fill = !ready ? COLOR.disabled : down ? COLOR.accentPressed : COLOR.accent;
-      fillRoundRect(g, x + inset, L.btnY + inset, L.btnW - inset * 2, BTN_H - inset * 2, 20, fill);
+      const by = L.btnY - drop;
+
+      softShadow(g, x, by, L.btnW, BTN_H, 20, down ? 3 : 7);
+      fillRoundRectRim(g, x, by, L.btnW, BTN_H, 20, fill, 3);
+
+      // 图标和文字跟着按钮一起下移，否则按下时底板会从字底下滑走
+      const cx = this.buttonCenterX(i);
+      const icon = this.btnIcons[i];
+      if (icon && icon.isValid) {
+        icon.setPosition(cx, by + BTN_H - ICON_SIZE / 2 - 10);
+      }
 
       const main = this.btnLabels[i];
       const sub = this.btnSubLabels[i];
-      if (main) main.color = ready ? COLOR.accentText : COLOR.dim;
+      if (main) {
+        main.color = ready ? COLOR.accentText : COLOR.dim;
+        main.node.setPosition(cx, by + 30);
+      }
       if (sub) {
         sub.color = ready ? COLOR.accentText : COLOR.dim;
         sub.string = this.busy[action.key] ? '…' : remain > 0 ? `${Math.ceil(remain / 1000)}s` : '';
+        sub.node.setPosition(cx, by + 12);
       }
     });
   }

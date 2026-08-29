@@ -58,6 +58,13 @@ export const COLOR = {
   coin: new Color(230, 176, 60, 255),
   /** 营销积分用冷紫，和金币的暖金拉开——两个池必须一眼可分 */
   point: new Color(139, 125, 191, 255),
+  /**
+   * 厚亮边。竞品里那种「有分量」的观感一半来自这条边——
+   * 一圈近白的描边把控件从背景上摘出来，比加深阴影管用。
+   */
+  rim: new Color(255, 255, 255, 235),
+  /** 投影。透明度很低，靠叠三层出柔和过渡（见 softShadow） */
+  shadow: new Color(120, 92, 66, 26),
 };
 
 /** 四条状态条各自的配色，低于阈值时转警示色 */
@@ -161,6 +168,72 @@ export function fillRoundRect(
   g.fillColor = color;
   g.roundRect(x, y, w, h, Math.min(r, w / 2, h / 2));
   g.fill();
+}
+
+/**
+ * 柔和投影。
+ *
+ * Cocos 的 Graphics 没有模糊,所以用**三层递增的半透明圆角矩形**近似:
+ * 每层比上一层大一点、往下偏一点,叠出来的边缘就是渐变的。
+ * 单层实心投影会像贴了一块灰纸板,这是竞品 UI 和「代码画的方块」之间
+ * 差别最大的一处,而成本只有三次 fill。
+ *
+ * 必须画在被投影的形状**之前**,Graphics 是按调用顺序叠的。
+ */
+export function softShadow(
+  g: Graphics,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  r: number,
+  spread = 6,
+): void {
+  if (w <= 0 || h <= 0) return;
+  for (let i = 3; i >= 1; i--) {
+    const grow = (spread * i) / 3;
+    fillRoundRect(g, x - grow, y - grow - spread * 0.5, w + grow * 2, h + grow * 2, r + grow, COLOR.shadow);
+  }
+}
+
+/**
+ * 带厚亮边的圆角矩形:先画大一圈的边色,再把填充盖在中间。
+ *
+ * 用「大一圈再盖回来」而不是 Graphics 的 stroke,是因为 stroke 的线宽是
+ * 沿路径居中的,圆角处会和填充错开半个线宽,放大看能看到毛边。
+ */
+export function fillRoundRectRim(
+  g: Graphics,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  r: number,
+  fill: Color,
+  rimWidth = 3,
+  rim: Color = COLOR.rim,
+): void {
+  if (w <= 0 || h <= 0) return;
+  fillRoundRect(g, x - rimWidth, y - rimWidth, w + rimWidth * 2, h + rimWidth * 2, r + rimWidth, rim);
+  fillRoundRect(g, x, y, w, h, r, fill);
+}
+
+/**
+ * 药丸计数器的底:全圆角 + 厚亮边 + 投影。
+ *
+ * 高度的一半就是圆角半径,所以两端是半圆。竞品的货币栏全是这个形状,
+ * 因为它和方角面板放在一起时层级最分明。
+ */
+export function pillPlate(
+  g: Graphics,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  fill: Color,
+): void {
+  softShadow(g, x, y, w, h, h / 2, 5);
+  fillRoundRectRim(g, x, y, w, h, h / 2, fill, 3);
 }
 
 /**

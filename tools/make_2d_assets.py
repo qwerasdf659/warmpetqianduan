@@ -6,8 +6,14 @@
 依赖 Pillow：python -m pip install Pillow
 
 用法：
-  python tools/make_2d_assets.py icons  <原始2x2网格图> <输出目录>
-  python tools/make_2d_assets.py bg     <原始背景图>   <输出路径>
+  python tools/make_2d_assets.py icons <原始网格图> <输出目录> [名字,逗号分隔]
+  python tools/make_2d_assets.py bg    <原始背景图> <输出路径>
+
+图标名不传就用四个互动图标。名字个数决定怎么切格子（两个一行，超过两个就两列）。
+
+**图标一律输出成单色剪影**，颜色在代码里用 `Sprite.color` 上。
+货币图标要金色和紫色（§6.3），但生成两份带色的图不如生成一份剪影——
+抠像时边缘的抠像色残留可以一次性刷掉，带色的图做不到，会留一圈紫边。
 """
 
 import os
@@ -24,7 +30,7 @@ ICON_SIZE = 128
 ICON_SAFE = 10  # 四边各留 10px，图形主体控制在 108×108 内
 BG_SIZE = 1024  # 正方形且为 2 的幂，PVRTC 的硬性要求（§4.3）
 
-# 2×2 网格的读取顺序，对应 docs/06 §6.2 的四个 itemKey
+# 不传名字时的默认，对应 docs/06 §6.2 的四个 itemKey
 ICON_ORDER = ["icon_feed", "icon_bath", "icon_pet", "icon_play"]
 
 
@@ -73,15 +79,19 @@ def fit_icon(rgba):
     return canvas
 
 
-def build_icons(src_path, out_dir):
+def build_icons(src_path, out_dir, names=None):
+    names = names or ICON_ORDER
+    cols = min(2, len(names))
+    rows = (len(names) + cols - 1) // cols
+
     grid = Image.open(src_path)
     w, h = grid.size
-    cw, ch = w // 2, h // 2
+    cw, ch = w // cols, h // rows
     os.makedirs(out_dir, exist_ok=True)
 
     written = []
-    for i, name in enumerate(ICON_ORDER):
-        col, row = i % 2, i // 2
+    for i, name in enumerate(names):
+        col, row = i % cols, i // cols
         tile = grid.crop((col * cw, row * ch, (col + 1) * cw, (row + 1) * ch))
         icon = fit_icon(key_out(tile))
 
@@ -118,7 +128,8 @@ def main():
 
     mode, src, dst = sys.argv[1], sys.argv[2], sys.argv[3]
     if mode == "icons":
-        for name, path, size in build_icons(src, dst):
+        names = sys.argv[4].split(",") if len(sys.argv) > 4 else None
+        for name, path, size in build_icons(src, dst, names):
             print("  %-12s %dx%d  %s" % (name, size[0], size[1], path))
     elif mode == "bg":
         path, size = build_bg(src, dst)

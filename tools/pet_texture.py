@@ -22,6 +22,7 @@
 import os
 
 import bpy
+from mathutils import Matrix, Vector
 
 # 贴图尺寸和调色板都在 rig_spec / docs/06 §5.2 色卡里，改那边要一并改这里
 import rig_spec
@@ -34,12 +35,29 @@ PALETTE = {
     "belly":    "#E7D5BD",  # 腹部，比主毛色浅一档
     "muzzle":   "#F0E4D2",  # 吻部 / 眉点 / 尾尖，最浅的一档
     "pad":      "#D99A97",  # 耳内 / 爪垫，唯一的冷调点缀
-    "blush":    "#E3A49B",  # 腮红，比爪垫浅一点
-    "glint":    "#FFFDF8",  # 眼高光
-    # 眼睛两层：眼球是虹膜色，正面一小片瞳孔。整体仍落在色卡 #2E2119 那个
-    # 深色档附近，只是有了结构——单一深色的眼球在两百像素上就是两个洞。
-    "iris":     "#71482A",
-    "pupil":    "#150F0B",
+    "blush":    "#E8A0A0",  # 腮红。参考图里是明确的粉色椭圆，不是若有若无的红晕
+    # 花色斑块。参考图那只是双色三花：奶油底 + 橘色斑。
+    # 单一毛色是「一只素猫」，加了斑块才有「品种」的感觉，
+    # 而且斑块的边界给平涂的大面积提供了必要的分割。
+    "patch":    "#E8B26A",
+    "glint":    "#FFFDF8",  # 眼高光 / 星形高光
+    # 眼睛四层——深眼廓、虹膜上缘、虹膜下缘、瞳孔——全部画进一张贴花，
+    # 沿光轴平面投影到眼球上（见 make_eye_texture.py）。
+    # 参考图那双眼睛是**深巧克力色**，之前 #71482A 那档浅棕在两百像素的
+    # 屏幕上读成两颗浅色纽扣，既没有眼廓也没有高光。
+    # 虹膜要**明显比眼廓浅**。深色只留给最外那一圈当描边用——
+    # 把整只眼睛都做成近黑（试过一版 #33200F / #7A4B2E）之后，白色星形
+    # 成了眼睛里唯一能看见的东西，读起来是「星形瞳孔」而不是「眼睛上的反光」。
+    # 参考图里那双眼睛的虹膜是中等暖棕，星星只占其中一小块。
+    #
+    # 这两个值就是**最终会看到的颜色**，不用再为着色留余量：
+    # 眼球前半球的法线被拍平到光轴（`build_skeleton.flatten_eye_normals`），
+    # 整只眼睛落在满亮度那一档，不再被 shadeColor 乘暗。
+    # 之前按「会被乘暗」预留过一版 #A0704F，拍平之后就偏亮了。
+    "iris":      "#82573A",  # 虹膜下缘，暖一档
+    "iris_deep": "#63422C",  # 虹膜上缘，上眼睑挡光的那一侧
+    "eye_rim":   "#2E1C12",  # 眼廓，眼睛里唯一的深色
+    "pupil":     "#150F0B",
     "nose":     "#2E2119",  # 鼻、嘴，色卡定稿值
 }
 
@@ -60,6 +78,11 @@ COLOR_ATTR = "fur"
 # 头之间没有接缝），而且 UV 怎么排都不影响图案。平铺用 MIRROR，镜像边界
 # 逐像素对齐，在毛发这种无规则纹理上看不出对称。
 FUR_DETAIL = "assets-src/pet/tex/fur_detail.png"
+# 眼睛贴花，由 make_eye_texture.py 画出来，跑一次就行，产物进 git。
+EYE_DECAL = "assets-src/pet/tex/eye_detail.png"
+# 贴花的作用半径，单位是眼球半径。眼球自身的三角面最深处缩到 0.95 R
+# （十段六环的球，弦高 0.049 R），而最近的邻居——鼻子——在 1.34 R 之外。
+EYE_MASK_RADIUS = 1.15
 # 投影尺度决定毛缕在贴图上有多宽，这个数是被贴图分辨率**逼出来的**，不是审美选择：
 #
 # 512² 摊到整只宠物约 2 m² 的表面，一个纹素折合现实里约 3 mm。比纹素更细的
@@ -305,6 +328,142 @@ def build_bake_shader(mat, detail_img):
     links.new(bump.outputs["Normal"], bsdf.inputs["Normal"])
 
 
+def _lerp_socket(nt, base, color, fac):
+    """base + (color - base) * fac。
+
+    用三个 Vector Math 节点手算，而不是 Mix 节点：4.x 的 `ShaderNodeMix`
+    把浮点 / 向量 / 颜色三套插槽塞在同一个节点里，`inputs["Factor"]` 是重名的，
+    只能按索引取，而索引在小版本之间动过。向量运算的插槽名十年没变。
+    """
+    links = nt.links
+
+    diff = nt.nodes.new("ShaderNodeVectorMath")
+    diff.operation = "SUBTRACT"
+    links.new(color, diff.inputs[0])
+    links.new(base, diff.inputs[1])
+
+    scaled = nt.nodes.new("ShaderNodeVectorMath")
+    scaled.operation = "SCALE"
+    links.new(diff.outputs["Vector"], scaled.inputs[0])
+    links.new(fac, scaled.inputs["Scale"])
+
+    total = nt.nodes.new("ShaderNodeVectorMath")
+    total.operation = "ADD"
+    links.new(base, total.inputs[0])
+    links.new(scaled.outputs["Vector"], total.inputs[1])
+    return total.outputs["Vector"]
+
+
+def _axis_euler(axis):
+    """构造一个「把世界坐标转到以光轴为 +Z 的坐标系」的旋转。
+
+    横轴取世界水平方向（世界上方 × 光轴），所以两只眼睛的贴花朝向一致。
+    换成「从头心指向眼球」那种各自的法平面，左右眼会各自外旋一点，
+    星形高光一只偏左一只偏右，读起来像斜视——这和 `species._face` 里
+    把瞳孔光轴定成「几乎正前方」是同一个理由。
+    """
+    w = axis.normalized()
+    u = Vector((0.0, 0.0, 1.0)).cross(w)
+    if u.length < 1e-6:          # 光轴正好朝上朝下时退化，眼睛不会这么摆，兜个底
+        u = Vector((1.0, 0.0, 0.0))
+    u.normalize()
+    v = w.cross(u)
+    # 行向量就是局部基向量，所以这个矩阵本身是 world → local
+    return Matrix((u, v, w)).to_euler()
+
+
+def _eye_uv(nt, position, center, radius, axis):
+    """世界坐标 → 贴花的 UV：沿光轴做平面投影，图的 [-1,1] 对应 [-R, +R]。
+
+    平移和旋转必须分两个 Mapping 节点。POINT 模式算的是
+    `Location + Rotation × (Scale × Vector)`——缩放和旋转都在平移之前，
+    而我们要的顺序正相反：先减掉眼球中心，再转到光轴坐标系。
+    """
+    links = nt.links
+
+    move = nt.nodes.new("ShaderNodeMapping")
+    move.vector_type = "POINT"
+    move.inputs["Location"].default_value = (-center.x, -center.y, -center.z)
+    links.new(position, move.inputs["Vector"])
+
+    frame = nt.nodes.new("ShaderNodeMapping")
+    frame.vector_type = "POINT"
+    frame.inputs["Rotation"].default_value = _axis_euler(axis)
+    frame.inputs["Scale"].default_value = (0.5 / radius,) * 3
+    # 投影出来是 [-1,1]，图像节点要 [0,1]。缩放已经除掉半径，这里只挪半格。
+    frame.inputs["Location"].default_value = (0.5, 0.5, 0.0)
+    links.new(move.outputs["Vector"], frame.inputs["Vector"])
+    return frame.outputs["Vector"]
+
+
+def _eye_fac(nt, position, center, radius, alpha):
+    """贴花的混合权重 = 贴图 alpha × 「离眼球中心够近」。
+
+    光靠贴图的 CLIP 边界不够：平面投影在**光轴方向上没有边界**，
+    吻部和鼻子正好落在眼睛那个投影方形里（鼻子离眼心 1.34 R，
+    但它在投影平面上的坐标在 [-1,1] 内），会被印上半个虹膜。
+    球面判据把它挡在外面。
+    """
+    links = nt.links
+
+    dist = nt.nodes.new("ShaderNodeVectorMath")
+    dist.operation = "DISTANCE"
+    links.new(position, dist.inputs[0])
+    dist.inputs[1].default_value = center[:]
+
+    near = nt.nodes.new("ShaderNodeMath")
+    near.operation = "LESS_THAN"
+    near.inputs[1].default_value = radius * EYE_MASK_RADIUS
+    links.new(dist.outputs["Value"], near.inputs[0])
+
+    fac = nt.nodes.new("ShaderNodeMath")
+    fac.operation = "MULTIPLY"
+    links.new(alpha, fac.inputs[0])
+    links.new(near.outputs["Value"], fac.inputs[1])
+    return fac.outputs["Value"]
+
+
+def build_detail_bake_shader(mat, eye_img, eyes):
+    """五官的烘焙着色器：顶点色打底 + 眼睛贴花。
+
+    在这之前 `pet_detail` 一直是**纯色**材质球，烘出来整片死板的深色：
+    `paint_vertex_colors` 给虹膜、瞳孔、鼻子分别算好的颜色，一个都没进贴图。
+    烘焙读的是材质的着色器，不是顶点色本身——所以「眼睛读成两个洞」
+    的根源在这里，不在几何，前面几轮一直在改造型是找错了地方。
+
+    `eyes` 是 [(中心, 半径, 光轴)]，全部已经在 Blender 空间。
+    """
+    nt = mat.node_tree
+    nt.nodes.clear()
+    links = nt.links
+
+    out = nt.nodes.new("ShaderNodeOutputMaterial")
+    bsdf = nt.nodes.new("ShaderNodeBsdfPrincipled")
+    bsdf.inputs["Roughness"].default_value = DETAIL_ROUGHNESS
+    bsdf.inputs["Metallic"].default_value = 0.0
+    links.new(bsdf.outputs["BSDF"], out.inputs["Surface"])
+
+    vcol = nt.nodes.new("ShaderNodeVertexColor")
+    vcol.layer_name = COLOR_ATTR
+    color = vcol.outputs["Color"]
+
+    # 用**世界坐标**，不是 Object 坐标。五官是 join 进 part_body 的，
+    # 之后顶点坐标以那个部件的原点为基准，而眼球中心是全局量。
+    # （毛流那边刻意用 Object 坐标，为的是跨部件连续，目的不同。）
+    position = nt.nodes.new("ShaderNodeNewGeometry").outputs["Position"]
+
+    for center, radius, axis in eyes:
+        tex = nt.nodes.new("ShaderNodeTexImage")
+        tex.image = eye_img
+        # 不平铺：圆外 alpha=0，那些纹素交还给顶点色。
+        tex.extension = "CLIP"
+        links.new(_eye_uv(nt, position, center, radius, axis), tex.inputs["Vector"])
+        fac = _eye_fac(nt, position, center, radius, tex.outputs["Alpha"])
+        color = _lerp_socket(nt, color, tex.outputs["Color"], fac)
+
+    links.new(color, bsdf.inputs["Base Color"])
+
+
 def _target_node(mat, img):
     """烘焙写进「材质里处于激活状态的那个图像节点」，每个参与烘焙的材质都要有一个。"""
     nt = mat.node_tree
@@ -401,20 +560,35 @@ def strip_bake_target(mat):
         nt.nodes.remove(node)
 
 
-def bake(parts, body_mat, other_mats, to_blender, out_dir, name, blobs, features):
+def _load_input(path, hint, colorspace):
+    path = os.path.abspath(path)
+    if not os.path.exists(path):
+        raise RuntimeError("missing %s: %s -- run tools/%s first"
+                           % (hint[0], path, hint[1]))
+    img = bpy.data.images.load(path)
+    img.colorspace_settings.name = colorspace
+    return img
+
+
+def bake(parts, body_mat, other_mats, to_blender, out_dir, name,
+         blobs, features, eyes):
     """整套流程：染顶点色 → 烘 basecolor → 烘 normal → 换成带贴图的材质。
 
     返回两张贴图的路径。
     """
-    detail_path = os.path.abspath(FUR_DETAIL)
-    if not os.path.exists(detail_path):
-        raise RuntimeError(
-            "missing fur detail map: %s -- run tools/make_fur_detail.py first" % detail_path)
-    detail_img = bpy.data.images.load(detail_path)
-    detail_img.colorspace_settings.name = "Non-Color"
+    detail_img = _load_input(FUR_DETAIL, ("fur detail map", "make_fur_detail.py"),
+                             "Non-Color")
+    # 贴花文件里存的是 sRGB 值（make_eye_texture 关掉了色彩变换直接写出），
+    # 所以这里就按 sRGB 解读，Blender 会转成线性再参与烘焙。
+    eye_img = _load_input(EYE_DECAL, ("eye decal", "make_eye_texture.py"), "sRGB")
+
+    eyes_bl = [(to_blender(center), radius * rig_spec.RIG_SCALE,
+                to_blender(axis)) for center, radius, axis in eyes]
 
     paint_vertex_colors(parts, blobs, features, to_blender)
     build_bake_shader(body_mat, detail_img)
+    for mat in other_mats:
+        build_detail_bake_shader(mat, eye_img, eyes_bl)
     mats = [body_mat] + list(other_mats)
 
     base_img = _new_image(name + "_basecolor", False, rgb(PALETTE["fur"]) + (1.0,))

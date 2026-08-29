@@ -1,0 +1,44 @@
+{
+  "//": [
+    "资产管线的环境契约。tools/blender.ps1 和 tools/doctor.ps1 都读这一份，",
+    "改版本号只改这里，不要在脚本或规则文档里再写一遍。",
+    "",
+    "管线跨两个互不相干的 Python：bpy 脚本跑在 Blender 自带的解释器里，",
+    "make_2d_assets.py 跑在系统 Python 里。两边的依赖不能混装（见 requirements.txt）。"
+  ],
+
+  "blender": {
+    "requiredSeries": "4.5",
+    "testedVersion": "4.5.10 LTS",
+    "bundledPython": "3.11.11",
+    "why": "4.5 是 LTS。glTF 导出器和 bmesh 的行为在大版本间变过，跨系列升级必须重跑一遍 verify。",
+    "searchPaths": [
+      "C:/Program Files/Blender Foundation/Blender 4.5/blender.exe",
+      "C:/Program Files/Blender Foundation/Blender/blender.exe"
+    ],
+    "envOverride": "WARMPET_BLENDER",
+    "modules": {
+      "numpy": "1.26.4"
+    }
+  },
+
+  "systemPython": {
+    "requiredMinimum": "3.10",
+    "testedVersion": "3.13.15",
+    "packages": {
+      "Pillow": "12.3.0"
+    },
+    "usedBy": [
+      "tools/make_2d_assets.py",
+      "tools/sync_resources.py"
+    ]
+  },
+
+  "cocos": {
+    "requiredVersion": "3.8.8",
+    "searchPaths": [
+      "C:/ProgramData/cocos/editors/Creator/3.8.8"
+    ],
+    "envOverride": "WARMPET_COCOS"
+  }
+}

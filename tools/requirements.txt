@@ -1,0 +1,18 @@
+# 系统 Python 的依赖（不是 Blender 的）
+#
+# 装法：
+#   pip install -r tools/requirements.txt
+#
+# 只有这两个脚本跑在系统 Python 里：
+#   tools/make_2d_assets.py    图标/背景切图，用 Pillow
+#   tools/sync_resources.py    产物同步，只用标准库
+#
+# 其余 10 个脚本 import bpy，跑在 **Blender 自带的 Python 3.11** 里，
+# 不受这个文件管——它们用的 numpy 是 Blender 自带的，
+# 不要 pip install 到系统 Python 再指望 Blender 能看见。
+#
+# 想确认两边环境都对：tools\doctor.ps1
+#
+# 版本上限见 tools/toolchain.json，实测组合是 Python 3.13.15 + Pillow 12.3.0。
+
+Pillow>=10.0

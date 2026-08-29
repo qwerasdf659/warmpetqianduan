@@ -29,11 +29,18 @@ Cocos 构建**只转译、不做类型检查**。调用引擎上不存在的方�
 改完 `assets/scripts/**` 必须跑：
 
 ```
-npx -y -p typescript@5.6 tsc -p _research/tsconfig.check.json
+node _research/typecheck.mjs
 ```
 
-这份配置引的是编辑器自带的 `cc.d.ts`，不依赖 `temp/declarations`
-（那个要编辑器手动生成，默认是空的）。
+它按本机 Creator 安装位置解析出 `cc.d.ts`，生成一份本地 tsconfig 再调 tsc。
+引的是编辑器自带的那份声明，不依赖 `temp/declarations`（那个要编辑器手动生成，
+默认是空的——引它会让检查**静默通过**，比报错更糟）。
+
+Creator 装在别处：`$env:WARMPET_COCOS = 'D:\CocosCreator\3.8.8'`。
+
+**不要直接 `tsc -p _research/tsconfig.check.json`。** 那份基础配置里没有
+`cc.d.ts` 那一项（它以前是硬编码的绝对路径，换台机器就跑不起来），
+直接跑的话引擎类型全是 `any`，一样会静默通过。
 
 ## 预览坏掉时的恢复步骤
 
@@ -43,6 +50,10 @@ npx -y -p typescript@5.6 tsc -p _research/tsconfig.check.json
 
 **不要删 `.meta` 文件**——资源 UUID 在里面，删了场景就找不到脚本，
 所有组件会变成 Missing Script。
+
+反过来说，**`temp/` 下不能放任何你还想要的东西**。资产管线的实验产物一律
+写 `.build/`（见 `3d-asset-pipeline`），以前堆在 `temp/chibi`、`temp/eye`
+这些目录下的中间模型，一直活在被这个恢复流程顺手删掉的风险里。
 
 ## 改引擎模块配置后必须重新导入
 
@@ -110,3 +121,47 @@ npm install --registry=https://registry.npmmirror.com
 - **不要用 `node -e` 传含引号的脚本**。PowerShell 会吃掉反引号和双引号，
   报的错还指向被截断后的乱码，完全看不出是转义问题。
   改文件用编辑工具，非要跑脚本就先写进 `.mjs` 文件再执行。
+
+### 带中文的 `.ps1` 必须存成 UTF-8 **带 BOM**
+
+PowerShell 5.1 读没有 BOM 的 `.ps1` 时按**本机 ANSI 代码页**解码，
+UTF-8 的中文会碎成乱码，然后解析器在某个半个字符的地方报
+`字符串缺少终止符` 或 `缺少右“}”`——**报错位置和真正的原因毫无关系**，
+盯着那一行改半天也改不对。
+
+同一个坑还有第二个形态：`Get-Content xxx.json -Raw | ConvertFrom-Json`
+也是按 ANSI 解码，中文注释一乱，JSON 就断在半截字符串上，
+报一个 `ArgumentException`，同样看不出是编码问题。
+
+两条对策：
+
+- 写完 `.ps1` 存成 UTF-8 with BOM
+- 在脚本里读文件用 `[IO.File]::ReadAllText($p)`（.NET 默认 UTF-8 且认 BOM），
+  不要用 `Get-Content`
+
+### 表格输出会被吞成空白
+
+`Get-ChildItem | Select-Object Name, Length` 这类**输出对象表格**的命令，
+在这个环境里经常只返回空白——不是没结果，是表格没被渲染出来。
+连着撞过三次，每次都以为文件不存在。
+
+自己拼字符串就不会：
+
+```powershell
+Get-ChildItem x -File | ForEach-Object { "$($_.Length)`t$($_.Name)" }
+"reachable=$(Test-Path 'C:\path\to\file')"
+```
+
+### 过滤长输出时别用关键词白名单
+
+`... 2>&1 | Select-String -Pattern "PASS|FAIL|tris="` 这种白名单会把
+**你正要找的那几行**一起滤掉。我因此漏看了 `inspect_fbx` 打的贴图清单，
+得出了「这个模型没有贴图」的错误结论，还照着这个结论往下推了一整轮。
+
+要么用 `-Context` 带上下文，要么先看全量输出再决定滤什么。
+**空的结果和被滤掉的结果长得一模一样**，这是最容易骗过自己的地方。
+
+### argparse 的负值参数要写等号形式
+
+`--forward -y` 会被 argparse 当成两个选项，报 `error: argument --forward:
+expected one argument` 然后退出码 2、没有任何有用信息。写 `"--forward=-y"`。

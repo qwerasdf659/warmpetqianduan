@@ -66,9 +66,22 @@ const STAGE_SPEED: Record<PetGrowthStage, number> = { baby: 1.15, teen: 1.0, adu
  * 拼不出对应模型时一律退回狗，而不是让舞台空着。
  */
 const SPECIES_MODEL: Record<string, string> = { cat: 'pet_cat', dog: 'pet_dog' };
-const FALLBACK_MODEL = 'pet_dog';
+// 兜底用猫：它是目前唯一由真网格适配来的模型（狗还是脚本生成的占位）。
+// 后端现在返回 "default"，认不出就走这里，所以这个值决定了玩家实际看到什么。
+const FALLBACK_MODEL = 'pet_cat';
 
 const IDLE_CLIP = 'idle';
+
+/**
+ * 卡通材质。放在 resources 下是为了让 `builtin-toon` 这个 effect
+ * 被资源引用到，否则构建时不会打进包。
+ */
+const TOON_MATERIAL = 'materials/pet_toon';
+
+/** 描边色。用深棕而不是纯黑——纯黑描边配暖米色底会显得脏且硬 */
+const OUTLINE = new Color(74, 55, 40, 255); // #4A3728，和 UI 的 title 同色
+const SHADE_1 = new Color(214, 196, 170, 255);
+const SHADE_2 = new Color(180, 158, 130, 255);
 
 /** PBR 材质。不要换成 builtin-unlit，那会退回平涂，3D 就白做了（docs/06 §3.4） */
 const EFFECT_NAME = 'builtin-standard';
@@ -165,7 +178,12 @@ export class PetStage extends Component {
     keyNode.setRotationFromEuler(-52, -35, 0);
     const key = keyNode.addComponent(DirectionalLight);
     key.color = new Color(255, 248, 236, 255);
-    key.illuminance = 88000;
+    // 88000 lux 是「全日照」量级，而相机的默认曝光（F16 / 1/125 / ISO100）
+    // 正是按全日照标定的。宠物的毛色反射率 0.85（§3.4 明度表），两者一乘，
+    // 亮面直接顶到 1.0 被截断——毛流、反荫蔽、分区色全被削平，
+    // 而且 §3.4 那三档明度（背景 0.90 / 毛色 0.85 / 地台 0.70）一起糊成一片。
+    // 这个场景是室内暖光，不该按正午太阳给。
+    key.illuminance = 48000;
 
     // 环境光用暖米色而不是冷蓝，否则浅暖底上的阴影会发灰发脏。
     // 这里要的是归一化的 Vec4（0–1），不是 0–255 的 Color。
@@ -173,8 +191,10 @@ export class PetStage extends Component {
     if (globals && globals.ambient) {
       globals.ambient.skyColor = new Vec4(0.95, 0.89, 0.81, 1);
       globals.ambient.groundAlbedo = new Vec4(0.72, 0.65, 0.56, 1);
-      // 浅底方案要压低环境光：环境光一强，暗面被填平，模型就"塌"成一张贴纸
-      globals.ambient.skyIllum = 14000;
+      // 浅底方案要压低环境光：环境光一强，暗面被填平，模型就"塌"成一张贴纸。
+      // 跟着主光等比下调，保持 0.16 的环境/主光比——只降主光会让比值升高，
+      // 暗面被填平，等于用另一种方式把立体感抹掉。
+      globals.ambient.skyIllum = 7600;
     }
   }
 
@@ -332,7 +352,114 @@ export class PetStage extends Component {
       this.buildGround();
       this.mountModel(instantiate(prefab));
       this.syncFromStore();
+      this.applyToonMaterial();
     });
+  }
+
+  /**
+   * 把宠物换成卡通着色 + 描边。
+   *
+   * 这是美术方向 A 的**前提**而不是锦上添花（docs/06 §5.2）：
+   * 模型自带的写实 PBR 会把造型的每一处不完美都照出来，读起来永远是
+   * 「没做完的 3D」；换成描边 + 平涂之后，同一个模型读起来是「刻意的简约风格」。
+   *
+   * 用引擎自带的 `builtin-toon`，不自己写 shader——它已经有反向壳描边 pass
+   * 和双层色阶，而且骨骼蒙皮自动支持。
+   *
+   * 材质必须走**资源**加载，不能在代码里 `new Material()`：
+   * 一是运行时只有被资源引用到的 effect 才会打进包；
+   * 二是描边 pass 由 `switch: USE_OUTLINE_PASS` 控制，它决定这个 pass
+   * 存不存在，只能在材质资源的 defines 里开，运行时重编译加不出来。
+   */
+  private applyToonMaterial() {
+    const pet = this.petRoot;
+    if (!pet) return;
+
+    resources.load(TOON_MATERIAL, Material, (err, toon) => {
+      if (this.disposed || !pet.isValid) return;
+      if (err || !toon) {
+        // 软失败不死亡：拿不到就保留模型自带的材质，画面只是没有描边
+        console.warn('[PetStage] 卡通材质加载失败，保留模型自带材质', err);
+        return;
+      }
+
+      const renderers = pet.getComponentsInChildren(MeshRenderer);
+      for (const renderer of renderers) {
+        const source = renderer.getMaterialInstance(0);
+        // 贴图要从模型自带的材质上取过来。低多边形模型的颜色全在这张
+        // 色块贴图里，丢了它整只宠物会变成一个纯色块。
+        //
+        // 读的时候**不传 pass 索引**：源材质是 builtin-standard，它的 pass
+        // 布局和 builtin-toon 不一样，写死索引会读到空。不传就是全 pass 搜。
+        const tex = source
+          ? (source.getProperty('mainTexture') as Texture2D | undefined)
+          : undefined;
+        if (tex) this.disableMipmaps(tex);
+
+        const mat = new Material();
+        mat.copy(toon);
+        if (tex) mat.setProperty('mainTexture', tex, 1);
+        this.tuneToon(mat);
+        renderer.setMaterialInstance(mat, 0);
+
+        // 描边是 `switch: USE_OUTLINE_PASS` 控制的**独立 pass**，宏没生效时
+        // 它会被整个跳过——没有任何报错，只是画面上没有描边。
+        // 光看画面分不出「pass 不存在」和「线太细看不见」，所以直接把
+        // pass 数打出来：有描边是 5，没有是 4。
+        console.log(
+          `[PetStage] 卡通材质已应用 ${renderer.node.name}：passes=${mat.passes.length}`
+          + ` texture=${tex ? 'ok' : 'MISSING'}`,
+        );
+      }
+    });
+  }
+
+  /**
+   * 关掉宠物贴图的 mipmap 采样。
+   *
+   * 图生 3D（Tripo/Meshy）的贴图是一张**碎片化的 UV 图集**：几十个小岛铺在
+   * 一张图上、彼此之间没有留白。引擎默认给导入贴图生成 mipmap，逐级缩小时
+   * 相邻的小岛会被平均到一起——脸、眼睛、条纹糊成一片水彩，这正是 Tripo 猫
+   * 进游戏后「怎么这么模糊」的原因。自渲预览看不到，因为 Blender 用的是
+   * 全分辨率单张采样，不走 mipmap。
+   *
+   * 宠物在屏幕上尺寸基本固定（相机不动、成长缩放变化很小），压根不需要 mipmap，
+   * 所以直接把 mip filter 关掉，min/mag 保持线性。图集不再跨岛渗色，
+   * 清晰度立刻回到预览那一档。
+   *
+   * 注意这是改**贴图对象本身**，而它是从 glTF 子资源上取来的、可能被多处共享；
+   * 但我们全程只有这一个宠物用它，改了没有副作用。
+   */
+  private disableMipmaps(tex: Texture2D) {
+    tex.setFilters(Texture2D.Filter.LINEAR, Texture2D.Filter.LINEAR);
+    tex.setMipFilter(Texture2D.Filter.NONE);
+  }
+
+  /** 卡通着色的参数。色阶只分两档，档位之间几乎不过渡，才是平涂的观感。 */
+  private tuneToon(mat: Material) {
+    // 描边宽度。**这是模型空间单位，不是屏幕像素**——shader 里是
+    // `localPos += normalize(normal) * lineWidth * 0.001`。
+    //
+    // 宠物高 2.0 单位、屏幕上约 250 px，所以 1 个 lineWidth ≈ 0.125 px。
+    // 引擎默认的 10 只有 1.25 px，肉眼基本看不见；要 3–4 px 的卡通描边
+    // 得给到 30 上下。我按屏幕像素理解设成 6，结果是 0.75 px，等于没画。
+    //
+    // 副作用：描边宽度跟着模型缩放走，所以 baby 阶段（根节点 0.72）
+    // 的描边会细一档。这是可接受的——小宠物本来就该秀气一点。
+    mat.setProperty('lineWidth', 30, 0);
+    mat.setProperty('baseColor', OUTLINE, 0);
+
+    mat.setProperty('mainColor', Color.WHITE, 1);
+    // 两档阴影都往暖里偏。冷灰的阴影配暖米色底会发脏（§3.4 同一条理由）
+    mat.setProperty('shadeColor1', SHADE_1, 1);
+    mat.setProperty('shadeColor2', SHADE_2, 1);
+    // 明暗交界给一点点羽化，硬切在低多边形的平面上会出现锯齿状的台阶
+    mat.setProperty('baseStep', 0.72, 1);
+    mat.setProperty('baseFeather', 0.06, 1);
+    mat.setProperty('shadeStep', 0.42, 1);
+    mat.setProperty('shadeFeather', 0.06, 1);
+    // 关掉高光：Q 版平涂里出现一块写实高光会很突兀
+    mat.setProperty('specular', new Color(0, 0, 0, 0), 1);
   }
 
   private mountModel(pet: Node) {
