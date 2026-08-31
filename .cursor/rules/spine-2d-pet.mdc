@@ -1,0 +1,58 @@
+---
+description: 2D 宠物 Spine 接入的选型结论与踩坑清单（接入骨骼/换皮/家具/挂点/拖拽前必读）
+alwaysApply: true
+---
+
+# 2D 宠物 Spine 接入 · 选型与踩坑
+
+宠物/家具动画一律用 **Spine 骨骼动画**（非帧序列）。骨骼+皮肤共用、贴图可换，
+所以「一套骨骼 × N 种花色」成立，这是选它的核心原因。改 `PetStage.ts`、导骨骼、
+换皮肤、加家具/挂点/拖拽前，先对照本清单——下面每条都在本项目真实踩过。
+
+## 版本必须对齐（否则整只不出画面）
+
+- 引擎 `settings/v2/packages/engine.json` 的 `spine` 版本要**等于素材导出版本**。
+  本项目素材是 **3.8.x** → 用 `spine-3.8`（不是默认的 `spine-4.2`；4.2 运行时读不了 3.8 骨骼）。
+- 改完 spine 模块后**必须在编辑器重新导入引擎**，否则白屏（见 cocos-toolchain）。
+
+## 资源落位与加载
+
+- 落到 `assets/resources/spine/<name>/`，`skel|json` + `atlas` + `png` **同名同目录**，
+  Cocos 按 basename 配对。运行时 `resources.load('spine/<name>/<Base>', sp.SkeletonData)`。
+- 目录即清单：装修贴块等一批同类资源用 `resources.loadDir('deco_tiles/wall', SpriteFrame, cb)` 扫，别手写文件名。
+
+## 挂载后四个必检（错一个就画面异常）
+
+1. **premultipliedAlpha**：直通道(straight)PNG 必须 `skel.premultipliedAlpha = false`。
+   设成 `true` 会把每个部件的透明边(RGB=白/α=0)算成实心白 → 一堆白矩形叠成「四分五裂」白框。
+   只有导出为预乘图集才用 `true`。
+2. **无 default 皮肤**：素材没有 `default` skin 时，挂载后必须 `skel.setSkin('001')`，
+   否则骨架没有任何附件、整只不可见。
+3. **动画名别写死**：用候选表取第一个存在的，例如 `['idle','Idle','Sit_Idle']`、
+   `['happy','Pers_Playful','A_Play']`；不同素材命名不一（本包是 `Idle` 不是 `idle`）。
+4. **走路朝向**：`Walk` 动画有固定朝向（本素材**朝左**），换向靠翻 `scale.x` 正负号。
+   看到「倒着走」就是符号反了，改一处即可。
+
+## 2D 挂点 / 触摸 / 拖拽
+
+- 帽子等饰品挂骨骼（Spine 没有 3D 那种 socket）：建 Sprite 子节点，`update()` 每帧
+  `node.setPosition(bone.worldX, bone.worldY + offset)` + `atan2(bone.c, bone.a)` 求 Z 旋转对齐。
+  **缩放要除以父节点缩放**：宠物被放大 N 倍，子节点会被连带放大（本项目 N=3，帽子曾糊脸）。
+- 想让节点能被点/拖：**必须给 UITransform 设非零 `contentSize`**，否则触摸系统命中不到（骨骼渲染不撑 UITransform）。
+  触摸落点转局部：`parentUITransform.convertToNodeSpaceAR(new Vec3(uiX, uiY, 0))`。
+
+## 现成素材包处理（Unity 扒的猫咖类素材）
+
+- 家具/站点 Spine 的**贴图常藏在同名子目录**里（如 `fishbowl/fishbowl/Fishbowl.png`）；
+  `.skel.skel` / `.atlas.atlas` 双扩展名要改回单扩展名；`.skel` 是二进制，版本要 3.8.x。
+- **Unity 导出物用不了**：`sactx-*` 图集、无扩展名的序列化数据表（VIPOutfitData 等）——直接跳过。
+- 批量导入骨骼：`node _research/import-spine.mjs <包根> <resources/spine>`（自动改名+找贴图，跳过缺件）。
+- 竖屏背景由横版墙+地合成：`_research/compose_bg.ps1 -wall .. -floor .. -out ..`（cover 裁切铺满 720×1280）。
+- 自造分件图 → 去白底 → 备绑骨素材：用 skill `pet-part-rig-prep`。
+
+## 本地模拟数据
+
+- 后端没有的系统（顾客、装修目录等）先在客户端造假数据（如 `ui/showcaseData.ts`），
+  界面照真实结构写，接后端时只换数据源、UI 不动。
+
+（工程构建/预览/假后端等纪律见 `cocos-toolchain`，项目铁律见 `project-overview`。）

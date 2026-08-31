@@ -1,0 +1,34 @@
+
+Fishbowl.png
+size: 644,271
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/FishBowl/Fish
+  rotate: false
+  xy: 612, 238
+  size: 30, 31
+  orig: 35, 31
+  offset: 5, 0
+  index: -1
+Parts_Furniture/FishBowl/FishTail
+  rotate: false
+  xy: 612, 209
+  size: 20, 27
+  orig: 20, 27
+  offset: 0, 0
+  index: -1
+Parts_Furniture/FishBowl/Layer1
+  rotate: false
+  xy: 2, 2
+  size: 304, 267
+  orig: 304, 267
+  offset: 0, 0
+  index: -1
+Parts_Furniture/FishBowl/Layer2
+  rotate: false
+  xy: 308, 5
+  size: 302, 264
+  orig: 306, 264
+  offset: 0, 0
+  index: -1

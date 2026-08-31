@@ -6,6 +6,13 @@ alwaysApply: false
 
 # 3D 资源管线
 
+> **⚠️ 已退役（2026-08-30）：项目从 3D 改为 2D Spine 骨骼。** 本管线（Blender →
+> glTF → Cocos）连同 `tools/` 下的 Blender 脚本、`assets-src/pet/*.glb`、
+> `assets/resources/models/*.glb`、`petSockets.ts` / `SocketProbe.ts` 一并停用，
+> **先不删、仅停止往前推**。新方案见 `docs/06-UI设计规范.md` §3.4 / §5（2D Spine
+> 双骨架：拟人主宠 + 四足小宠，runtime 用 Spine，资源放 `assets/resources/spine/`）。
+> 以下内容仅供历史参考。
+
 **管线是脚本化的，不是手工的。** 模型、骨架、动画、配饰全部由 `tools/` 下的
 Blender 脚本生成，可复现、可进 git、可自动校验。手工在 Blender 界面里调完导出，
 下次就重现不出来了。

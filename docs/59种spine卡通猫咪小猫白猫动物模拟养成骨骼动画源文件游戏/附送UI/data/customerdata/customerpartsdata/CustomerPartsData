@@ -1,0 +1,7968 @@
+{
+  "Items": [
+    {
+      "ID": "1",
+      "IdInType": "002",
+      "Type": "Skins",
+      "Alias": "Fair Skin 01",
+      "Tags": "SKIN,FAIR,UNISEX",
+      "Clashes": "",
+      "Path": "Skins-002",
+      "Resources": [
+        "-Head",
+        "-Body_Skin",
+        "-Neck_A",
+        "-Neck_B",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-L_Hand",
+        "-R_Hand",
+        "-L_Hand_Cheek",
+        "-R_Hand_Cheek",
+        "-L_Hand_Open",
+        "-R_Hand_Open",
+        "-L_Hand_Sit",
+        "-R_Hand_Sit",
+        "-L_Hand_Sit_B",
+        "-R_Hand_Sit_B",
+        "-L_Hand_C",
+        "-R_Hand_C",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Foot",
+        "-Foot",
+        "-Ear"
+      ],
+      "PartColor": "3",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "2",
+      "IdInType": "001",
+      "Type": "Skins",
+      "Alias": "Medium Skin 01",
+      "Tags": "SKIN,MEDIUM,UNISEX",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "Skins-001",
+      "Resources": [
+        "-Head",
+        "-Body_Skin",
+        "-Neck_A",
+        "-Neck_B",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-L_Hand",
+        "-R_Hand",
+        "-L_Hand_Cheek",
+        "-R_Hand_Cheek",
+        "-L_Hand_Open",
+        "-R_Hand_Open",
+        "-L_Hand_Sit",
+        "-R_Hand_Sit",
+        "-L_Hand_Sit_B",
+        "-R_Hand_Sit_B",
+        "-L_Hand_C",
+        "-R_Hand_C",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Foot",
+        "-Foot",
+        "-Ear"
+      ],
+      "PartColor": "1",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "3",
+      "IdInType": "003",
+      "Type": "Skins",
+      "Alias": "Yellow Skin 01",
+      "Tags": "SKIN,YELLOW,UNISEX",
+      "Clashes": "BEARD_LIGHT,HAIR_CHESTNUT,BEARD_CHESTNUT",
+      "Path": "Skins-003",
+      "Resources": [
+        "-Head",
+        "-Body_Skin",
+        "-Neck_A",
+        "-Neck_B",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-L_Hand",
+        "-R_Hand",
+        "-L_Hand_Cheek",
+        "-R_Hand_Cheek",
+        "-L_Hand_Open",
+        "-R_Hand_Open",
+        "-L_Hand_Sit",
+        "-R_Hand_Sit",
+        "-L_Hand_Sit_B",
+        "-R_Hand_Sit_B",
+        "-L_Hand_C",
+        "-R_Hand_C",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Foot",
+        "-Foot",
+        "-Ear"
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "4",
+      "IdInType": "004",
+      "Type": "Skins",
+      "Alias": "Dark Skin 01",
+      "Tags": "SKIN,DARK,UNISEX",
+      "Clashes": "BEARD_LIGHT,HAIR_CHESTNUT,BEARD_CHESTNUT",
+      "Path": "Skins-004",
+      "Resources": [
+        "-Head",
+        "-Body_Skin",
+        "-Neck_A",
+        "-Neck_B",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-Leg_A_Skin",
+        "-Leg_B_Skin",
+        "-L_Hand",
+        "-R_Hand",
+        "-L_Hand_Cheek",
+        "-R_Hand_Cheek",
+        "-L_Hand_Open",
+        "-R_Hand_Open",
+        "-L_Hand_Sit",
+        "-R_Hand_Sit",
+        "-L_Hand_Sit_B",
+        "-R_Hand_Sit_B",
+        "-L_Hand_C",
+        "-R_Hand_C",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Arm_A_Skin",
+        "-Arm_B_Skin",
+        "-Foot",
+        "-Foot",
+        "-Ear"
+      ],
+      "PartColor": "0",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "5",
+      "IdInType": "001",
+      "Type": "Hairstyles",
+      "Alias": "Medium Blonde Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-001",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "6",
+      "IdInType": "002",
+      "Type": "Hairstyles",
+      "Alias": "Medium Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-002",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "7",
+      "IdInType": "003",
+      "Type": "Hairstyles",
+      "Alias": "Medium Brown Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-003",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "8",
+      "IdInType": "004",
+      "Type": "Hairstyles",
+      "Alias": "Medium Black Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-004",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "9",
+      "IdInType": "005",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Pixie Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-005",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "10",
+      "IdInType": "006",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Pixie Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-006",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "11",
+      "IdInType": "007",
+      "Type": "Hairstyles",
+      "Alias": "Brown Pixie Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-007",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "12",
+      "IdInType": "008",
+      "Type": "Hairstyles",
+      "Alias": "Black Pixie Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-008",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "13",
+      "IdInType": "009",
+      "Type": "Hairstyles",
+      "Alias": "Wavy Blonde Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-009",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "14",
+      "IdInType": "010",
+      "Type": "Hairstyles",
+      "Alias": "Wavy Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-010",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "15",
+      "IdInType": "011",
+      "Type": "Hairstyles",
+      "Alias": "Wavy Brown Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-011",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "16",
+      "IdInType": "012",
+      "Type": "Hairstyles",
+      "Alias": "Wavy Black Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-012",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "17",
+      "IdInType": "013",
+      "Type": "Hairstyles",
+      "Alias": "Long Blonde Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-013",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "18",
+      "IdInType": "014",
+      "Type": "Hairstyles",
+      "Alias": "Long Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-014",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "19",
+      "IdInType": "015",
+      "Type": "Hairstyles",
+      "Alias": "Long Brown Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-015",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "20",
+      "IdInType": "016",
+      "Type": "Hairstyles",
+      "Alias": "Long Black Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Hairstyles-016",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "21",
+      "IdInType": "017",
+      "Type": "Hairstyles",
+      "Alias": "Long Blonde Pigtails",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-017",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "22",
+      "IdInType": "018",
+      "Type": "Hairstyles",
+      "Alias": "Long Chestnut Pigtails",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-018",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "23",
+      "IdInType": "019",
+      "Type": "Hairstyles",
+      "Alias": "Long Brown Pigtails",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-019",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "24",
+      "IdInType": "020",
+      "Type": "Hairstyles",
+      "Alias": "Long Black Pigtails",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-020",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "25",
+      "IdInType": "021",
+      "Type": "Hairstyles",
+      "Alias": "Long Blonde Braids",
+      "Tags": "HAIR,AFRICAN,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-021",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "26",
+      "IdInType": "022",
+      "Type": "Hairstyles",
+      "Alias": "Long Chestnut Braids",
+      "Tags": "HAIR,AFRICAN,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-022",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "27",
+      "IdInType": "023",
+      "Type": "Hairstyles",
+      "Alias": "Long Brown Braids",
+      "Tags": "HAIR,AFRICAN,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-023",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "28",
+      "IdInType": "024",
+      "Type": "Hairstyles",
+      "Alias": "Long Black Braids",
+      "Tags": "HAIR,AFRICAN,FEMALE",
+      "Clashes": "SMALLBEANIE",
+      "Path": "Hairstyles-024",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "29",
+      "IdInType": "025",
+      "Type": "Hairstyles",
+      "Alias": "Loose Blonde Bun",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-025",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "30",
+      "IdInType": "026",
+      "Type": "Hairstyles",
+      "Alias": "Loose Chestnut Bun",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-026",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "31",
+      "IdInType": "027",
+      "Type": "Hairstyles",
+      "Alias": "Loose Brown Bun",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-027",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "32",
+      "IdInType": "028",
+      "Type": "Hairstyles",
+      "Alias": "Loose Black Bun",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-028",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "33",
+      "IdInType": "029",
+      "Type": "Hairstyles",
+      "Alias": "Long Blonde Fringe",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-029",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "34",
+      "IdInType": "030",
+      "Type": "Hairstyles",
+      "Alias": "Long Chestnut Fringe",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-030",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "35",
+      "IdInType": "031",
+      "Type": "Hairstyles",
+      "Alias": "Long Brown Fringe",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-031",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "36",
+      "IdInType": "032",
+      "Type": "Hairstyles",
+      "Alias": "Long Black Fringe",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT,SMALLBEANIE",
+      "Path": "Hairstyles-032",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "37",
+      "IdInType": "033",
+      "Type": "Hairstyles",
+      "Alias": "Long Blond Hair",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-033",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "38",
+      "IdInType": "034",
+      "Type": "Hairstyles",
+      "Alias": "Long Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-034",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "39",
+      "IdInType": "035",
+      "Type": "Hairstyles",
+      "Alias": "Long Brown Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-035",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "40",
+      "IdInType": "036",
+      "Type": "Hairstyles",
+      "Alias": "Long Black Hair",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-036",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "41",
+      "IdInType": "037",
+      "Type": "Hairstyles",
+      "Alias": "Medium Blond Hair",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-037",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "42",
+      "IdInType": "038",
+      "Type": "Hairstyles",
+      "Alias": "Medium Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-038",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "43",
+      "IdInType": "039",
+      "Type": "Hairstyles",
+      "Alias": "Medium Dark Brown Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-039",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "44",
+      "IdInType": "040",
+      "Type": "Hairstyles",
+      "Alias": "Medium Black Hair",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-040",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "45",
+      "IdInType": "041",
+      "Type": "Hairstyles",
+      "Alias": "Short Blond Hair",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_DARK",
+      "Path": "Hairstyles-041",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "46",
+      "IdInType": "042",
+      "Type": "Hairstyles",
+      "Alias": "Short Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "Hairstyles-042",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "47",
+      "IdInType": "043",
+      "Type": "Hairstyles",
+      "Alias": "Short Dark Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "Hairstyles-043",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "48",
+      "IdInType": "044",
+      "Type": "Hairstyles",
+      "Alias": "Short Black Hair",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "Hairstyles-044",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "49",
+      "IdInType": "045",
+      "Type": "Hairstyles",
+      "Alias": "Blond Long-On-Top",
+      "Tags": "HAIR,LIGHT,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-045",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "50",
+      "IdInType": "046",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Long-On-Top",
+      "Tags": "HAIR,CHESTNUT,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-046",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "51",
+      "IdInType": "047",
+      "Type": "Hairstyles",
+      "Alias": "Dark Long-On-Top",
+      "Tags": "HAIR,BROWN,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-047",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "52",
+      "IdInType": "048",
+      "Type": "Hairstyles",
+      "Alias": "Black Long-On-Top",
+      "Tags": "HAIR,BLACK,UNISEX",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-048",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "53",
+      "IdInType": "049",
+      "Type": "Hairstyles",
+      "Alias": "Straight Blond Hair",
+      "Tags": "HAIR,LIGHT,UNISEX",
+      "Clashes": "BEARD_BLACK,BEARD_DARK",
+      "Path": "Hairstyles-049",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "54",
+      "IdInType": "050",
+      "Type": "Hairstyles",
+      "Alias": "Straight Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "Hairstyles-050",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "55",
+      "IdInType": "051",
+      "Type": "Hairstyles",
+      "Alias": "Straight Dark Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "Hairstyles-051",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "56",
+      "IdInType": "052",
+      "Type": "Hairstyles",
+      "Alias": "Straight Black Hair",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "Hairstyles-052",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "57",
+      "IdInType": "053",
+      "Type": "Hairstyles",
+      "Alias": "Messy Blond Hair",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-053",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "58",
+      "IdInType": "054",
+      "Type": "Hairstyles",
+      "Alias": "Messy Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-054",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "59",
+      "IdInType": "055",
+      "Type": "Hairstyles",
+      "Alias": "Messy Dark Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-055",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "60",
+      "IdInType": "056",
+      "Type": "Hairstyles",
+      "Alias": "Messy Black Hair",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-056",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "61",
+      "IdInType": "057",
+      "Type": "Hairstyles",
+      "Alias": "Medium Blond Dreads",
+      "Tags": "HAIR,AFRICAN,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-057",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "62",
+      "IdInType": "058",
+      "Type": "Hairstyles",
+      "Alias": "Medium Chestnut Dreads",
+      "Tags": "HAIR,AFRICAN,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-058",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "63",
+      "IdInType": "059",
+      "Type": "Hairstyles",
+      "Alias": "Medium Dark Dreads",
+      "Tags": "HAIR,AFRICAN,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-059",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "64",
+      "IdInType": "060",
+      "Type": "Hairstyles",
+      "Alias": "Medium Black Dreads",
+      "Tags": "HAIR,AFRICAN,UNISEX",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-060",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "65",
+      "IdInType": "061",
+      "Type": "Hairstyles",
+      "Alias": "Medium Blond Fringe",
+      "Tags": "HAIR,LIGHT,UNISEX",
+      "Clashes": "BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-061",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "6",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "66",
+      "IdInType": "062",
+      "Type": "Hairstyles",
+      "Alias": "Medium Chestnut Fringe",
+      "Tags": "HAIR,CHESTNUT,UNISEX",
+      "Clashes": "BEARD_BLACK,BEARD_DARK,SMALLBEANIE",
+      "Path": "Hairstyles-062",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "67",
+      "IdInType": "063",
+      "Type": "Hairstyles",
+      "Alias": "Medium Dark Fringe",
+      "Tags": "HAIR,BROWN,UNISEX",
+      "Clashes": "BEARD_DARK,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-063",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "68",
+      "IdInType": "064",
+      "Type": "Hairstyles",
+      "Alias": "Medium Black Hair",
+      "Tags": "HAIR,BLACK,UNISEX",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT,SMALLBEANIE",
+      "Path": "Hairstyles-064",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "69",
+      "IdInType": "001",
+      "Type": "Eyes",
+      "Alias": "Blue Female Eyes 01",
+      "Tags": "EYES,BLUE,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-001",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "70",
+      "IdInType": "002",
+      "Type": "Eyes",
+      "Alias": "Brown Female Eyes 01",
+      "Tags": "EYES,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-002",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "71",
+      "IdInType": "003",
+      "Type": "Eyes",
+      "Alias": "Green Female Eyes 01",
+      "Tags": "EYES,GREEN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-003",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "72",
+      "IdInType": "004",
+      "Type": "Eyes",
+      "Alias": "Brown Female Eyes 02",
+      "Tags": "EYES,ASIAN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-004",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "73",
+      "IdInType": "005",
+      "Type": "Eyes",
+      "Alias": "Dark Female Eyes 01",
+      "Tags": "EYES,ASIAN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-005",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "74",
+      "IdInType": "006",
+      "Type": "Eyes",
+      "Alias": "Blue Female Eyes 02",
+      "Tags": "EYES,BLUE,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-006",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "75",
+      "IdInType": "007",
+      "Type": "Eyes",
+      "Alias": "Green Female Eyes 02",
+      "Tags": "EYES,GREEN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-007",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "76",
+      "IdInType": "008",
+      "Type": "Eyes",
+      "Alias": "Dark Female Eyes 02",
+      "Tags": "EYES,ASIAN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-008",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "77",
+      "IdInType": "009",
+      "Type": "Eyes",
+      "Alias": "Blue Female Eyes 03",
+      "Tags": "EYES,BLUE,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-009",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "78",
+      "IdInType": "010",
+      "Type": "Eyes",
+      "Alias": "Green Female Eyes 03",
+      "Tags": "EYES,GREEN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-010",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "79",
+      "IdInType": "011",
+      "Type": "Eyes",
+      "Alias": "Dark Female Eyes 03",
+      "Tags": "EYES,DARK,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-011",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "80",
+      "IdInType": "012",
+      "Type": "Eyes",
+      "Alias": "Green Female Eyes 04",
+      "Tags": "EYES,ASIAN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-012",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "81",
+      "IdInType": "013",
+      "Type": "Eyes",
+      "Alias": "Blue Female Eyes 04",
+      "Tags": "EYES,ASIAN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-013",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "82",
+      "IdInType": "014",
+      "Type": "Eyes",
+      "Alias": "Brown Female Eyes 03",
+      "Tags": "EYES,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-014",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "83",
+      "IdInType": "015",
+      "Type": "Eyes",
+      "Alias": "Brown Female Eyes 04",
+      "Tags": "EYES,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-015",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "84",
+      "IdInType": "016",
+      "Type": "Eyes",
+      "Alias": "Brown Female Eyes 05",
+      "Tags": "EYES,BROWN,FEMALE",
+      "Clashes": "",
+      "Path": "Eyes-016",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "85",
+      "IdInType": "017",
+      "Type": "Eyes",
+      "Alias": "Blue Male Eyes 01",
+      "Tags": "EYES,BLUE,MALE",
+      "Clashes": "",
+      "Path": "Eyes-017",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "86",
+      "IdInType": "018",
+      "Type": "Eyes",
+      "Alias": "Brown Male Eyes 01",
+      "Tags": "EYES,BROWN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-018",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "87",
+      "IdInType": "019",
+      "Type": "Eyes",
+      "Alias": "Green Male Eyes 01",
+      "Tags": "EYES,GREEN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-019",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "88",
+      "IdInType": "020",
+      "Type": "Eyes",
+      "Alias": "Dark Male Eyes 01",
+      "Tags": "EYES,ASIAN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-020",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "89",
+      "IdInType": "021",
+      "Type": "Eyes",
+      "Alias": "Brown Male Eyes 02",
+      "Tags": "EYES,ASIAN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-021",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "90",
+      "IdInType": "022",
+      "Type": "Eyes",
+      "Alias": "Blue Male Eyes 02",
+      "Tags": "EYES,BLUE,MALE",
+      "Clashes": "",
+      "Path": "Eyes-022",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "91",
+      "IdInType": "023",
+      "Type": "Eyes",
+      "Alias": "Brown Male Eyes 03",
+      "Tags": "EYES,BROWN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-023",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "92",
+      "IdInType": "024",
+      "Type": "Eyes",
+      "Alias": "Green Male Eyes 03",
+      "Tags": "EYES,GREEN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-024",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "93",
+      "IdInType": "025",
+      "Type": "Eyes",
+      "Alias": "Blue Male Eyes 03",
+      "Tags": "EYES,BLUE,MALE",
+      "Clashes": "",
+      "Path": "Eyes-025",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "94",
+      "IdInType": "026",
+      "Type": "Eyes",
+      "Alias": "Green Male Eyes 04",
+      "Tags": "EYES,GREEN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-026",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "95",
+      "IdInType": "027",
+      "Type": "Eyes",
+      "Alias": "Brown Male Eyes 04",
+      "Tags": "EYES,BROWN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-027",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "96",
+      "IdInType": "028",
+      "Type": "Eyes",
+      "Alias": "Green Male Eyes 05",
+      "Tags": "EYES,ASIAN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-028",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "11",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "97",
+      "IdInType": "029",
+      "Type": "Eyes",
+      "Alias": "Blue Male Eyes 04",
+      "Tags": "EYES,ASIAN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-029",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "98",
+      "IdInType": "030",
+      "Type": "Eyes",
+      "Alias": "Dark Male Eyes 01",
+      "Tags": "EYES,ASIAN,MALE",
+      "Clashes": "",
+      "Path": "Eyes-030",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "99",
+      "IdInType": "031",
+      "Type": "Eyes",
+      "Alias": "Dark Male Eyes 02",
+      "Tags": "EYES,DARK,MALE",
+      "Clashes": "",
+      "Path": "Eyes-031",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "100",
+      "IdInType": "032",
+      "Type": "Eyes",
+      "Alias": "Dark Male Eyes 03",
+      "Tags": "EYES,DARK,MALE",
+      "Clashes": "",
+      "Path": "Eyes-032",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "101",
+      "IdInType": "001",
+      "Type": "Noses",
+      "Alias": "Nose 01",
+      "Tags": "NOSE,UNISEX",
+      "Clashes": "",
+      "Path": "Noses-001",
+      "Resources": [
+        "-Nose"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "102",
+      "IdInType": "002",
+      "Type": "Noses",
+      "Alias": "Nose 02",
+      "Tags": "NOSE,UNISEX",
+      "Clashes": "",
+      "Path": "Noses-002",
+      "Resources": [
+        "-Nose"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "103",
+      "IdInType": "001",
+      "Type": "Mouths",
+      "Alias": "Mouth 01",
+      "Tags": "MOUTH,FEMALE",
+      "Clashes": "",
+      "Path": "Mouths-001",
+      "Resources": [
+        "-Mouth_Normal",
+        "-Mouth_Open",
+        "-Mouth_Happy",
+        "-Mouth_Smile",
+        "-Mouth_Anoyed",
+        "",
+        "-Mouth_Open_B",
+        "-Mouth_Sad",
+        "",
+        "-Mouth_Squeeze"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "104",
+      "IdInType": "002",
+      "Type": "Mouths",
+      "Alias": "Mouth 02",
+      "Tags": "MOUTH,MALE",
+      "Clashes": "",
+      "Path": "Mouths-002",
+      "Resources": [
+        "-Mouth_Normal",
+        "-Mouth_Open",
+        "-Mouth_Happy",
+        "-Mouth_Smile",
+        "-Mouth_Anoyed",
+        "",
+        "-Mouth_Open_B",
+        "-Mouth_Sad",
+        "",
+        "-Mouth_Squeeze"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "105",
+      "IdInType": "001",
+      "Type": "Brows",
+      "Alias": "Eyebrows 01",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "Brows-001",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "106",
+      "IdInType": "002",
+      "Type": "Brows",
+      "Alias": "Eyebrows 02",
+      "Tags": "EYEBROWS,FEMALE",
+      "Clashes": "",
+      "Path": "Brows-002",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "107",
+      "IdInType": "003",
+      "Type": "Brows",
+      "Alias": "Eyebrows 03",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "Brows-003",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "108",
+      "IdInType": "001",
+      "Type": "Beards",
+      "Alias": "Black Goatee",
+      "Tags": "BEARD,BLACK,MALE",
+      "Clashes": "",
+      "Path": "Beards-001",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "109",
+      "IdInType": "002",
+      "Type": "Beards",
+      "Alias": "Black Moustache Goatee",
+      "Tags": "BEARD,BLACK,MALE",
+      "Clashes": "",
+      "Path": "Beards-002",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "110",
+      "IdInType": "003",
+      "Type": "Beards",
+      "Alias": "Black Full Beard",
+      "Tags": "BEARD,BLACK,MALE",
+      "Clashes": "",
+      "Path": "Beards-003",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "111",
+      "IdInType": "004",
+      "Type": "Beards",
+      "Alias": "Dark Brown Full Beard",
+      "Tags": "BEARD,DARK,MALE",
+      "Clashes": "",
+      "Path": "Beards-004",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "112",
+      "IdInType": "005",
+      "Type": "Beards",
+      "Alias": "Chestnut Full Beard",
+      "Tags": "BEARD,CHESTNUT,MALE",
+      "Clashes": "",
+      "Path": "Beards-005",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "113",
+      "IdInType": "006",
+      "Type": "Beards",
+      "Alias": "Blond Full Beard",
+      "Tags": "BEARD,LIGHT,MALE",
+      "Clashes": "",
+      "Path": "Beards-006",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "114",
+      "IdInType": "007",
+      "Type": "Beards",
+      "Alias": "Chestnut Moustache Goatee",
+      "Tags": "BEARD,CHESTNUT,MALE",
+      "Clashes": "",
+      "Path": "Beards-007",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "115",
+      "IdInType": "008",
+      "Type": "Beards",
+      "Alias": "Chestnut Goatee",
+      "Tags": "BEARD,CHESTNUT,MALE",
+      "Clashes": "",
+      "Path": "Beards-008",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "116",
+      "IdInType": "009",
+      "Type": "Beards",
+      "Alias": "Blond Moustache Goatee",
+      "Tags": "BEARD,LIGHT,MALE",
+      "Clashes": "",
+      "Path": "Beards-009",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "117",
+      "IdInType": "001",
+      "Type": "Shirts",
+      "Alias": "Blue Female T-shirt",
+      "Tags": "SHIRT,BLUE,TSHIRT,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-001",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "118",
+      "IdInType": "002",
+      "Type": "Shirts",
+      "Alias": "White Female Cardigan",
+      "Tags": "SHIRT,WHITE,LONGSLEEVES,FEMALE,DRESSSHIRT",
+      "Clashes": "BRACELET,NECKLACE,PANTS_FORMAL,BELT",
+      "Path": "Shirts-002",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "119",
+      "IdInType": "003",
+      "Type": "Shirts",
+      "Alias": "Blue Male T-shirt 01",
+      "Tags": "SHIRT,BLUE,TSHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-003",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "120",
+      "IdInType": "004",
+      "Type": "Shirts",
+      "Alias": "Blue Male Shirt",
+      "Tags": "SHIRT,BLUE,DRESSSHIRT,LONGSLEEVES,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-004",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "121",
+      "IdInType": "005",
+      "Type": "Shirts",
+      "Alias": "Blue Male T-shirt 02",
+      "Tags": "SHIRT,BLUE,TSHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-005",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "122",
+      "IdInType": "006",
+      "Type": "Shirts",
+      "Alias": "White Female T-Shirt",
+      "Tags": "SHIRT,WHITE,TSHIRT,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-006",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "123",
+      "IdInType": "007",
+      "Type": "Shirts",
+      "Alias": "Purple Female Cardigan",
+      "Tags": "SHIRT,PURPLE,DRESSSHIRT,LONGSLEEVES,FEMALE",
+      "Clashes": "BRACELET,NECKLACE,PANTS_FORMAL,BELT",
+      "Path": "Shirts-007",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "12",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "124",
+      "IdInType": "008",
+      "Type": "Shirts",
+      "Alias": "Pink Male T-Shirt",
+      "Tags": "SHIRT,PINK,TSHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-008",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "9",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "125",
+      "IdInType": "009",
+      "Type": "Shirts",
+      "Alias": "Yellow Female T-Shirt",
+      "Tags": "SHIRT,YELLOW,TSHIRT,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-009",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "126",
+      "IdInType": "010",
+      "Type": "Shirts",
+      "Alias": "White Male T-Shirt",
+      "Tags": "SHIRT,WHITE,TSHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-010",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "127",
+      "IdInType": "011",
+      "Type": "Shirts",
+      "Alias": "Red Male Shirt",
+      "Tags": "SHIRT,RED,DRESSSHIRT,LONGSLEEVES,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-011",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "7",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "128",
+      "IdInType": "012",
+      "Type": "Shirts",
+      "Alias": "Blue Female Shirt 01",
+      "Tags": "SHIRT,BLUE,DRESSSHIRT,LONGSLEEVES,FEMALE",
+      "Clashes": "BRACELET,NECKLACE,PANTS_FORMAL,BELT",
+      "Path": "Shirts-012",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "129",
+      "IdInType": "013",
+      "Type": "Shirts",
+      "Alias": "Black Female Shirt",
+      "Tags": "SHIRT,BLACK,TSHIRT,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-013",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "130",
+      "IdInType": "014",
+      "Type": "Shirts",
+      "Alias": "Blue Female Shirt 02",
+      "Tags": "SHIRT,BLACK,TSHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-014",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "131",
+      "IdInType": "015",
+      "Type": "Shirts",
+      "Alias": "Grey Business Shirt 01",
+      "Tags": "SHIRT,BLUE,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-015",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "132",
+      "IdInType": "016",
+      "Type": "Shirts",
+      "Alias": "Grey Business Shirt 01",
+      "Tags": "SHIRT,DRESSSHIRT,GREY,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE",
+      "Path": "Shirts-016",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "133",
+      "IdInType": "017",
+      "Type": "Shirts",
+      "Alias": "Yellow Male T-shirt",
+      "Tags": "SHIRT,TSHIRT,YELLOW,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-017",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "134",
+      "IdInType": "018",
+      "Type": "Shirts",
+      "Alias": "Pink Female Shirt",
+      "Tags": "SHIRT,LONGSLEEVES,PINK,FEMALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "Shirts-018",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "9",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "135",
+      "IdInType": "019",
+      "Type": "Shirts",
+      "Alias": "Brown Checkered Suit",
+      "Tags": "SHIRT,DRESSSHIRT,BROWN,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE,JEANS,PANTS_BLACK,PANTS_BLUE",
+      "Path": "Shirts-019",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "136",
+      "IdInType": "020",
+      "Type": "Shirts",
+      "Alias": "Blue Checkered Suit 01",
+      "Tags": "SHIRT,DRESSSHIRT,BLUE,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE,JEANS,PANTS_BROWN,PANTS_BLACK",
+      "Path": "Shirts-020",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "137",
+      "IdInType": "021",
+      "Type": "Shirts",
+      "Alias": "Black Checkered Suit 02",
+      "Tags": "SHIRT,DRESSSHIRT,BLACK,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE,JEANS,PANTS_BROWN,PANTS_BLUE",
+      "Path": "Shirts-021",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "138",
+      "IdInType": "022",
+      "Type": "Shirts",
+      "Alias": "Yellow Business Shirt",
+      "Tags": "SHIRT,DRESSSHIRT,YELLOW,MALE",
+      "Clashes": "SKIRT,BRACELET",
+      "Path": "Shirts-022",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "139",
+      "IdInType": "023",
+      "Type": "Shirts",
+      "Alias": "Grey Business Shirt 02",
+      "Tags": "SHIRT,DRESSSHIRT,GREY,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE,JEANS,PANTS_BROWN",
+      "Path": "Shirts-023",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "140",
+      "IdInType": "024",
+      "Type": "Shirts",
+      "Alias": "Purple Male Shirt",
+      "Tags": "SHIRT,DRESSSHIRT,PURPLE,MALE",
+      "Clashes": "SKIRT,BRACELET,NECKLACE",
+      "Path": "Shirts-024",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "12",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "141",
+      "IdInType": "001",
+      "Type": "Skirts",
+      "Alias": "Brown Skirt 01",
+      "Tags": "SKIRT,SHORT,BROWN,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-001",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "142",
+      "IdInType": "002",
+      "Type": "Skirts",
+      "Alias": "Grey Skirt 01",
+      "Tags": "SKIRT,SHORT,GREY,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-002",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "143",
+      "IdInType": "003",
+      "Type": "Skirts",
+      "Alias": "Red Skirt 01",
+      "Tags": "SKIRT,SHORT,RED,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-003",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "7",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "144",
+      "IdInType": "004",
+      "Type": "Skirts",
+      "Alias": "Black Skirt 01",
+      "Tags": "SKIRT,SHORT,BLACK,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-004",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "145",
+      "IdInType": "005",
+      "Type": "Skirts",
+      "Alias": "Brown Skirt 02",
+      "Tags": "SKIRT,SHORT,BROWN,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-005",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "146",
+      "IdInType": "006",
+      "Type": "Skirts",
+      "Alias": "Blue Skirt 01",
+      "Tags": "SKIRT,SHORT,BLUE,FEMALE",
+      "Clashes": "JEANS,BELT,PANTS_FORMAL",
+      "Path": "Skirts-006",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "147",
+      "IdInType": "001",
+      "Type": "Pants",
+      "Alias": "Blue Skinny Jeans 01",
+      "Tags": "JEANS,BLUE,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-001",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "148",
+      "IdInType": "002",
+      "Type": "Pants",
+      "Alias": "Brown Skinny Jeans",
+      "Tags": "JEANS,BROWN,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-002",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "149",
+      "IdInType": "003",
+      "Type": "Pants",
+      "Alias": "Blue Skinny Jeans 02",
+      "Tags": "JEANS,BLUE,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-003",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "150",
+      "IdInType": "005",
+      "Type": "Pants",
+      "Alias": "Black Skinny Jeans",
+      "Tags": "JEANS,BLACK,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-005",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "151",
+      "IdInType": "006",
+      "Type": "Pants",
+      "Alias": "Brown Skinny Jeans",
+      "Tags": "JEANS,BROWN,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-006",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "152",
+      "IdInType": "007",
+      "Type": "Pants",
+      "Alias": "White Skinny Jeans 03",
+      "Tags": "JEANS,BLUE,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-007",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "153",
+      "IdInType": "008",
+      "Type": "Pants",
+      "Alias": "Brown Skinny Jeans 02",
+      "Tags": "JEANS,BLACK,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-008",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "154",
+      "IdInType": "009",
+      "Type": "Pants",
+      "Alias": "Blue Skinny Jeans 04",
+      "Tags": "JEANS,BLUE,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS",
+      "Path": "Pants-009",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "155",
+      "IdInType": "010",
+      "Type": "Pants",
+      "Alias": "Brown Checkered Suit Pants",
+      "Tags": "PANTS,FORMAL,CHECKERED,BROWN,MALE",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS,CASUAL",
+      "Path": "Pants-010",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "156",
+      "IdInType": "011",
+      "Type": "Pants",
+      "Alias": "Blue Checkered Suit Pants 01",
+      "Tags": "PANTS,FORMAL,CHECKERED,BLUE,MALE",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS,CASUAL",
+      "Path": "Pants-011",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "157",
+      "IdInType": "012",
+      "Type": "Pants",
+      "Alias": "Black Checkered Suit Pants 02",
+      "Tags": "PANTS,FORMAL,CHECKERED,BLACK,MALE",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS,CASUAL",
+      "Path": "Pants-012",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "158",
+      "IdInType": "013",
+      "Type": "Pants",
+      "Alias": "Brown Pants",
+      "Tags": "JEANS,PANTS,BROWN,UNISEX",
+      "Clashes": "OPENTOED_SHOES,LONG_SOCKS,CASUAL",
+      "Path": "Pants-013",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "159",
+      "IdInType": "001",
+      "Type": "Shoes",
+      "Alias": "Black Opentoed Shoes",
+      "Tags": "SHOES,OPENTOED,BLACK,FEMALE",
+      "Clashes": "SOCKS",
+      "Path": "Shoes-001",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "160",
+      "IdInType": "002",
+      "Type": "Shoes",
+      "Alias": "White Opentoed Shoes",
+      "Tags": "SHOES,OPENTOED,WHITE,FEMALE",
+      "Clashes": "SOCKS",
+      "Path": "Shoes-002",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "161",
+      "IdInType": "003",
+      "Type": "Shoes",
+      "Alias": "Blue Sneakers",
+      "Tags": "SHOES,CLOSED,BLUE,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-003",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "162",
+      "IdInType": "004",
+      "Type": "Shoes",
+      "Alias": "Beige Loafers",
+      "Tags": "SHOES,CLOSED,WHITE,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-004",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "163",
+      "IdInType": "005",
+      "Type": "Shoes",
+      "Alias": "White Loafers",
+      "Tags": "SHOES,CLOSED,WHITE,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-005",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "164",
+      "IdInType": "006",
+      "Type": "Shoes",
+      "Alias": "Black Slip Ons",
+      "Tags": "SHOES,CASUAL,CLOSED,BLACK,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-006",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "165",
+      "IdInType": "007",
+      "Type": "Shoes",
+      "Alias": "Brown Laced Shoes",
+      "Tags": "SHOES,FORMAL,CLOSED,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-007",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "166",
+      "IdInType": "008",
+      "Type": "Shoes",
+      "Alias": "Yellow Sneakers",
+      "Tags": "SHOES,CASUAL,CLOSED,YELLOW,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-008",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "167",
+      "IdInType": "009",
+      "Type": "Shoes",
+      "Alias": "Brown Sneakers",
+      "Tags": "SHOES,CASUAL,CLOSED,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-009",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "168",
+      "IdInType": "010",
+      "Type": "Shoes",
+      "Alias": "Brown Sneakers",
+      "Tags": "SHOES,FORMAL,CLOSED,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Shoes-010",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "169",
+      "IdInType": "011",
+      "Type": "Shoes",
+      "Alias": "Brown Shoes",
+      "Tags": "SHOES,CLOSED,DRESSSHOES,FEMALE",
+      "Clashes": "",
+      "Path": "Shoes-011",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "170",
+      "IdInType": "001",
+      "Type": "Socks",
+      "Alias": "Yellow Socks",
+      "Tags": "SOCKS,LONG,BLUE,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-001",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "171",
+      "IdInType": "002",
+      "Type": "Socks",
+      "Alias": "Blue Socks 01",
+      "Tags": "SOCKS,LONG,YELLOW,FEMALE",
+      "Clashes": "",
+      "Path": "Socks-002",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "172",
+      "IdInType": "003",
+      "Type": "Socks",
+      "Alias": "Brown Frilly Socks",
+      "Tags": "SOCKS,LONG,BLUE,FEMALE",
+      "Clashes": "",
+      "Path": "Socks-003",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "173",
+      "IdInType": "004",
+      "Type": "Socks",
+      "Alias": "Brown Socks",
+      "Tags": "SOCKS,LONG,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-004",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "174",
+      "IdInType": "005",
+      "Type": "Socks",
+      "Alias": "White Socks 01",
+      "Tags": "SOCKS,ANKLE,WHITE,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-005",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "175",
+      "IdInType": "006",
+      "Type": "Socks",
+      "Alias": "Black Frilly Socks",
+      "Tags": "SOCKS,LONG,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Socks-006",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "176",
+      "IdInType": "007",
+      "Type": "Socks",
+      "Alias": "Cream Frilly Socks 01",
+      "Tags": "SOCKS,LONG,WHITE,FEMALE",
+      "Clashes": "",
+      "Path": "Socks-007",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "177",
+      "IdInType": "008",
+      "Type": "Socks",
+      "Alias": "Black Long Socks",
+      "Tags": "SOCKS,LONG,BLACK,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-008",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "178",
+      "IdInType": "009",
+      "Type": "Socks",
+      "Alias": "Cream Frilly Socks 02",
+      "Tags": "SOCKS,LONG,WHITE,FEMALE",
+      "Clashes": "",
+      "Path": "Socks-009",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "179",
+      "IdInType": "010",
+      "Type": "Socks",
+      "Alias": "Brown Ankle Socks",
+      "Tags": "SOCKS,ANKLE,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-010",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "180",
+      "IdInType": "011",
+      "Type": "Socks",
+      "Alias": "Blue Ankle Socks",
+      "Tags": "SOCKS,ANKLE,BLUE,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-011",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "181",
+      "IdInType": "012",
+      "Type": "Socks",
+      "Alias": "Pink Ankle Socks",
+      "Tags": "SOCKS,ANKLE,PINK,UNISEX",
+      "Clashes": "",
+      "Path": "Socks-012",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "182",
+      "IdInType": "001",
+      "Type": "Hats",
+      "Alias": "Blue Cap",
+      "Tags": "HAT,CAP,BLUE,UNISEX",
+      "Clashes": "",
+      "Path": "Hats-001",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "9",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "183",
+      "IdInType": "002",
+      "Type": "Hats",
+      "Alias": "Brown Cap",
+      "Tags": "HAT,CAP,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Hats-002",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "10",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "184",
+      "IdInType": "003",
+      "Type": "Hats",
+      "Alias": "Black Cap",
+      "Tags": "HAT,CAP,DARK,UNISEX",
+      "Clashes": "",
+      "Path": "Hats-003",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "4",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "185",
+      "IdInType": "001",
+      "Type": "Bracelets",
+      "Alias": "Gold Bracelet 01",
+      "Tags": "BRACELET,GOLD,FEMALE",
+      "Clashes": "",
+      "Path": "Bracelets-001",
+      "Resources": [
+        "-Bracelet"
+      ],
+      "PartColor": "5",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "186",
+      "IdInType": "002",
+      "Type": "Bracelets",
+      "Alias": "Black Bracelet 01",
+      "Tags": "BRACELET,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Bracelets-002",
+      "Resources": [
+        "-Bracelet"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "187",
+      "IdInType": "003",
+      "Type": "Bracelets",
+      "Alias": "White Bracelet 01",
+      "Tags": "BRACELET,WHITE,FEMALE",
+      "Clashes": "",
+      "Path": "Bracelets-003",
+      "Resources": [
+        "-Bracelet"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "188",
+      "IdInType": "001",
+      "Type": "Belts",
+      "Alias": "Black Leather Belt 01",
+      "Tags": "BELT,BLACK,LEATHER,UNISEX",
+      "Clashes": "",
+      "Path": "Belts-001",
+      "Resources": [
+        "-Belt"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "189",
+      "IdInType": "002",
+      "Type": "Belts",
+      "Alias": "Brown Leather Belt 01",
+      "Tags": "BELT,BROWN,LEATHER,UNISEX",
+      "Clashes": "",
+      "Path": "Belts-002",
+      "Resources": [
+        "-Belt"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "190",
+      "IdInType": "001",
+      "Type": "Glasses",
+      "Alias": "Brown Square-Rimmed Glasses 01",
+      "Tags": "GLASSES,BROWN,SQUARE,UNISEX",
+      "Clashes": "",
+      "Path": "Glasses-001",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "191",
+      "IdInType": "002",
+      "Type": "Glasses",
+      "Alias": "Black Round-Rimmed Glasses 01",
+      "Tags": "GLASSES,BROWN,CIRCLE,UNISEX",
+      "Clashes": "",
+      "Path": "Glasses-002",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "192",
+      "IdInType": "003",
+      "Type": "Glasses",
+      "Alias": "Semi-Circle Glasses 01",
+      "Tags": "GLASSES,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "Glasses-003",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "193",
+      "IdInType": "004",
+      "Type": "Glasses",
+      "Alias": "Study Glasses 01",
+      "Tags": "GLASSES,BLACK,UNISEX",
+      "Clashes": "",
+      "Path": "Glasses-004",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "194",
+      "IdInType": "001",
+      "Type": "Necklaces",
+      "Alias": "Black Choker",
+      "Tags": "NECKLACE,CHOKER,BLACK,FEMALE",
+      "Clashes": "",
+      "Path": "Necklaces-001",
+      "Resources": [
+        "-Necklace"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "195",
+      "IdInType": "002",
+      "Type": "Necklaces",
+      "Alias": "Pink Choker",
+      "Tags": "NECKLACE,CHOKER,PINK,FEMALE",
+      "Clashes": "",
+      "Path": "Necklaces-002",
+      "Resources": [
+        "-Necklace"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "196",
+      "IdInType": "001",
+      "Type": "Shared",
+      "Alias": "Iphone",
+      "Tags": "IPHONE",
+      "Clashes": "",
+      "Path": "Shared-001",
+      "Resources": [
+        "-Phone",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "197",
+      "IdInType": "002",
+      "Type": "Shared",
+      "Alias": "Coffee Cup",
+      "Tags": "CUP",
+      "Clashes": "",
+      "Path": "Shared-002",
+      "Resources": [
+        "",
+        "-CupFull"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "215",
+      "IdInType": "025",
+      "Type": "Shirts",
+      "Alias": "Runaway Dark T-Shirt",
+      "Tags": "SHIRT,MALE",
+      "Clashes": "",
+      "Path": "0.80-Shirts-025",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "216",
+      "IdInType": "026",
+      "Type": "Shirts",
+      "Alias": "Runaway Blue T-Shirt",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "0.80-Shirts-026",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "198",
+      "IdInType": "01",
+      "Type": "Hairstyles",
+      "Alias": "VIP Black/White Hair",
+      "Tags": "HAIR",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-01",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "199",
+      "IdInType": "02",
+      "Type": "Hairstyles",
+      "Alias": "VIP Light Brown Hair",
+      "Tags": "HAIR",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-02",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "200",
+      "IdInType": "03",
+      "Type": "Hairstyles",
+      "Alias": "VIP Dark Brown Hair",
+      "Tags": "HAIR",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-03",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "201",
+      "IdInType": "01",
+      "Type": "Hats",
+      "Alias": "VIP Straw Hat",
+      "Tags": "HAT",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-01",
+      "Resources": [
+        "-Hat_Front",
+        "-Hat_Back"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "202",
+      "IdInType": "02",
+      "Type": "Hats",
+      "Alias": "VIP Brown Beanie",
+      "Tags": "HAT",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-02",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "203",
+      "IdInType": "01",
+      "Type": "Pants",
+      "Alias": "VIP Dark Blue Jeans",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-01",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "204",
+      "IdInType": "01",
+      "Type": "Shirts",
+      "Alias": "VIP Cat Yin/Yang Shirt",
+      "Tags": "SHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-01",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "205",
+      "IdInType": "02",
+      "Type": "Shirts",
+      "Alias": "VIP Cream Cardigan",
+      "Tags": "SHIRT,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-02",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "206",
+      "IdInType": "03",
+      "Type": "Shirts",
+      "Alias": "VIP Striped Shirt",
+      "Tags": "SHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-03",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "207",
+      "IdInType": "01",
+      "Type": "Shoes",
+      "Alias": "VIP Black Shoe",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-01",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "208",
+      "IdInType": "02",
+      "Type": "Shoes",
+      "Alias": "VIP Cream Shoe",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-02",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "209",
+      "IdInType": "03",
+      "Type": "Shoes",
+      "Alias": "VIP Black Leather Shoe",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-03",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "210",
+      "IdInType": "01",
+      "Type": "Skirts",
+      "Alias": "VIP Black Skirt",
+      "Tags": "SKIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Skirts-01",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "211",
+      "IdInType": "02",
+      "Type": "Skirts",
+      "Alias": "VIP Cream Frilly Skirt",
+      "Tags": "SKIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Skirts-02",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "212",
+      "IdInType": "01",
+      "Type": "Socks",
+      "Alias": "VIP Grey Socks",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "VIPParts-Socks-01",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "213",
+      "IdInType": "02",
+      "Type": "Socks",
+      "Alias": "VIP Yellow Socks",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "VIPParts-Socks-02",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "214",
+      "IdInType": "03",
+      "Type": "Socks",
+      "Alias": "VIP Cream Ankle Socks",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "VIPParts-Socks-03",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "217",
+      "IdInType": "065",
+      "Type": "Hairstyles",
+      "Alias": "Light Bob Cut ",
+      "Tags": "HAIR,LIGHT,UNISEX",
+      "Clashes": "",
+      "Path": "1.10-Hairstyles-065",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "218",
+      "IdInType": "066",
+      "Type": "Hairstyles",
+      "Alias": "Brown Bob Cut",
+      "Tags": "HAIR,CHESTNUT,UNISEX",
+      "Clashes": "",
+      "Path": "1.10-Hairstyles-066",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "219",
+      "IdInType": "067",
+      "Type": "Hairstyles",
+      "Alias": "Dark Bob Cut",
+      "Tags": "HAIR,BROWN,UNISEX",
+      "Clashes": "",
+      "Path": "1.10-Hairstyles-067",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "220",
+      "IdInType": "068",
+      "Type": "Hairstyles",
+      "Alias": "Lilian Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "1.10-Hairstyles-068",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "221",
+      "IdInType": "069",
+      "Type": "Hairstyles",
+      "Alias": "Scruffy Blond Hair",
+      "Tags": "HAIR,LIGHT,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-069",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "222",
+      "IdInType": "070",
+      "Type": "Hairstyles",
+      "Alias": "Scruffy Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-070",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "223",
+      "IdInType": "071",
+      "Type": "Hairstyles",
+      "Alias": "Scruffy Brown Hair",
+      "Tags": "HAIR,BROWN,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-071",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "224",
+      "IdInType": "072",
+      "Type": "Hairstyles",
+      "Alias": "Scruffy Dark Brown Hair",
+      "Tags": "HAIR,BROWN,BLACK,UNISEX",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-072",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "225",
+      "IdInType": "073",
+      "Type": "Hairstyles",
+      "Alias": "Blond Mop",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-073",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "226",
+      "IdInType": "074",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Mop",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-074",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "227",
+      "IdInType": "075",
+      "Type": "Hairstyles",
+      "Alias": "Brown Mop",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-075",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "228",
+      "IdInType": "076",
+      "Type": "Hairstyles",
+      "Alias": "Black Mop",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-076",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "229",
+      "IdInType": "077",
+      "Type": "Hairstyles",
+      "Alias": "Wayward Blond Hair",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-077",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "230",
+      "IdInType": "078",
+      "Type": "Hairstyles",
+      "Alias": "Wayward Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-078",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "231",
+      "IdInType": "079",
+      "Type": "Hairstyles",
+      "Alias": "Wayward Brown Hair",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-079",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "232",
+      "IdInType": "080",
+      "Type": "Hairstyles",
+      "Alias": "Wayward Dark Brown Hair",
+      "Tags": "HAIR,BROWN,BLACKMALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-080",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "233",
+      "IdInType": "081",
+      "Type": "Hairstyles",
+      "Alias": "Blond Bowl Cut",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-081",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "234",
+      "IdInType": "082",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Bowl Cut",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-082",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "235",
+      "IdInType": "083",
+      "Type": "Hairstyles",
+      "Alias": "Brown Bowl Cut",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-083",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "236",
+      "IdInType": "084",
+      "Type": "Hairstyles",
+      "Alias": "Black Bowl Cut",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-084",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "237",
+      "IdInType": "085",
+      "Type": "Hairstyles",
+      "Alias": "Stephen Hair",
+      "Tags": "HAIR,MALE",
+      "Clashes": "HAT,BEARD_DARK",
+      "Path": "1.10-Hairstyles-085",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "238",
+      "IdInType": "086",
+      "Type": "Hairstyles",
+      "Alias": "Short Blond Curly Jeffcut",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.10-Hairstyles-086",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "239",
+      "IdInType": "087",
+      "Type": "Hairstyles",
+      "Alias": "Short Brown Curly Jeffcut",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-087",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "240",
+      "IdInType": "088",
+      "Type": "Hairstyles",
+      "Alias": "Short Darker Brown Curly Jeffcut",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-088",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "241",
+      "IdInType": "089",
+      "Type": "Hairstyles",
+      "Alias": "Short Black Curly Jeffcut",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.10-Hairstyles-089",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "242",
+      "IdInType": "004",
+      "Type": "Brows",
+      "Alias": "Eyebrows 04",
+      "Tags": "EYEBROWS,MALE",
+      "Clashes": "",
+      "Path": "1.10-Brows-004",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "243",
+      "IdInType": "005",
+      "Type": "Brows",
+      "Alias": "Eyebrows 05",
+      "Tags": "EYEBROWS",
+      "Clashes": "",
+      "Path": "1.10-Brows-005",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "244",
+      "IdInType": "006",
+      "Type": "Brows",
+      "Alias": "Eyebrows 06",
+      "Tags": "EYEBROWS",
+      "Clashes": "",
+      "Path": "1.10-Brows-006",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "245",
+      "IdInType": "007",
+      "Type": "Brows",
+      "Alias": "Eyebrows 07",
+      "Tags": "EYEBROWS",
+      "Clashes": "",
+      "Path": "1.10-Brows-007",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "246",
+      "IdInType": "011",
+      "Type": "Beards",
+      "Alias": "Brown Full Stubble",
+      "Tags": "BEARD,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-011",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "247",
+      "IdInType": "012",
+      "Type": "Beards",
+      "Alias": "Dark Brown Stubble",
+      "Tags": "BEARD,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-012",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "248",
+      "IdInType": "013",
+      "Type": "Beards",
+      "Alias": "Brown Stubble",
+      "Tags": "BEARD,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-013",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "249",
+      "IdInType": "014",
+      "Type": "Beards",
+      "Alias": "Brown Full Stubble",
+      "Tags": "BEARD,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-014",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "250",
+      "IdInType": "015",
+      "Type": "Beards",
+      "Alias": "Chestnut Stubble",
+      "Tags": "BEARD,CHESTNUT,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-015",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "251",
+      "IdInType": "016",
+      "Type": "Beards",
+      "Alias": "Chestnut Full Stubble",
+      "Tags": "BEARD,CHESTNUT,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-016",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "252",
+      "IdInType": "017",
+      "Type": "Beards",
+      "Alias": "Blond Full Stubble",
+      "Tags": "BEARD,LIGHT,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-017",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "253",
+      "IdInType": "018",
+      "Type": "Beards",
+      "Alias": "Blond Stubble",
+      "Tags": "BEARD,LIGHT,MALE",
+      "Clashes": "",
+      "Path": "1.10-Beards-018",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "254",
+      "IdInType": "027",
+      "Type": "Shirts",
+      "Alias": "Jeff Shirt",
+      "Tags": "SHIRT,MALE",
+      "Clashes": "PANTS_FORMAL",
+      "Path": "1.10-Shirts-027",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "255",
+      "IdInType": "005",
+      "Type": "Glasses",
+      "Alias": "Glasses 05",
+      "Tags": "GLASSES",
+      "Clashes": "",
+      "Path": "1.10-Glasses-005",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "256",
+      "IdInType": "006",
+      "Type": "Glasses",
+      "Alias": "Glasses 06",
+      "Tags": "GLASSES",
+      "Clashes": "",
+      "Path": "1.10-Glasses-006",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "257",
+      "IdInType": "004",
+      "Type": "Hats",
+      "Alias": "Hat 04",
+      "Tags": "HAT,SMALLBEANIE",
+      "Clashes": "",
+      "Path": "1.10-Hats-004",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "258",
+      "IdInType": "005",
+      "Type": "Hats",
+      "Alias": "Hat 05",
+      "Tags": "HAT,SMALLBEANIE",
+      "Clashes": "",
+      "Path": "1.10-Hats-005",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "259",
+      "IdInType": "006",
+      "Type": "Hats",
+      "Alias": "Hat 06",
+      "Tags": "HAT,SMALLBEANIE",
+      "Clashes": "",
+      "Path": "1.10-Hats-006",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "260",
+      "IdInType": "01",
+      "Type": "Bracelets",
+      "Alias": "VIP Bracelet",
+      "Tags": "BRACELET",
+      "Clashes": "",
+      "Path": "VIPParts-Bracelets-01",
+      "Resources": [
+        "-Bracelet"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "261",
+      "IdInType": "04",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 04",
+      "Tags": "HAIR",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-04",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "262",
+      "IdInType": "04",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 04",
+      "Tags": "SHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-04",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "263",
+      "IdInType": "008",
+      "Type": "Brows",
+      "Alias": "Jeff Eyebrows",
+      "Tags": "EYEBROWS,MALE",
+      "Clashes": "",
+      "Path": "1.10-Brows-008",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "264",
+      "IdInType": "03",
+      "Type": "Hats",
+      "Alias": "Paw Cap",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-03",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "265",
+      "IdInType": "05",
+      "Type": "Shirts",
+      "Alias": "VIP Orange Jacket",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-05",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "266",
+      "IdInType": "06",
+      "Type": "Shirts",
+      "Alias": "VIP Cat Pentagram",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-06",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "267",
+      "IdInType": "04",
+      "Type": "Shoes",
+      "Alias": "VIP Black Sneakers",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-04",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "268",
+      "IdInType": "01",
+      "Type": "Eyes",
+      "Alias": "VIP Goth Eyes",
+      "Tags": "EYES",
+      "Clashes": "",
+      "Path": "VIPParts-Eyes-01",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "269",
+      "IdInType": "04",
+      "Type": "Hats",
+      "Alias": "Halloween Pumpkin Cap",
+      "Tags": "HAT,CAP",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-04",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "270",
+      "IdInType": "05",
+      "Type": "Hats",
+      "Alias": "Halloween Pumpkin Beanie",
+      "Tags": "HAT,CAP",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-05",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "271",
+      "IdInType": "06",
+      "Type": "Hats",
+      "Alias": "Halloween Cat Ears",
+      "Tags": "HAT,CAP",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-06",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "272",
+      "IdInType": "07",
+      "Type": "Shirts",
+      "Alias": "Halloween Pumpkin Cat TShirt Female",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-07",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "273",
+      "IdInType": "08",
+      "Type": "Shirts",
+      "Alias": "Halloween Pumpkin Cat TShirt Male",
+      "Tags": "SHIRT,MALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-08",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "274",
+      "IdInType": "09",
+      "Type": "Shirts",
+      "Alias": "Halloween Cardigan Female",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-09",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "275",
+      "IdInType": "01",
+      "Type": "Mouths",
+      "Alias": "Orange Lipstick",
+      "Tags": "MOUTH,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Mouths-01",
+      "Resources": [
+        "-Mouth_Normal",
+        "-Mouth_Open",
+        "-Mouth_Happy",
+        "-Mouth_Smile",
+        "-Mouth_Anoyed",
+        "",
+        "-Mouth_Open_B",
+        "-Mouth_Sad",
+        "",
+        "-Mouth_Squeeze"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "276",
+      "IdInType": "10",
+      "Type": "Shirts",
+      "Alias": "Christmas Cardigan",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-10",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "277",
+      "IdInType": "11",
+      "Type": "Shirts",
+      "Alias": "Santa T-shirt",
+      "Tags": "SHIRT,MALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-11",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "278",
+      "IdInType": "12",
+      "Type": "Shirts",
+      "Alias": "Skull Elf T-shirt",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-12",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "279",
+      "IdInType": "05",
+      "Type": "Hairstyles",
+      "Alias": "Cherry X-mas Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-05",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "280",
+      "IdInType": "07",
+      "Type": "Hats",
+      "Alias": "X-mas Cap",
+      "Tags": "HAT,CAP",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-07",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "281",
+      "IdInType": "08",
+      "Type": "Hats",
+      "Alias": "Santa Hat",
+      "Tags": "HAT",
+      "Clashes": "",
+      "Path": "VIPParts-Hats-08",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "282",
+      "IdInType": "13",
+      "Type": "Shirts",
+      "Alias": "Green Yin/Yang",
+      "Tags": "SHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-13",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "283",
+      "IdInType": "028",
+      "Type": "Shirts",
+      "Alias": "Shelby Hoodie",
+      "Tags": "SHIRT,DRESSSHIRT,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Shirts-028",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "284",
+      "IdInType": "013",
+      "Type": "Pants",
+      "Alias": "Shelby Pants",
+      "Tags": "PANTS,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Pants-013",
+      "Resources": [
+        "",
+        "",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "285",
+      "IdInType": "090",
+      "Type": "Hairstyles",
+      "Alias": "Shelby Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Hairstyles-090",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "286",
+      "IdInType": "033",
+      "Type": "Eyes",
+      "Alias": "Shelby Eyes",
+      "Tags": "EYES,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Eyes-033",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "287",
+      "IdInType": "009",
+      "Type": "Brows",
+      "Alias": "Shelby Eyebrows",
+      "Tags": "BROWS,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Brows-009",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "288",
+      "IdInType": "010",
+      "Type": "Brows",
+      "Alias": "Eyebrows 010",
+      "Tags": "BROWS,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Brows-010",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "289",
+      "IdInType": "011",
+      "Type": "Brows",
+      "Alias": "Eyebrows 011",
+      "Tags": "BROWS,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Brows-011",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "290",
+      "IdInType": "012",
+      "Type": "Brows",
+      "Alias": "Eyebrows 012",
+      "Tags": "BROWS,FEMALE",
+      "Clashes": "",
+      "Path": "1.80-Brows-012",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "292",
+      "IdInType": "06",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 06",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-06",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "293",
+      "IdInType": "07",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 07",
+      "Tags": "HAIR,MALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-07",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "294",
+      "IdInType": "08",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 08",
+      "Tags": "HAIR,MALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-08",
+      "Resources": [
+        "",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "295",
+      "IdInType": "09",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 09",
+      "Tags": "HAIR,MALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-09",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "296",
+      "IdInType": "10",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 10",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-10",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "297",
+      "IdInType": "02",
+      "Type": "Pants",
+      "Alias": "VIP Pants 02",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-02",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "298",
+      "IdInType": "03",
+      "Type": "Pants",
+      "Alias": "VIP Pants 03",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-03",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "299",
+      "IdInType": "04",
+      "Type": "Pants",
+      "Alias": "VIP Pants 04",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-04",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "300",
+      "IdInType": "05",
+      "Type": "Pants",
+      "Alias": "VIP Pants 05",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-05",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "301",
+      "IdInType": "06",
+      "Type": "Pants",
+      "Alias": "VIP Pants 06",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-06",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "302",
+      "IdInType": "14",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 14",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-14",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "303",
+      "IdInType": "15",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 15",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-15",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "304",
+      "IdInType": "16",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 16",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-16",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "305",
+      "IdInType": "17",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 17",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-17",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "306",
+      "IdInType": "18",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 18",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-18",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "307",
+      "IdInType": "19",
+      "Type": "Shirts",
+      "Alias": "VIP Shirt 19",
+      "Tags": "SHIRT,FEMALE,DRESSSHIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-19",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "308",
+      "IdInType": "05",
+      "Type": "Shoes",
+      "Alias": "VIP Shoes 05",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-05",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "309",
+      "IdInType": "06",
+      "Type": "Shoes",
+      "Alias": "VIP Shoes 06",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-06",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "310",
+      "IdInType": "07",
+      "Type": "Shoes",
+      "Alias": "VIP Shoes 07",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-07",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "311",
+      "IdInType": "08",
+      "Type": "Shoes",
+      "Alias": "VIP Shoes 08",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-08",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "312",
+      "IdInType": "03",
+      "Type": "Skirts",
+      "Alias": "VIP Skirt 03",
+      "Tags": "SKIRT",
+      "Clashes": "",
+      "Path": "VIPParts-Skirts-03",
+      "Resources": [
+        "-Skirt"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "313",
+      "IdInType": "09",
+      "Type": "Hats",
+      "Alias": "VIP Valentines Hats 07",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.83-Hats-07",
+      "Resources": [
+        "-Hat_Front",
+        "-Hat_Back"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "314",
+      "IdInType": "10",
+      "Type": "Hats",
+      "Alias": "VIP Valentines Hats 08",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.83-Hats-08",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "315",
+      "IdInType": "11",
+      "Type": "Hats",
+      "Alias": "VIP Valentines Hats 09",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.83-Hats-09",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "316",
+      "IdInType": "07",
+      "Type": "Pants",
+      "Alias": "VIP Valentines Pants 07",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "1.83-Pants-07",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "317",
+      "IdInType": "20",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 20",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-16",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "318",
+      "IdInType": "21",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 21",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-17",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "319",
+      "IdInType": "22",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 22",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-18",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "320",
+      "IdInType": "23",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 23",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-19",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "321",
+      "IdInType": "24",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 24",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-20",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "322",
+      "IdInType": "25",
+      "Type": "Shirts",
+      "Alias": "VIP Valentines Shirts 25",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.83-Shirts-21",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "323",
+      "IdInType": "04",
+      "Type": "Socks",
+      "Alias": "VIP Valentines Socks 04",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "1.83-Socks-05",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "324",
+      "IdInType": "028",
+      "Type": "Shirts",
+      "Alias": "Runaway Shirt 001",
+      "Tags": "SHIRT,BLUE,LONGSLEEVES,MALE",
+      "Clashes": "BRACELET,BELT,SHOES_OPENTOED",
+      "Path": "1.84-Shirts-028",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "325",
+      "IdInType": "029",
+      "Type": "Shirts",
+      "Alias": "Runaway Shirt 002",
+      "Tags": "SHIRT,PINK,FEMALE,LONGSLEEVES",
+      "Clashes": "BRACELET,BELT",
+      "Path": "1.84-Shirts-029",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "326",
+      "IdInType": "030",
+      "Type": "Shirts",
+      "Alias": "Runaway Shirt 003",
+      "Tags": "SHIRT,ORANGE,FEMALE,LONGSLEEVES",
+      "Clashes": "BRACELET,BELT",
+      "Path": "1.84-Shirts-030",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "9",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "327",
+      "IdInType": "031",
+      "Type": "Shirts",
+      "Alias": "Runaway Shirt 004",
+      "Tags": "SHIRT,PURPLE,FEMALE",
+      "Clashes": "BELT",
+      "Path": "1.84-Shirts-031",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "2",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "328",
+      "IdInType": "032",
+      "Type": "Shirts",
+      "Alias": "Runaway Shirt 005",
+      "Tags": "SHIRT,GREY,FEMALE",
+      "Clashes": "BELT",
+      "Path": "1.84-Shirts-032",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "12",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "329",
+      "IdInType": "091",
+      "Type": "Hairstyles",
+      "Alias": "Blond Side Part",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-091",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "8",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "330",
+      "IdInType": "092",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Side Part",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-092",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "331",
+      "IdInType": "093",
+      "Type": "Hairstyles",
+      "Alias": "Brown Side Part",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-093",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "332",
+      "IdInType": "094",
+      "Type": "Hairstyles",
+      "Alias": "Black Side Part",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-094",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "333",
+      "IdInType": "095",
+      "Type": "Hairstyles",
+      "Alias": "Orange Undercut",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD",
+      "Path": "1.84-Hairstyles-095",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "334",
+      "IdInType": "096",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Undercut",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-096",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "335",
+      "IdInType": "097",
+      "Type": "Hairstyles",
+      "Alias": "Brown Undercut",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "HAT,BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-097",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "336",
+      "IdInType": "098",
+      "Type": "Hairstyles",
+      "Alias": "Black Undercut",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "HAT,BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-098",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "337",
+      "IdInType": "099",
+      "Type": "Hairstyles",
+      "Alias": "Blond Buzz",
+      "Tags": "HAIR,LIGHT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-099",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "338",
+      "IdInType": "100",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Buzz",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-100",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "339",
+      "IdInType": "101",
+      "Type": "Hairstyles",
+      "Alias": "Brown Buzz",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-101",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "340",
+      "IdInType": "102",
+      "Type": "Hairstyles",
+      "Alias": "Black Buzz",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-102",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "341",
+      "IdInType": "103",
+      "Type": "Hairstyles",
+      "Alias": "Grey Pattern Baldness",
+      "Tags": "HAIR,GREY,MALE",
+      "Clashes": "",
+      "Path": "1.84-Hairstyles-103",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "342",
+      "IdInType": "104",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Pattern Baldness",
+      "Tags": "HAIR,CHESTNUT,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_DARK",
+      "Path": "1.84-Hairstyles-104",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "343",
+      "IdInType": "105",
+      "Type": "Hairstyles",
+      "Alias": "Brown Pattern Baldness",
+      "Tags": "HAIR,BROWN,MALE",
+      "Clashes": "BEARD_BLACK,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-105",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "344",
+      "IdInType": "106",
+      "Type": "Hairstyles",
+      "Alias": "Black Pattern Baldness",
+      "Tags": "HAIR,BLACK,MALE",
+      "Clashes": "BEARD_CHESTNUT,BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-106",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "345",
+      "IdInType": "107",
+      "Type": "Hairstyles",
+      "Alias": "REPEAT",
+      "Tags": "HAIR,MALE",
+      "Clashes": "BEARD_DARK",
+      "Path": "1.84-Hairstyles-107",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "346",
+      "IdInType": "108",
+      "Type": "Hairstyles",
+      "Alias": "REPEAT",
+      "Tags": "HAIR,MALE",
+      "Clashes": "BEARD_DARK",
+      "Path": "1.84-Hairstyles-108",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "347",
+      "IdInType": "109",
+      "Type": "Hairstyles",
+      "Alias": "REPEAT",
+      "Tags": "HAIR,MALE",
+      "Clashes": "BEARD_DARK",
+      "Path": "1.84-Hairstyles-109",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "348",
+      "IdInType": "110",
+      "Type": "Hairstyles",
+      "Alias": "REPEAT",
+      "Tags": "HAIR,MALE",
+      "Clashes": "BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-110",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "349",
+      "IdInType": "111",
+      "Type": "Hairstyles",
+      "Alias": "REPEAT",
+      "Tags": "HAIR,MALE",
+      "Clashes": "BEARD_LIGHT",
+      "Path": "1.84-Hairstyles-111",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "350",
+      "IdInType": "112",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Anime Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-112",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "351",
+      "IdInType": "113",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Anime Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-113",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "352",
+      "IdInType": "114",
+      "Type": "Hairstyles",
+      "Alias": "Brown Anime Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-114",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "353",
+      "IdInType": "115",
+      "Type": "Hairstyles",
+      "Alias": "Black Anime Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-115",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "354",
+      "IdInType": "116",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Bob",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-116",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "355",
+      "IdInType": "117",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Bob",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-117",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "356",
+      "IdInType": "118",
+      "Type": "Hairstyles",
+      "Alias": "Brown Bob",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-118",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "357",
+      "IdInType": "119",
+      "Type": "Hairstyles",
+      "Alias": "Black Bob",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-119",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "358",
+      "IdInType": "120",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Tresses",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-120",
+      "Resources": [
+        "",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "359",
+      "IdInType": "121",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Tresses",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-121",
+      "Resources": [
+        "",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "360",
+      "IdInType": "122",
+      "Type": "Hairstyles",
+      "Alias": "Brown Tresses",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-122",
+      "Resources": [
+        "",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "361",
+      "IdInType": "123",
+      "Type": "Hairstyles",
+      "Alias": "Black Tresses",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-123",
+      "Resources": [
+        "",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "362",
+      "IdInType": "124",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Side Fringe",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-124",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "363",
+      "IdInType": "125",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Side Fringe",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-125",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "364",
+      "IdInType": "126",
+      "Type": "Hairstyles",
+      "Alias": "Brown Side Fringe",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-126",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "365",
+      "IdInType": "127",
+      "Type": "Hairstyles",
+      "Alias": "Black Side Fringe",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-127",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "366",
+      "IdInType": "128",
+      "Type": "Hairstyles",
+      "Alias": "Blonde Center Part",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-128",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "367",
+      "IdInType": "129",
+      "Type": "Hairstyles",
+      "Alias": "Chestnut Center Part",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-129",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "368",
+      "IdInType": "130",
+      "Type": "Hairstyles",
+      "Alias": "Brown Center Part",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-130",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "369",
+      "IdInType": "131",
+      "Type": "Hairstyles",
+      "Alias": "Black Center Part",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-131",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "370",
+      "IdInType": "132",
+      "Type": "Hairstyles",
+      "Alias": "Long Wavy Blonde Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-132",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "371",
+      "IdInType": "133",
+      "Type": "Hairstyles",
+      "Alias": "Long Wavy Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-133",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "372",
+      "IdInType": "134",
+      "Type": "Hairstyles",
+      "Alias": "Long Wavy Brown Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-134",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "373",
+      "IdInType": "135",
+      "Type": "Hairstyles",
+      "Alias": "Jess Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-135",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "374",
+      "IdInType": "136",
+      "Type": "Hairstyles",
+      "Alias": "Easy Blonde Hair",
+      "Tags": "HAIR,LIGHT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-136",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "375",
+      "IdInType": "137",
+      "Type": "Hairstyles",
+      "Alias": "Easy Chestnut Hair",
+      "Tags": "HAIR,CHESTNUT,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-137",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "376",
+      "IdInType": "138",
+      "Type": "Hairstyles",
+      "Alias": "Easy Brown Hair",
+      "Tags": "HAIR,BROWN,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-138",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "377",
+      "IdInType": "139",
+      "Type": "Hairstyles",
+      "Alias": "Easy Black Hair",
+      "Tags": "HAIR,BLACK,FEMALE",
+      "Clashes": "HAT",
+      "Path": "1.84-Hairstyles-139",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back_Mid",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "378",
+      "IdInType": "013",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 013",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-013",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "379",
+      "IdInType": "014",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 014",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-014",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "380",
+      "IdInType": "015",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 015",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-015",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "381",
+      "IdInType": "016",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 016",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-016",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "382",
+      "IdInType": "017",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 017",
+      "Tags": "EYEBROWS,MALE",
+      "Clashes": "",
+      "Path": "1.84-Brows-017",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "383",
+      "IdInType": "018",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 018",
+      "Tags": "EYEBROWS,MALE",
+      "Clashes": "",
+      "Path": "1.84-Brows-018",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "384",
+      "IdInType": "019",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 019",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-019",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "385",
+      "IdInType": "020",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 020",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-020",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "386",
+      "IdInType": "021",
+      "Type": "Brows",
+      "Alias": "Runaway Brows 021",
+      "Tags": "EYEBROWS,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Brows-021",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "387",
+      "IdInType": "007",
+      "Type": "Glasses",
+      "Alias": "Runaway Glasses 001",
+      "Tags": "GLASSES,BROWN,SQUARE,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Glasses-007",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "388",
+      "IdInType": "008",
+      "Type": "Glasses",
+      "Alias": "Runaway Glasses 002",
+      "Tags": "GLASSES,BROWN,ROUND,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Glasses-008",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "389",
+      "IdInType": "009",
+      "Type": "Glasses",
+      "Alias": "Runaway Glasses 003",
+      "Tags": "GLASSES,BROWN,SQUARE,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Glasses-009",
+      "Resources": [
+        "-Glasses"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "390",
+      "IdInType": "022",
+      "Type": "Brows",
+      "Alias": "Lisa's Eyebrows",
+      "Tags": "EYEBROWS,FEMALE",
+      "Clashes": "",
+      "Path": "1.84-Brows-022",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "391",
+      "IdInType": "034",
+      "Type": "Eyes",
+      "Alias": "Grumpy Eyes",
+      "Tags": "EYES,BROWN,MALE",
+      "Clashes": "",
+      "Path": "1.84-Eyes-034",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "TRUE"
+    },
+    {
+      "ID": "392",
+      "IdInType": "003",
+      "Type": "Mouths",
+      "Alias": "Grumpy Mouth",
+      "Tags": "MOUTH,UNISEX",
+      "Clashes": "",
+      "Path": "1.84-Mouths-003",
+      "Resources": [
+        "-Mouth_Normal",
+        "-Mouth_Open",
+        "-Mouth_Happy",
+        "-Mouth_Smile",
+        "-Mouth_Anoyed",
+        "",
+        "-Mouth_Open_B",
+        "-Mouth_Sad",
+        "",
+        "-Mouth_Squeeze"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "393",
+      "IdInType": "019",
+      "Type": "Beards",
+      "Alias": "Tom's Beard",
+      "Tags": "BEARD,GREY,MALE",
+      "Clashes": "",
+      "Path": "1.84-Beards-019",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "394",
+      "IdInType": "11",
+      "Type": "Hairstyles",
+      "Alias": "VIP Hair 011",
+      "Tags": "HAIR,MALE",
+      "Clashes": "",
+      "Path": "1.84-Hairstyles-11",
+      "Resources": [
+        "",
+        "",
+        "",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "395",
+      "IdInType": "020",
+      "Type": "Beards",
+      "Alias": "VIP Beard",
+      "Tags": "BEARD,MALE",
+      "Clashes": "",
+      "Path": "1.84-Beards-020",
+      "Resources": [
+        "-Beard"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "396",
+      "IdInType": "023",
+      "Type": "Brows",
+      "Alias": "VIP Luca's Eyebrows",
+      "Tags": "EYEBROWS,MALE",
+      "Clashes": "",
+      "Path": "1.84-Brows-023",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "397",
+      "IdInType": "12",
+      "Type": "Hats",
+      "Alias": "VIP St Patrick's Hat 12",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.85-Hats-12",
+      "Resources": [
+        "-Hat_Front",
+        "-Hat_Back"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "398",
+      "IdInType": "13",
+      "Type": "Hats",
+      "Alias": "VIP St Patrick's Hat 13",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.85-Hats-13",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "399",
+      "IdInType": "08",
+      "Type": "Pants",
+      "Alias": "VIP St Patrick's Pants 08",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "1.85-Pants-08",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "400",
+      "IdInType": "26",
+      "Type": "Shirts",
+      "Alias": "VIP St Patrick's Shirts 26",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.85-Shirts-26",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "401",
+      "IdInType": "27",
+      "Type": "Shirts",
+      "Alias": "VIP St Patrick's Shirts 27",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.85-Shirts-27",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "402",
+      "IdInType": "28",
+      "Type": "Shirts",
+      "Alias": "VIP St Patrick's Shirts 28",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.85-Shirts-28",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "403",
+      "IdInType": "29",
+      "Type": "Shirts",
+      "Alias": "VIP St Patrick's Shirts 29",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.85-Shirts-29",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "404",
+      "IdInType": "14",
+      "Type": "Hats",
+      "Alias": "VIP St Patrick's Hat 14",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.85-Hats-14",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "405",
+      "IdInType": "30",
+      "Type": "Shirts",
+      "Alias": "VIP Easter Shirts 30 Sarah",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.87-Shirts-30",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "406",
+      "IdInType": "31",
+      "Type": "Shirts",
+      "Alias": "VIP Easter Shirts 31 Jordan",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.87-Shirts-31",
+      "Resources": [
+        "-Body",
+        "-Collar",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "407",
+      "IdInType": "15",
+      "Type": "Hats",
+      "Alias": "VIP Easter Hat 15 Riley",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.87-Hats-15",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "408",
+      "IdInType": "16",
+      "Type": "Hats",
+      "Alias": "VIP Easter Hat 16 Jordan",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.87-Hats-16",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "409",
+      "IdInType": "17",
+      "Type": "Hats",
+      "Alias": "VIP Cinco De Mayo Hat 17 Cherry",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.88-Hats-17",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "410",
+      "IdInType": "18",
+      "Type": "Hats",
+      "Alias": "VIP Cinco De Mayo Hat 18 Riley",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.88-Hats-18",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "411",
+      "IdInType": "19",
+      "Type": "Hats",
+      "Alias": "VIP Cinco De Mayo Hat 19 Jun Seo",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "1.88-Hats-19",
+      "Resources": [
+        "-Hat_Front",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "412",
+      "IdInType": "05",
+      "Type": "Socks",
+      "Alias": "VIP Cinco De Mayo Socks Cherry",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "1.88-Socks-05",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "-Sock_B",
+        "-Sock_B"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "413",
+      "IdInType": "32",
+      "Type": "Shirts",
+      "Alias": "VIP Cinco De Mayo Shirt Cherry",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.88-Shirts-32",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "-L_Sleeve",
+        "-R_Sleeve"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "414",
+      "IdInType": "33",
+      "Type": "Shirts",
+      "Alias": "VIP Cinco De Mayo Shirt Riley",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.88-Shirts-33",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "415",
+      "IdInType": "34",
+      "Type": "Shirts",
+      "Alias": "VIP Cinco De Mayo Shirt Jun Seo",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "1.88-Shirts-34",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "416",
+      "IdInType": "01",
+      "Type": "Brows",
+      "Alias": "Renee's Eyebrows",
+      "Tags": "EYEBROWS,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Brows-01",
+      "Resources": [
+        "-L_Brow",
+        "-R_Brow"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "417",
+      "IdInType": "02",
+      "Type": "Eyes",
+      "Alias": "Renee's Eyes",
+      "Tags": "EYES",
+      "Clashes": "",
+      "Path": "VIPParts-Eyes-02",
+      "Resources": [
+        "-Eye_R_Normal",
+        "-Eye_L_Normal",
+        "-Eye_R_Sad",
+        "-Eye_L_Sad",
+        "-Eye_R_Angry",
+        "-Eye_L_Angry",
+        "-Eye_R_Love",
+        "-Eye_L_Love",
+        "-Eye_R_Closed",
+        "-Eye_L_Closed",
+        "-Eye_R_Down",
+        "-Eye_L_Down",
+        "-Eye_R_Cute",
+        "-Eye_L_Cute",
+        "-Eye_R_Open",
+        "-Eye_L_Open",
+        "",
+        "",
+        "-R_Eye_Angry",
+        "-L_Eye_Angry"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "418",
+      "IdInType": "12",
+      "Type": "Hairstyles",
+      "Alias": "Renee's Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Hairstyles-12",
+      "Resources": [
+        "-Hair",
+        "",
+        "-Hair_Back_Long",
+        "",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "419",
+      "IdInType": "02",
+      "Type": "Mouths",
+      "Alias": "Renee's Mouth",
+      "Tags": "MOUTH,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Mouths-02",
+      "Resources": [
+        "-Mouth_Normal",
+        "-Mouth_Open",
+        "-Mouth_Happy",
+        "-Mouth_Smile",
+        "-Mouth_Anoyed",
+        "",
+        "-Mouth_Open_B",
+        "-Mouth_Sad",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "420",
+      "IdInType": "01",
+      "Type": "Noses",
+      "Alias": "Renee's Nose",
+      "Tags": "NOSE,FEMALE",
+      "Clashes": "",
+      "Path": "VIPParts-Noses-01",
+      "Resources": [
+        "-Nose"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "421",
+      "IdInType": "09",
+      "Type": "Pants",
+      "Alias": "Renee's Pants",
+      "Tags": "PANTS",
+      "Clashes": "",
+      "Path": "VIPParts-Pants-09",
+      "Resources": [
+        "-R_Leg_Bot",
+        "-L_Leg_Bot",
+        "-R_Leg_Top",
+        "-L_Leg_Top",
+        "-Bottom"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "422",
+      "IdInType": "35",
+      "Type": "Shirts",
+      "Alias": "Renee's Shirt",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "VIPParts-Shirts-35",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "423",
+      "IdInType": "09",
+      "Type": "Shoes",
+      "Alias": "Renee's Shoes",
+      "Tags": "SHOES",
+      "Clashes": "",
+      "Path": "VIPParts-Shoes-09",
+      "Resources": [
+        "-Shoe",
+        "-Shoe"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "424",
+      "IdInType": "06",
+      "Type": "Socks",
+      "Alias": "Renee's Socks",
+      "Tags": "SOCKS",
+      "Clashes": "",
+      "Path": "VIPParts-Socks-06",
+      "Resources": [
+        "-Sock_A",
+        "-Sock_A",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "425",
+      "IdInType": "140",
+      "Type": "Hairstyles",
+      "Alias": "Aditia Hair",
+      "Tags": "HAIR,FEMALE",
+      "Clashes": "",
+      "Path": "curlyhair",
+      "Resources": [
+        "-Hair",
+        "",
+        "",
+        "-Hair_Back",
+        "-Bang_A"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "426",
+      "IdInType": "020",
+      "Type": "Hats",
+      "Alias": "Jonas Hat",
+      "Tags": "HATS",
+      "Clashes": "",
+      "Path": "jonas_hat",
+      "Resources": [
+        "-Hat_Front",
+        "-Hat_Back"
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    },
+    {
+      "ID": "427",
+      "IdInType": "033",
+      "Type": "Shirts",
+      "Alias": "Jonas Shirt",
+      "Tags": "SHIRTS",
+      "Clashes": "",
+      "Path": "dinoshirt",
+      "Resources": [
+        "-Body",
+        "",
+        "-R_Shoulder",
+        "-L_Shoulder",
+        "",
+        ""
+      ],
+      "PartColor": "",
+      "RandomCustomerChoosable": "FALSE"
+    }
+  ]
+}

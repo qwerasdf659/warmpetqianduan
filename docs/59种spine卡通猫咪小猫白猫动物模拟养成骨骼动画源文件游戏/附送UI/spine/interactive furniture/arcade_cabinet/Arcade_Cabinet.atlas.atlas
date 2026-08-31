@@ -1,0 +1,90 @@
+
+Arcade_Cabinet.png
+size: 813,262
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arcade_Cabinet/BG
+  rotate: false
+  xy: 515, 26
+  size: 191, 115
+  orig: 191, 115
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Bot
+  rotate: true
+  xy: 782, 41
+  size: 41, 13
+  orig: 41, 13
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Cat
+  rotate: false
+  xy: 788, 84
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Dome
+  rotate: true
+  xy: 708, 35
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/F1
+  rotate: true
+  xy: 708, 135
+  size: 6, 5
+  orig: 6, 5
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/F2
+  rotate: true
+  xy: 708, 128
+  size: 5, 3
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/FB
+  rotate: true
+  xy: 759, 85
+  size: 9, 14
+  orig: 9, 14
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Frame
+  rotate: false
+  xy: 515, 143
+  size: 198, 117
+  orig: 198, 117
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Hull
+  rotate: true
+  xy: 2, 2
+  size: 258, 511
+  orig: 258, 511
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Ship
+  rotate: true
+  xy: 759, 58
+  size: 24, 21
+  orig: 25, 21
+  offset: 0, 0
+  index: -1
+Arcade_Cabinet/Stars
+  rotate: true
+  xy: 715, 110
+  size: 150, 95
+  orig: 150, 95
+  offset: 0, 0
+  index: -1
+Arcade_Machine/Start
+  rotate: false
+  xy: 708, 96
+  size: 78, 12
+  orig: 78, 12
+  offset: 0, 0
+  index: -1

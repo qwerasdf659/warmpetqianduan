@@ -1,0 +1,32 @@
+{
+  "Items": [
+    {
+      "Day": 1,
+      "Reward": "FC:40"
+    },
+    {
+      "Day": 2,
+      "Reward": "FURN_287"
+    },
+    {
+      "Day": 3,
+      "Reward": "FURN_286"
+    },
+    {
+      "Day": 4,
+      "Reward": "HC:25"
+    },
+    {
+      "Day": 5,
+      "Reward": "FURN_287"
+    },
+    {
+      "Day": 6,
+      "Reward": "FURN_285"
+    },
+    {
+      "Day": 7,
+      "Reward": "CAT_068"
+    }
+  ]
+}

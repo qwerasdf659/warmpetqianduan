@@ -1,0 +1,708 @@
+{
+  "Items": [
+    {
+      "ID": 0,
+      "TrackedEvent": 0,
+      "EventName": "None",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 1,
+      "TrackedEvent": 1,
+      "EventName": "SessionStarted",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 2,
+      "TrackedEvent": 2,
+      "EventName": "WelcomePanelShown",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 3,
+      "TrackedEvent": 3,
+      "EventName": "CustomerInteraction",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 4,
+      "TrackedEvent": 4,
+      "EventName": "PlayerLevelUp",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": true
+    },
+    {
+      "ID": 5,
+      "TrackedEvent": 5,
+      "EventName": "CatLevelUp",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": true
+    },
+    {
+      "ID": 6,
+      "TrackedEvent": 6,
+      "EventName": "EarnFurnitureToken",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 7,
+      "TrackedEvent": 7,
+      "EventName": "EarnSC",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 8,
+      "TrackedEvent": 8,
+      "EventName": "EarnHeart",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 9,
+      "TrackedEvent": 9,
+      "EventName": "EarnHC",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 10,
+      "TrackedEvent": 10,
+      "EventName": "ShopPurchase",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 11,
+      "TrackedEvent": 11,
+      "EventName": "TakeSnapshot",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 12,
+      "TrackedEvent": 12,
+      "EventName": "AcquireFurniture",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 13,
+      "TrackedEvent": 13,
+      "EventName": "SellFurniture",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 14,
+      "TrackedEvent": 14,
+      "EventName": "TestAnalytics",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 15,
+      "TrackedEvent": 15,
+      "EventName": "Minigame",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 16,
+      "TrackedEvent": 16,
+      "EventName": "BasketOpened",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 17,
+      "TrackedEvent": 17,
+      "EventName": "BasketEarned",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 18,
+      "TrackedEvent": 18,
+      "EventName": "BioOpened",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 19,
+      "TrackedEvent": 19,
+      "EventName": "TapCollectable",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 20,
+      "TrackedEvent": 20,
+      "EventName": "StartBasket",
+      "Stats": true,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 21,
+      "TrackedEvent": 21,
+      "EventName": "CheckHeartsPanel",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 22,
+      "TrackedEvent": 22,
+      "EventName": "AdoptCat",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 23,
+      "TrackedEvent": 23,
+      "EventName": "PlaceFurniture",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 24,
+      "TrackedEvent": 24,
+      "EventName": "GoalHelpOpened",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 25,
+      "TrackedEvent": 25,
+      "EventName": "GoalComplete",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 26,
+      "TrackedEvent": 26,
+      "EventName": "EventGoalReached",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 27,
+      "TrackedEvent": 27,
+      "EventName": "SnapshotSharedTwitter",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 28,
+      "TrackedEvent": 28,
+      "EventName": "TopupCatItems",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 29,
+      "TrackedEvent": 29,
+      "EventName": "OpenAdCompartment",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 30,
+      "TrackedEvent": 30,
+      "EventName": "NewGameCreated",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 31,
+      "TrackedEvent": 31,
+      "EventName": "PreGDPR",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 32,
+      "TrackedEvent": 32,
+      "EventName": "PostGDPR",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 33,
+      "TrackedEvent": 33,
+      "EventName": "LoadGameScene",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 34,
+      "TrackedEvent": 34,
+      "EventName": "PostLoadGameScene",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 35,
+      "TrackedEvent": 35,
+      "EventName": "TieredIAPCreated",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 36,
+      "TrackedEvent": 36,
+      "EventName": "EarnCatHeart",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 37,
+      "TrackedEvent": 37,
+      "EventName": "MapSwitch",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 38,
+      "TrackedEvent": 38,
+      "EventName": "UseLuckyCat",
+      "Stats": true,
+      "Analytics": true,
+      "Achievements": true
+    },
+    {
+      "ID": 39,
+      "TrackedEvent": 39,
+      "EventName": "UpgradeStation",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 40,
+      "TrackedEvent": 40,
+      "EventName": "AssignCatToStation",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 41,
+      "TrackedEvent": 41,
+      "EventName": "MouseTap",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 42,
+      "TrackedEvent": 42,
+      "EventName": "BoostActivated",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 43,
+      "TrackedEvent": 43,
+      "EventName": "OpenedPrivacyPolicy",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 44,
+      "TrackedEvent": 44,
+      "EventName": "OpenedTOS",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 45,
+      "TrackedEvent": 45,
+      "EventName": "GamePaused",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 46,
+      "TrackedEvent": 46,
+      "EventName": "NewGameAttemptInOfflineMode",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 47,
+      "TrackedEvent": 47,
+      "EventName": "CustomerTapped",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 48,
+      "TrackedEvent": 48,
+      "EventName": "CatTapped",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 49,
+      "TrackedEvent": 49,
+      "EventName": "CatDragged",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 50,
+      "TrackedEvent": 50,
+      "EventName": "CatInventoryOpened",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 51,
+      "TrackedEvent": 51,
+      "EventName": "CatInfoOpened",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": false
+    },
+    {
+      "ID": 52,
+      "TrackedEvent": 52,
+      "EventName": "VIPTraitDiscovered",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 53,
+      "TrackedEvent": 53,
+      "EventName": "PatMinigameCompleted",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 54,
+      "TrackedEvent": 54,
+      "EventName": "CoffeeMinigameCompleted",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 55,
+      "TrackedEvent": 55,
+      "EventName": "EventCompleted",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 56,
+      "TrackedEvent": 56,
+      "EventName": "LegendaryItemsEarned",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 57,
+      "TrackedEvent": 57,
+      "EventName": "PerfectCustomerInteraction",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 58,
+      "TrackedEvent": 58,
+      "EventName": "PerfectMatchUniqueCustomer",
+      "Stats": false,
+      "Analytics": false,
+      "Achievements": true
+    },
+    {
+      "ID": 59,
+      "TrackedEvent": 59,
+      "EventName": "CatReenergize",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 60,
+      "TrackedEvent": 60,
+      "EventName": "AutoOpenHelpPopup",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 61,
+      "TrackedEvent": 61,
+      "EventName": "OpenHelpPopup",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 62,
+      "TrackedEvent": 62,
+      "EventName": "ShutHelpPopup",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 63,
+      "TrackedEvent": 63,
+      "EventName": "OpenBasketPanel",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 64,
+      "TrackedEvent": 64,
+      "EventName": "FlipBasket",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 65,
+      "TrackedEvent": 65,
+      "EventName": "FurnitureDrag",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 66,
+      "TrackedEvent": 66,
+      "EventName": "CatInfoClosed",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 67,
+      "TrackedEvent": 67,
+      "EventName": "CloseBasketPanel",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 68,
+      "TrackedEvent": 68,
+      "EventName": "ClickedReadyBasket",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 69,
+      "TrackedEvent": 69,
+      "EventName": "SwipeOpenBasket",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 70,
+      "TrackedEvent": 70,
+      "EventName": "ClickRewardInBasket",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 71,
+      "TrackedEvent": 71,
+      "EventName": "TapCloseBasketRewardPanel",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 72,
+      "TrackedEvent": 72,
+      "EventName": "OpenFuniturePanel",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 73,
+      "TrackedEvent": 73,
+      "EventName": "CloseFurniturePanel",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 74,
+      "TrackedEvent": 74,
+      "EventName": "EventStarted,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 75,
+      "TrackedEvent": 75,
+      "EventName": "EventEnded,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 76,
+      "TrackedEvent": 76,
+      "EventName": "EventCurrencyEarned,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 77,
+      "TrackedEvent": 77,
+      "EventName": "EventLevelUp,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 78,
+      "TrackedEvent": 78,
+      "EventName": "CareEventCustomerDismissed,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 79,
+      "TrackedEvent": 79,
+      "EventName": "CareEventCustomerHurried,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 80,
+      "TrackedEvent": 80,
+      "EventName": "CareEventCustomerCompleted,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 81,
+      "TrackedEvent": 81,
+      "EventName": "CareEventGeneratorHurryItem,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 82,
+      "TrackedEvent": 82,
+      "EventName": "CareEventGeneratorHurryHC,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 83,
+      "TrackedEvent": 83,
+      "EventName": "CareEventGeneratorClaimed",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 84,
+      "TrackedEvent": 84,
+      "EventName": "CareEventBonusClaimed,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 85,
+      "TrackedEvent": 85,
+      "EventName": "CareEventTutorialStarted,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 86,
+      "TrackedEvent": 86,
+      "EventName": "CareEventTutorialProgressed,",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    },
+    {
+      "ID": 87,
+      "TrackedEvent": 87,
+      "EventName": "CareEventTutorialCompleted",
+      "Stats": false,
+      "Analytics": true,
+      "Achievements": false
+    }
+  ]
+}

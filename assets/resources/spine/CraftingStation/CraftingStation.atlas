@@ -1,0 +1,76 @@
+
+CraftingStation.png
+size: 1024, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Greenhouse/Arrow
+  rotate: false
+  xy: 393, 69
+  size: 278, 105
+  orig: 278, 105
+  offset: 0, 0
+  index: -1
+WorkshopStation/Confetti1
+  rotate: false
+  xy: 579, 386
+  size: 29, 34
+  orig: 29, 34
+  offset: 0, 0
+  index: -1
+WorkshopStation/Confetti2
+  rotate: false
+  xy: 579, 422
+  size: 23, 41
+  orig: 23, 41
+  offset: 0, 0
+  index: -1
+WorkshopStation/Confetti3
+  rotate: false
+  xy: 579, 465
+  size: 25, 44
+  orig: 25, 44
+  offset: 0, 0
+  index: -1
+WorkshopStation/Fog
+  rotate: false
+  xy: 194, 67
+  size: 197, 107
+  orig: 197, 107
+  offset: 0, 0
+  index: -1
+WorkshopStation/Pack
+  rotate: false
+  xy: 2, 2
+  size: 190, 172
+  orig: 190, 172
+  offset: 0, 0
+  index: -1
+WorkshopStation/S1
+  rotate: true
+  xy: 194, 6
+  size: 59, 246
+  orig: 59, 246
+  offset: 0, 0
+  index: -1
+WorkshopStation/S2
+  rotate: true
+  xy: 442, 12
+  size: 55, 244
+  orig: 55, 244
+  offset: 0, 0
+  index: -1
+WorkshopStation/Sation
+  rotate: true
+  xy: 304, 176
+  size: 333, 273
+  orig: 333, 273
+  offset: 0, 0
+  index: -1
+WorkshopStation/StationIdle
+  rotate: true
+  xy: 2, 176
+  size: 333, 300
+  orig: 333, 300
+  offset: 0, 0
+  index: -1

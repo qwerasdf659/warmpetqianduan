@@ -1,0 +1,356 @@
+{
+  "Items": [
+    {
+      "Type": 0,
+      "Title": "HOWTO_PAIRCAT_TITLE",
+      "Descriptions": [
+        "HOWTO_PAIRCAT_01",
+        "HOWTO_PAIRCAT_02",
+        "HOWTO_PAIRCAT_03",
+        "HOWTO_PAIRCAT_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomer",
+        "HintDragCatOut",
+        "HintPairCustomerNoBonus",
+        "HintPairCustomerBonus"
+      ]
+    },
+    {
+      "Type": 1,
+      "Title": "HOWTO_PAIRCAT_TITLE",
+      "Descriptions": [
+        "HOWTO_PAIRCAT_01",
+        "HOWTO_PAIRCAT_02",
+        "HOWTO_PAIRCAT_03",
+        "HOWTO_PAIRCAT_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomer",
+        "HintDragCatOut",
+        "HintPairCustomerNoBonus",
+        "HintPairCustomerBonus"
+      ]
+    },
+    {
+      "Type": 2,
+      "Title": "HOWTO_MATCHPERSONALITIES_TITLE",
+      "Descriptions": [
+        "HOWTO_PAIRCAT_01",
+        "HOWTO_PAIRCAT_02",
+        "HOWTO_PAIRCAT_03",
+        "HOWTO_PAIRCAT_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomer",
+        "HintDragCatOut",
+        "HintPairCustomerNoBonus",
+        "HintPairCustomerBonus"
+      ]
+    },
+    {
+      "Type": 3,
+      "Title": "HOWTO_EARNCURRENCY_TITLE",
+      "Descriptions": [
+        "HOWTO_EARNCURRENCY_01",
+        "HOWTO_EARNCURRENCY_02",
+        "HOWTO_EARNCURRENCY_03",
+        "HOWTO_EARNCURRENCY_04"
+      ],
+      "SpriteNames": [
+        "HintOpenBasket",
+        "HintPairCustomerBonus",
+        "HintCollectTokens",
+        "HintPromoteCatDetailButotn"
+      ]
+    },
+    {
+      "Type": 4,
+      "Title": "HOWTO_NURTURECAT_TITLE",
+      "Descriptions": [
+        "HOWTO_NURTURECAT_01",
+        "HOWTO_NURTURECAT_02",
+        "HOWTO_NURTURECAT_03",
+        "HOWTO_NURTURECAT_04"
+      ],
+      "SpriteNames": [
+        "HintTapCatHUDButton",
+        "HintPromoteCatInventory",
+        "HintPromoteCatDetailButotn",
+        "HintPromoteCatDetailButotn"
+      ]
+    },
+    {
+      "Type": 5,
+      "Title": "HOWTO_OPENBASKET_TITLE",
+      "Descriptions": [
+        "HOWTO_OPENBASKET_01",
+        "HOWTO_OPENBASKET_02",
+        "HOWTO_OPENBASKET_03",
+        "HOWTO_OPENBASKET_04"
+      ],
+      "SpriteNames": [
+        "HintPairCustomerBonus",
+        "HintCollectDeliveryButton",
+        "HintStartBasket",
+        "HintOpenBasket"
+      ]
+    },
+    {
+      "Type": 6,
+      "Title": "HOWTO_EARNBASKET_TITLE",
+      "Descriptions": [
+        "HOWTO_OPENBASKET_01",
+        "HOWTO_OPENBASKET_02",
+        "HOWTO_OPENBASKET_03",
+        "HOWTO_OPENBASKET_04"
+      ],
+      "SpriteNames": [
+        "HintPairCustomerBonus",
+        "HintCollectDeliveryButton",
+        "HintStartBasket",
+        "HintOpenBasket"
+      ]
+    },
+    {
+      "Type": 7,
+      "Title": "HOWTO_STARTBASKET_TITLE",
+      "Descriptions": [
+        "HOWTO_OPENBASKET_01",
+        "HOWTO_OPENBASKET_02",
+        "HOWTO_OPENBASKET_03",
+        "HOWTO_OPENBASKET_04"
+      ],
+      "SpriteNames": [
+        "HintPairCustomerBonus",
+        "HintCollectDeliveryButton",
+        "HintStartBasket",
+        "HintOpenBasket"
+      ]
+    },
+    {
+      "Type": 8,
+      "Title": "HOWTO_COLLECTCURRENCY_TITLE",
+      "Descriptions": [
+        "HOWTO_EARNCURRENCY_01",
+        "HOWTO_EARNCURRENCY_02",
+        "HOWTO_EARNCURRENCY_03",
+        "HOWTO_EARNCURRENCY_04"
+      ],
+      "SpriteNames": [
+        "HintOpenBasket",
+        "HintPairCustomerBonus",
+        "HintCollectTokens",
+        "HintPromoteCatDetailButotn"
+      ]
+    },
+    {
+      "Type": 9,
+      "Title": "HOWTO_CUSTOMERBIO_TITLE",
+      "Descriptions": [
+        "HOWTO_CUSTOMERBIO_01",
+        "HOWTO_CUSTOMERBIO_02",
+        "HOWTO_CUSTOMERBIO_03",
+        "HOWTO_CUSTOMERBIO_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomer",
+        "HintTapCustomer",
+        "HintTapCustomer",
+        "HintTapCustomer"
+      ]
+    },
+    {
+      "Type": 10,
+      "Title": "HOWTO_PERFORMDUTIES_TITLE",
+      "Descriptions": [
+        "HOWTO_PERFORMDUTIES_01",
+        "HOWTO_PERFORMDUTIES_02",
+        "HOWTO_PERFORMDUTIES_03",
+        "HOWTO_PERFORMDUTIES_04"
+      ],
+      "SpriteNames": [
+        "HintCollectTokens",
+        "HintMinigame1",
+        "HintMinigame2",
+        "HintCustomisationMode"
+      ]
+    },
+    {
+      "Type": 11,
+      "Title": "HOWTO_VIEWINFO_TITLE",
+      "Descriptions": [
+        "HOWTO_VIEWINFO_01",
+        "HOWTO_VIEWINFO_02",
+        "HOWTO_VIEWINFO_03",
+        "HOWTO_VIEWINFO_04"
+      ],
+      "SpriteNames": [
+        "HintHUDInfoHearts",
+        "HintHUDInfoTokens",
+        "HintHUDInfoFish",
+        "HintHUDInfoLevel"
+      ]
+    },
+    {
+      "Type": 12,
+      "Title": "HOWTO_LEVELUP_TITLE",
+      "Descriptions": [
+        "HOWTO_LEVELUP_01",
+        "HOWTO_LEVELUP_02",
+        "HOWTO_LEVELUP_03",
+        "HOWTO_LEVELUP_04"
+      ],
+      "SpriteNames": [
+        "HintPromoteCatDetailButotn",
+        "HintLevelUp",
+        "HintLevelUp",
+        "HintHUDInfoLevel"
+      ]
+    },
+    {
+      "Type": 13,
+      "Title": "HOWTO_BUYCUSTOMISATIONS_TITLE",
+      "Descriptions": [
+        "HOWTO_BUYCUSTOMISATIONS_01",
+        "HOWTO_BUYCUSTOMISATIONS_02",
+        "HOWTO_BUYCUSTOMISATIONS_03",
+        "HOWTO_BUYCUSTOMISATIONS_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomisationButton",
+        "HintCustomisationMode",
+        "HintCustomisationMode",
+        "HintCustomisationMode"
+      ]
+    },
+    {
+      "Type": 14,
+      "Title": "HOWTO_TAKEPHOTO_TITLE",
+      "Descriptions": [
+        "HOWTO_TAKEPHOTO_01",
+        "HOWTO_TAKEPHOTO_02",
+        "HOWTO_TAKEPHOTO_03",
+        "HOWTO_TAKEPHOTO_04"
+      ],
+      "SpriteNames": [
+        "HintTakeScreenshot1",
+        "HintTakeScreenshot2",
+        "HintTakeScreenshot3",
+        "HintTakeScreenshot4"
+      ]
+    },
+    {
+      "Type": 15,
+      "Title": "HOWTO_ADOPTCAT_TITLE",
+      "Descriptions": [
+        "HOWTO_ADOPTCAT_01",
+        "HOWTO_ADOPTCAT_02",
+        "HOWTO_ADOPTCAT_03",
+        "HOWTO_ADOPTCAT_04"
+      ],
+      "SpriteNames": [
+        "HintTapCatHUDButton",
+        "HintAdoptCatInventory",
+        "HintAdoptCatDetail",
+        "HintAdoptNewKitty"
+      ]
+    },
+    {
+      "Type": 16,
+      "Title": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "Descriptions": [
+        "HOWTO_PLACECUSTOMISATION_01",
+        "HOWTO_PLACECUSTOMISATION_02",
+        "HOWTO_PLACECUSTOMISATION_03",
+        "HOWTO_PLACECUSTOMISATION_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomisationButton",
+        "HintCustomisationMode1",
+        "HintCustomisationCantPlace",
+        "HintCustomisationMode"
+      ]
+    },
+    {
+      "Type": 17,
+      "Title": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "Descriptions": [
+        "HOWTO_PLACECUSTOMISATION_01",
+        "HOWTO_PLACECUSTOMISATION_02",
+        "HOWTO_PLACECUSTOMISATION_03",
+        "HOWTO_PLACECUSTOMISATION_04"
+      ],
+      "SpriteNames": [
+        "HintTapCustomisationButton",
+        "HintCustomisationMode1",
+        "HintAdoptCatDetail",
+        "HintCustomisationCanPlace"
+      ]
+    },
+    {
+      "Type": 18,
+      "Title": "HOWTO_CATLOUNGE_TITLE",
+      "Descriptions": [
+        "HOWTO_CATLOUNGE_01",
+        "HOWTO_CATLOUNGE_02",
+        "HOWTO_CATLOUNGE_03",
+        "HOWTO_CATLOUNGE_04"
+      ],
+      "SpriteNames": [
+        "HintCatLoungeGoto",
+        "HintCatLoungeLuckyCat",
+        "HintCatLoungeUpgradeCatStation",
+        "HintCatLoungeAssignCat"
+      ]
+    },
+    {
+      "Type": 19,
+      "Title": "HOWTO_CATLOUNGE_TITLE",
+      "Descriptions": [
+        "HOWTO_CATLOUNGE_01",
+        "HOWTO_CATLOUNGE_02",
+        "HOWTO_CATLOUNGE_03",
+        "HOWTO_CATLOUNGE_04"
+      ],
+      "SpriteNames": [
+        "HintCatLoungeGoto",
+        "HintCatLoungeLuckyCat",
+        "HintCatLoungeUpgradeCatStation",
+        "HintCatLoungeAssignCat"
+      ]
+    },
+    {
+      "Type": 20,
+      "Title": "HOWTO_CATLOUNGE_TITLE",
+      "Descriptions": [
+        "HOWTO_CATLOUNGE_01",
+        "HOWTO_CATLOUNGE_02",
+        "HOWTO_CATLOUNGE_03",
+        "HOWTO_CATLOUNGE_04"
+      ],
+      "SpriteNames": [
+        "HintCatLoungeGoto",
+        "HintCatLoungeLuckyCat",
+        "HintCatLoungeUpgradeCatStation",
+        "HintCatLoungeAssignCat"
+      ]
+    },
+    {
+      "Type": 21,
+      "Title": "HOWTO_CATLOUNGE_TITLE",
+      "Descriptions": [
+        "HOWTO_CATLOUNGE_01",
+        "HOWTO_CATLOUNGE_02",
+        "HOWTO_CATLOUNGE_03",
+        "HOWTO_CATLOUNGE_04"
+      ],
+      "SpriteNames": [
+        "HintCatLoungeGoto",
+        "HintCatLoungeLuckyCat",
+        "HintCatLoungeUpgradeCatStation",
+        "HintCatLoungeAssignCat"
+      ]
+    }
+  ]
+}

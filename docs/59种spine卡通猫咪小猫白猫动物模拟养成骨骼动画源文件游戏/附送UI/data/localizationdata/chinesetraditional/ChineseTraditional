@@ -1,0 +1,8632 @@
+{
+  "Items": [
+    {
+      "Key": "FISH",
+      "String": "魚幣"
+    },
+    {
+      "Key": "FISH_PLURAL",
+      "String": "魚幣"
+    },
+    {
+      "Key": "HC",
+      "String": "小貓幣"
+    },
+    {
+      "Key": "HC_PLURAL",
+      "String": "小貓幣"
+    },
+    {
+      "Key": "TOKEN",
+      "String": "代幣"
+    },
+    {
+      "Key": "TOKEN_PLURAL",
+      "String": "代幣"
+    },
+    {
+      "Key": "FC",
+      "String": "家具代幣"
+    },
+    {
+      "Key": "FC_PLURAL",
+      "String": "家具代幣"
+    },
+    {
+      "Key": "HEART",
+      "String": "愛心"
+    },
+    {
+      "Key": "HEART_PLURAL",
+      "String": "愛心"
+    },
+    {
+      "Key": "XP",
+      "String": "經驗值"
+    },
+    {
+      "Key": "XP_PLURAL",
+      "String": "經驗值"
+    },
+    {
+      "Key": "EXPERIENCE",
+      "String": "經驗值"
+    },
+    {
+      "Key": "FURISTAS_CAT_CAFE",
+      "String": "《喵咪咖啡館》"
+    },
+    {
+      "Key": "LEVEL",
+      "String": "等級"
+    },
+    {
+      "Key": "LEVELED",
+      "String": "已升級"
+    },
+    {
+      "Key": "LEVEL_UP",
+      "String": "升等"
+    },
+    {
+      "Key": "CAT",
+      "String": "貓咪"
+    },
+    {
+      "Key": "CAT_PLURAL",
+      "String": "貓咪"
+    },
+    {
+      "Key": "CUSTOMER",
+      "String": "顧客"
+    },
+    {
+      "Key": "CUSTOMER_PLURAL",
+      "String": "顧客"
+    },
+    {
+      "Key": "BASKET",
+      "String": "籃子"
+    },
+    {
+      "Key": "BASKET_PLURAL",
+      "String": "籃子"
+    },
+    {
+      "Key": "DELIVERY",
+      "String": "外送"
+    },
+    {
+      "Key": "DELIVERY_PLURAL",
+      "String": "外送"
+    },
+    {
+      "Key": "CONFIRM",
+      "String": "確定"
+    },
+    {
+      "Key": "TRAIT",
+      "String": "特徵"
+    },
+    {
+      "Key": "TRAIT_PLURAL",
+      "String": "特徵"
+    },
+    {
+      "Key": "ITEM",
+      "String": "物品"
+    },
+    {
+      "Key": "ITEM_PLURAL",
+      "String": "物品"
+    },
+    {
+      "Key": "UNLOCK",
+      "String": "解鎖"
+    },
+    {
+      "Key": "UNLOCKED",
+      "String": "已解鎖"
+    },
+    {
+      "Key": "ADOPT",
+      "String": "領養"
+    },
+    {
+      "Key": "PROMOTE",
+      "String": "培育"
+    },
+    {
+      "Key": "CUSTOMISATION",
+      "String": "自訂項目"
+    },
+    {
+      "Key": "CUSTOMISATION_PLURAL",
+      "String": "自訂項目"
+    },
+    {
+      "Key": "ASSIGN",
+      "String": "配對"
+    },
+    {
+      "Key": "TIME_DAYS_SINGULAR",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_PLURAL",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_SHORT",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_LETTER",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_HOURS_SINGULAR",
+      "String": "{0}時"
+    },
+    {
+      "Key": "TIME_HOURS_PLURAL",
+      "String": "{0}時"
+    },
+    {
+      "Key": "TIME_HOURS_SHORT",
+      "String": "{0}時"
+    },
+    {
+      "Key": "TIME_HOURS_LETTER",
+      "String": "{0}時"
+    },
+    {
+      "Key": "TIME_MINUTES_SINGULAR",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_PLURAL",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_SHORT",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_LETTER",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_SECONDS_SINGULAR",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_PLURAL",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_SHORT",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_LETTER",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "BACK_LABEL",
+      "String": "返回"
+    },
+    {
+      "Key": "TAP_PROMPT",
+      "String": "點擊"
+    },
+    {
+      "Key": "DRAG_PROMPT",
+      "String": "拖曳"
+    },
+    {
+      "Key": "RELEASE_PROMPT",
+      "String": "放開"
+    },
+    {
+      "Key": "LEVEL_UP_PROMPT",
+      "String": "培育"
+    },
+    {
+      "Key": "ADOPT_PROMPT",
+      "String": "領養"
+    },
+    {
+      "Key": "AD_WATCH",
+      "String": "觀看"
+    },
+    {
+      "Key": "OPEN",
+      "String": "開啟"
+    },
+    {
+      "Key": "COMMON",
+      "String": "一般"
+    },
+    {
+      "Key": "UNCOMMON",
+      "String": "罕見"
+    },
+    {
+      "Key": "RARE",
+      "String": "稀有"
+    },
+    {
+      "Key": "EPIC",
+      "String": "史詩"
+    },
+    {
+      "Key": "LEGENDARY",
+      "String": "傳奇"
+    },
+    {
+      "Key": "PERSONALITY_TOOLTIP_DESCRIPTION",
+      "String": "把這隻<CAT>與個性相符的<CUSTOMER_PLURAL>配對，可獲取獎勵<HEART_PLURAL>"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT1",
+      "String": "獲取<HEART_PLURAL>來接收更多<DELIVERY><BASKET_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT2",
+      "String": "將<CAT_PLURAL>與<CUSTOMER_PLURAL>配對後即可獲得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT3",
+      "String": "配對相符的個性來獲取獎勵<HEART_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT1",
+      "String": "使用後，可直接獲取<BASKET><DELIVERY_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT2",
+      "String": "在商店中購買更多。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT1",
+      "String": "使用後，可<PROMOTE><CAT_PLURAL>和<ADOPT>新的<CAT_PLURAL>."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT2",
+      "String": "開啟<DELIVERY><BASKET_PLURAL>可獲取更多。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT1",
+      "String": "使用後，可為你的咖啡廳購買<CUSTOMISATION_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT2",
+      "String": "可透過完成咖啡廳工作來獲取，讓你的<CAT_PLURAL>和<CUSTOMER_PLURAL>保持開心。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_XP_REWARDS_TAG",
+      "String": "下一個<LEVEL>獎勵："
+    },
+    {
+      "Key": "GENERIC_CAT_UNLOCKED",
+      "String": "新的<CAT>"
+    },
+    {
+      "Key": "ITEM_ACQUISITION_DESCRIPTION",
+      "String": "使用後，可提升<CAT_PLURAL>等級。開啟<BASKET_PLURAL>或在商店裡購買，即可獲取<ITEM_PLURAL>"
+    },
+    {
+      "Key": "PERSONALITY_DESCRIPTION",
+      "String": "把這隻<CAT>與個性類型相符的<CUSTOMER_PLURAL>配對，可獲取獎勵<HEART_PLURAL>"
+    },
+    {
+      "Key": "LEVEL_DESCRIPTION",
+      "String": "<CAT_PLURAL>的<LEVEL>越高，就能和<CUSTOMER_PLURAL>玩得更久，並為你獲取更多<HEART_PLURAL>"
+    },
+    {
+      "Key": "LEVEL_LOCK_TEXT",
+      "String": "<LEVEL>{0}"
+    },
+    {
+      "Key": "BONUS_BASKET_WAITING",
+      "String": "距離獎勵<BASKET>送達時間："
+    },
+    {
+      "Key": "BONUS_BASKET_READY_LABEL",
+      "String": "每日免費<BASKET_PLURAL>已可領取！"
+    },
+    {
+      "Key": "BONUS_BASKET_OPEN_PROMPT",
+      "String": "點擊收集"
+    },
+    {
+      "Key": "NEW_BASKET_TITLE",
+      "String": "新的<BASKET>"
+    },
+    {
+      "Key": "TAP_TO_CONTINUE",
+      "String": "點擊任何一處繼續"
+    },
+    {
+      "Key": "SWIPE_PROMPT",
+      "String": "向上滑開啟"
+    },
+    {
+      "Key": "REWARDS_TITLE",
+      "String": "獎勵"
+    },
+    {
+      "Key": "RECRUIT_PROMPT",
+      "String": "<ADOPT>"
+    },
+    {
+      "Key": "TOOLTIP_COMING_SOON",
+      "String": "即將推出。"
+    },
+    {
+      "Key": "TOOLTIP_NEED_MORE_TOKENS",
+      "String": "需要更多<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "TOOLTIP_TAP_CONFIRM",
+      "String": "再次點擊確認。"
+    },
+    {
+      "Key": "TOOLTIP_CANNOT_AFFORD",
+      "String": "你無法負擔<ITEM>。"
+    },
+    {
+      "Key": "CAT_INVENTORY_MENU_TITLE",
+      "String": "<CAT_PLURAL>"
+    },
+    {
+      "Key": "CAT_PROMOTION_TITLE",
+      "String": "貓咪升級"
+    },
+    {
+      "Key": "CAT_ADOPTION_TITLE",
+      "String": "貓咪領養"
+    },
+    {
+      "Key": "ADOPT_TEXT",
+      "String": "花費你的魚來領養這隻新貓咪！"
+    },
+    {
+      "Key": "RECRUIT_DESCRIPTION",
+      "String": "花費你的<FISH>來<ADOPT>這隻新的<CAT>"
+    },
+    {
+      "Key": "ADOPT_CONFIRMATION_FEEDBACK",
+      "String": "好耶！一位新朋友來到你的咖啡店！"
+    },
+    {
+      "Key": "NURTURE_CONFIRMATION_FEEDBACK",
+      "String": "太棒了！現在{0}可以和<CUSTOMER_PLURAL>配對最多{1}次，進而獲取{2}顆<HEART_PLURAL>"
+    },
+    {
+      "Key": "MATERIALS_REQUIRED",
+      "String": "需要："
+    },
+    {
+      "Key": "HEARTS_EARNED",
+      "String": "已獲取愛心："
+    },
+    {
+      "Key": "COST",
+      "String": "花費"
+    },
+    {
+      "Key": "PERSONALITY",
+      "String": "個性"
+    },
+    {
+      "Key": "UPGRADE_FAILED_TITLE",
+      "String": "無法升級"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON1",
+      "String": "<ITEM_PLURAL>不足"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON2",
+      "String": "<HEART_PLURAL>不足"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON3",
+      "String": "<FISH>不足"
+    },
+    {
+      "Key": "THANK_YOU",
+      "String": "謝謝你"
+    },
+    {
+      "Key": "CUDDLE_TIME",
+      "String": "親密時間"
+    },
+    {
+      "Key": "REWARD",
+      "String": "獎勵"
+    },
+    {
+      "Key": "PLAYER_LEVELED_UP",
+      "String": "等級提升了！"
+    },
+    {
+      "Key": "REWARD_FURNITURE_TOKENS",
+      "String": "<FC_PLURAL>"
+    },
+    {
+      "Key": "REWARD_FISH",
+      "String": "<FISH>"
+    },
+    {
+      "Key": "REWARD_HC",
+      "String": "<HC>"
+    },
+    {
+      "Key": "REWARD_EXPANSION",
+      "String": "更多咖啡廳空間"
+    },
+    {
+      "Key": "SHOP_MENU_TITLE",
+      "String": "商店"
+    },
+    {
+      "Key": "SHOP_CURRENT_POSSESSION",
+      "String": "目前擁有："
+    },
+    {
+      "Key": "SHOP_BUY",
+      "String": "購買"
+    },
+    {
+      "Key": "SHOP_TAP_TO_CONFIRM",
+      "String": "再次點擊確認"
+    },
+    {
+      "Key": "SHOP_CANT_AFFORD",
+      "String": "你無法負擔<ITEM>"
+    },
+    {
+      "Key": "SHOP_ERROR_TITLE",
+      "String": "糟糕..."
+    },
+    {
+      "Key": "SHOP_THANKS_TITLE",
+      "String": "謝謝你！"
+    },
+    {
+      "Key": "SHOP_THANKS_DESCRIPTION",
+      "String": "你已成功購買"
+    },
+    {
+      "Key": "SHOP_PRICE_FREE",
+      "String": "免費！"
+    },
+    {
+      "Key": "CAT_UPGRADE_ITEM_PLURAL",
+      "String": "貓咪升級物品"
+    },
+    {
+      "Key": "MORE",
+      "String": "更多"
+    },
+    {
+      "Key": "SHOP_REFRESH_TIME",
+      "String": "距離新物品送達時間..."
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER",
+      "String": "新手組合包"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_001",
+      "String": "「貓咬舌頭」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_002",
+      "String": "「舉高貓爪」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_003",
+      "String": "「嶄新好友」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_004",
+      "String": "「溫馨同伴」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_001",
+      "String": "幸運<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_002",
+      "String": "<SHOP_PACK_TITLE_BARGAIN><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_003",
+      "String": "<RARITY_COMMON><DELIVERY_CONTENTS_ITEMS><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_004",
+      "String": "超級<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_SPECIAL_DEAL",
+      "String": "特別優惠！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BARGAIN",
+      "String": "折扣"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_GREAT_VALUE",
+      "String": "超值"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_ITEM",
+      "String": "使用後，可<PROMOTE><CAT_PLURAL>"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_FURNITURE",
+      "String": "使用這款舒適的家具，讓你的咖啡廳煥然一新。"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_002",
+      "String": "「<CAT_NAME_020>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_002_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_020>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_003",
+      "String": "「<CAT_NAME_009>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_003_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_009>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_004",
+      "String": "「<CAT_NAME_027>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_004_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_027>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_PROGPACK_001_DESC",
+      "String": "使用這個內含魚幣、小貓幣和代幣的同捆包來提升你的喵咪咖啡館體驗！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005",
+      "String": "「貓步輕盈」新手包"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005_DESC",
+      "String": "這個組合包能讓您提早獲得小鬍鬚以及多項酷炫物品。相當划算喔！"
+    },
+    {
+      "Key": "SHOP_PACK_032_STARTER_DESC",
+      "String": "此組合包獨家提供歐里，以及一堆小貓幣和魚幣，可用來維持你的咖啡廳的營運。"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_TITLE",
+      "String": "「歐里」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_DESC",
+      "String": "此組合包獨家提供歐里，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_TITLE",
+      "String": "「恰恰」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_DESC",
+      "String": "此組合包獨家提供恰恰，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_TITLE",
+      "String": "「齊格」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_DESC",
+      "String": "此組合包獨家提供齊格，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_TITLE",
+      "String": "「<CAT_NAME_065>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_065>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_TITLE",
+      "String": "「<CAT_NAME_066>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_066>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_TITLE",
+      "String": "「<CAT_NAME_067>」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_DESC",
+      "String": "此組合包獨家提供<CAT_NAME_067>，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "PERCENT_OFF",
+      "String": "{0}%折扣！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_STARTER_DESC",
+      "String": "此組合包獨家提供{0}，以及一堆小貓幣和魚幣，可用來維持你的咖啡廳的營運。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_TITLE",
+      "String": "「{0}」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_DESC",
+      "String": "此組合包獨家提供{0}，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_TITLE",
+      "String": "小貓幣特賣"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_DESC",
+      "String": "這個限時的特別組合供您以划算優惠入手小貓幣。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_TITLE",
+      "String": "魚幣優惠"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_DESC",
+      "String": "聞到魚鮮味了嗎？這個特別組合供您以划算價格入手魚幣。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_TITLE",
+      "String": "代幣大放送"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_DESC",
+      "String": "想要用代幣買下那件特別的家具嗎？這個限時組合包能為你省下不少錢。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_TITLE",
+      "String": "趕進度組合包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_DESC",
+      "String": "使用這個內含魚幣、小貓幣和代幣的同捆包來提升你的喵咪咖啡館體驗！"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_TITLE",
+      "String": "「Possum」貓咪組合包"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_DESC",
+      "String": "此組合包獨家提供Possum，以及一堆小貓幣和魚幣。真是划算！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_TITLE",
+      "String": "福貓的升級物品！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_DESC",
+      "String": "此組合包內含特別物品，可用來升級貓咪活動，也可用來啟動咖啡館加速道具。"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_TITLE",
+      "String": "貓咪升級物品！"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_DESC",
+      "String": "此組合包內含貓咪升級物品，價格大幅下殺。"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_TITLE",
+      "String": "巨型<SHOP_PACK_FURNITURE_LARGE_TITLE>組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_TITLE",
+      "String": "<SHOP_PACK_FURNITURE_TITLE>組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_001_TITLE",
+      "String": "巨型森林組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_002_TITLE",
+      "String": "巨型曼菲斯組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_003_TITLE",
+      "String": "巨型田園風組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_004_TITLE",
+      "String": "巨型小餐館組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_005_TITLE",
+      "String": "巨型普普風組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_006_TITLE",
+      "String": "巨型海灘組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_001_TITLE",
+      "String": "綠手指組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_002_TITLE",
+      "String": "遊樂場組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_003_TITLE",
+      "String": "圖書館組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_004_TITLE",
+      "String": "波西米亞組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_005_TITLE",
+      "String": "下午茶組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_006_TITLE",
+      "String": "暗黑學院組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_007_TITLE",
+      "String": "音樂組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_008_TITLE",
+      "String": "極簡組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_009_TITLE",
+      "String": "禪風組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_010_TITLE",
+      "String": "北歐風組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_011_TITLE",
+      "String": "簡樸組合包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_012_TITLE",
+      "String": "愛貓人組合包"
+    },
+    {
+      "Key": "DELIVERY_MENU_TITLE",
+      "String": "<DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "HOT_TIP_TITLE",
+      "String": "《貓咪咖啡廳》歡樂提示"
+    },
+    {
+      "Key": "HOT_TIP_1",
+      "String": "想知道如何獲取遊戲貨幣嗎？請點擊螢幕下方的圖示。"
+    },
+    {
+      "Key": "HOT_TIP_2",
+      "String": "你可以在「貓咪詳情」頁面中點擊物品和圖示來瞭解更多大小事。"
+    },
+    {
+      "Key": "HOT_TIP_3",
+      "String": "即使無法配對相符的個性，只要將貓跟顧客配對就能獲取愛心。"
+    },
+    {
+      "Key": "HOT_TIP_4",
+      "String": "升級貓咪來獲取經驗值和提升等級。"
+    },
+    {
+      "Key": "HOT_TIP_5",
+      "String": "留意商店出現的獎勵寶箱。商店物品會每日更換。"
+    },
+    {
+      "Key": "HOT_TIP_6",
+      "String": "隨著等級提升，會開放更多咖啡廳自訂選項！"
+    },
+    {
+      "Key": "HOT_TIP_7",
+      "String": "要提升貓咪等級，你必須擁有適當的物品，而且他們為你獲取過的愛心必須達特定數量。"
+    },
+    {
+      "Key": "HOT_TIP_8",
+      "String": "到「目標」頁面查看提供豐盛獎勵的每日挑戰"
+    },
+    {
+      "Key": "HOT_TIP_9",
+      "String": "每提升5等，你的咖啡廳會就有更大的空間來容納更多顧客！"
+    },
+    {
+      "Key": "HOT_TIP_10",
+      "String": "即使貓咪和顧客的個性無法完美配對，但只要配對就能獲取愛心。"
+    },
+    {
+      "Key": "HOT_TIP_11",
+      "String": "將貓咪與顧客配對來獲取愛心，並獲得更多籃子。"
+    },
+    {
+      "Key": "DELIVERY_HURRY",
+      "String": "動作快"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_TITLE",
+      "String": "<HC_PLURAL>不足！"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_DESCRIPTION",
+      "String": "你的<HC_PLURAL>不足以加速此<DELIVERY>"
+    },
+    {
+      "Key": "DELIVERY_CONTAINS",
+      "String": "內含"
+    },
+    {
+      "Key": "DELIVERY_START",
+      "String": "開始"
+    },
+    {
+      "Key": "DELIVERY_TAP_START",
+      "String": "點擊開始"
+    },
+    {
+      "Key": "DELIVERY_ARRIVES_IN",
+      "String": "距離送達時間..."
+    },
+    {
+      "Key": "DELIVERY_TAP_COLLECT",
+      "String": "<BONUS_BASKET_OPEN_PROMPT>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_BASIC",
+      "String": "小型<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GOOD",
+      "String": "中型<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GREAT",
+      "String": "大型<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_HUGE",
+      "String": "巨型<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_AMAZING",
+      "String": "超巨型<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_ON_ITS_WAY",
+      "String": "即將送達！稍後再回來"
+    },
+    {
+      "Key": "NEW_ITEM_NOTIFICATION",
+      "String": "全新！"
+    },
+    {
+      "Key": "EPIC_ITEM_NOTIFICATION",
+      "String": "<LEGENDARY>！"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_NOTIFICATION",
+      "String": "<EPIC>！"
+    },
+    {
+      "Key": "REWARD_ITEM_DESCRIPTION",
+      "String": "<CAT>升級<ITEM>"
+    },
+    {
+      "Key": "SC_DESCRIPTION",
+      "String": "<CAT>升級貨幣"
+    },
+    {
+      "Key": "TODO_TITLE",
+      "String": "今日任務"
+    },
+    {
+      "Key": "GOALS_RESET_IN",
+      "String": "距離重置時間..."
+    },
+    {
+      "Key": "GOAL_ASSIGN",
+      "String": "將{0}隻貓咪<ASSIGN>給顧客"
+    },
+    {
+      "Key": "GOAL_CAT_ASSIGN",
+      "String": "將{0}隻貓咪<ASSIGN>給顧客{1}次"
+    },
+    {
+      "Key": "GOAL_TRAIT_ASSIGN",
+      "String": "<ASSIGN>{1}隻擁有「{0}」個性特徵的貓咪"
+    },
+    {
+      "Key": "GOAL_MINIGAME",
+      "String": "完成「{0}」小遊戲{1}次"
+    },
+    {
+      "Key": "GOAL_EARN",
+      "String": "收集{0}{1}次"
+    },
+    {
+      "Key": "GOAL_CAT_LEVEL_UP",
+      "String": "<PROMOTE>{0}"
+    },
+    {
+      "Key": "GOAL_CHECK_BIO",
+      "String": "查看{0}位顧客的檔案"
+    },
+    {
+      "Key": "GOAL_OPEN_BASKETS",
+      "String": "開啟{0}個<BASKET_PLURAL>"
+    },
+    {
+      "Key": "GOAL_EARN_BASKETS",
+      "String": "獲取{0}個<BASKET_PLURAL>"
+    },
+    {
+      "Key": "GOAL_TAKE_SNAPSHOT",
+      "String": "拍一張可愛的快照"
+    },
+    {
+      "Key": "GOAL_ALLCOMPLETE",
+      "String": "完成所有任務"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_FULL_CAFE",
+      "String": "拍一張整間咖啡廳的快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_RELAXING_CATS",
+      "String": "拍一張{0}隻慵懶貓的快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_SPECIFIC_SUBJECT",
+      "String": "與顧客一起拍一張{0}的快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_INTERACTION",
+      "String": "拍一張與顧客配對的貓咪快照"
+    },
+    {
+      "Key": "GOAL_USE_LUCKYCAT",
+      "String": "點擊福貓的肚子即可取得{0}件物品"
+    },
+    {
+      "Key": "GOAL_ASSIGN_TO_STATION",
+      "String": "為<CAT_STATION_PLURAL>指派{0} <CAT_PLURAL>"
+    },
+    {
+      "Key": "GOAL_REENERGIZED",
+      "String": "使得{0} <CAT_PLURAL>重獲元氣"
+    },
+    {
+      "Key": "SHELF_TITLE",
+      "String": "更多來自Runaway的超棒遊戲"
+    },
+    {
+      "Key": "SHELF_SALE_LABEL",
+      "String": "特賣！"
+    },
+    {
+      "Key": "SHELF_NEW_EVENT_LABEL",
+      "String": "新活動"
+    },
+    {
+      "Key": "SHELF_PLAY_PROMPT",
+      "String": "開始遊戲"
+    },
+    {
+      "Key": "SHELF_FLUTTER_TITLE",
+      "String": "《Flutter》"
+    },
+    {
+      "Key": "SHELF_SPLASH_TITLE",
+      "String": "《Splash》"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_TITLE",
+      "String": "《Starlight》"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_TITLE",
+      "String": "《Bird BnB》"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_TITLE",
+      "String": "Old Friends Dog Game"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_TITLE",
+      "String": "Bird Kind"
+    },
+    {
+      "Key": "SHELF_FLUTTER_DESCRIPTION",
+      "String": "培養蝴蝶並照料美麗的雨林"
+    },
+    {
+      "Key": "SHELF_SPLASH_DESCRIPTION",
+      "String": "打造屬於自己的壯麗礁石，讓細膩的水底生態系統重獲新生"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_DESCRIPTION",
+      "String": "你可以吸引奇妙的飛蛾，欣賞雨林入夜後的生氣蓬勃"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_DESCRIPTION",
+      "String": "在寧靜的樹上建造自己的鳥民宿"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_DESCRIPTION",
+      "String": "一個關於友誼的故事遊戲，專為熱愛狗狗的人設計。"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_DESCRIPTION",
+      "String": "幫助孤獨的樹精恢復神秘森林中的鳥類生命"
+    },
+    {
+      "Key": "ADVERTISEMENT",
+      "String": "廣告"
+    },
+    {
+      "Key": "ENGLISH_ONLY",
+      "String": "（僅提供英文版本）。"
+    },
+    {
+      "Key": "HOWTO_TITLE",
+      "String": "使用方法..."
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_TITLE",
+      "String": "將一隻<CAT>配對"
+    },
+    {
+      "Key": "HOWTO_MATCHPERSONALITIES_TITLE",
+      "String": "配對相符的個性"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_01",
+      "String": "點擊<CUSTOMER>"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_02",
+      "String": "從選單拖曳一隻<CAT>"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_03",
+      "String": "把<CAT>移到<CUSTOMER>身上"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_04",
+      "String": "配對相符的個性來獲取獎勵！"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_TITLE",
+      "String": "獲取貨幣"
+    },
+    {
+      "Key": "HOWTO_COLLECTCURRENCY_TITLE",
+      "String": "收集貨幣"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_01",
+      "String": "從籃子獲取<FISH>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_02",
+      "String": "將<CAT_PLURAL>和<CUSTOMER_PLURAL>配對即可獲取<HEART_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_03",
+      "String": "完成咖啡廳工作來獲取<TOKEN_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_04",
+      "String": "領養和培育貓咪即可獲取<XP_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_TITLE",
+      "String": "<PROMOTE>一隻<CAT>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_01",
+      "String": "開啟<CAT>目錄"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_02",
+      "String": "點擊一隻<CAT>來查看詳情"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_03",
+      "String": "你需要<ITEM_PLURAL>、<FISH>，並使用<CAT>獲取<HEART_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_04",
+      "String": "如果所有條件都達成了，就點擊<PROMOTE>按鈕吧！"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_TITLE",
+      "String": "開啟一個<BASKET>"
+    },
+    {
+      "Key": "HOWTO_EARNBASKET_TITLE",
+      "String": "獲取一個<BASKET>"
+    },
+    {
+      "Key": "HOWTO_STARTBASKET_TITLE",
+      "String": "開始一份<BASKET>訂單"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_01",
+      "String": "將<CAT_PLURAL>和<CUSTOMER_PLURAL>配對來獲取<HEART_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_02",
+      "String": "收集<HEART_PLURAL>來獲取一份<BASKET>訂單"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_03",
+      "String": "一旦開始，<BASKET_PLURAL>就需花費時間送達"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_04",
+      "String": "當<BASKET>送達時，點擊來打開它"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_TITLE",
+      "String": "查看一位<CUSTOMER>的檔案"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_01",
+      "String": "點擊<CUSTOMER>"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_02",
+      "String": "點擊資訊按鈕來查看他們的檔案"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_03",
+      "String": "若你想要與全世界分享<CUSTOMER>的檔案"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_04",
+      "String": "留意VIP<CUSTOMER_PLURAL>的再度大駕光臨"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_TITLE",
+      "String": "執行咖啡廳工作"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_01",
+      "String": "你必須定期執行咖啡廳工作"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_02",
+      "String": "點擊那些需要處理的地方即可開始"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_03",
+      "String": "完成這些工作就能獲取<TOKEN_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_04",
+      "String": "<TOKEN_PLURAL>可用來自訂你的咖啡廳"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_TITLE",
+      "String": "查看狀態面板資訊"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_01",
+      "String": "點擊螢幕下方的圖示來查看更多資訊"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_02",
+      "String": "許多地方都可以執行這個動作"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_03",
+      "String": "若你對某些事感到困惑，可嘗試點擊圖示"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_04",
+      "String": "你也可以看到等級提升後的<UNLOCKED>項目"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_TITLE",
+      "String": "<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_01",
+      "String": "領養和培育貓咪即可獲取<XP_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_02",
+      "String": "獲取足夠經驗值即可<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_03",
+      "String": "每提升一個<LEVEL>就能解鎖新事物"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_04",
+      "String": "點擊位於螢幕下方的經驗值條，就能知道距離提升等級還有多少"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_TITLE",
+      "String": "購買<CUSTOMISATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_01",
+      "String": "點擊此按鈕開始<CUSTOMISATION>模式"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_02",
+      "String": "從選單將<CUSTOMISATION>拖曳出來"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_03",
+      "String": "將它放置於空位處"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_04",
+      "String": "若你有足夠<TOKEN_PLURAL>，你將會收到購買它的提醒"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_TITLE",
+      "String": "拍照"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_01",
+      "String": "點擊右上角的「拍照」按鈕"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_02",
+      "String": "選好想要拍照留念的瞬間"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_03",
+      "String": "儲存或分享照片"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_04",
+      "String": "透過#furistas主題標籤來看看其他人上傳的照片"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_TITLE",
+      "String": "<ADOPT>一隻<CAT>"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_01",
+      "String": "開啟<CAT>目錄"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_02",
+      "String": "點擊一隻已解鎖的<CAT>剪影"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_03",
+      "String": "若你有足夠的<FISH>，你可以點擊「<ADOPT>」"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_04",
+      "String": "好耶！新的小貓咪！"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "String": "放置<CUSTOMISATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_01",
+      "String": "開啟<CUSTOMISATION>模式"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_02",
+      "String": "找到你想放置的東西"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_03",
+      "String": "把東西拖曳出來。紅色代表該位置無法放置。"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_04",
+      "String": "如果沒看到紅色，那你就能放在那啦！"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_TITLE",
+      "String": "拍一張快照"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_01",
+      "String": "點擊快照按鈕"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_02",
+      "String": "拖曳方框以找到最佳拍攝點"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_03",
+      "String": "點擊方框以進行拍照"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_04",
+      "String": "加上「#furistas」來與社群分享"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_TITLE",
+      "String": "<CAT_LOUNGE>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_01",
+      "String": "點擊隧道前往貓廳"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_02",
+      "String": "使用<CATHEART_PLURAL>換取物品"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_03",
+      "String": "使用物品來解鎖並升級<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_04",
+      "String": "為<CAT_STATION_PLURAL>指派<CAT_PLURAL>即可獲取貓愛心"
+    },
+    {
+      "Key": "FIRST_TIME_TITLE",
+      "String": "歡迎來到《貓咪咖啡廳》！"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION1",
+      "String": "歡迎來到專屬於你的貓咪咖啡廳"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION2",
+      "String": "請依循畫面下方指示開始吧。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_TITLE",
+      "String": "做得好"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC",
+      "String": "現在你已瞭解營運貓咪咖啡廳的基本了。點擊右下角的「目標」按鈕來看看今天的特別任務。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC2",
+      "String": "謝謝你。最重要的是希望你樂在其中！"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_001",
+      "String": "領養你的第一隻貓咪（按下？按鈕取得協助）"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN1",
+      "String": "點擊顧客並和小波配對"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET1",
+      "String": "哇！有個籃子？！讓我們打開它吧"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSEWALL1",
+      "String": "點擊「家具」按鈕並選擇一張壁紙"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_002",
+      "String": "領養一隻新的小貓咪"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN2",
+      "String": "將兩隻貓咪和顧客配對"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_COLLECT1",
+      "String": "撿起一位顧客留下的愛心紙條"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_STARTBASKET1",
+      "String": "獲取愛心，然後用訂購一個籃子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN3",
+      "String": "再次將兩隻貓咪和顧客配對"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSESEAT",
+      "String": "從「家具」選單中購買一張凳子或椅子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_TAPHUD1",
+      "String": "點擊螢幕下方的愛心圖示"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET2",
+      "String": "籃子一旦送達即可開啟"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_PLACETABLE",
+      "String": "從「家具」選單中放置一張桌子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_EARNHEARTS1",
+      "String": "使用小波獲取10個愛心"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_LEVELCAT1",
+      "String": "將小波培育至等級2"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G001",
+      "String": "培育（升等）3隻貓咪"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G002",
+      "String": "將貓咪與50位顧客配對來獲取愛心"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G003",
+      "String": "獲取200枚代幣"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_GOTOCATLOUNGE1",
+      "String": "點擊隧道前往貓廳"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_USELUCKYCAT",
+      "String": "點擊福貓的肚子即可取得3件物品"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_UNLOCKSTATION",
+      "String": "透過<CAT_STATION>物品欄解鎖第一個<CAT_STATION>"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGNCATTOSTATION",
+      "String": "為<STATION_002_NAME>跳台指派一隻貓咪"
+    },
+    {
+      "Key": "MINIGAME_NAME_BRUSH",
+      "String": "輕撫"
+    },
+    {
+      "Key": "MINIGAME_CAT_TITLE",
+      "String": "{0}想要你的關愛"
+    },
+    {
+      "Key": "MINIGAME_CAT_EXPLANATION",
+      "String": "使用你的手指輕摸<CAT>"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_1",
+      "String": "貓咪感覺開心！"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_2",
+      "String": "呼嚕呼嚕呼嚕"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_3",
+      "String": "滿足小貓咪"
+    },
+    {
+      "Key": "MINIGAME_NAME_CLEANPAWPRINTS",
+      "String": "清理乾淨"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE_SPILL",
+      "String": "清理打翻的飲料"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE",
+      "String": "喔，{0}..."
+    },
+    {
+      "Key": "MINIGAME_SCRUB_EXPLANATION",
+      "String": "輕搓來擦洗掉髒污"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_1",
+      "String": "好乾淨啊啊啊"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_2",
+      "String": "亮晶晶"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_3",
+      "String": "腳印不見囉"
+    },
+    {
+      "Key": "MINIGAME_NAME_COFFEE",
+      "String": "咖啡師"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_TITLE",
+      "String": "喝光光"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_1",
+      "String": "將材料拖曳至馬克杯"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_2",
+      "String": "將馬克杯拖曳到顧客面前"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_1",
+      "String": "完美佳釀！"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_2",
+      "String": "美味"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_3",
+      "String": "好吃"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_4",
+      "String": "清新好滋味"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_1",
+      "String": "做得好"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_2",
+      "String": "太棒了"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_3",
+      "String": "不可思議"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_4",
+      "String": "大明星"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_5",
+      "String": "不錯喔"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_6",
+      "String": "真優秀"
+    },
+    {
+      "Key": "MINIGAME_NAME_SALAD",
+      "String": "沙拉藝術家"
+    },
+    {
+      "Key": "MINIGAME_SALAD_TITLE",
+      "String": "沙拉端上來"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_1",
+      "String": "將材料拖曳至盤子"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_2",
+      "String": "將盤子拖曳到顧客面前"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_1",
+      "String": "好健康喔！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_2",
+      "String": "超好吃！！！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_3",
+      "String": "好美味！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_4",
+      "String": "可口"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SUNDAE",
+      "String": "聖代藝術家"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_TITLE",
+      "String": "好吃的甜點"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_1",
+      "String": "將配料拖曳到杯子裡"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_2",
+      "String": "將杯子拖曳到顧客面前"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_1",
+      "String": "哇！！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_2",
+      "String": "可口的甜點！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_3",
+      "String": "美味可口"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_4",
+      "String": "好吃到不行"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SMOOTHIE",
+      "String": "奶昔藝術家"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_TITLE",
+      "String": "奶昔時間"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_1",
+      "String": "將配料拖曳到攪拌機裡"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_2",
+      "String": "將杯子拖曳到顧客面前"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_1",
+      "String": "清新爽口"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_2",
+      "String": "口感滑順"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_3",
+      "String": "營養滿點！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_4",
+      "String": "健康滿分！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "PICK_A_COMPARTMENT",
+      "String": "選擇一份獎項"
+    },
+    {
+      "Key": "PLUS_ONE_REWARD",
+      "String": "額外獎勵"
+    },
+    {
+      "Key": "YOU_HAVE_COLLECTED_IT_ALL",
+      "String": "已領取所有獎勵"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_1",
+      "String": "選擇一份獎項"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_TITLE",
+      "String": "試試手氣"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_2",
+      "String": "觀看影片以取得額外選擇機會"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_3",
+      "String": "使用小貓幣以取得額外選擇機會"
+    },
+    {
+      "Key": "MINIGAME_NAME_WAFFLE",
+      "String": "華夫餅達人"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_TITLE",
+      "String": "迷人的罪惡美食"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_1",
+      "String": "將材料拖曳至華夫餅"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_2",
+      "String": "將完成的華夫餅至顧客面前"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_1",
+      "String": "真豐盛！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_2",
+      "String": "罪惡的美味。"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_3",
+      "String": "完美華夫餅！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_4",
+      "String": "太棒了！"
+    },
+    {
+      "Key": "MINIGAME_NAME_CAT_TREAT",
+      "String": "貓零食"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_TITLE",
+      "String": "零食時光"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_EXPLANATION",
+      "String": "將各個零食拖曳給個性類型相符的貓咪"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_1",
+      "String": "好吃好吃"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_2",
+      "String": "貓咪滿足"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_3",
+      "String": "真開心！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_NAME",
+      "String": "貓咪玩具"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_TITLE",
+      "String": "和{0}一起玩！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_EXPLANATION",
+      "String": "四處拖拉玩具！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_1",
+      "String": "真好玩"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_2",
+      "String": "呼嚕嚕"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_3",
+      "String": "喵！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_NAME",
+      "String": "零食拋接"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_TITLE",
+      "String": "接住零食！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_EXPLANATION",
+      "String": "將零食往貓的方向彈過去"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_1",
+      "String": "瞄得真準！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_2",
+      "String": "接得不錯！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_3",
+      "String": "真厲害！"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_TITLE",
+      "String": "購買"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_DESCRIPTION",
+      "String": "你是否要用{1}枚<TOKEN_PLURAL>購買「{0}」？"
+    },
+    {
+      "Key": "ERROR_TITLE",
+      "String": "糟糕..."
+    },
+    {
+      "Key": "CUSHION",
+      "String": "坐墊"
+    },
+    {
+      "Key": "COUCH",
+      "String": "沙發"
+    },
+    {
+      "Key": "RUG",
+      "String": "小地毯"
+    },
+    {
+      "Key": "CHAIR",
+      "String": "椅子"
+    },
+    {
+      "Key": "TABLE",
+      "String": "桌子"
+    },
+    {
+      "Key": "STOOL",
+      "String": "凳子"
+    },
+    {
+      "Key": "MAT",
+      "String": "踏墊"
+    },
+    {
+      "Key": "PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "CRATE",
+      "String": "箱子"
+    },
+    {
+      "Key": "SHELF",
+      "String": "櫥子"
+    },
+    {
+      "Key": "COUNTER",
+      "String": "櫃台"
+    },
+    {
+      "Key": "CAT_TRAIT_FRIENDLY",
+      "String": "友善"
+    },
+    {
+      "Key": "CAT_TRAIT_SHY",
+      "String": "害羞"
+    },
+    {
+      "Key": "CAT_TRAIT_PLAYFUL",
+      "String": "愛玩"
+    },
+    {
+      "Key": "CAT_TRAIT_CHILL",
+      "String": "放鬆"
+    },
+    {
+      "Key": "CAT_TRAIT_CAPRICIOUS",
+      "String": "任性"
+    },
+    {
+      "Key": "CAT_TRAIT_CURIOUS",
+      "String": "好奇"
+    },
+    {
+      "Key": "CAT_TRAIT_GENTLE",
+      "String": "溫柔"
+    },
+    {
+      "Key": "CAT_TRAIT_ASSERTIVE",
+      "String": "果敢"
+    },
+    {
+      "Key": "CAT_TRAIT_GOOFY",
+      "String": "蠢萌"
+    },
+    {
+      "Key": "CAT_TRAIT_ADVENTUROUS",
+      "String": "愛冒險"
+    },
+    {
+      "Key": "CAT_TRAIT_CUDDLY",
+      "String": "愛抱抱"
+    },
+    {
+      "Key": "CAT_TRAIT_SLEEPY",
+      "String": "愛睡覺"
+    },
+    {
+      "Key": "CAT_TRAIT_SMART",
+      "String": "聰明"
+    },
+    {
+      "Key": "HAIR_TYPE_SHORT",
+      "String": "短"
+    },
+    {
+      "Key": "HAIR_TYPE_MEDIUM",
+      "String": "中"
+    },
+    {
+      "Key": "HAIR_TYPE_LONG",
+      "String": "長"
+    },
+    {
+      "Key": "HAIR_TYPE_NONE",
+      "String": "無"
+    },
+    {
+      "Key": "CAT_BREED_CALICO",
+      "String": "三花貓"
+    },
+    {
+      "Key": "CAT_BREED_TABBY",
+      "String": "虎斑貓"
+    },
+    {
+      "Key": "CAT_BREED_BOMBAY",
+      "String": "孟買貓"
+    },
+    {
+      "Key": "CAT_BREED_PERSIAN",
+      "String": "波斯貓"
+    },
+    {
+      "Key": "CAT_BREED_SIBERIAN",
+      "String": "西伯利亞貓"
+    },
+    {
+      "Key": "CAT_BREED_TORTOISESHELL",
+      "String": "玳瑁貓"
+    },
+    {
+      "Key": "CAT_BREED_TUXEDO",
+      "String": "賓士貓"
+    },
+    {
+      "Key": "CAT_BREED_BOBTAIL",
+      "String": "麒麟尾貓"
+    },
+    {
+      "Key": "CAT_BREED_CHANTILLY",
+      "String": "查達利貓"
+    },
+    {
+      "Key": "CAT_BREED_CHARTREAUX",
+      "String": "夏特爾貓"
+    },
+    {
+      "Key": "CAT_BREED_SIAMESE",
+      "String": "暹羅貓"
+    },
+    {
+      "Key": "CAT_BREED_LONGHAIR",
+      "String": "長毛貓"
+    },
+    {
+      "Key": "CAT_BREED_TONKINESE",
+      "String": "東奇尼貓"
+    },
+    {
+      "Key": "CAT_BREED_WIREHAIR",
+      "String": "鋼毛貓"
+    },
+    {
+      "Key": "CAT_BREED_FOLD",
+      "String": "摺耳貓"
+    },
+    {
+      "Key": "CAT_BREED_SPHYNX",
+      "String": "斯芬克斯貓"
+    },
+    {
+      "Key": "CAT_BREED_LAPERM",
+      "String": "拉邦貓"
+    },
+    {
+      "Key": "CAT_BREED_SHORTHAIR",
+      "String": "短毛貓"
+    },
+    {
+      "Key": "CAT_BREED_RAGDOLL",
+      "String": "布偶貓"
+    },
+    {
+      "Key": "CAT_BREED_EXOTIC",
+      "String": "異國短毛貓"
+    },
+    {
+      "Key": "CAT_BREED_HIMALAYAN",
+      "String": "喜馬拉雅貓"
+    },
+    {
+      "Key": "CAT_BREED_ANGORA",
+      "String": "安哥拉貓"
+    },
+    {
+      "Key": "CAT_BREED_CURL",
+      "String": "捲耳貓"
+    },
+    {
+      "Key": "CAT_BREED_OCICAT",
+      "String": "歐西貓"
+    },
+    {
+      "Key": "CAT_BREED_BENGAL",
+      "String": "孟加拉貓"
+    },
+    {
+      "Key": "CAT_BREED_MAINECOON",
+      "String": "緬因貓"
+    },
+    {
+      "Key": "CAT_BREED_BICOLOUR",
+      "String": "雙色貓"
+    },
+    {
+      "Key": "CAT_BREED_RUSSIANWHITE",
+      "String": "俄羅斯白貓"
+    },
+    {
+      "Key": "CAT_BREED_SNOWSHOE",
+      "String": "雪鞋貓"
+    },
+    {
+      "Key": "CAT_BREED_MUNCHKIN",
+      "String": "曼赤肯貓"
+    },
+    {
+      "Key": "CAT_BREED_MIXED",
+      "String": "米克斯"
+    },
+    {
+      "Key": "CAT_BREED_ORIENTAL",
+      "String": "東方短毛貓"
+    },
+    {
+      "Key": "CAT_BREED_LAMBKIN",
+      "String": "蘭普欽貓"
+    },
+    {
+      "Key": "CAT_BREED_LYKOI",
+      "String": "狼貓"
+    },
+    {
+      "Key": "COMMON_ITEM_DESC",
+      "String": "<COMMON>物品，用於升級貓咪"
+    },
+    {
+      "Key": "UNCOMMON_ITEM_DESC",
+      "String": "<UNCOMMON>物品，用於升級貓咪"
+    },
+    {
+      "Key": "RARE_ITEM_DESC",
+      "String": "<RARE>物品，用於升級貓咪"
+    },
+    {
+      "Key": "EPIC_ITEM_DESC",
+      "String": "<EPIC>物品，用於升級貓咪"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_DESC",
+      "String": "<LEGENDARY>物品，用於升級貓咪"
+    },
+    {
+      "Key": "BALL",
+      "String": "球"
+    },
+    {
+      "Key": "BELL",
+      "String": "鈴鐺"
+    },
+    {
+      "Key": "TOY",
+      "String": "玩具"
+    },
+    {
+      "Key": "FOOD",
+      "String": "食物"
+    },
+    {
+      "Key": "COLLAR",
+      "String": "項圈"
+    },
+    {
+      "Key": "ITEM_001",
+      "String": "球鈴"
+    },
+    {
+      "Key": "ITEM_002",
+      "String": "海綿球"
+    },
+    {
+      "Key": "ITEM_003",
+      "String": "花式針織球"
+    },
+    {
+      "Key": "ITEM_004",
+      "String": "毛線球"
+    },
+    {
+      "Key": "ITEM_005",
+      "String": "高科技球"
+    },
+    {
+      "Key": "ITEM_006",
+      "String": "銅鈴"
+    },
+    {
+      "Key": "ITEM_007",
+      "String": "黃色鈴鐺"
+    },
+    {
+      "Key": "ITEM_008",
+      "String": "灰貓鈴鐺"
+    },
+    {
+      "Key": "ITEM_009",
+      "String": "橘貓鈴鐺"
+    },
+    {
+      "Key": "ITEM_010",
+      "String": "服務鈴"
+    },
+    {
+      "Key": "ITEM_011",
+      "String": "鮪魚罐頭"
+    },
+    {
+      "Key": "ITEM_012",
+      "String": "肉凍"
+    },
+    {
+      "Key": "ITEM_013",
+      "String": "貓糧"
+    },
+    {
+      "Key": "ITEM_014",
+      "String": "魚柳"
+    },
+    {
+      "Key": "ITEM_015",
+      "String": "鮭魚"
+    },
+    {
+      "Key": "ITEM_016",
+      "String": "玩具老鼠"
+    },
+    {
+      "Key": "ITEM_017",
+      "String": "玩具蜘蛛"
+    },
+    {
+      "Key": "ITEM_018",
+      "String": "玩具魚"
+    },
+    {
+      "Key": "ITEM_019",
+      "String": "玩具章魚"
+    },
+    {
+      "Key": "ITEM_020",
+      "String": "玩具恐龍"
+    },
+    {
+      "Key": "ITEM_021",
+      "String": "白色項圈"
+    },
+    {
+      "Key": "ITEM_022",
+      "String": "運動風項圈"
+    },
+    {
+      "Key": "ITEM_023",
+      "String": "可愛項圈"
+    },
+    {
+      "Key": "ITEM_024",
+      "String": "皮革項圈"
+    },
+    {
+      "Key": "ITEM_025",
+      "String": "鑽石項圈"
+    },
+    {
+      "Key": "ITEM_ST_C1",
+      "String": "貓螺栓"
+    },
+    {
+      "Key": "ITEM_ST_U1",
+      "String": "小貓膠水"
+    },
+    {
+      "Key": "ITEM_ST_R1",
+      "String": "貓掌木板"
+    },
+    {
+      "Key": "ITEM_ST_E1",
+      "String": "閃亮油漆"
+    },
+    {
+      "Key": "ITEM_ST_L1",
+      "String": "頂級布料"
+    },
+    {
+      "Key": "I_TRAIT_0",
+      "String": "「<CAT_TRAIT_FRIENDLY>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_1",
+      "String": "「<CAT_TRAIT_CHILL>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_2",
+      "String": "「<CAT_TRAIT_PLAYFUL>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_3",
+      "String": "「<CAT_TRAIT_SHY>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_4",
+      "String": "「<CAT_TRAIT_CAPRICIOUS>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_5",
+      "String": "「<CAT_TRAIT_CURIOUS>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_6",
+      "String": "「<CAT_TRAIT_GENTLE>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_7",
+      "String": "「<CAT_TRAIT_ASSERTIVE>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_8",
+      "String": "「<CAT_TRAIT_GOOFY>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_9",
+      "String": "「<CAT_TRAIT_ADVENTUROUS>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_10",
+      "String": "「<CAT_TRAIT_CUDDLY>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_11",
+      "String": "「<CAT_TRAIT_SLEEPY>」吊牌"
+    },
+    {
+      "Key": "I_TRAIT_12",
+      "String": "「<CAT_TRAIT_SMART>」吊牌"
+    },
+    {
+      "Key": "ITEM_RARITY_C1",
+      "String": "<COMMON>寶石"
+    },
+    {
+      "Key": "ITEM_RARITY_U1",
+      "String": "<UNCOMMON>寶石"
+    },
+    {
+      "Key": "ITEM_RARITY_R1",
+      "String": "<RARE>寶石"
+    },
+    {
+      "Key": "ITEM_RARITY_E1",
+      "String": "<EPIC>寶石"
+    },
+    {
+      "Key": "ITEM_RARITY_L1",
+      "String": "<LEGENDARY>寶石"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_1",
+      "String": "VIP"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_2",
+      "String": "通行證"
+    },
+    {
+      "Key": "VIP_LARGE_DESCRIPTION_TITLE",
+      "String": "關於{0}"
+    },
+    {
+      "Key": "DISCOVER_PROMPT",
+      "String": "在剩餘的故事中發掘更多個性<TRAIT_PLURAL>。"
+    },
+    {
+      "Key": "GUEST_PASS_TITLE_1",
+      "String": "賓客"
+    },
+    {
+      "Key": "VIP_TRAIT_DISCOVERED_FEEDBACK",
+      "String": "已發現新的<TRAIT>：{0}"
+    },
+    {
+      "Key": "VIP_UNLOCKED_FEEDBACK",
+      "String": "恭喜！已發現VIP顧客：{0}"
+    },
+    {
+      "Key": "SETTINGS_TITLE",
+      "String": "設定"
+    },
+    {
+      "Key": "SETTINGS_ACCOUNT_TITLE",
+      "String": "帳號"
+    },
+    {
+      "Key": "SETTINGS_USER_ID",
+      "String": "使用者ID"
+    },
+    {
+      "Key": "SETTINGS_NAME",
+      "String": "名稱"
+    },
+    {
+      "Key": "SETTINGS_LEVEL",
+      "String": "<LEVEL>"
+    },
+    {
+      "Key": "SETTINGS_STARTED",
+      "String": "已開始"
+    },
+    {
+      "Key": "SETTINGS_UPDATED",
+      "String": "已更新"
+    },
+    {
+      "Key": "SETTINGS_REGISTER_BUTTON",
+      "String": "註冊"
+    },
+    {
+      "Key": "SETTINGS_LOGOUT_BUTTON",
+      "String": "登出"
+    },
+    {
+      "Key": "SETTINGS_MUSIC_LABEL",
+      "String": "音樂"
+    },
+    {
+      "Key": "SETTINGS_SFX_LABEL",
+      "String": "音效"
+    },
+    {
+      "Key": "SETTINGS_NOTIFICATIONS_TITLE",
+      "String": "通知"
+    },
+    {
+      "Key": "SETTINGS_CUSTOMER_DONE_LABEL",
+      "String": "已完成<CUSTOMER_PLURAL>"
+    },
+    {
+      "Key": "SETTINGS_DELIVERY_READY_LABEL",
+      "String": "<BASKET><DELIVERY>已就緒"
+    },
+    {
+      "Key": "SETTINGS_BONUS_DELIVERY_READY_LABEL",
+      "String": "獎勵<DELIVERY>已就緒"
+    },
+    {
+      "Key": "SETTINGS_HELP",
+      "String": "說明"
+    },
+    {
+      "Key": "SETTINGS_FACEBOOK_PAGE",
+      "String": "社群"
+    },
+    {
+      "Key": "SETTINGS_TWITTER_PAGE",
+      "String": "社群"
+    },
+    {
+      "Key": "SETTINGS_TERMS_OF_SERVICE",
+      "String": "服務條款"
+    },
+    {
+      "Key": "SETTINGS_PRIVACY_POLICY",
+      "String": "隱私政策"
+    },
+    {
+      "Key": "SETTINGS_HIGH_GRAPHICS_MODE",
+      "String": "高畫質圖像"
+    },
+    {
+      "Key": "SETTINGS_STATIONS_READY_LABEL",
+      "String": "<CAT_STATION_PLURAL>已就緒"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_TITLE",
+      "String": "清除資料"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_EXPLANATION",
+      "String": "我們非常重視您的隱私。我們可在您的要求下，刪除所有可辨識您個人身分之資料。\\n\\n資料刪除後將無法還原，且將導致您失去每一款Runaway遊戲的所有進度。\\n\\n刪除資料時，您的交易紀錄也會一併遭到刪除，您將無法復原先前的購買。\\n\\n如要刪除個別遊戲的資料，或者如果您有任何問題，請聯絡支援團隊。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM1",
+      "String": "這項操作將刪除您在所有Runaway遊戲中的資料，包括但不限於：\\n\\n  ● Flutter: Butterfly Sanctuary\\n  ● Flutter: Starlight\\n  ● Splash: Fish Sanctuary\\n  ● Furistas Cat Cafe\\n  ● Bird BnB\\n  ● Old Friends Dog Game\\n"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM2",
+      "String": "您確定要永久刪除Runaway遊戲資料嗎？"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_DONE",
+      "String": "已成功清除所有資料。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_ERROR",
+      "String": "刪除資料時發生問題，請再試一次。若問題仍未排除，請聯絡支援團隊。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_BACK",
+      "String": "返回安全頁面"
+    },
+    {
+      "Key": "DO_NOT_SELL_INFO_BUTTON",
+      "String": "請勿出售或分享我的個人信息"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_HEADER",
+      "String": "讓您的廣告更具相關性"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_BODY",
+      "String": "獲取更相關的廣告，並透過允許追蹤來支持保持該遊戲免費。"
+    },
+    {
+      "Key": "IOS_ATT_PERMISSION_DESC",
+      "String": "這使我們能夠個性化您選擇觀看的廣告，並有助於支持我們的小型工作室。您可以隨時透過「設定」->「隱私權」將其關閉。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_TITLE",
+      "String": "已連結Facebook"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_DESC",
+      "String": "您已成功連結Facebook帳號。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_TITLE",
+      "String": "連結Facebook時發生錯誤"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_DESC",
+      "String": "此Facebook帳號已連結至另一間咖啡廳，並且無法重新指派。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_PERMISSION_EXPLANATION",
+      "String": "您之前拒絕了此應用的登錄權限。需要這個權限才能登錄，您想要繼續嗎？"
+    },
+    {
+      "Key": "NEW_GAME_LABEL",
+      "String": "新遊戲"
+    },
+    {
+      "Key": "LOAD_GAME_LABEL",
+      "String": "登入"
+    },
+    {
+      "Key": "RECOVER_LABEL",
+      "String": "復原"
+    },
+    {
+      "Key": "LOGIN_BACK_LABEL",
+      "String": "<BACK_LABEL>"
+    },
+    {
+      "Key": "LOGIN_FACEBOOK",
+      "String": "FACEBOOK"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_TITLE",
+      "String": "條款已更新"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_DESC",
+      "String": "您必須同意服務條款並閱讀隱私政策，確認完成後才可遊玩"
+    },
+    {
+      "Key": "GDPR_SUBMIT",
+      "String": "提交"
+    },
+    {
+      "Key": "GDPR_ACCEPT",
+      "String": "我已閱讀並同意隱私政策"
+    },
+    {
+      "Key": "GDPR_AGE_DESC",
+      "String": "I am over 16 years old - this game contains ads and purchases."
+    },
+    {
+      "Key": "LOGIN_RETRIEVE_ACCOUNT",
+      "String": "正在擷取帳號資訊"
+    },
+    {
+      "Key": "LOGIN_HELP",
+      "String": "說明"
+    },
+    {
+      "Key": "LOGIN_HELP_PROMPT",
+      "String": "遇到問題嗎？請點擊「<LOGIN_HELP>」按鈕。"
+    },
+    {
+      "Key": "LOGIN_LOAD_GAME_DATA",
+      "String": "正在載入遊戲資料..."
+    },
+    {
+      "Key": "LOGIN_LOGGING_IN",
+      "String": "正在登入..."
+    },
+    {
+      "Key": "LOGIN_DOWNLOADING_GAME_DATA",
+      "String": "正在下載遊戲資料..."
+    },
+    {
+      "Key": "LOGIN_CHECKING_FOR_UPDATES",
+      "String": "正在檢查更新..."
+    },
+    {
+      "Key": "UPDATE_REQUIRED",
+      "String": "需要更新"
+    },
+    {
+      "Key": "UPDATE_REQUIRED_DESCRIPTION",
+      "String": "本遊戲有更新可使用！立刻更新，看看咖啡廳出現什麼令人雀躍的新變化吧！"
+    },
+    {
+      "Key": "ERROR_DESC",
+      "String": "發生錯誤。遊戲將立即重啟，之後您應該能繼續遊戲。如果問題依舊存在，請通知我們。謝謝！"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_TITLE",
+      "String": "社群帳號已使用"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_DESC",
+      "String": "此社群帳號已使用於另一個遊戲存檔"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_TITLE",
+      "String": "登入失敗"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_DESC",
+      "String": "糟糕！建立新帳號時發生問題。請再試一次。如果問題依舊存在，請連絡我們友善的支援人員。"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_TITLE",
+      "String": "遊戲維護中"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_DESC",
+      "String": "在我們進行維護時，您咖啡廳裡的貓咪也在休息。請於幾分鐘後再試一次。"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_TITLE",
+      "String": "遊戲維護中"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_DESC",
+      "String": "在我們進行維護時，您咖啡廳裡的貓咪也在休息。請於幾分鐘後再試一次。"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_TITLE",
+      "String": "遊戲維護中"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_DESC",
+      "String": "在我們進行維護時，您咖啡廳裡的貓咪也在休息。請於幾分鐘後再試一次。"
+    },
+    {
+      "Key": "ERROR_RELOAD_TITLE",
+      "String": "重新載入咖啡廳"
+    },
+    {
+      "Key": "ERROR_RELOAD_DESC",
+      "String": "您的咖啡廳已更新。請按「確定」以重新載入遊戲。"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_TITLE",
+      "String": "儲存銀行交易發生錯誤"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_DESC",
+      "String": "很抱歉，儲存交易時發生錯誤。"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_TITLE",
+      "String": "伺服器登入錯誤"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_DESC",
+      "String": "伺服器無法記錄要求"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_TITLE",
+      "String": "購買錯誤"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_DESC",
+      "String": "我們無法確認您的購買。請再試一次，如果問題仍未解決，請連絡我們優秀的支援人員協助。"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_TITLE",
+      "String": "社群帳號已使用"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_DESC",
+      "String": "此社群帳號已使用於另一個遊戲存檔，且無法重新指派"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_TITLE",
+      "String": "伺服器連線錯誤"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_DESC",
+      "String": "無法與伺服器建立連線。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_INVALID_RECEIPT",
+      "String": "交易收據未通過App Store驗證。請聯絡我們可愛的支援團隊。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PRODUCT_UNAVAILABLE",
+      "String": "很遺憾，此物品目前無法使用。如果問題依舊存在，請連絡我們可愛的支援團隊。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASE_PENDING",
+      "String": "目前已有一項購買正在進行。請完成該購買後再進行新的購買。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASING_UNAVAILABLE",
+      "String": "目前無法進行購買。請確認您是否已連線至網路。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_STORE_NOT_INITIALISED",
+      "String": "商店尚未啟動，請稍後再試一次。如果問題依舊存在，請連絡我們可愛的支援團隊。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_UNKNOWN_ERROR",
+      "String": "購買時發生錯誤，如果問題依舊存在，請連絡我們可愛的支援團隊。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_TRANSPORT_ERROR",
+      "String": "無法連線至App Store，請檢查您的網路連線後再試一次。"
+    },
+    {
+      "Key": "ANDROID_NOTIFICATION_TITLE",
+      "String": "《貓咪咖啡廳》最新消息"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_001",
+      "String": "新的顧客正等待與小貓相親相愛！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_002",
+      "String": "顧客已離開，新的顧客正等候進入！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_003",
+      "String": "顧客帶著充滿愛的心離開了咖啡廳！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_004",
+      "String": "顧客心滿意足，愉快地離開了咖啡廳！做得好！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_005",
+      "String": "新的顧客正等著抱抱小貓！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_006",
+      "String": "新的顧客等著要進入咖啡廳抱抱貓咪！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_001",
+      "String": "有新籃子正等你開啟！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_002",
+      "String": "你有新籃子到了！裡面會有什麼呢？"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_003",
+      "String": "有新外送抵達！它可不會自己打開來哦:P"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_004",
+      "String": "好耶！新籃子到了。"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_005",
+      "String": "你猜怎麼了？你的外送籃子終於送到啦！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_006",
+      "String": "好消息！你有新籃子可以開囉。"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_007",
+      "String": "噓。有個新籃子正等著你打開。只有你能開哦。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_001",
+      "String": "你的獎勵籃子到了。裡面放著什麼呢？！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_002",
+      "String": "一個免費的新外送籃子到囉！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_003",
+      "String": "一個獎勵外送籃子正在咖啡廳等著你！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_004",
+      "String": "獎勵！籃子！終於！到了！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_005",
+      "String": "你最新的獎勵外送籃子裡會有什麼呢？"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_006",
+      "String": "新的獎勵籃子已準備就緒！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_007",
+      "String": "獎勵籃子已送達！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_001",
+      "String": "新的顧客正等待與小貓相親相愛，還有一個裝著好東西的新籃子！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_002",
+      "String": "你的所有顧客都開心地離開店裡了，另外還有一個籃子等你開啟！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_003",
+      "String": "新的顧客正等著抱抱小貓！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_004",
+      "String": "新的顧客正等你回咖啡廳！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_005",
+      "String": "新的顧客正等你回咖啡廳！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_AND_BASKET_READY_001",
+      "String": "你的籃子和獎勵籃子都送到囉！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_001",
+      "String": "今天你的咖啡廳又會發生什麼令人心動的故事呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_002",
+      "String": "今天會有什麼樣的新客人來到咖啡廳呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_003",
+      "String": "準備好在今天結交新的毛小孩朋友嗎？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_004",
+      "String": "新的小貓朋友正在等著你摸摸:3"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_005",
+      "String": "今天你會遇到什麼新朋友呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_006",
+      "String": "全世界的新顧客都在等著看看你的咖啡廳！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_007",
+      "String": "今天會加入什麼貓咪新成員呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_008",
+      "String": "你今天準備好來認識新顧客了嗎？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_009",
+      "String": "你今天準備好來認識新顧客了嗎？"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_001",
+      "String": "<NOTIFICATION_24HOURS_001>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_002",
+      "String": "<NOTIFICATION_24HOURS_002>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_003",
+      "String": "<NOTIFICATION_24HOURS_003>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_004",
+      "String": "<NOTIFICATION_24HOURS_004>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_005",
+      "String": "<NOTIFICATION_24HOURS_005>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_006",
+      "String": "<NOTIFICATION_24HOURS_006>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_007",
+      "String": "<NOTIFICATION_24HOURS_007>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_008",
+      "String": "<NOTIFICATION_24HOURS_008>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_001",
+      "String": "不用再等候了。參加「{0}」活動即可獲得「{1}」，現已展開！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_002",
+      "String": "朋友你好。想獲得超棒的「{1}」嗎？「{0}」活動現在展開啦！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_003",
+      "String": "「{0}」活動已經開始。你的貓咪需要摸摸/抓抓這個新的「{1}」！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_004",
+      "String": "參加「{0}」活動即可獲得超棒的「{1}」。太令人興奮了！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_005",
+      "String": "開始狂歡吧。獲得可愛「{1}」的「{0}」活動現在開始囉！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_001",
+      "String": "雙倍代幣獎勵！打鐵趁熱，要買要快！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_002",
+      "String": "跟你說，現在就能馬上獲得雙倍代幣喔！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_003",
+      "String": "雙倍代幣加成現已開放！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_004",
+      "String": "雙倍代幣加成現已開放！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_001",
+      "String": "嘿，朋友，你現在能從籃子獲得雙倍魚幣了。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_002",
+      "String": "今天是使用雙倍魚幣加成的好日子！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_003",
+      "String": "雙倍魚幣加成！雙倍魚幣加成！雙倍魚幣加成！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_004",
+      "String": "雙倍魚幣加成！雙倍魚幣加成！雙倍魚幣加成！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_001",
+      "String": "這是什麼？雙倍魚幣和雙倍代幣的雙重加成？哇！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_002",
+      "String": "雙倍魚幣和雙倍代幣的雙重加成已啟用。真是幸福。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_003",
+      "String": "一生最棒的時刻是什麼？沒錯，就是使用雙倍魚幣和雙倍代幣的當下！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_001",
+      "String": "這是什麼？一隻新貓咪？！獲得可愛{1}的「{0}」活動現已展開！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_002",
+      "String": "{1}真是可愛到不行！「{0}」活動現在開始啦！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_003",
+      "String": "「{0}」活動開始了。參加並為你的咖啡廳獲得新朋友「{1}」！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_004",
+      "String": "「{0}」活動開始了。參加並為你的咖啡廳獲得新朋友「{1}」！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_001",
+      "String": "(・о・)「{0}」活動就要結束了！趁還來得及，快來收集「{1}」吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_002",
+      "String": "(⊙.☉) 什麼？？「{0}」快結束了？把握最後機會，為咖啡館取得超棒的「{1}」。"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_003",
+      "String": "擁有「{1}」的話一定很棒吧？「{0}」就快要結束囉！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_004",
+      "String": "溫馨提示：在「{0}」活動取得「{1}」的時間不多囉！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_005",
+      "String": "咖啡館有「{1}」肯定很棒，透過「{0}」活動收集它的時間所剩不多了！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_001",
+      "String": "(✪‿✪)ノ 「{0}」活動即將結束！千萬別錯過可愛的「{1}」。"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_002",
+      "String": "街上最酷的貓咪非「{1}」莫屬，能夠領養牠的「{0}」活動就快結束囉！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_003",
+      "String": "迎接「{1}」加入咖啡館的「{0}」活動就快結束了！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_004",
+      "String": "「{1}」是最棒的貓咪，不過可以在「{0}」活動領養他的時間不多了..."
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_005",
+      "String": "「{1}」是新開放領養的毛小孩，但「{0}」活動就快結束了！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_001",
+      "String": "你的<CAT_STATION_PLURAL>似乎全空了！想必貓咪們都等著去玩！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_002",
+      "String": "噢，你的貓咪已經都使用完<CAT_STATION_PLURAL>了，也許是時候安排幾隻貓咪到佇列了？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_003",
+      "String": "有空的時候，別忘了派幾隻貓咪使用閒置的<CAT_STATION_PLURAL>！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_004",
+      "String": "嗯...不知道你的<CAT_STATION_PLURAL>還能不能多容納幾隻貓..."
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_005",
+      "String": "哇，時間過這麼快嗎？！建議你去看看<CAT_STATION_PLURAL>還有沒有空位"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_006",
+      "String": "天啊，閒置的<CAT_STATION>看起來好無聊！貓咪應該都喜歡跳台吧？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_007",
+      "String": "嗨，你看起來很聰明伶俐！替<CAT_STATION_PLURAL>安排貓咪正是聰明伶俐的選擇！"
+    },
+    {
+      "Key": "EVENT",
+      "String": "活動"
+    },
+    {
+      "Key": "EVENT_CURRENCY_DESCRIPTION",
+      "String": "活動貨幣"
+    },
+    {
+      "Key": "EVENT_REWARDS",
+      "String": "獎勵"
+    },
+    {
+      "Key": "EVENT_TIME_LEFT",
+      "String": "剩餘時間："
+    },
+    {
+      "Key": "EVENT_TOTAL",
+      "String": "總額"
+    },
+    {
+      "Key": "EVENT_NEXTGOAL",
+      "String": "下個目標"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_TITLE",
+      "String": "已獲取獎勵"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_DESC",
+      "String": "一件家具已新增至物品欄中"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_TITLE",
+      "String": "活動結束"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_DESC",
+      "String": "活動已結束，所有未領取的獎勵已新增至物品欄中"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_TITLE",
+      "String": "活動完成"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_DESC",
+      "String": "恭喜，你已完成活動！繼續遊玩來持續獲取獎勵"
+    },
+    {
+      "Key": "TODO_TUTORIAL",
+      "String": "請先完成教學任務"
+    },
+    {
+      "Key": "TOKEN_DESCRIPTION",
+      "String": "使用後，可自訂你的空間"
+    },
+    {
+      "Key": "HC_DESCRIPTION",
+      "String": "使用後，可加快籃子的運送速度"
+    },
+    {
+      "Key": "NO_CATS_AT_LEVEL_FEEDBACK",
+      "String": "所有等級{0}以上的貓咪都在忙碌中"
+    },
+    {
+      "Key": "NO_CATS_FEEDBACK",
+      "String": "沒有可用的貓咪！"
+    },
+    {
+      "Key": "note about buying HC",
+      "String": "您可在商店購買更多。"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_TITLE",
+      "String": "沒有網路連線"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_DESC",
+      "String": "我們無法連線至伺服器。請檢查您的網路連線後再試一次。"
+    },
+    {
+      "Key": "VIDEO_INTERRUPTED_DESCRIPTION",
+      "String": "影片播放已中斷。正在準備另一部影片，讓您享受觀看樂趣。"
+    },
+    {
+      "Key": "VIDEO_ERROR_DESCRIPTION",
+      "String": "播放影片時發生錯誤，正在為您準備另一部影片。如果仍發生錯誤，請聯絡我們可愛的支援團隊。"
+    },
+    {
+      "Key": "VIDEO_BUTTON_REWARD",
+      "String": "{0}倍獎勵"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_TITLE",
+      "String": "覺得好玩嗎？"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_TITLE",
+      "String": "評論"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_TITLE",
+      "String": "意見反應"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY",
+      "String": "謝謝您遊玩《貓咪咖啡廳》！您玩得還開心嗎？"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_BODY",
+      "String": "很高興聽到您這麼說！您願意留下評論嗎？"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_BODY",
+      "String": "噢，真遺憾！那麼您願意給我們一些意見反應，協助我們做得更好嗎？"
+    },
+    {
+      "Key": "SNAPSHOT_TITLE",
+      "String": "捕捉的美好時刻"
+    },
+    {
+      "Key": "SNAPSHOT_SUBTITLE",
+      "String": "分享給..."
+    },
+    {
+      "Key": "DEVICE",
+      "String": "裝置"
+    },
+    {
+      "Key": "SNAPSHOT_SOFTGUIDENCE",
+      "String": "拖曳方框至想要的位置，然後點擊以拍攝快照"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_TITLE",
+      "String": "快照分享成功！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_DESCRIPTION",
+      "String": "您的快照已分享到社群媒體上。"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_TITLE",
+      "String": "快照分享失敗！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_DESCRIPTION",
+      "String": "發生錯誤，您的快照分享失敗。"
+    },
+    {
+      "Key": "TAP_DRAG_PROMOT",
+      "String": "點擊/拖曳"
+    },
+    {
+      "Key": "SHELF_TWITTER_DESCRIPTION",
+      "String": "在Twitter追蹤我們即可獲取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_FACEBOOK_DESCRIPTION",
+      "String": "在Facebook我們即可獲取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_INSTAGRAM_DESCRIPTION",
+      "String": "在Instagram追蹤我們即可獲取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_EMAIL_DESCRIPTION",
+      "String": "登錄訂閱電子報即可獲取{0} <HC>"
+    },
+    {
+      "Key": "INPUT_EMAIL_DESCRIPTION",
+      "String": "輸入電子郵件以登錄訂閱Runaway Play電子報。"
+    },
+    {
+      "Key": "LIKE",
+      "String": "按讚"
+    },
+    {
+      "Key": "FOLLOW",
+      "String": "追蹤"
+    },
+    {
+      "Key": "SIGN_UP",
+      "String": "登錄"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_TITLE",
+      "String": "無法購買"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_DESC",
+      "String": "無法購買此組合包，因為其中包含你已擁有的重要物品。"
+    },
+    {
+      "Key": "MAX",
+      "String": "已滿"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED",
+      "String": "建議更新"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED_DESCRIPTION",
+      "String": "新版本已推出！是否要立即更新，看看咖啡廳出現什麼令人雀躍的新變化呢？"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_TITLE",
+      "String": "{0}不足"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_DESCRIPTION",
+      "String": "糟糕！看來你還需要更多{0}。是否前往商店取得更多？"
+    },
+    {
+      "Key": "FURNITURE_DRAG_REMOVE_HINT",
+      "String": "拖曳家具至下方移除"
+    },
+    {
+      "Key": "TOP_UP_ITEMS",
+      "String": "取得物品"
+    },
+    {
+      "Key": "CAT_AS_EVENT_REWARD",
+      "String": "{0}正等著被領養至你的咖啡廳！"
+    },
+    {
+      "Key": "CAT_CLAIMED_TITLE",
+      "String": "已領養新貓咪"
+    },
+    {
+      "Key": "CAT_CLAIMED_DESCRIPTION",
+      "String": "{0}成為咖啡廳的新成員了。真是可愛到不行！"
+    },
+    {
+      "Key": "NEWS_PAGE_TITLE",
+      "String": "新聞"
+    },
+    {
+      "Key": "PERMISSION_DENIED_TITLE",
+      "String": "無使用權限"
+    },
+    {
+      "Key": "PERMISSION_DENIED_BODY",
+      "String": "您需要有儲存權限才能為您的貓咪拍照。"
+    },
+    {
+      "Key": "PERMISSION_DENIED_PERMANENTLY_BODY",
+      "String": "您必須在應用權限設定中允許《喵咪咖啡館》使用您的儲存權限才能為您的貓咪拍照。"
+    },
+    {
+      "Key": "ERROR_DLC_TITLE",
+      "String": "重新嘗試更新"
+    },
+    {
+      "Key": "ERROR_DLC_DESC",
+      "String": "糟糕，取得更新時發生錯誤，請點擊按鈕再試一次"
+    },
+    {
+      "Key": "NEED_HC",
+      "String": "<HC_PLURAL>不足"
+    },
+    {
+      "Key": "LIMITED_OFFER_HEADING",
+      "String": "限時優惠"
+    },
+    {
+      "Key": "LIMITED_TIME_HEADING",
+      "String": "限時優惠"
+    },
+    {
+      "Key": "FULL_CAFE_PHOTO",
+      "String": "咖啡館全景照"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_TITLE",
+      "String": "確認"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_DESCRIPTION",
+      "String": "回收「{0}」以兌換{1}枚<TOKEN_PLURAL>嗎？"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_TITLE",
+      "String": "確認"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_DESCRIPTION",
+      "String": "你確定要移除咖啡館所有家具嗎？"
+    },
+    {
+      "Key": "FURISTAS_CLUB_MEMBERSHIP",
+      "String": "《喵咪咖啡館》俱樂部會員資格"
+    },
+    {
+      "Key": "EXCLUSIVE",
+      "String": "專屬好康！"
+    },
+    {
+      "Key": "FCM_PERK1",
+      "String": "每日獎勵"
+    },
+    {
+      "Key": "FCM_PERK2",
+      "String": "特別專屬內容"
+    },
+    {
+      "Key": "FCM_PERK3",
+      "String": "額外籃子存放空間"
+    },
+    {
+      "Key": "FCM_PERK4",
+      "String": "商店折扣"
+    },
+    {
+      "Key": "TAP_FOR_DETAILS",
+      "String": "點擊了解詳細資訊"
+    },
+    {
+      "Key": "MEMBER_NO_DESCRIPTION",
+      "String": "購買《喵咪咖啡館》俱樂部會員資格，就能獲得一堆超棒的福利！"
+    },
+    {
+      "Key": "INSTANT_CURRENCY_LABEL",
+      "String": "即時取得貨幣"
+    },
+    {
+      "Key": "DAILY_BONUS_LABEL",
+      "String": "每日加成"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT_LABEL",
+      "String": "專屬貓咪"
+    },
+    {
+      "Key": "PERKS_LABEL",
+      "String": "其他超棒福利"
+    },
+    {
+      "Key": "FCM_OTHER_PERK1",
+      "String": "獲得專屬家具"
+    },
+    {
+      "Key": "FCM_OTHER_PERK2",
+      "String": "最高能存放6個籃子"
+    },
+    {
+      "Key": "FCM_OTHER_PERK3",
+      "String": "最高能存放3個額外籃子"
+    },
+    {
+      "Key": "FCM_OTHER_PERK4",
+      "String": "商店折扣"
+    },
+    {
+      "Key": "DAY_MEMBERSHIP",
+      "String": "{0}天會員資格："
+    },
+    {
+      "Key": "FCM_CURRENCY_READY",
+      "String": "每日獎勵已可領取"
+    },
+    {
+      "Key": "FCM_CURRENCY_UNAVAILABLE",
+      "String": "已領取每日獎勵"
+    },
+    {
+      "Key": "DAYS_LEFT",
+      "String": "剩餘天數"
+    },
+    {
+      "Key": "DAY_LEFT",
+      "String": "剩餘天數"
+    },
+    {
+      "Key": "DAYS_LEFT_FORMATTABLE",
+      "String": "剩餘天數：{0}"
+    },
+    {
+      "Key": "CLAIM",
+      "String": "領取"
+    },
+    {
+      "Key": "MEMBER_YES_TITLE",
+      "String": "你已成為《喵咪咖啡館》會員了！"
+    },
+    {
+      "Key": "FCM_CURRENT_MEMBER_DESCRIPTION",
+      "String": "感謝你加入《喵咪咖啡館》俱樂部！現在你擁有的福利如下："
+    },
+    {
+      "Key": "FCM_ABBREVIATION",
+      "String": "FCM"
+    },
+    {
+      "Key": "SPECIAL_DEAL",
+      "String": "特別優惠"
+    },
+    {
+      "Key": "FCM_RENEW_TITLE",
+      "String": "<FURISTAS_CLUB_MEMBERSHIP>"
+    },
+    {
+      "Key": "DISCOUNT_AMOUNT",
+      "String": "今日限定優惠"
+    },
+    {
+      "Key": "FCM_RENEW_DESCRIPTION",
+      "String": "非常感謝你加入《喵咪咖啡館》俱樂部！在午夜之前，你可以特別折扣價再享30天會員資格。"
+    },
+    {
+      "Key": "FCM_DAY_MEMBERSHIP_RENEW",
+      "String": "更新成{0}天會員資格："
+    },
+    {
+      "Key": "BONUS_LABEL",
+      "String": "加成！"
+    },
+    {
+      "Key": "INCENTIVISED_SHARE_FEEDBACK_DESCRIPTION",
+      "String": "您的快照已獲得分享，您獲得了{0}<FISH_PLURAL>！"
+    },
+    {
+      "Key": "NO_CATS_WITH_TRAIT_FEEDBACK",
+      "String": "所有「{0}」的貓都在忙碌中"
+    },
+    {
+      "Key": "NO_SPECIFIC_CAT_FEEDBACK",
+      "String": "「{0}」忙碌中"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_BASKET",
+      "String": "<DELIVERY_BASKET_GREAT> 2時"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_EXPLANATION",
+      "String": "要立即取得籃子嗎？"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_TITLE",
+      "String": "活動加速包"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_DESCRIPTION",
+      "String": "有了此組合包，你就能在剩餘活動時間內獲得額外活動點數！"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_AVAILABLE",
+      "String": "已可使用活動加速"
+    },
+    {
+      "Key": "EVENT_PACK_AVAILABLE_SHORT_DESCRIPTION",
+      "String": "{0}%加成！"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_ACTIVE",
+      "String": "活動加速已啟用"
+    },
+    {
+      "Key": "EVENT_PACK_SHORT_DESCRIPTION",
+      "String": "{1}增加{0}%"
+    },
+    {
+      "Key": "SHELF_GAME_INCENTIVE",
+      "String": "立即查看{0}以獲得{1} <HC>"
+    },
+    {
+      "Key": "RECOVER_NO_ACCOUNTS_FOUND",
+      "String": "找不到此裝置的帳號"
+    },
+    {
+      "Key": "SNAPSHOT_SIZE",
+      "String": "尺寸"
+    },
+    {
+      "Key": "OFFLINE_ERROR_TITLE",
+      "String": "離線時發生錯誤"
+    },
+    {
+      "Key": "OFFLINE_ERROR_DESC",
+      "String": "發生離線模式錯誤。遊戲將立即重啟，之後您應可繼續遊戲。如果問題依舊存在，請告知我們。謝謝！"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_TITLE",
+      "String": "載入本地資料時發生錯誤"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_DESCRIPTION",
+      "String": "嘗試載入本地資料時發生錯誤。請連上網路以重新載入遊戲。"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_TITLE",
+      "String": "已找到更新資料"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_DESCRIPTION",
+      "String": "您的本地資料並未與線上儲存資料同步。遊戲將立即重啟以使用更新的資料。"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_TITLE",
+      "String": "離線交易"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_DESCRIPTION",
+      "String": "您的裝置在交易期間為離線狀態，您的購買項目將於下次連上網路時出現。"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_TITLE",
+      "String": "<OFFLINE_ERROR_TITLE>"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_DESCRIPTION",
+      "String": "請連上網路以開始新遊戲。完成後，您便能盡情以離線方式遊玩《喵咪咖啡館》！"
+    },
+    {
+      "Key": "REWARD_VIP",
+      "String": "新VIP"
+    },
+    {
+      "Key": "REWARD_STATION",
+      "String": "新<CAT_STATION>"
+    },
+    {
+      "Key": "COLLECTED",
+      "String": "已獲得！"
+    },
+    {
+      "Key": "CAT_LOUNGE",
+      "String": "貓廳"
+    },
+    {
+      "Key": "CATHEART",
+      "String": "快樂貓"
+    },
+    {
+      "Key": "CATHEART_PLURAL",
+      "String": "快樂貓"
+    },
+    {
+      "Key": "BOOSTER",
+      "String": "加速道具"
+    },
+    {
+      "Key": "BOOSTER_PLURAL",
+      "String": "加速道具"
+    },
+    {
+      "Key": "CAT_STATION",
+      "String": "活動"
+    },
+    {
+      "Key": "CAT_STATION_PLURAL",
+      "String": "活動"
+    },
+    {
+      "Key": "STATION_INVENTORY_MENU_TITLE",
+      "String": "<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "CAT_STATION_ITEM_DESC",
+      "String": "<CAT_STATION>升級物品"
+    },
+    {
+      "Key": "CAT_STATION_UPGRADE_ITEM_DESCRIPTION",
+      "String": "<CAT_STATION>升級物品"
+    },
+    {
+      "Key": "CAT_STATION_INFO_PANEL_TITLE",
+      "String": "<CAT_STATION>升級"
+    },
+    {
+      "Key": "CAT_STATION_INFO_REQUIREMENT_TITLE",
+      "String": "所需材料："
+    },
+    {
+      "Key": "CAT_STATION_INFO_NEXT_REWARD_TITLE",
+      "String": "下一項獎勵："
+    },
+    {
+      "Key": "CAT_STATION_LEVEL_UNLOCKED",
+      "String": "已解鎖等級："
+    },
+    {
+      "Key": "STATIONREWARD_QUEUEINCREASE",
+      "String": "將佇列提升至{0}"
+    },
+    {
+      "Key": "STATIONREWARD_BOOSTUPGRADE",
+      "String": "升級「{0}」加速道具"
+    },
+    {
+      "Key": "STATION_001_NAME",
+      "String": "美食饗宴"
+    },
+    {
+      "Key": "STATION_002_NAME",
+      "String": "打鼠鼠"
+    },
+    {
+      "Key": "STATION_003_NAME",
+      "String": "小貓卡拉OK"
+    },
+    {
+      "Key": "STATION_004_NAME",
+      "String": "毛線球籃"
+    },
+    {
+      "Key": "STATION_005_NAME",
+      "String": "瑜珈冥想台"
+    },
+    {
+      "Key": "STATION_006_NAME",
+      "String": "隱貓屋"
+    },
+    {
+      "Key": "STATION_001_ONELINER",
+      "String": "符合貓咪胃口的美味料理"
+    },
+    {
+      "Key": "STATION_002_ONELINER",
+      "String": "願速度最快的貓貓獲勝"
+    },
+    {
+      "Key": "STATION_003_ONELINER",
+      "String": "綻放你內心的明星光芒"
+    },
+    {
+      "Key": "STATION_004_ONELINER",
+      "String": "解放無限創意"
+    },
+    {
+      "Key": "STATION_005_ONELINER",
+      "String": "禪思喵想..."
+    },
+    {
+      "Key": "STATION_006_ONELINER",
+      "String": "凝望遠處思考喵生"
+    },
+    {
+      "Key": "STATION_001_DESCRIPTION",
+      "String": "設置於新興社區東方喵角的迷人美景中，「美食饗宴」結合了美味的肉凍和清新的飲用水，致力為貓貓美食家打造無可挑剔的用餐體驗。"
+    },
+    {
+      "Key": "STATION_002_DESCRIPTION",
+      "String": "「打鼠鼠」運用先進的鼠鼠模擬技術設計而成，要為你帶來前所未有的沉浸式遊戲體驗。只有最強的貓貓可以打爆這些鼠鼠。你有「喵」有本事挑戰呢？"
+    },
+    {
+      "Key": "STATION_003_DESCRIPTION",
+      "String": "用「小貓卡拉OK」大唱最愛的暢銷新曲和懷舊金曲，驚豔眾人吧！有閃光燈和漂亮古怪的伴唱帶影片相襯，是時候大開派對，盡情展現才華了！"
+    },
+    {
+      "Key": "STATION_004_DESCRIPTION",
+      "String": "無論是想把自己裹成木乃伊，或是邊玩線邊追自己尾巴，「毛線球籃」都是值得信賴的手工藝品選擇。玩法靈活多變，從小貓到手工藝愛好者，這堆優質毛線都能滿足需求，實現你被毛線淹沒的美好夢想。"
+    },
+    {
+      "Key": "STATION_005_DESCRIPTION",
+      "String": "貓咪的健康很重要。以樂活為目標的「瑜珈冥想台」邀請你一同放下繁忙生活，重新和身心靈產生連結。聚精會神冥想，在忙碌的貓咪九生中為自己留一點餘白。"
+    },
+    {
+      "Key": "STATION_006_DESCRIPTION",
+      "String": "這些年來，歷史悠久的「隱貓屋」留宿了世代以來最偉大的幾位貓咪思想家。無數的認真靈魂在此屋頂上眺望遠方，細細品著世間的一舉一動，並沉思喵生的奧祕。"
+    },
+    {
+      "Key": "QUEUE_SIZE",
+      "String": "佇列容量"
+    },
+    {
+      "Key": "QUEUE_TITLE",
+      "String": "佇列"
+    },
+    {
+      "Key": "FULL",
+      "String": "全滿"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_TITLE",
+      "String": "容貓數"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_DESCRIPTION",
+      "String": "此處顯示你能夠為<CAT_STATION>指派的貓咪數量。\\n\\n在第一隻貓指派後，其他貓咪將進入佇列，待前面的貓使用完<CAT_STATION>便會自動依序補上。"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_TITLE",
+      "String": "等級"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_DESCRIPTION",
+      "String": "這是跳台的等級。使用材料和<CATHEART_PLURAL>即可升級跳台。升級能夠增加容貓數，或是產出<BOOSTER_PLURAL>協助咖啡館的營運。"
+    },
+    {
+      "Key": "STATIONINFO_ITEM_TOOLTIP_DESCRIPTION",
+      "String": "使用後，可升級<CAT_STATION_PLURAL>並購買<BOOSTER_PLURAL>。只要於貓廳的「福貓」使用<CATHEART_PLURAL>即可獲取物品。"
+    },
+    {
+      "Key": "STATIONINFO_CATHEART_TOOLTIP_DESCRIPTION",
+      "String": "於貓廳的<CAT_STATION_PLURAL>指派貓咪，即可獲得貓愛心。"
+    },
+    {
+      "Key": "STATIONINFO_UPGRADE_DENIAL_PREV_STATIONS",
+      "String": "前一個<CAT_STATION>必須至少為等級2"
+    },
+    {
+      "Key": "BOOST_001_NAME",
+      "String": "額外愛心"
+    },
+    {
+      "Key": "BOOST_002_NAME",
+      "String": "額外物品"
+    },
+    {
+      "Key": "BOOST_003_NAME",
+      "String": "額外魚幣"
+    },
+    {
+      "Key": "BOOST_004_NAME",
+      "String": "籃子加速"
+    },
+    {
+      "Key": "BOOST_001_DESC",
+      "String": "顧客提供更多愛心"
+    },
+    {
+      "Key": "BOOST_002_DESC",
+      "String": "籃子提供獎勵物品"
+    },
+    {
+      "Key": "BOOST_003_DESC",
+      "String": "魚幣收入提升"
+    },
+    {
+      "Key": "BOOST_004_DESC",
+      "String": "籃子外送時間減少"
+    },
+    {
+      "Key": "BONUS_PERCENTAGE",
+      "String": "+{0}%加成"
+    },
+    {
+      "Key": "ACTIVE",
+      "String": "啟用"
+    },
+    {
+      "Key": "LUCKY_CAT_MENU_BUTTON_HINT",
+      "String": "按我肚肚"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_TITLE",
+      "String": "歡迎來到貓廳"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION1",
+      "String": "這裡是貓咪參加特別活動和放鬆玩耍的地方！"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION2",
+      "String": "隨著時間過去，你將解鎖更多活動、專屬家具，以及可協助咖啡館營運的加速道具。"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION3",
+      "String": "現在就依循畫面下方的指示來了解詳情吧。"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_TITLE",
+      "String": "總結"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC",
+      "String": "從活動中獲取<CATHEART_PLURAL>並用來向「福貓」換取材料，就能為貓廳和咖啡館添購好東西！"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC2",
+      "String": "以上就是把貓廳建造成繁榮貓王國的基本須知！"
+    },
+    {
+      "Key": "BOOST_INTRO_TITLE",
+      "String": "咖啡館加速道具已解鎖"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION1",
+      "String": "你也可以花費升級物品購買加速道具，供咖啡館用！"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION2",
+      "String": "加速道具可使進度加速，讓你獲取更多愛心、魚幣與物品。"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION3",
+      "String": "升級貓跳台，就能使這些加速道具變更強。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT1",
+      "String": "為<CAT_STATION_PLURAL>指派<CAT_PLURAL>即可獲得"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT2",
+      "String": "獲取<CATHEART_PLURAL>，並向「福貓」換取更多升級物品"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT3",
+      "String": "透過較高等級的貓獲取<CATHEART_PLURAL>"
+    },
+    {
+      "Key": "OFFERS",
+      "String": "好康"
+    },
+    {
+      "Key": "SURVEY_OFFER",
+      "String": "<HC>問卷調查"
+    },
+    {
+      "Key": "SURVEY_OFFER_DESCRIPTION",
+      "String": "參與外部研究組織的問卷調查，就能獲得小貓幣！"
+    },
+    {
+      "Key": "SEE_SURVEYS",
+      "String": "查看問卷調查"
+    },
+    {
+      "Key": "EARNED_CURRENCY_TITLE",
+      "String": "已收到<HC>"
+    },
+    {
+      "Key": "EARNED_CURRENCY_DESC",
+      "String": "你獲得了<HC>x{0}！"
+    },
+    {
+      "Key": "LOUNGE_REWARD_TITLE",
+      "String": "福貓加成！"
+    },
+    {
+      "Key": "NEW_GAME_OFFLINE_LABEL",
+      "String": "請連上網路以開始新遊戲"
+    },
+    {
+      "Key": "VIP_INVENTORY_MENU_TITLE",
+      "String": "VIP目錄"
+    },
+    {
+      "Key": "INTERSTITIAL_INTRO_DESC",
+      "String": "贊助商有話想說..."
+    },
+    {
+      "Key": "RETAILDEMO_INTRO",
+      "String": "此版本的《喵咪咖啡館》為示範用途"
+    },
+    {
+      "Key": "OFFERWALL",
+      "String": "<HC>優惠"
+    },
+    {
+      "Key": "OFFERWALL_DESCRIPTION",
+      "String": "購買優惠即可獲得小貓幣！"
+    },
+    {
+      "Key": "SEE_OFFERWALL",
+      "String": "查看優惠"
+    },
+    {
+      "Key": "PERSONALITY_TAG",
+      "String": "「{0}」吊牌"
+    },
+    {
+      "Key": "RARITY_GEM",
+      "String": "{0}寶石"
+    },
+    {
+      "Key": "PERSONALITY_ITEM_DESC",
+      "String": "個性物品，可用來升級貓咪"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_TITLE",
+      "String": "新物品"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_DESC",
+      "String": "《喵咪咖啡館》物品系統已升級，能更清楚查看培育貓咪所需的物品囉！\\n\\n你現有的物品也已轉移至新系統。\\n\\n感謝你的遊玩！"
+    },
+    {
+      "Key": "ALL_CATS_REENERGIZED",
+      "String": "下次成功配對時，所有貓咪重獲元氣，並獲得經驗值。"
+    },
+    {
+      "Key": "CAT_REENERGIZED",
+      "String": "貓咪重獲元氣了！"
+    },
+    {
+      "Key": "LOGIN_APPLE",
+      "String": "使用 Apple 登入"
+    },
+    {
+      "Key": "ACHIEVEMENTS",
+      "String": "成就"
+    },
+    {
+      "Key": "LEADERBOARDS",
+      "String": "排行榜"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_TITLE",
+      "String": "帳號已連結"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_DESC",
+      "String": "您的帳號已連結"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_TITLE",
+      "String": "帳號連結失敗"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_DESC",
+      "String": "發生錯誤，您的帳號尚未連結"
+    },
+    {
+      "Key": "MAIL_RECEIVED_TITLE",
+      "String": "有你的信唷！"
+    },
+    {
+      "Key": "MAIL_RECEIVED_DESC",
+      "String": "Runaway送了你一份禮物："
+    },
+    {
+      "Key": "LOGIN_BONUS_TITLE",
+      "String": "登入獎勵"
+    },
+    {
+      "Key": "LOGIN_BONUS_DESCRIPTION",
+      "String": "每天回來，取得新獎勵！"
+    },
+    {
+      "Key": "LOGIN_BONUS_COUNTDOWN",
+      "String": "下次領取獎勵：{0}"
+    },
+    {
+      "Key": "LOGIN_BONUS_COMPLETE",
+      "String": "已領取所有獎勵。"
+    },
+    {
+      "Key": "LOGIN_BONUS_DAY",
+      "String": "第{0}天"
+    },
+    {
+      "Key": "NOTIFICATION_LOGINBONUS",
+      "String": "歡迎來<FURISTAS_CAT_CAFE>，和新來的特別貓咪「<CAT_NAME_068>」見面！"
+    },
+    {
+      "Key": "REPORT_ERROR",
+      "String": "回報錯誤"
+    },
+    {
+      "Key": "CONTACT_SUPPORT",
+      "String": "聯絡客服支援"
+    },
+    {
+      "Key": "GET",
+      "String": "領取"
+    },
+    {
+      "Key": "CATEGORIES",
+      "String": "類型……"
+    },
+    {
+      "Key": "TAG_ALL",
+      "String": "全部"
+    },
+    {
+      "Key": "TAG_CUTE",
+      "String": "可愛"
+    },
+    {
+      "Key": "TAG_SWEET",
+      "String": "甜美"
+    },
+    {
+      "Key": "TAG_ZANY",
+      "String": "古怪"
+    },
+    {
+      "Key": "TAG_GOTHIC",
+      "String": "哥德風"
+    },
+    {
+      "Key": "TAG_ARTS_AND_CRAFTS",
+      "String": "手作"
+    },
+    {
+      "Key": "TAG_FANCY",
+      "String": "別緻"
+    },
+    {
+      "Key": "TAG_RUSTIC",
+      "String": "簡樸"
+    },
+    {
+      "Key": "TAG_HOMELY",
+      "String": "居家"
+    },
+    {
+      "Key": "TAG_NATURE",
+      "String": "大自然"
+    },
+    {
+      "Key": "TAG_PLANTS",
+      "String": "植物"
+    },
+    {
+      "Key": "TAG_ASIAN",
+      "String": "亞洲風"
+    },
+    {
+      "Key": "TAG_PURCHASES",
+      "String": "購買"
+    },
+    {
+      "Key": "TAG_FCM",
+      "String": "《喵咪咖啡館》俱樂部"
+    },
+    {
+      "Key": "TAG_HOLIDAY",
+      "String": "節日"
+    },
+    {
+      "Key": "TAG_BASIC",
+      "String": "基本"
+    },
+    {
+      "Key": "TAG_BONUS",
+      "String": "獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_TOKENS",
+      "String": "雙倍<TOKEN>獎勵！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_TOKENS",
+      "String": "代幣代幣一直下"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_TOKENS",
+      "String": "只要完成小遊戲、安撫您的貓咪和完成每日任務，就能獲取雙倍<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_FISH",
+      "String": "<FISH_PLURAL>加成！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_FISH",
+      "String": "雙倍魚幣慶祝活動"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_FISH",
+      "String": "活動期間，你可從籃子裡取得雙倍<FISH_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_CURRENCY",
+      "String": "雙倍獎勵活動！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_CURRENCY",
+      "String": "賺錢時機"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_CURRENCY",
+      "String": "活動期間，你可獲得雙倍<FISH_PLURAL>和<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_CATNIP",
+      "String": "貓薄荷之亂"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATNIP",
+      "String": "歡迎來到貓薄荷活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP",
+      "String": "貓薄荷"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP_PLURAL",
+      "String": "貓薄荷"
+    },
+    {
+      "Key": "EVENT_DESC_CATNIP",
+      "String": "透過外送籃子獲取貓薄荷來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_MATATABI",
+      "String": "木天蓼狂熱"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MATATABI",
+      "String": "歡迎來到木天蓼活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI",
+      "String": "木天蓼棒"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI_PLURAL",
+      "String": "木天蓼棒"
+    },
+    {
+      "Key": "EVENT_DESC_MATATABI",
+      "String": "透過外送籃子獲取木天蓼來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERBALL",
+      "String": "歡迎來到紙團活動！"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERBALL",
+      "String": "紙團突襲"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL_PLURAL",
+      "String": "紙團"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL",
+      "String": "紙團"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERBALL",
+      "String": "透過籃子獲取揉成一球的紙團，以交換更酷的獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_LEAF",
+      "String": "落葉之趣"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LEAF",
+      "String": "歡迎來到落葉活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF",
+      "String": "落葉"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF_PLURAL",
+      "String": "落葉"
+    },
+    {
+      "Key": "EVENT_DESC_LEAF",
+      "String": "收集落葉來獲得絕佳獎品？！當然好啊。透過外送籃子獲取落葉吧。"
+    },
+    {
+      "Key": "EVENT_NAME_MOUSECANDY",
+      "String": "恐怖甜點"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MOUSECANDY",
+      "String": "歡迎來到老鼠玉米糖活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY",
+      "String": "老鼠玉米糖"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY_PLURAL",
+      "String": "老鼠玉米糖"
+    },
+    {
+      "Key": "EVENT_DESC_MOUSECANDY",
+      "String": "透過外送籃子獲取老鼠玉米糖來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_CATORNAMENT",
+      "String": "節慶友誼"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATORNAMENT",
+      "String": "歡迎來到節慶友誼活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT",
+      "String": "貓裝飾品"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT_PLURAL",
+      "String": "貓裝飾品"
+    },
+    {
+      "Key": "EVENT_DESC_CATORNAMENT",
+      "String": "透過外送籃子獲取貓裝飾品來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_HEARTCATNIP",
+      "String": "貓咪情人節"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_HEARTCATNIP",
+      "String": "歡迎來到<EVENT_NAME_HEARTCATNIP>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP",
+      "String": "愛心貓薄荷"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP_PLURAL",
+      "String": "愛心貓薄荷"
+    },
+    {
+      "Key": "EVENT_DESC_HEARTCATNIP",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_HEARTCATNIP_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_SHAMROCK",
+      "String": "四葉草魅力"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_SHAMROCK",
+      "String": "歡迎來到<EVENT_NAME_SHAMROCK>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK",
+      "String": "片四葉草"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK_PLURAL",
+      "String": "片四葉草"
+    },
+    {
+      "Key": "EVENT_DESC_SHAMROCK",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_SHAMROCK_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_EGG",
+      "String": "獵蛋總動員"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_EGG",
+      "String": "歡迎來到<EVENT_NAME_EGG>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG",
+      "String": "顆蛋"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG_PLURAL",
+      "String": "顆蛋"
+    },
+    {
+      "Key": "EVENT_DESC_EGG",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_EGG_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_WORLDCATDAY",
+      "String": "世界貓咪日"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_WORLDCATDAY",
+      "String": "歡迎來到<EVENT_NAME_WORLDCATDAY>活動！"
+    },
+    {
+      "Key": "EVENT_DESC_WORLDCATDAY",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_HEARTCATNIP_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_MARACA",
+      "String": "拉丁手工藝"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARACA",
+      "String": "歡迎來到<EVENT_NAME_MARACA>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA",
+      "String": "沙鈴"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA_PLURAL",
+      "String": "沙鈴"
+    },
+    {
+      "Key": "EVENT_DESC_MARACA",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_MARACA_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_GALA",
+      "String": "別緻晚宴"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_GALA",
+      "String": "歡迎來到<EVENT_NAME_GALA>活動！"
+    },
+    {
+      "Key": "EVENT_NAME_THANKSGIVING",
+      "String": "感恩節"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_THANKSGIVING",
+      "String": "歡迎來到<EVENT_NAME_THANKSGIVING>活動！"
+    },
+    {
+      "Key": "EVENT_NAME_LUNARNEWYEAR",
+      "String": "農曆新年"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LUNARNEWYEAR",
+      "String": "歡迎來到<EVENT_NAME_LUNARNEWYEAR>活動！"
+    },
+    {
+      "Key": "EVENT_NAME_POTION",
+      "String": "古怪靈藥"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_POTION",
+      "String": "歡迎來到<EVENT_NAME_POTION>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION",
+      "String": "恐怖藥水"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION_PLURAL",
+      "String": "恐怖藥水"
+    },
+    {
+      "Key": "EVENT_DESC_POTION",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_POTION_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_COLORFULFEATHER",
+      "String": "森巴慶典"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_COLORFULFEATHER",
+      "String": "歡迎來到<EVENT_NAME_COLORFULFEATHER>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER",
+      "String": "彩色羽毛"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER_PLURAL",
+      "String": "彩色羽毛"
+    },
+    {
+      "Key": "EVENT_DESC_COLORFULFEATHER",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_COLORFULFEATHER_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_MARSHMALLOW",
+      "String": "敲可愛派對"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARSHMALLOW",
+      "String": "歡迎來到<EVENT_NAME_MARSHMALLOW>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW",
+      "String": "棉花糖"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW_PLURAL",
+      "String": "棉花糖"
+    },
+    {
+      "Key": "EVENT_DESC_MARSHMALLOW",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_MARSHMALLOW_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_CUPCAKE",
+      "String": "甜到蛀牙"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CUPCAKE",
+      "String": "歡迎來到<EVENT_NAME_CUPCAKE>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE",
+      "String": "杯子蛋糕"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE_PLURAL",
+      "String": "杯子蛋糕"
+    },
+    {
+      "Key": "EVENT_DESC_CUPCAKE",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_CUPCAKE_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_ZANYSPRING",
+      "String": "七彩彈彈樂"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_ZANYSPRING",
+      "String": "歡迎來到<EVENT_NAME_ZANYSPRING>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING",
+      "String": "七彩彈簧"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING_PLURAL",
+      "String": "七彩彈簧"
+    },
+    {
+      "Key": "EVENT_DESC_ZANYSPRING",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_ZANYSPRING_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_BLACKROSE",
+      "String": "歌德錦簇"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BLACKROSE",
+      "String": "歡迎來到<EVENT_NAME_BLACKROSE>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE",
+      "String": "水晶玫瑰"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE_PLURAL",
+      "String": "水晶玫瑰"
+    },
+    {
+      "Key": "EVENT_DESC_BLACKROSE",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_BLACKROSE_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_PAINTBRUSH",
+      "String": "美術收藏家"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAINTBRUSH",
+      "String": "歡迎來到<EVENT_NAME_PAINTBRUSH>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH",
+      "String": "畫筆"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH_PLURAL",
+      "String": "畫筆"
+    },
+    {
+      "Key": "EVENT_DESC_PAINTBRUSH",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_PAINTBRUSH_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_FANCYSPOON",
+      "String": "豪華享受"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_FANCYSPOON",
+      "String": "歡迎來到<EVENT_NAME_FANCYSPOON>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON",
+      "String": "別緻湯匙"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON_PLURAL",
+      "String": "別緻湯匙"
+    },
+    {
+      "Key": "EVENT_DESC_FANCYSPOON",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_FANCYSPOON_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_PORCELAINCAT",
+      "String": "俏皮古典"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PORCELAINCAT",
+      "String": "歡迎來到<EVENT_NAME_PORCELAINCAT>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT",
+      "String": "陶瓷貓"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT_PLURAL",
+      "String": "陶瓷貓"
+    },
+    {
+      "Key": "EVENT_DESC_PORCELAINCAT",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_PORCELAINCAT_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_RUSTICLURE",
+      "String": "質樸引誘"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_RUSTICLURE",
+      "String": "歡迎來到<EVENT_NAME_RUSTICLURE>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE",
+      "String": "魚餌"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE_PLURAL",
+      "String": "魚餌"
+    },
+    {
+      "Key": "EVENT_DESC_RUSTICLURE",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_RUSTICLURE_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_BRASSKEY",
+      "String": "金窩銀窩不如貓窩"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BRASSKEY",
+      "String": "歡迎來到<EVENT_NAME_BRASSKEY>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY",
+      "String": "黃銅鑰匙"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY_PLURAL",
+      "String": "黃銅鑰匙"
+    },
+    {
+      "Key": "EVENT_DESC_BRASSKEY",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_BRASSKEY_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE",
+      "String": "和風手藝"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_2",
+      "String": "和風手藝"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_3",
+      "String": "和風手藝"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERCRANE",
+      "String": "歡迎來到<EVENT_NAME_PAPERCRANE>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE",
+      "String": "紙鶴"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE_PLURAL",
+      "String": "紙鶴"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERCRANE",
+      "String": "透過外送籃子獲取<EVENT_CURRENCY_PAPERCRANE_PLURAL>來補充活動進度條，就能獲得超棒獎勵"
+    },
+    {
+      "Key": "EVENT_NAME_OLD_FRIENDS",
+      "String": "落葉之趣"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_OLD_FRIENDS",
+      "String": "歡迎來到<EVENT_NAME_OLD_FRIENDS>活動！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS",
+      "String": "落葉"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS_PLURAL",
+      "String": "落葉"
+    },
+    {
+      "Key": "EVENT_DESC_OLD_FRIENDS",
+      "String": "獲得<EVENT_CURRENCY_OLD_FRIENDS_PLURAL>，並加入Runway另一款遊戲的歡慶行列：<SHELF_OLDFRIENDS_TITLE>。"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_TITLE",
+      "String": "活動加速包"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_DESCRIPTION",
+      "String": "加快活動進度！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_DESCRIPTION",
+      "String": "有了此組合包，你就能在剩餘活動時間內獲得額外活動點數！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_TITLE",
+      "String": "活動完成包"
+    },
+    {
+      "Key": "LEVEL_NUM",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_HUMAN",
+      "String": "將<EVENT_ITEMS_TREAT_PLURAL>送給<CUSTOMER_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_HUMAN",
+      "String": "將<EVENT_ITEMS_PLANT_PLURAL>送給<CUSTOMER_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_HUMAN",
+      "String": "將<EVENT_ITEMS_TOY_PLURAL>送給<CUSTOMER_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_CAT",
+      "String": "將<EVENT_ITEMS_TREAT_PLURAL>送給<CAT_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_CAT",
+      "String": "將<EVENT_ITEMS_PLANT_PLURAL>送給<CAT_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_CAT",
+      "String": "將<EVENT_ITEMS_TOY_PLURAL>送給<CAT_PLURAL>，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_TITLE",
+      "String": "打發<CUSTOMER>？"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_DESC",
+      "String": "新的<CUSTOMER>需要2小時才會抵達。"
+    },
+    {
+      "Key": "DISMISS_CAT_TITLE",
+      "String": "打發<CAT>？"
+    },
+    {
+      "Key": "DISMISS_CAT_DESC",
+      "String": "新的<CAT>需要2小時才會抵達。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING",
+      "String": "新的<CUSTOMER>即將抵達"
+    },
+    {
+      "Key": "CAT_ARRIVING",
+      "String": "新的<CAT>即將抵達"
+    },
+    {
+      "Key": "DISMISS_GENERIC_TITLE",
+      "String": "打發{0}？"
+    },
+    {
+      "Key": "DISMISS_GENERIC_DESC",
+      "String": "新的{0}需要2小時才會抵達。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING_GENERIC",
+      "String": "新的{0}即將抵達"
+    },
+    {
+      "Key": "EVENT_HURRY",
+      "String": "加速器"
+    },
+    {
+      "Key": "EVENT_HURRY_PLURAL",
+      "String": "加速器"
+    },
+    {
+      "Key": "EVENT_HURRY_DESCRIPTION",
+      "String": "快速完成活動套組"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT1",
+      "String": "在活動期間使用可立即完成套組。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT2",
+      "String": "可於活動獎勵中或偶爾從神祕箱取得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT3",
+      "String": "你可在商店購買更多。"
+    },
+    {
+      "Key": "TIER_NUM",
+      "String": "等級{0}"
+    },
+    {
+      "Key": "BONUS_CHEST_TITLE",
+      "String": "鎖住了！"
+    },
+    {
+      "Key": "BONUS_CHEST_DESC",
+      "String": "開啟神祕箱？"
+    },
+    {
+      "Key": "BONUS_CHEST_DENY",
+      "String": "不用，謝謝"
+    },
+    {
+      "Key": "BONUS_CHEST_VIDEO",
+      "String": "觀看影片"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT",
+      "String": "零食"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT_PLURAL",
+      "String": "零食"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT_PLURAL",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY",
+      "String": "玩具"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY_PLURAL",
+      "String": "玩具"
+    },
+    {
+      "Key": "CARE_EVENT_NAME",
+      "String": "照護活動"
+    },
+    {
+      "Key": "CARE_EVENT_ITEM_GENERIC",
+      "String": "照護活動物品"
+    },
+    {
+      "Key": "CARE_EVENT_PACKAGE_GENERIC",
+      "String": "套組"
+    },
+    {
+      "Key": "CARE_EVENT_FULFILL_REQUEST",
+      "String": "完成請求"
+    },
+    {
+      "Key": "EVENT_DESC_GENERIC",
+      "String": "將{0}送給{1}，就能獲得超棒獎勵。"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT",
+      "String": "活動經驗值"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT_PLURAL",
+      "String": "活動經驗值"
+    },
+    {
+      "Key": "TAP_TO_CLAIM_REWARDS",
+      "String": "點擊此處領取獎勵！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_1",
+      "String": "點擊套組領取物品。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2",
+      "String": "將物品送給顧客。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2_CAT",
+      "String": "將物品送給貓咪。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_3",
+      "String": "開啟獎勵面板。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_4",
+      "String": "領取獎勵！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_5",
+      "String": "關閉獎勵面板。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_6",
+      "String": "使用<EVENT_HURRY>立即完成套組。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_7",
+      "String": "點擊套組再次領取物品。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8",
+      "String": "將物品送給新顧客。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8_CAT",
+      "String": "將物品送給新貓咪。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_9",
+      "String": "之後就交給你囉！"
+    },
+    {
+      "Key": "EVENT_BOOSTER_ACTIVE",
+      "String": "{0}倍加速已啟用"
+    },
+    {
+      "Key": "BUTTON_START_EVENT",
+      "String": "來看看吧！"
+    },
+    {
+      "Key": "NEW_EVENT_STARTING",
+      "String": "新的{0}活動即將開始"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_KITCHEN",
+      "String": "廚房"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_GREENHOUSE",
+      "String": "溫室"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_WORKSHOP",
+      "String": "工坊"
+    },
+    {
+      "Key": "AND_MORE",
+      "String": "還有更多！"
+    },
+    {
+      "Key": "EVENT_BOOST_ALTERNATE_DESCRIPTION",
+      "String": "在本活動中可獲得額外{0}%的經驗值"
+    },
+    {
+      "Key": "EXCLUSIVE_CUSTOMISATION",
+      "String": "特殊款<CUSTOMISATION>"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT",
+      "String": "特殊款<CAT>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_001",
+      "String": "你在活動中有可領取的物品！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_002",
+      "String": "活動套組正在等你來拿！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_003",
+      "String": "活動物品已可領取，你會獲得什麼呢？"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_004",
+      "String": "活動中有特別的東西在等你！快來看看吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_005",
+      "String": "你的活動物品準備好了！打開看看吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_006",
+      "String": "活動物品來囉！快來領取好東西吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_007",
+      "String": "活動套組在等你！快來領取吧！"
+    },
+    {
+      "Key": "CAN_CONTAIN",
+      "String": "可能包含："
+    },
+    {
+      "Key": "CHANCE_HURRY_ITEM",
+      "String": "{0}%機率：<EVENT_HURRY>。"
+    },
+    {
+      "Key": "CHANCE_ITEMS",
+      "String": "{0}%機率：{1}件物品。"
+    },
+    {
+      "Key": "FURNITURE_NAME_001",
+      "String": "坐墊箱子"
+    },
+    {
+      "Key": "FURNITURE_NAME_002",
+      "String": "貓咪吧台凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_003",
+      "String": "棕色豪華椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_004",
+      "String": "簡樸小圓凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_005",
+      "String": "木椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_006",
+      "String": "彩色踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_007",
+      "String": "彩色踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_008",
+      "String": "米色坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_009",
+      "String": "藍色坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_010",
+      "String": "金屬收納櫃"
+    },
+    {
+      "Key": "FURNITURE_NAME_011",
+      "String": "盆栽植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_012",
+      "String": "簡樸書架"
+    },
+    {
+      "Key": "FURNITURE_NAME_013",
+      "String": "條紋藍色坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_014",
+      "String": "條紋橘色坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_015",
+      "String": "木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_016",
+      "String": "藍色木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_017",
+      "String": "咖啡桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_018",
+      "String": "基本木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_019",
+      "String": "深色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_020",
+      "String": "白色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_021",
+      "String": "淺色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_022",
+      "String": "地毯地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_023",
+      "String": "簡樸磚牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_024",
+      "String": "水泥牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_025",
+      "String": "石牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_026",
+      "String": "可愛貓盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_027",
+      "String": "日式盆景樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_028",
+      "String": "小仙人掌"
+    },
+    {
+      "Key": "FURNITURE_NAME_029",
+      "String": "小貓咪藤蔓"
+    },
+    {
+      "Key": "FURNITURE_NAME_030",
+      "String": "白貓咪盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_031",
+      "String": "基本桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_032",
+      "String": "櫻桃壁紙"
+    },
+    {
+      "Key": "FURNITURE_NAME_033",
+      "String": "木板牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_034",
+      "String": "綠色木板牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_035",
+      "String": "藍白色踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_036",
+      "String": "藍白色踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_037",
+      "String": "羊毛小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_038",
+      "String": "羊毛小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_039",
+      "String": "貓臉小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_040",
+      "String": "菱形木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_041",
+      "String": "菱形木地板2號"
+    },
+    {
+      "Key": "FURNITURE_NAME_042",
+      "String": "不規則木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_043",
+      "String": "圓桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_044",
+      "String": "黃色椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_045",
+      "String": "白色踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_046",
+      "String": "黃色桌燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_047",
+      "String": "藍色抽屜"
+    },
+    {
+      "Key": "FURNITURE_NAME_048",
+      "String": "天鵝絨椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_049",
+      "String": "天鵝絨小方凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_050",
+      "String": "黃色貓臉凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_051",
+      "String": "黑色貓臉凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_052",
+      "String": "華麗椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_053",
+      "String": "貓咪懶骨頭"
+    },
+    {
+      "Key": "FURNITURE_NAME_054",
+      "String": "深色貓咪坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_055",
+      "String": "和室燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_056",
+      "String": "貓咪和室燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_057",
+      "String": "跪墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_058",
+      "String": "貓形坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_059",
+      "String": "哥德風牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_060",
+      "String": "深色寶箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_061",
+      "String": "喵喵和室桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_062",
+      "String": "華麗桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_063",
+      "String": "冬季貓臉小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_064",
+      "String": "和室椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_065",
+      "String": "哥德風花卉踏墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_066",
+      "String": "貓咪石雕"
+    },
+    {
+      "Key": "FURNITURE_NAME_067",
+      "String": "花仙子燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_068",
+      "String": "裝飾用展示架"
+    },
+    {
+      "Key": "FURNITURE_NAME_069",
+      "String": "日式暖桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_070",
+      "String": "花俏坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_071",
+      "String": "榻榻米地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_072",
+      "String": "綠色竹子牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_073",
+      "String": "黑板"
+    },
+    {
+      "Key": "FURNITURE_NAME_074",
+      "String": "簡樸窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_075",
+      "String": "大力士貓咪桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_076",
+      "String": "粉粉貓圖案牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_077",
+      "String": "粉色方格地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_078",
+      "String": "小貓咪櫥子"
+    },
+    {
+      "Key": "FURNITURE_NAME_079",
+      "String": "貓掌櫥子"
+    },
+    {
+      "Key": "FURNITURE_NAME_080",
+      "String": "貓貓錫盒堆"
+    },
+    {
+      "Key": "FURNITURE_NAME_081",
+      "String": "可愛貓地墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_082",
+      "String": "愛睏貓燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_083",
+      "String": "貓掌坐墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_084",
+      "String": "編織椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_085",
+      "String": "楓葉日式盆景"
+    },
+    {
+      "Key": "FURNITURE_NAME_086",
+      "String": "古董櫥子"
+    },
+    {
+      "Key": "FURNITURE_NAME_087",
+      "String": "日式點心桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_088",
+      "String": "壁貼菜單"
+    },
+    {
+      "Key": "FURNITURE_NAME_089",
+      "String": "櫻花畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_090",
+      "String": "哥德風櫥子"
+    },
+    {
+      "Key": "FURNITURE_NAME_091",
+      "String": "蠟燭燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_092",
+      "String": "吸血鬼貓畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_093",
+      "String": "黑貓畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_094",
+      "String": "神秘地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_095",
+      "String": "南瓜椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_096",
+      "String": "南瓜桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_097",
+      "String": "南瓜牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_098",
+      "String": "貓掌海報"
+    },
+    {
+      "Key": "FURNITURE_NAME_099",
+      "String": "魔法貓藝術品"
+    },
+    {
+      "Key": "FURNITURE_NAME_100",
+      "String": "淺色貓掌椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_101",
+      "String": "深色貓掌椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_102",
+      "String": "歌德貓畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_103",
+      "String": "浮世繪貓畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_104",
+      "String": "貓咪紙雕"
+    },
+    {
+      "Key": "FURNITURE_NAME_105",
+      "String": "貓咪油畫"
+    },
+    {
+      "Key": "FURNITURE_NAME_106",
+      "String": "漁人書架"
+    },
+    {
+      "Key": "FURNITURE_NAME_107",
+      "String": "勵志海報"
+    },
+    {
+      "Key": "FURNITURE_NAME_108",
+      "String": "掛式盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_109",
+      "String": "壁燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_110",
+      "String": "格紋椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_111",
+      "String": "冬季貓椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_112",
+      "String": "蘑菇椅凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_113",
+      "String": "雪花椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_114",
+      "String": "格紋桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_115",
+      "String": "春季牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_116",
+      "String": "可愛天鵝絨沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_117",
+      "String": "絨絨毛巾"
+    },
+    {
+      "Key": "FURNITURE_NAME_118",
+      "String": "貓咪玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_119",
+      "String": "花卉燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_120",
+      "String": "彩色多肉植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_121",
+      "String": "秋季畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_122",
+      "String": "喵電視"
+    },
+    {
+      "Key": "FURNITURE_NAME_123",
+      "String": "木製玩樂箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_124",
+      "String": "哥德風蝴蝶玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_125",
+      "String": "貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_126",
+      "String": "貓掌貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_127",
+      "String": "草地椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_128",
+      "String": "喵咪咖啡館會員證書"
+    },
+    {
+      "Key": "FURNITURE_NAME_129",
+      "String": "雪花牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_130",
+      "String": "衝浪貓"
+    },
+    {
+      "Key": "FURNITURE_NAME_131",
+      "String": "立式水晶燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_132",
+      "String": "閃耀宴會桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_133",
+      "String": "紅毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_134",
+      "String": "宴會牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_135",
+      "String": "節慶壁爐"
+    },
+    {
+      "Key": "FURNITURE_NAME_136",
+      "String": "節慶貓塔"
+    },
+    {
+      "Key": "FURNITURE_NAME_137",
+      "String": "紅色棋盤格地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_138",
+      "String": "聖誕燈牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_139",
+      "String": "愛心霓虹燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_140",
+      "String": "粉紅木牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_141",
+      "String": "玫粉菱格地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_142",
+      "String": "新年祥龍"
+    },
+    {
+      "Key": "FURNITURE_NAME_143",
+      "String": "新年金豬牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_144",
+      "String": "四葉草椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_145",
+      "String": "愛爾蘭虎斑貓雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_146",
+      "String": "樹藝喵咪"
+    },
+    {
+      "Key": "FURNITURE_NAME_147",
+      "String": "蛋形桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_148",
+      "String": "華麗櫥櫃"
+    },
+    {
+      "Key": "FURNITURE_NAME_149",
+      "String": "別緻椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_150",
+      "String": "發財樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_151",
+      "String": "貓咪盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_152",
+      "String": "蛋形貓地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_153",
+      "String": "拉丁手工椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_154",
+      "String": "編織喵喵仙人掌"
+    },
+    {
+      "Key": "FURNITURE_NAME_155",
+      "String": "守護獅雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_156",
+      "String": "芭絲特雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_157",
+      "String": "魚尾獅雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_158",
+      "String": "煙火霓虹燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_159",
+      "String": "喵娜麗莎"
+    },
+    {
+      "Key": "FURNITURE_NAME_160",
+      "String": "鬆餅椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_161",
+      "String": "嗡嗡蜜蜂玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_162",
+      "String": "貓達摩"
+    },
+    {
+      "Key": "FURNITURE_NAME_163",
+      "String": "吊掛多肉植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_164",
+      "String": "高山咖啡桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_165",
+      "String": "馬克杯掛架"
+    },
+    {
+      "Key": "FURNITURE_NAME_167",
+      "String": "貓廳牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_171",
+      "String": "萌蛛椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_172",
+      "String": "貓薄荷大釜"
+    },
+    {
+      "Key": "FURNITURE_NAME_173",
+      "String": "舒適壁爐"
+    },
+    {
+      "Key": "FURNITURE_NAME_174",
+      "String": "芥末黃沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_175",
+      "String": "鳥窩時鐘"
+    },
+    {
+      "Key": "FURNITURE_NAME_176",
+      "String": "新藝術派桌燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_177",
+      "String": "貓廳地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_178",
+      "String": "貓吊床"
+    },
+    {
+      "Key": "FURNITURE_NAME_179",
+      "String": "貓橋"
+    },
+    {
+      "Key": "FURNITURE_NAME_180",
+      "String": "豪華椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_181",
+      "String": "別緻壁燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_182",
+      "String": "鼠燈籠"
+    },
+    {
+      "Key": "FURNITURE_NAME_183",
+      "String": "農曆新年牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_184",
+      "String": "圓窗"
+    },
+    {
+      "Key": "FURNITURE_NAME_185",
+      "String": "魚缸"
+    },
+    {
+      "Key": "FURNITURE_NAME_186",
+      "String": "舒適電暖器"
+    },
+    {
+      "Key": "FURNITURE_NAME_187",
+      "String": "酷貓裱框海報"
+    },
+    {
+      "Key": "FURNITURE_NAME_188",
+      "String": "流蘇懶骨頭"
+    },
+    {
+      "Key": "FURNITURE_NAME_189",
+      "String": "蘑菇桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_190",
+      "String": "繽紛面具"
+    },
+    {
+      "Key": "FURNITURE_NAME_191",
+      "String": "花枝椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_192",
+      "String": "《Flutter》椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_193",
+      "String": "《Starlight》椅凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_194",
+      "String": "馬卡龍椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_195",
+      "String": "大嘴鳥雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_196",
+      "String": "甲蟲圖例"
+    },
+    {
+      "Key": "FURNITURE_NAME_197",
+      "String": "焦糖布丁桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_198",
+      "String": "玩具箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_199",
+      "String": "櫻桃派椅凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_200",
+      "String": "祭祖神桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_201",
+      "String": "催眠地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_202",
+      "String": "氣球束"
+    },
+    {
+      "Key": "FURNITURE_NAME_203",
+      "String": "屏風：正面"
+    },
+    {
+      "Key": "FURNITURE_NAME_204",
+      "String": "紅色窗簾"
+    },
+    {
+      "Key": "FURNITURE_NAME_205",
+      "String": "屏風：側面"
+    },
+    {
+      "Key": "FURNITURE_NAME_206",
+      "String": "綿羊椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_207",
+      "String": "衣帽架"
+    },
+    {
+      "Key": "FURNITURE_NAME_208",
+      "String": "自助櫃台"
+    },
+    {
+      "Key": "FURNITURE_NAME_209",
+      "String": "品茶手推車"
+    },
+    {
+      "Key": "FURNITURE_NAME_210",
+      "String": "禮物堆"
+    },
+    {
+      "Key": "FURNITURE_NAME_211",
+      "String": "玫瑰枕頭"
+    },
+    {
+      "Key": "FURNITURE_NAME_212",
+      "String": "騎士展示架"
+    },
+    {
+      "Key": "FURNITURE_NAME_213",
+      "String": "切斯特長沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_214",
+      "String": "龍蛋"
+    },
+    {
+      "Key": "FURNITURE_NAME_215",
+      "String": "哥德風書架"
+    },
+    {
+      "Key": "FURNITURE_NAME_216",
+      "String": "母雞雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_217",
+      "String": "哥德風窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_218",
+      "String": "龍雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_219",
+      "String": "黑膠唱片播放機"
+    },
+    {
+      "Key": "FURNITURE_NAME_220",
+      "String": "青娃噴泉"
+    },
+    {
+      "Key": "FURNITURE_NAME_221",
+      "String": "海獅椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_222",
+      "String": "草莓地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_223",
+      "String": "舒適籃子"
+    },
+    {
+      "Key": "FURNITURE_NAME_224",
+      "String": "木製書架"
+    },
+    {
+      "Key": "FURNITURE_NAME_225",
+      "String": "西洋棋桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_226",
+      "String": "地球儀"
+    },
+    {
+      "Key": "FURNITURE_NAME_228",
+      "String": "漂流木桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_229",
+      "String": "木製鹿角"
+    },
+    {
+      "Key": "FURNITURE_NAME_230",
+      "String": "圓凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_231",
+      "String": "格紋椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_232",
+      "String": "冰淇淋燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_233",
+      "String": "糖果霓虹燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_234",
+      "String": "波斯地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_235",
+      "String": "拖鞋櫃"
+    },
+    {
+      "Key": "FURNITURE_NAME_236",
+      "String": "巧克力沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_237",
+      "String": "荷包蛋地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_238",
+      "String": "珍珠貝桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_239",
+      "String": "玻璃盆景"
+    },
+    {
+      "Key": "FURNITURE_NAME_240",
+      "String": "編織椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_241",
+      "String": "工具籃"
+    },
+    {
+      "Key": "FURNITURE_NAME_242",
+      "String": "紙鶴"
+    },
+    {
+      "Key": "FURNITURE_NAME_243",
+      "String": "摺紙桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_244",
+      "String": "摺紙椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_245",
+      "String": "薰衣草盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_246",
+      "String": "檸檬樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_247",
+      "String": "虎尾蘭"
+    },
+    {
+      "Key": "FURNITURE_NAME_248",
+      "String": "王位椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_249",
+      "String": "華麗蛋"
+    },
+    {
+      "Key": "FURNITURE_NAME_250",
+      "String": "皇家貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_251",
+      "String": "剪貼簿"
+    },
+    {
+      "Key": "FURNITURE_NAME_252",
+      "String": "漂流木貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_253",
+      "String": "紙漿熱氣球"
+    },
+    {
+      "Key": "FURNITURE_NAME_254",
+      "String": "壽司椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_255",
+      "String": "橡膠樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_256",
+      "String": "樹盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_257",
+      "String": "棕櫚樹盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_258",
+      "String": "派對掛飾"
+    },
+    {
+      "Key": "FURNITURE_NAME_259",
+      "String": "派對桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_260",
+      "String": "壽司椅凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_261",
+      "String": "禪花園"
+    },
+    {
+      "Key": "FURNITURE_NAME_262",
+      "String": "藥草花架"
+    },
+    {
+      "Key": "FURNITURE_NAME_263",
+      "String": "立體主義畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_264",
+      "String": "貓的吶喊"
+    },
+    {
+      "Key": "FURNITURE_NAME_265",
+      "String": "茶具櫥櫃"
+    },
+    {
+      "Key": "FURNITURE_NAME_266",
+      "String": "抽象雕塑"
+    },
+    {
+      "Key": "FURNITURE_NAME_267",
+      "String": "樹墩桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_268",
+      "String": "蘑菇燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_269",
+      "String": "古典花瓶"
+    },
+    {
+      "Key": "FURNITURE_NAME_270",
+      "String": "森林椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_271",
+      "String": "翠綠雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_272",
+      "String": "青苔小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_273",
+      "String": "幾何貓鋼雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_274",
+      "String": "貓咪沉思者"
+    },
+    {
+      "Key": "FURNITURE_NAME_275",
+      "String": "楓葉小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_276",
+      "String": "熱帶風情床"
+    },
+    {
+      "Key": "FURNITURE_NAME_277",
+      "String": "野餐毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_278",
+      "String": "野餐籃"
+    },
+    {
+      "Key": "FURNITURE_NAME_279",
+      "String": "野餐麵包砧板"
+    },
+    {
+      "Key": "FURNITURE_NAME_280",
+      "String": "大自然桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_281",
+      "String": "哥德風火爐"
+    },
+    {
+      "Key": "FURNITURE_NAME_282",
+      "String": "哥德風椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_283",
+      "String": "豪華椅墊"
+    },
+    {
+      "Key": "FURNITURE_NAME_284",
+      "String": "袖珍椰子"
+    },
+    {
+      "Key": "FURNITURE_NAME_285",
+      "String": "薄荷花瓣桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_286",
+      "String": "薄荷花瓣小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_287",
+      "String": "薄荷花瓣椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_291",
+      "String": "森林牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_292",
+      "String": "森林地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_293",
+      "String": "室內樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_294",
+      "String": "岩石流水造景"
+    },
+    {
+      "Key": "FURNITURE_NAME_295",
+      "String": "原木桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_296",
+      "String": "樹墩椅凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_297",
+      "String": "鳥屋"
+    },
+    {
+      "Key": "FURNITURE_NAME_298",
+      "String": "帳篷"
+    },
+    {
+      "Key": "FURNITURE_NAME_299",
+      "String": "毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_300",
+      "String": "蘑菇燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_301",
+      "String": "曼菲斯櫥子"
+    },
+    {
+      "Key": "FURNITURE_NAME_302",
+      "String": "曼菲斯燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_303",
+      "String": "曼菲斯長沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_304",
+      "String": "曼菲斯桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_305",
+      "String": "曼菲斯窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_306",
+      "String": "曼菲斯牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_307",
+      "String": "曼菲斯貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_308",
+      "String": "曼菲斯畫作"
+    },
+    {
+      "Key": "FURNITURE_NAME_309",
+      "String": "曼菲斯地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_310",
+      "String": "曼菲斯地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_311",
+      "String": "田園風火爐"
+    },
+    {
+      "Key": "FURNITURE_NAME_312",
+      "String": "田園風窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_313",
+      "String": "田園風地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_314",
+      "String": "田園風牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_315",
+      "String": "縫紉機"
+    },
+    {
+      "Key": "FURNITURE_NAME_316",
+      "String": "蝴蝶海報"
+    },
+    {
+      "Key": "FURNITURE_NAME_317",
+      "String": "田園風椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_318",
+      "String": "格紋毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_319",
+      "String": "乾燥香草"
+    },
+    {
+      "Key": "FURNITURE_NAME_320",
+      "String": "田園風貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_321",
+      "String": "小餐館地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_322",
+      "String": "小餐館牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_323",
+      "String": "小餐館椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_324",
+      "String": "小餐館桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_325",
+      "String": "小餐館長沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_326",
+      "String": "吧檯桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_327",
+      "String": "點歌機"
+    },
+    {
+      "Key": "FURNITURE_NAME_328",
+      "String": "路標"
+    },
+    {
+      "Key": "FURNITURE_NAME_329",
+      "String": "小餐館時鐘"
+    },
+    {
+      "Key": "FURNITURE_NAME_330",
+      "String": "泡泡糖販賣機"
+    },
+    {
+      "Key": "FURNITURE_NAME_331",
+      "String": "普普風椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_332",
+      "String": "普普風牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_333",
+      "String": "普普風地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_334",
+      "String": "普普風桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_335",
+      "String": "普普風汽車"
+    },
+    {
+      "Key": "FURNITURE_NAME_336",
+      "String": "普普風地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_337",
+      "String": "普普風貓咪玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_338",
+      "String": "普普風燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_339",
+      "String": "普普風鏡子"
+    },
+    {
+      "Key": "FURNITURE_NAME_340",
+      "String": "普普風窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_341",
+      "String": "青苔牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_342",
+      "String": "玻璃盆景"
+    },
+    {
+      "Key": "FURNITURE_NAME_343",
+      "String": "龜背芋"
+    },
+    {
+      "Key": "FURNITURE_NAME_344",
+      "String": "遊樂場櫥櫃"
+    },
+    {
+      "Key": "FURNITURE_NAME_345",
+      "String": "遊樂場桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_346",
+      "String": "遊樂場椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_347",
+      "String": "書籍壁紙"
+    },
+    {
+      "Key": "FURNITURE_NAME_349",
+      "String": "休閒椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_350",
+      "String": "閱讀桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_351",
+      "String": "吊床"
+    },
+    {
+      "Key": "FURNITURE_NAME_352",
+      "String": "串珠簾窗戶"
+    },
+    {
+      "Key": "FURNITURE_NAME_353",
+      "String": "波西米亞小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_354",
+      "String": "波西米亞沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_355",
+      "String": "下午茶桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_356",
+      "String": "下午茶椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_357",
+      "String": "立式花瓶"
+    },
+    {
+      "Key": "FURNITURE_NAME_358",
+      "String": "花卉牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_359",
+      "String": "地圖"
+    },
+    {
+      "Key": "FURNITURE_NAME_360",
+      "String": "寫作桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_361",
+      "String": "留聲機"
+    },
+    {
+      "Key": "FURNITURE_NAME_362",
+      "String": "古董書架"
+    },
+    {
+      "Key": "FURNITURE_NAME_363",
+      "String": "電子琴"
+    },
+    {
+      "Key": "FURNITURE_NAME_364",
+      "String": "爵士鼓"
+    },
+    {
+      "Key": "FURNITURE_NAME_365",
+      "String": "貝斯"
+    },
+    {
+      "Key": "FURNITURE_NAME_366",
+      "String": "麥克風"
+    },
+    {
+      "Key": "FURNITURE_NAME_367",
+      "String": "衝浪板"
+    },
+    {
+      "Key": "FURNITURE_NAME_368",
+      "String": "救生圈"
+    },
+    {
+      "Key": "FURNITURE_NAME_369",
+      "String": "海色牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_370",
+      "String": "沙灘地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_371",
+      "String": "船錨貓抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_372",
+      "String": "海灘浴巾"
+    },
+    {
+      "Key": "FURNITURE_NAME_373",
+      "String": "海灘椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_374",
+      "String": "海灘桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_375",
+      "String": "船艇"
+    },
+    {
+      "Key": "FURNITURE_NAME_377",
+      "String": "舷窗"
+    },
+    {
+      "Key": "FURNITURE_NAME_378",
+      "String": "極簡樹"
+    },
+    {
+      "Key": "FURNITURE_NAME_379",
+      "String": "極簡桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_380",
+      "String": "極簡椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_381",
+      "String": "極簡貓窩"
+    },
+    {
+      "Key": "FURNITURE_NAME_382",
+      "String": "禪風屏風"
+    },
+    {
+      "Key": "FURNITURE_NAME_383",
+      "String": "禪風植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_384",
+      "String": "禪風沙發"
+    },
+    {
+      "Key": "FURNITURE_NAME_385",
+      "String": "禪風座椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_386",
+      "String": "白色牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_387",
+      "String": "磚砌火爐"
+    },
+    {
+      "Key": "FURNITURE_NAME_388",
+      "String": "和紙燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_389",
+      "String": "北歐風椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_390",
+      "String": "簡樸牆"
+    },
+    {
+      "Key": "FURNITURE_NAME_391",
+      "String": "燈串"
+    },
+    {
+      "Key": "FURNITURE_NAME_392",
+      "String": "木桶桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_393",
+      "String": "假牛皮小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_394",
+      "String": "貓跳台"
+    },
+    {
+      "Key": "FURNITURE_NAME_395",
+      "String": "貓屋"
+    },
+    {
+      "Key": "FURNITURE_NAME_396",
+      "String": "貓窩"
+    },
+    {
+      "Key": "FURNITURE_NAME_397",
+      "String": "貓咪玩具"
+    },
+    {
+      "Key": "CAT_NAME_001",
+      "String": "瑪芬"
+    },
+    {
+      "Key": "CAT_NAME_002",
+      "String": "淘氣鬼"
+    },
+    {
+      "Key": "CAT_NAME_003",
+      "String": "小波"
+    },
+    {
+      "Key": "CAT_NAME_004",
+      "String": "小剛"
+    },
+    {
+      "Key": "CAT_NAME_005",
+      "String": "賽勒姆"
+    },
+    {
+      "Key": "CAT_NAME_006",
+      "String": "小羊毛"
+    },
+    {
+      "Key": "CAT_NAME_007",
+      "String": "荷莉"
+    },
+    {
+      "Key": "CAT_NAME_008",
+      "String": "雷德"
+    },
+    {
+      "Key": "CAT_NAME_009",
+      "String": "芭絲"
+    },
+    {
+      "Key": "CAT_NAME_010",
+      "String": "小影"
+    },
+    {
+      "Key": "CAT_NAME_011",
+      "String": "小鬍鬚"
+    },
+    {
+      "Key": "CAT_NAME_012",
+      "String": "麵條"
+    },
+    {
+      "Key": "CAT_NAME_013",
+      "String": "麻糬"
+    },
+    {
+      "Key": "CAT_NAME_014",
+      "String": "恰恰"
+    },
+    {
+      "Key": "CAT_NAME_015",
+      "String": "忍者"
+    },
+    {
+      "Key": "CAT_NAME_016",
+      "String": "莎夏"
+    },
+    {
+      "Key": "CAT_NAME_017",
+      "String": "米羅"
+    },
+    {
+      "Key": "CAT_NAME_018",
+      "String": "小月亮"
+    },
+    {
+      "Key": "CAT_NAME_019",
+      "String": "歐瑞歐"
+    },
+    {
+      "Key": "CAT_NAME_020",
+      "String": "布蘭妮"
+    },
+    {
+      "Key": "CAT_NAME_021",
+      "String": "齊格"
+    },
+    {
+      "Key": "CAT_NAME_022",
+      "String": "奶寶"
+    },
+    {
+      "Key": "CAT_NAME_023",
+      "String": "小手套"
+    },
+    {
+      "Key": "CAT_NAME_024",
+      "String": "小肉桂"
+    },
+    {
+      "Key": "CAT_NAME_025",
+      "String": "厄莉絲"
+    },
+    {
+      "Key": "CAT_NAME_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_NAME_027",
+      "String": "波尼"
+    },
+    {
+      "Key": "CAT_NAME_028",
+      "String": "拉美西斯"
+    },
+    {
+      "Key": "CAT_NAME_029",
+      "String": "可可"
+    },
+    {
+      "Key": "CAT_NAME_030",
+      "String": "泡芙"
+    },
+    {
+      "Key": "CAT_NAME_031",
+      "String": "果凍糖"
+    },
+    {
+      "Key": "CAT_NAME_032",
+      "String": "歐里"
+    },
+    {
+      "Key": "CAT_NAME_033",
+      "String": "潔西"
+    },
+    {
+      "Key": "CAT_NAME_034",
+      "String": "珊卓拉"
+    },
+    {
+      "Key": "CAT_NAME_035",
+      "String": "毛毛"
+    },
+    {
+      "Key": "CAT_NAME_036",
+      "String": "無尾熊"
+    },
+    {
+      "Key": "CAT_NAME_037",
+      "String": "威爾福德"
+    },
+    {
+      "Key": "CAT_NAME_038",
+      "String": "克雷登斯"
+    },
+    {
+      "Key": "CAT_NAME_039",
+      "String": "小餅乾"
+    },
+    {
+      "Key": "CAT_NAME_040",
+      "String": "胡椒"
+    },
+    {
+      "Key": "CAT_NAME_041",
+      "String": "拍拍"
+    },
+    {
+      "Key": "CAT_NAME_050",
+      "String": "奶油"
+    },
+    {
+      "Key": "CAT_NAME_051",
+      "String": "露娜"
+    },
+    {
+      "Key": "CAT_NAME_052",
+      "String": "襪襪"
+    },
+    {
+      "Key": "CAT_NAME_053",
+      "String": "小貂"
+    },
+    {
+      "Key": "CAT_NAME_054",
+      "String": "歐迪"
+    },
+    {
+      "Key": "CAT_NAME_055",
+      "String": "克莉絲塔"
+    },
+    {
+      "Key": "CAT_NAME_056",
+      "String": "星爵"
+    },
+    {
+      "Key": "CAT_NAME_057",
+      "String": "Zoe"
+    },
+    {
+      "Key": "CAT_NAME_058",
+      "String": "達卡女公爵"
+    },
+    {
+      "Key": "CAT_NAME_059",
+      "String": "阿波羅"
+    },
+    {
+      "Key": "CAT_NAME_060",
+      "String": "薇薇安"
+    },
+    {
+      "Key": "CAT_NAME_061",
+      "String": "派咪"
+    },
+    {
+      "Key": "CAT_NAME_062",
+      "String": "曲奇"
+    },
+    {
+      "Key": "CAT_NAME_063",
+      "String": "沐許"
+    },
+    {
+      "Key": "CAT_NAME_064",
+      "String": "胖比"
+    },
+    {
+      "Key": "CAT_NAME_065",
+      "String": "多比"
+    },
+    {
+      "Key": "CAT_NAME_066",
+      "String": "米諾斯"
+    },
+    {
+      "Key": "CAT_NAME_067",
+      "String": "沃夫岡"
+    },
+    {
+      "Key": "CAT_NAME_068",
+      "String": "洛基"
+    },
+    {
+      "Key": "CAT_NAME_JUHANOTUSED",
+      "String": "尤哈"
+    },
+    {
+      "Key": "CAT_NAME_SIMBANOTUSED",
+      "String": "辛巴"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_001",
+      "String": "瑪芬是隻黏人的小貓咪，喜歡被人不斷輕撫！若你不摸她，她會用腳掌溫柔地提醒你繼續輕撫她。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_002",
+      "String": "雖然淘氣鬼的個性親和不暴力，卻曾與一隻流浪公貓打過一架，被對方打到下巴脫臼！他喜歡抱抱，且在心情愉悅時流很多口水並發出巨大的貓呼嚕聲，臉上還會露出迷人的詭笑。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_003",
+      "String": "小波是隻身材短小、自信滿滿的小貓咪。自從被領養後，她就深深愛上監督喜歡的人以及一起打盹。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_004",
+      "String": "小剛是個很好抱的可愛大毛球，體型是他同胎姊妹小波的兩倍。相當愛吃的他甚至經常被人發現在其他貓咪的食物碗裡偷吃東西。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_005",
+      "String": "泰然自若的賽勒姆經常散發出一股無所忌憚的態度。她對「遵守規矩」非常感冒，而且經常會對怒氣沖沖的人感到困惑。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_006",
+      "String": "小羊毛在新顧客面前很怕生，只有經過多次輕撫才能獲取他的信任。極度黏人且健談的他會用輕聲喵叫進行交談。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_007",
+      "String": "具備後空翻、微微吐舌和超會流口水的能力，荷莉·雅妮絲·布萊琪是隻愛現的貓咪。她非常親人，但是無條件討厭狗狗。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_008",
+      "String": "雷德是個忠心耿耿且彬彬有禮的紳士，他總會在門前等待顧客光臨。雖然突如其來的動作可能會嚇到他，但他喜歡光顧咖啡廳的每個人輕撫他！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_009",
+      "String": "芭絲的特別之處在於她輕微的鬥雞眼，這使她變得格外可愛！她喜歡在陰暗的角落蜷縮成一團，夢見鮪魚、鮭魚和溫牛奶組成的豐盛大餐。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_010",
+      "String": "害羞的小影面對陌生人非常慢熱。跟他變熟之後，他就會展現出愛玩和溫馴的個性。時常能發現他躲在顧客的購物袋裡。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_011",
+      "String": "小鬍鬚是這群小壞蛋裡最笨的一個。她喜歡逗弄貓咪朋友。她經常玩弄別隻貓的尾巴，並在牠們睡覺時撲到牠們身上。小鬍鬚徹底體現了班上頑皮小丑的稱號。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_012",
+      "String": "麵條一直認為自己是「一名人類」，經常有人看到她發現只用後腿走路。她會在就坐的顧客身旁坐著，並好奇地在濃縮咖啡機附近閒晃，玩著掉落的咖啡豆。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_013",
+      "String": "麻糬相當講究整潔。她每天早上的第一件事就是把自己從頭到尾舔乾淨。她也喜歡梳理自己的毛，但不太願意被別人抱起來。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_014",
+      "String": "當咖啡廳的音樂響起，恰恰就搖身一變成為舞者，在追逐著他最愛的玩具時，他會熱情滿滿地隨著節奏搖屁股。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_015",
+      "String": "忍者喜歡和好朋友用餐，且會不辭辛勞尋找值得信任的夥伴。當對的人出現時，他會喵喵叫來表示已經選好與他共享晚宴的特別嘉賓。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_016",
+      "String": "可愛、聰明且才華橫溢的莎夏可能上輩子是受萬「貓」敬仰的女神。在被領養前，她曾是「選美小貓」，而她現在的日子不太一樣了。她會把她最愛的玩具梳理到滿是口水為止。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_017",
+      "String": "被米羅抱抱的感覺就像蓋了一件茸茸的愛心毛毯。他貌似能用第六感來感知人們心情沮喪的時候，並喜歡通過玩樂和深情的貓呼嚕聲來安慰他們。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_018",
+      "String": "小月亮是個內心柔軟的孤傲戰士。他懂得以耐心來和其他小貓對打，並冷不防地使出旋風後腿。從擂台退休後，經常有人看到他獨自梳理自己並追憶四處征戰的日子。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_019",
+      "String": "歐瑞歐並不如她的名字那般甜...她喜歡被輕撫的感覺，但會攻擊任何碰到她毛茸茸肚腩的人。可愛又可怕的歐瑞歐，凡是她想要的都逃不出她的手掌心。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_020",
+      "String": "布蘭妮因為和小貓一樣好奇心過盛，導致有一邊耳朵聾了。當她出外進行最喜歡的探險娛樂：啃食美味草皮，她迷人的綠眼睛總是保持警覺。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_021",
+      "String": "齊格對睡覺的位置有超強的地域性，她最喜歡的打盹地點之一就是馬桶水箱上面！雖然會一直被趕出浴室，她總是有辦法進去。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_022",
+      "String": "奶寶喜歡整天在她最喜歡的毯子上踏踏，而這融化了所有人的心。她沒有踏毯子的時候，就在踏顧客的大腿和枕頭。有時如果她鼓起勇氣，也會去在咖啡廳其他貓咪身上踏踏。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_023",
+      "String": "小手套被人找到時，是隻體型弱小、渾身跳蚤的貓咪，存活下來的她是個真正的鬥士！努力不懈的毅力，可從她追自己尾巴的固執中窺知一二。總有一天會追到的，她這樣告訴自己。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_024",
+      "String": "小肉桂每天的食物都很豐盛，但她依然非常貪心，會竭盡所能偷走顧客盤子裡的餅乾。常被人發現在咖啡師工作台上舔水。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_025",
+      "String": "厄莉絲與希臘紛爭女神同名，是傲慢的麻煩製造者。她喜愛用瘋狂亂抓掀起混亂，逼迫大家把椅子讓給她。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_027",
+      "String": "波尼是蘇格蘭摺耳貓，所以長了一對非常可愛的耳朵。別被她放空的眼神和摺起的耳朵給騙了，她能什，麼，都，聽，得，到。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_028",
+      "String": "拉美西斯是隻不尋常的小貓，喜歡每週泡一次澡，渴望受到他人的關注，且可以和幾乎任何人打交道。也許拉美西斯的內心住著一隻善良的狗！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_029",
+      "String": "可可是隻聲音柔軟而且喵叫聲像唱歌一般的可愛貓咪。她喜歡待在寧靜的地方，遠離日常生活的煩惱喧囂。帶她去安靜地梳毛，她會愛你一輩子。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_030",
+      "String": "泡芙喜歡慵懶地棲息在高處，看著行人經過咖啡廳，並對每個離開的客人無聲地喵喵叫。這也代表他總是樂於接受他人的輕拍。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_031",
+      "String": "你通常能在大老遠就聽到果凍糖走動的聲音。無論是在追玩具老鼠或真的老鼠，她總是竭盡全力奔跑，發出以貓來說大得驚人的腳步聲。搞神秘實在不是她的強項。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_032",
+      "String": "歐里完全就是個女藝人。她是隻獨特的布偶貓，行為舉止像個名媛一樣，並且不停地喵喵叫，直到獲得想要的東西為止。但她想要什麼呢？這可沒人清楚。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_033",
+      "String": "潔西是隻驕傲的貓咪。她走路的姿勢像個超模，尾巴翹得老高，眼神充滿得意。她通常喜歡獨處，想抱抱的時候則會大方表示出來。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_034",
+      "String": "珊卓拉是個低調的偷竊狂。她會趁顧客不注意的時候偷走吸管，再把吸管嚼爛。幸好咖啡廳使用的是紙吸管！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_035",
+      "String": "曾擔任展示貓的毛毛，大多數時間都被鍊著或鎖著。如今，咖啡廳各處都可以見到小毛球展現她愛玩的真實個性。為什麼看得到呢？因為她到處吐毛球，吐超多。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_036",
+      "String": "無尾熊就和她的同名動物一樣非常黏人，而且喜歡把腳掌環在顧客的脖子上。這個動作有時會不小心留下爪痕，但因為太可愛了，咖啡廳的常客都不會責怪。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_037",
+      "String": "威爾福德喜歡別人撫摸他的肚子！他通常會四腳朝天睡覺，像是在等候誰接受邀請前來摸摸。有時他的腳會因為作夢而朝空揮舞，像在空中踩腳踏車一樣。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_038",
+      "String": "克雷登斯是個可愛且天性友善的貓咪，他只願意接受最輕柔的輕拍。你可以想像成撫摸新生寶寶的頭。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_039",
+      "String": "小餅乾是需要多加留意的小貓。他喜歡被人到處帶著走，並且會出其不意地跳上他人的肩膀！小餅乾喜歡愛玩的人，且在學習特技方面特別有一套。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_040",
+      "String": "胡椒是罕見的孟加拉貓，什麼都吃。她名字的來由是她小時候在咖啡廳櫃台吃了非常辛辣的辣椒，導致大家在凌晨一點手忙腳亂地帶她衝去看獸醫。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_041",
+      "String": "拍拍曾用她多趾的腳掌跟市民握手，在退休後，她用這雙腳掌喝茶及津津有味地嚼貓餅乾。有些顧客會把這視為一種「浪漫」。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_050",
+      "String": "奶油是網路人氣大賽的冠軍，這讓他在社群媒體打響了知名度。儘管奶油成了名人，他仍是你所見過最冷淡的貓咪。他喜愛被人搔下巴，開心時會把尾巴捲成問號的形狀。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_051",
+      "String": "有著狂野內心的露娜生性好動，是隻熱衷於玩遊戲的活潑小貓。最初被人發現時，她一隻貓孤零零地在黑暗可怕的森林裡。經過這段時間後，透過玩玩具和親暱地拍拍熟睡的人類的臉頰，她享受到了身為小貓的新奇體驗。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_052",
+      "String": "天生擅長悄聲行走與奔跑的襪襪，是與生俱來的狩獵者。襪襪是貓群中行動最迅速的，總會第一個撲倒玩具，且特別喜歡在房間四處爆衝。襪襪喜歡的另一個活動則是坐在窗前，對著外頭的鳥發出急躁的嘎嘎叫聲。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_053",
+      "String": "小貂年輕的時候是特別有野心的攀高者，一天到晚挑戰高聳的樹。現在的他則儼然是咖啡館的小小按摩師，整天輕柔地在顧客大腿上踏踏，並發出愉悅的呼嚕聲。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_054",
+      "String": "歐迪雖然不幸地只有一隻眼睛，卻沒有任何事情能令她消沉。活力十足的她喜歡快速爬上樹木和追球。但如果你需要擁抱，她也會很樂意蜷伏在你腿上。她還很喜歡自己的嗓音，而且會開心地用一連串小小的叫聲、撒嬌聲、喵喵叫和呼嚕來和你說話。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_055",
+      "String": "克莉絲塔是隻會欣賞搖籃曲的貓咪。在床上對她唱歌，她便會立刻在你身旁睡著！她還喜歡有很多條腿的毛絨玩偶！她的收藏包括了蜘蛛、章魚、龍蝦、螃蟹和蝦子喔！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_056",
+      "String": "星爵在生面孔附近時向來害羞，但只要跟她變熟，她就會迅速放下心防。和她成為好朋友後，就能長時間待在她旁邊，聽這隻愛講話的貓碎念以及玩她最愛的拋接遊戲。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_057",
+      "String": "Zoe親人也親狗，但和其他貓卻合不來。她喜歡被搔肚肚、有人對她說話，也喜歡用臉去磨蹭任何東西（連人的臉也一樣）。Zoe有Instagram，也有許多喜愛她的粉絲：instagram.com/munchkinzoe/"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_058",
+      "String": "在兇猛的狩獵中，達卡女公爵最喜愛的目標就是腳趾頭。無論是包在毯子下或是赤裸無保護，都無一倖免！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_059",
+      "String": "阿波羅喜歡把東西弄爆炸，包含麵粉袋、魚飼料、奶粉等等。千萬別讓他靠近咖啡豆！雖然他調皮搗蛋，但他非常愛撒嬌，而且願意為了零食作任何事！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_060",
+      "String": "薇薇安（小名薇薇）是很特別的女孩，會看心情決定是否接受別人摸她的臉和脖子。她有點跛腳，但仍喜愛跑跳追逐和攀爬，經常因為瘋玩而累到吐舌！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_061",
+      "String": "派咪曾經遭遇凍瘡而不幸失去耳尖，後來才獲得救援。歷經千辛萬苦後的她，成了最為體貼的貓咪夥伴。這團毛球喜歡玩耍，以及不停地喵喵叫。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_062",
+      "String": "曲奇是一本正經的貓咪，無法容許任何胡鬧！他自認是守護者，每天早上 5 點半起床，從不翹班。下午 5 點必須準時餵零食，若是遲了，他就會不停喵喵叫直到吃到為止！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_063",
+      "String": "沐許是不僅體型像麵包一樣鬆軟，自己也熱愛麵包！為了偷吃美味，他不惜咬破裝麵包的塑膠袋。這隻愛講話的小傢伙有所求的時候，就會不停地嘮叨（通常是為了要麵包）。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_064",
+      "String": "胖比是個體型穩重的大寶貝，只要搔她下巴搔對位置，她就會發出相隔甚遠都聽得見的呼嚕聲。她有個怪癖，熱愛在蓬鬆柔軟的球衣上踏踏，而且踏的時候經常忘了把舌頭收回去。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_065",
+      "String": "多比是隻聰明的小傢伙，從小就擅長透過按鈴來和人類溝通。不過由於凌晨四點呼喚吃點心的頻率過多，按鈴已不幸遭逢「意外」了。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_066",
+      "String": "雖然米諾斯喜歡把自己想像成強大難纏的獵人，但她本質上其實是相當溫柔的貓。她選的獵物都是大片的葉子，也是她一大早會帶去現給人類看的玩意。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_067",
+      "String": "沃夫岡的外表像一頭狼，但個性友好，且大部分時間都相當溫和...只要別擋住他抓小雞就行。他會穿越各種困難和阻礙，捉住美味的點心！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_068",
+      "String": "<CAT_NAME_068>的名字來自北歐神話中一位詭計多端的神，而這隻貓咪也有著淘氣的個性！這隻小貓偶爾會啃咬電線，或是趁人不注意時偷吃人類的食物。想阻止這隻機靈貓咪闖禍嗎？緊緊地抱住他吧！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_JUHANOTUSED",
+      "String": "一旦尤哈一屁股坐在地板上，世界上就沒有任何力量可以強迫他移動！除此之外，他喜歡被人輕拍，並對喜愛的人極其忠誠。可惜的是，他要享受這些就必須移動。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_SIMBANOTUSED",
+      "String": "辛巴敏捷的優雅身姿和運動能力經常令人大吃一驚，他非常聰明，甚至知道怎麼開門！但這些天賦都只用在跟人討抱的時候。"
+    },
+    {
+      "Key": "OCCUPATION_001",
+      "String": "餐旅服務業經理"
+    },
+    {
+      "Key": "OCCUPATION_002",
+      "String": "會計人員"
+    },
+    {
+      "Key": "OCCUPATION_003",
+      "String": "精算師"
+    },
+    {
+      "Key": "OCCUPATION_004",
+      "String": "針灸師"
+    },
+    {
+      "Key": "OCCUPATION_005",
+      "String": "廣告業人員"
+    },
+    {
+      "Key": "OCCUPATION_006",
+      "String": "航空工程師"
+    },
+    {
+      "Key": "OCCUPATION_007",
+      "String": "機師"
+    },
+    {
+      "Key": "OCCUPATION_008",
+      "String": "農業顧問"
+    },
+    {
+      "Key": "OCCUPATION_009",
+      "String": "農業科學家"
+    },
+    {
+      "Key": "OCCUPATION_010",
+      "String": "救護車隊員"
+    },
+    {
+      "Key": "OCCUPATION_011",
+      "String": "技師"
+    },
+    {
+      "Key": "OCCUPATION_012",
+      "String": "麻醉醫師"
+    },
+    {
+      "Key": "OCCUPATION_013",
+      "String": "動物肖像畫家"
+    },
+    {
+      "Key": "OCCUPATION_014",
+      "String": "樹藝師"
+    },
+    {
+      "Key": "OCCUPATION_015",
+      "String": "建築師"
+    },
+    {
+      "Key": "OCCUPATION_016",
+      "String": "美術老師"
+    },
+    {
+      "Key": "OCCUPATION_017",
+      "String": "藝術總監"
+    },
+    {
+      "Key": "OCCUPATION_018",
+      "String": "藝術行政人員"
+    },
+    {
+      "Key": "OCCUPATION_019",
+      "String": "視聽檢查師"
+    },
+    {
+      "Key": "OCCUPATION_020",
+      "String": "汽車電工"
+    },
+    {
+      "Key": "OCCUPATION_021",
+      "String": "麵包師傅"
+    },
+    {
+      "Key": "OCCUPATION_022",
+      "String": "出庭律師"
+    },
+    {
+      "Key": "OCCUPATION_023",
+      "String": "生物化學家"
+    },
+    {
+      "Key": "OCCUPATION_024",
+      "String": "生物醫學工程師"
+    },
+    {
+      "Key": "OCCUPATION_025",
+      "String": "生物技術學家"
+    },
+    {
+      "Key": "OCCUPATION_026",
+      "String": "造船師"
+    },
+    {
+      "Key": "OCCUPATION_027",
+      "String": "書籍編輯"
+    },
+    {
+      "Key": "OCCUPATION_028",
+      "String": "植物學家"
+    },
+    {
+      "Key": "OCCUPATION_029",
+      "String": "泥瓦匠"
+    },
+    {
+      "Key": "OCCUPATION_030",
+      "String": "建築助理"
+    },
+    {
+      "Key": "OCCUPATION_031",
+      "String": "建築檢查員"
+    },
+    {
+      "Key": "OCCUPATION_032",
+      "String": "肉販"
+    },
+    {
+      "Key": "OCCUPATION_033",
+      "String": "家具木工"
+    },
+    {
+      "Key": "OCCUPATION_034",
+      "String": "咖啡廳經理"
+    },
+    {
+      "Key": "OCCUPATION_035",
+      "String": "攝影師"
+    },
+    {
+      "Key": "OCCUPATION_036",
+      "String": "心臟技術人員"
+    },
+    {
+      "Key": "OCCUPATION_037",
+      "String": "心臟科醫師"
+    },
+    {
+      "Key": "OCCUPATION_038",
+      "String": "輔導員"
+    },
+    {
+      "Key": "OCCUPATION_039",
+      "String": "木匠"
+    },
+    {
+      "Key": "OCCUPATION_040",
+      "String": "製圖員"
+    },
+    {
+      "Key": "OCCUPATION_041",
+      "String": "主廚"
+    },
+    {
+      "Key": "OCCUPATION_042",
+      "String": "化學工程師"
+    },
+    {
+      "Key": "OCCUPATION_043",
+      "String": "化學家"
+    },
+    {
+      "Key": "OCCUPATION_044",
+      "String": "多貓人士"
+    },
+    {
+      "Key": "OCCUPATION_045",
+      "String": "脊骨神經科醫師"
+    },
+    {
+      "Key": "OCCUPATION_046",
+      "String": "土木工程師"
+    },
+    {
+      "Key": "OCCUPATION_047",
+      "String": "心理學家"
+    },
+    {
+      "Key": "OCCUPATION_048",
+      "String": "事件統籌"
+    },
+    {
+      "Key": "OCCUPATION_049",
+      "String": "管理員"
+    },
+    {
+      "Key": "OCCUPATION_050",
+      "String": "專案經理"
+    },
+    {
+      "Key": "OCCUPATION_051",
+      "String": "廚師"
+    },
+    {
+      "Key": "OCCUPATION_052",
+      "String": "文案寫手"
+    },
+    {
+      "Key": "OCCUPATION_053",
+      "String": "美食廚師"
+    },
+    {
+      "Key": "OCCUPATION_054",
+      "String": "輔導員"
+    },
+    {
+      "Key": "OCCUPATION_055",
+      "String": "作物農夫"
+    },
+    {
+      "Key": "OCCUPATION_056",
+      "String": "客戶服務經理"
+    },
+    {
+      "Key": "OCCUPATION_057",
+      "String": "舞蹈老師"
+    },
+    {
+      "Key": "OCCUPATION_058",
+      "String": "舞者"
+    },
+    {
+      "Key": "OCCUPATION_059",
+      "String": "資料庫管理員"
+    },
+    {
+      "Key": "OCCUPATION_060",
+      "String": "牙醫"
+    },
+    {
+      "Key": "OCCUPATION_061",
+      "String": "皮膚科醫師"
+    },
+    {
+      "Key": "OCCUPATION_062",
+      "String": "程式設計師"
+    },
+    {
+      "Key": "OCCUPATION_063",
+      "String": "放射學家"
+    },
+    {
+      "Key": "OCCUPATION_064",
+      "String": "修理工"
+    },
+    {
+      "Key": "OCCUPATION_065",
+      "String": "營養師"
+    },
+    {
+      "Key": "OCCUPATION_066",
+      "String": "導演"
+    },
+    {
+      "Key": "OCCUPATION_067",
+      "String": "身心障礙服務人員"
+    },
+    {
+      "Key": "OCCUPATION_068",
+      "String": "潛水教練"
+    },
+    {
+      "Key": "OCCUPATION_069",
+      "String": "領犬員"
+    },
+    {
+      "Key": "OCCUPATION_070",
+      "String": "排水技師"
+    },
+    {
+      "Key": "OCCUPATION_071",
+      "String": "女裝裁縫師"
+    },
+    {
+      "Key": "OCCUPATION_072",
+      "String": "教師"
+    },
+    {
+      "Key": "OCCUPATION_073",
+      "String": "經濟學家"
+    },
+    {
+      "Key": "OCCUPATION_074",
+      "String": "電機工程師"
+    },
+    {
+      "Key": "OCCUPATION_075",
+      "String": "電氣技師"
+    },
+    {
+      "Key": "OCCUPATION_076",
+      "String": "內分泌學家"
+    },
+    {
+      "Key": "OCCUPATION_077",
+      "String": "護理人員"
+    },
+    {
+      "Key": "OCCUPATION_078",
+      "String": "環境研究人員"
+    },
+    {
+      "Key": "OCCUPATION_079",
+      "String": "家庭支援人員"
+    },
+    {
+      "Key": "OCCUPATION_080",
+      "String": "時尚設計師"
+    },
+    {
+      "Key": "OCCUPATION_081",
+      "String": "電影與影片編輯"
+    },
+    {
+      "Key": "OCCUPATION_082",
+      "String": "健身房老闆"
+    },
+    {
+      "Key": "OCCUPATION_083",
+      "String": "花店店員"
+    },
+    {
+      "Key": "OCCUPATION_084",
+      "String": "花卉培植員"
+    },
+    {
+      "Key": "OCCUPATION_085",
+      "String": "飛行教官"
+    },
+    {
+      "Key": "OCCUPATION_086",
+      "String": "食品技術學家"
+    },
+    {
+      "Key": "OCCUPATION_087",
+      "String": "足球員"
+    },
+    {
+      "Key": "OCCUPATION_088",
+      "String": "林務員"
+    },
+    {
+      "Key": "OCCUPATION_089",
+      "String": "家具精製員"
+    },
+    {
+      "Key": "OCCUPATION_090",
+      "String": "博物館館長"
+    },
+    {
+      "Key": "OCCUPATION_091",
+      "String": "園丁"
+    },
+    {
+      "Key": "OCCUPATION_092",
+      "String": "地質學家"
+    },
+    {
+      "Key": "OCCUPATION_093",
+      "String": "地球物理學家"
+    },
+    {
+      "Key": "OCCUPATION_094",
+      "String": "葡萄栽培者"
+    },
+    {
+      "Key": "OCCUPATION_095",
+      "String": "平面設計師"
+    },
+    {
+      "Key": "OCCUPATION_096",
+      "String": "高爾夫球場管理人"
+    },
+    {
+      "Key": "OCCUPATION_097",
+      "String": "體操教練"
+    },
+    {
+      "Key": "OCCUPATION_098",
+      "String": "美容沙龍經理"
+    },
+    {
+      "Key": "OCCUPATION_099",
+      "String": "美髮師"
+    },
+    {
+      "Key": "OCCUPATION_100",
+      "String": "硬體工程師"
+    },
+    {
+      "Key": "OCCUPATION_101",
+      "String": "直升機駕駛"
+    },
+    {
+      "Key": "OCCUPATION_102",
+      "String": "馬術教練"
+    },
+    {
+      "Key": "OCCUPATION_103",
+      "String": "馴馬師"
+    },
+    {
+      "Key": "OCCUPATION_104",
+      "String": "藥師"
+    },
+    {
+      "Key": "OCCUPATION_105",
+      "String": "飯店經理"
+    },
+    {
+      "Key": "OCCUPATION_106",
+      "String": "人力資源經理"
+    },
+    {
+      "Key": "OCCUPATION_107",
+      "String": "本地化專家"
+    },
+    {
+      "Key": "OCCUPATION_108",
+      "String": "設計師"
+    },
+    {
+      "Key": "OCCUPATION_109",
+      "String": "保險代理人"
+    },
+    {
+      "Key": "OCCUPATION_110",
+      "String": "護理人員"
+    },
+    {
+      "Key": "OCCUPATION_111",
+      "String": "室內設計師"
+    },
+    {
+      "Key": "OCCUPATION_112",
+      "String": "口譯員"
+    },
+    {
+      "Key": "OCCUPATION_113",
+      "String": "珠寶商"
+    },
+    {
+      "Key": "OCCUPATION_114",
+      "String": "新聞記者"
+    },
+    {
+      "Key": "OCCUPATION_115",
+      "String": "實驗室管理人員"
+    },
+    {
+      "Key": "OCCUPATION_116",
+      "String": "土地經濟學家"
+    },
+    {
+      "Key": "OCCUPATION_117",
+      "String": "景觀設計師"
+    },
+    {
+      "Key": "OCCUPATION_118",
+      "String": "圖書館館員"
+    },
+    {
+      "Key": "OCCUPATION_119",
+      "String": "電梯維修員"
+    },
+    {
+      "Key": "OCCUPATION_120",
+      "String": "畜牧業者"
+    },
+    {
+      "Key": "OCCUPATION_121",
+      "String": "鎖匠"
+    },
+    {
+      "Key": "OCCUPATION_122",
+      "String": "彩妝師"
+    },
+    {
+      "Key": "OCCUPATION_123",
+      "String": "海洋生物學家"
+    },
+    {
+      "Key": "OCCUPATION_124",
+      "String": "行銷專員"
+    },
+    {
+      "Key": "OCCUPATION_125",
+      "String": "按摩治療師"
+    },
+    {
+      "Key": "OCCUPATION_126",
+      "String": "材料工程師"
+    },
+    {
+      "Key": "OCCUPATION_127",
+      "String": "數學家"
+    },
+    {
+      "Key": "OCCUPATION_128",
+      "String": "肉品檢查員"
+    },
+    {
+      "Key": "OCCUPATION_129",
+      "String": "機械工程師"
+    },
+    {
+      "Key": "OCCUPATION_130",
+      "String": "氣象學家"
+    },
+    {
+      "Key": "OCCUPATION_131",
+      "String": "微生物學家"
+    },
+    {
+      "Key": "OCCUPATION_132",
+      "String": "國中老師"
+    },
+    {
+      "Key": "OCCUPATION_133",
+      "String": "助產士"
+    },
+    {
+      "Key": "OCCUPATION_134",
+      "String": "礦工"
+    },
+    {
+      "Key": "OCCUPATION_135",
+      "String": "農夫"
+    },
+    {
+      "Key": "OCCUPATION_136",
+      "String": "多媒體專員"
+    },
+    {
+      "Key": "OCCUPATION_137",
+      "String": "音樂老師"
+    },
+    {
+      "Key": "OCCUPATION_138",
+      "String": "音樂家"
+    },
+    {
+      "Key": "OCCUPATION_139",
+      "String": "自然療法醫師"
+    },
+    {
+      "Key": "OCCUPATION_140",
+      "String": "網路分析師"
+    },
+    {
+      "Key": "OCCUPATION_141",
+      "String": "神經科醫師"
+    },
+    {
+      "Key": "OCCUPATION_142",
+      "String": "神經外科醫師"
+    },
+    {
+      "Key": "OCCUPATION_143",
+      "String": "編輯"
+    },
+    {
+      "Key": "OCCUPATION_144",
+      "String": "營養學家"
+    },
+    {
+      "Key": "OCCUPATION_145",
+      "String": "治療師"
+    },
+    {
+      "Key": "OCCUPATION_146",
+      "String": "驗光師"
+    },
+    {
+      "Key": "OCCUPATION_147",
+      "String": "整骨醫師"
+    },
+    {
+      "Key": "OCCUPATION_148",
+      "String": "小兒科醫師"
+    },
+    {
+      "Key": "OCCUPATION_149",
+      "String": "病理學家"
+    },
+    {
+      "Key": "OCCUPATION_150",
+      "String": "攝影師"
+    },
+    {
+      "Key": "OCCUPATION_151",
+      "String": "物理學家"
+    },
+    {
+      "Key": "OCCUPATION_152",
+      "String": "整型外科醫師"
+    },
+    {
+      "Key": "OCCUPATION_153",
+      "String": "水電工"
+    },
+    {
+      "Key": "OCCUPATION_154",
+      "String": "足科醫師"
+    },
+    {
+      "Key": "OCCUPATION_155",
+      "String": "郵局主任"
+    },
+    {
+      "Key": "OCCUPATION_156",
+      "String": "國小老師"
+    },
+    {
+      "Key": "OCCUPATION_157",
+      "String": "精神科醫師"
+    },
+    {
+      "Key": "OCCUPATION_158",
+      "String": "康復工作顧問"
+    },
+    {
+      "Key": "OCCUPATION_159",
+      "String": "校長"
+    },
+    {
+      "Key": "OCCUPATION_160",
+      "String": "中等學校教師"
+    },
+    {
+      "Key": "OCCUPATION_161",
+      "String": "招牌寫手"
+    },
+    {
+      "Key": "OCCUPATION_162",
+      "String": "滑雪教練"
+    },
+    {
+      "Key": "OCCUPATION_163",
+      "String": "社會工作者"
+    },
+    {
+      "Key": "OCCUPATION_164",
+      "String": "超音波檢查師"
+    },
+    {
+      "Key": "OCCUPATION_165",
+      "String": "聲音技術員"
+    },
+    {
+      "Key": "OCCUPATION_166",
+      "String": "特殊需要教師"
+    },
+    {
+      "Key": "OCCUPATION_167",
+      "String": "大使"
+    },
+    {
+      "Key": "OCCUPATION_168",
+      "String": "內科醫師"
+    },
+    {
+      "Key": "OCCUPATION_169",
+      "String": "語言病理學家"
+    },
+    {
+      "Key": "OCCUPATION_170",
+      "String": "運動中心經理人"
+    },
+    {
+      "Key": "OCCUPATION_171",
+      "String": "職業運動員"
+    },
+    {
+      "Key": "OCCUPATION_172",
+      "String": "舞台監督"
+    },
+    {
+      "Key": "OCCUPATION_173",
+      "String": "統計學家"
+    },
+    {
+      "Key": "OCCUPATION_174",
+      "String": "石匠"
+    },
+    {
+      "Key": "OCCUPATION_175",
+      "String": "結構工程師"
+    },
+    {
+      "Key": "OCCUPATION_176",
+      "String": "外科醫師"
+    },
+    {
+      "Key": "OCCUPATION_177",
+      "String": "測量員"
+    },
+    {
+      "Key": "OCCUPATION_178",
+      "String": "游泳教練"
+    },
+    {
+      "Key": "OCCUPATION_179",
+      "String": "技術指導"
+    },
+    {
+      "Key": "OCCUPATION_180",
+      "String": "記者"
+    },
+    {
+      "Key": "OCCUPATION_181",
+      "String": "網球教練"
+    },
+    {
+      "Key": "OCCUPATION_182",
+      "String": "工具匠"
+    },
+    {
+      "Key": "OCCUPATION_183",
+      "String": "中醫師"
+    },
+    {
+      "Key": "OCCUPATION_184",
+      "String": "大學講師"
+    },
+    {
+      "Key": "OCCUPATION_185",
+      "String": "城市規劃師"
+    },
+    {
+      "Key": "OCCUPATION_186",
+      "String": "菜農"
+    },
+    {
+      "Key": "OCCUPATION_187",
+      "String": "獸醫"
+    },
+    {
+      "Key": "OCCUPATION_188",
+      "String": "牆壁與地板鋪磚工人"
+    },
+    {
+      "Key": "OCCUPATION_189",
+      "String": "鐘錶匠"
+    },
+    {
+      "Key": "OCCUPATION_190",
+      "String": "網站管理員"
+    },
+    {
+      "Key": "OCCUPATION_191",
+      "String": "網站設計師"
+    },
+    {
+      "Key": "OCCUPATION_192",
+      "String": "網站開發人員"
+    },
+    {
+      "Key": "OCCUPATION_193",
+      "String": "焊工"
+    },
+    {
+      "Key": "OCCUPATION_194",
+      "String": "福利工作人員"
+    },
+    {
+      "Key": "OCCUPATION_195",
+      "String": "釀酒師"
+    },
+    {
+      "Key": "OCCUPATION_196",
+      "String": "動物學家"
+    },
+    {
+      "Key": "OCCUPATION_197",
+      "String": "遊戲開發人員"
+    },
+    {
+      "Key": "OCCUPATION_198",
+      "String": "Runaway產品負責人"
+    },
+    {
+      "Key": "OCCUPATION_199",
+      "String": "Runaway專案首席美術師"
+    },
+    {
+      "Key": "OCCUPATION_200",
+      "String": "Runaway程式設計師"
+    },
+    {
+      "Key": "OCCUPATION_201",
+      "String": "Runaway專案首席工程師"
+    },
+    {
+      "Key": "OCCUPATION_202",
+      "String": "Runaway美術/動畫師"
+    },
+    {
+      "Key": "OCCUPATION_203",
+      "String": "YouTube.com/Shubble"
+    },
+    {
+      "Key": "OCCUPATION_204",
+      "String": "Runaway產品負責人"
+    },
+    {
+      "Key": "OCCUPATION_205",
+      "String": "Runaway專案首席美術師"
+    },
+    {
+      "Key": "OCCUPATION_206",
+      "String": "Runaway程式設計師"
+    },
+    {
+      "Key": "OCCUPATION_207",
+      "String": "Runaway專案首席工程師"
+    },
+    {
+      "Key": "OCCUPATION_208",
+      "String": "Runaway美術"
+    },
+    {
+      "Key": "OCCUPATION_209",
+      "String": "獲獎肯定的敘事設計師"
+    },
+    {
+      "Key": "OCCUPATION_210",
+      "String": "Runaway執行長"
+    },
+    {
+      "Key": "OCCUPATION_211",
+      "String": "Runaway創意總監"
+    },
+    {
+      "Key": "OCCUPATION_212",
+      "String": "Runaway技術領導人"
+    },
+    {
+      "Key": "OCCUPATION_213",
+      "String": "Runaway QA領導人"
+    },
+    {
+      "Key": "OCCUPATION_214",
+      "String": "Runaway行銷美術師"
+    },
+    {
+      "Key": "OCCUPATION_215",
+      "String": "Runaway社群支援"
+    },
+    {
+      "Key": "OCCUPATION_216",
+      "String": "Runaway系統管理員（@tom_clark）"
+    },
+    {
+      "Key": "OCCUPATION_217",
+      "String": "電玩遊戲實況主（@renee）"
+    },
+    {
+      "Key": "OCCUPATION_218",
+      "String": "Runaway美術 @tomGarden45"
+    },
+    {
+      "Key": "OCCUPATION_219",
+      "String": "Runaway程式設計師 @buzzrick"
+    },
+    {
+      "Key": "OCCUPATION_220",
+      "String": "Runaway研究員 (@jonasgoodwin)"
+    },
+    {
+      "Key": "OCCUPATION_221",
+      "String": "Runaway社群經理"
+    },
+    {
+      "Key": "NAME_SAM",
+      "String": "Sam"
+    },
+    {
+      "Key": "NAME_LISA",
+      "String": "Lisa"
+    },
+    {
+      "Key": "NAME_CARLA",
+      "String": "Carla"
+    },
+    {
+      "Key": "NAME_ZOE",
+      "String": "Zoe"
+    },
+    {
+      "Key": "NAME_EMMA",
+      "String": "Emma"
+    },
+    {
+      "Key": "NAME_BRYCE",
+      "String": "Bryce"
+    },
+    {
+      "Key": "NAME_JESS",
+      "String": "Jess"
+    },
+    {
+      "Key": "NAME_RORY",
+      "String": "Rory"
+    },
+    {
+      "Key": "NAME_TOM",
+      "String": "Tom"
+    },
+    {
+      "Key": "NAME_SIOBHAN",
+      "String": "Siobhan"
+    },
+    {
+      "Key": "NAME_RENEE",
+      "String": "Renée"
+    },
+    {
+      "Key": "NAME_JEFF",
+      "String": "傑夫"
+    },
+    {
+      "Key": "NAME_LILIAN",
+      "String": "莉莉安"
+    },
+    {
+      "Key": "NAME_STEPHEN",
+      "String": "史蒂芬"
+    },
+    {
+      "Key": "NAME_JIM",
+      "String": "吉姆"
+    },
+    {
+      "Key": "NAME_ALEKSIS",
+      "String": "艾列希斯"
+    },
+    {
+      "Key": "NAME_LARS",
+      "String": "拉爾斯"
+    },
+    {
+      "Key": "NAME_JOSIAH",
+      "String": "約西亞"
+    },
+    {
+      "Key": "NAME_BERIC",
+      "String": "Beric"
+    },
+    {
+      "Key": "NAME_BRIDGET",
+      "String": "Bridget"
+    },
+    {
+      "Key": "NAME_SHELBY",
+      "String": "Shelby"
+    },
+    {
+      "Key": "NAME_JONAS",
+      "String": "Jonas"
+    },
+    {
+      "Key": "NAME_ADITIA",
+      "String": "Aditia"
+    },
+    {
+      "Key": "NAME_JESSE",
+      "String": "Jesse"
+    },
+    {
+      "Key": "VIP_NAME_001",
+      "String": "雀莉"
+    },
+    {
+      "Key": "VIP_OCCUPATION_001",
+      "String": "生活部落客"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_1",
+      "String": "喜愛室內植物、對實境節目著迷，且嗜喝大量黑咖啡。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_2",
+      "String": "她小時候養的貓麥斯是她最好的朋友。她會把所有的秘密都說給他聽。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_3",
+      "String": "受麥斯啟發，她年紀輕輕就成為素食主義者。她希望所有動物都能受到愛護與珍惜。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_4",
+      "String": "麥斯去世後，她發誓不再養貓，並轉而將心力花在拯救需要幫助的貓咪。造訪咖啡廳可滿足她對小貓的喜愛，並補充咖啡因需求。"
+    },
+    {
+      "Key": "VIP_NAME_002",
+      "String": "莎拉"
+    },
+    {
+      "Key": "VIP_OCCUPATION_002",
+      "String": "2D美術設計師"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_1",
+      "String": "喜愛玩電動遊戲，是非常善良且有愛心的人，傳簡訊時一定要加上一堆表情符號。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_2",
+      "String": "就習慣上來說不愛出門的人，有點社交焦慮，去戶外活動時總是會戴帽子，並抹上一堆防曬乳。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_3",
+      "String": "因為對貓過敏的關係只養狗，直到她為了首度造訪貓咪咖啡廳並陷入熱戀，才出現轉機。但熱戀對象是貓，不是約會對象。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_4",
+      "String": "她需要服用抗組織胺藥物才能去咖啡廳，但認為用打噴嚏作為抱貓的代價非常值得。定時撫摸貓，讓貓圍繞在身邊，可緩解她心中的焦慮。"
+    },
+    {
+      "Key": "VIP_NAME_003",
+      "String": "萊利"
+    },
+    {
+      "Key": "VIP_OCCUPATION_003",
+      "String": "酒保"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_1",
+      "String": "頭上總是戴著毛帽，愛喝豆漿卡布奇諾，畢生強烈堅持貓優於狗的理論。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_2",
+      "String": "喜歡用臉磨蹭小貓的肚皮，最喜歡聽到貓發出的呼嚕嚕聲。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_3",
+      "String": "在與女友曲折的分手過程中，非常不幸喪失了摯愛貓咪「閃閃」的撫養權。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_4",
+      "String": "萊利在咖啡廳的貓身上找到了幸福與慰藉，希望有朝一日能像你一樣開間貓咪咖啡廳。"
+    },
+    {
+      "Key": "VIP_NAME_004",
+      "String": "俊熙"
+    },
+    {
+      "Key": "VIP_OCCUPATION_004",
+      "String": "平面設計師"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_1",
+      "String": "俊熙喜歡設計並印製自己的品牌T恤，還有喝茶及踢足球。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_2",
+      "String": "他從來都不是愛貓人士，但在網路上注意到有多麼貓受到歡迎後，他來到咖啡廳想了解牠們，並嘗試將牠們加入自己的設計。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_3",
+      "String": "他對貓的態度從研究迅速轉變成喜愛。許多貓都認得他，會在他出現時開心地跳到他身邊，興奮地直發出呼嚕聲。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_4",
+      "String": "俊熙最近領養了一隻年紀較長的貓，以便在舒適的家中「研究」貓。他仍會不時造訪咖啡廳喝茶，抱抱他喜愛的貓咪。"
+    },
+    {
+      "Key": "VIP_NAME_005",
+      "String": "喬丹"
+    },
+    {
+      "Key": "VIP_OCCUPATION_005",
+      "String": "助理廚師"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_1",
+      "String": "喬丹每星期的工作時數逼近60小時，因此他非常珍惜自己的下班時間。他大部分下班時間都在看動畫，以及和朋友一起玩電動遊戲。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_2",
+      "String": "喬丹非常努力工作，大部分原因是工作需求、償還就學貸款，以及存錢完成去日本旅行的夢想！"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_3",
+      "String": "忙碌之餘，他也花時間學習日語，並得知貓咪咖啡廳便是起源於日本。除了聽說咖啡很好喝之外，這項資訊也激發他的興趣，吸引他來到了你的咖啡廳。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_4",
+      "String": "待在咖啡廳是喬丹唯一能真正放鬆的時候。雖然一開始這樣放鬆的快樂讓他心生內疚，但之後輕撫毛小孩成了他緩解壓力的活動！"
+    },
+    {
+      "Key": "VIP_NAME_006",
+      "String": "蘇茜"
+    },
+    {
+      "Key": "VIP_OCCUPATION_006",
+      "String": "彩妝師"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_1",
+      "String": "天蠍座的蘇茜喜愛自拍，還有收聽關於中世紀歷史的播客。她最喜歡的顏色是黑色。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_2",
+      "String": "她是位白手起家的彩妝師，靠著成功的社群媒體經營以及對動物的熱愛，她創立了無動物實驗彩妝品牌。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_3",
+      "String": "受自己的貓「小水晶」所啟發，她最擅長化的是大膽的貓眼妝。眼線筆勾勒出的眼尾弧度就像黑曜石劍那般鋒利。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_4",
+      "String": "令人遺憾的是，小水晶最近已經去當小天使了。蘇茜因此來到咖啡廳，除了享受免費無線網路和美味點心外，也抱抱咖啡廳的貓咪新朋友。"
+    },
+    {
+      "Key": "VIP_NAME_007",
+      "String": "小凜"
+    },
+    {
+      "Key": "VIP_OCCUPATION_007",
+      "String": "音樂家"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_1",
+      "String": "小凜喜歡唱卡拉OK，還喜歡把頭髮染成各種髮色，當然也對貓十分著迷。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_2",
+      "String": "她的休閒卡拉OK時光，後來激勵她展開了獨唱表演「穿西裝的貓」。她的音樂影響深遠，從古典樂到喉音唱法都有涉及。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_3",
+      "String": "小凜致力將關於貓的事物編進歌詞中，為了獲取靈感，她會讀文學著物來了解裡面的知名貓咪，也經常造訪咖啡館。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_4",
+      "String": "受咖啡館的貓咪所啟發，她發行了最新自創歌曲《貓抓板旋律》。這首歌在當地電台大獲成功，如今小凜已經是備受認可的明星了！"
+    },
+    {
+      "Key": "VIP_NAME_008",
+      "String": "潔達"
+    },
+    {
+      "Key": "VIP_OCCUPATION_008",
+      "String": "初級醫師"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_1",
+      "String": "潔達是個學霸，以優異成績完成大學學業。擁有多個學位的她，最終決定將熱情奉獻於從醫助人。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_2",
+      "String": "工作以外的時間，潔達喜歡去慈善二手商店購物、肆意喝咖啡，以及在當地貓咪收容所當志工。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_3",
+      "String": "潔達從小就非常善良，她總是率先對人伸出援手，無論對方是朋友還是陌生人。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_4",
+      "String": "無私與忙碌的生活使得潔達無暇養貓。因此她盡可能造訪咖啡館，滿足迫切想抱抱貓咪的渴望。"
+    },
+    {
+      "Key": "VIP_NAME_009",
+      "String": "里昂"
+    },
+    {
+      "Key": "VIP_OCCUPATION_009",
+      "String": "雜貨店老闆"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_1",
+      "String": "里昂將為動物發聲視為首要之務。除了為正義努力之外，他的工作就是在自己開的「美喵食品」商店販售當地食品。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_2",
+      "String": "「小鈕扣」是他領養的貓，當初被人發現時一直嚎叫，且相當害怕。小鈕扣獨自生活在里昂的店裡，怕生的個性曾使他乏人問津好一陣子。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_3",
+      "String": "如今，小鈕扣和里昂享受著安靜又愉快的生活，每位來店裡的常客都會熱絡地向他們打招呼。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_4",
+      "String": "里昂非常喜歡去你的咖啡館，見證貓咪被領養的喜悅時刻。他支持許多與貓有關的慈善活動，並且會來咖啡館力行支持與推廣！"
+    },
+    {
+      "Key": "VIP_NAME_010",
+      "String": "魯柏"
+    },
+    {
+      "Key": "VIP_OCCUPATION_010",
+      "String": "自由接案程式設計師"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_1",
+      "String": "魯柏無意遵循一般成年人所走的傳統道路，他更喜歡自由自在地生活。他隨心所欲決定自己的工作地點和時間。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_2",
+      "String": "魯柏在朋友的眼中是有點叛逆的人，但他內心其實既細膩又體貼。他喜愛動物，有隻名叫「迪諾」的寵物鼠。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_3",
+      "String": "魯柏擔心養貓咪會讓迪諾不開心，而且深信這兩種動物無法共處。為了私下享受親近貓咪的感覺，他會造訪咖啡館。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_4",
+      "String": "這是他唯一的例行公事。因為實在太喜歡來貓咪咖啡館，他創立了藝術部落格，發佈關於店內貓咪的粉絲創作！"
+    },
+    {
+      "Key": "VIP_NAME_011",
+      "String": "路卡"
+    },
+    {
+      "Key": "VIP_OCCUPATION_011",
+      "String": "圖書館館員"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_1",
+      "String": "路卡從小就非常喜愛閱讀，他的生活離不開文學。他最喜歡的體裁是超自然愛情故事。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_2",
+      "String": "路卡從16歲開始就在當地圖書館工作，從那時起就和圖書館館貓「大胖」成了摯友。他的夢想是成為暢銷作家。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_3",
+      "String": "二十歲出頭時，路卡因故成了聽障人士。他喜歡在下班後教授手語課。大胖也樂得享受手語課學生的摸摸。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_4",
+      "String": "有學生向路卡推薦了你的咖啡館。自從第一次造訪後，他就開始撰寫自己的第一本小說！小說的靈感來自你的咖啡館所散發的幸福感。"
+    },
+    {
+      "Key": "VIP_NAME_012",
+      "String": "智潤"
+    },
+    {
+      "Key": "VIP_OCCUPATION_012",
+      "String": "攝影師"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_1",
+      "String": "智潤喜歡攝影、繪畫和詩作。雖然她對自己發揮創意的能力十分有自信，但結交新朋友時卻非常害羞。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_2",
+      "String": "她最喜歡穿連身工作服，穿著畫畫的感覺非常自在。她領養的貓咪「貝兒」喜歡窩在工作服的口袋裡。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_3",
+      "String": "智潤對創作的態度十分嚴謹，並將愛貓的相片當作繪畫參考。靈感泉湧時，她甚至會寫詩描述所遇見的貓！"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_4",
+      "String": "她經常來咖啡館蒐集靈感、吃鬆餅補充元氣，並計劃在即將來臨的「貓掌：照片、繪畫與詩」藝術展中展示她的作品成果。"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_TITLE",
+      "String": "未知錯誤"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_DESC",
+      "String": "發生未知錯誤"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_TITLE",
+      "String": "Mobage token客戶端錯誤"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_DESC",
+      "String": "使用 Mobage 服務驗證伺服器時出現問題"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_TITLE",
+      "String": "找不到遊戲設定"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_DESC",
+      "String": "取得遊戲設定時出現問題"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_TITLE",
+      "String": "找不到信箱"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_DESC",
+      "String": "取得郵箱時出現問題"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_TITLE",
+      "String": "無法讀取郵件項目"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_DESC",
+      "String": "讀取郵箱項目時出現問題"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_TITLE",
+      "String": "在 Oauth 物件中找不到使用者對象"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_DESC",
+      "String": "授權使用者時出現問題"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_TITLE",
+      "String": "社交帳戶無法刪除"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_DESC",
+      "String": "刪除社交帳號時出現問題"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_TITLE",
+      "String": "找不到郵件收件人"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_DESC",
+      "String": "尋找郵件收件者時出現問題"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_TITLE",
+      "String": "未指定帳戶類型"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_DESC",
+      "String": "連結您的朋友時出現問題"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_TITLE",
+      "String": "未找到 LCD 用戶端"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_DESC",
+      "String": "到達身份驗證伺服器時出現問題"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_TITLE",
+      "String": "找不到可以領取的帳戶"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_DESC",
+      "String": "認領帳戶時出現問題"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_TITLE",
+      "String": "未找到銀行參數"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_DESC",
+      "String": "取得銀行交易時出現問題"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_TITLE",
+      "String": "未找到銀行交易"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_DESC",
+      "String": "取得銀行交易時出現問題"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_TITLE",
+      "String": "未指定正確的參數"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_DESC",
+      "String": "參數有問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_TITLE",
+      "String": "更新會話的問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_DESC",
+      "String": "會話出現問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_TITLE",
+      "String": "更新用戶的問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_DESC",
+      "String": "儲存遊戲時出現問題"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_TITLE",
+      "String": "建立日誌時出現問題"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_DESC",
+      "String": "建立日誌時出現問題"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_TITLE",
+      "String": "建立郵件項目時出現問題"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_DESC",
+      "String": "建立郵件項目時出現問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_TITLE",
+      "String": "更新好友時出現問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_DESC",
+      "String": "哎呀！更新您的好友清單時出現問題。我們會在您下次載入遊戲時重試。"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_TITLE",
+      "String": "找不到貨幣"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_DESC",
+      "String": "取得貨幣時出現問題"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_TITLE",
+      "String": "LCD 憑證錯誤"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_DESC",
+      "String": "儲存 LCD 憑證時出錯"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_TITLE",
+      "String": "LCD 憑證錯誤"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_DESC",
+      "String": "載入 LCD 憑證時出錯"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_TITLE",
+      "String": "保存序號不正確"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_DESC",
+      "String": "保存編號順序不正確"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_TITLE",
+      "String": "儲存資料時出現問題"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_DESC",
+      "String": "嘗試保存但沒有數據"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_TITLE",
+      "String": "臉書帳號錯誤"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_DESC",
+      "String": "使用您的 Facebook 帳號登入時發生錯誤。請檢查您的 Facebook 連線並重試！"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_TITLE",
+      "String": "遷移錯誤"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_DESC",
+      "String": "遷移您的帳戶時發生錯誤。請聯絡我們友善的支援團隊尋求協助"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_TITLE",
+      "String": "優惠券無效"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_DESC",
+      "String": "優惠券無效"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_TITLE",
+      "String": "需要更新身份驗證數據"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_DESC",
+      "String": "帳戶已合併，因此我們需要更新您的 authData"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_TITLE",
+      "String": "交易已消費"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_DESC",
+      "String": "此購買交易已被消費"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_TITLE",
+      "String": "無用戶數據"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_DESC",
+      "String": "找不到要儲存的用戶數據"
+    },
+    {
+      "Key": "SUPPORT_EMAIL_SAVEDATA_BELOW",
+      "String": "以下資訊是您的玩家數據，將幫助我們解決您遊戲中的任何問題。請在此上方寫下您給我們的留言："
+    },
+    {
+      "Key": "SPRITE_LOGO",
+      "String": "Sprites/Login/Logo-zh-Hant"
+    },
+    {
+      "Key": "CLAIM_COUPON",
+      "String": "在此領取優惠碼！"
+    },
+    {
+      "Key": "COUPON_TITLE",
+      "String": "優惠券"
+    },
+    {
+      "Key": "COUPON_DESCRIPTION",
+      "String": "在此兌換您的優惠券："
+    },
+    {
+      "Key": "COUPON_PLACEHOLDER",
+      "String": "輸入代碼..."
+    },
+    {
+      "Key": "COUPON_CLAIM_BUTTON",
+      "String": "領取"
+    },
+    {
+      "Key": "COUPON_SUCCESS_TITLE",
+      "String": "已成功分享快照！"
+    },
+    {
+      "Key": "COUPON_SUCCESS_DESC",
+      "String": "優惠券領取成功"
+    },
+    {
+      "Key": "COUPON_INVALID_TITLE",
+      "String": "未找到優惠券"
+    },
+    {
+      "Key": "COUPON_INVALID_DESC",
+      "String": "我們找不到此優惠券。可能輸入有誤，也可能過期。"
+    },
+    {
+      "Key": "COUPON_EXPIRED_TITLE",
+      "String": "優惠券已過期"
+    },
+    {
+      "Key": "COUPON_EXPIRED_DESC",
+      "String": "此優惠券不再可用。"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_TITLE",
+      "String": "優惠券已領取"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_DESC",
+      "String": "此優惠券已被領取。"
+    },
+    {
+      "Key": "COUPON_OFFLINE_TITLE",
+      "String": "離線"
+    },
+    {
+      "Key": "COUPON_OFFLINE_DESC",
+      "String": "請連接到網路以領取優惠券。"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_001_TITLE",
+      "String": "<COMMON>的寶石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_002_TITLE",
+      "String": "<UNCOMMON>的寶石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_003_TITLE",
+      "String": "<RARE>的寶石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_004_TITLE",
+      "String": "<EPIC>的寶石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_005_TITLE",
+      "String": "<LEGENDARY>的寶石包"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_001_TITLE",
+      "String": "特性包 1"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_002_TITLE",
+      "String": "特性包 2"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_003_TITLE",
+      "String": "特性包 3"
+    },
+    {
+      "Key": "ROTATIONAL_SHOP_PACK_TITLE",
+      "String": "<LIMITED_TIME_HEADING>"
+    },
+    {
+      "Key": "EVENT_DELIVERIES_TITLE",
+      "String": "<EVENT><DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "FURNITURE_NAME_288",
+      "String": "喵芙朵"
+    },
+    {
+      "Key": "FURNITURE_NAME_289",
+      "String": "喵布奇諾"
+    },
+    {
+      "Key": "FURNITURE_NAME_290",
+      "String": "椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_348",
+      "String": "書喵枕"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY2",
+      "String": "Your rating can really help support <FURISTAS_CAT_CAFE> !"
+    },
+    {
+      "Key": "YES",
+      "String": "是！"
+    },
+    {
+      "Key": "NO",
+      "String": "不"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_MINI_001_TITLE",
+      "String": "絨毛玩具組合包"
+    },
+    {
+      "Key": "FURNITURE_NAME_398",
+      "String": "四葉草旗飾"
+    },
+    {
+      "Key": "FURNITURE_NAME_399",
+      "String": "餃子坐墊"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_TITLE",
+      "String": "登入 Facebook"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_DESCRIPTION",
+      "String": "請注意，Furistas 已取消通過 Facebook 登錄的選項。如果您不小心退出登錄，仍可以通過復原菜單在此設備上恢復您的遊戲，然而，如果您希望保護您的數據，請通過主選單註冊 Runaway 登錄帳戶，點擊登錄，然後註冊。\n如有任何問題，請通過 support@runaway.zendesk.com 聯繫我們。"
+    }
+  ]
+}

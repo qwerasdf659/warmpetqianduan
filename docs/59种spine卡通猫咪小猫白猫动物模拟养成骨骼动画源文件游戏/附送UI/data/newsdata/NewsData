@@ -1,0 +1,417 @@
+{
+  "Items": [
+    {
+      "ID": "NEWS_001",
+      "IsActive": false,
+      "DateProxy": 1538343452,
+      "ExpiryProxy": 1540935452,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/NewsUpdate1500.png",
+      "ButtonActive": false,
+      "ButtonText": "Go to Page",
+      "ButtonURL": "http://onelink.to/furistasgame",
+      "Title": "New Update",
+      "Body": "This update allows you to customize your walls, and take a snapshot of your entire cafe! Also a bunch of new 'cute'-themed furniture, and this News Page!",
+      "English": {
+        "Title": "New Update",
+        "Body": "This update allows you to customize your walls, and take a snapshot of your entire cafe! Also a bunch of new 'cute'-themed furniture, and this News Page!",
+        "ButtonText": "Go to Page"
+      },
+      "Spanish": {
+        "Title": "Nueva actualización",
+        "Body": "¡Esta actualización le permite personalizar sus paredes y tomar una instantánea de todo su café! ¡También un montón de nuevos muebles con temática 'lindo', y esta página de noticias!",
+        "ButtonText": "Ir a la página"
+      },
+      "French": {
+        "Title": "Nouvelle mise à jour",
+        "Body": "Cette mise à jour vous permet de personnaliser vos murs et de prendre un instantané de votre café entier! Aussi un tas de nouveaux meubles sur le thème de «mignon», et cette page de nouvelles!",
+        "ButtonText": "Aller à la page"
+      },
+      "Portugese": {},
+      "Italian": {},
+      "German": {},
+      "ChineseSimplified": {
+        "Title": "新更新",
+        "Body": "此更新使您可以自定义墙壁，并拍摄整个咖啡馆的快照！还有一堆新的“可爱”主题家具，以及此新闻页面！",
+        "ButtonText": "转到页面"
+      },
+      "ChineseTraditional": {
+        "Title": "新更新",
+        "Body": "此更新使您可以自定義牆壁，並拍攝整個咖啡館的快照！還有一堆新的“可愛”主題家具，以及此新聞頁面！",
+        "ButtonText": "轉到頁面"
+      },
+      "Dutch": {
+        "Title": "Nieuwe update",
+        "Body": "Met deze update kunt u uw muren aanpassen en een momentopname van uw hele café maken! Ook een stel nieuwe meubels met schattige 'thema, en deze nieuwspagina!",
+        "ButtonText": "Ga naar pagina"
+      },
+      "Vietnamese": {
+        "Title": "Cập nhật mới",
+        "Body": "Bản cập nhật này cho phép bạn tùy chỉnh các bức tường của mình và chụp ảnh toàn bộ quán cà phê của bạn! Cũng là một loạt các đồ nội thất mới 'dễ thương', và trang tin tức này!",
+        "ButtonText": "Đi tới trang"
+      },
+      "Russian": {
+        "Title": "Новое обновление",
+        "Body": "Это обновление позволяет вам настроить стены и сделать снимок всего вашего кафе! Также куча новой мебели «милая» и эта новостная страница!",
+        "ButtonText": "Перейти на страницу"
+      },
+      "Swedish": {},
+      "Danish": {
+        "Title": "Ny opdatering",
+        "Body": "Denne opdatering giver dig mulighed for at tilpasse dine vægge og tage et øjebliksbillede af hele caféen! Også en flok nye møbler 'søde' tema og denne nyhedsside!",
+        "ButtonText": "Gå til side"
+      },
+      "Finnish": {
+        "Title": "Uusi päivitys",
+        "Body": "Tämän päivityksen avulla voit mukauttaa seinät ja ottaa tilannekuvan koko kahvilastasi! Myös joukko uusia 'söpöjä' -teemaisia ​​huonekaluja ja tämä uutissivu!",
+        "ButtonText": "Mene sivulle"
+      },
+      "Norwegian": {
+        "Title": "Ny oppdatering",
+        "Body": "Denne oppdateringen lar deg tilpasse veggene dine, og ta et øyeblikksbilde av hele kafeen din! Også en haug med nye møbler med 'søte, og denne nyhetssiden!",
+        "ButtonText": "Gå til side"
+      },
+      "Turkish": {
+        "Title": "Yeni güncelleme",
+        "Body": "Bu güncelleme, duvarlarınızı özelleştirmenize ve tüm kafenizin anlık görüntüsünü almanıza olanak tanır! Ayrıca bir grup yeni 'sevimli' temalı mobilya ve bu haber sayfası!",
+        "ButtonText": "Sayfaya git"
+      },
+      "Greek": {
+        "Title": "Νέα αναβάθμιση",
+        "Body": "Αυτή η ενημέρωση σάς επιτρέπει να προσαρμόσετε τους τοίχους σας και να πάρετε ένα στιγμιότυπο ολόκληρου του καφέ σας! Επίσης, μια νέα έπιπλα «χαριτωμένου» με θέμα, και αυτή η σελίδα ειδήσεων!",
+        "ButtonText": "Πήγαινε στην σελίδα"
+      },
+      "Indonesian": {
+        "Title": "Pembaruan baru",
+        "Body": "Pembaruan ini memungkinkan Anda untuk menyesuaikan dinding Anda, dan mengambil snapshot dari seluruh kafe Anda! Juga sekelompok furnitur bertema 'lucu' baru, dan halaman berita ini!",
+        "ButtonText": "Buka halaman"
+      },
+      "Thai": {
+        "Title": "อัพเดทใหม่",
+        "Body": "การอัปเดตนี้ช่วยให้คุณสามารถปรับแต่งผนังของคุณและใช้ภาพรวมของร้านกาแฟทั้งหมดของคุณ! นอกจากนี้ยังมีเฟอร์นิเจอร์ที่มีธีม 'น่ารักใหม่และหน้าข่าวนี้!",
+        "ButtonText": "ไปที่หน้า"
+      }
+    },
+    {
+      "ID": "NEWS_002",
+      "IsActive": false,
+      "DateProxy": 1539039057,
+      "ExpiryProxy": 1541631057,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/FursitasMerch1.png",
+      "ButtonActive": true,
+      "ButtonText": "Go to Page",
+      "ButtonURL": "https://furistascatcafe.threadless.com/",
+      "Title": "Cute Kitty Clothes",
+      "Body": "FURISTAS MERCH IS HERE! T-shirts, sweatshirts, phone cases, tote bags and MORE are available on our store.",
+      "English": {
+        "Title": "Cute Kitty Clothes",
+        "Body": "FURISTAS MERCH IS HERE! T-shirts, sweatshirts, phone cases, tote bags and MORE are available on our store.",
+        "ButtonText": "Go to Page"
+      },
+      "Spanish": {
+        "Title": "Mercancías",
+        "Body": "¿Usted ha visto nuestra mercancía oficial?",
+        "ButtonText": "Ir a la página"
+      },
+      "Japanese": {
+        "Title": "商品",
+        "Body": "あなたは私たちの公式商品を見たことがありますか？",
+        "ButtonText": "ページに移動"
+      },
+      "French": {
+        "Title": "Marchandise",
+        "Body": "Avez-vous vu notre marchandise officielle?",
+        "ButtonText": "Aller à la page"
+      },
+      "Portugese": {
+        "Title": "Mercadoria",
+        "Body": "Você já viu nossa mercadoria oficial?",
+        "ButtonText": "Vá para página"
+      },
+      "Italian": {
+        "Title": "Merce",
+        "Body": "Hai visto il nostro merchandise ufficiale?",
+        "ButtonText": "Vai alla pagina"
+      },
+      "German": {
+        "Title": "Waren",
+        "Body": "Haben Sie unsere offizielle Waren gesehen?",
+        "ButtonText": "Gehe zur Seite"
+      },
+      "ChineseSimplified": {
+        "Title": "商品",
+        "Body": "你有没有看到我们的官方商品？",
+        "ButtonText": "转到页面"
+      },
+      "ChineseTraditional": {
+        "Title": "商品",
+        "Body": "你有沒有看到我們的官方商品？",
+        "ButtonText": "轉到頁面"
+      },
+      "Dutch": {
+        "Title": "Handelswaar",
+        "Body": "Heeft u onze officiële merchandise gezien?",
+        "ButtonText": "Ga naar pagina"
+      },
+      "Korean": {
+        "Title": "상품",
+        "Body": "당신은 우리의 공식 상품을 본 적이 있나요?",
+        "ButtonText": "페이지로 이동"
+      },
+      "Vietnamese": {
+        "Title": "Hàng hóa",
+        "Body": "bạn đã thấy hàng hóa chính thức của chúng tôi?",
+        "ButtonText": "Đi đến trang"
+      },
+      "Russian": {
+        "Title": "товар",
+        "Body": "Вы видели наш официальный товар?",
+        "ButtonText": "Перейти к"
+      },
+      "Swedish": {
+        "Title": "Handelsvaror",
+        "Body": "Har du sett vår officiell merchandise?",
+        "ButtonText": "Gå till sidan"
+      },
+      "Danish": {
+        "Title": "Varer",
+        "Body": "Har du set vores officielle merchandise?",
+        "ButtonText": "Gå til side"
+      },
+      "Finnish": {
+        "Title": "kauppatavara",
+        "Body": "Oletko nähnyt virallista kauppatavaraa?",
+        "ButtonText": "Mene sivulle"
+      },
+      "Norwegian": {
+        "Title": "Handelsvarer",
+        "Body": "Har du sett vår offisielle varer?",
+        "ButtonText": "Gå til side"
+      },
+      "Turkish": {
+        "Title": "Mal",
+        "Body": "Eğer resmi mal gördünüz mü?",
+        "ButtonText": "Sayfaya git"
+      },
+      "Greek": {
+        "Title": "Εμπορεύματα",
+        "Body": "Έχετε δει επίσημα προϊόντα μας;",
+        "ButtonText": "Πήγαινε στην σελίδα"
+      },
+      "Indonesian": {
+        "Title": "Barang dagangan",
+        "Body": "Pernahkah Anda melihat merchandise resmi kami?",
+        "ButtonText": "Buka halaman"
+      },
+      "Thai": {
+        "Title": "สินค้า",
+        "Body": "คุณจะได้เห็นสินค้าอย่างเป็นทางการของเราหรือไม่",
+        "ButtonText": "ไปที่หน้า"
+      }
+    },
+    {
+      "ID": "NEWS_003",
+      "IsActive": false,
+      "DateProxy": 1560220800,
+      "ExpiryProxy": 1562812800,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/Starlight-Promo-Banner.png",
+      "ButtonActive": true,
+      "ButtonText": "Play Now",
+      "ButtonURL": "http://onelink.to/starlightgame",
+      "Title": "Flutter: Starlight",
+      "Body": "If you haven't had a chance already, check out our sister game, Flutter: Starlight. Collect and raise beautiful moths through their lifecycle as you relax in the magic of nature in this calming game. From the creators of popular Flutter: Butterfly Sanctuary, now you can grow your very own rainforest in the magical moonlit Amazon.",
+      "English": {
+        "Title": "Flutter: Starlight",
+        "Body": "If you haven't had a chance already, check out our sister game, Flutter: Starlight. Collect and raise beautiful moths through their lifecycle as you relax in the magic of nature in this calming game. From the creators of popular Flutter: Butterfly Sanctuary, now you can grow your very own rainforest in the magical moonlit Amazon.",
+        "ButtonText": "Play Now"
+      },
+      "Spanish": {
+        "Title": "Flutter: Starlight",
+        "Body": "Los creadores de Flutter te regalan una aventura nueva e increíble en el bosque tropical. Disfruta el brillo de las estrellas durante el ciclo de la luna. Mira cómo nacen las flores bajo la luz de las luciérnagas. Descubrirás que las polillas son tan lindas como cualquier mariposa.",
+        "ButtonText": "ABRIR"
+      },
+      "Japanese": {
+        "Title": "フラッター:スターライト",
+        "Body": "最高の蛾のゲーム！！！この心落ち着くゲームの自然の魅力でリラックスしながら、ライフサイクルを通してきれいな蛾達を集めて育てよう。人気のフラッターのクリエイターより:蝶の保護区、魅力的な月明かりのアマゾンで自分だけの熱帯雨林を育てることができます。",
+        "ButtonText": "開ける"
+      },
+      "French": {
+        "Title": "Flutter: Starlight",
+        "Body": "Le meilleur jeu sur les papillons de nuit ! Collectez et élevez de magnifiques papillons de nuit tout au long de leur cycle de vie en vous relaxant au son de la nature dans ce jeu apaisant. Par les créateurs du célèbre Flutter: Butterfly Sanctuary. Vous pouvez désormais faire pousser votre propre forêt tropicale sous le clair de lune magique de l'Amazonie.",
+        "ButtonText": "OUVRIR"
+      },
+      "German": {
+        "Title": "Flutter: Starlight",
+        "Body": "Die Macher von Flutter bringen dir ein wunderschönes NEUES Regenwaldabenteuer. Schau, wie die Sterne funkeln, während der Mond sich durch seine Phasen bewegt. Sieh, wie die Blumen blühen, während ein Glühwürmchen den Wald erhellt. Du wirst sehen, dass Motten genauso schön sind wie jeder Schmetterling!",
+        "ButtonText": "ÖFFNEN"
+      },
+      "ChineseSimplified": {
+        "Title": "彩翼之星夜",
+        "Body": "系列制作团队为您带来一个全新的梦幻热带雨林冒险。随着月相的变幻，观赏星月交辉的星空。随着萤火虫照亮森林，观赏百花绽放的美景。您会发现到比起蝴蝶的美丽迷人，飞蛾也毫不逊色！",
+        "ButtonText": "打开"
+      }
+    },
+    {
+      "ID": "NEWS_004",
+      "IsActive": false,
+      "DateProxy": 1542063601,
+      "ExpiryProxy": 1544655601,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/NewsUpdate1500.png",
+      "ButtonActive": true,
+      "ButtonText": "Visit NSALA",
+      "ButtonURL": "https://www.animalleague.org/",
+      "Title": "NSALA Partnership Announcement",
+      "Body": "We have a very cool announcement!\\n\\nWe’re very excited to be supporting an amazing charity looking after all kinds of animals, big and small. We are partnering with North Shore Animal League America for a very special in game event, coming later in the month!\\n\\nAs well as the upcoming event, Possum, a real life rescue kitty from North Shore Animal League America, is available to adopt from the Shop! For every ‘Possum’ adopted, we will be donating to NSALA!\\n\\nCheck out more on their website and if you can, donate to: https://www.animalleague.org/",
+      "English": {
+        "Title": "NSALA Partnership Announcement",
+        "Body": "We have a very cool announcement!\n\nWe’re very excited to be supporting an amazing charity looking after all kinds of animals, big and small. We are partnering with North Shore Animal League America for a very special in game event, coming later in the month!\n\nAs well as the upcoming event, Possum, a real life rescue kitty from North Shore Animal League America, is available to adopt from the Shop! For every ‘Possum’ adopted, we will be donating to NSALA!\n\nCheck out more on their website and if you can, donate to: https://www.animalleague.org/",
+        "ButtonText": "Visit NSALA"
+      },
+      "German": {
+        "Title": "Flutter: Starlight",
+        "Body": "Die Macher von Flutter bringen dir ein wunderschönes NEUES Regenwaldabenteuer. Schau, wie die Sterne funkeln, während der Mond sich durch seine Phasen bewegt. Sieh, wie die Blumen blühen, während ein Glühwürmchen den Wald erhellt. Du wirst sehen, dass Motten genauso schön sind wie jeder Schmetterling!",
+        "ButtonText": "ÖFFNEN"
+      },
+      "ChineseSimplified": {
+        "Title": "彩翼之星夜",
+        "Body": "系列制作团队为您带来一个全新的梦幻热带雨林冒险。随着月相的变幻，观赏星月交辉的星空。随着萤火虫照亮森林，观赏百花绽放的美景。您会发现到比起蝴蝶的美丽迷人，飞蛾也毫不逊色！",
+        "ButtonText": "打开"
+      }
+    },
+    {
+      "ID": "NEWS_005",
+      "IsActive": false,
+      "DateProxy": 1552533860,
+      "ExpiryProxy": 1555125860,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/StPatrick.jpg",
+      "ButtonActive": false,
+      "ButtonText": "-",
+      "ButtonURL": "-",
+      "Title": "Event Extended",
+      "Body": "Hi Folks! Many players were unable to play Furistas for 9 hours due to the global Facebook outage, so we've extended the event by 12 hours. If you are still having issues logging into to your cafe, please contact our Support team and they'll get you back with your kitties asap. Thanks!",
+      "English": {
+        "Title": "Event Extended",
+        "Body": "Hi Folks! Many players were unable to play Furistas for 9 hours due to the global Facebook outage, so we've extended the event by 12 hours. If you are still having issues logging into to your cafe, please contact our Support team and they'll get you back with your kitties asap. Thanks!",
+        "ButtonText": "-"
+      }
+    },
+    {
+      "ID": "NEWS_006",
+      "IsActive": false,
+      "DateProxy": 1563234027,
+      "ExpiryProxy": 1565826027,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/WilfordSmall.jpg",
+      "ButtonActive": false,
+      "ButtonText": "-",
+      "ButtonURL": "-",
+      "Title": "Event Extended",
+      "Body": "Hi Folks! With the release of Offline Mode, we've noticed that players with intermittent internet connections may have experienced some loss of progress. We believe this is fixed in the latest release (version 1.917) so we recommend you update as soon as possible. We've extended the event by 2 days to give you plenty of time to adopt Wilford! If you are still having issues, please contact our Support team and they'll get you back with your kitties asap. Thanks!",
+      "English": {
+        "Title": "Event Extended",
+        "Body": "Hi Folks! With the release of Offline Mode, we've noticed that players with intermittent internet connections may have experienced some loss of progress. We believe this is fixed in the latest release (version 1.917) so we recommend you update as soon as possible. We've extended the event by 2 days to give you plenty of time to adopt Wilford! If you are still having issues, please contact our Support team and they'll get you back with your kitties asap. Thanks!",
+        "ButtonText": "-"
+      }
+    },
+    {
+      "ID": "NEWS_007",
+      "IsActive": false,
+      "DateProxy": 1580336001,
+      "ExpiryProxy": 1582928001,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/BirdBnB.jpg",
+      "ButtonActive": true,
+      "ButtonText": "Play Now!",
+      "ButtonURL": "http://onelink.to/playbirdbnb",
+      "Title": "Bird BnB",
+      "Body": "We are proud to announce the release of our new game, Bird BnB!\\n\\nHave you ever dreamed of getting away from the daily grind, maybe even owning your own Bed and Breakfast? Get crafting, design your B&B, nurture quirky guests and earn 5 star ratings. As your rating goes up you unlock more rooms and attract more visitors! \\n\\nYou can also switch into AR (Augmented Reality) and see your feathered friends appear in your own home!",
+      "English": {
+        "Title": "Bird BnB",
+        "Body": "We are proud to announce the release of our new game, Bird BnB!\n\nHave you ever dreamed of getting away from the daily grind, maybe even owning your own Bed and Breakfast? Get crafting, design your B&B, nurture quirky guests and earn 5 star ratings. As your rating goes up you unlock more rooms and attract more visitors! \n\nYou can also switch into AR (Augmented Reality) and see your feathered friends appear in your own home!",
+        "ButtonText": "Play Now!"
+      }
+    },
+    {
+      "ID": "NEWS_008",
+      "IsActive": false,
+      "DateProxy": 1580336002,
+      "ExpiryProxy": 1582928002,
+      "Image": "https://s3-us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/FeatureArt_OldFriends.png",
+      "ButtonActive": true,
+      "ButtonText": "Play Now!",
+      "ButtonURL": "http://onelink.to/oldfriendsgame",
+      "Title": "Old Friends Dog Game",
+      "Body": "We are proud to announce the release of Old Friends Dog Game - a story game about friendship for people who love dogs.\\n\\nBuild your own dog sanctuary! Rescue and rehabilitate senior dogs, spend your days giving them care and love. Discover the wonderful personality of each dog as you cater to their needs every day. Play with them, give them cuddles and see their trust in you grow.\\n\\nBased on the REAL LIFE senior dog sanctuary: Old Friends Senior Dog Sanctuary, this game stresses the lovable nature of every dog, no matter the age or personality.\\n\\nIf you love story games or love dogs, this is a game for you. We hope you love spending time in your very own dog sanctuary, where love never grows old.",
+      "English": {
+        "Title": "Old Friends Dog Game",
+        "Body": "We are proud to announce the release of Old Friends Dog Game - a story game about friendship for people who love dogs.\n\nBuild your own dog sanctuary! Rescue and rehabilitate senior dogs, spend your days giving them care and love. Discover the wonderful personality of each dog as you cater to their needs every day. Play with them, give them cuddles and see their trust in you grow.\n\nBased on the REAL LIFE senior dog sanctuary: Old Friends Senior Dog Sanctuary, this game stresses the lovable nature of every dog, no matter the age or personality.\n\nIf you love story games or love dogs, this is a game for you. We hope you love spending time in your very own dog sanctuary, where love never grows old.",
+        "ButtonText": "Play Now!"
+      }
+    },
+    {
+      "ID": "NEWS_009",
+      "IsActive": true,
+      "DateProxy": 1658402575,
+      "ExpiryProxy": 1660994575,
+      "Image": "https://s3.us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/Furistas+TikTok+Promo.png",
+      "ButtonActive": true,
+      "ButtonText": "Follow!",
+      "ButtonURL": "https://www.tiktok.com/@runaway.games",
+      "Title": "Follow us on TikTok",
+      "Body": "Hey Furistas players, it's about time we told you about our TikTok runaway.games! We've been enjoying posting there regularly, and we'd love to see you there.",
+      "English": {
+        "Title": "Follow us on TikTok",
+        "Body": "Hey Furistas players, it's about time we told you about our TikTok runaway.games! We've been enjoying posting there regularly, and we'd love to see you there.",
+        "ButtonText": "Follow!"
+      }
+    },
+    {
+      "ID": "NEWS_010",
+      "IsActive": false,
+      "DateProxy": 1664242989,
+      "ExpiryProxy": 1664416800,
+      "Image": "https://s3.us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/maintenance_unity_ingame_sep2022.png",
+      "ButtonActive": false,
+      "ButtonText": "-",
+      "ButtonURL": "-",
+      "Title": "Maintenance Update",
+      "Body": "Hey everyone! We just wanted to give you all a heads-up that our servers are going to be down for maintenance on September 28th from 5 pm to 7 pm PDT. The game will be unplayable during this time, but don’t worry! Once the maintenance period is over you’ll be reunited with your furry friends once more!",
+      "English": {
+        "Title": "Maintenance Update",
+        "Body": "Hey everyone! We just wanted to give you all a heads-up that our servers are going to be down for maintenance on September 28th from 5 pm to 7 pm PDT. The game will be unplayable during this time, but don’t worry! Once the maintenance period is over you’ll be reunited with your furry friends once more!",
+        "ButtonText": "-"
+      }
+    },
+    {
+      "ID": "NEWS_011",
+      "IsActive": true,
+      "DateProxy": 1687132940,
+      "ExpiryProxy": 1689724800,
+      "Image": "https://s3.us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/New+update.png",
+      "ButtonActive": false,
+      "ButtonText": "-",
+      "ButtonURL": "-",
+      "Title": "New Update!",
+      "Body": "Hi everyone! A new update is available now, and it brings some changes to the in-game support system! To get in touch with our support team, tap the settings icon in the top right corner of your screen, tap ‘help’, and then tap the ‘create a conversation’ button. If you can’t find the button you’re looking for, you can also email us anytime at support@runaway.zendesk.com!",
+      "English": {
+        "Title": "New Update!",
+        "Body": "Hi everyone! A new update is available now, and it brings some changes to the in-game support system! To get in touch with our support team, tap the settings icon in the top right corner of your screen, tap ‘help’, and then tap the ‘create a conversation’ button. If you can’t find the button you’re looking for, you can also email us anytime at support@runaway.zendesk.com!",
+        "ButtonText": "-"
+      }
+    },
+    {
+      "ID": "NEWS_012",
+      "IsActive": true,
+      "DateProxy": 1704838655,
+      "ExpiryProxy": 1711404000,
+      "Image": "https://s3.us-west-2.amazonaws.com/cdn.runawayplay.com/furistasdlc/news/bunnyhaven-prereg_900x506.png",
+      "ButtonActive": true,
+      "ButtonText": "Pre-register Now!",
+      "ButtonURL": "https://onelink.to/runawaybunnyhaven",
+      "Title": "Pre-register for Bunny Haven!",
+      "Body": "We’re kicking off the new year with some HUGE NEWS! Our upcoming game, Bunny Haven is now open for pre-registration on iOS and Android! Step into this irresistibly cute bunny game, where you take the reins of a bunny rescue sanctuary.  Coming March 2024!  As indie developers, pre-registration numbers make a huge difference on how visible (and successful) a game is. Pre-register now to support us and our work!",
+      "English": {
+        "Title": "Pre-register for Bunny Haven!",
+        "Body": "We’re kicking off the new year with some HUGE NEWS! Our upcoming game, Bunny Haven is now open for pre-registration on iOS and Android! Step into this irresistibly cute bunny game, where you take the reins of a bunny rescue sanctuary.  Coming March 2024!  As indie developers, pre-registration numbers make a huge difference on how visible (and successful) a game is. Pre-register now to support us and our work!",
+        "ButtonText": "Pre-register Now!"
+      }
+    }
+  ]
+}

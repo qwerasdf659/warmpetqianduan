@@ -1,0 +1,34 @@
+
+FURN_394.png
+size: 569,389
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FURN_394_Base
+  rotate: true
+  xy: 2, 2
+  size: 385, 434
+  orig: 385, 434
+  offset: 0, 0
+  index: -1
+FURN_394_GreenYarn
+  rotate: false
+  xy: 492, 50
+  size: 40, 134
+  orig: 40, 134
+  offset: 0, 0
+  index: -1
+FURN_394_PinkYarn
+  rotate: false
+  xy: 438, 8
+  size: 52, 176
+  orig: 52, 176
+  offset: 0, 0
+  index: -1
+FURN_394_Top
+  rotate: true
+  xy: 438, 186
+  size: 201, 129
+  orig: 201, 129
+  offset: 0, 0
+  index: -1

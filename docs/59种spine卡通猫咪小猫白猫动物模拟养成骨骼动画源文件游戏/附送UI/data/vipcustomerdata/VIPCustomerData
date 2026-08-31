@@ -1,0 +1,676 @@
+{
+  "Items": [
+    {
+      "ID": "VIP_001",
+      "Name": "VIP_NAME_001",
+      "Description1": "VIP_001_DESCRIPTION_1",
+      "Description2": "VIP_001_DESCRIPTION_2",
+      "Description3": "VIP_001_DESCRIPTION_3",
+      "Description4": "VIP_001_DESCRIPTION_4",
+      "DesiredTrait1": 0,
+      "DesiredTrait2": 1,
+      "DesiredTrait3": 2,
+      "DesiredTrait4": 4,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "198"
+        },
+        {
+          "PartID": "69"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "106"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "204"
+        },
+        {
+          "PartID": "210"
+        },
+        {
+          "PartID": "207"
+        },
+        {
+          "PartID": "212"
+        }
+      ],
+      "IsMale": false,
+      "Age": 22,
+      "OccupationID": "VIP_OCCUPATION_001",
+      "LevelUnlocked": 5
+    },
+    {
+      "ID": "VIP_005",
+      "Name": "VIP_NAME_005",
+      "Description1": "VIP_005_DESCRIPTION_1",
+      "Description2": "VIP_005_DESCRIPTION_2",
+      "Description3": "VIP_005_DESCRIPTION_3",
+      "Description4": "VIP_005_DESCRIPTION_4",
+      "DesiredTrait1": 3,
+      "DesiredTrait2": 0,
+      "DesiredTrait3": 1,
+      "DesiredTrait4": 2,
+      "Parts": [
+        {
+          "PartID": "4"
+        },
+        {
+          "PartID": "48"
+        },
+        {
+          "PartID": "98"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "243"
+        },
+        {
+          "PartID": "265"
+        },
+        {
+          "PartID": "154"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "264"
+        }
+      ],
+      "IsMale": true,
+      "Age": 27,
+      "OccupationID": "VIP_OCCUPATION_005",
+      "LevelUnlocked": 13
+    },
+    {
+      "ID": "VIP_003",
+      "Name": "VIP_NAME_003",
+      "Description1": "VIP_003_DESCRIPTION_1",
+      "Description2": "VIP_003_DESCRIPTION_2",
+      "Description3": "VIP_003_DESCRIPTION_3",
+      "Description4": "VIP_003_DESCRIPTION_4",
+      "DesiredTrait1": 4,
+      "DesiredTrait2": 5,
+      "DesiredTrait3": 0,
+      "DesiredTrait4": 2,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "200"
+        },
+        {
+          "PartID": "69"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "105"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "206"
+        },
+        {
+          "PartID": "203"
+        },
+        {
+          "PartID": "209"
+        },
+        {
+          "PartID": "214"
+        },
+        {
+          "PartID": "202"
+        }
+      ],
+      "IsMale": false,
+      "Age": 20,
+      "OccupationID": "VIP_OCCUPATION_003",
+      "LevelUnlocked": 17
+    },
+    {
+      "ID": "VIP_004",
+      "Name": "VIP_NAME_004",
+      "Description1": "VIP_004_DESCRIPTION_1",
+      "Description2": "VIP_004_DESCRIPTION_2",
+      "Description3": "VIP_004_DESCRIPTION_3",
+      "Description4": "VIP_004_DESCRIPTION_4",
+      "DesiredTrait1": 5,
+      "DesiredTrait2": 0,
+      "DesiredTrait3": 2,
+      "DesiredTrait4": 6,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "261"
+        },
+        {
+          "PartID": "97"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "262"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "166"
+        },
+        {
+          "PartID": "260"
+        },
+        {
+          "PartID": "193"
+        },
+        {
+          "PartID": "188"
+        }
+      ],
+      "IsMale": true,
+      "Age": 25,
+      "OccupationID": "VIP_OCCUPATION_004",
+      "LevelUnlocked": 21
+    },
+    {
+      "ID": "VIP_011",
+      "Name": "VIP_NAME_011",
+      "Description1": "VIP_011_DESCRIPTION_1",
+      "Description2": "VIP_011_DESCRIPTION_2",
+      "Description3": "VIP_011_DESCRIPTION_3",
+      "Description4": "VIP_011_DESCRIPTION_4",
+      "DesiredTrait1": 2,
+      "DesiredTrait2": 5,
+      "DesiredTrait3": 0,
+      "DesiredTrait4": 1,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "394"
+        },
+        {
+          "PartID": "85"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "396"
+        },
+        {
+          "PartID": "305"
+        },
+        {
+          "PartID": "300"
+        },
+        {
+          "PartID": "310"
+        },
+        {
+          "PartID": "388"
+        },
+        {
+          "PartID": "395"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": true,
+      "Age": 29,
+      "OccupationID": "VIP_OCCUPATION_011",
+      "LevelUnlocked": 25
+    },
+    {
+      "ID": "VIP_002",
+      "Name": "VIP_NAME_002",
+      "Description1": "VIP_002_DESCRIPTION_1",
+      "Description2": "VIP_002_DESCRIPTION_2",
+      "Description3": "VIP_002_DESCRIPTION_3",
+      "Description4": "VIP_002_DESCRIPTION_4",
+      "DesiredTrait1": 6,
+      "DesiredTrait2": 3,
+      "DesiredTrait3": 2,
+      "DesiredTrait4": 5,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "199"
+        },
+        {
+          "PartID": "74"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "105"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "205"
+        },
+        {
+          "PartID": "211"
+        },
+        {
+          "PartID": "208"
+        },
+        {
+          "PartID": "170"
+        },
+        {
+          "PartID": "201"
+        }
+      ],
+      "IsMale": false,
+      "Age": 23,
+      "OccupationID": "VIP_OCCUPATION_002",
+      "LevelUnlocked": 29
+    },
+    {
+      "ID": "VIP_012",
+      "Name": "VIP_NAME_012",
+      "Description1": "VIP_012_DESCRIPTION_1",
+      "Description2": "VIP_012_DESCRIPTION_2",
+      "Description3": "VIP_012_DESCRIPTION_3",
+      "Description4": "VIP_012_DESCRIPTION_4",
+      "DesiredTrait1": 3,
+      "DesiredTrait2": 2,
+      "DesiredTrait3": 4,
+      "DesiredTrait4": 6,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "296"
+        },
+        {
+          "PartID": "69"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "307"
+        },
+        {
+          "PartID": "312"
+        },
+        {
+          "PartID": "311"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": false,
+      "Age": 30,
+      "OccupationID": "VIP_OCCUPATION_012",
+      "LevelUnlocked": 33
+    },
+    {
+      "ID": "VIP_008",
+      "Name": "VIP_NAME_008",
+      "Description1": "VIP_008_DESCRIPTION_1",
+      "Description2": "VIP_008_DESCRIPTION_2",
+      "Description3": "VIP_008_DESCRIPTION_3",
+      "Description4": "VIP_008_DESCRIPTION_4",
+      "DesiredTrait1": 0,
+      "DesiredTrait2": 7,
+      "DesiredTrait3": 5,
+      "DesiredTrait4": 9,
+      "Parts": [
+        {
+          "PartID": "4"
+        },
+        {
+          "PartID": "293"
+        },
+        {
+          "PartID": "75"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "390"
+        },
+        {
+          "PartID": "303"
+        },
+        {
+          "PartID": "298"
+        },
+        {
+          "PartID": "309"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": false,
+      "Age": 31,
+      "OccupationID": "VIP_OCCUPATION_008",
+      "LevelUnlocked": 35
+    },
+    {
+      "ID": "VIP_006",
+      "Name": "VIP_NAME_006",
+      "Description1": "VIP_006_DESCRIPTION_1",
+      "Description2": "VIP_006_DESCRIPTION_2",
+      "Description3": "VIP_006_DESCRIPTION_3",
+      "Description4": "VIP_006_DESCRIPTION_4",
+      "DesiredTrait1": 7,
+      "DesiredTrait2": 4,
+      "DesiredTrait3": 1,
+      "DesiredTrait4": 5,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "20"
+        },
+        {
+          "PartID": "268"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "106"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "266"
+        },
+        {
+          "PartID": "150"
+        },
+        {
+          "PartID": "159"
+        },
+        {
+          "PartID": "186"
+        }
+      ],
+      "IsMale": false,
+      "Age": 27,
+      "OccupationID": "VIP_OCCUPATION_006",
+      "LevelUnlocked": 38
+    },
+    {
+      "ID": "VIP_010",
+      "Name": "VIP_NAME_010",
+      "Description1": "VIP_010_DESCRIPTION_1",
+      "Description2": "VIP_010_DESCRIPTION_2",
+      "Description3": "VIP_010_DESCRIPTION_3",
+      "Description4": "VIP_010_DESCRIPTION_4",
+      "DesiredTrait1": 7,
+      "DesiredTrait2": 9,
+      "DesiredTrait3": 10,
+      "DesiredTrait4": 6,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "294"
+        },
+        {
+          "PartID": "85"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "382"
+        },
+        {
+          "PartID": "304"
+        },
+        {
+          "PartID": "299"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "171"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": true,
+      "Age": 23,
+      "OccupationID": "VIP_OCCUPATION_010",
+      "LevelUnlocked": 42
+    },
+    {
+      "ID": "VIP_009",
+      "Name": "VIP_NAME_009",
+      "Description1": "VIP_009_DESCRIPTION_1",
+      "Description2": "VIP_009_DESCRIPTION_2",
+      "Description3": "VIP_009_DESCRIPTION_3",
+      "Description4": "VIP_009_DESCRIPTION_4",
+      "DesiredTrait1": 6,
+      "DesiredTrait2": 1,
+      "DesiredTrait3": 8,
+      "DesiredTrait4": 10,
+      "Parts": [
+        {
+          "PartID": "2"
+        },
+        {
+          "PartID": "295"
+        },
+        {
+          "PartID": "85"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "289"
+        },
+        {
+          "PartID": "306"
+        },
+        {
+          "PartID": "148"
+        },
+        {
+          "PartID": "165"
+        },
+        {
+          "PartID": "171"
+        },
+        {
+          "PartID": "185"
+        },
+        {
+          "PartID": "387"
+        },
+        {
+          "PartID": "189"
+        },
+        {
+          "PartID": "246"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": true,
+      "Age": 28,
+      "OccupationID": "VIP_OCCUPATION_009",
+      "LevelUnlocked": 46
+    },
+    {
+      "ID": "VIP_007",
+      "Name": "VIP_NAME_007",
+      "Description1": "VIP_007_DESCRIPTION_1",
+      "Description2": "VIP_007_DESCRIPTION_2",
+      "Description3": "VIP_007_DESCRIPTION_3",
+      "Description4": "VIP_007_DESCRIPTION_4",
+      "DesiredTrait1": 5,
+      "DesiredTrait2": 2,
+      "DesiredTrait3": 4,
+      "DesiredTrait4": 9,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "292"
+        },
+        {
+          "PartID": "78"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "105"
+        },
+        {
+          "PartID": "302"
+        },
+        {
+          "PartID": "297"
+        },
+        {
+          "PartID": "308"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "IsMale": false,
+      "Age": 28,
+      "OccupationID": "VIP_OCCUPATION_007",
+      "LevelUnlocked": 50
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "Items": [
+    {
+      "ID": 1,
+      "Level": 1,
+      "Reward1": "-",
+      "Reward2": "-",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_003",
+      "Reward3Alternate": "-",
+      "XPRequired": 0
+    },
+    {
+      "ID": 2,
+      "Level": 2,
+      "Reward1": "HC:5",
+      "Reward2": "SC:20",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_001",
+      "Reward3Alternate": "Tokens:20",
+      "XPRequired": 120
+    },
+    {
+      "ID": 3,
+      "Level": 3,
+      "Reward1": "HC:5",
+      "Reward2": "SC:30",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_002",
+      "Reward3Alternate": "Tokens:30",
+      "XPRequired": 280
+    },
+    {
+      "ID": 4,
+      "Level": 4,
+      "Reward1": "HC:5",
+      "Reward2": "SC:40",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_004",
+      "Reward3Alternate": "Tokens:40",
+      "XPRequired": 290
+    },
+    {
+      "ID": 5,
+      "Level": 5,
+      "Reward1": "HC:5",
+      "Reward2": "SC:50",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_001",
+      "Reward3Alternate": "Tokens:50",
+      "XPRequired": 300
+    },
+    {
+      "ID": 6,
+      "Level": 6,
+      "Reward1": "HC:5",
+      "Reward2": "SC:60",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_005",
+      "Reward3Alternate": "Tokens:60",
+      "XPRequired": 380
+    },
+    {
+      "ID": 7,
+      "Level": 7,
+      "Reward1": "HC:5",
+      "Reward2": "SC:70",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_3",
+      "Reward3Alternate": "Tokens:70",
+      "XPRequired": 420
+    },
+    {
+      "ID": 8,
+      "Level": 8,
+      "Reward1": "HC:5",
+      "Reward2": "SC:80",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_006",
+      "Reward3Alternate": "Tokens:80",
+      "XPRequired": 440
+    },
+    {
+      "ID": 9,
+      "Level": 9,
+      "Reward1": "HC:5",
+      "Reward2": "SC:90",
+      "Reward3Type": "CAT_LOUNGE",
+      "Reward3ID": "STATION_001",
+      "Reward3Alternate": "Tokens:90",
+      "XPRequired": 510
+    },
+    {
+      "ID": 10,
+      "Level": 10,
+      "Reward1": "HC:5",
+      "Reward2": "SC:100",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_018",
+      "Reward3Alternate": "Tokens:100",
+      "XPRequired": 640
+    },
+    {
+      "ID": 11,
+      "Level": 11,
+      "Reward1": "HC:5",
+      "Reward2": "SC:110",
+      "Reward3Type": "STATION",
+      "Reward3ID": "STATION_002",
+      "Reward3Alternate": "Tokens:110",
+      "XPRequired": 680
+    },
+    {
+      "ID": 12,
+      "Level": 12,
+      "Reward1": "HC:5",
+      "Reward2": "SC:120",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_010",
+      "Reward3Alternate": "Tokens:120",
+      "XPRequired": 660
+    },
+    {
+      "ID": 13,
+      "Level": 13,
+      "Reward1": "HC:5",
+      "Reward2": "SC:130",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_005",
+      "Reward3Alternate": "Tokens:130",
+      "XPRequired": 680
+    },
+    {
+      "ID": 14,
+      "Level": 14,
+      "Reward1": "HC:5",
+      "Reward2": "SC:140",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_013",
+      "Reward3Alternate": "Tokens:140",
+      "XPRequired": 690
+    },
+    {
+      "ID": 15,
+      "Level": 15,
+      "Reward1": "HC:5",
+      "Reward2": "SC:150",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_4",
+      "Reward3Alternate": "Tokens:150",
+      "XPRequired": 780
+    },
+    {
+      "ID": 16,
+      "Level": 16,
+      "Reward1": "HC:10",
+      "Reward2": "SC:160",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_024",
+      "Reward3Alternate": "Tokens:160",
+      "XPRequired": 980
+    },
+    {
+      "ID": 17,
+      "Level": 17,
+      "Reward1": "HC:10",
+      "Reward2": "SC:170",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_003",
+      "Reward3Alternate": "Tokens:170",
+      "XPRequired": 1180
+    },
+    {
+      "ID": 18,
+      "Level": 18,
+      "Reward1": "HC:10",
+      "Reward2": "SC:180",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_008",
+      "Reward3Alternate": "Tokens:180",
+      "XPRequired": 1480
+    },
+    {
+      "ID": 19,
+      "Level": 19,
+      "Reward1": "HC:10",
+      "Reward2": "SC:190",
+      "Reward3Type": "STATION",
+      "Reward3ID": "STATION_003",
+      "Reward3Alternate": "Tokens:190",
+      "XPRequired": 1670
+    },
+    {
+      "ID": 20,
+      "Level": 20,
+      "Reward1": "HC:10",
+      "Reward2": "SC:200",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_011",
+      "Reward3Alternate": "Tokens:200",
+      "XPRequired": 1880
+    },
+    {
+      "ID": 21,
+      "Level": 21,
+      "Reward1": "HC:10",
+      "Reward2": "SC:210",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_004",
+      "Reward3Alternate": "Tokens:210",
+      "XPRequired": 2080
+    },
+    {
+      "ID": 22,
+      "Level": 22,
+      "Reward1": "HC:10",
+      "Reward2": "SC:220",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_016",
+      "Reward3Alternate": "Tokens:220",
+      "XPRequired": 2320
+    },
+    {
+      "ID": 23,
+      "Level": 23,
+      "Reward1": "HC:10",
+      "Reward2": "SC:230",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_5",
+      "Reward3Alternate": "Tokens:230",
+      "XPRequired": 2620
+    },
+    {
+      "ID": 24,
+      "Level": 24,
+      "Reward1": "HC:10",
+      "Reward2": "SC:240",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_036",
+      "Reward3Alternate": "Tokens:240",
+      "XPRequired": 2830
+    },
+    {
+      "ID": 25,
+      "Level": 25,
+      "Reward1": "HC:10",
+      "Reward2": "SC:250",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_011",
+      "Reward3Alternate": "Tokens:250",
+      "XPRequired": 3040
+    },
+    {
+      "ID": 26,
+      "Level": 26,
+      "Reward1": "HC:10",
+      "Reward2": "SC:260",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_015",
+      "Reward3Alternate": "Tokens:260",
+      "XPRequired": 3360
+    },
+    {
+      "ID": 27,
+      "Level": 27,
+      "Reward1": "HC:10",
+      "Reward2": "SC:270",
+      "Reward3Type": "STATION",
+      "Reward3ID": "STATION_004",
+      "Reward3Alternate": "Tokens:270",
+      "XPRequired": 3460
+    },
+    {
+      "ID": 28,
+      "Level": 28,
+      "Reward1": "HC:10",
+      "Reward2": "SC:280",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_017",
+      "Reward3Alternate": "Tokens:280",
+      "XPRequired": 3780
+    },
+    {
+      "ID": 29,
+      "Level": 29,
+      "Reward1": "HC:10",
+      "Reward2": "SC:290",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_002",
+      "Reward3Alternate": "Tokens:290",
+      "XPRequired": 4090
+    },
+    {
+      "ID": 30,
+      "Level": 30,
+      "Reward1": "HC:10",
+      "Reward2": "SC:300",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_023",
+      "Reward3Alternate": "Tokens:300",
+      "XPRequired": 4210
+    },
+    {
+      "ID": 31,
+      "Level": 31,
+      "Reward1": "HC:15",
+      "Reward2": "SC:310",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_6",
+      "Reward3Alternate": "Tokens:310",
+      "XPRequired": 4520
+    },
+    {
+      "ID": 32,
+      "Level": 32,
+      "Reward1": "HC:15",
+      "Reward2": "SC:320",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_007",
+      "Reward3Alternate": "Tokens:320",
+      "XPRequired": 4640
+    },
+    {
+      "ID": 33,
+      "Level": 33,
+      "Reward1": "HC:15",
+      "Reward2": "SC:330",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_012",
+      "Reward3Alternate": "Tokens:330",
+      "XPRequired": 5060
+    },
+    {
+      "ID": 34,
+      "Level": 34,
+      "Reward1": "HC:15",
+      "Reward2": "SC:340",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_019",
+      "Reward3Alternate": "Tokens:340",
+      "XPRequired": 5290
+    },
+    {
+      "ID": 35,
+      "Level": 35,
+      "Reward1": "HC:15",
+      "Reward2": "SC:350",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_008",
+      "Reward3Alternate": "Tokens:350",
+      "XPRequired": 5600
+    },
+    {
+      "ID": 36,
+      "Level": 36,
+      "Reward1": "HC:15",
+      "Reward2": "SC:360",
+      "Reward3Type": "STATION",
+      "Reward3ID": "STATION_005",
+      "Reward3Alternate": "Tokens:360",
+      "XPRequired": 5710
+    },
+    {
+      "ID": 37,
+      "Level": 37,
+      "Reward1": "HC:15",
+      "Reward2": "SC:370",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_020",
+      "Reward3Alternate": "Tokens:370",
+      "XPRequired": 6060
+    },
+    {
+      "ID": 38,
+      "Level": 38,
+      "Reward1": "HC:15",
+      "Reward2": "SC:380",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_006",
+      "Reward3Alternate": "Tokens:380",
+      "XPRequired": 6380
+    },
+    {
+      "ID": 39,
+      "Level": 39,
+      "Reward1": "HC:15",
+      "Reward2": "SC:390",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_041",
+      "Reward3Alternate": "Tokens:390",
+      "XPRequired": 6520
+    },
+    {
+      "ID": 40,
+      "Level": 40,
+      "Reward1": "HC:15",
+      "Reward2": "SC:400",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_7",
+      "Reward3Alternate": "Tokens:400",
+      "XPRequired": 6840
+    },
+    {
+      "ID": 41,
+      "Level": 41,
+      "Reward1": "HC:15",
+      "Reward2": "SC:410",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_022",
+      "Reward3Alternate": "Tokens:410",
+      "XPRequired": 7090
+    },
+    {
+      "ID": 42,
+      "Level": 42,
+      "Reward1": "HC:15",
+      "Reward2": "SC:420",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_010",
+      "Reward3Alternate": "Tokens:420",
+      "XPRequired": 7310
+    },
+    {
+      "ID": 43,
+      "Level": 43,
+      "Reward1": "HC:15",
+      "Reward2": "SC:430",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_009",
+      "Reward3Alternate": "Tokens:430",
+      "XPRequired": 7840
+    },
+    {
+      "ID": 44,
+      "Level": 44,
+      "Reward1": "HC:15",
+      "Reward2": "SC:440",
+      "Reward3Type": "STATION",
+      "Reward3ID": "STATION_006",
+      "Reward3Alternate": "Tokens:440",
+      "XPRequired": 8060
+    },
+    {
+      "ID": 45,
+      "Level": 45,
+      "Reward1": "HC:15",
+      "Reward2": "SC:450",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_012",
+      "Reward3Alternate": "Tokens:450",
+      "XPRequired": 8330
+    },
+    {
+      "ID": 46,
+      "Level": 46,
+      "Reward1": "HC:20",
+      "Reward2": "SC:460",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_009",
+      "Reward3Alternate": "Tokens:460",
+      "XPRequired": 8550
+    },
+    {
+      "ID": 47,
+      "Level": 47,
+      "Reward1": "HC:20",
+      "Reward2": "SC:470",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_039",
+      "Reward3Alternate": "Tokens:470",
+      "XPRequired": 8820
+    },
+    {
+      "ID": 48,
+      "Level": 48,
+      "Reward1": "HC:20",
+      "Reward2": "SC:480",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_8",
+      "Reward3Alternate": "Tokens:480",
+      "XPRequired": 9160
+    },
+    {
+      "ID": 49,
+      "Level": 49,
+      "Reward1": "HC:20",
+      "Reward2": "SC:490",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_031",
+      "Reward3Alternate": "Tokens:490",
+      "XPRequired": 9440
+    },
+    {
+      "ID": 50,
+      "Level": 50,
+      "Reward1": "HC:20",
+      "Reward2": "SC:500",
+      "Reward3Type": "VIP",
+      "Reward3ID": "VIP_007",
+      "Reward3Alternate": "Tokens:500",
+      "XPRequired": 9660
+    },
+    {
+      "ID": 51,
+      "Level": 51,
+      "Reward1": "HC:20",
+      "Reward2": "SC:510",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_028",
+      "Reward3Alternate": "Tokens:510",
+      "XPRequired": 9950
+    },
+    {
+      "ID": 52,
+      "Level": 52,
+      "Reward1": "HC:20",
+      "Reward2": "SC:520",
+      "Reward3Type": "EXPANSION",
+      "Reward3ID": "EXPANSION_9",
+      "Reward3Alternate": "Tokens:520",
+      "XPRequired": 10290
+    },
+    {
+      "ID": 53,
+      "Level": 53,
+      "Reward1": "HC:20",
+      "Reward2": "SC:530",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_025",
+      "Reward3Alternate": "Tokens:530",
+      "XPRequired": 10570
+    },
+    {
+      "ID": 54,
+      "Level": 54,
+      "Reward1": "HC:20",
+      "Reward2": "SC:540",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_038",
+      "Reward3Alternate": "Tokens:540",
+      "XPRequired": 10870
+    },
+    {
+      "ID": 55,
+      "Level": 55,
+      "Reward1": "HC:20",
+      "Reward2": "SC:550",
+      "Reward3Type": "CAT",
+      "Reward3ID": "CAT_040",
+      "Reward3Alternate": "Tokens:550",
+      "XPRequired": 11440
+    },
+    {
+      "ID": 56,
+      "Level": 56,
+      "Reward1": "HC:20",
+      "Reward2": "SC:560",
+      "Reward3Type": "CAT",
+      "Reward3ID": "disabled",
+      "Reward3Alternate": "Tokens:560",
+      "XPRequired": 11870
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+---
+description: AI 生成 2D 骨骼宠物素材的工具选型与踩坑（四足 vs 人形、Spine 接入 Cocos、去白底、LoongBones 操作）。选 AI 美术/骨骼工具、做宠物骨骼动画、处理 Spine 资源或角色分件图时读。
+globs: assets/scripts/ui/PetStage.ts,assets/resources/spine/**,docs/pet_cat_parts/**,docs/2D-Spine迁移与接入.md
+alwaysApply: false
+---
+
+# 2D 骨骼宠物素材：AI 工具选型与踩坑
+
+本项目宠物用 **2D 骨骼（Cocos 原生 Spine，`sp.Skeleton`，见 `PetStage.ts`）**，
+形态有 **Q版拟人 + 四足**。以下是实测结论，别再从头横评一遍。
+
+## 铁律：四足/动物「AI 自动绑骨」目前没有成熟方案
+- 姿态检测模型全是拿人体训练的，动物（四足、尾巴、多物种）是全行业空白。
+- **人形能自动绑，四足基本歇菜**——选型先按形态分流，别指望一键。
+
+## 工具能力边界（按形态选）
+| 工具 | 骨骼来源 | 四足 | 导 Spine | 备注 |
+| --- | --- | --- | --- | --- |
+| God Mode AI | 从图自动绑（写死人形：头/2臂/2腿/躯干） | ❌ | ✅3.5–4.2 | 拟人可用 |
+| Meowa `spine-run` | 换**固定人形模板**（2/4头身） | ❌ | ✅ | 拟人可用；`animate-run` 只出帧序列 |
+| Stretchy/See-Through/Live2D | 人形姿态/日系立绘 | ❌ | 部分 | 都偏人形 |
+| **LoongBones** | **编辑器手动绑**（任意拓扑） | ✅ | ✅（也可 DragonBones） | 免费、支持 Cocos；**AI 只辅助生成动作，不绑骨** |
+| **SOON**（极逸/SoonAnix） | AI 生成，**宣称多体态多物种** | ⚠️待实测 | ✅**4.2.43** | 二测、有门槛、未验证 |
+
+## 决策
+- **拟人/Q版直立宠物** → God Mode 或 Meowa `spine-run` 自动绑，最省。
+- **四足宠物** → ①LoongBones 手动绑 + AI 出动作；②让我**代码直接生成 Spine（骨架+idle）**；③赌 SOON 实测。四足没有免费午餐。
+- 已有资产：`docs/59种spine卡通猫咪...` 是一套现成四足猫 Spine，`PetStage.ts` 兜底就用它（`pet_cat/Cat`）；换画风优先考虑 **reskin 复用它的骨架**，比从零绑快得多。
+
+## 必踩的坑（都真实发生过）
+1. **AI 生成图常是 RGB 白底、无 alpha**（预览看着透明是假象）。进 Spine/引擎会有白框。
+   必须去白底：用 skill `pet-spine-asset-prep` 的 `remove_bg.py`（从四角 flood fill，只清外部白、不伤眼睛高光）。
+   核实：`python -c "from PIL import Image;print(Image.open('x.png').mode)"`，要 `RGBA`。
+2. **Spine 版本要对齐 Cocos runtime**：SOON 导出 4.2.43，导入前确认引擎 Spine 版本能吃 4.2，否则动画不播。
+3. **`premultipliedAlpha` 白框坑**：非预乘图集要 `skel.premultipliedAlpha = false`（`PetStage.ts` 已注释；59 猫包就是直通道 alpha）。
+4. **动画命名要对上代码**：`PetStage.ts` 的 `IDLE_CANDIDATES` / `WALK_CANDIDATES` / `HAPPY_CANDIDATES` / `ACTION_ANIM`；出资源时按这些名字命名 idle/walk，或反过来改常量。
+5. **Spine 资源放 `assets/resources/spine/<name>/`**，运行时 `resources.load('spine/<name>')`。
+6. **Cocos 场景编辑器里看不到宠物是正常的**——本项目纯代码建 UI、运行时加载。要看真身得**预览运行 + 起假后端**（`node _research/mock-server.mjs`）。
+
+## LoongBones 操作要点（loongbones.com，免费，非 DragonBones）
+- **导入靠拖拽**：图片/PSD 直接从资源管理器拖进右侧 `图片` 面板，不是点"导入"按钮。
+- **别用「人形骨架」预设**做四足——它是双足的。四足手动建骨。
+- **手动建骨每拖一次会在上一根下面接子骨**（易建出一长串）。建同级骨前**先点 `root`**。
+- **自动装配「按名称」**：要求**骨头名 = 图片名**（如 `cat_head`），一致才自动挂。
+- 绑好后选骨旋转，图跟着动 = 装配成功。

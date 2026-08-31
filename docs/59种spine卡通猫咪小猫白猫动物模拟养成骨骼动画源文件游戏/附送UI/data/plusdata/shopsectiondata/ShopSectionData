@@ -1,0 +1,79 @@
+{
+  "Items": [
+    {
+      "ID": "Event",
+      "ShopPackType": 10,
+      "DisplayOrder": 0
+    },
+    {
+      "ID": "EventDelivery",
+      "ShopPackType": 13,
+      "DisplayOrder": 1,
+      "ShopPacks": [
+        {
+          "ID": "EventBasketPack1",
+          "DisplayOrder": 0
+        },
+        {
+          "ID": "EventBasketPack2",
+          "DisplayOrder": 1
+        }
+      ]
+    },
+    {
+      "ID": "TieredIAP",
+      "ShopPackType": 8,
+      "DisplayOrder": 2
+    },
+    {
+      "ID": "StarterPack",
+      "ShopPackType": 0,
+      "DisplayOrder": 3
+    },
+    {
+      "ID": "Mini",
+      "ShopPackType": 14,
+      "DisplayOrder": 4
+    },
+    {
+      "ID": "SurveyOffer",
+      "ShopPackType": 11,
+      "DisplayOrder": 5
+    },
+    {
+      "ID": "RotationalIAP",
+      "ShopPackType": 12,
+      "DisplayOrder": 6
+    },
+    {
+      "ID": "Customisation",
+      "ShopPackType": 2,
+      "DisplayOrder": 7
+    },
+    {
+      "ID": "Other",
+      "ShopPackType": 7,
+      "DisplayOrder": 8
+    },
+    {
+      "ID": "Delivery",
+      "ShopPackType": 3,
+      "DisplayOrder": 9,
+      "ShopPacks": [
+        {
+          "ID": "BasketPack1",
+          "DisplayOrder": 1
+        },
+        {
+          "ID": "BasketPack2",
+          "DisplayOrder": 0
+        }
+      ]
+    },
+    {
+      "ID": "Item",
+      "ShopPackType": 1,
+      "DisplayOrder": 10
+    }
+  ]
+}

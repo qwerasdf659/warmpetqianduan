@@ -1,0 +1,132 @@
+
+TV.png
+size: 895,588
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/TV Frames/A1
+  rotate: false
+  xy: 226, 277
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/A2
+  rotate: true
+  xy: 380, 422
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/A3
+  rotate: true
+  xy: 387, 111
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/B1
+  rotate: false
+  xy: 392, 295
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/B2
+  rotate: true
+  xy: 507, 422
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/C1
+  rotate: true
+  xy: 514, 129
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/C2
+  rotate: false
+  xy: 558, 295
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/D1
+  rotate: true
+  xy: 634, 422
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/D2
+  rotate: false
+  xy: 514, 2
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/E1
+  rotate: true
+  xy: 641, 129
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/E2
+  rotate: false
+  xy: 724, 295
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/F1
+  rotate: true
+  xy: 761, 422
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/G1
+  rotate: false
+  xy: 680, 2
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/H1
+  rotate: true
+  xy: 768, 129
+  size: 164, 125
+  orig: 164, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/L1
+  rotate: true
+  xy: 2, 2
+  size: 248, 204
+  orig: 276, 232
+  offset: 14, 14
+  index: -1
+Parts_Furniture/TV Frames/L2
+  rotate: true
+  xy: 208, 30
+  size: 220, 177
+  orig: 262, 218
+  offset: 21, 21
+  index: -1
+Parts_Furniture/TV Frames/Off
+  rotate: true
+  xy: 226, 404
+  size: 182, 152
+  orig: 182, 152
+  offset: 0, 0
+  index: -1
+Parts_Furniture/tv_1
+  rotate: false
+  xy: 2, 252
+  size: 222, 334
+  orig: 222, 338
+  offset: 0, 4
+  index: -1

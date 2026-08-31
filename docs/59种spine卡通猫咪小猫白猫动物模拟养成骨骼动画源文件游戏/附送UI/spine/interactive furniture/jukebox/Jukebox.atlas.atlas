@@ -1,0 +1,69 @@
+
+Jukebox.png
+size: 1472,803
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Jukebox Frame 1
+  rotate: true
+  xy: 2, 536
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 2
+  rotate: true
+  xy: 492, 536
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 3
+  rotate: true
+  xy: 982, 536
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 4
+  rotate: true
+  xy: 2, 269
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 5
+  rotate: true
+  xy: 492, 269
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 6
+  rotate: true
+  xy: 982, 269
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 7
+  rotate: true
+  xy: 2, 2
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 8
+  rotate: true
+  xy: 492, 2
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1
+Jukebox Frame 9
+  rotate: true
+  xy: 982, 2
+  size: 265, 488
+  orig: 265, 490
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+RockFountain.png
+size: 507,355
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Base
+  rotate: false
+  xy: 2, 24
+  size: 307, 329
+  orig: 307, 329
+  offset: 0, 0
+  index: -1
+F1
+  rotate: true
+  xy: 311, 2
+  size: 172, 192
+  orig: 172, 192
+  offset: 0, 0
+  index: -1
+F2
+  rotate: true
+  xy: 311, 176
+  size: 177, 194
+  orig: 177, 194
+  offset: 0, 0
+  index: -1

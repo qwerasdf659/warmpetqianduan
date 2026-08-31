@@ -1,0 +1,104 @@
+{
+  "Items": [
+    {
+      "ID": "t_shutAdopt001",
+      "TutorialID": "t_assign1",
+      "EventType": 66
+    },
+    {
+      "ID": "t_autoPopupAdopt",
+      "TutorialID": "t_assign1",
+      "EventType": 60
+    },
+    {
+      "ID": "t_shutPopupAdopt",
+      "TutorialID": "t_assign1",
+      "EventType": 62
+    },
+    {
+      "ID": "t_tapCustomer1",
+      "TutorialID": "t_assign1",
+      "EventType": 47
+    },
+    {
+      "ID": "t_startDragCat1",
+      "TutorialID": "t_assign1",
+      "EventType": 49
+    },
+    {
+      "ID": "t_openBasketPanel1",
+      "TutorialID": "t_openbasket1",
+      "EventType": 63
+    },
+    {
+      "ID": "t_flipBasket1",
+      "TutorialID": "t_openbasket1",
+      "EventType": 64
+    },
+    {
+      "ID": "t_startBasket1",
+      "TutorialID": "t_openbasket1",
+      "EventType": 20
+    },
+    {
+      "ID": "t_closeBasketPanel1",
+      "TutorialID": "t_openbasket1",
+      "EventType": 67
+    },
+    {
+      "ID": "t_openBasketPanel2",
+      "TutorialID": "t_openbasket1",
+      "EventType": 63
+    },
+    {
+      "ID": "t_tapReadyBasket1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 68
+    },
+    {
+      "ID": "t_swipeBasket1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 69
+    },
+    {
+      "ID": "t_clickReward1InBasket1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 70
+    },
+    {
+      "ID": "t_clickReward1InBasket2",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 70
+    },
+    {
+      "ID": "t_tapCloseRewardBasket1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 71
+    },
+    {
+      "ID": "t_autoPopupFurniture",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 60
+    },
+    {
+      "ID": "t_shutPopupFurniture",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 62
+    },
+    {
+      "ID": "t_openFurniturePanel1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 72
+    },
+    {
+      "ID": "t_dragFurniture1",
+      "TutorialID": "t_chooseWall1",
+      "EventType": 65
+    },
+    {
+      "ID": "t_closeFurniturePanel1",
+      "TutorialID": "t_adopt_002",
+      "EventType": 73
+    }
+  ]
+}

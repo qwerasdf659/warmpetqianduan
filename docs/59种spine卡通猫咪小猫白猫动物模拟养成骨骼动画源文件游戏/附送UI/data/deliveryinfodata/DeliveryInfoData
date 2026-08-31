@@ -1,0 +1,810 @@
+{
+  "Items": [
+    {
+      "ID": "DA1",
+      "PackID": "DA1",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 33,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:5",
+        "TRAIT:2",
+        "C:0",
+        "U:1",
+        "R:0",
+        "E:0",
+        "L:0"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DA2",
+      "PackID": "DA2",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 33,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:6",
+        "TRAIT:3",
+        "C:1",
+        "U:0",
+        "R:0",
+        "E:0",
+        "L:0"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DB1",
+      "PackID": "DB1",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 40,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:12",
+        "TRAIT:5",
+        "C:1",
+        "U:1",
+        "R:1",
+        "E:0",
+        "L:0"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DB2",
+      "PackID": "DB2",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 39,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:13",
+        "TRAIT:6",
+        "C:1",
+        "U:0",
+        "R:0",
+        "E:1",
+        "L:0"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DC1",
+      "PackID": "DC1",
+      "Rarity": 3,
+      "Time": 14400,
+      "PoolQuantity": 14,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:19",
+        "TRAIT:7",
+        "C:2",
+        "U:1",
+        "R:1",
+        "E:0",
+        "L:0"
+      ],
+      "XP": 30
+    },
+    {
+      "ID": "DC2",
+      "PackID": "DC2",
+      "Rarity": 3,
+      "Time": 14400,
+      "PoolQuantity": 13,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:20",
+        "TRAIT:7",
+        "C:1",
+        "U:1",
+        "R:1",
+        "E:1",
+        "L:0"
+      ],
+      "XP": 30
+    },
+    {
+      "ID": "DD1",
+      "PackID": "DD1",
+      "Rarity": 4,
+      "Time": 28800,
+      "PoolQuantity": 12,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:35",
+        "TRAIT:8",
+        "C:2",
+        "U:2",
+        "R:1",
+        "E:0",
+        "L:1"
+      ],
+      "XP": 40
+    },
+    {
+      "ID": "DD2",
+      "PackID": "DD2",
+      "Rarity": 4,
+      "Time": 28800,
+      "PoolQuantity": 12,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:36",
+        "TRAIT:10",
+        "C:2",
+        "U:1",
+        "R:2",
+        "E:1",
+        "L:0"
+      ],
+      "XP": 40
+    },
+    {
+      "ID": "DE1",
+      "PackID": "DE1",
+      "Rarity": 5,
+      "Time": 43200,
+      "PoolQuantity": 5,
+      "BurntInOrder": -1,
+      "DeliveryType": 0,
+      "Contents": [
+        "SC:50",
+        "TRAIT:15",
+        "C:4",
+        "U:3",
+        "R:1",
+        "E:0",
+        "L:1"
+      ],
+      "XP": 50
+    },
+    {
+      "ID": "DI02",
+      "PackID": "DI02",
+      "Rarity": 1,
+      "Time": 3,
+      "PoolQuantity": 1,
+      "BurntInOrder": 2,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:5",
+        "I_TRAIT_0:3"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI03",
+      "PackID": "DI03",
+      "Rarity": 1,
+      "Time": 30,
+      "PoolQuantity": 1,
+      "BurntInOrder": 3,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:4",
+        "I_TRAIT_0:1",
+        "I_RARITY_C1:4"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI04",
+      "PackID": "DI04",
+      "Rarity": 1,
+      "Time": 60,
+      "PoolQuantity": 1,
+      "BurntInOrder": 4,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "I_TRAIT_0:2",
+        "I_TRAIT_1:2",
+        "I_RARITY_C1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI05",
+      "PackID": "DI05",
+      "Rarity": 1,
+      "Time": 60,
+      "PoolQuantity": 1,
+      "BurntInOrder": 5,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "I_TRAIT_1:2",
+        "I_RARITY_C1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI06",
+      "PackID": "DI06",
+      "Rarity": 1,
+      "Time": 60,
+      "PoolQuantity": 1,
+      "BurntInOrder": 6,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "I_TRAIT_0:2",
+        "I_TRAIT_1:1",
+        "I_RARITY_C1:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI07",
+      "PackID": "DI07",
+      "Rarity": 1,
+      "Time": 60,
+      "PoolQuantity": 1,
+      "BurntInOrder": 7,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "I_TRAIT_1:2",
+        "I_TRAIT_0:4",
+        "I_RARITY_C1:3"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI08",
+      "PackID": "DI08",
+      "Rarity": 1,
+      "Time": 60,
+      "PoolQuantity": 1,
+      "BurntInOrder": 8,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "I_TRAIT_0:5",
+        "I_RARITY_C1:3",
+        "I_RARITY_U1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI09",
+      "PackID": "DI09",
+      "Rarity": 1,
+      "Time": 90,
+      "PoolQuantity": 1,
+      "BurntInOrder": 9,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "I_TRAIT_2:2",
+        "I_RARITY_U1:3"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI10",
+      "PackID": "DI10",
+      "Rarity": 1,
+      "Time": 90,
+      "PoolQuantity": 1,
+      "BurntInOrder": 10,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "I_TRAIT_1:2",
+        "I_RARITY_C1:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI11",
+      "PackID": "DI11",
+      "Rarity": 1,
+      "Time": 120,
+      "PoolQuantity": 1,
+      "BurntInOrder": 11,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "I_TRAIT_1:1",
+        "I_TRAIT_0:4",
+        "I_RARITY_U1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI12",
+      "PackID": "DI12",
+      "Rarity": 1,
+      "Time": 120,
+      "PoolQuantity": 1,
+      "BurntInOrder": 12,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "I_TRAIT_2:3",
+        "I_TRAIT_1:3",
+        "I_RARITY_C1:3"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI13",
+      "PackID": "DI13",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 13,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "I_TRAIT_0:4",
+        "I_TRAIT_1:3",
+        "I_RARITY_U1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI14",
+      "PackID": "DI14",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 14,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "I_TRAIT_0:6",
+        "I_RARITY_C1:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI15",
+      "PackID": "DI15",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 15,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:5",
+        "I_TRAIT_1:2",
+        "I_TRAIT_0:2",
+        "I_RARITY_C1:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI16",
+      "PackID": "DI16",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 16,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:7",
+        "C:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI17",
+      "PackID": "DI17",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 17,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "TRAIT:5",
+        "C:2",
+        "U:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI18",
+      "PackID": "DI18",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 18,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:10",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DI19",
+      "PackID": "DI19",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 19,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "TRAIT:4",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI20",
+      "PackID": "DI20",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 20,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:10",
+        "TRAIT:10",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DI21",
+      "PackID": "DI21",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 21,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:4",
+        "C:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI22",
+      "PackID": "DI22",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 22,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "TRAIT:3",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI23",
+      "PackID": "DI23",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 23,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:5",
+        "C:1",
+        "U:2"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DI24",
+      "PackID": "DI24",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 24,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "TRAIT:2",
+        "C:1",
+        "U:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI25",
+      "PackID": "DI25",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 25,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:10",
+        "TRAIT:5",
+        "C:1",
+        "U:2"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DI26",
+      "PackID": "DI26",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 26,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:2",
+        "C:1",
+        "U:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI27",
+      "PackID": "DI27",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 27,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:6",
+        "TRAIT:3",
+        "C:2"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI28",
+      "PackID": "DI28",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 28,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:8",
+        "TRAIT:7",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DI29",
+      "PackID": "DI29",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 29,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:7",
+        "TRAIT:2",
+        "C:1",
+        "U:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DI30",
+      "PackID": "DI30",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 1,
+      "BurntInOrder": 30,
+      "DeliveryType": 1,
+      "Contents": [
+        "SC:10",
+        "TRAIT:7",
+        "C:2",
+        "U:2"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "FC01",
+      "PackID": "FC01",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:5",
+        "TRAIT:5"
+      ]
+    },
+    {
+      "ID": "FC02",
+      "PackID": "FC02",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:6",
+        "TRAIT:3",
+        "C:1"
+      ]
+    },
+    {
+      "ID": "FC03",
+      "PackID": "FC03",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:7",
+        "TRAIT:1",
+        "Tokens:25",
+        "C:1"
+      ]
+    },
+    {
+      "ID": "FC04",
+      "PackID": "FC04",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:8",
+        "TRAIT:4",
+        "R:1"
+      ]
+    },
+    {
+      "ID": "FC05",
+      "PackID": "FC05",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:5",
+        "TRAIT:2",
+        "HC:1",
+        "C:1"
+      ]
+    },
+    {
+      "ID": "FC06",
+      "PackID": "FC06",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:7",
+        "TRAIT:2",
+        "Tokens:30"
+      ]
+    },
+    {
+      "ID": "FC07",
+      "PackID": "FC07",
+      "Rarity": 1,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 2,
+      "Contents": [
+        "SC:10",
+        "TRAIT:3",
+        "U:8"
+      ]
+    },
+    {
+      "ID": "DA2H",
+      "PackID": "DA2H",
+      "Rarity": 1,
+      "Time": 1200,
+      "PoolQuantity": 33,
+      "BurntInOrder": -1,
+      "DeliveryType": 3,
+      "Contents": [
+        "HURRY:1",
+        "SC:6",
+        "TRAIT:3",
+        "C:1"
+      ],
+      "XP": 10
+    },
+    {
+      "ID": "DB1H",
+      "PackID": "DB1H",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 40,
+      "BurntInOrder": -1,
+      "DeliveryType": 3,
+      "Contents": [
+        "HURRY:1",
+        "SC:12",
+        "TRAIT:5",
+        "C:1",
+        "U:1",
+        "R:1"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "DB2H",
+      "PackID": "DB2H",
+      "Rarity": 2,
+      "Time": 7200,
+      "PoolQuantity": 39,
+      "BurntInOrder": -1,
+      "DeliveryType": 3,
+      "Contents": [
+        "HURRY:1",
+        "SC:13",
+        "TRAIT:6",
+        "C:1",
+        "E:1"
+      ],
+      "XP": 20
+    },
+    {
+      "ID": "SE1",
+      "PackID": "SE1",
+      "Rarity": 2,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 3,
+      "Contents": [
+        "EC:15"
+      ],
+      "XP": 5
+    },
+    {
+      "ID": "SE2",
+      "PackID": "SE2",
+      "Rarity": 5,
+      "Time": 10800,
+      "PoolQuantity": 1,
+      "BurntInOrder": -1,
+      "DeliveryType": 3,
+      "Contents": [
+        "EC:100"
+      ],
+      "XP": 25
+    }
+  ]
+}

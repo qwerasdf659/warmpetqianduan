@@ -1,0 +1,44 @@
+{
+  "Items": [
+    {
+      "ID": "SNAPGOAL_001",
+      "RequiredCountMin": 1,
+      "RequiredCountMax": 1,
+      "SnapshotObjectiveType": 3,
+      "SnapshotInteractionState": 0,
+      "GenerateSpecificTarget": false
+    },
+    {
+      "ID": "SNAPGOAL_002",
+      "RequiredCountMin": 1,
+      "RequiredCountMax": 3,
+      "SnapshotObjectiveType": 1,
+      "SnapshotInteractionState": 2,
+      "GenerateSpecificTarget": false
+    },
+    {
+      "ID": "SNAPGOAL_003",
+      "RequiredCountMin": 1,
+      "RequiredCountMax": 1,
+      "SnapshotObjectiveType": 1,
+      "SnapshotInteractionState": 0,
+      "GenerateSpecificTarget": true
+    },
+    {
+      "ID": "SNAPGOAL_004",
+      "RequiredCountMin": 1,
+      "RequiredCountMax": 1,
+      "SnapshotObjectiveType": 1,
+      "SnapshotInteractionState": 1,
+      "GenerateSpecificTarget": false
+    },
+    {
+      "ID": "SNAPGOAL_005",
+      "RequiredCountMin": 1,
+      "RequiredCountMax": 1,
+      "SnapshotObjectiveType": 1,
+      "SnapshotInteractionState": 1,
+      "GenerateSpecificTarget": true
+    }
+  ]
+}

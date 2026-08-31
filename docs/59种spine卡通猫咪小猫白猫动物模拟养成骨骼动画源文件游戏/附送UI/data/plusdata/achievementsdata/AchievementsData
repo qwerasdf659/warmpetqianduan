@@ -1,0 +1,172 @@
+{
+  "Items": [
+    {
+      "ID": "COMPLETE_TUTORIAL_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 10,
+      "TrackedEvent": 4,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQAQ"
+    },
+    {
+      "ID": "EXPAND_CAFE_FIRST_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 10,
+      "TrackedEvent": 4,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQAg"
+    },
+    {
+      "ID": "DISCOVER_FIRST_VIP_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 10,
+      "TrackedEvent": 52,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQAw"
+    },
+    {
+      "ID": "UNLOCK_CAT_LOUNGE_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 10,
+      "TrackedEvent": 4,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQBA"
+    },
+    {
+      "ID": "MATCH_CATS_PLUS",
+      "AchievementType": 0,
+      "Target": 1000,
+      "Points": 25,
+      "TrackedEvent": 3,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQBQ"
+    },
+    {
+      "ID": "PAT_CATS_PLUS",
+      "AchievementType": 0,
+      "Target": 100,
+      "Points": 25,
+      "TrackedEvent": 53,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQBg"
+    },
+    {
+      "ID": "SERVE_COFFEES_PLUS",
+      "AchievementType": 0,
+      "Target": 100,
+      "Points": 25,
+      "TrackedEvent": 54,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQBw"
+    },
+    {
+      "ID": "VIP_DISCOVER_ALLTRAITS_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 25,
+      "TrackedEvent": 52,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQCA"
+    },
+    {
+      "ID": "LOOK_CUST_BIOS_PLUS",
+      "AchievementType": 0,
+      "Target": 50,
+      "Points": 10,
+      "TrackedEvent": 18,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQCQ"
+    },
+    {
+      "ID": "TAKE_PHOTOS_PLUS",
+      "AchievementType": 0,
+      "Target": 10,
+      "Points": 10,
+      "TrackedEvent": 11,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQCg"
+    },
+    {
+      "ID": "COMPLETE_EVENTS_PLUS",
+      "AchievementType": 0,
+      "Target": 1,
+      "Points": 50,
+      "TrackedEvent": 55,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQCw"
+    },
+    {
+      "ID": "DISCOVER_LEGENDARY_ITEM_PLUS",
+      "AchievementType": 0,
+      "Target": 1,
+      "Points": 10,
+      "TrackedEvent": 56,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQDA"
+    },
+    {
+      "ID": "PERFECT_MATCH_CATS_PLUS",
+      "AchievementType": 0,
+      "Target": 1000,
+      "Points": 50,
+      "TrackedEvent": 57,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQDQ"
+    },
+    {
+      "ID": "COMPLETE_MINIGAMES_PLUS",
+      "AchievementType": 0,
+      "Target": 1000,
+      "Points": 25,
+      "TrackedEvent": 15,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQDg"
+    },
+    {
+      "ID": "USE_LUCKYCAT_PLUS",
+      "AchievementType": 0,
+      "Target": 150,
+      "Points": 25,
+      "TrackedEvent": 38,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQDw"
+    },
+    {
+      "ID": "OPEN_BASKETS_PLUS",
+      "AchievementType": 0,
+      "Target": 1000,
+      "Points": 25,
+      "TrackedEvent": 16,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQEA"
+    },
+    {
+      "ID": "COMPLETE_CATACTIVITIES_PLUS",
+      "AchievementType": 0,
+      "Target": 1000,
+      "Points": 25,
+      "TrackedEvent": 40,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQEQ"
+    },
+    {
+      "ID": "MAXLEVEL_CAT_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 100,
+      "TrackedEvent": 5,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQEg"
+    },
+    {
+      "ID": "EARN_HEARTS_PLUS",
+      "AchievementType": 0,
+      "Target": 143000,
+      "Points": 100,
+      "TrackedEvent": 8,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQEw"
+    },
+    {
+      "ID": "EXPAND_CAFE_FULLY_PLUS",
+      "AchievementType": 1,
+      "Target": 1,
+      "Points": 50,
+      "TrackedEvent": 4,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQFA"
+    },
+    {
+      "ID": "PERFECT_MATCH_UNIQUE_CUST_PLUS",
+      "AchievementType": 0,
+      "Target": 1,
+      "Points": 25,
+      "TrackedEvent": 58,
+      "GooglePlayID": "CgkI8rzuyaYJEAIQFQ"
+    }
+  ]
+}

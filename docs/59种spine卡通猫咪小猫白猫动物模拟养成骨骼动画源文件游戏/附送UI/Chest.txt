@@ -1,0 +1,330 @@
+{
+"skeleton": {
+	"hash": "TtkvLP2d3YQ",
+	"spine": "3.8",
+	"x": -141.23,
+	"y": 0.76,
+	"width": 278,
+	"height": 366.82,
+	"images": "../Parts_Furniture/",
+	"audio": "/Users/larsjohansson/Library/CloudStorage/GoogleDrive-lars@runawayplay.com/.shortcut-targets-by-id/0BypPld3wb6SDYTMzOTI3NzItMjA5NS00MzZiLWEyZDAtNjU0NWI0OGRlMTM5/Runaway/Products/Furistas Cat Cafe/Art/Core Game/Art Export/Animation/Spine/FurnitureSpine"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Chest", "parent": "root", "length": 101.22, "rotation": 90, "x": 0.76, "y": 4.88 },
+	{ "name": "bone", "parent": "root", "length": 75.91, "rotation": 91.27, "x": -2.98, "y": 289.26 },
+	{ "name": "Lid", "parent": "Chest", "length": 109.91, "x": 118.61 }
+],
+"slots": [
+	{ "name": "Greenhouse/Arrow", "bone": "bone", "attachment": "Greenhouse/Arrow" },
+	{ "name": "Chest/VidReward_Box", "bone": "Chest", "attachment": "Chest/VidReward_Box" },
+	{ "name": "Chest/VidReward_Lid", "bone": "Lid", "attachment": "Chest/VidReward_Lid" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Chest/VidReward_Box": {
+				"Chest/VidReward_Box": {
+					"x": 116.65,
+					"y": -0.7,
+					"scaleX": 0.2696,
+					"scaleY": 0.2696,
+					"rotation": -90,
+					"width": 987,
+					"height": 896
+				}
+			},
+			"Chest/VidReward_Lid": {
+				"Chest/VidReward_Lid": {
+					"x": 55.5,
+					"y": -0.8,
+					"scaleX": 0.2696,
+					"scaleY": 0.2696,
+					"rotation": -90,
+					"width": 768,
+					"height": 573
+				}
+			},
+			"Greenhouse/Arrow": {
+				"Greenhouse/Arrow": { "x": 25.79, "y": -1.32, "rotation": -91.27, "width": 278, "height": 105 }
+			}
+		}
+	}
+],
+"animations": {
+	"Appear": {
+		"slots": {
+			"Chest/VidReward_Box": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"Chest/VidReward_Lid": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Chest": {
+				"translate": [
+					{ "time": 0.0333 },
+					{ "time": 0.2, "y": 92.51 },
+					{ "time": 0.3667, "y": -2.29 },
+					{ "time": 0.5, "y": 9.17 },
+					{ "time": 0.6333, "y": -2.29 }
+				],
+				"scale": [
+					{ "x": 0.293, "y": 0.293, "curve": "stepped" },
+					{ "time": 0.0333, "x": 0.293, "y": 0.293 },
+					{ "time": 0.1333, "x": 1.187, "y": 0.678 },
+					{ "time": 0.2333 },
+					{ "time": 0.3667, "x": 0.563 },
+					{ "time": 0.5333, "x": 1.051 },
+					{ "time": 0.6667 },
+					{ "time": 1.0333 }
+				]
+			},
+			"Lid": {
+				"rotate": [
+					{ "time": 0.2 },
+					{ "time": 0.3, "angle": -2.86 },
+					{ "time": 0.4, "angle": 5.72 },
+					{ "time": 0.5333, "angle": 0.37 }
+				],
+				"translate": [
+					{ "time": 0.2 },
+					{ "time": 0.2667, "x": 22.58 },
+					{ "time": 0.3667, "x": -0.42 },
+					{ "time": 0.4667, "x": 12 },
+					{ "time": 0.6 }
+				]
+			}
+		}
+	},
+	"Available": {
+		"slots": {
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "y": 23.04 }
+				],
+				"scale": [
+					{ "x": 1.059 }
+				]
+			}
+		}
+	},
+	"Claimable": {
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "y": 23.04 },
+					{ "time": 0.1667, "y": 5.76 },
+					{ "time": 0.5, "y": 34.55 },
+					{ "time": 0.6667, "y": 23.04 },
+					{ "time": 0.8333, "y": 5.76 },
+					{ "time": 1.1667, "y": 34.55 },
+					{ "time": 1.3333, "y": 23.04 },
+					{ "time": 1.5, "y": 5.76 },
+					{ "time": 1.8333, "y": 34.55 },
+					{ "time": 2, "y": 23.04 }
+				],
+				"scale": [
+					{ "x": 1.059 },
+					{ "time": 0.1 },
+					{ "time": 0.2667, "x": 0.689 },
+					{ "time": 0.6, "x": 1.098 },
+					{ "time": 0.7667 },
+					{ "time": 0.9333, "x": 0.689 },
+					{ "time": 1.2667, "x": 1.098 },
+					{ "time": 1.4333 },
+					{ "time": 1.6, "x": 0.689 },
+					{ "time": 1.9333, "x": 1.098 },
+					{ "time": 2, "x": 1.059 }
+				]
+			},
+			"Chest": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -3.17 },
+					{ "time": 0.3333, "angle": 4.08 },
+					{ "time": 0.5, "angle": -1.9 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "y": 4.86 },
+					{ "time": 0.2333, "y": -2.82 },
+					{ "time": 0.3333, "y": 5.81 },
+					{ "time": 0.4333, "y": -1.76 },
+					{ "time": 0.5, "y": 2.92 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"Exit": {
+		"slots": {
+			"Chest/VidReward_Box": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				]
+			},
+			"Chest/VidReward_Lid": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "y": 23.04 }
+				],
+				"scale": [
+					{ "x": 1.059 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{ "time": 0.1 },
+					{ "time": 0.2333, "y": 108.78 },
+					{ "time": 0.3667, "y": 2.86 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0.671 },
+					{ "time": 0.2333, "x": 1.243 },
+					{ "time": 0.3667, "x": 0.23, "y": 0.185 }
+				]
+			}
+		}
+	},
+	"Hidden": {
+		"slots": {
+			"Chest/VidReward_Box": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Chest/VidReward_Lid": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"scale": [
+					{ "x": 1.029 }
+				]
+			}
+		}
+	},
+	"Open": {
+		"slots": {
+			"Chest/VidReward_Lid": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				]
+			},
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "y": 23.04 }
+				],
+				"scale": [
+					{ "x": 1.059 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{ "time": 0.1 },
+					{ "time": 0.2333, "y": 65.2 },
+					{ "time": 0.3667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 0.851 },
+					{ "time": 0.1667, "x": 1.535 },
+					{ "time": 0.2667 },
+					{ "time": 0.3333, "x": 0.907 },
+					{ "time": 0.5 }
+				]
+			},
+			"Lid": {
+				"rotate": [
+					{ "time": 0.1 },
+					{ "time": 0.3667, "angle": 50.62 }
+				],
+				"translate": [
+					{ "time": 0.1 },
+					{ "time": 0.2333, "x": 118.9, "y": 100.6 },
+					{ "time": 0.3667, "x": -9.97, "y": 244.04 }
+				],
+				"scale": [
+					{ "time": 0.1 },
+					{ "time": 0.2333, "x": 0.496 }
+				]
+			}
+		}
+	},
+	"Open_Idle": {
+		"slots": {
+			"Chest/VidReward_Lid": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "y": 23.04 }
+				],
+				"scale": [
+					{ "x": 1.059 }
+				]
+			}
+		}
+	}
+}
+}

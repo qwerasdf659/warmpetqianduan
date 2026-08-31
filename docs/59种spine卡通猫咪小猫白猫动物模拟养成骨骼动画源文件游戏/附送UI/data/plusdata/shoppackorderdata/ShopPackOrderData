@@ -1,0 +1,24 @@
+{
+  "Items": [
+    {
+      "ID": 1,
+      "ShopPackType": 0
+    },
+    {
+      "ID": 2,
+      "ShopPackType": 3
+    },
+    {
+      "ID": 3,
+      "ShopPackType": 2
+    },
+    {
+      "ID": 4,
+      "ShopPackType": 1
+    },
+    {
+      "ID": 4,
+      "ShopPackType": 7
+    }
+  ]
+}

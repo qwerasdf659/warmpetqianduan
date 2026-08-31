@@ -1,0 +1,41 @@
+
+FirePlace.png
+size: 419,501
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fireplace
+  rotate: false
+  xy: 2, 2
+  size: 306, 497
+  orig: 307, 499
+  offset: 1, 2
+  index: -1
+frame1
+  rotate: true
+  xy: 310, 15
+  size: 119, 95
+  orig: 171, 144
+  offset: 27, 31
+  index: -1
+frame2
+  rotate: true
+  xy: 310, 136
+  size: 120, 103
+  orig: 171, 144
+  offset: 28, 31
+  index: -1
+frame3
+  rotate: true
+  xy: 310, 258
+  size: 120, 105
+  orig: 171, 144
+  offset: 28, 31
+  index: -1
+frame4
+  rotate: true
+  xy: 310, 380
+  size: 119, 107
+  orig: 171, 144
+  offset: 27, 30
+  index: -1

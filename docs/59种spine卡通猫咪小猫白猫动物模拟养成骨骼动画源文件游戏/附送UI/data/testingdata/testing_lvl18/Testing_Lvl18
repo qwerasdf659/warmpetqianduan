@@ -1,0 +1,3010 @@
+{
+  "userGame": {
+    "reset": false,
+    "gdpr_acceptance": true,
+    "sponsor_parent_id": null,
+    "maintenance": false,
+    "updated_on": 1553118446,
+    "current_hc": 225,
+    "id": 8363975,
+    "created_on": 1549923369,
+    "public": {
+      "level": 18
+    }
+  },
+  "userGameBuckets": {
+    "CollectibleInstanceDB": {
+      "Items": []
+    },
+    "ScheduleInstance": {
+      "_nextTieredIAPTimeProxy": 5248573788937619974,
+      "_lastVideoMinigamePlayTime": 5248573073512771554,
+      "_lastFreeChestTimeProxy": 0,
+      "_lastUniqueCustomerArrivalTimeProxy": 5248573000782415724,
+      "_lastVIPCustomerArrivalTimeProxy": 5248573000872934784,
+      "_lastCustomerDueToFinishNotificationTimeProxy": 0,
+      "TimeCheatedProxy": 0.0,
+      "_lastSnapshotIncentivisedShareTimeProxy": 0
+    },
+    "ExpansionAreaInstanceDB": {
+      "Items": []
+    },
+    "VIPCustomerDB": {
+      "Items": [
+        {
+          "InstanceID": "d8b10660-246d-4563-8431-45253e92bc82",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_001",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            0,
+            2,
+            1,
+            4
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248573000879078954,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": -0.7529001235961914,
+          "PositionY": 1.5340791940689087,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 4,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 4,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "c1a797d8-4aba-4a7f-9e98-174a8b0b370b",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_005",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            3,
+            0,
+            1,
+            2
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248570905003524094,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": -0.5338482856750488,
+          "PositionY": 0.7664681673049927,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 4,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 4,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "0db54d92-011f-4ca8-aeb7-30160d7001cb",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_003",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            4,
+            0,
+            5,
+            2
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248568606869836974,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": -2.0863354206085205,
+          "PositionY": -1.7333158254623413,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 4,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 4,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "3cf7971c-6d9f-47a8-b2f4-1919b555c890",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_004",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            5,
+            0,
+            6
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248571874640828374,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 0.39565393328666687,
+          "PositionY": -0.44877710938453674,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 3,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 3,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "369826a1-667c-413b-9d41-c2249afa8795",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_002",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            6,
+            2,
+            3,
+            5
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248572173890295124,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 2.137500286102295,
+          "PositionY": 1.195000410079956,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 4,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 4,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "c8fe3050-eaf6-44ef-98dc-390f70777a45",
+          "DesiredTraits": [],
+          "Paid": false,
+          "HasPaired": false,
+          "ItemID": "VIP_012",
+          "HasRandomInstanceGenerated": true,
+          "UnlockedTraits": [
+            3
+          ],
+          "SessionStartTimeProxy": 0,
+          "Arrived": false,
+          "ArriveTimeProxy": 5248572636557944954,
+          "IsInWorld": false,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 1,
+          "HasDoneFirstSession": true,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 0.13750003278255463,
+          "PositionY": -3.5149998664855957,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 0,
+            "FirstName": "",
+            "IsUniqueCustomer": false,
+            "Age": 0,
+            "PersonalityType": 0,
+            "OccupationID": "",
+            "Components": [],
+            "LastName": "",
+            "Region": 0
+          },
+          "NoFieldsRevealed": 0,
+          "IsPicky": false,
+          "NoParagraphsUnlocked": 1,
+          "TotalSessionTargetTimeProxy": 0.0
+        }
+      ]
+    },
+    "EnvironmentCustomisationInstance": {
+      "WallID": "FURN_059",
+      "FloorID": "FURN_019"
+    },
+    "TimedShopPackDB": {
+      "Items": [
+        {
+          "ItemID": "",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586500830703034598,
+          "InstanceID": "",
+          "AmountPurchased": 0,
+          "ShopPackID": "EventPack2",
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586496688113388438,
+          "InstanceID": "",
+          "AmountPurchased": 0,
+          "ShopPackID": "EventPack3",
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586491425627686558,
+          "InstanceID": "",
+          "AmountPurchased": 0,
+          "ShopPackID": "EventPack5",
+          "IsInWorld": false
+        }
+      ]
+    },
+    "SaveInformationInstance": {
+      "ShouldResetStateOnLoad": false,
+      "IsNewSave": false,
+      "ShouldGiveWallCustomisations": false,
+      "SaveVersion": 28,
+      "DataValid": true
+    },
+    "CatInteractionInstanceDB": {
+      "Items": [
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573170205172024,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_006",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Stand_Pat_2"
+          ],
+          "InteractionBonusReward": 4,
+          "CustomerID": "7e4525cc-f102-458b-bdc2-0bfadc426ab6",
+          "SessionTimeProxy": 3000.0,
+          "InteractionBaseReward": 40,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171390436234,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        },
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573170544367344,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_011",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Chair_Hold"
+          ],
+          "InteractionBonusReward": 0,
+          "CustomerID": "c8eb3cca-f3a8-4ade-a092-5a8b8c18343b",
+          "SessionTimeProxy": 120.0,
+          "InteractionBaseReward": 3,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171390772384,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        },
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573170732208004,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_018",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Chair_Hold"
+          ],
+          "InteractionBonusReward": 3,
+          "CustomerID": "a726322e-9f18-4af8-b084-b5ef84a1b498",
+          "SessionTimeProxy": 1800.0,
+          "InteractionBaseReward": 27,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171389765244,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        },
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573170759706044,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_053",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Floor_Hold_Sleep"
+          ],
+          "InteractionBonusReward": 5,
+          "CustomerID": "d4e97742-52ab-4e73-b540-754625e26dfe",
+          "SessionTimeProxy": 3600.0,
+          "InteractionBaseReward": 45,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171393932394,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        },
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573170781035894,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_024",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Chair_Hold"
+          ],
+          "InteractionBonusReward": 2,
+          "CustomerID": "564b7885-ca40-46f1-9b4e-2795cf62185c",
+          "SessionTimeProxy": 1200.0,
+          "InteractionBaseReward": 19,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171396267634,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        },
+        {
+          "ItemID": "",
+          "InteractionStartTimeProxy": 5248573171364230814,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CatID": "CAT_015",
+          "InstanceID": "",
+          "InteractionIsSuspended": false,
+          "IsInWorld": false,
+          "AnimationHistory": [
+            "Pair_Success3"
+          ],
+          "InteractionBonusReward": 0,
+          "CustomerID": "411d8aed-fff6-4371-aa92-a704aa1736ea",
+          "SessionTimeProxy": 3000.0,
+          "InteractionBaseReward": 40,
+          "InteractionHasConcluded": false,
+          "AnimationPairStartTimeProxy": 5248573171364674774,
+          "InteractionShouldSuspend": false,
+          "SuspendStartTimeProxy": 0,
+          "InteractionShouldConclude": false,
+          "ResumeTimeProxy": 0,
+          "HasDoneMatchAnimation": true,
+          "InteractionSuspendDurationProxy": 0.0
+        }
+      ]
+    },
+    "CatInstanceDB": {
+      "Items": [
+        {
+          "ItemID": "CAT_003",
+          "PositionX": 6.562469005584717,
+          "PositionY": -1.4100310802459717,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "719c2705-dfd5-4569-94be-8dbeca6e60a0",
+          "_heartsForLevel": 2680,
+          "_totalHeartsEarned": 6138,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_001",
+          "PositionX": -1.6743128299713135,
+          "PositionY": -1.1926853656768799,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "88aa53f4-ba43-40d0-b925-74b3574d6d2b",
+          "_heartsForLevel": 1818,
+          "_totalHeartsEarned": 4966,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_002",
+          "PositionX": 5.337545394897461,
+          "PositionY": -1.6349997520446777,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 6,
+          "InstanceID": "c59aabee-bb35-40d5-99ce-aff104440e3b",
+          "_heartsForLevel": 1779,
+          "_totalHeartsEarned": 5611,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_004",
+          "PositionX": 1.8203591108322144,
+          "PositionY": -1.1178587675094604,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "7c6f8f07-d9da-40f4-83b8-6d4f4ac7ebff",
+          "_heartsForLevel": 3615,
+          "_totalHeartsEarned": 7149,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_005",
+          "PositionX": 8.737500190734863,
+          "PositionY": -3.184999942779541,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "c3d5ddcd-4b1e-44f5-a031-0d4cdb917583",
+          "_heartsForLevel": 355,
+          "_totalHeartsEarned": 4068,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_006",
+          "PositionX": 6.263398170471191,
+          "PositionY": -0.8558010458946228,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "de565ef5-bda4-45da-8fa3-e361700481f6",
+          "_heartsForLevel": 853,
+          "_totalHeartsEarned": 3840,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_018",
+          "PositionX": 5.272871017456055,
+          "PositionY": 1.9138741493225098,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "7db60ae0-8a22-4cb6-a528-100acf02c729",
+          "_heartsForLevel": 2361,
+          "_totalHeartsEarned": 5116,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_010",
+          "PositionX": 1.1375000476837158,
+          "PositionY": -1.6349997520446777,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 6,
+          "InstanceID": "9edeb158-6f71-4290-a23e-280940a8c919",
+          "_heartsForLevel": 919,
+          "_totalHeartsEarned": 3890,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_013",
+          "PositionX": 2.831336259841919,
+          "PositionY": -1.9363272190093994,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "63419442-f216-4c03-a5cc-4595f4b74187",
+          "_heartsForLevel": 562,
+          "_totalHeartsEarned": 3153,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_024",
+          "PositionX": 0.07244101166725159,
+          "PositionY": -3.239445924758911,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 4,
+          "InstanceID": "3e7db3d5-166b-491a-8b10-f8c0550ef026",
+          "_heartsForLevel": 2132,
+          "_totalHeartsEarned": 4130,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_055",
+          "PositionX": 8.9375,
+          "PositionY": 1.0550000667572021,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "0e28848e-9d47-46f1-9b18-531bd04f9015",
+          "_heartsForLevel": 757,
+          "_totalHeartsEarned": 4736,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_008",
+          "PositionX": 7.137500286102295,
+          "PositionY": -3.184999942779541,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "646aff38-6010-48ae-bf81-977cd063265b",
+          "_heartsForLevel": 2429,
+          "_totalHeartsEarned": 2937,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_011",
+          "PositionX": 2.6016323566436768,
+          "PositionY": -0.436946302652359,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "2c3b16a6-c0f1-4427-9eb2-b3f307c2d87a",
+          "_heartsForLevel": 738,
+          "_totalHeartsEarned": 1812,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_016",
+          "PositionX": 7.9375,
+          "PositionY": -1.434999942779541,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 4,
+          "InstanceID": "d6c6bb0d-e621-49e3-b0f1-795afabb0e8e",
+          "_heartsForLevel": 2382,
+          "_totalHeartsEarned": 2946,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_036",
+          "PositionX": 2.422470808029175,
+          "PositionY": -1.230236530303955,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "36dfc4b1-1fa6-4aec-995c-4177215f8301",
+          "_heartsForLevel": 803,
+          "_totalHeartsEarned": 1437,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_027",
+          "PositionX": 1.5311765670776367,
+          "PositionY": -1.1842769384384155,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 4,
+          "InstanceID": "8ea39ef9-2be9-4fe3-a79d-724bd0298599",
+          "_heartsForLevel": 826,
+          "_totalHeartsEarned": 1395,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_053",
+          "PositionX": 6.073829650878906,
+          "PositionY": -2.8773672580718994,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "8a935ee5-0de9-49ea-9136-2fe577561892",
+          "_heartsForLevel": 1305,
+          "_totalHeartsEarned": 2080,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_015",
+          "PositionX": 0.7333734035491943,
+          "PositionY": -0.8308731317520142,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 7,
+          "InstanceID": "242ea4fe-5f03-40f1-9c07-f30aeddc4493",
+          "_heartsForLevel": 609,
+          "_totalHeartsEarned": 1419,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_014",
+          "PositionX": 8.737500190734863,
+          "PositionY": -3.184999942779541,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 4,
+          "InstanceID": "6e368519-2ea4-47f7-a478-864d6bcaa64f",
+          "_heartsForLevel": 368,
+          "_totalHeartsEarned": 951,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_017",
+          "PositionX": 6.072106838226318,
+          "PositionY": -0.5828396081924438,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "87d22589-84df-45c8-8c6f-ea455b6bdd2b",
+          "_heartsForLevel": 681,
+          "_totalHeartsEarned": 1331,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_023",
+          "PositionX": 0.30421218276023865,
+          "PositionY": -1.236099123954773,
+          "IsExcessCat": true,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 5,
+          "InstanceID": "3c49cc06-0c29-4e6e-ba59-d5a41eb4ccba",
+          "_heartsForLevel": 289,
+          "_totalHeartsEarned": 673,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "CAT_032",
+          "PositionX": 1.7379230260849,
+          "PositionY": -1.8101626634597778,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 1,
+          "InstanceID": "6a386718-207d-45fe-9b23-f976e01d454e",
+          "_heartsForLevel": 30,
+          "_totalHeartsEarned": 30,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_007",
+          "PositionX": 8.9375,
+          "PositionY": 1.0550000667572021,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 1,
+          "InstanceID": "7016660d-fb95-428e-8d73-e2fe85dabf02",
+          "_heartsForLevel": 8,
+          "_totalHeartsEarned": 8,
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "CAT_030",
+          "PositionX": 3.8925883769989014,
+          "PositionY": -2.5053951740264893,
+          "IsExcessCat": false,
+          "MatchTimeProxy": 0,
+          "IsPinned": false,
+          "Level": 1,
+          "InstanceID": "04ce0be6-9281-482e-a930-2a2cc7fdf54e",
+          "_heartsForLevel": 0,
+          "_totalHeartsEarned": 0,
+          "IsInWorld": false
+        }
+      ]
+    },
+    "GoalInstanceDB": {
+      "Items": [
+        {
+          "BasketRarity": 0,
+          "CatID": "",
+          "InstanceID": "",
+          "VarString": "{\"SnapshotContentInstance\":{\"ItemID\":\"-\",\"SnapshotObjectiveType\":1,\"InteractionState\":1},\"RequiredCount\":1,\"RequiresFullCafe\":false}",
+          "customerBioNamesUsed": [],
+          "Type": 14,
+          "RewardDoubleCheck": false,
+          "ItemID": "m017",
+          "Description": "Mach ein Foto von einer Katze, einem Gast vermittelt wurde.",
+          "Trait": 0,
+          "SoloGoal": false,
+          "RewardShown": true,
+          "IsInWorld": false,
+          "Minigame": 0,
+          "VarInt": 0,
+          "currentAmount": 1.0,
+          "RewardType": "SC:10",
+          "DayCreatedProxy": -8586485418774912798,
+          "Amount": 1.0,
+          "RewardGiven": true,
+          "IsBurntIn": false,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CollectType": 0,
+          "GoalIcon": 45,
+          "EventType": 11
+        },
+        {
+          "BasketRarity": 0,
+          "CatID": "",
+          "InstanceID": "",
+          "VarString": "",
+          "customerBioNamesUsed": [],
+          "Type": 3,
+          "RewardDoubleCheck": false,
+          "ItemID": "m007",
+          "Description": "Sammle 150 Tokens",
+          "Trait": 0,
+          "SoloGoal": false,
+          "RewardShown": true,
+          "IsInWorld": false,
+          "Minigame": 0,
+          "VarInt": 0,
+          "currentAmount": 535.0,
+          "RewardType": "HC:8",
+          "DayCreatedProxy": -8586485418774911008,
+          "Amount": 150.0,
+          "RewardGiven": true,
+          "IsBurntIn": false,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CollectType": 2,
+          "GoalIcon": 6,
+          "EventType": 6
+        },
+        {
+          "BasketRarity": 0,
+          "CatID": "CAT_023",
+          "InstanceID": "",
+          "VarString": "",
+          "customerBioNamesUsed": [],
+          "Type": 2,
+          "RewardDoubleCheck": false,
+          "ItemID": "m005",
+          "Description": "Vermittle 15 Katzen mit der Persönlichkeit „Neugierig“.",
+          "Trait": 5,
+          "SoloGoal": false,
+          "RewardShown": true,
+          "IsInWorld": false,
+          "Minigame": 0,
+          "VarInt": 0,
+          "currentAmount": 16.0,
+          "RewardType": "Tokens:10",
+          "DayCreatedProxy": -8586485418774909558,
+          "Amount": 15.0,
+          "RewardGiven": true,
+          "IsBurntIn": false,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CollectType": 0,
+          "GoalIcon": 6,
+          "EventType": 3
+        },
+        {
+          "BasketRarity": 0,
+          "CatID": "",
+          "InstanceID": "",
+          "VarString": "",
+          "customerBioNamesUsed": [],
+          "Type": 17,
+          "RewardDoubleCheck": false,
+          "ItemID": "m016",
+          "Description": "Alle Aufgaben abschließen",
+          "Trait": 0,
+          "SoloGoal": false,
+          "RewardShown": false,
+          "IsInWorld": false,
+          "Minigame": 0,
+          "VarInt": 0,
+          "currentAmount": 3.0,
+          "RewardType": "EC:30",
+          "DayCreatedProxy": -8586485418774157218,
+          "Amount": 3.0,
+          "RewardGiven": true,
+          "IsBurntIn": false,
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "CollectType": 0,
+          "GoalIcon": 3,
+          "EventType": 0
+        }
+      ]
+    },
+    "TimedEventInstanceDB": {
+      "Items": []
+    },
+    "UnclaimedRewards": {
+      "UnclaimedRewardList": []
+    },
+    "InventoryInstance": {
+      "NormalDeliveryIDs": [],
+      "DiscoveredItemIDs": [
+        "I_UP_C1",
+        "I_UP_U2",
+        "I_UP_U3",
+        "I_UP_C2",
+        "I_UP_U1",
+        "I_UP_R2",
+        "I_UP_C3",
+        "I_UP_R3",
+        "I_UP_E3",
+        "I_UP_R1",
+        "I_UP_U4",
+        "I_UP_E2",
+        "I_UP_C4",
+        "I_UP_R4",
+        "I_UP_L5",
+        "I_UP_U5",
+        "I_UP_R5",
+        "I_UP_E1"
+      ],
+      "KittenCurrency": 0,
+      "AllowBasketNotifications": true,
+      "AllowFreeBasketNotifications": true,
+      "LastTieredIAPID": "OfferTXO1",
+      "LastHCTransaction": 235350029,
+      "UpgradeItemsProxy": [
+        {
+          "amount": 516,
+          "id": "I_UP_C1"
+        },
+        {
+          "amount": 393,
+          "id": "I_UP_C2"
+        },
+        {
+          "amount": 408,
+          "id": "I_UP_C3"
+        },
+        {
+          "amount": 454,
+          "id": "I_UP_C4"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_C5"
+        },
+        {
+          "amount": 174,
+          "id": "I_UP_U1"
+        },
+        {
+          "amount": 77,
+          "id": "I_UP_U2"
+        },
+        {
+          "amount": 146,
+          "id": "I_UP_U3"
+        },
+        {
+          "amount": 743,
+          "id": "I_UP_U4"
+        },
+        {
+          "amount": 117,
+          "id": "I_UP_U5"
+        },
+        {
+          "amount": 2,
+          "id": "I_UP_R1"
+        },
+        {
+          "amount": 88,
+          "id": "I_UP_R2"
+        },
+        {
+          "amount": 44,
+          "id": "I_UP_R3"
+        },
+        {
+          "amount": 26,
+          "id": "I_UP_R4"
+        },
+        {
+          "amount": 27,
+          "id": "I_UP_R5"
+        },
+        {
+          "amount": 18,
+          "id": "I_UP_E1"
+        },
+        {
+          "amount": 111,
+          "id": "I_UP_E2"
+        },
+        {
+          "amount": 45,
+          "id": "I_UP_E3"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_E4"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_E5"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_L1"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_L2"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_L3"
+        },
+        {
+          "amount": 0,
+          "id": "I_UP_L4"
+        },
+        {
+          "amount": 35,
+          "id": "I_UP_L5"
+        }
+      ],
+      "DeliveryVersionNumber": 0,
+      "HC": 221,
+      "Tokens": 1829,
+      "AllowCustomerNotifications": true,
+      "RatePromptAccepted": false,
+      "Level": 18,
+      "firstTimePlaying": false,
+      "BurntInDeliveryIDs": [],
+      "firstTimeDeliverySetup": true,
+      "Hearts": 133,
+      "XP": 21,
+      "_currentDayProxy": -8586485704854775808,
+      "CurrentShopVersion": 3,
+      "LastRatePromptProgress": 20,
+      "BurntInGoalIDs": [],
+      "IAPTier": 5,
+      "VisitedShelfItems": [
+        3,
+        6,
+        4
+      ],
+      "HCHasBeenBalancedToServer": true,
+      "firstTimeGoalSetup": false,
+      "HighestIAPTierPurchased": 4,
+      "SC": 1102,
+      "NumDeliveries": 0
+    },
+    "IGEventTrackerInstance": {
+      "EventBoosterActive": false,
+      "PlayerAlreadyOwnedUniqueMaxTierReward": false,
+      "EventPackHasBeenCreated": true,
+      "NumCompletions": 1,
+      "CurrentEventID": "EVENT_040_STPADDY",
+      "RewardsClaimedIndices": [
+        0
+      ],
+      "CurrentEventCurrencyQuantity": 1449
+    },
+    "CustomerInstanceDB": {
+      "Items": [
+        {
+          "InstanceID": "c8eb3cca-f3a8-4ade-a092-5a8b8c18343b",
+          "DesiredTraits": [
+            2
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573156976004924,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 2,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 2.5374999046325684,
+          "PositionY": -0.7149996757507324,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 3,
+            "FirstName": "Antonia",
+            "IsUniqueCustomer": false,
+            "Age": 23,
+            "PersonalityType": 9,
+            "OccupationID": "75",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "2"
+              },
+              {
+                "PartID": "35"
+              },
+              {
+                "PartID": "71"
+              },
+              {
+                "PartID": "103"
+              },
+              {
+                "PartID": "101"
+              },
+              {
+                "PartID": "106"
+              },
+              {
+                "PartID": "325"
+              },
+              {
+                "PartID": "146"
+              },
+              {
+                "PartID": "159"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "564b7885-ca40-46f1-9b4e-2795cf62185c",
+          "DesiredTraits": [
+            0
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573170003549734,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": true,
+          "DesiredCatID": "",
+          "DesiredLevel": 2,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 0.13750003278255463,
+          "PositionY": -3.5149998664855957,
+          "RandomCustomerInstance": {
+            "IsMale": true,
+            "StarSign": 4,
+            "FirstName": "Jamir",
+            "IsUniqueCustomer": false,
+            "Age": 35,
+            "PersonalityType": 5,
+            "OccupationID": "119",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "2"
+              },
+              {
+                "PartID": "46"
+              },
+              {
+                "PartID": "90"
+              },
+              {
+                "PartID": "104"
+              },
+              {
+                "PartID": "102"
+              },
+              {
+                "PartID": "382"
+              },
+              {
+                "PartID": "126"
+              },
+              {
+                "PartID": "151"
+              },
+              {
+                "PartID": "167"
+              },
+              {
+                "PartID": "181"
+              },
+              {
+                "PartID": "189"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "7e4525cc-f102-458b-bdc2-0bfadc426ab6",
+          "DesiredTraits": [
+            3
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573170123548744,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": true,
+          "DesiredCatID": "",
+          "DesiredLevel": 7,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 5.5413103103637695,
+          "PositionY": -0.8514648675918579,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 4,
+            "FirstName": "Journee",
+            "IsUniqueCustomer": false,
+            "Age": 24,
+            "PersonalityType": 12,
+            "OccupationID": "115",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "2"
+              },
+              {
+                "PartID": "7"
+              },
+              {
+                "PartID": "84"
+              },
+              {
+                "PartID": "103"
+              },
+              {
+                "PartID": "102"
+              },
+              {
+                "PartID": "384"
+              },
+              {
+                "PartID": "123"
+              },
+              {
+                "PartID": "151"
+              },
+              {
+                "PartID": "161"
+              },
+              {
+                "PartID": "180"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "d4e97742-52ab-4e73-b540-754625e26dfe",
+          "DesiredTraits": [
+            6
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573170304194474,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": true,
+          "DesiredCatID": "",
+          "DesiredLevel": 5,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 5.990912914276123,
+          "PositionY": -2.8890507221221924,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 8,
+            "FirstName": "Callie",
+            "IsUniqueCustomer": false,
+            "Age": 34,
+            "PersonalityType": 7,
+            "OccupationID": "94",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "2"
+              },
+              {
+                "PartID": "9"
+              },
+              {
+                "PartID": "77"
+              },
+              {
+                "PartID": "392"
+              },
+              {
+                "PartID": "102"
+              },
+              {
+                "PartID": "243"
+              },
+              {
+                "PartID": "122"
+              },
+              {
+                "PartID": "144"
+              },
+              {
+                "PartID": "168"
+              },
+              {
+                "PartID": "170"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "a726322e-9f18-4af8-b084-b5ef84a1b498",
+          "DesiredTraits": [
+            1
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573170635275824,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": true,
+          "DesiredCatID": "",
+          "DesiredLevel": 3,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": 5.337500095367432,
+          "PositionY": 1.6349999904632568,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 1,
+            "FirstName": "Aspen",
+            "IsUniqueCustomer": false,
+            "Age": 38,
+            "PersonalityType": 13,
+            "OccupationID": "48",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "2"
+              },
+              {
+                "PartID": "16"
+              },
+              {
+                "PartID": "69"
+              },
+              {
+                "PartID": "392"
+              },
+              {
+                "PartID": "101"
+              },
+              {
+                "PartID": "105"
+              },
+              {
+                "PartID": "327"
+              },
+              {
+                "PartID": "147"
+              },
+              {
+                "PartID": "164"
+              },
+              {
+                "PartID": "174"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        },
+        {
+          "InstanceID": "411d8aed-fff6-4371-aa92-a704aa1736ea",
+          "DesiredTraits": [
+            7
+          ],
+          "HasPaired": true,
+          "ItemID": "",
+          "HasRandomInstanceGenerated": true,
+          "Paid": false,
+          "SessionStartTimeProxy": 0,
+          "Arrived": true,
+          "ArriveTimeProxy": 5248573171148143574,
+          "IsInWorld": true,
+          "CurrentInteractionStartTimeProxy": 0,
+          "MaxWaitTimeProxy": 1800.0,
+          "PaidBonus": false,
+          "DesiredCatID": "",
+          "DesiredLevel": 7,
+          "TotalInteractionTimeProxy": 0.0,
+          "NextInteractionTargetProxy": 0.0,
+          "PositionX": -0.862500011920929,
+          "PositionY": 0.76500004529953,
+          "RandomCustomerInstance": {
+            "IsMale": false,
+            "StarSign": 1,
+            "FirstName": "Alexandra",
+            "IsUniqueCustomer": false,
+            "Age": 31,
+            "PersonalityType": 9,
+            "OccupationID": "159",
+            "Components": [
+              {
+                "PartID": "196"
+              },
+              {
+                "PartID": "197"
+              },
+              {
+                "PartID": "1"
+              },
+              {
+                "PartID": "32"
+              },
+              {
+                "PartID": "83"
+              },
+              {
+                "PartID": "392"
+              },
+              {
+                "PartID": "102"
+              },
+              {
+                "PartID": "384"
+              },
+              {
+                "PartID": "326"
+              },
+              {
+                "PartID": "149"
+              },
+              {
+                "PartID": "168"
+              },
+              {
+                "PartID": "174"
+              },
+              {
+                "PartID": "193"
+              }
+            ],
+            "LastName": "",
+            "Region": 0
+          },
+          "IsPicky": false,
+          "TotalSessionTargetTimeProxy": 0.0
+        }
+      ]
+    },
+    "FreeDeliveryTrackerInstance": {
+      "CurrentDeliveries": {
+        "Items": []
+      },
+      "LastDeliveryArrivedTimeProxy": 5248573111520817394
+    },
+    "FurnitureStorageDB": {
+      "Items": [
+        {
+          "ItemID": "FURN_004",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 3
+        },
+        {
+          "ItemID": "FURN_005",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_002",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 11
+        },
+        {
+          "ItemID": "FURN_001",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_031",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_017",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_011",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_027",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_015",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_012",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_016",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_073",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_074",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 5
+        },
+        {
+          "ItemID": "FURN_098",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_099",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_107",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_108",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_109",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_008",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_009",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_013",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_014",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 4
+        },
+        {
+          "ItemID": "FURN_006",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_007",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_035",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_036",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_037",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_038",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_045",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_018",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_020",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_022",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_077",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_023",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_032",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_034",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_033",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_076",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_039",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_140",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_025",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_019",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_029",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_141",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_054",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_003",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_139",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_055",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 4
+        },
+        {
+          "ItemID": "FURN_041",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_024",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_116",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_021",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_072",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_064",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_058",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 2
+        },
+        {
+          "ItemID": "FURN_069",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_049",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_071",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_079",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_059",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_122",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_125",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_075",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_117",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_104",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_123",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_128",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_028",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 3
+        },
+        {
+          "ItemID": "FURN_103",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_101",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_118",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_040",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_144",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_145",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 1
+        },
+        {
+          "ItemID": "FURN_051",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 3
+        },
+        {
+          "ItemID": "FURN_102",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        },
+        {
+          "ItemID": "FURN_081",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "InstanceID": "",
+          "IsInWorld": false,
+          "Quantity": 0
+        }
+      ]
+    },
+    "PlayerStatisticsInstance": {
+      "TrackedStatistics": [
+        {
+          "TrackedEvent": 7,
+          "EventCount": 1019
+        },
+        {
+          "TrackedEvent": 3,
+          "EventCount": 5344
+        },
+        {
+          "TrackedEvent": 15,
+          "EventCount": 1878
+        },
+        {
+          "TrackedEvent": 8,
+          "EventCount": 3757
+        },
+        {
+          "TrackedEvent": 6,
+          "EventCount": 4160
+        },
+        {
+          "TrackedEvent": 9,
+          "EventCount": 261
+        },
+        {
+          "TrackedEvent": 4,
+          "EventCount": 17
+        },
+        {
+          "TrackedEvent": 12,
+          "EventCount": 82
+        },
+        {
+          "TrackedEvent": 5,
+          "EventCount": 98
+        },
+        {
+          "TrackedEvent": 28,
+          "EventCount": 20
+        },
+        {
+          "TrackedEvent": 29,
+          "EventCount": 169
+        },
+        {
+          "TrackedEvent": 26,
+          "EventCount": 62
+        },
+        {
+          "TrackedEvent": 11,
+          "EventCount": 44
+        },
+        {
+          "TrackedEvent": 10,
+          "EventCount": 49
+        }
+      ]
+    },
+    "EarnedDeliveryTrackerInstance": {
+      "EarnedDeliveryPool": [
+        {
+          "PoolQuantity": 33,
+          "DeliveryID": "DA1"
+        },
+        {
+          "PoolQuantity": 33,
+          "DeliveryID": "DA2"
+        },
+        {
+          "PoolQuantity": 40,
+          "DeliveryID": "DB1"
+        },
+        {
+          "PoolQuantity": 40,
+          "DeliveryID": "DB2"
+        },
+        {
+          "PoolQuantity": 14,
+          "DeliveryID": "DC1"
+        },
+        {
+          "PoolQuantity": 14,
+          "DeliveryID": "DC2"
+        },
+        {
+          "PoolQuantity": 12,
+          "DeliveryID": "DD1"
+        },
+        {
+          "PoolQuantity": 11,
+          "DeliveryID": "DD2"
+        },
+        {
+          "PoolQuantity": 5,
+          "DeliveryID": "DE1"
+        }
+      ],
+      "DeliveryVersionNumber": 4,
+      "firstTimeDeliverySetup": false,
+      "BurntInDeliveryPool": [],
+      "EarnedDeliveries": {
+        "Items": [
+          {
+            "ItemID": "",
+            "SlotIndex": 0,
+            "PositionX": 0.0,
+            "PositionY": 0.0,
+            "IsStored": false,
+            "TimerIsCountingDown": false,
+            "InstanceID": "",
+            "PackID": "DD1",
+            "DeliveryOpenStartTimeProxy": 0,
+            "DeliveryID": "DD1",
+            "DeliverySlot": 0,
+            "HasBeenHurried": false,
+            "IsEventBasket": false,
+            "IsOpening": false,
+            "IsInWorld": false,
+            "IsReadyToOpen": false,
+            "IsFreeDelivery": false,
+            "IsInstantBasket": false,
+            "IsOpenable": false
+          },
+          {
+            "ItemID": "",
+            "SlotIndex": 2,
+            "PositionX": 0.0,
+            "PositionY": 0.0,
+            "IsStored": false,
+            "TimerIsCountingDown": true,
+            "InstanceID": "",
+            "PackID": "DD2",
+            "DeliveryOpenStartTimeProxy": 5248573170988891754,
+            "DeliveryID": "DD2",
+            "DeliverySlot": 0,
+            "HasBeenHurried": false,
+            "IsEventBasket": false,
+            "IsOpening": false,
+            "IsInWorld": false,
+            "IsReadyToOpen": false,
+            "IsFreeDelivery": false,
+            "IsInstantBasket": false,
+            "IsOpenable": false
+          }
+        ]
+      },
+      "NumDeliveries": 287
+    },
+    "DeliveryInstanceDB": {
+      "Items": []
+    },
+    "FurnitureInstanceDB": {
+      "Items": [
+        {
+          "ItemID": "FURN_074",
+          "PositionX": 10.737500190734863,
+          "PositionY": 4.164999961853027,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": false,
+          "IsPlaced": true,
+          "InstanceID": "43a2340f-05e8-4656-a9d3-4be58beff5a4",
+          "preDraggingPositionY": 0.0,
+          "preDraggingPositionX": 0.0,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_049",
+          "PositionX": 0.13750003278255463,
+          "PositionY": -3.0349998474121094,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "c2df0576-495f-4806-9df1-03d1a8330946",
+          "preDraggingPositionY": -3.0349998474121094,
+          "preDraggingPositionX": 0.13750003278255463,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_049",
+          "PositionX": -0.6624999046325684,
+          "PositionY": -3.0349998474121094,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "38a2bacc-fc62-4dcf-82e9-44d3655dd1f6",
+          "preDraggingPositionY": -3.0349998474121094,
+          "preDraggingPositionX": -0.6624999046325684,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_049",
+          "PositionX": -1.462499976158142,
+          "PositionY": -3.0349998474121094,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "495b9b86-81e6-487f-b9ed-b9055880d09b",
+          "preDraggingPositionY": -3.0349998474121094,
+          "preDraggingPositionX": -1.462499976158142,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_003",
+          "PositionX": 5.337500095367432,
+          "PositionY": 2.365000009536743,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "aae7b85c-9f5f-4573-8b0e-4b010687b6fc",
+          "preDraggingPositionY": 2.365000009536743,
+          "preDraggingPositionX": 5.337500095367432,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_101",
+          "PositionX": 2.5374999046325684,
+          "PositionY": -0.2349996566772461,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "4aa39ff3-ac15-4bc8-95d1-4b8283561330",
+          "preDraggingPositionY": -0.2349996566772461,
+          "preDraggingPositionX": 2.5374999046325684,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_117",
+          "PositionX": 6.737499713897705,
+          "PositionY": 2.565000057220459,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "637922ee-1407-4f43-bb3e-297993ff7fb4",
+          "preDraggingPositionY": 2.565000057220459,
+          "preDraggingPositionX": 6.737499713897705,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_073",
+          "PositionX": -0.0625,
+          "PositionY": 4.164999961853027,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "34b0a898-5685-4114-9f62-0035d870799f",
+          "preDraggingPositionY": 4.164999961853027,
+          "preDraggingPositionX": -0.0625,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_102",
+          "PositionX": 4.137500286102295,
+          "PositionY": 4.164999961853027,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "215989a4-fec6-4e00-9f0d-de95072b3cf2",
+          "preDraggingPositionY": 4.164999961853027,
+          "preDraggingPositionX": 4.137500286102295,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_118",
+          "PositionX": 8.137499809265137,
+          "PositionY": 4.164999961853027,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "13cf4d87-82b7-473f-ae68-a0eca634d358",
+          "preDraggingPositionY": 4.164999961853027,
+          "preDraggingPositionX": 8.137499809265137,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_122",
+          "PositionX": 8.9375,
+          "PositionY": 1.9650001525878906,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "a656e89d-6350-4879-ac0b-930e20033ffc",
+          "preDraggingPositionY": 1.9650001525878906,
+          "preDraggingPositionX": 8.9375,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_125",
+          "PositionX": 8.137499809265137,
+          "PositionY": -1.434999942779541,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "6ea4d060-30da-47ee-94ad-9c528c4c1f6e",
+          "preDraggingPositionY": -1.434999942779541,
+          "preDraggingPositionX": 8.137499809265137,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_054",
+          "PositionX": 7.137500286102295,
+          "PositionY": 0.16499996185302734,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "6f67e2b6-e223-4a9d-bd4b-053c8018b787",
+          "preDraggingPositionY": 0.16499996185302734,
+          "preDraggingPositionX": 7.137500286102295,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_054",
+          "PositionX": 8.737500190734863,
+          "PositionY": -3.0349998474121094,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "219a75ca-b1c1-4e18-be04-625281c190f6",
+          "preDraggingPositionY": -3.0349998474121094,
+          "preDraggingPositionX": 8.737500190734863,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_054",
+          "PositionX": 7.137500286102295,
+          "PositionY": -3.0349998474121094,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "7d069cea-5438-42a5-b957-a0c099e528b5",
+          "preDraggingPositionY": -3.0349998474121094,
+          "preDraggingPositionX": 7.137500286102295,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_039",
+          "PositionX": 7.737499713897705,
+          "PositionY": 0.7650002241134644,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "872c1e48-ff6e-47fa-b88f-5da555ccd316",
+          "preDraggingPositionY": 0.7650002241134644,
+          "preDraggingPositionX": 7.737499713897705,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_039",
+          "PositionX": -1.0625,
+          "PositionY": -0.034999966621398926,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "482e60f6-27cc-400f-822f-a01db3382f55",
+          "preDraggingPositionY": -0.034999966621398926,
+          "preDraggingPositionX": -1.0625,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_116",
+          "PositionX": 2.5375001430511475,
+          "PositionY": 2.365000009536743,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "1e0f80f1-3e9b-4348-a24c-c831f3ae5348",
+          "preDraggingPositionY": 2.365000009536743,
+          "preDraggingPositionX": 2.5375001430511475,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_075",
+          "PositionX": 2.5375001430511475,
+          "PositionY": 0.9650002717971802,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "9d197b53-ebde-4d2d-90ee-7eb31f747e33",
+          "preDraggingPositionY": 0.9650002717971802,
+          "preDraggingPositionX": 2.5375001430511475,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_139",
+          "PositionX": 1.5375001430511475,
+          "PositionY": 4.364999771118164,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "c8bfe768-c744-49af-a8f4-73816a064d7a",
+          "preDraggingPositionY": 4.364999771118164,
+          "preDraggingPositionX": 1.5375001430511475,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_031",
+          "PositionX": 5.337500095367432,
+          "PositionY": 1.165000319480896,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "7f5e9040-bbd8-4f2e-9785-eff4ce05cdfa",
+          "preDraggingPositionY": 1.165000319480896,
+          "preDraggingPositionX": 5.337500095367432,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_123",
+          "PositionX": 8.737500190734863,
+          "PositionY": 0.16499994695186615,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "6f27db68-2e41-4625-93ea-312d1393a3ab",
+          "preDraggingPositionY": 0.16499994695186615,
+          "preDraggingPositionX": 8.737500190734863,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_029",
+          "PositionX": 4.137500286102295,
+          "PositionY": 2.565000057220459,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "f7896aa9-281a-4746-aa44-64a3251e62cf",
+          "preDraggingPositionY": 2.565000057220459,
+          "preDraggingPositionX": 4.137500286102295,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_029",
+          "PositionX": 6.537500381469727,
+          "PositionY": 1.765000343322754,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "d3244029-c4d9-484c-bbcb-e465c89fba41",
+          "preDraggingPositionY": 1.765000343322754,
+          "preDraggingPositionX": 6.537500381469727,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_099",
+          "PositionX": 5.537499904632568,
+          "PositionY": 4.1650004386901855,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "9a316594-0fee-4243-bf87-0798c3fd8017",
+          "preDraggingPositionY": 4.1650004386901855,
+          "preDraggingPositionX": 5.537499904632568,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_098",
+          "PositionX": 6.9375,
+          "PositionY": 3.9650001525878906,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "5f879305-d39b-4b9f-b8f7-7972a196da26",
+          "preDraggingPositionY": 3.9650001525878906,
+          "preDraggingPositionX": 6.9375,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_101",
+          "PositionX": 0.9375000596046448,
+          "PositionY": 0.565000057220459,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "da55d474-a8b8-495a-baea-3d4722312ddf",
+          "preDraggingPositionY": 0.565000057220459,
+          "preDraggingPositionX": 0.9375000596046448,
+          "IsInWorld": true
+        },
+        {
+          "ItemID": "FURN_081",
+          "PositionX": 5.337499618530273,
+          "PositionY": -1.234999656677246,
+          "IsPurchasePreview": false,
+          "HasPreDragPosition": true,
+          "IsPlaced": true,
+          "InstanceID": "f9d15c5e-3b5a-4852-95f1-176532203206",
+          "preDraggingPositionY": -1.234999656677246,
+          "preDraggingPositionX": 5.337499618530273,
+          "IsInWorld": true
+        }
+      ]
+    },
+    "FCMInstance": {
+      "LastRenewalDateProxy": -8586501256854767028,
+      "LastBonusCurrencyClaimedDateProxy": -8586485704854775648,
+      "DaysRenewedFor": 30,
+      "FCMActive": true,
+      "RenewalCountdownStartTimeProxy": 0
+    },
+    "NewsTrackerInstance": {
+      "ItemID": "",
+      "PositionX": 0.0,
+      "PositionY": 0.0,
+      "InstanceID": "",
+      "LastNewsStoryDateTimeProxy": 5248567325017387904,
+      "IsInWorld": false
+    },
+    "ShopItemInstanceDB": {
+      "Items": [
+        {
+          "ItemID": "I_UP_C3",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774185388,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "COMMON_ITEM_DESC",
+            "Title": "ITEM_003",
+            "MaxLevel": 0.0,
+            "Price": 8.0,
+            "PriceCurrency": 1,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "I_UP_C3",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 1,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "I_UP_C3"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "I_UP_U4",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774184418,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "UNCOMMON_ITEM_DESC",
+            "Title": "ITEM_009",
+            "MaxLevel": 0.0,
+            "Price": 32.0,
+            "PriceCurrency": 1,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "I_UP_U4",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 1,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "I_UP_U4"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "I_UP_U5",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774183738,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "UNCOMMON_ITEM_DESC",
+            "Title": "ITEM_010",
+            "MaxLevel": 0.0,
+            "Price": 32.0,
+            "PriceCurrency": 1,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "I_UP_U5",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 1,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "I_UP_U5"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "I_UP_E2",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774183098,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "EPIC_ITEM_DESC",
+            "Title": "ITEM_017",
+            "MaxLevel": 0.0,
+            "Price": 160.0,
+            "PriceCurrency": 1,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "I_UP_E2",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 1,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "I_UP_E2"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "BasketPack1",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774182728,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 135.0,
+            "ImagePath": "Sprites/HUD/Opening/Basket_Rare",
+            "Description": "-",
+            "Title": "DELIVERY_BASKET_GREAT",
+            "MaxLevel": 0.0,
+            "Price": 150.0,
+            "PriceCurrency": 0,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "BasketPack1",
+            "Active": true,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 3,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "BASK_DC1"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "BasketPack2",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774182718,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 270.0,
+            "ImagePath": "Sprites/HUD/Opening/Basket_Legendary",
+            "Description": "-",
+            "Title": "DELIVERY_BASKET_AMAZING",
+            "MaxLevel": 0.0,
+            "Price": 300.0,
+            "PriceCurrency": 0,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "BasketPack2",
+            "Active": true,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 3,
+            "Duration": 0,
+            "Order": 2,
+            "Contents": [
+              "BASK_DE1"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "FURN_101",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774178568,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "SHOP_PACK_DESCRIPTION_FURNITURE",
+            "Title": "FURNITURE_NAME_101",
+            "MaxLevel": 0.0,
+            "Price": 600.0,
+            "PriceCurrency": 2,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "FURN_101",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 2,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "FURN_101"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "FURN_081",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774175588,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "SHOP_PACK_DESCRIPTION_FURNITURE",
+            "Title": "FURNITURE_NAME_081",
+            "MaxLevel": 0.0,
+            "Price": 800.0,
+            "PriceCurrency": 2,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "FURN_081",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 2,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "FURN_081"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "FURN_043",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774173368,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "SHOP_PACK_DESCRIPTION_FURNITURE",
+            "Title": "FURNITURE_NAME_043",
+            "MaxLevel": 0.0,
+            "Price": 300.0,
+            "PriceCurrency": 2,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "FURN_043",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 2,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "FURN_043"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        },
+        {
+          "ItemID": "FURN_112",
+          "PositionX": 0.0,
+          "PositionY": 0.0,
+          "_dayCreatedProxy": -8586485418774171118,
+          "InstanceID": "",
+          "ConstructedData": {
+            "SKU": "",
+            "DiscountPrice": 0.0,
+            "ImagePath": "",
+            "Description": "SHOP_PACK_DESCRIPTION_FURNITURE",
+            "Title": "FURNITURE_NAME_112",
+            "MaxLevel": 0.0,
+            "Price": 300.0,
+            "PriceCurrency": 2,
+            "SKUType": 0,
+            "DiscountSKU": "",
+            "MinLevel": 0.0,
+            "ID": "FURN_112",
+            "Active": false,
+            "AdjustToken": "",
+            "Tier": -1,
+            "PackType": 2,
+            "Duration": 0,
+            "Order": 0,
+            "Contents": [
+              "FURN_112"
+            ],
+            "HighlightCard": false
+          },
+          "IsInWorld": false
+        }
+      ]
+    }
+  }
+}

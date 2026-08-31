@@ -33,11 +33,11 @@ import { getMenuButtonRect } from '../platform/minigame';
  * 改配色时注意成对改——浅底配浅字会直接看不见。
  */
 export const COLOR = {
-  /** 底色，由 3D 相机清屏给出 */
+  /** 底色，由 PetStage 的 2D 背景/相机清屏给出 */
   bg: new Color(242, 228, 208, 255),
   /** 面板，比底色更白一点 */
   panel: new Color(255, 252, 247, 255),
-  /** 略透一点，让底下的 3D 画面透出来，避免 UI 像一块贴上去的板子 */
+  /** 略透一点，让底下的宠物/背景透出来，避免 UI 像一块贴上去的板子 */
   panelGlass: new Color(255, 252, 247, 235),
   panelLight: new Color(247, 238, 226, 255),
   /** 进度条底槽 */

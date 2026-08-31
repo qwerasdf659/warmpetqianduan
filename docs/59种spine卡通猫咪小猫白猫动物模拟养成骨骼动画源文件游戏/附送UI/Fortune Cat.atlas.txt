@@ -1,0 +1,41 @@
+
+Fortune Cat.png
+size: 1045,812
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Effects/Gui/Fortune Cat Menu/ButtonPushed
+  rotate: true
+  xy: 837, 365
+  size: 192, 206
+  orig: 192, 206
+  offset: 0, 0
+  index: -1
+Parts_Effects/Gui/Fortune Cat Menu/ButtonUnpushed
+  rotate: true
+  xy: 837, 171
+  size: 192, 206
+  orig: 192, 206
+  offset: 0, 0
+  index: -1
+Parts_Effects/Gui/Fortune Cat Menu/FortuneCatBody
+  rotate: false
+  xy: 2, 2
+  size: 833, 808
+  orig: 833, 808
+  offset: 0, 0
+  index: -1
+Parts_Effects/Gui/Fortune Cat Menu/UpArm
+  rotate: false
+  xy: 837, 559
+  size: 189, 251
+  orig: 189, 251
+  offset: 0, 0
+  index: -1
+Parts_Effects/Gui/Fortune Cat Menu/UpHand
+  rotate: false
+  xy: 837, 14
+  size: 200, 155
+  orig: 200, 155
+  offset: 0, 0
+  index: -1

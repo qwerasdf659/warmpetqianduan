@@ -1,0 +1,71 @@
+{
+  "Items": [
+    {
+      "ID": "t_goCatLounge1",
+      "Type": 18,
+      "LevelUnlocked": "9.0",
+      "VarString": "Lounge",
+      "Trait": 0,
+      "CollectType": 0,
+      "BasketRarity": 0,
+      "Amount": 1,
+      "RewardType": "CatHearts:9",
+      "Description": "TUTORIAL_STEP_T_GOTOCATLOUNGE1",
+      "GoalIcon": 6,
+      "Minigame": 0,
+      "EventType": 37,
+      "SoloGoal": true,
+      "LateTutorialGoal": true
+    },
+    {
+      "ID": "t_useLuckyCat1",
+      "Type": 19,
+      "LevelUnlocked": "9.0",
+      "Trait": 0,
+      "CollectType": 0,
+      "BasketRarity": 0,
+      "Amount": 3,
+      "RewardType": "I_ST_C1:5",
+      "Description": "TUTORIAL_STEP_T_USELUCKYCAT",
+      "GoalIcon": 6,
+      "Minigame": 0,
+      "EventType": 38,
+      "SoloGoal": true,
+      "LateTutorialGoal": true
+    },
+    {
+      "ID": "t_unlockStation1",
+      "Type": 20,
+      "LevelUnlocked": "9.0",
+      "VarString": "STATION_002",
+      "Trait": 0,
+      "CollectType": 0,
+      "BasketRarity": 0,
+      "Amount": 1,
+      "RewardType": "I_ST_U1:1",
+      "Description": "TUTORIAL_STEP_T_UNLOCKSTATION",
+      "GoalIcon": 6,
+      "Minigame": 0,
+      "EventType": 39,
+      "SoloGoal": true,
+      "LateTutorialGoal": true
+    },
+    {
+      "ID": "t_assignCatToStation1",
+      "Type": 21,
+      "LevelUnlocked": "9.0",
+      "VarString": "STATION_002",
+      "Trait": 0,
+      "CollectType": 0,
+      "BasketRarity": 0,
+      "Amount": 1,
+      "RewardType": "I_ST_E1:1",
+      "Description": "TUTORIAL_STEP_T_ASSIGNCATTOSTATION",
+      "GoalIcon": 6,
+      "Minigame": 0,
+      "EventType": 40,
+      "SoloGoal": true,
+      "LateTutorialGoal": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+
+Frog.png
+size: 1180,471
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Frog/Base
+  rotate: true
+  xy: 2, 2
+  size: 467, 492
+  orig: 467, 492
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Frog/t1
+  rotate: true
+  xy: 827, 43
+  size: 211, 328
+  orig: 272, 372
+  offset: 23, 19
+  index: -1
+Parts_Furniture/Frog/t2
+  rotate: true
+  xy: 496, 42
+  size: 212, 329
+  orig: 272, 372
+  offset: 21, 19
+  index: -1
+Parts_Furniture/Frog/t3
+  rotate: true
+  xy: 496, 256
+  size: 213, 351
+  orig: 272, 372
+  offset: 22, 4
+  index: -1
+Parts_Furniture/Frog/t4
+  rotate: true
+  xy: 849, 256
+  size: 213, 329
+  orig: 272, 372
+  offset: 21, 19
+  index: -1

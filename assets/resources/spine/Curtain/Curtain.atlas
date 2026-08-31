@@ -1,0 +1,41 @@
+
+Curtain.png
+size: 995,246
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+L_Curtain
+  rotate: true
+  xy: 475, 12
+  size: 232, 471
+  orig: 232, 471
+  offset: 0, 0
+  index: -1
+R_Curtain
+  rotate: true
+  xy: 2, 2
+  size: 242, 471
+  orig: 242, 471
+  offset: 0, 0
+  index: -1
+Rope_1
+  rotate: true
+  xy: 948, 195
+  size: 49, 45
+  orig: 49, 45
+  offset: 0, 0
+  index: -1
+Rope_2
+  rotate: true
+  xy: 948, 145
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+Rope_3
+  rotate: false
+  xy: 948, 91
+  size: 23, 52
+  orig: 23, 53
+  offset: 0, 1
+  index: -1

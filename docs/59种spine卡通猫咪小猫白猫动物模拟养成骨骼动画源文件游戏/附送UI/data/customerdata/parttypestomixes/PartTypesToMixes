@@ -1,0 +1,332 @@
+{
+  "Items": [
+    {
+      "ID": "1",
+      "PartType": "Skins",
+      "SlotValues": [
+        "Head",
+        "Body_Skin",
+        "Neck_A",
+        "Neck_B",
+        "R_Leg_A_Skin",
+        "R_Leg_B_Skin",
+        "L_Leg_A_Skin",
+        "L_Leg_B_Skin",
+        "L_Hand",
+        "R_Hand",
+        "L_Hand",
+        "R_Hand",
+        "L_Hand",
+        "R_Hand",
+        "L_Hand",
+        "R_Hand",
+        "L_Hand",
+        "R_Hand",
+        "L_Hand",
+        "R_Hand",
+        "R_Arm_A_Skin",
+        "R_Arm_B_Skin",
+        "L_Arm_A_Skin",
+        "L_Arm_B_Skin",
+        "R_Foot",
+        "L_Foot",
+        "Ear"
+      ],
+      "AttachmentValues": [
+        "Head",
+        "Body_Skin",
+        "Neck_A",
+        "Neck_B",
+        "R_Leg_A_Skin",
+        "R_Leg_B_Skin",
+        "L_Leg_A_Skin",
+        "L_Leg_B_Skin",
+        "L_Hand_Normal",
+        "R_Hand_Normal",
+        "L_Hand_Cheek",
+        "R_Hand_Cheek",
+        "L_Hand_Open",
+        "R_Hand_Open",
+        "L_Hand_Sit",
+        "R_Hand_Sit",
+        "L_Hand_Sit_B",
+        "R_Hand_Sit_B",
+        "L_Hand_C",
+        "R_Hand_C",
+        "R_Arm_A_Skin",
+        "R_Arm_B_Skin",
+        "L_Arm_A_Skin",
+        "L_Arm_B_Skin",
+        "R_Foot",
+        "L_Foot",
+        "Ear"
+      ]
+    },
+    {
+      "ID": "2",
+      "PartType": "Hairstyles",
+      "SlotValues": [
+        "Hair",
+        "Hair_Back",
+        "Hair_Back_Long",
+        "Hair_Back_Mid",
+        "Bang_A"
+      ],
+      "AttachmentValues": [
+        "Hair",
+        "Hair_Back",
+        "Hair_Back_Long",
+        "Hair_Back_Mid",
+        "Bang_A"
+      ]
+    },
+    {
+      "ID": "3",
+      "PartType": "Eyes",
+      "SlotValues": [
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L",
+        "Eye_R",
+        "Eye_L"
+      ],
+      "AttachmentValues": [
+        "Eye_R_Normal",
+        "Eye_L_Normal",
+        "Eye_R_Sad",
+        "Eye_L_Sad",
+        "Eye_R_Angry",
+        "Eye_L_Angry",
+        "Eye_R_Love",
+        "Eye_L_Love",
+        "Eye_R_Closed",
+        "Eye_L_Closed",
+        "Eye_R_Down",
+        "Eye_L_Down",
+        "Eye_R_Cute",
+        "Eye_L_Cute",
+        "Eye_R_Open",
+        "Eye_L_Open",
+        "Eye_R_Star",
+        "Eye_L_Star",
+        "R_Eye_Angry",
+        "L_Eye_Angry"
+      ]
+    },
+    {
+      "ID": "4",
+      "PartType": "Noses",
+      "SlotValues": [
+        "Nose"
+      ],
+      "AttachmentValues": [
+        "Nose"
+      ]
+    },
+    {
+      "ID": "5",
+      "PartType": "Mouths",
+      "SlotValues": [
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth",
+        "Mouth"
+      ],
+      "AttachmentValues": [
+        "Mouth_Normal",
+        "Mouth_Open",
+        "Mouth_Happy",
+        "Mouth_Smile",
+        "Mouth_Anoyed",
+        "Mouth_Eh",
+        "Mouth_Open_B",
+        "Mouth_Sad",
+        "Mouth_Smile_B",
+        "Mouth_Squeeze"
+      ]
+    },
+    {
+      "ID": "6",
+      "PartType": "Brows",
+      "SlotValues": [
+        "L_Brow",
+        "R_Brow"
+      ],
+      "AttachmentValues": [
+        "L_Brow",
+        "R_Brow"
+      ]
+    },
+    {
+      "ID": "7",
+      "PartType": "Beards",
+      "SlotValues": [
+        "Beard"
+      ],
+      "AttachmentValues": [
+        "Beard"
+      ]
+    },
+    {
+      "ID": "8",
+      "PartType": "Shirts",
+      "SlotValues": [
+        "Body",
+        "Collar",
+        "R_Shoulder",
+        "L_Shoulder",
+        "L_Arm_Sleeve",
+        "R_Arm_Sleeve"
+      ],
+      "AttachmentValues": [
+        "Body",
+        "Collar",
+        "R_Shoulder",
+        "L_Shoulder",
+        "L_Arm_Sleeve",
+        "R_Arm_Sleeve"
+      ]
+    },
+    {
+      "ID": "9",
+      "PartType": "Skirts",
+      "SlotValues": [
+        "Skirt"
+      ],
+      "AttachmentValues": [
+        "Skirt"
+      ]
+    },
+    {
+      "ID": "10",
+      "PartType": "Pants",
+      "SlotValues": [
+        "R_Leg_B_Pants",
+        "L_Leg_B_Pants",
+        "R_Leg_A_Pants",
+        "L_Leg_A_Pants",
+        "Bottom"
+      ],
+      "AttachmentValues": [
+        "R_Leg_B_Pants",
+        "L_Leg_B_Pants",
+        "R_Leg_A_Pants",
+        "L_Leg_A_Pants",
+        "Bottom"
+      ]
+    },
+    {
+      "ID": "11",
+      "PartType": "Shoes",
+      "SlotValues": [
+        "L_Shoe",
+        "R_Shoe"
+      ],
+      "AttachmentValues": [
+        "L_Shoe",
+        "R_Shoe"
+      ]
+    },
+    {
+      "ID": "12",
+      "PartType": "Socks",
+      "SlotValues": [
+        "L_Sock",
+        "R_Sock",
+        "R_Leg_B_Socks",
+        "L_Leg_B_Socks"
+      ],
+      "AttachmentValues": [
+        "L_Sock",
+        "R_Sock",
+        "R_Leg_B_Socks",
+        "L_Leg_B_Socks"
+      ]
+    },
+    {
+      "ID": "13",
+      "PartType": "Hats",
+      "SlotValues": [
+        "Hat_Front",
+        "Hat_Back"
+      ],
+      "AttachmentValues": [
+        "Hat_Front",
+        "Hat_Back"
+      ]
+    },
+    {
+      "ID": "14",
+      "PartType": "Bracelets",
+      "SlotValues": [
+        "R_Bracelet"
+      ],
+      "AttachmentValues": [
+        "R_Bracelet"
+      ]
+    },
+    {
+      "ID": "15",
+      "PartType": "Belts",
+      "SlotValues": [
+        "Belt"
+      ],
+      "AttachmentValues": [
+        "Belt"
+      ]
+    },
+    {
+      "ID": "16",
+      "PartType": "Glasses",
+      "SlotValues": [
+        "Glasses"
+      ],
+      "AttachmentValues": [
+        "Glasses"
+      ]
+    },
+    {
+      "ID": "17",
+      "PartType": "Necklaces",
+      "SlotValues": [
+        "Necklace"
+      ],
+      "AttachmentValues": [
+        "Necklace"
+      ]
+    },
+    {
+      "ID": "18",
+      "PartType": "Shared",
+      "SlotValues": [
+        "Hold",
+        "Hold"
+      ],
+      "AttachmentValues": [
+        "Phone",
+        "Cup"
+      ]
+    }
+  ]
+}

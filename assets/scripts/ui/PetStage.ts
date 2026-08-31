@@ -1,609 +1,923 @@
 /**
- * 3D 宠物舞台。
+ * 2D 宠物舞台（Spine 骨骼）。
  *
- * 优先加载 glTF 模型（带 idle 骨骼动画）；加载失败时退回用引擎自带的基础几何体
- * 拼的占位宠物。**任何一条路径都必须出画面**——舞台是主视觉，空一块比丑一点糟得多。
+ * 优先加载 Spine 骨骼资源（带 idle 动画）；资源缺失或引擎未编入 spine 模块时，
+ * 退回用 Graphics 画的占位宠物。**任何一条路径都必须出画面**——舞台是主视觉，
+ * 空一块比丑一点糟得多。
  *
- * 相机分工：
- *   3D 相机 priority 0，负责清屏，只看 DEFAULT 层
- *   UI 相机 priority 1，只清深度不清颜色，只看 UI_2D 层
- * 这样 UI 叠在 3D 画面之上，两边互不干扰。
+ * 迁移说明（3D → 2D，见 docs/06 §3.4 / §5）：
+ *   旧版是 3D：单开一个透视相机清屏、平行光、GLB + builtin-toon 描边。
+ *   新版是纯 2D：宠物是 Canvas 下的 UI 节点挂 sp.Skeleton，和其余 UI 同层渲染，
+ *   不再需要第二个相机，UI 相机恢复默认清屏。
  */
 
 import {
   _decorator,
   Component,
   Node,
-  Camera,
-  DirectionalLight,
-  MeshRenderer,
-  Material,
-  Mesh,
-  Prefab,
-  Canvas,
+  UITransform,
   Layers,
   Color,
   Vec3,
-  Vec4,
-  primitives,
-  utils,
-  instantiate,
-  resources,
-  EffectAsset,
-  Texture2D,
   tween,
   Tween,
-  director,
-  SkeletalAnimation,
-  AnimationClip,
+  resources,
+  Sprite,
+  SpriteFrame,
+  Graphics,
+  Camera,
+  Canvas,
+  view,
+  sp,
+  EventTouch,
 } from 'cc';
-import { COLOR } from './widgets';
+import { COLOR, makeLabel } from './widgets';
+import { randomCustomer } from './showcaseData';
 import store from '../core/store';
 import type { PetStage as PetGrowthStage } from '../net/types';
 
 const { ccclass } = _decorator;
 
-/**
- * 占位配色，对齐奶茶米色系（docs/06 §2.2、§3.4）。
- *
- * 浅底方案有个坑：背景一亮，浅色宠物就糊在背景里。
- * 所以毛色要比背景**深一档**，地台再深一档，靠明度差把轮廓拉出来，
- * 而不是靠描边。三档明度依次是 0.90 / 0.76 / 0.70，改一个就要重排三个。
- */
+/** 占位配色，对齐奶茶米色系（docs/06 §2.2）。毛色比背景深一档，靠明度差把轮廓拉出来。 */
 const FUR = new Color(217, 190, 150, 255); // #D9BE96
 const FUR_DARK = new Color(196, 168, 126, 255); // #C4A87E
-const DARK = new Color(82, 58, 44, 255);
-const GROUND = new Color(201, 174, 139, 255); // #C9AE8B
+const OUTLINE = new Color(74, 55, 40, 255); // #4A3728
 
-/** 成长阶段只改缩放，不换模型（docs/06 §5.7） */
+/** 成长阶段只改缩放，不换骨架（docs/06 §5.7） */
 const STAGE_SCALE: Record<PetGrowthStage, number> = { baby: 0.72, teen: 0.86, adult: 1.0 };
 
-/** 幼崽动作更碎更快 */
+/** 幼崽动作更碎更快，用 Spine 的 timeScale 实现 */
 const STAGE_SPEED: Record<PetGrowthStage, number> = { baby: 1.15, teen: 1.0, adult: 1.0 };
 
 /**
- * species 的枚举值后端还没定（对接文档现在返回 "default"，见 docs/06 §10）。
- * 拼不出对应模型时一律退回狗，而不是让舞台空着。
+ * species → Spine 骨架资源名。后端目前返回 "default"，认不出就走兜底。
+ * 兜底用拟人主宠：它是养成核心，也是唯一保证有全套动画的骨架（docs/06 §5.1）。
  */
-const SPECIES_MODEL: Record<string, string> = { cat: 'pet_cat', dog: 'pet_dog' };
-// 兜底用猫：它是目前唯一由真网格适配来的模型（狗还是脚本生成的占位）。
-// 后端现在返回 "default"，认不出就走这里，所以这个值决定了玩家实际看到什么。
-const FALLBACK_MODEL = 'pet_cat';
+const SPECIES_SKELETON: Record<string, string> = { cat: 'pet_cat/Cat', dog: 'pet_dog' };
+// 临时（玩法验证）：pet_humanoid / pet_dog 骨架还没到位，兜底先指向已导入的 59 猫包，
+// 保证 mock 返回 default species 时也能直接看到骨骼动画。真实主宠到位后改回 'pet_humanoid'。
+const FALLBACK_SKELETON = 'pet_cat/Cat';
 
-const IDLE_CLIP = 'idle';
+/** Spine 资源统一放在 resources/spine/ 下，运行时按名字加载 SkeletonData 子资源 */
+const SPINE_DIR = 'spine';
+/**
+ * 动画名兜底候选：自研主宠会统一用小写 idle/happy；接入的现成素材（如 59 猫包）
+ * 用的是 Idle / Pers_Playful 这类命名。按顺序取第一个存在的，省得逐个改素材。
+ */
+const IDLE_CANDIDATES = ['Sleep_A', 'idle', 'Idle', 'Sit_Idle', 'Idle3'];
+const HAPPY_CANDIDATES = ['happy', 'Pers_Playful', 'A_Play', 'Stand_Pat'];
+/** 散步用：走路动画 + 到点停下的站立 idle（不用 Sleep，睡着走看着怪） */
+const WALK_CANDIDATES = ['Walk', 'Walk2', 'Walk_2', 'walk'];
+const WANDER_IDLE_CANDIDATES = ['Idle', 'Sit_Idle', 'idle', 'Stretch'];
+/** 拖拽用：被拎起来的过渡动作 + 被抱住的循环姿势 */
+const HOLD_PICK_CANDIDATES = ['Stand_Hold_Pick_Up', 'Floor_Hold_Pick_Up', 'X_Chair_Pick_Up'];
+const HOLD_LOOP_CANDIDATES = ['Stand_Hold', 'Floor_Hold', 'Stand_Hold_Hug', 'Stand_Hold_Sleep'];
+
+/** 散步左右端点（UI 坐标，屏幕中心为 0）与各段时长（秒） */
+const WANDER_LEFT = -180;
+const WANDER_RIGHT = 180;
+const WANDER_CENTER = 0;
+/** 骨架加载完是否自动开始散步（无需点按钮） */
+const AUTO_WANDER = true;
+
+/** 宠物可点/可拖区域（节点局部尺寸，会再乘宠物缩放），要盖住整只猫 */
+const PET_HIT_W = 180;
+const PET_HIT_H = 150;
 
 /**
- * 卡通材质。放在 resources 下是为了让 `builtin-toon` 这个 effect
- * 被资源引用到，否则构建时不会打进包。
+ * 四个互动按钮各自的动作候选（按顺序取第一个骨架里存在的）。
+ * 只用不依赖家具/道具皮肤的独立动画，换任何皮肤都不会缺件；找不到就退回通用 happy。
  */
-const TOON_MATERIAL = 'materials/pet_toon';
+const ACTION_ANIM: Record<string, string[]> = {
+  feed: ['Knead', 'Sit_Lick_Hand', 'Minigame_Treat_Correct'],
+  bath: ['Sit_Lick_Leg', 'Minigame_Brush'],
+  pet: ['Stand_Pat', 'Pers_Cuddly'],
+  play: ['Standing_Toy', 'A_Play', 'Pers_Playful'],
+};
 
-/** 描边色。用深棕而不是纯黑——纯黑描边配暖米色底会显得脏且硬 */
-const OUTLINE = new Color(74, 55, 40, 255); // #4A3728，和 UI 的 title 同色
-const SHADE_1 = new Color(214, 196, 170, 255);
-const SHADE_2 = new Color(180, 158, 130, 255);
+/** 素材没有 default 皮肤时，挂载后必须显式选一套皮肤，否则骨架没有任何附件、整只不可见 */
+const DEFAULT_SKIN = '007';
 
-/** PBR 材质。不要换成 builtin-unlit，那会退回平涂，3D 就白做了（docs/06 §3.4） */
-const EFFECT_NAME = 'builtin-standard';
+/** 骨架显示基准缩放，成长缩放在此之上再乘。59 猫包骨骼原生只有 ~106 单位高，放到 1280 视口里太小，先放大一档。 */
+const BASE_SCALE = 3;
 
-/** 相机基准参数，docs/06 §3.4 */
-const CAM = { y: 1.75, z: 5.4, pitch: -9, fov: 38 };
+/**
+ * 可循环切换的场景。前四个是成品房间背景（resources/bg/ 下的整图）；
+ * 'deco' 是「装修间」——墙/地板由可换的贴块实时铺，用来演示家园装修。
+ */
+const ROOM_SCENES = ['bg_kitchen', 'bg_greenhouse', 'bg_workshop', 'bg_room'];
+const DECO_SCENE = 'deco';
+const BG_LIST = [...ROOM_SCENES, DECO_SCENE];
+const BG_NAME = BG_LIST[0];
 
-const BG_NAME = 'bg_room';
-/** 背景板放在宠物后方多远。够远才不会被地台的透视穿帮，又不至于糊成一片 */
-const BACKDROP_Z_OFFSET = 3.2;
-/** 背景板整体下移一点，让画面里的地平线落在地台附近而不是宠物腰上 */
-const BACKDROP_DROP = 1.15;
+/**
+ * 每个场景的前景遮挡层（在 resources/bg_layers/ 下），叠在猫之上做出层次。
+ * 宽高比很扁的当作底部整幅前景条铺满宽度；否则当定位道具、锚在底部居中。
+ */
+const FG_MAP: Record<string, string> = {
+  bg_kitchen: 'Kitchen_Table',
+  bg_greenhouse: 'Greenhouse_Foreground',
+  bg_workshop: 'Workshop_Table',
+};
+
+/**
+ * 从素材包批量导入的舞台道具（互动家具 + 站点 + 特效），路径都是 spine/<名>/<名>。
+ * 「换家具」按钮循环切换：none → 依次每个 → none。原生大小/锚点各不相同，展示用统一缩放。
+ */
+const PROP_LIST = [
+  'Fishbowl/Fishbowl',
+  'Yarn_Basket/Yarn_Basket',
+  'Butterfly_Toy/Butterfly_Toy',
+  'RockFountain/RockFountain',
+  'FURN_220/FURN_220',
+  'Jukebox/Jukebox',
+  'Arcade_Machine/Arcade_Machine',
+  'Arcade_Cabinet/Arcade_Cabinet',
+  'Heater/Heater',
+  'FirePlace/FirePlace',
+  'Porthole/Porthole',
+  'FURN_219/FURN_219',
+  'FURN_394/FURN_394',
+  'TV/TV',
+  'Karaoke/Karaoke',
+  'Whack_A_Mouse/Whack_A_Mouse',
+  'Feeding_Station/Feeding_Station',
+  'ToyBox/ToyBox',
+  'Fortune_Cat/Fortune_Cat',
+  'Chest/Chest',
+  'CraftingStation/CraftingStation',
+  'KitchenBowl/KitchenBowl',
+  'Greenhouse/Greenhouse',
+  'Customer/Customer',
+  'Mouse/Mouse',
+  'Curtain/Curtain',
+  'Effect/Effect',
+  'Feeding_Effect/Feeding_Effect',
+];
+/** 帽子/饰品贴图 + 挂载到的骨骼名（2D 挂点：让一个 Sprite 每帧跟随该骨骼） */
+const HAT_RES = 'deco/hat_heart/spriteFrame';
+const HAT_BONE = 'Head';
+/**
+ * 帽子相对头骨的偏移与缩放（都在骨架局部空间）。
+ * 缩放是「目标世界缩放」，实际会再除以宠物的放大倍数（父节点 3 倍），
+ * 否则帽子会被连带放大到糊脸。偏移让它落在头顶而不是盖在脸上。
+ */
+const HAT_OFFSET_Y = 52;
+const HAT_SCALE = 0.5;
 
 @ccclass('PetStage')
 export class PetStage extends Component {
-  private root: Node | null = null;
-  private camNode: Node | null = null;
-  private petRoot: Node | null = null;
-  private anim: SkeletalAnimation | null = null;
-  private usingModel = false;
+  private petNode: Node | null = null;
+  private bgNode: Node | null = null;
+  private skeleton: sp.Skeleton | null = null;
+  private placeholder: Graphics | null = null;
   private disposed = false;
+
+  /** 挂载时按素材实际动画名解析出来的 idle / happy，react() 与状态同步都用这两个 */
+  private idleAnim = '';
+  private happyAnim = '';
+  /** 骨架里所有动画名，react() 按互动动作挑动画时查它 */
+  private animNames: string[] = [];
+  /** 散步：走路 / 停顿站立动画，以及是否正在散步 */
+  private walkAnim = '';
+  private wanderIdle = '';
+  private wandering = false;
+  /** 拖拽用：被拎起 / 被抱住动画 */
+  private holdPickAnim = '';
+  private holdLoopAnim = '';
+  /** 是否正在被拖拽 */
+  private dragging = false;
+
+  /** 背景 Sprite 与当前场景下标，供 cycleBackground 复用同一个节点只换图 */
+  private bgSprite: Sprite | null = null;
+  private bgIndex = 0;
+  /** 前景遮挡层（叠在猫之上），随场景切换 */
+  private fgNode: Node | null = null;
+  private fgSprite: Sprite | null = null;
+  /** 装修间地板层（墙由背景 Sprite 兼任），以及墙纸/地板贴块与当前下标 */
+  private floorNode: Node | null = null;
+  private floorSprite: Sprite | null = null;
+  private wallTiles: SpriteFrame[] = [];
+  private floorTiles: SpriteFrame[] = [];
+  private wallIndex = 0;
+  private floorIndex = 0;
+  private decoLoaded = false;
+  /** 顾客节点（Customer Spine + 名牌），toggleCustomer 控制 */
+  private customerNode: Node | null = null;
+  /** 全部可切换皮肤（编号皮肤）与当前下标 */
+  private skinList: string[] = [];
+  private skinIndex = 0;
+  /** 帽子节点与它跟随的骨骼；update() 每帧把帽子对齐到骨骼世界位姿 */
+  private hatNode: Node | null = null;
+  private hatBone: ReturnType<sp.Skeleton['findBone']> | null = null;
+  /** 当前舞台道具节点与它在 PROP_LIST 里的下标（-1 = 无） */
+  private furnNode: Node | null = null;
+  private propIndex = -1;
+
+  /** 当前成长阶段缩放，react() 的挤压动画要从这个基准出发，而不是写死的 1 */
+  private baseScale = 1;
+  /** UI 预留给宠物那块区域的中心（frameTo 传入） */
+  private centerY = 0;
 
   /**
    * 整个 onLoad 包在 try 里：MainView 是先挂本组件、再建 UI 的，
    * 这里一抛异常，后面的属性条和按钮就全都不会创建，界面只剩一片底色。
-   * 3D 舞台再重要也只是主视觉，不能连带把可操作的界面一起带走。
+   * 舞台再重要也只是主视觉，不能连带把可操作的界面一起带走。
    */
   onLoad() {
     try {
-      this.setupCameras();
-      this.setupLight();
-
-      this.root = new Node('Stage3D');
-      this.root.layer = Layers.Enum.DEFAULT;
-      this.root.parent = this.node.scene;
-
-      // 地台要等模型加载完再建。运行时只有被资源引用到的 effect 才会打进包里，
-      // 而工程里唯一引用 builtin-standard 的就是模型自带的材质——
-      // 在它加载完之前 EffectAsset.get 拿不到东西，做出来的材质没有有效 pass。
+      this.setupBackground();
+      this.createPetNode();
       this.loadPet();
-
       store.on('pet', this.syncFromStore, this);
     } catch (err) {
-      console.error('[PetStage] 3D 舞台初始化失败，界面继续可用', err);
+      console.error('[PetStage] 2D 舞台初始化失败，界面继续可用', err);
     }
   }
 
   onDestroy() {
     this.disposed = true;
     store.off('pet', this.syncFromStore);
-    if (this.petRoot) Tween.stopAllByTarget(this.petRoot);
-    if (this.root && this.root.isValid) this.root.destroy();
+    if (this.petNode) Tween.stopAllByTarget(this.petNode);
+    if (this.furnNode && this.furnNode.isValid) this.furnNode.destroy();
+    if (this.customerNode && this.customerNode.isValid) this.customerNode.destroy();
+    if (this.fgNode && this.fgNode.isValid) this.fgNode.destroy();
+    if (this.bgNode && this.bgNode.isValid) this.bgNode.destroy();
+    if (this.petNode && this.petNode.isValid) this.petNode.destroy();
   }
 
-  // ---- 相机与灯光 ----
+  // ---- 背景 ----
 
-  private setupCameras() {
+  /**
+   * 恢复 UI 相机默认清屏（旧 3D 版把它改成了「只清深度」给 3D 相机让位），
+   * 并铺一张全屏房间背景。背景失败时留纯色底，不影响宠物。
+   */
+  private setupBackground() {
     const scene = this.node.scene;
-
-    // UI 相机改成只清深度，否则它会把 3D 画面整片刷掉
-    const canvas = scene.getComponentInChildren(Canvas);
-    const uiCamera = canvas && canvas.cameraComponent;
-    if (uiCamera) {
-      uiCamera.clearFlags = Camera.ClearFlag.DEPTH_ONLY;
-      uiCamera.priority = 1;
-      uiCamera.visibility = Layers.Enum.UI_2D;
+    const canvas = scene && scene.getComponentInChildren(Canvas);
+    const cam = canvas && canvas.cameraComponent;
+    if (cam) {
+      cam.clearFlags = Camera.ClearFlag.SOLID_COLOR;
+      cam.clearColor = COLOR.bg;
     }
 
-    const camNode = new Node('Camera3D');
-    camNode.layer = Layers.Enum.DEFAULT;
-    camNode.parent = scene;
-    camNode.setPosition(0, CAM.y, CAM.z);
-    camNode.setRotationFromEuler(CAM.pitch, 0, 0);
-    this.camNode = camNode;
+    const size = view.getVisibleSize();
+    const bg = new Node('StageBackground');
+    bg.layer = Layers.Enum.UI_2D;
+    const tr = bg.addComponent(UITransform);
+    tr.setContentSize(size.width, size.height);
+    bg.parent = this.node;
+    // 背景要在最底层，宠物和 UI 都叠在它之上
+    bg.setSiblingIndex(0);
+    this.bgNode = bg;
 
-    const cam = camNode.addComponent(Camera);
-    cam.projection = Camera.ProjectionType.PERSPECTIVE;
-    cam.fov = CAM.fov;
-    cam.near = 0.1;
-    cam.far = 100;
-    cam.priority = 0;
-    cam.clearFlags = Camera.ClearFlag.SOLID_COLOR;
-    cam.clearColor = COLOR.bg;
-    cam.visibility = Layers.Enum.DEFAULT;
+    const sprite = bg.addComponent(Sprite);
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    sprite.type = Sprite.Type.SIMPLE;
+    this.bgSprite = sprite;
+
+    // 装修间地板层：只在 'deco' 场景显示，铺满屏幕下部。排在背景之上、宠物之下。
+    const floor = new Node('DecoFloor');
+    floor.layer = Layers.Enum.UI_2D;
+    const floorTr = floor.addComponent(UITransform);
+    floorTr.setContentSize(size.width, size.height * 0.4);
+    floor.parent = this.node;
+    floor.setSiblingIndex(1);
+    floor.setPosition(0, -size.height / 2 + (size.height * 0.4) / 2, 0);
+    const floorSprite = floor.addComponent(Sprite);
+    floorSprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    floorSprite.type = Sprite.Type.SIMPLE;
+    floor.active = false;
+    this.floorNode = floor;
+    this.floorSprite = floorSprite;
+
+    // 前景层：排在宠物之后（更上层），但在 MainView 的 UI 之前
+    const fg = new Node('StageForeground');
+    fg.layer = Layers.Enum.UI_2D;
+    fg.addComponent(UITransform);
+    fg.parent = this.node;
+    fg.setSiblingIndex(3);
+    const fgSprite = fg.addComponent(Sprite);
+    fgSprite.sizeMode = Sprite.SizeMode.TRIMMED;
+    fgSprite.type = Sprite.Type.SIMPLE;
+    this.fgNode = fg;
+    this.fgSprite = fgSprite;
+
+    this.bgIndex = Math.max(0, BG_LIST.indexOf(BG_NAME));
+    this.applyBackground(BG_LIST[this.bgIndex]);
   }
 
-  private setupLight() {
-    const scene = this.node.scene;
-
-    const keyNode = new Node('KeyLight');
-    keyNode.layer = Layers.Enum.DEFAULT;
-    keyNode.parent = scene;
-    // 从左上前方打主光，让球体有明确的明暗交界，立体感主要靠这个
-    keyNode.setRotationFromEuler(-52, -35, 0);
-    const key = keyNode.addComponent(DirectionalLight);
-    key.color = new Color(255, 248, 236, 255);
-    // 88000 lux 是「全日照」量级，而相机的默认曝光（F16 / 1/125 / ISO100）
-    // 正是按全日照标定的。宠物的毛色反射率 0.85（§3.4 明度表），两者一乘，
-    // 亮面直接顶到 1.0 被截断——毛流、反荫蔽、分区色全被削平，
-    // 而且 §3.4 那三档明度（背景 0.90 / 毛色 0.85 / 地台 0.70）一起糊成一片。
-    // 这个场景是室内暖光，不该按正午太阳给。
-    key.illuminance = 48000;
-
-    // 环境光用暖米色而不是冷蓝，否则浅暖底上的阴影会发灰发脏。
-    // 这里要的是归一化的 Vec4（0–1），不是 0–255 的 Color。
-    const globals = director.getScene() && director.getScene().globals;
-    if (globals && globals.ambient) {
-      globals.ambient.skyColor = new Vec4(0.95, 0.89, 0.81, 1);
-      globals.ambient.groundAlbedo = new Vec4(0.72, 0.65, 0.56, 1);
-      // 浅底方案要压低环境光：环境光一强，暗面被填平，模型就"塌"成一张贴纸。
-      // 跟着主光等比下调，保持 0.16 的环境/主光比——只降主光会让比值升高，
-      // 暗面被填平，等于用另一种方式把立体感抹掉。
-      globals.ambient.skyIllum = 7600;
+  /** 按场景加载/隐藏前景遮挡层，并把它锚到屏幕底部。 */
+  private applyForeground(bgName: string) {
+    const fg = this.fgNode;
+    const sprite = this.fgSprite;
+    if (!fg || !sprite) return;
+    const res = FG_MAP[bgName];
+    if (!res) {
+      fg.active = false;
+      return;
     }
-  }
-
-  /**
-   * 把宠物对准 UI 预留出来的那块空当。
-   *
-   * 相机是固定的，UI 布局却随可视高度变化——两边各算各的，视口一矮宠物就被面板腰斩。
-   * 这里由 UI 把预留区域的中心告诉舞台，相机沿垂直方向补一个偏移，让两者对齐。
-   *
-   * 相机往下移，宠物在画面里就往上走：宠物位置不变，而取景中心跟着相机降了下去。
-   *
-   * @param centerY    预留区域中心，UI 坐标（屏幕中心为 0，向上为正）
-   * @param viewportH  当前可视高度
-   */
-  public frameTo(centerY: number, viewportH: number) {
-    const cam = this.camNode;
-    if (!cam || viewportH <= 0) return;
-
-    // 相机到宠物的实际距离，不是单纯的 z——相机是抬高并俯视的
-    const distance = Math.sqrt(CAM.y * CAM.y + CAM.z * CAM.z);
-    const halfWorldH = distance * Math.tan((CAM.fov / 2) * (Math.PI / 180));
-
-    const offset = (centerY / (viewportH / 2)) * halfWorldH;
-    cam.setPosition(0, CAM.y - offset, CAM.z);
-  }
-
-  // ---- 建模 ----
-
-  /**
-   * builtin-standard 是 PBR 材质，能吃到光照；unlit 会退回平涂，失去立体感。
-   *
-   * 颜色属性名是 `mainColor` 而不是 `albedo`——`albedo` 是 effect 里的 shader uniform 名，
-   * 不是材质对外的属性名。
-   *
-   * effect 找不到时返回 null：此时材质没有任何有效 pass，
-   * 赋给 MeshRenderer 会在引擎内部抛 `localSetLayout` 的空指针，
-   * 报错位置离真正的原因很远，很难查。宁可这一块不渲染，也不要炸掉整个舞台。
-   */
-  private makeMaterial(color: Color, roughness = 0.9): Material | null {
-    const effect = EffectAsset.get(EFFECT_NAME);
-    if (!effect) {
-      console.error(
-        `[PetStage] 运行时找不到 effect "${EFFECT_NAME}"，` +
-          `已注册的 effect: ${Object.keys(EffectAsset.getAll()).join(', ')}`,
-      );
-      return null;
-    }
-
-    const mat = new Material();
-    mat.initialize({ effectAsset: effect });
-    mat.setProperty('mainColor', color);
-    mat.setProperty('roughness', roughness);
-    mat.setProperty('metallic', 0);
-    return mat;
-  }
-
-  private addMesh(
-    parent: Node,
-    name: string,
-    mesh: Mesh,
-    material: Material | null,
-    pos: Vec3,
-    scale?: Vec3,
-  ): Node {
-    const node = new Node(name);
-    node.layer = Layers.Enum.DEFAULT;
-    node.parent = parent;
-    node.setPosition(pos);
-    if (scale) node.setScale(scale);
-
-    const mr = node.addComponent(MeshRenderer);
-    mr.mesh = mesh;
-    // 没有材质就让它用引擎默认材质，至少还有个白色的形能看见
-    if (material) mr.material = material;
-    return node;
-  }
-
-  /**
-   * 背景是一张贴在宠物后方的四边形，不是 UI 层的图。
-   *
-   * UI 相机在 3D 相机之后渲染，任何 UI 底图都会把宠物盖住，所以背景只能待在 3D 层。
-   *
-   * 材质用 unlit：这张图本身已经画好了光影，再吃一遍实时光会脏。
-   * 文档 3.4 说「不要用 unlit」，那条针对的是宠物——平涂会让模型失去立体感；
-   * 背景恰恰相反，它就该是平的。
-   */
-  private buildBackdrop() {
-    const distance = BACKDROP_Z_OFFSET + CAM.z;
-    // 视锥在该距离上的可视高度；方形贴图按高度铺满，两侧多出的部分被裁掉，
-    // 所以构图的安全区是中间那条竖带（docs/06 §6.5）
-    const height = 2 * distance * Math.tan((CAM.fov / 2) * (Math.PI / 180));
-
-    const node = new Node('Backdrop');
-    node.layer = Layers.Enum.DEFAULT;
-    node.parent = this.root!;
-    node.setPosition(0, height / 2 - BACKDROP_DROP, -BACKDROP_Z_OFFSET);
-
-    const mr = node.addComponent(MeshRenderer);
-    mr.mesh = utils.createMesh(
-      primitives.plane({ width: height, length: height, widthSegments: 1, lengthSegments: 1 }),
-    );
-    // plane 默认躺在 XZ 平面上，立起来才能当背景板
-    node.setRotationFromEuler(90, 0, 0);
-
-    resources.load(`bg/${BG_NAME}/texture`, Texture2D, (err, tex) => {
-      if (this.disposed || !node.isValid) return;
-      if (err || !tex) {
-        console.warn(`[PetStage] 背景 ${BG_NAME} 加载失败，保留纯色底`, err);
-        node.destroy();
+    resources.load(`bg_layers/${res}/spriteFrame`, SpriteFrame, (err, frame) => {
+      if (this.disposed || !fg.isValid) return;
+      if (err || !frame) {
+        fg.active = false;
         return;
       }
-
-      const effect = EffectAsset.get('builtin-unlit');
-      if (!effect) {
-        console.warn('[PetStage] 找不到 builtin-unlit，背景改用纯色底');
-        node.destroy();
-        return;
-      }
-
-      const mat = new Material();
-      mat.initialize({ effectAsset: effect });
-      mat.setProperty('mainTexture', tex);
-      mat.setProperty('mainColor', Color.WHITE);
-      mr.material = mat;
+      sprite.spriteFrame = frame;
+      const w = frame.rect.width;
+      const h = frame.rect.height;
+      const size = view.getVisibleSize();
+      // 很扁的当底部前景条铺满宽度；否则当道具，取屏高 ~46% 高
+      const scale = w / h > 3 ? size.width / w : (size.height * 0.46) / h;
+      fg.setScale(scale, scale, 1);
+      // 默认锚点 0.5，让贴图底边贴屏幕底
+      fg.setPosition(0, -size.height / 2 + (h * scale) / 2, 0);
+      fg.active = true;
     });
   }
 
-  private buildGround() {
-    // 用一个很扁的圆柱当地台，比平面多一点厚度，边缘能吃到光
-    const mesh = utils.createMesh(primitives.cylinder(2.3, 2.3, 0.14, { radialSegments: 48 }));
-    this.addMesh(this.root!, 'Ground', mesh, this.makeMaterial(GROUND), new Vec3(0, -0.07, 0));
+  /** 只换图不重建节点：cycleBackground 和初始化共用 */
+  private applyBackground(name: string) {
+    const sprite = this.bgSprite;
+    if (!sprite) return;
+
+    // 装修间：墙由背景 Sprite 铺整幅墙纸、地板由 floor 层铺，前景隐藏
+    if (name === DECO_SCENE) {
+      if (this.fgNode) this.fgNode.active = false;
+      if (this.floorNode) this.floorNode.active = true;
+      this.applyDecoTiles();
+      return;
+    }
+
+    if (this.floorNode) this.floorNode.active = false;
+    sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    resources.load(`bg/${name}/spriteFrame`, SpriteFrame, (err, frame) => {
+      if (this.disposed || !this.bgNode || !this.bgNode.isValid) return;
+      if (err || !frame) {
+        // 软失败不死亡：拿不到背景图就保留相机纯色底
+        console.warn(`[PetStage] 背景 ${name} 加载失败，保留纯色底`, err);
+        return;
+      }
+      sprite.spriteFrame = frame;
+    });
+    this.applyForeground(name);
+  }
+
+  /** 首次进装修间时扫目录拿到全部墙纸/地板贴块（目录即「可选项清单」）。 */
+  private ensureDecoTiles(cb: () => void) {
+    if (this.decoLoaded) {
+      cb();
+      return;
+    }
+    resources.loadDir('deco_tiles/wall', SpriteFrame, (e1, walls) => {
+      this.wallTiles = (walls as SpriteFrame[]) || [];
+      resources.loadDir('deco_tiles/floor', SpriteFrame, (e2, floors) => {
+        this.floorTiles = (floors as SpriteFrame[]) || [];
+        this.decoLoaded = true;
+        cb();
+      });
+    });
+  }
+
+  /** 把当前墙纸/地板贴到墙层与地板层。 */
+  private applyDecoTiles() {
+    this.ensureDecoTiles(() => {
+      if (this.disposed) return;
+      if (this.bgSprite && this.wallTiles.length) {
+        this.bgSprite.spriteFrame = this.wallTiles[this.wallIndex % this.wallTiles.length];
+      }
+      if (this.floorSprite && this.floorTiles.length) {
+        this.floorSprite.spriteFrame = this.floorTiles[this.floorIndex % this.floorTiles.length];
+      }
+    });
+  }
+
+  /** 换墙纸（只在装修间可见效果）。 */
+  public cycleWallpaper(dir = 1) {
+    this.ensureDecoTiles(() => {
+      if (!this.wallTiles.length) return;
+      this.wallIndex = (this.wallIndex + dir + this.wallTiles.length) % this.wallTiles.length;
+      if (BG_LIST[this.bgIndex] === DECO_SCENE) this.applyDecoTiles();
+    });
+  }
+
+  /** 换地板（只在装修间可见效果）。 */
+  public cycleFloor(dir = 1) {
+    this.ensureDecoTiles(() => {
+      if (!this.floorTiles.length) return;
+      this.floorIndex = (this.floorIndex + dir + this.floorTiles.length) % this.floorTiles.length;
+      if (BG_LIST[this.bgIndex] === DECO_SCENE) this.applyDecoTiles();
+    });
+  }
+
+  /** 循环切换场景背景（展示用）。 */
+  public cycleBackground(dir = 1) {
+    if (!BG_LIST.length) return;
+    this.bgIndex = (this.bgIndex + dir + BG_LIST.length) % BG_LIST.length;
+    this.applyBackground(BG_LIST[this.bgIndex]);
   }
 
   // ---- 宠物本体 ----
 
+  private createPetNode() {
+    const node = new Node('Pet');
+    node.layer = Layers.Enum.UI_2D;
+    const tr = node.addComponent(UITransform);
+    // 给一个可点区域，否则触摸系统命中不到（骨骼渲染不撑 UITransform 尺寸）。
+    // 尺寸是节点局部值，会再乘上宠物缩放(~3)，覆盖住整只猫。
+    tr.setContentSize(PET_HIT_W, PET_HIT_H);
+    node.parent = this.node;
+    // 层级：背景(0) < 装修地板(1) < 宠物(2) < 前景(3) < MainView 的 UI(4+)
+    node.setSiblingIndex(2);
+    this.petNode = node;
+    this.setupDrag(node);
+  }
+
+  /**
+   * 让宠物可被拖到任意位置。
+   * 触摸落点是 UI 世界坐标，转成父节点(Main)局部坐标再 setPosition。
+   * 一开始拖就停掉自动散步，松手后停在手指处。
+   */
+  private setupDrag(node: Node) {
+    const toLocal = (e: EventTouch) => {
+      const ui = e.getUILocation();
+      const parentTr = this.node.getComponent(UITransform);
+      if (!parentTr) return null;
+      return parentTr.convertToNodeSpaceAR(new Vec3(ui.x, ui.y, 0));
+    };
+
+    node.on(Node.EventType.TOUCH_START, (e: EventTouch) => {
+      this.dragging = true;
+      // 拖动期间不散步：停掉位移 tween，播「被拎起来 → 被抱住」
+      this.stopWander();
+      this.playHeld();
+      const p = toLocal(e);
+      if (p) node.setPosition(p.x, p.y, 0);
+    }, this);
+
+    node.on(Node.EventType.TOUCH_MOVE, (e: EventTouch) => {
+      if (!this.dragging) return;
+      const p = toLocal(e);
+      if (p) node.setPosition(p.x, p.y, 0);
+    }, this);
+
+    const end = () => {
+      if (!this.dragging) return;
+      this.dragging = false;
+      // 松手后从落点继续散步：以当前高度作为新的散步基准
+      this.centerY = node.position.y;
+      this.startWander();
+    };
+    node.on(Node.EventType.TOUCH_END, end, this);
+    node.on(Node.EventType.TOUCH_CANCEL, end, this);
+  }
+
+  /** 停止散步：停位移 tween、复位缩放，不改动画（由调用方接着设）。 */
+  private stopWander() {
+    const pet = this.petNode;
+    if (!pet) return;
+    this.wandering = false;
+    Tween.stopAllByTarget(pet);
+    const s = Math.abs(this.baseScale) || 1;
+    pet.setScale(s, s, 1);
+  }
+
+  /** 若未在散步则开始散步（拖放后恢复用）。 */
+  private startWander() {
+    if (!this.wandering && this.walkAnim) this.toggleWander();
+  }
+
+  /** 播「被拎起来」过渡，再接「被抱住」循环；缺失就退回站立 idle。 */
+  private playHeld() {
+    const skel = this.skeleton;
+    if (!skel) return;
+    if (this.holdPickAnim) {
+      skel.setAnimation(0, this.holdPickAnim, false);
+      if (this.holdLoopAnim) skel.addAnimation(0, this.holdLoopAnim, true, 0);
+    } else if (this.holdLoopAnim) {
+      skel.setAnimation(0, this.holdLoopAnim, true);
+    } else if (this.wanderIdle) {
+      skel.setAnimation(0, this.wanderIdle, true);
+    }
+  }
+
+  private spineReady(): boolean {
+    return !!(sp && (sp as unknown as { Skeleton?: unknown }).Skeleton && (sp as unknown as { SkeletonData?: unknown }).SkeletonData);
+  }
+
   private loadPet() {
     const species = (store.petView && store.petView.species) || '';
-    const modelName = SPECIES_MODEL[species] || FALLBACK_MODEL;
+    const name = SPECIES_SKELETON[species] || FALLBACK_SKELETON;
 
-    // 模型资源里的 prefab 是子资源，路径要带上同名的那一层
-    resources.load(`models/${modelName}/${modelName}`, Prefab, (err, prefab) => {
-      if (this.disposed) return;
-
-      if (err || !prefab) {
-        console.warn(`[PetStage] 模型 ${modelName} 加载失败，退回占位几何体`, err);
-        this.buildBackdrop();
-        this.buildGround();
-        this.buildPlaceholderPet();
-        this.playPlaceholderIdle();
-        this.syncFromStore();
-        return;
-      }
-
-      this.buildBackdrop();
-      this.buildGround();
-      this.mountModel(instantiate(prefab));
+    // 引擎没编入 spine 模块（sp 为空）时直接走占位，别让 resources.load 拿一个
+    // undefined 的类型去炸。等 settings/v2/packages/engine.json 开了 spine 并重导引擎
+    // 后，这里才会真正加载骨架。
+    if (!this.spineReady()) {
+      console.warn('[PetStage] 引擎未编入 spine 模块，先用占位宠物。开启后需重新导入引擎');
+      this.buildPlaceholder();
       this.syncFromStore();
-      this.applyToonMaterial();
-    });
-  }
-
-  /**
-   * 把宠物换成卡通着色 + 描边。
-   *
-   * 这是美术方向 A 的**前提**而不是锦上添花（docs/06 §5.2）：
-   * 模型自带的写实 PBR 会把造型的每一处不完美都照出来，读起来永远是
-   * 「没做完的 3D」；换成描边 + 平涂之后，同一个模型读起来是「刻意的简约风格」。
-   *
-   * 用引擎自带的 `builtin-toon`，不自己写 shader——它已经有反向壳描边 pass
-   * 和双层色阶，而且骨骼蒙皮自动支持。
-   *
-   * 材质必须走**资源**加载，不能在代码里 `new Material()`：
-   * 一是运行时只有被资源引用到的 effect 才会打进包；
-   * 二是描边 pass 由 `switch: USE_OUTLINE_PASS` 控制，它决定这个 pass
-   * 存不存在，只能在材质资源的 defines 里开，运行时重编译加不出来。
-   */
-  private applyToonMaterial() {
-    const pet = this.petRoot;
-    if (!pet) return;
-
-    resources.load(TOON_MATERIAL, Material, (err, toon) => {
-      if (this.disposed || !pet.isValid) return;
-      if (err || !toon) {
-        // 软失败不死亡：拿不到就保留模型自带的材质，画面只是没有描边
-        console.warn('[PetStage] 卡通材质加载失败，保留模型自带材质', err);
-        return;
-      }
-
-      const renderers = pet.getComponentsInChildren(MeshRenderer);
-      for (const renderer of renderers) {
-        const source = renderer.getMaterialInstance(0);
-        // 贴图要从模型自带的材质上取过来。低多边形模型的颜色全在这张
-        // 色块贴图里，丢了它整只宠物会变成一个纯色块。
-        //
-        // 读的时候**不传 pass 索引**：源材质是 builtin-standard，它的 pass
-        // 布局和 builtin-toon 不一样，写死索引会读到空。不传就是全 pass 搜。
-        const tex = source
-          ? (source.getProperty('mainTexture') as Texture2D | undefined)
-          : undefined;
-        if (tex) this.disableMipmaps(tex);
-
-        const mat = new Material();
-        mat.copy(toon);
-        if (tex) mat.setProperty('mainTexture', tex, 1);
-        this.tuneToon(mat);
-        renderer.setMaterialInstance(mat, 0);
-
-        // 描边是 `switch: USE_OUTLINE_PASS` 控制的**独立 pass**，宏没生效时
-        // 它会被整个跳过——没有任何报错，只是画面上没有描边。
-        // 光看画面分不出「pass 不存在」和「线太细看不见」，所以直接把
-        // pass 数打出来：有描边是 5，没有是 4。
-        console.log(
-          `[PetStage] 卡通材质已应用 ${renderer.node.name}：passes=${mat.passes.length}`
-          + ` texture=${tex ? 'ok' : 'MISSING'}`,
-        );
-      }
-    });
-  }
-
-  /**
-   * 关掉宠物贴图的 mipmap 采样。
-   *
-   * 图生 3D（Tripo/Meshy）的贴图是一张**碎片化的 UV 图集**：几十个小岛铺在
-   * 一张图上、彼此之间没有留白。引擎默认给导入贴图生成 mipmap，逐级缩小时
-   * 相邻的小岛会被平均到一起——脸、眼睛、条纹糊成一片水彩，这正是 Tripo 猫
-   * 进游戏后「怎么这么模糊」的原因。自渲预览看不到，因为 Blender 用的是
-   * 全分辨率单张采样，不走 mipmap。
-   *
-   * 宠物在屏幕上尺寸基本固定（相机不动、成长缩放变化很小），压根不需要 mipmap，
-   * 所以直接把 mip filter 关掉，min/mag 保持线性。图集不再跨岛渗色，
-   * 清晰度立刻回到预览那一档。
-   *
-   * 注意这是改**贴图对象本身**，而它是从 glTF 子资源上取来的、可能被多处共享；
-   * 但我们全程只有这一个宠物用它，改了没有副作用。
-   */
-  private disableMipmaps(tex: Texture2D) {
-    tex.setFilters(Texture2D.Filter.LINEAR, Texture2D.Filter.LINEAR);
-    tex.setMipFilter(Texture2D.Filter.NONE);
-  }
-
-  /** 卡通着色的参数。色阶只分两档，档位之间几乎不过渡，才是平涂的观感。 */
-  private tuneToon(mat: Material) {
-    // 描边宽度。**这是模型空间单位，不是屏幕像素**——shader 里是
-    // `localPos += normalize(normal) * lineWidth * 0.001`。
-    //
-    // 宠物高 2.0 单位、屏幕上约 250 px，所以 1 个 lineWidth ≈ 0.125 px。
-    // 引擎默认的 10 只有 1.25 px，肉眼基本看不见；要 3–4 px 的卡通描边
-    // 得给到 30 上下。我按屏幕像素理解设成 6，结果是 0.75 px，等于没画。
-    //
-    // 副作用：描边宽度跟着模型缩放走，所以 baby 阶段（根节点 0.72）
-    // 的描边会细一档。这是可接受的——小宠物本来就该秀气一点。
-    mat.setProperty('lineWidth', 30, 0);
-    mat.setProperty('baseColor', OUTLINE, 0);
-
-    mat.setProperty('mainColor', Color.WHITE, 1);
-    // 两档阴影都往暖里偏。冷灰的阴影配暖米色底会发脏（§3.4 同一条理由）
-    mat.setProperty('shadeColor1', SHADE_1, 1);
-    mat.setProperty('shadeColor2', SHADE_2, 1);
-    // 明暗交界给一点点羽化，硬切在低多边形的平面上会出现锯齿状的台阶
-    mat.setProperty('baseStep', 0.72, 1);
-    mat.setProperty('baseFeather', 0.06, 1);
-    mat.setProperty('shadeStep', 0.42, 1);
-    mat.setProperty('shadeFeather', 0.06, 1);
-    // 关掉高光：Q 版平涂里出现一块写实高光会很突兀
-    mat.setProperty('specular', new Color(0, 0, 0, 0), 1);
-  }
-
-  private mountModel(pet: Node) {
-    pet.name = 'Pet';
-    // new Node() 默认是 DEFAULT 层，但 prefab 里的层由导入设置决定，显式对齐更保险
-    this.setLayerRecursive(pet, Layers.Enum.DEFAULT);
-
-    const anim = pet.getComponent(SkeletalAnimation) || pet.getComponentInChildren(SkeletalAnimation);
-    if (!anim) {
-      console.warn('[PetStage] 模型上没有 SkeletalAnimation，宠物会是静止的');
-      pet.parent = this.root!;
-      pet.setPosition(0, 0, 0);
-      this.petRoot = pet;
-      this.usingModel = true;
       return;
     }
 
-    // 关预烘焙必须**赶在节点挂进场景之前**。
-    //
-    // 组件激活时会按当时的 bake 标志初始化动画状态，而引擎在预烘焙分支里
-    // 直接跳过求值器的创建（skeletal-animation-state.ts: `_doNotCreateEval = baked`）。
-    // 那一步只跑一次，事后再改标志只是换了采样函数，求值器不存在，采样等于空转——
-    // 表现是 isPlaying 为真、time 正常推进，却一个值都落不到骨骼上。
-    //
-    // prefab 里序列化的默认值是 true，所以这行不能省。
-    // 换装挂点也依赖实时蒙皮，见 docs/06 §5.4。
-    anim.useBakedAnimation = false;
+    resources.load(`${SPINE_DIR}/${name}`, sp.SkeletonData, (err, data) => {
+      if (this.disposed) return;
+      if (err || !data) {
+        console.warn(`[PetStage] Spine 骨架 ${name} 加载失败，退回占位宠物`, err);
+        this.buildPlaceholder();
+        this.syncFromStore();
+        return;
+      }
+      this.mountSkeleton(data);
+      this.syncFromStore();
+      // 默认自动散步：等 syncFromStore 设好基准缩放后再起步，朝向翻转才对
+      if (AUTO_WANDER && this.walkAnim && !this.wandering) this.toggleWander();
+    });
+  }
 
-    pet.parent = this.root!;
-    pet.setPosition(0, 0, 0);
-    this.petRoot = pet;
-    this.usingModel = true;
-    this.anim = anim;
+  private mountSkeleton(data: sp.SkeletonData) {
+    const pet = this.petNode;
+    if (!pet) return;
 
-    if (!this.playClip(IDLE_CLIP, true)) {
-      console.warn(`[PetStage] ${IDLE_CLIP} 没能播放，宠物会停在绑定姿势`);
+    const skel = pet.addComponent(sp.Skeleton);
+    skel.skeletonData = data;
+    // 59 猫包的 PNG 是直通道(straight)alpha、未预乘：若按预乘混合，各部件透明边(RGB=白/α=0)
+    // 会被算成实心白，一堆白矩形叠一起就是「四分五裂」的白框。自研素材若导出为预乘图集再改回 true。
+    skel.premultipliedAlpha = false;
+    this.skeleton = skel;
+
+    const runtime = data.getRuntimeData && data.getRuntimeData();
+    const animNames = runtime && runtime.animations ? runtime.animations.map((a) => a.name) : [];
+    this.animNames = animNames;
+    this.idleAnim = IDLE_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || '';
+    this.happyAnim = HAPPY_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || '';
+    this.walkAnim = WALK_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || '';
+    this.wanderIdle = WANDER_IDLE_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || this.idleAnim;
+    this.holdPickAnim = HOLD_PICK_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || '';
+    this.holdLoopAnim = HOLD_LOOP_CANDIDATES.find((n) => animNames.indexOf(n) >= 0) || '';
+
+    // 没有 default 皮肤的素材必须显式选皮肤，否则骨架没有任何附件、整只不可见
+    const skinNames = runtime && runtime.skins ? runtime.skins.map((s) => s.name) : [];
+    // 只收编号皮肤（001/002…），它们是整只完整皮肤；带斜杠的是部件子皮肤，不单独切
+    this.skinList = skinNames.filter((n) => /^\d+$/.test(n));
+    this.skinIndex = Math.max(0, this.skinList.indexOf(DEFAULT_SKIN));
+    if (skinNames.indexOf(DEFAULT_SKIN) >= 0) {
+      skel.setSkin(DEFAULT_SKIN);
+    }
+
+    // idle 循环播放。找不到 idle 时不硬塞，避免抛异常，交给日志排查
+    if (this.idleAnim) {
+      skel.setAnimation(0, this.idleAnim, true);
+    } else {
+      console.warn(`[PetStage] 骨架 ${data.name} 里找不到 idle 类动画（试过 ${IDLE_CANDIDATES.join('/')}），宠物会停在初始姿势`);
     }
   }
 
-  private setLayerRecursive(node: Node, layer: number) {
-    node.layer = layer;
-    for (const child of node.children) this.setLayerRecursive(child, layer);
+  /**
+   * 占位宠物：Spine 资源还没到位时，用 Graphics 画一只简笔猫。
+   * 没有骨骼，用节点级 tween 造出呼吸感——静止的图看着像贴纸，一点起伏就"活"了。
+   */
+  private buildPlaceholder() {
+    const pet = this.petNode;
+    if (!pet) return;
+
+    const g = pet.addComponent(Graphics);
+    this.placeholder = g;
+
+    // 身体
+    g.fillColor = FUR;
+    g.ellipse(0, -6, 66, 52);
+    g.fill();
+    // 头
+    g.circle(0, 58, 46);
+    g.fill();
+    // 耳朵（两个三角）
+    g.moveTo(-40, 92);
+    g.lineTo(-16, 58);
+    g.lineTo(-52, 62);
+    g.close();
+    g.fill();
+    g.moveTo(40, 92);
+    g.lineTo(16, 58);
+    g.lineTo(52, 62);
+    g.close();
+    g.fill();
+    // 尾巴
+    g.fillColor = FUR_DARK;
+    g.ellipse(64, -18, 22, 12);
+    g.fill();
+    // 眼睛 + 鼻子
+    g.fillColor = OUTLINE;
+    g.circle(-16, 60, 6);
+    g.fill();
+    g.circle(16, 60, 6);
+    g.fill();
+    g.circle(0, 44, 4);
+    g.fill();
+
+    tween(pet)
+      .repeatForever(
+        tween<Node>()
+          .to(1.4, { scale: new Vec3(this.baseScale * 1.03, this.baseScale * 0.97, 1) }, { easing: 'sineInOut' })
+          .to(1.4, { scale: new Vec3(this.baseScale, this.baseScale, 1) }, { easing: 'sineInOut' }),
+      )
+      .start();
   }
 
-  /** 播不到就返回 false，让调用方决定要不要降级，不要静默失败 */
-  private playClip(name: string, loop: boolean): boolean {
-    const anim = this.anim;
-    if (!anim) return false;
+  // ---- 取景与状态同步 ----
 
-    const clip = anim.clips.find((c) => !!c && c.name === name);
-    if (!clip) {
-      console.warn(`[PetStage] 模型里没有 ${name} 动画，现有: ${anim.clips.map((c) => c && c.name)}`);
-      return false;
-    }
-
-    // glTF 导入的 clip 默认是播放一次，播完停在最后一帧。
-    // 待机动画不设循环的话，一个周期之后看起来和静止完全一样，很难看出是动画的问题。
-    clip.wrapMode = loop ? AnimationClip.WrapMode.Loop : AnimationClip.WrapMode.Normal;
-    anim.play(name);
-
-    const state = anim.getState(name);
-    if (state) state.wrapMode = clip.wrapMode;
-    return true;
+  /**
+   * 把宠物摆到 UI 预留出来的那块空当中心。
+   *
+   * 旧 3D 版这里是移相机；2D 版直接移宠物节点。UI 坐标屏幕中心为 0、向上为正，
+   * 正好可以直接当节点的 y。
+   *
+   * @param centerY    预留区域中心（UI 坐标）
+   * @param _viewportH 当前可视高度（2D 下暂不需要，保留签名与调用方兼容）
+   */
+  public frameTo(centerY: number, _viewportH: number) {
+    this.centerY = centerY;
+    if (this.petNode) this.petNode.setPosition(0, centerY, 0);
   }
-
-  private buildPlaceholderPet() {
-    const pet = new Node('Pet');
-    pet.layer = Layers.Enum.DEFAULT;
-    pet.parent = this.root!;
-    pet.setPosition(0, 0, 0);
-    this.petRoot = pet;
-    this.usingModel = false;
-
-    const sphere = utils.createMesh(primitives.sphere(0.5, { segments: 32 }));
-    const fur = this.makeMaterial(FUR);
-    const furDark = this.makeMaterial(FUR_DARK);
-    const dark = this.makeMaterial(DARK, 0.45);
-
-    this.addMesh(pet, 'Body', sphere, fur, new Vec3(0, 0.62, 0), new Vec3(1.5, 1.25, 1.35));
-    this.addMesh(pet, 'Head', sphere, fur, new Vec3(0, 1.42, 0.16), new Vec3(1.12, 1.05, 1.05));
-    this.addMesh(pet, 'EarL', sphere, furDark, new Vec3(-0.3, 1.82, 0.05), new Vec3(0.34, 0.5, 0.2));
-    this.addMesh(pet, 'EarR', sphere, furDark, new Vec3(0.3, 1.82, 0.05), new Vec3(0.34, 0.5, 0.2));
-    this.addMesh(pet, 'EyeL', sphere, dark, new Vec3(-0.19, 1.46, 0.44), new Vec3(0.15, 0.19, 0.1));
-    this.addMesh(pet, 'EyeR', sphere, dark, new Vec3(0.19, 1.46, 0.44), new Vec3(0.15, 0.19, 0.1));
-    this.addMesh(pet, 'Nose', sphere, dark, new Vec3(0, 1.31, 0.5), new Vec3(0.12, 0.09, 0.1));
-    this.addMesh(pet, 'PawL', sphere, furDark, new Vec3(-0.26, 0.16, 0.34), new Vec3(0.4, 0.3, 0.5));
-    this.addMesh(pet, 'PawR', sphere, furDark, new Vec3(0.26, 0.16, 0.34), new Vec3(0.4, 0.3, 0.5));
-    this.addMesh(pet, 'Tail', sphere, furDark, new Vec3(0, 0.72, -0.66), new Vec3(0.32, 0.32, 0.4));
-  }
-
-  // ---- 状态同步 ----
 
   private syncFromStore() {
     const pet = store.petView;
-    const petRoot = this.petRoot;
-    if (!pet || !petRoot) return;
+    const petNode = this.petNode;
+    if (!pet || !petNode) return;
 
     const scale = STAGE_SCALE[pet.stage] || 1;
-    petRoot.setScale(scale, scale, scale);
+    this.baseScale = scale * BASE_SCALE;
+    petNode.setScale(this.baseScale, this.baseScale, 1);
 
-    if (this.anim) {
-      const state = this.anim.getState(IDLE_CLIP);
-      if (state) state.speed = STAGE_SPEED[pet.stage] || 1;
+    if (this.skeleton) {
+      this.skeleton.timeScale = STAGE_SPEED[pet.stage] || 1;
     }
   }
 
-  // ---- 动画 ----
+  // ---- 互动反馈 ----
 
   /**
-   * 占位宠物没有骨骼，用节点级 tween 造出呼吸和浮动。
-   * 静止的模型看着像张图，加一点点周期性起伏就有"活着"的感觉。
-   * 有骨骼动画时不要叠加这个，两套节奏打架会显得很乱。
+   * 互动时晃一下，给点即时反馈。
+   * 传入互动动作（feed/bath/pet/play）时优先播该动作对应的动画，播完接回 idle；
+   * 不传或对应动画缺失就退回通用 happy。
    */
-  private playPlaceholderIdle() {
-    const pet = this.petRoot;
-    if (!pet || this.usingModel) return;
+  public react(action?: string) {
+    const pet = this.petNode;
+    if (!pet) return;
 
+    const base = this.baseScale;
+    const squash = new Vec3(base * 1.12, base * 0.9, 1);
+    const restore = new Vec3(base, base, 1);
+    Tween.stopAllByTarget(pet);
     tween(pet)
-      .repeatForever(
-        tween<Node>()
-          .to(1.4, { scale: new Vec3(1.035, 0.97, 1.02) }, { easing: 'sineInOut' })
-          .to(1.4, { scale: new Vec3(1, 1, 1) }, { easing: 'sineInOut' }),
-      )
+      .to(0.1, { scale: squash }, { easing: 'quadOut' })
+      .to(0.22, { scale: restore }, { easing: 'backOut' })
+      .call(() => {
+        // 占位宠物没骨骼，晃完把呼吸动画接回去
+        if (!this.skeleton && !this.disposed) this.resumePlaceholderIdle();
+      })
       .start();
 
+    if (this.skeleton) {
+      const cands = (action && ACTION_ANIM[action]) || [];
+      const name = cands.find((n) => this.animNames.indexOf(n) >= 0) || this.happyAnim;
+      if (name) {
+        this.skeleton.setAnimation(0, name, false);
+        if (this.idleAnim) this.skeleton.addAnimation(0, this.idleAnim, true, 0);
+      }
+    }
+  }
+
+  private resumePlaceholderIdle() {
+    const pet = this.petNode;
+    if (!pet || this.skeleton) return;
     tween(pet)
       .repeatForever(
         tween<Node>()
-          .to(2.6, { position: new Vec3(0, 0.05, 0) }, { easing: 'sineInOut' })
-          .to(2.6, { position: new Vec3(0, 0, 0) }, { easing: 'sineInOut' }),
+          .to(1.4, { scale: new Vec3(this.baseScale * 1.03, this.baseScale * 0.97, 1) }, { easing: 'sineInOut' })
+          .to(1.4, { scale: new Vec3(this.baseScale, this.baseScale, 1) }, { easing: 'sineInOut' }),
       )
       .start();
   }
 
-  /** 互动时晃一下，给点即时反馈 */
-  public react() {
-    const pet = this.petRoot;
+  // ---- 展示能力：换皮肤 / 家具 / 帽子挂点 ----
+
+  /** 循环切换到下一/上一只猫（编号皮肤）。换皮后重播 idle，确保新皮附件刷新。 */
+  public cycleSkin(dir = 1): string {
+    const skel = this.skeleton;
+    if (!skel || !this.skinList.length) return '';
+    this.skinIndex = (this.skinIndex + dir + this.skinList.length) % this.skinList.length;
+    const name = this.skinList[this.skinIndex];
+    skel.setSkin(name);
+    if (this.idleAnim) skel.setAnimation(0, this.idleAnim, true);
+    return name;
+  }
+
+  /**
+   * 循环切换舞台道具：每点一次换 PROP_LIST 里的下一个（家具 / 站点 / 特效），
+   * 走到末尾再点一次清空。每个道具直接循环播它自己的第一个动画。
+   */
+  public cycleProp() {
+    // 先移除当前道具
+    if (this.furnNode) {
+      if (this.furnNode.isValid) this.furnNode.destroy();
+      this.furnNode = null;
+    }
+    // 推进下标：-1(无) → 0..N-1 → -1
+    this.propIndex = this.propIndex + 1 >= PROP_LIST.length ? -1 : this.propIndex + 1;
+    if (this.propIndex < 0 || !this.spineReady()) return;
+
+    const res = PROP_LIST[this.propIndex];
+    const node = new Node('Prop');
+    node.layer = Layers.Enum.UI_2D;
+    node.addComponent(UITransform);
+    node.parent = this.node;
+    // 背景之上、宠物旁边的地面高度
+    node.setSiblingIndex(1);
+    node.setPosition(210, this.centerY - 150, 0);
+    node.setScale(1.4, 1.4, 1);
+    this.furnNode = node;
+
+    resources.load(`${SPINE_DIR}/${res}`, sp.SkeletonData, (err, data) => {
+      if (this.disposed || !node.isValid) return;
+      if (err || !data) {
+        console.warn(`[PetStage] 道具 ${res} 加载失败，跳过`, err);
+        node.destroy();
+        this.furnNode = null;
+        return;
+      }
+      const skel = node.addComponent(sp.Skeleton);
+      skel.skeletonData = data;
+      skel.premultipliedAlpha = false;
+      // 道具动画名未知，直接取第一个循环播
+      const rt = data.getRuntimeData && data.getRuntimeData();
+      const anims = rt && rt.animations ? rt.animations.map((a) => a.name) : [];
+      if (anims.length) skel.setAnimation(0, anims[0], true);
+    });
+  }
+
+  // ---- 散步（自动来回走动）----
+
+  /** 走某一段：先转向+起步走，位移到位后停下站立。dir<0 向左（翻转朝向），dir>0 向右。 */
+  private walkSegment(x: number, dir: number, dur: number) {
+    return tween<Node>()
+      .call(() => this.faceWalk(dir))
+      .to(dur, { position: new Vec3(x, this.centerY, 0) }, { easing: 'linear' })
+      .call(() => this.pauseIdle());
+  }
+
+  /** 转向并起步走：按方向翻转 scale.x（走路动画默认朝右），播 Walk。 */
+  private faceWalk(dir: number) {
+    const pet = this.petNode;
+    const skel = this.skeleton;
+    if (!pet) return;
+    const s = Math.abs(this.baseScale) || 1;
+    // Walk 动画默认朝左，所以往右走(dir>0)才翻转
+    pet.setScale(dir >= 0 ? -s : s, s, 1);
+    if (skel && this.walkAnim) skel.setAnimation(0, this.walkAnim, true);
+  }
+
+  /** 到点停下时播站立 idle（不是睡觉）。 */
+  private pauseIdle() {
+    const skel = this.skeleton;
+    if (skel && this.wanderIdle) skel.setAnimation(0, this.wanderIdle, true);
+  }
+
+  /**
+   * 开/关「自动散步」：中间 → 左 → 右 → 回中间，循环往复。
+   * 走动用 Walk 动画 + 节点位移，到端点停一下换站立 idle。再点一次停下、回中间、恢复原待机。
+   */
+  public toggleWander() {
+    const pet = this.petNode;
+    const skel = this.skeleton;
     if (!pet) return;
 
-    const base = pet.scale.clone();
-    const squash = new Vec3(base.x * 1.12, base.y * 0.9, base.z * 1.08);
+    if (this.wandering) {
+      this.wandering = false;
+      Tween.stopAllByTarget(pet);
+      const s = Math.abs(this.baseScale) || 1;
+      pet.setScale(s, s, 1);
+      pet.setPosition(WANDER_CENTER, this.centerY, 0);
+      if (skel && this.idleAnim) skel.setAnimation(0, this.idleAnim, true);
+      return;
+    }
+
+    if (!skel || !this.walkAnim) {
+      console.warn('[PetStage] 骨架没有 Walk 动画，无法散步');
+      return;
+    }
+    this.wandering = true;
+    Tween.stopAllByTarget(pet);
     tween(pet)
-      .to(0.1, { scale: squash }, { easing: 'quadOut' })
-      .to(0.22, { scale: base }, { easing: 'backOut' })
+      .repeatForever(
+        tween<Node>()
+          .then(this.walkSegment(WANDER_LEFT, -1, 1.4))
+          .delay(0.6)
+          .then(this.walkSegment(WANDER_RIGHT, 1, 2.6))
+          .delay(0.6)
+          .then(this.walkSegment(WANDER_CENTER, -1, 1.4))
+          .delay(0.8),
+      )
       .start();
+  }
+
+  /**
+   * 戴上/摘下帽子（2D 挂点演示）。
+   * Spine 没有 3D 那种 socket，这里的做法是：建一个挂帽子贴图的子节点，
+   * 在 update() 里每帧读头骨的世界位姿，把节点对齐过去——效果等价于挂点。
+   */
+  public toggleHat() {
+    if (this.hatNode) {
+      if (this.hatNode.isValid) this.hatNode.destroy();
+      this.hatNode = null;
+      this.hatBone = null;
+      return;
+    }
+    const pet = this.petNode;
+    const skel = this.skeleton;
+    if (!pet || !skel) return;
+    const bone = skel.findBone(HAT_BONE);
+    if (!bone) {
+      console.warn(`[PetStage] 找不到骨骼 ${HAT_BONE}，无法挂帽子`);
+      return;
+    }
+    this.hatBone = bone;
+
+    const node = new Node('Hat');
+    node.layer = Layers.Enum.UI_2D;
+    node.addComponent(UITransform);
+    node.parent = pet;
+    // 扣掉父节点（宠物）的放大倍数，得到真正的目标世界大小
+    const s = HAT_SCALE / (this.baseScale || 1);
+    node.setScale(s, s, 1);
+    const sprite = node.addComponent(Sprite);
+    sprite.sizeMode = Sprite.SizeMode.TRIMMED;
+    resources.load(HAT_RES, SpriteFrame, (err, frame) => {
+      if (!node.isValid) return;
+      if (err || !frame) {
+        console.warn('[PetStage] 帽子贴图加载失败', err);
+        return;
+      }
+      sprite.spriteFrame = frame;
+    });
+    this.hatNode = node;
+  }
+
+  /**
+   * 顾客上门（顾客系统演示）：显示/隐藏 Customer Spine，并挂一块名牌显示模拟的顾客信息。
+   * 数据来自 showcaseData.randomCustomer()——真实产品里换成后端「顾客到访」事件即可。
+   */
+  public toggleCustomer() {
+    if (this.customerNode) {
+      if (this.customerNode.isValid) this.customerNode.destroy();
+      this.customerNode = null;
+      return;
+    }
+    if (!this.spineReady()) return;
+
+    const node = new Node('Customer');
+    node.layer = Layers.Enum.UI_2D;
+    node.addComponent(UITransform);
+    node.parent = this.node;
+    node.setSiblingIndex(2);
+    node.setPosition(-210, this.centerY - 120, 0);
+    node.setScale(0.9, 0.9, 1);
+    this.customerNode = node;
+
+    resources.load('spine/Customer/Customer', sp.SkeletonData, (err, data) => {
+      if (this.disposed || !node.isValid) return;
+      if (err || !data) {
+        console.warn('[PetStage] 顾客骨架加载失败', err);
+        node.destroy();
+        this.customerNode = null;
+        return;
+      }
+      const skel = node.addComponent(sp.Skeleton);
+      skel.skeletonData = data;
+      skel.premultipliedAlpha = false;
+      const rt = data.getRuntimeData && data.getRuntimeData();
+      const anims = rt && rt.animations ? rt.animations.map((a) => a.name) : [];
+      if (anims.length) skel.setAnimation(0, anims[0], true);
+
+      // 名牌：模拟后端下发的顾客信息
+      const c = randomCustomer();
+      const label = makeLabel(`${c.name}  想要「${c.order}」`, node, {
+        size: 26,
+        color: COLOR.title,
+        align: 'center',
+        bold: true,
+      });
+      label.node.setPosition(0, 220, 0);
+    });
+  }
+
+  /** 每帧把帽子对齐到头骨的世界位姿（骨骼坐标与 petNode 局部空间同源）。 */
+  update() {
+    const node = this.hatNode;
+    const bone = this.hatBone;
+    if (!node || !bone || !node.isValid) return;
+    node.setPosition(bone.worldX, bone.worldY + HAT_OFFSET_Y, 0);
+    // 从骨骼世界矩阵取旋转角（度），让帽子跟着头一起歪
+    const rot = (Math.atan2(bone.c, bone.a) * 180) / Math.PI;
+    node.setRotationFromEuler(0, 0, rot);
   }
 }

@@ -1,0 +1,1024 @@
+{
+  "Items": [
+    {
+      "ID": "CAT_003",
+      "LevelUnlocked": 1,
+      "Rarity": 0,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "003",
+      "Name": "CAT_NAME_003",
+      "Species": "CAT_BREED_BICOLOUR",
+      "Description": "CAT_DESCRIPTION_003",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_001",
+      "LevelUnlocked": 2,
+      "Rarity": 0,
+      "Traits": [
+        1
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_1",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "001",
+      "Name": "CAT_NAME_001",
+      "Species": "CAT_BREED_CALICO",
+      "Description": "CAT_DESCRIPTION_001",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_002",
+      "LevelUnlocked": 3,
+      "Rarity": 1,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "002",
+      "Name": "CAT_NAME_002",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_002",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_004",
+      "LevelUnlocked": 4,
+      "Rarity": 0,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "004",
+      "Name": "CAT_NAME_004",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_004",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_005",
+      "LevelUnlocked": 6,
+      "Rarity": 1,
+      "Traits": [
+        1
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_1",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "005",
+      "Name": "CAT_NAME_005",
+      "Species": "CAT_BREED_BOMBAY",
+      "Description": "CAT_DESCRIPTION_005",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_006",
+      "LevelUnlocked": 8,
+      "Rarity": 0,
+      "Traits": [
+        3
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_3",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "006",
+      "Name": "CAT_NAME_006",
+      "Species": "CAT_BREED_RUSSIANWHITE",
+      "Description": "CAT_DESCRIPTION_006",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_018",
+      "LevelUnlocked": 10,
+      "Rarity": 2,
+      "Traits": [
+        1
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_1",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "018",
+      "Name": "CAT_NAME_018",
+      "Species": "CAT_BREED_SIAMESE",
+      "Description": "CAT_DESCRIPTION_018",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_010",
+      "LevelUnlocked": 12,
+      "Rarity": 1,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "010",
+      "Name": "CAT_NAME_010",
+      "Species": "CAT_BREED_BICOLOUR",
+      "Description": "CAT_DESCRIPTION_010",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_013",
+      "LevelUnlocked": 14,
+      "Rarity": 0,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_4",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "013",
+      "Name": "CAT_NAME_013",
+      "Species": "CAT_BREED_BOBTAIL",
+      "Description": "CAT_DESCRIPTION_013",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_024",
+      "LevelUnlocked": 16,
+      "Rarity": 2,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "024",
+      "Name": "CAT_NAME_024",
+      "Species": "CAT_BREED_BOBTAIL",
+      "Description": "CAT_DESCRIPTION_024",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_008",
+      "LevelUnlocked": 18,
+      "Rarity": 1,
+      "Traits": [
+        3
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_3",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "008",
+      "Name": "CAT_NAME_008",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_008",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_011",
+      "LevelUnlocked": 20,
+      "Rarity": 0,
+      "Traits": [
+        5
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_5",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "011",
+      "Name": "CAT_NAME_011",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_011",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_016",
+      "LevelUnlocked": 22,
+      "Rarity": 2,
+      "Traits": [
+        3
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_3",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "016",
+      "Name": "CAT_NAME_016",
+      "Species": "CAT_BREED_CHARTREAUX",
+      "Description": "CAT_DESCRIPTION_016",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_036",
+      "LevelUnlocked": 24,
+      "Rarity": 1,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_4",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "036",
+      "Name": "CAT_NAME_036",
+      "Species": "CAT_BREED_CURL",
+      "Description": "CAT_DESCRIPTION_036",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_015",
+      "LevelUnlocked": 26,
+      "Rarity": 0,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "015",
+      "Name": "CAT_NAME_015",
+      "Species": "CAT_BREED_CHANTILLY",
+      "Description": "CAT_DESCRIPTION_015",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_017",
+      "LevelUnlocked": 28,
+      "Rarity": 2,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "017",
+      "Name": "CAT_NAME_017",
+      "Species": "CAT_BREED_SIBERIAN",
+      "Description": "CAT_DESCRIPTION_017",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_023",
+      "LevelUnlocked": 30,
+      "Rarity": 1,
+      "Traits": [
+        5
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_5",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "023",
+      "Name": "CAT_NAME_023",
+      "Species": "CAT_BREED_WIREHAIR",
+      "Description": "CAT_DESCRIPTION_023",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_007",
+      "LevelUnlocked": 32,
+      "Rarity": 1,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "007",
+      "Name": "CAT_NAME_007",
+      "Species": "CAT_BREED_SIBERIAN",
+      "Description": "CAT_DESCRIPTION_007",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_019",
+      "LevelUnlocked": 34,
+      "Rarity": 0,
+      "Traits": [
+        7
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_7",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "019",
+      "Name": "CAT_NAME_019",
+      "Species": "CAT_BREED_BICOLOUR",
+      "Description": "CAT_DESCRIPTION_019",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_020",
+      "LevelUnlocked": 37,
+      "Rarity": 2,
+      "Traits": [
+        5
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_5",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "020",
+      "Name": "CAT_NAME_020",
+      "Species": "CAT_BREED_LONGHAIR",
+      "Description": "CAT_DESCRIPTION_020",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_041",
+      "LevelUnlocked": 39,
+      "Rarity": 2,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "041",
+      "Name": "CAT_NAME_041",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_041",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_022",
+      "LevelUnlocked": 41,
+      "Rarity": 2,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_4",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "022",
+      "Name": "CAT_NAME_022",
+      "Species": "CAT_BREED_TONKINESE",
+      "Description": "CAT_DESCRIPTION_022",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_009",
+      "LevelUnlocked": 43,
+      "Rarity": 3,
+      "Traits": [
+        1
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_1",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "009",
+      "Name": "CAT_NAME_009",
+      "Species": "CAT_BREED_TORTOISESHELL",
+      "Description": "CAT_DESCRIPTION_009",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_012",
+      "LevelUnlocked": 45,
+      "Rarity": 0,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_C1",
+      "ResourceTag": "012",
+      "Name": "CAT_NAME_012",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_012",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_039",
+      "LevelUnlocked": 47,
+      "Rarity": 1,
+      "Traits": [
+        10
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_10",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "039",
+      "Name": "CAT_NAME_039",
+      "Species": "CAT_BREED_OCICAT",
+      "Description": "CAT_DESCRIPTION_039",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_031",
+      "LevelUnlocked": 49,
+      "Rarity": 2,
+      "Traits": [
+        9
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_9",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "031",
+      "Name": "CAT_NAME_031",
+      "Species": "CAT_BREED_SHORTHAIR",
+      "Description": "CAT_DESCRIPTION_031",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_028",
+      "LevelUnlocked": 51,
+      "Rarity": 3,
+      "Traits": [
+        5
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_5",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "028",
+      "Name": "CAT_NAME_028",
+      "Species": "CAT_BREED_SPHYNX",
+      "Description": "CAT_DESCRIPTION_028",
+      "HairType": "HAIR_TYPE_NONE"
+    },
+    {
+      "ID": "CAT_025",
+      "LevelUnlocked": 53,
+      "Rarity": 1,
+      "Traits": [
+        7
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_7",
+      "UpgradeItem2": "I_RARITY_U1",
+      "ResourceTag": "025",
+      "Name": "CAT_NAME_025",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_025",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_038",
+      "LevelUnlocked": 54,
+      "Rarity": 2,
+      "Traits": [
+        11
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_11",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "038",
+      "Name": "CAT_NAME_038",
+      "Species": "CAT_BREED_RAGDOLL",
+      "Description": "CAT_DESCRIPTION_038",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_040",
+      "LevelUnlocked": 55,
+      "Rarity": 2,
+      "Traits": [
+        10
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "I_TRAIT_10",
+      "UpgradeItem2": "I_RARITY_R1",
+      "ResourceTag": "040",
+      "Name": "CAT_NAME_040",
+      "Species": "CAT_BREED_BENGAL",
+      "Description": "CAT_DESCRIPTION_040",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_026",
+      "LevelUnlocked": 56,
+      "Rarity": 3,
+      "Traits": [
+        12
+      ],
+      "IsActiveStatus": 0,
+      "ObtainMethod": 1,
+      "UpgradeItem1": "disabled",
+      "UpgradeItem2": "disabled",
+      "ResourceTag": "026",
+      "Name": "CAT_NAME_026",
+      "Species": "CAT_BREED_ANGORA",
+      "Description": "CAT_DESCRIPTION_026",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_032",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        7
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_7",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "032",
+      "Name": "CAT_NAME_032",
+      "Species": "CAT_BREED_RAGDOLL",
+      "Description": "CAT_DESCRIPTION_032",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_014",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "014",
+      "Name": "CAT_NAME_014",
+      "Species": "CAT_BREED_CALICO",
+      "Description": "CAT_DESCRIPTION_014",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_021",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "021",
+      "Name": "CAT_NAME_021",
+      "Species": "CAT_BREED_CALICO",
+      "Description": "CAT_DESCRIPTION_021",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_027",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        7
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_7",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "027",
+      "Name": "CAT_NAME_027",
+      "Species": "CAT_BREED_FOLD",
+      "Description": "CAT_DESCRIPTION_027",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_053",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "053",
+      "Name": "CAT_NAME_053",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_053",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_065",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_L1",
+      "ResourceTag": "065",
+      "Name": "CAT_NAME_065",
+      "Species": "CAT_BREED_ORIENTAL",
+      "Description": "CAT_DESCRIPTION_065",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_066",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        10
+      ],
+      "IsActiveStatus": 0,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "disabled",
+      "UpgradeItem2": "disabled",
+      "ResourceTag": "066",
+      "Name": "CAT_NAME_066",
+      "Species": "CAT_BREED_LAMBKIN",
+      "Description": "CAT_DESCRIPTION_066",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_067",
+      "LevelUnlocked": 1,
+      "Rarity": 4,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 0,
+      "ObtainMethod": 3,
+      "UpgradeItem1": "disabled",
+      "UpgradeItem2": "disabled",
+      "ResourceTag": "067",
+      "Name": "CAT_NAME_067",
+      "Species": "CAT_BREED_LYKOI",
+      "Description": "CAT_DESCRIPTION_067",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_050",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        1
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_1",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "050",
+      "Name": "CAT_NAME_050",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_050",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_051",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "051",
+      "Name": "CAT_NAME_051",
+      "Species": "CAT_BREED_BOMBAY",
+      "Description": "CAT_DESCRIPTION_051",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_052",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "052",
+      "Name": "CAT_NAME_052",
+      "Species": "CAT_BREED_BICOLOUR",
+      "Description": "CAT_DESCRIPTION_052",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_054",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        9
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_9",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "054",
+      "Name": "CAT_NAME_054",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_054",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_056",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "056",
+      "Name": "CAT_NAME_056",
+      "Species": "CAT_BREED_BOMBAY",
+      "Description": "CAT_DESCRIPTION_056",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_055",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "055",
+      "Name": "CAT_NAME_055",
+      "Species": "CAT_BREED_SNOWSHOE",
+      "Description": "CAT_DESCRIPTION_055",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_030",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        10
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_10",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "030",
+      "Name": "CAT_NAME_030",
+      "Species": "CAT_BREED_LAPERM",
+      "Description": "CAT_DESCRIPTION_030",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_029",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        6
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_6",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "029",
+      "Name": "CAT_NAME_029",
+      "Species": "CAT_BREED_PERSIAN",
+      "Description": "CAT_DESCRIPTION_029",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_033",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        3
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_3",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "033",
+      "Name": "CAT_NAME_033",
+      "Species": "CAT_BREED_CALICO",
+      "Description": "CAT_DESCRIPTION_033",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_034",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "034",
+      "Name": "CAT_NAME_034",
+      "Species": "CAT_BREED_HIMALAYAN",
+      "Description": "CAT_DESCRIPTION_034",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_035",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        2
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_2",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "035",
+      "Name": "CAT_NAME_035",
+      "Species": "CAT_BREED_MAINECOON",
+      "Description": "CAT_DESCRIPTION_035",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_037",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        10
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_10",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "037",
+      "Name": "CAT_NAME_037",
+      "Species": "CAT_BREED_EXOTIC",
+      "Description": "CAT_DESCRIPTION_037",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_057",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "057",
+      "Name": "CAT_NAME_057",
+      "Species": "CAT_BREED_MUNCHKIN",
+      "Description": "CAT_DESCRIPTION_057",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    },
+    {
+      "ID": "CAT_058",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_4",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "058",
+      "Name": "CAT_NAME_058",
+      "Species": "CAT_BREED_PERSIAN",
+      "Description": "CAT_DESCRIPTION_058",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_059",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "059",
+      "Name": "CAT_NAME_059",
+      "Species": "CAT_BREED_SHORTHAIR",
+      "Description": "CAT_DESCRIPTION_059",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_060",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        4
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_4",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "060",
+      "Name": "CAT_NAME_060",
+      "Species": "CAT_BREED_BICOLOUR",
+      "Description": "CAT_DESCRIPTION_060",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_061",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "061",
+      "Name": "CAT_NAME_061",
+      "Species": "CAT_BREED_CALICO",
+      "Description": "CAT_DESCRIPTION_061",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_062",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        12
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_12",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "062",
+      "Name": "CAT_NAME_062",
+      "Species": "CAT_BREED_MIXED",
+      "Description": "CAT_DESCRIPTION_062",
+      "HairType": "HAIR_TYPE_LONG"
+    },
+    {
+      "ID": "CAT_063",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        8
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_8",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "063",
+      "Name": "CAT_NAME_063",
+      "Species": "CAT_BREED_SIAMESE",
+      "Description": "CAT_DESCRIPTION_063",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_064",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        11
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_11",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "064",
+      "Name": "CAT_NAME_064",
+      "Species": "CAT_BREED_TABBY",
+      "Description": "CAT_DESCRIPTION_064",
+      "HairType": "HAIR_TYPE_SHORT"
+    },
+    {
+      "ID": "CAT_068",
+      "LevelUnlocked": 1,
+      "Rarity": 3,
+      "Traits": [
+        0
+      ],
+      "IsActiveStatus": 1,
+      "ObtainMethod": 2,
+      "UpgradeItem1": "I_TRAIT_0",
+      "UpgradeItem2": "I_RARITY_E1",
+      "ResourceTag": "068",
+      "Name": "CAT_NAME_068",
+      "Species": "CAT_BREED_MIXED",
+      "Description": "CAT_DESCRIPTION_068",
+      "HairType": "HAIR_TYPE_MEDIUM"
+    }
+  ]
+}

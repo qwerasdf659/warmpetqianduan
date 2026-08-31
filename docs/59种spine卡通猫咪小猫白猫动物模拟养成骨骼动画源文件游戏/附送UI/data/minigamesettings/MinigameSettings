@@ -1,0 +1,113 @@
+{
+  "Items": [
+    {
+      "Type": 0,
+      "Enabled": true,
+      "MinPlayerLevel": 1,
+      "Cadence": 80,
+      "ValidMapIDs": [
+        0,
+        1
+      ]
+    },
+    {
+      "Type": 1,
+      "Enabled": true,
+      "MinPlayerLevel": 1,
+      "Cadence": 100,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 2,
+      "Enabled": true,
+      "MinPlayerLevel": 1,
+      "Cadence": 90,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 3,
+      "Enabled": false,
+      "MinPlayerLevel": 99,
+      "Cadence": 120,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 4,
+      "Enabled": true,
+      "MinPlayerLevel": 5,
+      "Cadence": 21600,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 5,
+      "Enabled": true,
+      "MinPlayerLevel": 6,
+      "Cadence": 220,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 6,
+      "Enabled": true,
+      "MinPlayerLevel": 7,
+      "Cadence": 240,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 7,
+      "Enabled": true,
+      "MinPlayerLevel": 4,
+      "Cadence": 260,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 8,
+      "Enabled": true,
+      "MinPlayerLevel": 1,
+      "Cadence": 250,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 9,
+      "Enabled": true,
+      "MinPlayerLevel": 10,
+      "Cadence": 240,
+      "ValidMapIDs": [
+        1
+      ]
+    },
+    {
+      "Type": 10,
+      "Enabled": false,
+      "MinPlayerLevel": 1,
+      "Cadence": 300,
+      "ValidMapIDs": [
+        0
+      ]
+    },
+    {
+      "Type": 11,
+      "Enabled": true,
+      "MinPlayerLevel": 8,
+      "Cadence": 220,
+      "ValidMapIDs": [
+        1
+      ]
+    }
+  ]
+}

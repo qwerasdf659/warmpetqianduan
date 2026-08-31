@@ -1,0 +1,54 @@
+{
+  "Items": [
+    {
+      "ItemValues": [
+        6,
+        8,
+        11,
+        15,
+        20
+      ],
+      "ItemPoolCounts": [
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "GeneratorUnlockLevels": [
+        0,
+        0,
+        0,
+        4,
+        8
+      ],
+      "GeneratorCooldown": 7200,
+      "GeneratorRewards": 3,
+      "CustomerDismissTime": 7200,
+      "BonusChestCooldown": 6300,
+      "BonusChestCostHC": 10,
+      "HurryValueInMinsOf1HC": 10,
+      "BonusChestHurryItemWeight": 10,
+      "BonusChestThreeItemsWeight": 20,
+      "BonusChestTwoItemsWeight": 70,
+      "ForceItemRolls": [
+        1,
+        3,
+        0,
+        4,
+        1,
+        2,
+        0,
+        3,
+        1,
+        2
+      ],
+      "ForceCustomers": [
+        "1,2",
+        "0,1,3",
+        "0,0,3",
+        "1,2,4"
+      ]
+    }
+  ]
+}

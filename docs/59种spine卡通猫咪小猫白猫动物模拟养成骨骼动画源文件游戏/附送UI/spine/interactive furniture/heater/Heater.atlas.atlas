@@ -1,0 +1,55 @@
+
+Heater.png
+size: 750,210
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Heater/Body
+  rotate: true
+  xy: 2, 2
+  size: 206, 336
+  orig: 206, 336
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Heater/FrontBar
+  rotate: false
+  xy: 340, 2
+  size: 129, 206
+  orig: 129, 206
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Heater/Kettle
+  rotate: true
+  xy: 597, 89
+  size: 119, 125
+  orig: 119, 125
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Heater/KettleLid
+  rotate: true
+  xy: 545, 6
+  size: 46, 26
+  orig: 47, 26
+  offset: 1, 0
+  index: -1
+Parts_Furniture/Heater/Off
+  rotate: true
+  xy: 597, 5
+  size: 82, 151
+  orig: 82, 151
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Heater/On
+  rotate: false
+  xy: 471, 54
+  size: 124, 154
+  orig: 124, 154
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Heater/Steam
+  rotate: true
+  xy: 471, 13
+  size: 39, 72
+  orig: 39, 72
+  offset: 0, 0
+  index: -1

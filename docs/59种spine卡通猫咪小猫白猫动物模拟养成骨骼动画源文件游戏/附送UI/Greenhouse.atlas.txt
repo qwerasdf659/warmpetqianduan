@@ -1,0 +1,34 @@
+
+Greenhouse.png
+size: 512, 512
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Arrow
+  rotate: true
+  xy: 204, 207
+  size: 278, 105
+  orig: 278, 105
+  offset: 0, 0
+  index: -1
+Pack
+  rotate: false
+  xy: 2, 2
+  size: 190, 203
+  orig: 190, 203
+  offset: 0, 0
+  index: -1
+Petal
+  rotate: true
+  xy: 194, 5
+  size: 200, 148
+  orig: 200, 148
+  offset: 0, 0
+  index: -1
+Pot
+  rotate: false
+  xy: 2, 207
+  size: 200, 278
+  orig: 200, 278
+  offset: 0, 0
+  index: -1

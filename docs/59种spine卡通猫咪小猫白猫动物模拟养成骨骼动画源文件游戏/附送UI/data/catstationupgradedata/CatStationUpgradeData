@@ -1,0 +1,114 @@
+{
+  "Items": [
+    {
+      "Level": 1,
+      "CommonsRequired": 1,
+      "UncommonsRequired": 1,
+      "RaresRequired": 1,
+      "EpicsRequired": 0,
+      "LegendarysRequired": 0,
+      "SCRequired": 0,
+      "HeartsRequired": 0,
+      "XPGranted": 50
+    },
+    {
+      "Level": 2,
+      "CommonsRequired": 0,
+      "UncommonsRequired": 2,
+      "RaresRequired": 2,
+      "EpicsRequired": 1,
+      "LegendarysRequired": 0,
+      "SCRequired": 30,
+      "HeartsRequired": 10,
+      "XPGranted": 100
+    },
+    {
+      "Level": 3,
+      "CommonsRequired": 4,
+      "UncommonsRequired": 2,
+      "RaresRequired": 0,
+      "EpicsRequired": 2,
+      "LegendarysRequired": 0,
+      "SCRequired": 50,
+      "HeartsRequired": 70,
+      "XPGranted": 150
+    },
+    {
+      "Level": 4,
+      "CommonsRequired": 5,
+      "UncommonsRequired": 0,
+      "RaresRequired": 2,
+      "EpicsRequired": 0,
+      "LegendarysRequired": 1,
+      "SCRequired": 100,
+      "HeartsRequired": 135,
+      "XPGranted": 250
+    },
+    {
+      "Level": 5,
+      "CommonsRequired": 0,
+      "UncommonsRequired": 3,
+      "RaresRequired": 3,
+      "EpicsRequired": 3,
+      "LegendarysRequired": 0,
+      "SCRequired": 150,
+      "HeartsRequired": 175,
+      "XPGranted": 400
+    },
+    {
+      "Level": 6,
+      "CommonsRequired": 0,
+      "UncommonsRequired": 4,
+      "RaresRequired": 0,
+      "EpicsRequired": 3,
+      "LegendarysRequired": 2,
+      "SCRequired": 200,
+      "HeartsRequired": 200,
+      "XPGranted": 650
+    },
+    {
+      "Level": 7,
+      "CommonsRequired": 7,
+      "UncommonsRequired": 0,
+      "RaresRequired": 4,
+      "EpicsRequired": 4,
+      "LegendarysRequired": 0,
+      "SCRequired": 250,
+      "HeartsRequired": 225,
+      "XPGranted": 1050
+    },
+    {
+      "Level": 8,
+      "CommonsRequired": 10,
+      "UncommonsRequired": 6,
+      "RaresRequired": 0,
+      "EpicsRequired": 0,
+      "LegendarysRequired": 2,
+      "SCRequired": 300,
+      "HeartsRequired": 325,
+      "XPGranted": 1700
+    },
+    {
+      "Level": 9,
+      "CommonsRequired": 0,
+      "UncommonsRequired": 10,
+      "RaresRequired": 7,
+      "EpicsRequired": 6,
+      "LegendarysRequired": 0,
+      "SCRequired": 350,
+      "HeartsRequired": 400,
+      "XPGranted": 2750
+    },
+    {
+      "Level": 10,
+      "CommonsRequired": 15,
+      "UncommonsRequired": 0,
+      "RaresRequired": 8,
+      "EpicsRequired": 0,
+      "LegendarysRequired": 3,
+      "SCRequired": 400,
+      "HeartsRequired": 575,
+      "XPGranted": 4450
+    }
+  ]
+}

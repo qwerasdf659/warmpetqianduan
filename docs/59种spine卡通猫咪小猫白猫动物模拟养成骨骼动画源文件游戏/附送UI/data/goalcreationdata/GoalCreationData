@@ -1,0 +1,246 @@
+{
+  "Items": [
+    {
+      "ID": "m001",
+      "GoalType": 0,
+      "CollectType": 0,
+      "RewardType": "Tokens",
+      "UnlockLevel": 1,
+      "MinReward": 15,
+      "MaxReward": 30,
+      "MinTarget": 15,
+      "MaxTarget": 20
+    },
+    {
+      "ID": "m002",
+      "GoalType": 0,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 1,
+      "MinReward": 2,
+      "MaxReward": 3,
+      "MinTarget": 20,
+      "MaxTarget": 30
+    },
+    {
+      "ID": "m003",
+      "GoalType": 1,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 15,
+      "MaxReward": 30,
+      "MinTarget": 3,
+      "MaxTarget": 5
+    },
+    {
+      "ID": "m004",
+      "GoalType": 1,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 1,
+      "MinReward": 1,
+      "MaxReward": 3,
+      "MinTarget": 3,
+      "MaxTarget": 5
+    },
+    {
+      "ID": "m005",
+      "GoalType": 2,
+      "CollectType": 0,
+      "RewardType": "Tokens",
+      "UnlockLevel": 1,
+      "MinReward": 10,
+      "MaxReward": 25,
+      "MinTarget": 4,
+      "MaxTarget": 7
+    },
+    {
+      "ID": "m006",
+      "GoalType": 2,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 30,
+      "MaxReward": 50,
+      "MinTarget": 5,
+      "MaxTarget": 8
+    },
+    {
+      "ID": "m007",
+      "GoalType": 3,
+      "CollectType": 2,
+      "RewardType": "HC",
+      "UnlockLevel": 1,
+      "MinReward": 1,
+      "MaxReward": 2,
+      "MinTarget": 100,
+      "MaxTarget": 200
+    },
+    {
+      "ID": "m008",
+      "GoalType": 3,
+      "CollectType": 3,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 30,
+      "MaxReward": 50,
+      "MinTarget": 100,
+      "MaxTarget": 200
+    },
+    {
+      "ID": "m009",
+      "GoalType": 10,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 30,
+      "MaxReward": 50,
+      "MinTarget": 4,
+      "MaxTarget": 8
+    },
+    {
+      "ID": "m010",
+      "GoalType": 10,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 1,
+      "MinReward": 1,
+      "MaxReward": 3,
+      "MinTarget": 5,
+      "MaxTarget": 10
+    },
+    {
+      "ID": "m011",
+      "GoalType": 10,
+      "CollectType": 0,
+      "RewardType": "Tokens",
+      "UnlockLevel": 1,
+      "MinReward": 20,
+      "MaxReward": 50,
+      "MinTarget": 3,
+      "MaxTarget": 7
+    },
+    {
+      "ID": "m012",
+      "GoalType": 9,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 10,
+      "MaxReward": 20,
+      "MinTarget": 10,
+      "MaxTarget": 20
+    },
+    {
+      "ID": "m017",
+      "GoalType": 3,
+      "CollectType": 8,
+      "RewardType": "SC",
+      "UnlockLevel": 9,
+      "MinReward": 15,
+      "MaxReward": 30,
+      "MinTarget": 30,
+      "MaxTarget": 50
+    },
+    {
+      "ID": "m013",
+      "GoalType": 17,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 1,
+      "MinReward": 50,
+      "MaxReward": 75,
+      "MinTarget": 3,
+      "MaxTarget": 3
+    },
+    {
+      "ID": "m014",
+      "GoalType": 17,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 1,
+      "MinReward": 5,
+      "MaxReward": 10,
+      "MinTarget": 3,
+      "MaxTarget": 3
+    },
+    {
+      "ID": "m015",
+      "GoalType": 17,
+      "CollectType": 0,
+      "RewardType": "Tokens",
+      "UnlockLevel": 1,
+      "MinReward": 25,
+      "MaxReward": 35,
+      "MinTarget": 3,
+      "MaxTarget": 3
+    },
+    {
+      "ID": "m016",
+      "GoalType": 17,
+      "CollectType": 0,
+      "RewardType": "EC",
+      "UnlockLevel": 1,
+      "MinReward": 25,
+      "MaxReward": 35,
+      "MinTarget": 3,
+      "MaxTarget": 3
+    },
+    {
+      "ID": "m018",
+      "GoalType": 3,
+      "CollectType": 8,
+      "RewardType": "HC",
+      "UnlockLevel": 9,
+      "MinReward": 2,
+      "MaxReward": 3,
+      "MinTarget": 30,
+      "MaxTarget": 50
+    },
+    {
+      "ID": "m019",
+      "GoalType": 21,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 9,
+      "MinReward": 15,
+      "MaxReward": 30,
+      "MinTarget": 6,
+      "MaxTarget": 8
+    },
+    {
+      "ID": "m020",
+      "GoalType": 21,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 9,
+      "MinReward": 2,
+      "MaxReward": 3,
+      "MinTarget": 6,
+      "MaxTarget": 8
+    },
+    {
+      "ID": "m023",
+      "GoalType": 19,
+      "CollectType": 0,
+      "RewardType": "SC",
+      "UnlockLevel": 9,
+      "MinReward": 15,
+      "MaxReward": 30,
+      "MinTarget": 1,
+      "MaxTarget": 3
+    },
+    {
+      "ID": "m024",
+      "GoalType": 19,
+      "CollectType": 0,
+      "RewardType": "HC",
+      "UnlockLevel": 9,
+      "MinReward": 2,
+      "MaxReward": 3,
+      "MinTarget": 1,
+      "MaxTarget": 3
+    }
+  ]
+}

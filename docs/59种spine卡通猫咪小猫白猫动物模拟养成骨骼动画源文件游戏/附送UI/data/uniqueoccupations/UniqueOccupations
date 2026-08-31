@@ -1,0 +1,104 @@
+{
+  "Items": [
+    {
+      "ID": "1",
+      "Occupation": "OCCUPATION_198",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "2",
+      "Occupation": "OCCUPATION_199",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "3",
+      "Occupation": "OCCUPATION_200",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "4",
+      "Occupation": "OCCUPATION_201",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "5",
+      "Occupation": "OCCUPATION_202",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "6",
+      "Occupation": "OCCUPATION_203",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "7",
+      "Occupation": "OCCUPATION_209",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "8",
+      "Occupation": "OCCUPATION_208",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "9",
+      "Occupation": "OCCUPATION_210",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "10",
+      "Occupation": "OCCUPATION_211",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "11",
+      "Occupation": "OCCUPATION_213",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "12",
+      "Occupation": "OCCUPATION_215",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "13",
+      "Occupation": "OCCUPATION_206",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "14",
+      "Occupation": "OCCUPATION_214",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "15",
+      "Occupation": "OCCUPATION_216",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "16",
+      "Occupation": "OCCUPATION_217",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "17",
+      "Occupation": "OCCUPATION_218",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "18",
+      "Occupation": "OCCUPATION_219",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "19",
+      "Occupation": "OCCUPATION_220",
+      "ShouldLocalise": true
+    },
+    {
+      "ID": "20",
+      "Occupation": "OCCUPATION_221",
+      "ShouldLocalise": true
+    }
+  ]
+}

@@ -40,6 +40,7 @@ import { expProgress, describeMood, isMaxLevel } from '../core/predict';
 import store from '../core/store';
 import { OfflineDialog } from './OfflineDialog';
 import { PetStage } from './PetStage';
+import { ShowcasePanel } from './ShowcasePanel';
 import type { PetAction, PetStateView } from '../net/types';
 
 const { ccclass } = _decorator;
@@ -148,10 +149,10 @@ export class MainView extends Component {
   onLoad() {
     this.L = this.computeLayout();
 
-    // 3D 舞台要先建：它会把 UI 相机改成「只清深度」，
-    // 之后 UI 才能正确地叠在 3D 画面上。
+    // 2D 舞台要先建：它铺全屏背景 + 宠物节点，都排在 UI 之前（更底层），
+    // 这样后面建的属性条、按钮、文字才叠在宠物之上。
     this.stage = this.node.addComponent(PetStage);
-    // 相机取景对齐 UI 留出的那块空当，否则可视高度一变宠物就被面板压住
+    // 把宠物摆到 UI 留出的那块空当中心，否则可视高度一变宠物就被面板压住
     this.stage.frameTo(this.L.petCenterY, this.L.h);
 
     // 顺序即渲染层级，也决定能不能合批：先所有 Graphics，再所有 Sprite，最后所有 Label。
@@ -161,6 +162,10 @@ export class MainView extends Component {
     this.buildIcons();
     this.buildLabels();
     this.buildHitAreas();
+
+    // 玩法验证用的展示按钮（换猫/换场景/家具/帽子）。最后挂，保证在最上层可点。
+    const showcase = this.node.addComponent(ShowcasePanel);
+    showcase.stage = this.stage;
 
     store.on('pet', this.onStoreChanged, this);
     store.on('wallet', this.onStoreChanged, this);
@@ -246,8 +251,8 @@ export class MainView extends Component {
   /**
    * 不会变的形状只画一次。
    *
-   * 注意这里**没有**整屏背景：背景由 3D 相机清屏时给出，
-   * UI 层再铺一张不透明底图的话会把 3D 宠物整个盖住。
+   * 整屏背景由 PetStage 在更底层铺好（全屏 Sprite + 相机纯色底），
+   * 这里只画面板/药丸这些叠在宠物之上的 UI。
    */
   private buildStatic() {
     const L = this.L;
@@ -568,7 +573,7 @@ export class MainView extends Component {
     }
 
     const data = res.data;
-    if (this.stage) this.stage.react();
+    if (this.stage) this.stage.react(action);
 
     const gained = gainedText(data.gained);
     if (gained) floatText(this.node, gained, COLOR.ok, this.L.btnY + BTN_H + 40);

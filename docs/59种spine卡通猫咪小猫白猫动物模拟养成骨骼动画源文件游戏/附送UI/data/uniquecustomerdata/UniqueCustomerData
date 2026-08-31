@@ -1,0 +1,1168 @@
+{
+  "Items": [
+    {
+      "ID": "CUST_001",
+      "Name": "NAME_JEFF",
+      "IsMale": true,
+      "Occupation": 1,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "239"
+        },
+        {
+          "PartID": "93"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "254"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "164"
+        },
+        {
+          "PartID": "212"
+        },
+        {
+          "PartID": "188"
+        },
+        {
+          "PartID": "246"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "4_Capricious"
+    },
+    {
+      "ID": "CUST_002",
+      "Name": "NAME_LILIAN",
+      "IsMale": false,
+      "Occupation": 2,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "220"
+        },
+        {
+          "PartID": "73"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "107"
+        },
+        {
+          "PartID": "125"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "162"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "10_Cuddly"
+    },
+    {
+      "ID": "CUST_003",
+      "Name": "NAME_STEPHEN",
+      "IsMale": true,
+      "Occupation": 3,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "237"
+        },
+        {
+          "PartID": "85"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "242"
+        },
+        {
+          "PartID": "140"
+        },
+        {
+          "PartID": "150"
+        },
+        {
+          "PartID": "167"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "188"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "3_Shy"
+    },
+    {
+      "ID": "CUST_004",
+      "Name": "NAME_JIM",
+      "IsMale": true,
+      "Occupation": 3,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "231"
+        },
+        {
+          "PartID": "100"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "244"
+        },
+        {
+          "PartID": "215"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "165"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "2_Playful"
+    },
+    {
+      "ID": "CUST_005",
+      "Name": "NAME_ALEKSIS",
+      "IsMale": true,
+      "Occupation": 4,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "227"
+        },
+        {
+          "PartID": "86"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "242"
+        },
+        {
+          "PartID": "121"
+        },
+        {
+          "PartID": "148"
+        },
+        {
+          "PartID": "209"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "256"
+        },
+        {
+          "PartID": "188"
+        },
+        {
+          "PartID": "249"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "5_Curious"
+    },
+    {
+      "ID": "CUST_006",
+      "Name": "NAME_LARS",
+      "IsMale": true,
+      "Occupation": 5,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "235"
+        },
+        {
+          "PartID": "95"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "126"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "164"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "259"
+        },
+        {
+          "PartID": "246"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "0_Friendly"
+    },
+    {
+      "ID": "CUST_007",
+      "Name": "NAME_JOSIAH",
+      "IsMale": true,
+      "Occupation": 3,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "224"
+        },
+        {
+          "PartID": "87"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "245"
+        },
+        {
+          "PartID": "120"
+        },
+        {
+          "PartID": "152"
+        },
+        {
+          "PartID": "168"
+        },
+        {
+          "PartID": "188"
+        },
+        {
+          "PartID": "248"
+        },
+        {
+          "PartID": "196"
+        },
+        {
+          "PartID": "197"
+        }
+      ],
+      "DesiredTrait": "7_Assertive"
+    },
+    {
+      "ID": "CUST_008",
+      "Name": "NAME_SHELBY",
+      "IsMale": false,
+      "Occupation": 6,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "285"
+        },
+        {
+          "PartID": "286"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "287"
+        },
+        {
+          "PartID": "283"
+        },
+        {
+          "PartID": "284"
+        },
+        {
+          "PartID": "208"
+        },
+        {
+          "PartID": "214"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "2_Playful"
+    },
+    {
+      "ID": "CUST_009",
+      "Name": "NAME_SAM",
+      "IsMale": true,
+      "Occupation": 3,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "333"
+        },
+        {
+          "PartID": "85"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "385"
+        },
+        {
+          "PartID": "126"
+        },
+        {
+          "PartID": "150"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "171"
+        },
+        {
+          "PartID": "246"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "1_Chill"
+    },
+    {
+      "ID": "CUST_010",
+      "Name": "NAME_LISA",
+      "IsMale": false,
+      "Occupation": 7,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "356"
+        },
+        {
+          "PartID": "70"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "390"
+        },
+        {
+          "PartID": "326"
+        },
+        {
+          "PartID": "299"
+        },
+        {
+          "PartID": "309"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "6_Gentle"
+    },
+    {
+      "ID": "CUST_011",
+      "Name": "NAME_CARLA",
+      "IsMale": false,
+      "Occupation": 8,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "358"
+        },
+        {
+          "PartID": "71"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "384"
+        },
+        {
+          "PartID": "325"
+        },
+        {
+          "PartID": "147"
+        },
+        {
+          "PartID": "209"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "10_Cuddly"
+    },
+    {
+      "ID": "CUST_012",
+      "Name": "NAME_ZOE",
+      "IsMale": false,
+      "Occupation": 9,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "364"
+        },
+        {
+          "PartID": "69"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "380"
+        },
+        {
+          "PartID": "327"
+        },
+        {
+          "PartID": "301"
+        },
+        {
+          "PartID": "165"
+        },
+        {
+          "PartID": "214"
+        },
+        {
+          "PartID": "187"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "9_Adventurous"
+    },
+    {
+      "ID": "CUST_013",
+      "Name": "NAME_EMMA",
+      "IsMale": false,
+      "Occupation": 10,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "366"
+        },
+        {
+          "PartID": "70"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "381"
+        },
+        {
+          "PartID": "328"
+        },
+        {
+          "PartID": "141"
+        },
+        {
+          "PartID": "166"
+        },
+        {
+          "PartID": "212"
+        },
+        {
+          "PartID": "185"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "0_Friendly"
+    },
+    {
+      "ID": "CUST_014",
+      "Name": "NAME_BRYCE",
+      "IsMale": true,
+      "Occupation": 11,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "332"
+        },
+        {
+          "PartID": "95"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "383"
+        },
+        {
+          "PartID": "215"
+        },
+        {
+          "PartID": "299"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "108"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "7_Assertive"
+    },
+    {
+      "ID": "CUST_015",
+      "Name": "NAME_JESS",
+      "IsMale": false,
+      "Occupation": 12,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "373"
+        },
+        {
+          "PartID": "79"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "378"
+        },
+        {
+          "PartID": "123"
+        },
+        {
+          "PartID": "144"
+        },
+        {
+          "PartID": "309"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "8_Goofy"
+    },
+    {
+      "ID": "CUST_016",
+      "Name": "NAME_RORY",
+      "IsMale": true,
+      "Occupation": 13,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "340"
+        },
+        {
+          "PartID": "99"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "379"
+        },
+        {
+          "PartID": "215"
+        },
+        {
+          "PartID": "299"
+        },
+        {
+          "PartID": "208"
+        },
+        {
+          "PartID": "174"
+        },
+        {
+          "PartID": "255"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "6_Gentle"
+    },
+    {
+      "ID": "CUST_017",
+      "Name": "NAME_SIOBHAN",
+      "IsMale": false,
+      "Occupation": 14,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "375"
+        },
+        {
+          "PartID": "74"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "385"
+        },
+        {
+          "PartID": "118"
+        },
+        {
+          "PartID": "150"
+        },
+        {
+          "PartID": "159"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "2_Playful"
+    },
+    {
+      "ID": "CUST_018",
+      "Name": "NAME_TOM",
+      "IsMale": true,
+      "Occupation": 15,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "341"
+        },
+        {
+          "PartID": "391"
+        },
+        {
+          "PartID": "392"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "382"
+        },
+        {
+          "PartID": "324"
+        },
+        {
+          "PartID": "299"
+        },
+        {
+          "PartID": "310"
+        },
+        {
+          "PartID": "389"
+        },
+        {
+          "PartID": "393"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "5_Curious"
+    },
+    {
+      "ID": "CUST_019",
+      "Name": "NAME_RENEE",
+      "IsMale": false,
+      "Occupation": 16,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "418"
+        },
+        {
+          "PartID": "417"
+        },
+        {
+          "PartID": "419"
+        },
+        {
+          "PartID": "420"
+        },
+        {
+          "PartID": "416"
+        },
+        {
+          "PartID": "422"
+        },
+        {
+          "PartID": "421"
+        },
+        {
+          "PartID": "423"
+        },
+        {
+          "PartID": "424"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "0_Friendly"
+    },
+    {
+      "ID": "CUST_021",
+      "Name": "NAME_SAM",
+      "IsMale": false,
+      "Occupation": 13,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "30"
+        },
+        {
+          "PartID": "268"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "117"
+        },
+        {
+          "PartID": "301"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "323"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "11_Sleepy"
+    },
+    {
+      "ID": "CUST_022",
+      "Name": "NAME_BERIC",
+      "IsMale": true,
+      "Occupation": 18,
+      "Parts": [
+        {
+          "PartID": "3"
+        },
+        {
+          "PartID": "93"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "215"
+        },
+        {
+          "PartID": "149"
+        },
+        {
+          "PartID": "309"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "255"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "5_Curious"
+    },
+    {
+      "ID": "CUST_023",
+      "Name": "NAME_BRIDGET",
+      "IsMale": false,
+      "Occupation": 8,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "15"
+        },
+        {
+          "PartID": "69"
+        },
+        {
+          "PartID": "103"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "245"
+        },
+        {
+          "PartID": "413"
+        },
+        {
+          "PartID": "203"
+        },
+        {
+          "PartID": "161"
+        },
+        {
+          "PartID": "213"
+        },
+        {
+          "PartID": "259"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "6_Gentle"
+    },
+    {
+      "ID": "CUST_024",
+      "Name": "NAME_JONAS",
+      "IsMale": true,
+      "Occupation": 19,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "347"
+        },
+        {
+          "PartID": "92"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "263"
+        },
+        {
+          "PartID": "427"
+        },
+        {
+          "PartID": "148"
+        },
+        {
+          "PartID": "310"
+        },
+        {
+          "PartID": "424"
+        },
+        {
+          "PartID": "426"
+        },
+        {
+          "PartID": "251"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "0_Friendly"
+    },
+    {
+      "ID": "CUST_025",
+      "Name": "NAME_ADITIA",
+      "IsMale": false,
+      "Occupation": 20,
+      "Parts": [
+        {
+          "PartID": "4"
+        },
+        {
+          "PartID": "425"
+        },
+        {
+          "PartID": "73"
+        },
+        {
+          "PartID": "419"
+        },
+        {
+          "PartID": "102"
+        },
+        {
+          "PartID": "243"
+        },
+        {
+          "PartID": "322"
+        },
+        {
+          "PartID": "203"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "214"
+        },
+        {
+          "PartID": "189"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "0_Friendly"
+    },
+    {
+      "ID": "CUST_026",
+      "Name": "NAME_JESSE",
+      "IsMale": false,
+      "Occupation": 8,
+      "Parts": [
+        {
+          "PartID": "1"
+        },
+        {
+          "PartID": "376"
+        },
+        {
+          "PartID": "79"
+        },
+        {
+          "PartID": "104"
+        },
+        {
+          "PartID": "101"
+        },
+        {
+          "PartID": "105"
+        },
+        {
+          "PartID": "325"
+        },
+        {
+          "PartID": "154"
+        },
+        {
+          "PartID": "267"
+        },
+        {
+          "PartID": "175"
+        },
+        {
+          "PartID": "197"
+        },
+        {
+          "PartID": "196"
+        }
+      ],
+      "DesiredTrait": "11_Sleepy"
+    }
+  ]
+}

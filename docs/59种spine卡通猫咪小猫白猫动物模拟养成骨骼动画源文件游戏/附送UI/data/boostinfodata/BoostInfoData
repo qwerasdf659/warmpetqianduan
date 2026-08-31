@@ -1,0 +1,72 @@
+{
+  "Items": [
+    {
+      "ID": "BOOST_001",
+      "Name": "BOOST_001_NAME",
+      "Description": "BOOST_001_DESC",
+      "SpriteName": "HeartBoost",
+      "LightColorProxy": "#84B668",
+      "DarkColorProxy": "#3F6233",
+      "TimeLength": 43200,
+      "BasePercentage": 0.05,
+      "UpgradeMultiplier": 1,
+      "NumCommon": 3,
+      "NumUncommon": 1,
+      "NumRare": 0,
+      "NumEpic": 0,
+      "NumLegendary": 0,
+      "IsActiveStatus": 1
+    },
+    {
+      "ID": "BOOST_002",
+      "Name": "BOOST_002_NAME",
+      "Description": "BOOST_002_DESC",
+      "SpriteName": "ItemBoost",
+      "LightColorProxy": "#CDA64E",
+      "DarkColorProxy": "#82562E",
+      "TimeLength": 43200,
+      "BasePercentage": 0.05,
+      "UpgradeMultiplier": 1,
+      "NumCommon": 0,
+      "NumUncommon": 3,
+      "NumRare": 3,
+      "NumEpic": 0,
+      "NumLegendary": 0,
+      "IsActiveStatus": 1
+    },
+    {
+      "ID": "BOOST_003",
+      "Name": "BOOST_003_NAME",
+      "Description": "BOOST_003_DESC",
+      "SpriteName": "CoinBoost",
+      "LightColorProxy": "#6FC2C6",
+      "DarkColorProxy": "#34627C",
+      "TimeLength": 43200,
+      "BasePercentage": 0.05,
+      "UpgradeMultiplier": 1,
+      "NumCommon": 5,
+      "NumUncommon": 0,
+      "NumRare": 0,
+      "NumEpic": 3,
+      "NumLegendary": 0,
+      "IsActiveStatus": 1
+    },
+    {
+      "ID": "BOOST_004",
+      "Name": "BOOST_004_NAME",
+      "Description": "BOOST_004_DESC",
+      "SpriteName": "BasketBoost",
+      "LightColorProxy": "#C05540",
+      "DarkColorProxy": "#7F2D29",
+      "TimeLength": 43200,
+      "BasePercentage": 0.05,
+      "UpgradeMultiplier": 1,
+      "NumCommon": 0,
+      "NumUncommon": 4,
+      "NumRare": 0,
+      "NumEpic": 0,
+      "NumLegendary": 2,
+      "IsActiveStatus": 1
+    }
+  ]
+}

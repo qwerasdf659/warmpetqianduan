@@ -1,0 +1,130 @@
+{
+  "skeleton": {
+    "hash": "QLWK799TZ9fc42XGtmCRt5pSt6E",
+    "spine": "3.8.68",
+    "x": -60.82,
+    "y": -1.64,
+    "width": 127.65,
+    "height": 207.49,
+    "images": "./Parts_Furniture/Fire Place/",
+    "audio": "/Users/larsjohansson/Google Drive/Art Sourcefiles/Catcafe/Game stuff/Animation/Spine"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "Main",
+      "parent": "root",
+      "length": 219.4,
+      "rotation": 88.98,
+      "x": 0.76,
+      "y": 7.19,
+      "scaleX": 0.4158,
+      "scaleY": 0.4158
+    }
+  ],
+  "slots": [
+    {
+      "name": "fireplace",
+      "bone": "Main",
+      "attachment": "Fireplace"
+    },
+    {
+      "name": "Frame",
+      "bone": "Main",
+      "attachment": "Frame2"
+    }
+  ],
+  "skins": [
+    {
+      "name": "FURN_173",
+      "attachments": {
+        "Frame": {
+          "Frame1": {
+            "name": "frame1",
+            "x": 86.77,
+            "y": -3.74,
+            "rotation": -88.98,
+            "width": 171,
+            "height": 144
+          },
+          "Frame2": {
+            "name": "frame2",
+            "x": 86.77,
+            "y": -3.74,
+            "rotation": -88.98,
+            "width": 171,
+            "height": 144
+          },
+          "Frame3": {
+            "name": "frame3",
+            "x": 86.77,
+            "y": -3.74,
+            "rotation": -88.98,
+            "width": 171,
+            "height": 144
+          },
+          "Frame4": {
+            "name": "frame4",
+            "x": 86.77,
+            "y": -3.74,
+            "rotation": -88.98,
+            "width": 171,
+            "height": 144
+          }
+        },
+        "fireplace": {
+          "Fireplace": {
+            "name": "fireplace",
+            "x": 228.32,
+            "y": -1.36,
+            "rotation": -88.98,
+            "width": 307,
+            "height": 499
+          }
+        }
+      }
+    }
+  ],
+  "animations": {
+    "Fire": {
+      "slots": {
+        "Frame": {
+          "attachment": [
+            {
+              "name": "Frame1"
+            },
+            {
+              "time": 0.1667,
+              "name": "Frame2"
+            },
+            {
+              "time": 0.3333,
+              "name": "Frame3"
+            },
+            {
+              "time": 0.5,
+              "name": "Frame4"
+            },
+            {
+              "time": 0.6667,
+              "name": "Frame1"
+            }
+          ]
+        }
+      }
+    },
+    "Off": {
+      "slots": {
+        "Frame": {
+          "attachment": [
+            {
+              "name": null
+            }
+          ]
+        }
+      }
+    }
+  }
+}

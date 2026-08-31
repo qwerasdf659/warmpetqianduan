@@ -1,0 +1,166 @@
+{
+  "Items": [
+    {
+      "ID": "Event",
+      "ShopPackType": 10,
+      "DisplayOrder": 0
+    },
+    {
+      "ID": "EventDelivery",
+      "ShopPackType": 13,
+      "DisplayOrder": 1,
+      "ShopPacks": [
+        {
+          "ID": "EventBasketPack1",
+          "DisplayOrder": 0
+        },
+        {
+          "ID": "EventBasketPack2",
+          "DisplayOrder": 1
+        }
+      ]
+    },
+    {
+      "ID": "TieredIAP",
+      "ShopPackType": 8,
+      "DisplayOrder": 2
+    },
+    {
+      "ID": "StarterPack",
+      "ShopPackType": 0,
+      "DisplayOrder": 3
+    },
+    {
+      "ID": "Mini",
+      "ShopPackType": 14,
+      "DisplayOrder": 4
+    },
+    {
+      "ID": "RotationalIAP",
+      "ShopPackType": 12,
+      "DisplayOrder": 5
+    },
+    {
+      "ID": "Customisation",
+      "ShopPackType": 2,
+      "DisplayOrder": 6
+    },
+    {
+      "ID": "Item",
+      "ShopPackType": 1,
+      "DisplayOrder": 7
+    },
+    {
+      "ID": "KittyKash",
+      "ShopPackType": 4,
+      "DisplayOrder": 8,
+      "ShopPacks": [
+        {
+          "ID": "TestPackKittyKash2",
+          "DisplayOrder": 1
+        },
+        {
+          "ID": "TestPackKittyKash3",
+          "DisplayOrder": 2
+        },
+        {
+          "ID": "TestPackKittyKash4",
+          "DisplayOrder": 3
+        },
+        {
+          "ID": "TestPackKittyKash5",
+          "DisplayOrder": 4
+        },
+        {
+          "ID": "TestPackKittyKash6",
+          "DisplayOrder": 5
+        },
+        {
+          "ID": "TestPackKittyKash7",
+          "DisplayOrder": 6
+        }
+      ]
+    },
+    {
+      "ID": "Fish",
+      "ShopPackType": 5,
+      "DisplayOrder": 9,
+      "ShopPacks": [
+        {
+          "ID": "TestPackSC2",
+          "DisplayOrder": 0
+        },
+        {
+          "ID": "TestPackSC3",
+          "DisplayOrder": 1
+        },
+        {
+          "ID": "TestPackSC4",
+          "DisplayOrder": 2
+        },
+        {
+          "ID": "TestPackSC6",
+          "DisplayOrder": 3
+        }
+      ]
+    },
+    {
+      "ID": "Tokens",
+      "ShopPackType": 6,
+      "DisplayOrder": 10,
+      "ShopPacks": [
+        {
+          "ID": "TokensPack1",
+          "DisplayOrder": 0
+        },
+        {
+          "ID": "TokensPack2",
+          "DisplayOrder": 1
+        },
+        {
+          "ID": "TokensPack3",
+          "DisplayOrder": 2
+        },
+        {
+          "ID": "TokensPack4",
+          "DisplayOrder": 3
+        }
+      ]
+    },
+    {
+      "ID": "Delivery",
+      "ShopPackType": 3,
+      "DisplayOrder": 11,
+      "ShopPacks": [
+        {
+          "ID": "BasketPack1",
+          "DisplayOrder": 1
+        },
+        {
+          "ID": "BasketPack2",
+          "DisplayOrder": 0
+        }
+      ]
+    },
+    {
+      "ID": "SurveyOffer",
+      "ShopPackType": 11,
+      "DisplayOrder": 12,
+      "ShopPacks": [
+        {
+          "ID": "SurveyOfferKittyKash",
+          "DisplayOrder": 0
+        },
+        {
+          "ID": "OfferwallKittyKash",
+          "DisplayOrder": 1
+        }
+      ]
+    },
+    {
+      "ID": "Other",
+      "ShopPackType": 7,
+      "DisplayOrder": 13
+    }
+  ]
+}

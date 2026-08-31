@@ -1,0 +1,111 @@
+
+Arcade_Machine.png
+size: 568,252
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B1
+  rotate: false
+  xy: 528, 129
+  size: 24, 77
+  orig: 24, 77
+  offset: 0, 0
+  index: -1
+B2
+  rotate: false
+  xy: 496, 107
+  size: 30, 99
+  orig: 32, 99
+  offset: 1, 0
+  index: -1
+BG
+  rotate: false
+  xy: 346, 10
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+Cat1
+  rotate: false
+  xy: 524, 8
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: -1
+Cat2
+  rotate: false
+  xy: 477, 2
+  size: 45, 27
+  orig: 45, 27
+  offset: 0, 0
+  index: -1
+Dog1
+  rotate: false
+  xy: 407, 4
+  size: 50, 23
+  orig: 50, 24
+  offset: 0, 1
+  index: -1
+Dog2
+  rotate: false
+  xy: 496, 74
+  size: 41, 31
+  orig: 44, 31
+  offset: 3, 0
+  index: -1
+Frame
+  rotate: true
+  xy: 346, 71
+  size: 179, 148
+  orig: 180, 148
+  offset: 0, 0
+  index: -1
+Light
+  rotate: true
+  xy: 477, 51
+  size: 18, 85
+  orig: 18, 86
+  offset: 0, 1
+  index: -1
+Logo
+  rotate: false
+  xy: 407, 29
+  size: 68, 40
+  orig: 68, 40
+  offset: 0, 0
+  index: -1
+Machine
+  rotate: true
+  xy: 2, 2
+  size: 248, 342
+  orig: 248, 343
+  offset: 0, 1
+  index: -1
+Start
+  rotate: true
+  xy: 554, 172
+  size: 78, 12
+  orig: 78, 12
+  offset: 0, 0
+  index: -1
+Street
+  rotate: true
+  xy: 496, 208
+  size: 42, 33
+  orig: 42, 33
+  offset: 0, 0
+  index: -1
+Trash
+  rotate: true
+  xy: 528, 107
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
+b3
+  rotate: true
+  xy: 477, 31
+  size: 18, 80
+  orig: 19, 80
+  offset: 0, 0
+  index: -1

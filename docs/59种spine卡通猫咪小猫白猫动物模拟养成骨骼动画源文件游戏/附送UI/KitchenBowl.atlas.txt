@@ -1,0 +1,55 @@
+
+KitchenBowl.png
+size: 1024, 256
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Greenhouse/Arrow
+  rotate: false
+  xy: 647, 128
+  size: 278, 105
+  orig: 278, 105
+  offset: 0, 0
+  index: -1
+Kitchen/Bowl
+  rotate: true
+  xy: 2, 2
+  size: 231, 188
+  orig: 231, 188
+  offset: 0, 0
+  index: -1
+Kitchen/Cup
+  rotate: false
+  xy: 593, 11
+  size: 95, 62
+  orig: 95, 62
+  offset: 0, 0
+  index: -1
+Kitchen/Dough
+  rotate: true
+  xy: 593, 75
+  size: 158, 52
+  orig: 158, 52
+  offset: 0, 0
+  index: -1
+Kitchen/Front
+  rotate: true
+  xy: 192, 2
+  size: 231, 151
+  orig: 231, 151
+  offset: 0, 0
+  index: -1
+Kitchen/Idle
+  rotate: true
+  xy: 416, 19
+  size: 214, 175
+  orig: 214, 175
+  offset: 0, 0
+  index: -1
+Kitchen/Visp
+  rotate: false
+  xy: 345, 9
+  size: 69, 224
+  orig: 69, 224
+  offset: 0, 0
+  index: -1

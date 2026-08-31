@@ -1,0 +1,206 @@
+{
+"skeleton": {
+	"hash": "Ly2b/7qMX1M",
+	"spine": "3.8",
+	"x": -134.11,
+	"y": -27,
+	"width": 278,
+	"height": 384.82,
+	"images": "../Parts_Furniture/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Visp", "parent": "root", "length": 105.62, "rotation": -89.64, "x": 20.92, "y": 223.88 },
+	{ "name": "Cup", "parent": "root", "length": 48.64, "rotation": -10.1, "x": -112.91, "y": 26.42 },
+	{ "name": "Dough", "parent": "root", "length": 30.18, "rotation": 88.75, "x": 0.58, "y": 111.05 },
+	{ "name": "Idle", "parent": "root", "length": 139.18, "rotation": 89.44, "x": -2.75, "y": 9.46 },
+	{ "name": "bone", "parent": "root", "length": 75.91, "rotation": 91.27, "x": 4.14, "y": 279.51 }
+],
+"slots": [
+	{ "name": "Kitchen/Bowl", "bone": "root", "attachment": "Kitchen/Bowl" },
+	{ "name": "Kitchen/Dough", "bone": "Dough", "attachment": "Kitchen/Dough" },
+	{ "name": "Kitchen/Visp", "bone": "Visp", "attachment": "Kitchen/Visp" },
+	{ "name": "Kitchen/Front", "bone": "root", "attachment": "Kitchen/Front" },
+	{ "name": "Kitchen/Cup", "bone": "Cup", "attachment": "Kitchen/Cup" },
+	{ "name": "Kitchen/Idle", "bone": "Idle", "attachment": "Kitchen/Idle" },
+	{ "name": "Greenhouse/Arrow", "bone": "bone", "attachment": "Greenhouse/Arrow" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Greenhouse/Arrow": {
+				"Greenhouse/Arrow": { "x": 25.79, "y": -1.32, "rotation": -91.27, "width": 278, "height": 105 }
+			},
+			"Kitchen/Bowl": {
+				"Kitchen/Bowl": { "x": 1, "y": 98, "width": 231, "height": 188 }
+			},
+			"Kitchen/Cup": {
+				"Kitchen/Cup": { "x": 45.19, "y": -14.72, "rotation": 10.1, "width": 95, "height": 62 }
+			},
+			"Kitchen/Dough": {
+				"Kitchen/Dough": { "x": 0.92, "y": 1.6, "rotation": -88.75, "width": 158, "height": 52 }
+			},
+			"Kitchen/Front": {
+				"Kitchen/Front": { "x": 1, "y": 78, "width": 231, "height": 151 }
+			},
+			"Kitchen/Idle": {
+				"Kitchen/Idle": { "x": 81.09, "y": -1.59, "rotation": -89.44, "width": 214, "height": 175 }
+			},
+			"Kitchen/Visp": {
+				"Kitchen/Visp": { "x": 51.88, "y": -0.24, "rotation": 89.64, "width": 69, "height": 224 }
+			}
+		}
+	}
+],
+"animations": {
+	"Active": {
+		"slots": {
+			"Greenhouse/Arrow": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Kitchen/Idle": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Visp": {
+				"rotate": [
+					{ "angle": -22.89 },
+					{ "time": 0.2667, "angle": -39.06 },
+					{ "time": 0.6, "angle": -22.89 },
+					{ "time": 0.8667, "angle": -39.06 },
+					{ "time": 1.1667, "angle": -22.89 }
+				],
+				"translate": [
+					{ "x": 45.92, "y": -10.5 },
+					{ "time": 0.1667, "x": 38.75, "y": -26.67 },
+					{ "time": 0.2667, "x": 31.57, "y": -28.4 },
+					{ "time": 0.4333, "x": 47.27, "y": -7.64 },
+					{ "time": 0.6, "x": 45.92, "y": -10.5 },
+					{ "time": 0.7333, "x": 38.75, "y": -26.67 },
+					{ "time": 0.8667, "x": 31.57, "y": -28.4 },
+					{ "time": 1, "x": 47.27, "y": -7.64 },
+					{ "time": 1.1667, "x": 45.92, "y": -10.5 }
+				]
+			},
+			"Dough": {
+				"rotate": [
+					{ "angle": -2.11 },
+					{ "time": 0.1333, "angle": -8.82 },
+					{ "time": 0.4, "angle": 10.24 },
+					{ "time": 0.6, "angle": -2.11 },
+					{ "time": 0.7, "angle": -8.82 },
+					{ "time": 0.9667, "angle": 10.24 },
+					{ "time": 1.1667, "angle": -2.11 }
+				]
+			},
+			"Cup": {
+				"translate": [
+					{ "y": 11.63 }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Kitchen/Bowl": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Kitchen/Cup": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Kitchen/Dough": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Kitchen/Front": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"Kitchen/Visp": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Visp": {
+				"rotate": [
+					{ "angle": -22.89 }
+				],
+				"translate": [
+					{ "x": 45.92, "y": -10.5 }
+				]
+			},
+			"Dough": {
+				"rotate": [
+					{ "angle": -2.11 }
+				]
+			},
+			"Cup": {
+				"translate": [
+					{ "y": 11.63 }
+				]
+			},
+			"Idle": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -7.9 },
+					{ "time": 0.3333, "angle": 12.62 },
+					{ "time": 0.5, "angle": -5.58 },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "y": 6.22 },
+					{ "time": 0.2667, "y": -0.39 },
+					{ "time": 0.3333, "y": 6.22 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{},
+					{ "time": 0.2, "y": -30.35 },
+					{ "time": 0.5667, "y": 6.75 },
+					{ "time": 0.7667 },
+					{ "time": 0.9333, "y": -30.35 },
+					{ "time": 1.3, "y": 6.75 },
+					{ "time": 1.5 },
+					{ "time": 1.7, "y": -30.35 },
+					{ "time": 2.0667, "y": 6.75 },
+					{ "time": 2.2667 },
+					{ "time": 2.4333, "y": -30.35 },
+					{ "time": 2.8333, "y": 6.75 },
+					{ "time": 3 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.2, "x": 0.844 },
+					{ "time": 0.5667, "curve": "stepped" },
+					{ "time": 0.9333 },
+					{ "time": 1.1333, "x": 0.844 },
+					{ "time": 1.5, "curve": "stepped" },
+					{ "time": 1.7 },
+					{ "time": 1.9, "x": 0.844 },
+					{ "time": 2.2667, "curve": "stepped" },
+					{ "time": 2.4333 },
+					{ "time": 2.6333, "x": 0.844 },
+					{ "time": 3 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,48 @@
+
+Yarn_Basket.png
+size: 1587,398
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Yarn Basket/Back
+  rotate: true
+  xy: 1438, 2
+  size: 394, 147
+  orig: 394, 148
+  offset: 0, 1
+  index: -1
+Parts_Furniture/Yarn Basket/Basket
+  rotate: false
+  xy: 2, 9
+  size: 532, 387
+  orig: 532, 387
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Yarn Basket/BasketFront
+  rotate: false
+  xy: 977, 235
+  size: 459, 161
+  orig: 459, 161
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Yarn Basket/Front
+  rotate: false
+  xy: 977, 37
+  size: 399, 196
+  orig: 399, 196
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Yarn Basket/FurtherBack
+  rotate: false
+  xy: 536, 13
+  size: 432, 157
+  orig: 432, 157
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Yarn Basket/Middle
+  rotate: false
+  xy: 536, 172
+  size: 439, 224
+  orig: 439, 234
+  offset: 0, 10
+  index: -1

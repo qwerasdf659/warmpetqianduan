@@ -1,0 +1,62 @@
+
+Porthole.png
+size: 1546,718
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Porthole F1
+  rotate: false
+  xy: 2, 360
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F2
+  rotate: false
+  xy: 2, 2
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F3
+  rotate: false
+  xy: 388, 360
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F4
+  rotate: false
+  xy: 388, 2
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F5
+  rotate: false
+  xy: 774, 360
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F6
+  rotate: false
+  xy: 774, 2
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F7
+  rotate: false
+  xy: 1160, 360
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1
+Porthole F8
+  rotate: false
+  xy: 1160, 2
+  size: 384, 356
+  orig: 384, 356
+  offset: 0, 0
+  index: -1

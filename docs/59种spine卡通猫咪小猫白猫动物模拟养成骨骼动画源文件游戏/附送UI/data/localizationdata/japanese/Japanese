@@ -1,0 +1,8632 @@
+{
+  "Items": [
+    {
+      "Key": "FISH",
+      "String": "フィッシュ"
+    },
+    {
+      "Key": "FISH_PLURAL",
+      "String": "フィッシュ"
+    },
+    {
+      "Key": "HC",
+      "String": "キャットマネー"
+    },
+    {
+      "Key": "HC_PLURAL",
+      "String": "キャットマネー"
+    },
+    {
+      "Key": "TOKEN",
+      "String": "トークン"
+    },
+    {
+      "Key": "TOKEN_PLURAL",
+      "String": "トークン"
+    },
+    {
+      "Key": "FC",
+      "String": "家具トークン"
+    },
+    {
+      "Key": "FC_PLURAL",
+      "String": "家具トークン"
+    },
+    {
+      "Key": "HEART",
+      "String": "ハート"
+    },
+    {
+      "Key": "HEART_PLURAL",
+      "String": "ハート"
+    },
+    {
+      "Key": "XP",
+      "String": "XP"
+    },
+    {
+      "Key": "XP_PLURAL",
+      "String": "XP"
+    },
+    {
+      "Key": "EXPERIENCE",
+      "String": "経験値"
+    },
+    {
+      "Key": "FURISTAS_CAT_CAFE",
+      "String": "猫カフェ Furistas"
+    },
+    {
+      "Key": "LEVEL",
+      "String": "レベル"
+    },
+    {
+      "Key": "LEVELED",
+      "String": "レベル上昇"
+    },
+    {
+      "Key": "LEVEL_UP",
+      "String": "レベルアップ"
+    },
+    {
+      "Key": "CAT",
+      "String": "ネコ"
+    },
+    {
+      "Key": "CAT_PLURAL",
+      "String": "ネコ"
+    },
+    {
+      "Key": "CUSTOMER",
+      "String": "お客さん"
+    },
+    {
+      "Key": "CUSTOMER_PLURAL",
+      "String": "お客さん"
+    },
+    {
+      "Key": "BASKET",
+      "String": "バスケット"
+    },
+    {
+      "Key": "BASKET_PLURAL",
+      "String": "バスケット"
+    },
+    {
+      "Key": "DELIVERY",
+      "String": "デリバリー"
+    },
+    {
+      "Key": "DELIVERY_PLURAL",
+      "String": "デリバリー"
+    },
+    {
+      "Key": "CONFIRM",
+      "String": "OK"
+    },
+    {
+      "Key": "TRAIT",
+      "String": "特性"
+    },
+    {
+      "Key": "TRAIT_PLURAL",
+      "String": "特性"
+    },
+    {
+      "Key": "ITEM",
+      "String": "アイテム"
+    },
+    {
+      "Key": "ITEM_PLURAL",
+      "String": "アイテム"
+    },
+    {
+      "Key": "UNLOCK",
+      "String": "アンロック"
+    },
+    {
+      "Key": "UNLOCKED",
+      "String": "アンロック済み"
+    },
+    {
+      "Key": "ADOPT",
+      "String": "引き取る"
+    },
+    {
+      "Key": "PROMOTE",
+      "String": "世話"
+    },
+    {
+      "Key": "CUSTOMISATION",
+      "String": "カスタマイズ"
+    },
+    {
+      "Key": "CUSTOMISATION_PLURAL",
+      "String": "カスタマイズ"
+    },
+    {
+      "Key": "ASSIGN",
+      "String": "カップリング"
+    },
+    {
+      "Key": "TIME_DAYS_SINGULAR",
+      "String": "{0}日"
+    },
+    {
+      "Key": "TIME_DAYS_PLURAL",
+      "String": "{0}日"
+    },
+    {
+      "Key": "TIME_DAYS_SHORT",
+      "String": "{0}日"
+    },
+    {
+      "Key": "TIME_DAYS_LETTER",
+      "String": "{0}日"
+    },
+    {
+      "Key": "TIME_HOURS_SINGULAR",
+      "String": "{0}時間"
+    },
+    {
+      "Key": "TIME_HOURS_PLURAL",
+      "String": "{0}時間"
+    },
+    {
+      "Key": "TIME_HOURS_SHORT",
+      "String": "{0}時間"
+    },
+    {
+      "Key": "TIME_HOURS_LETTER",
+      "String": "{0}時間"
+    },
+    {
+      "Key": "TIME_MINUTES_SINGULAR",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_PLURAL",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_SHORT",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_MINUTES_LETTER",
+      "String": "{0}分"
+    },
+    {
+      "Key": "TIME_SECONDS_SINGULAR",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_PLURAL",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_SHORT",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_LETTER",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "BACK_LABEL",
+      "String": "戻る"
+    },
+    {
+      "Key": "TAP_PROMPT",
+      "String": "タップ"
+    },
+    {
+      "Key": "DRAG_PROMPT",
+      "String": "ドラッグ"
+    },
+    {
+      "Key": "RELEASE_PROMPT",
+      "String": "離す"
+    },
+    {
+      "Key": "LEVEL_UP_PROMPT",
+      "String": "世話"
+    },
+    {
+      "Key": "ADOPT_PROMPT",
+      "String": "引き取る"
+    },
+    {
+      "Key": "AD_WATCH",
+      "String": "視聴"
+    },
+    {
+      "Key": "OPEN",
+      "String": "開ける"
+    },
+    {
+      "Key": "COMMON",
+      "String": "コモン"
+    },
+    {
+      "Key": "UNCOMMON",
+      "String": "アンコモン"
+    },
+    {
+      "Key": "RARE",
+      "String": "レア"
+    },
+    {
+      "Key": "EPIC",
+      "String": "エピック"
+    },
+    {
+      "Key": "LEGENDARY",
+      "String": "レジェンダリー"
+    },
+    {
+      "Key": "PERSONALITY_TOOLTIP_DESCRIPTION",
+      "String": "この<CAT>と同じ個性の<CUSTOMER_PLURAL>をカップリングするとボーナスの<HEART_PLURAL>を獲得できる"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT1",
+      "String": "<HEART_PLURAL>を獲得して、さらに<BASKET_PLURAL>を受け取ろう。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT2",
+      "String": "<CAT_PLURAL>を<CUSTOMER_PLURAL>とカップリングして獲得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT3",
+      "String": "個性を一致させてボーナスの<HEART_PLURAL>を手に入れよう。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT1",
+      "String": "使用すると<BASKET><DELIVERY_PLURAL>をすぐに獲得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT2",
+      "String": "もっとショップで購入しよう。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT1",
+      "String": "<CAT_PLURAL>を<PROMOTE>したり、新しい<CAT_PLURAL>を<ADOPT>のに使用。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT2",
+      "String": "<DELIVERY>の<BASKET_PLURAL>を開けて獲得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT1",
+      "String": "カフェの<CUSTOMISATION_PLURAL>の購入に使用。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT2",
+      "String": "カフェの仕事で<CAT_PLURAL>と<CUSTOMER_PLURAL>を幸せにすることで獲得。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_XP_REWARDS_TAG",
+      "String": "次の<LEVEL>の報酬:"
+    },
+    {
+      "Key": "GENERIC_CAT_UNLOCKED",
+      "String": "新たな<CAT>"
+    },
+    {
+      "Key": "ITEM_ACQUISITION_DESCRIPTION",
+      "String": "<CAT_PLURAL>のレベルアップに使用。<BASKET_PLURAL>を開けるかストアでアイテムを購入して<ITEM_PLURAL>を獲得しよう"
+    },
+    {
+      "Key": "PERSONALITY_DESCRIPTION",
+      "String": "この<CAT>と同じ個性の<CUSTOMER_PLURAL>をカップリングするとボーナスの<HEART_PLURAL>を獲得できる"
+    },
+    {
+      "Key": "LEVEL_DESCRIPTION",
+      "String": "<LEVEL>が高い<CAT_PLURAL>は<CUSTOMER_PLURAL>と長い時間遊んで、より多くの<HEART_PLURAL>を獲得できる"
+    },
+    {
+      "Key": "LEVEL_LOCK_TEXT",
+      "String": "<LEVEL>{0}"
+    },
+    {
+      "Key": "BONUS_BASKET_WAITING",
+      "String": "<BASKET>まで:"
+    },
+    {
+      "Key": "BONUS_BASKET_READY_LABEL",
+      "String": "無料のデイリー<BASKET_PLURAL>が利用可能！"
+    },
+    {
+      "Key": "BONUS_BASKET_OPEN_PROMPT",
+      "String": "タップして受け取る"
+    },
+    {
+      "Key": "NEW_BASKET_TITLE",
+      "String": "新たな<BASKET>"
+    },
+    {
+      "Key": "TAP_TO_CONTINUE",
+      "String": "タップして続行"
+    },
+    {
+      "Key": "SWIPE_PROMPT",
+      "String": "上にスワイプして開ける"
+    },
+    {
+      "Key": "REWARDS_TITLE",
+      "String": "報酬"
+    },
+    {
+      "Key": "RECRUIT_PROMPT",
+      "String": "<ADOPT>"
+    },
+    {
+      "Key": "TOOLTIP_COMING_SOON",
+      "String": "まもなく登場。"
+    },
+    {
+      "Key": "TOOLTIP_NEED_MORE_TOKENS",
+      "String": "もっと<TOKEN_PLURAL>が必要です。"
+    },
+    {
+      "Key": "TOOLTIP_TAP_CONFIRM",
+      "String": "もう一度タップして確認してください。"
+    },
+    {
+      "Key": "TOOLTIP_CANNOT_AFFORD",
+      "String": "この<ITEM>を購入できません。"
+    },
+    {
+      "Key": "CAT_INVENTORY_MENU_TITLE",
+      "String": "<CAT_PLURAL>"
+    },
+    {
+      "Key": "CAT_PROMOTION_TITLE",
+      "String": "ネコのアップグレード"
+    },
+    {
+      "Key": "CAT_ADOPTION_TITLE",
+      "String": "ネコを引き取る"
+    },
+    {
+      "Key": "ADOPT_TEXT",
+      "String": "フィッシュを使ってこの新たなネコを引き取ろう！"
+    },
+    {
+      "Key": "RECRUIT_DESCRIPTION",
+      "String": "<FISH>を使って、この新たな<CAT>を<ADOPT>"
+    },
+    {
+      "Key": "ADOPT_CONFIRMATION_FEEDBACK",
+      "String": "やった！カフェに新たな仲間が加わった！"
+    },
+    {
+      "Key": "NURTURE_CONFIRMATION_FEEDBACK",
+      "String": "やった！{0}を<CUSTOMER_PLURAL>と最大{1}カップリングして、{2}個の<HEART_PLURAL>を獲得できる"
+    },
+    {
+      "Key": "MATERIALS_REQUIRED",
+      "String": "必要:"
+    },
+    {
+      "Key": "HEARTS_EARNED",
+      "String": "獲得したハート:"
+    },
+    {
+      "Key": "COST",
+      "String": "コスト"
+    },
+    {
+      "Key": "PERSONALITY",
+      "String": "個性"
+    },
+    {
+      "Key": "UPGRADE_FAILED_TITLE",
+      "String": "ザンネン"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON1",
+      "String": "<ITEM_PLURAL>が足りません"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON2",
+      "String": "<HEART_PLURAL>が足りません"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON3",
+      "String": "<FISH>が足りません"
+    },
+    {
+      "Key": "THANK_YOU",
+      "String": "ありがとうございます"
+    },
+    {
+      "Key": "CUDDLE_TIME",
+      "String": "抱っこタイム"
+    },
+    {
+      "Key": "REWARD",
+      "String": "報酬"
+    },
+    {
+      "Key": "PLAYER_LEVELED_UP",
+      "String": "レベルアップ！"
+    },
+    {
+      "Key": "REWARD_FURNITURE_TOKENS",
+      "String": "<FC_PLURAL>"
+    },
+    {
+      "Key": "REWARD_FISH",
+      "String": "<FISH>"
+    },
+    {
+      "Key": "REWARD_HC",
+      "String": "<HC>"
+    },
+    {
+      "Key": "REWARD_EXPANSION",
+      "String": "カフェの大きさを拡大"
+    },
+    {
+      "Key": "SHOP_MENU_TITLE",
+      "String": "ショップ"
+    },
+    {
+      "Key": "SHOP_CURRENT_POSSESSION",
+      "String": "現在所有中:"
+    },
+    {
+      "Key": "SHOP_BUY",
+      "String": "購入"
+    },
+    {
+      "Key": "SHOP_TAP_TO_CONFIRM",
+      "String": "もう一度タップして確認"
+    },
+    {
+      "Key": "SHOP_CANT_AFFORD",
+      "String": "この<ITEM>を購入できません"
+    },
+    {
+      "Key": "SHOP_ERROR_TITLE",
+      "String": "しまった…"
+    },
+    {
+      "Key": "SHOP_THANKS_TITLE",
+      "String": "ありがとうございます！"
+    },
+    {
+      "Key": "SHOP_THANKS_DESCRIPTION",
+      "String": "購入完了"
+    },
+    {
+      "Key": "SHOP_PRICE_FREE",
+      "String": "無料！"
+    },
+    {
+      "Key": "CAT_UPGRADE_ITEM_PLURAL",
+      "String": "ネコのアップグレードアイテム"
+    },
+    {
+      "Key": "MORE",
+      "String": "その他"
+    },
+    {
+      "Key": "SHOP_REFRESH_TIME",
+      "String": "新アイテムまで…"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER",
+      "String": "スターターパック"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_001",
+      "String": "「ネコにメロメロ」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_002",
+      "String": "「前あしニャー」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_003",
+      "String": "「新たな友達」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_004",
+      "String": "「癒しの相棒」<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_001",
+      "String": "幸せの<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_002",
+      "String": "<SHOP_PACK_TITLE_BARGAIN><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_003",
+      "String": "<RARITY_COMMON><DELIVERY_CONTENTS_ITEMS><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_004",
+      "String": "スーパー<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_SPECIAL_DEAL",
+      "String": "特別セール！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BARGAIN",
+      "String": "バーゲン"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_GREAT_VALUE",
+      "String": "お得"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_ITEM",
+      "String": "<CAT_PLURAL>の<PROMOTE>に使用"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_FURNITURE",
+      "String": "このアイテムでカフェを飾り付けよう。"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_002",
+      "String": "「<CAT_NAME_020>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_002_DESC",
+      "String": "このパックからは、<CAT_NAME_020>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_003",
+      "String": "「<CAT_NAME_009>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_003_DESC",
+      "String": "このパックからは、<CAT_NAME_009>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_004",
+      "String": "「<CAT_NAME_027>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_004_DESC",
+      "String": "このパックからは、<CAT_NAME_027>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_PROGPACK_001_DESC",
+      "String": "フィッシュ、キャットマネー、トークンが詰まったこのバンドルで、最高の猫カフェ体験を！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005",
+      "String": "「独り立ち」スターターパック"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005_DESC",
+      "String": "このパックを入手すると、普通より早くウィスカーを引き取ることができます。クールなアイテムも盛りだくさんで、とってもお得！"
+    },
+    {
+      "Key": "SHOP_PACK_032_STARTER_DESC",
+      "String": "このパックからは、オリへの限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。カフェの運営に役立てよう。"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_TITLE",
+      "String": "「オリ」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_DESC",
+      "String": "このパックからは、オリへの限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_TITLE",
+      "String": "「チャチャ」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_DESC",
+      "String": "このパックからは、チャチャへの限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_TITLE",
+      "String": "「ジギー」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_DESC",
+      "String": "このパックからは、ジギーへの限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_TITLE",
+      "String": "「<CAT_NAME_065>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_DESC",
+      "String": "このパックからは、<CAT_NAME_065>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_TITLE",
+      "String": "「<CAT_NAME_066>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_DESC",
+      "String": "このパックからは、<CAT_NAME_066>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_TITLE",
+      "String": "「<CAT_NAME_067>」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_DESC",
+      "String": "このパックからは、<CAT_NAME_067>への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "PERCENT_OFF",
+      "String": "{0}%オフ！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_STARTER_DESC",
+      "String": "このパックからは、{0}への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。カフェの運営に役立てよう。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_TITLE",
+      "String": "「{0}」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_DESC",
+      "String": "このパックからは、{0}への限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_TITLE",
+      "String": "キャットマネー・スペシャル"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_DESC",
+      "String": "期間限定のこのパックからは、大量のキャットマネーを入手できます。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_TITLE",
+      "String": "フィッシュセール"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_DESC",
+      "String": "フィッシュが足りない？ このスペシャルパックなら、お得な価格でフィッシュをたくさん入手できます。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_TITLE",
+      "String": "トークン三昧"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_DESC",
+      "String": "トークンを入手して特別な家具を手に入れたい？ 期間限定のこのパックは、お得感満点のお値打ち品です。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_TITLE",
+      "String": "急成長パック"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_DESC",
+      "String": "フィッシュ、キャットマネー、トークンが詰まったこのバンドルで、最高の猫カフェ体験を！"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_TITLE",
+      "String": "「Possum」ネコパック"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_DESC",
+      "String": "このパックからは、Possumへの限定アクセスをはじめ、キャットマネーやフィッシュをたくさん入手できます。お買い得！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_TITLE",
+      "String": "招き猫のアップグレードアイテム！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_DESC",
+      "String": "このパックには猫のアクティビティをアップグレードとカフェブーストに使用できる特別なアイテムが入ってるよ。"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_TITLE",
+      "String": "ネコのアップグレードアイテム！"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_DESC",
+      "String": "このパックには大幅割引のネコのアップグレードアイテムが含まれています。"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_TITLE",
+      "String": "特大<SHOP_PACK_FURNITURE_LARGE_TITLE>パック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_TITLE",
+      "String": "<SHOP_PACK_FURNITURE_TITLE>パック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_001_TITLE",
+      "String": "特大フォレストパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_002_TITLE",
+      "String": "特大メンフィスパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_003_TITLE",
+      "String": "特大コテージコアパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_004_TITLE",
+      "String": "特大ダイナーパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_005_TITLE",
+      "String": "特大ポップパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_006_TITLE",
+      "String": "特大ビーチパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_001_TITLE",
+      "String": "ガーデニングパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_002_TITLE",
+      "String": "アーケードパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_003_TITLE",
+      "String": "図書館パック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_004_TITLE",
+      "String": "ボヘミアンパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_005_TITLE",
+      "String": "ハイティーパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_006_TITLE",
+      "String": "ダークアカデミアパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_007_TITLE",
+      "String": "ミュージックパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_008_TITLE",
+      "String": "ミニマルパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_009_TITLE",
+      "String": "禅パック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_010_TITLE",
+      "String": "北欧パック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_011_TITLE",
+      "String": "ラスティックパック"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_012_TITLE",
+      "String": "ネコ好きパック"
+    },
+    {
+      "Key": "DELIVERY_MENU_TITLE",
+      "String": "<DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "HOT_TIP_TITLE",
+      "String": "Furistas幸せのヒント"
+    },
+    {
+      "Key": "HOT_TIP_1",
+      "String": "通貨の獲得方法を知りたい？画面の下にあるアイコンをタップしよう。"
+    },
+    {
+      "Key": "HOT_TIP_2",
+      "String": "ネコの情報ページでは、アイテムやアイコンをタップすると詳しい情報が表示される。"
+    },
+    {
+      "Key": "HOT_TIP_3",
+      "String": "個性を一致させられなくても、ネコとおお客さんをカップリングすればハートを獲得できるよ。"
+    },
+    {
+      "Key": "HOT_TIP_4",
+      "String": "ネコをアップグレードしてXPを獲得してレベルを上げよう。"
+    },
+    {
+      "Key": "HOT_TIP_5",
+      "String": "ショップでボーナスチェストに注目していよう。ショップのアイテムは毎日更新されるんだ。"
+    },
+    {
+      "Key": "HOT_TIP_6",
+      "String": "レベルアップするとカフェのカスタマイズのオプションが増えるよ！"
+    },
+    {
+      "Key": "HOT_TIP_7",
+      "String": "ネコをレベルアップするには、必要なアイテムを持ってて、一定数のハートを獲得してる必要がある。"
+    },
+    {
+      "Key": "HOT_TIP_8",
+      "String": "「目標」ページで豪華なボーナスが用意されたデイリーチャレンジをチェックしよう"
+    },
+    {
+      "Key": "HOT_TIP_9",
+      "String": "レベルが5上がるごとに、カフェが大きくなって入店可能なお客さんの数が増える！"
+    },
+    {
+      "Key": "HOT_TIP_10",
+      "String": "個性が完全に一致しなくても、ネコとお客さんをカップリングしよう"
+    },
+    {
+      "Key": "HOT_TIP_11",
+      "String": "お客さんとネコをカップリングしてハートを獲得し、バスケットをもっと手に入れよう。"
+    },
+    {
+      "Key": "DELIVERY_HURRY",
+      "String": "急がせる"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_TITLE",
+      "String": "<HC_PLURAL>が足りません！"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_DESCRIPTION",
+      "String": "<DELIVERY>をスピードアップするには<HC_PLURAL>が足りません"
+    },
+    {
+      "Key": "DELIVERY_CONTAINS",
+      "String": "内容"
+    },
+    {
+      "Key": "DELIVERY_START",
+      "String": "開始"
+    },
+    {
+      "Key": "DELIVERY_TAP_START",
+      "String": "タップして開始"
+    },
+    {
+      "Key": "DELIVERY_ARRIVES_IN",
+      "String": "到着まで…"
+    },
+    {
+      "Key": "DELIVERY_TAP_COLLECT",
+      "String": "<BONUS_BASKET_OPEN_PROMPT>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_BASIC",
+      "String": "基本<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GOOD",
+      "String": "ナイスな<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GREAT",
+      "String": "グレートな<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_HUGE",
+      "String": "特大<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_AMAZING",
+      "String": "驚異の<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_ON_ITS_WAY",
+      "String": "配達中！あとで戻ってこよう"
+    },
+    {
+      "Key": "NEW_ITEM_NOTIFICATION",
+      "String": "NEW!"
+    },
+    {
+      "Key": "EPIC_ITEM_NOTIFICATION",
+      "String": "<LEGENDARY>！"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_NOTIFICATION",
+      "String": "<EPIC>！"
+    },
+    {
+      "Key": "REWARD_ITEM_DESCRIPTION",
+      "String": "<CAT>のアップグレード<ITEM>"
+    },
+    {
+      "Key": "SC_DESCRIPTION",
+      "String": "<CAT>のアップグレード通貨"
+    },
+    {
+      "Key": "TODO_TITLE",
+      "String": "本日のタスク"
+    },
+    {
+      "Key": "GOALS_RESET_IN",
+      "String": "リセットまで…"
+    },
+    {
+      "Key": "GOAL_ASSIGN",
+      "String": "{0}匹のネコをお客さんと<ASSIGN>"
+    },
+    {
+      "Key": "GOAL_CAT_ASSIGN",
+      "String": "{0}をお客さんと{1}回<ASSIGN>"
+    },
+    {
+      "Key": "GOAL_TRAIT_ASSIGN",
+      "String": "「{0}」の個性を持つ{1}匹のネコを<ASSIGN>"
+    },
+    {
+      "Key": "GOAL_MINIGAME",
+      "String": "「{0}」ミニゲームを{1}回クリア"
+    },
+    {
+      "Key": "GOAL_EARN",
+      "String": "{0}の{1}をコレクションする"
+    },
+    {
+      "Key": "GOAL_CAT_LEVEL_UP",
+      "String": "{0}を<PROMOTE>"
+    },
+    {
+      "Key": "GOAL_CHECK_BIO",
+      "String": "{0}人のお客さんの経歴を調べる"
+    },
+    {
+      "Key": "GOAL_OPEN_BASKETS",
+      "String": "{0}個の<BASKET_PLURAL>を開ける"
+    },
+    {
+      "Key": "GOAL_EARN_BASKETS",
+      "String": "<BASKET_PLURAL>を{0}個獲得"
+    },
+    {
+      "Key": "GOAL_TAKE_SNAPSHOT",
+      "String": "キュートな写真を撮ろう"
+    },
+    {
+      "Key": "GOAL_ALLCOMPLETE",
+      "String": "すべてのタスクを完了する"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_FULL_CAFE",
+      "String": "カフェ全体の写真を1枚撮ろう"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_RELAXING_CATS",
+      "String": "まったり中のネコ{0}匹の写真を1枚撮ろう"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_SPECIFIC_SUBJECT",
+      "String": "お客さんと一緒の{0}の写真を1枚撮ろう"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_INTERACTION",
+      "String": "個性が一致するネコとお客さんの写真を1枚撮ろう"
+    },
+    {
+      "Key": "GOAL_USE_LUCKYCAT",
+      "String": "招き猫のお腹をタップして{0}つのアイテムを受け取ろう"
+    },
+    {
+      "Key": "GOAL_ASSIGN_TO_STATION",
+      "String": "{0} <CAT_PLURAL>を<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "GOAL_REENERGIZED",
+      "String": "{0} <CAT_PLURAL>を再び活性化します"
+    },
+    {
+      "Key": "SHELF_TITLE",
+      "String": "Runawayのその他のゲーム"
+    },
+    {
+      "Key": "SHELF_SALE_LABEL",
+      "String": "セール！"
+    },
+    {
+      "Key": "SHELF_NEW_EVENT_LABEL",
+      "String": "新イベント"
+    },
+    {
+      "Key": "SHELF_PLAY_PROMPT",
+      "String": "プレイ"
+    },
+    {
+      "Key": "SHELF_FLUTTER_TITLE",
+      "String": "Flutter：蝶の保護区"
+    },
+    {
+      "Key": "SHELF_SPLASH_TITLE",
+      "String": "Splash"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_TITLE",
+      "String": "スターライト"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_TITLE",
+      "String": "バードホテル"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_TITLE",
+      "String": "オールドフレンズ・ドッグゲーム"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_TITLE",
+      "String": "Bird Kind"
+    },
+    {
+      "Key": "SHELF_FLUTTER_DESCRIPTION",
+      "String": "チョウチョを育てて美しい熱帯雨林を保護しよう"
+    },
+    {
+      "Key": "SHELF_SPLASH_DESCRIPTION",
+      "String": "水中の生態系の生き物を回復して、自分だけの素敵な岩礁をつくろう"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_DESCRIPTION",
+      "String": "生き物があふれる夜の熱帯雨林を鑑賞して美しい蛾を呼び寄せよう"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_DESCRIPTION",
+      "String": "心が和む大きな木を舞台にして小鳥たちのためにホテルをつくろう"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_DESCRIPTION",
+      "String": "愛犬家に捧ぐ老犬との友情を描いたストーリーゲーム"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_DESCRIPTION",
+      "String": "孤独な木の精霊が神秘的な森に鳥の命を取り戻すのを手伝ってください"
+    },
+    {
+      "Key": "ADVERTISEMENT",
+      "String": "広告"
+    },
+    {
+      "Key": "ENGLISH_ONLY",
+      "String": "（英語対応のみ）。"
+    },
+    {
+      "Key": "HOWTO_TITLE",
+      "String": "ヒント…"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_TITLE",
+      "String": "<CAT>をカップリング"
+    },
+    {
+      "Key": "HOWTO_MATCHPERSONALITIES_TITLE",
+      "String": "個性を一致させる"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_01",
+      "String": "<CUSTOMER>をタップ"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_02",
+      "String": "メニューから<CAT>をドラッグ"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_03",
+      "String": "<CAT>を<CUSTOMER>の上にドロップ"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_04",
+      "String": "個性を一致させるとボーナス！"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_TITLE",
+      "String": "通貨を獲得"
+    },
+    {
+      "Key": "HOWTO_COLLECTCURRENCY_TITLE",
+      "String": "通貨を集める"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_01",
+      "String": "バスケットから<FISH>を獲得"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_02",
+      "String": "<CAT_PLURAL>と<CUSTOMER_PLURAL>をカップリングして<HEART_PLURAL>を獲得"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_03",
+      "String": "カフェの仕事を完了して<TOKEN_PLURAL>を獲得"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_04",
+      "String": "ネコを引き取って世話をして<XP_PLURAL>を獲得"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_TITLE",
+      "String": "<CAT>を<PROMOTE>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_01",
+      "String": "<CAT>リストを開く"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_02",
+      "String": "<CAT>をタップして情報を表示"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_03",
+      "String": "<ITEM_PLURAL>と<FISH>、さらに<CAT>に<HEART_PLURAL>を獲得させておく必要があります"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_04",
+      "String": "すべての条件を満たしたら、<PROMOTE>ボタンを押そう！"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_TITLE",
+      "String": "<BASKET>を開ける"
+    },
+    {
+      "Key": "HOWTO_EARNBASKET_TITLE",
+      "String": "<BASKET>を獲得"
+    },
+    {
+      "Key": "HOWTO_STARTBASKET_TITLE",
+      "String": "<BASKET>の注文を開始"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_01",
+      "String": "<CAT_PLURAL>と<CUSTOMER_PLURAL>をカップリングして<HEART_PLURAL>を獲得"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_02",
+      "String": "<HEART_PLURAL>を集めて<BASKET>の注文を受け取ろう"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_03",
+      "String": "開始すると、<BASKET_PLURAL>が届くまでに時間がかかります"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_04",
+      "String": "<BASKET>が到着したら、タップして開けよう"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_TITLE",
+      "String": "<CUSTOMER>の経歴をチェック"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_01",
+      "String": "<CUSTOMER>をタップ"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_02",
+      "String": "情報ボタンをタップして経歴を表示"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_03",
+      "String": "望むなら、<CUSTOMER>の経歴を世界にシェアすることが可能です"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_04",
+      "String": "特別なVIP<CUSTOMER_PLURAL>が戻ってこないか注目していよう"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_TITLE",
+      "String": "カフェの仕事をこなす"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_01",
+      "String": "定期的にカフェの仕事をこなす必要があります"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_02",
+      "String": "手入れが必要なものをタップして始めよう"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_03",
+      "String": "仕事を完了すると<TOKEN_PLURAL>が手に入ります"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_04",
+      "String": "<TOKEN_PLURAL>を使うとカフェをカスタマイズできます"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_TITLE",
+      "String": "ステータスパネルの情報を表示"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_01",
+      "String": "画面の下のアイコンをタップすると詳しい情報が表示されます"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_02",
+      "String": "これは様々な場所で利用可能です"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_03",
+      "String": "わからないことがあったら、アイコンをタップしてみよう"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_04",
+      "String": "レベルアップしたときに何が<UNLOCKED>かも確認できます"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_TITLE",
+      "String": "<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_01",
+      "String": "ネコを引き取って世話をして<XP_PLURAL>を獲得"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_02",
+      "String": "十分なXPを獲得して<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_03",
+      "String": "<LEVEL>が上がるごとに新たなアイテムがアンロック"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_04",
+      "String": "画面の下にあるXPバーをタップして次のレベルアップまでのXPを確認しよう"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_TITLE",
+      "String": "<CUSTOMISATION_PLURAL>の購入"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_01",
+      "String": "このボタンをタップして<CUSTOMISATION>モードを開始"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_02",
+      "String": "<CUSTOMISATION>をドラッグして外に出します"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_03",
+      "String": "空きスペースにドロップします"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_04",
+      "String": "十分な<TOKEN_PLURAL>があれば購入メッセージが表示されます"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_TITLE",
+      "String": "写真を撮る"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_01",
+      "String": "右上の写真ボタンをタップ"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_02",
+      "String": "撮影したい瞬間を選択"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_03",
+      "String": "写真をシェアまたは保存"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_04",
+      "String": "ハッシュタグ#furistasを使って他のプレイヤーの写真を見てみよう"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_TITLE",
+      "String": "<CAT>を<ADOPT>"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_01",
+      "String": "<CAT>リストを開く"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_02",
+      "String": "アンロック済みの<CAT>のシルエットをタップ"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_03",
+      "String": "十分な<FISH>があれば、「<ADOPT>」をタップできます"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_04",
+      "String": "やった！新しいネコだ！"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "String": "<CUSTOMISATION_PLURAL>の配置"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_01",
+      "String": "<CUSTOMISATION>モードを開く"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_02",
+      "String": "配置したいアイテムを見つけます"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_03",
+      "String": "アイテムをドラッグします。赤色の場所には配置できません"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_04",
+      "String": "赤色でなければドロップしましょう！"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_TITLE",
+      "String": "写真の撮り方"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_01",
+      "String": "写真ボタンをタップしよう"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_02",
+      "String": "長方形をドラッグして、一番いいカメラアングルを見つけよう"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_03",
+      "String": "写真を撮るには、長方形をタップしよう"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_04",
+      "String": "ハッシュタグ #furistas を使って、コミュニティーとシェアしよう"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_TITLE",
+      "String": "<CAT_LOUNGE>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_01",
+      "String": "トンネルをタップしてキャットラウンジに移動"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_02",
+      "String": "<CATHEART_PLURAL>を使用してアイテムを入手"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_03",
+      "String": "アイテムを使って<CAT_STATION_PLURAL>をアンロック&アップグレード"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_04",
+      "String": "<CAT_PLURAL>を<CAT_STATION_PLURAL>に入れて猫のハートを獲得"
+    },
+    {
+      "Key": "FIRST_TIME_TITLE",
+      "String": "Furistasへ\\nようこそ！"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION1",
+      "String": "あなただけの猫カフェへ\\nようこそ！"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION2",
+      "String": "画面下の指示に従って始めよう。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_TITLE",
+      "String": "やったね"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC",
+      "String": "猫カフェ経営の基本を学びました。右下の目標ボタンをタップして本日のスペシャルタスクを確認しましょう。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC2",
+      "String": "それでは、お楽しみください！"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_001",
+      "String": "最初のネコを引き取ろう（？ボタンでヘルプを表示）"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN1",
+      "String": "お客さんをタップして、ボンちゃんとカップリングしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET1",
+      "String": "バスケット！？開けてみよう！"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSEWALL1",
+      "String": "家具ボタンをタップして壁紙を選ぼう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_002",
+      "String": "新たなネコを引き取ろう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN2",
+      "String": "2匹のネコをお客さんとカップリングしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_COLLECT1",
+      "String": "お客さんが残したハートのメモを拾おう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_STARTBASKET1",
+      "String": "ハートを獲得してバスケットを注文しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN3",
+      "String": "もう一度、2匹のネコをお客さんとカップリングしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSESEAT",
+      "String": "家具メニューでスツールか椅子を購入しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_TAPHUD1",
+      "String": "画面の下のハートアイコンをタップしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET2",
+      "String": "到着したらバスケットを開けよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_PLACETABLE",
+      "String": "家具メニューからテーブルを配置しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_EARNHEARTS1",
+      "String": "ぼんちゃんでハートを10個獲得しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_LEVELCAT1",
+      "String": "ぼんちゃんを世話してレベル2にしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G001",
+      "String": "3匹のネコを世話（レベルアップ）しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G002",
+      "String": "50匹のネコをお客さんと<ASSIGN>"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G003",
+      "String": "トークンを200個獲得しよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_GOTOCATLOUNGE1",
+      "String": "トンネルをタップしてキャットラウンジに行こう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_USELUCKYCAT",
+      "String": "招き猫のお腹をタップして3つのアイテムを受け取ろう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_UNLOCKSTATION",
+      "String": "最初の<CAT_STATION>をアンロックしよう"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGNCATTOSTATION",
+      "String": "猫を<STATION_002_NAME>に入れよう"
+    },
+    {
+      "Key": "MINIGAME_NAME_BRUSH",
+      "String": "ふれあい"
+    },
+    {
+      "Key": "MINIGAME_CAT_TITLE",
+      "String": "{0}が構って欲しがっているよ"
+    },
+    {
+      "Key": "MINIGAME_CAT_EXPLANATION",
+      "String": "<CAT>を指でなでてあげよう"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_1",
+      "String": "幸せなネコ！"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_2",
+      "String": "ゴロゴロ"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_3",
+      "String": "満足したネコ"
+    },
+    {
+      "Key": "MINIGAME_NAME_CLEANPAWPRINTS",
+      "String": "掃除"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE_SPILL",
+      "String": "ドリンクを拭き取ろう"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE",
+      "String": "ああ、{0}…"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_EXPLANATION",
+      "String": "こすって汚れを落とそう"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_1",
+      "String": "とってもキレイ"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_2",
+      "String": "キラキラ"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_3",
+      "String": "汚れひとつ無し"
+    },
+    {
+      "Key": "MINIGAME_NAME_COFFEE",
+      "String": "バリスタ"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_TITLE",
+      "String": "ドリンクの注文"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_1",
+      "String": "材料をマグカップにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_2",
+      "String": "マグカップをお客さんにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_1",
+      "String": "サイコウ！"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_2",
+      "String": "う～ん"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_3",
+      "String": "おいしい"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_4",
+      "String": "目が覚める"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_1",
+      "String": "グッジョブ"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_2",
+      "String": "あっぱれ"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_3",
+      "String": "すごい"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_4",
+      "String": "最高だね"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_5",
+      "String": "ナイス"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_6",
+      "String": "すばらしい"
+    },
+    {
+      "Key": "MINIGAME_NAME_SALAD",
+      "String": "サラダシェフ"
+    },
+    {
+      "Key": "MINIGAME_SALAD_TITLE",
+      "String": "サラダの注文"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_1",
+      "String": "材料を皿にドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_2",
+      "String": "皿をお客さんにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_1",
+      "String": "ヘルシー！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_2",
+      "String": "おいし～い！！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_3",
+      "String": "うまいっ！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_4",
+      "String": "デリシャス"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SUNDAE",
+      "String": "サンデーパティシエ"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_TITLE",
+      "String": "おいしいデザート"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_1",
+      "String": "トッピングをグラスにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_2",
+      "String": "グラスをお客さんにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_1",
+      "String": "キター！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_2",
+      "String": "絶品！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_3",
+      "String": "激ウマ"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_4",
+      "String": "サイコ～"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SMOOTHIE",
+      "String": "スムージーバリスタ"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_TITLE",
+      "String": "スムージー・タイム"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_1",
+      "String": "トッピングをジューサーにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_2",
+      "String": "グラスをお客さんにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_1",
+      "String": "フレッシュ"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_2",
+      "String": "スムーズ"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_3",
+      "String": "栄養たっぷり！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_4",
+      "String": "体に優しいね！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "PICK_A_COMPARTMENT",
+      "String": "どれか1つ選択しよう"
+    },
+    {
+      "Key": "PLUS_ONE_REWARD",
+      "String": "追加報酬"
+    },
+    {
+      "Key": "YOU_HAVE_COLLECTED_IT_ALL",
+      "String": "すべての報酬を入手しました"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_1",
+      "String": "どれか1つ選択しよう"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_TITLE",
+      "String": "運試し"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_2",
+      "String": "動画を視聴して選択肢を増やそう"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_3",
+      "String": "キャットマネーを使って選択肢を増やそう"
+    },
+    {
+      "Key": "MINIGAME_NAME_WAFFLE",
+      "String": "ワッフル職人"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_TITLE",
+      "String": "ラグジュアリな甘～いひと時"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_1",
+      "String": "材料をワッフルにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_2",
+      "String": "ワッフルをお客さんにドラッグ"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_1",
+      "String": "ゴージャス！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_2",
+      "String": "シ・ア・ワ・セ"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_3",
+      "String": "完ぺき！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_4",
+      "String": "エレガント！"
+    },
+    {
+      "Key": "MINIGAME_NAME_CAT_TREAT",
+      "String": "ネコのおやつ"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_TITLE",
+      "String": "おやつの時間"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_EXPLANATION",
+      "String": "個性が同じネコにおやつをあげよう"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_1",
+      "String": "おいし～い"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_2",
+      "String": "ネコ大満足"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_3",
+      "String": "幸せだニャ！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_NAME",
+      "String": "ネコのおもちゃ"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_TITLE",
+      "String": "{0}と遊ぼう！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_EXPLANATION",
+      "String": "おもちゃをドラッグしよう！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_1",
+      "String": "たのし～い"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_2",
+      "String": "ゴロゴロ"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_3",
+      "String": "ニャオン！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_NAME",
+      "String": "おやつキャッチ"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_TITLE",
+      "String": "おやつをキャッチしてもうらおう！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_EXPLANATION",
+      "String": "ネコの方角におやつをはじこう"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_1",
+      "String": "狙い通り！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_2",
+      "String": "見事なキャッチ"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_3",
+      "String": "ナイススキル！"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_TITLE",
+      "String": "購入"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_DESCRIPTION",
+      "String": "「{0}」を{1}<TOKEN_PLURAL>で購入しますか？"
+    },
+    {
+      "Key": "ERROR_TITLE",
+      "String": "あらら…"
+    },
+    {
+      "Key": "CUSHION",
+      "String": "クッション"
+    },
+    {
+      "Key": "COUCH",
+      "String": "ソファ"
+    },
+    {
+      "Key": "RUG",
+      "String": "ラグ"
+    },
+    {
+      "Key": "CHAIR",
+      "String": "チェア"
+    },
+    {
+      "Key": "TABLE",
+      "String": "テーブル"
+    },
+    {
+      "Key": "STOOL",
+      "String": "スツール"
+    },
+    {
+      "Key": "MAT",
+      "String": "マット"
+    },
+    {
+      "Key": "PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "CRATE",
+      "String": "クレート"
+    },
+    {
+      "Key": "SHELF",
+      "String": "棚"
+    },
+    {
+      "Key": "COUNTER",
+      "String": "カウンター"
+    },
+    {
+      "Key": "CAT_TRAIT_FRIENDLY",
+      "String": "フレンドリー"
+    },
+    {
+      "Key": "CAT_TRAIT_SHY",
+      "String": "シャイ"
+    },
+    {
+      "Key": "CAT_TRAIT_PLAYFUL",
+      "String": "いたずら好き"
+    },
+    {
+      "Key": "CAT_TRAIT_CHILL",
+      "String": "リラックス"
+    },
+    {
+      "Key": "CAT_TRAIT_CAPRICIOUS",
+      "String": "気まぐれ"
+    },
+    {
+      "Key": "CAT_TRAIT_CURIOUS",
+      "String": "好奇心"
+    },
+    {
+      "Key": "CAT_TRAIT_GENTLE",
+      "String": "優しい"
+    },
+    {
+      "Key": "CAT_TRAIT_ASSERTIVE",
+      "String": "積極的"
+    },
+    {
+      "Key": "CAT_TRAIT_GOOFY",
+      "String": "変わり者"
+    },
+    {
+      "Key": "CAT_TRAIT_ADVENTUROUS",
+      "String": "冒険家"
+    },
+    {
+      "Key": "CAT_TRAIT_CUDDLY",
+      "String": "だっこ好き"
+    },
+    {
+      "Key": "CAT_TRAIT_SLEEPY",
+      "String": "居眠り"
+    },
+    {
+      "Key": "CAT_TRAIT_SMART",
+      "String": "かしこい"
+    },
+    {
+      "Key": "HAIR_TYPE_SHORT",
+      "String": "ショート"
+    },
+    {
+      "Key": "HAIR_TYPE_MEDIUM",
+      "String": "ミディアム"
+    },
+    {
+      "Key": "HAIR_TYPE_LONG",
+      "String": "ロング"
+    },
+    {
+      "Key": "HAIR_TYPE_NONE",
+      "String": "なし"
+    },
+    {
+      "Key": "CAT_BREED_CALICO",
+      "String": "三毛猫"
+    },
+    {
+      "Key": "CAT_BREED_TABBY",
+      "String": "トラネコ"
+    },
+    {
+      "Key": "CAT_BREED_BOMBAY",
+      "String": "ボンベイ"
+    },
+    {
+      "Key": "CAT_BREED_PERSIAN",
+      "String": "ペルシャ"
+    },
+    {
+      "Key": "CAT_BREED_SIBERIAN",
+      "String": "ｻｲﾍﾞﾘｱﾝ"
+    },
+    {
+      "Key": "CAT_BREED_TORTOISESHELL",
+      "String": "さびネコ"
+    },
+    {
+      "Key": "CAT_BREED_TUXEDO",
+      "String": "タキシード"
+    },
+    {
+      "Key": "CAT_BREED_BOBTAIL",
+      "String": "ボブテイル"
+    },
+    {
+      "Key": "CAT_BREED_CHANTILLY",
+      "String": "ｼｬﾝﾃｨﾘｨ"
+    },
+    {
+      "Key": "CAT_BREED_CHARTREAUX",
+      "String": "ｼｬﾙﾄﾘｭｰ"
+    },
+    {
+      "Key": "CAT_BREED_SIAMESE",
+      "String": "シャム"
+    },
+    {
+      "Key": "CAT_BREED_LONGHAIR",
+      "String": "ロングヘア"
+    },
+    {
+      "Key": "CAT_BREED_TONKINESE",
+      "String": "ﾄﾝｷﾆｰｽﾞ"
+    },
+    {
+      "Key": "CAT_BREED_WIREHAIR",
+      "String": "ﾜｲﾔｰﾍｱ"
+    },
+    {
+      "Key": "CAT_BREED_FOLD",
+      "String": "フォルド"
+    },
+    {
+      "Key": "CAT_BREED_SPHYNX",
+      "String": "ｽﾌｨﾝｸｽ"
+    },
+    {
+      "Key": "CAT_BREED_LAPERM",
+      "String": "ラパーマ"
+    },
+    {
+      "Key": "CAT_BREED_SHORTHAIR",
+      "String": "ｼｮｰﾄﾍｱ"
+    },
+    {
+      "Key": "CAT_BREED_RAGDOLL",
+      "String": "ﾗｸﾞﾄﾞｰﾙ"
+    },
+    {
+      "Key": "CAT_BREED_EXOTIC",
+      "String": "ｴｷｿﾞﾁｯｸ"
+    },
+    {
+      "Key": "CAT_BREED_HIMALAYAN",
+      "String": "ﾋﾏﾗﾔﾝ"
+    },
+    {
+      "Key": "CAT_BREED_ANGORA",
+      "String": "アンゴラ"
+    },
+    {
+      "Key": "CAT_BREED_CURL",
+      "String": "カール"
+    },
+    {
+      "Key": "CAT_BREED_OCICAT",
+      "String": "ｵｼｷｬｯﾄ"
+    },
+    {
+      "Key": "CAT_BREED_BENGAL",
+      "String": "ベンガル"
+    },
+    {
+      "Key": "CAT_BREED_MAINECOON",
+      "String": "メインクーン"
+    },
+    {
+      "Key": "CAT_BREED_BICOLOUR",
+      "String": "バイカラー"
+    },
+    {
+      "Key": "CAT_BREED_RUSSIANWHITE",
+      "String": "ロシアンホワイト"
+    },
+    {
+      "Key": "CAT_BREED_SNOWSHOE",
+      "String": "スノーシュー"
+    },
+    {
+      "Key": "CAT_BREED_MUNCHKIN",
+      "String": "マンチカン"
+    },
+    {
+      "Key": "CAT_BREED_MIXED",
+      "String": "雑種"
+    },
+    {
+      "Key": "CAT_BREED_ORIENTAL",
+      "String": "オリエンタル"
+    },
+    {
+      "Key": "CAT_BREED_LAMBKIN",
+      "String": "ラムキン"
+    },
+    {
+      "Key": "CAT_BREED_LYKOI",
+      "String": "ライコイ"
+    },
+    {
+      "Key": "COMMON_ITEM_DESC",
+      "String": "ネコのアップグレード用<COMMON>アイテム"
+    },
+    {
+      "Key": "UNCOMMON_ITEM_DESC",
+      "String": "ネコのアップグレード用<UNCOMMON>アイテム"
+    },
+    {
+      "Key": "RARE_ITEM_DESC",
+      "String": "ネコのアップグレード用<RARE>アイテム"
+    },
+    {
+      "Key": "EPIC_ITEM_DESC",
+      "String": "ネコのアップグレード用<EPIC>アイテム"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_DESC",
+      "String": "ネコのアップグレード用<LEGENDARY>アイテム"
+    },
+    {
+      "Key": "BALL",
+      "String": "ボール"
+    },
+    {
+      "Key": "BELL",
+      "String": "ベル"
+    },
+    {
+      "Key": "TOY",
+      "String": "おもちゃ"
+    },
+    {
+      "Key": "FOOD",
+      "String": "エサ"
+    },
+    {
+      "Key": "COLLAR",
+      "String": "首輪"
+    },
+    {
+      "Key": "ITEM_001",
+      "String": "ベルボール"
+    },
+    {
+      "Key": "ITEM_002",
+      "String": "スポンジボール"
+    },
+    {
+      "Key": "ITEM_003",
+      "String": "フットバッグ"
+    },
+    {
+      "Key": "ITEM_004",
+      "String": "毛玉"
+    },
+    {
+      "Key": "ITEM_005",
+      "String": "ハイテクボール"
+    },
+    {
+      "Key": "ITEM_006",
+      "String": "コッパーベル"
+    },
+    {
+      "Key": "ITEM_007",
+      "String": "黄色いボール"
+    },
+    {
+      "Key": "ITEM_008",
+      "String": "グレーのすず"
+    },
+    {
+      "Key": "ITEM_009",
+      "String": "オレンジのすず"
+    },
+    {
+      "Key": "ITEM_010",
+      "String": "呼び出しベル"
+    },
+    {
+      "Key": "ITEM_011",
+      "String": "ツナかん"
+    },
+    {
+      "Key": "ITEM_012",
+      "String": "ジェリーミート"
+    },
+    {
+      "Key": "ITEM_013",
+      "String": "ビスケット"
+    },
+    {
+      "Key": "ITEM_014",
+      "String": "魚フライ"
+    },
+    {
+      "Key": "ITEM_015",
+      "String": "サーモン"
+    },
+    {
+      "Key": "ITEM_016",
+      "String": "ネズミのおもちゃ"
+    },
+    {
+      "Key": "ITEM_017",
+      "String": "クモのおもちゃ"
+    },
+    {
+      "Key": "ITEM_018",
+      "String": "魚のおもちゃ"
+    },
+    {
+      "Key": "ITEM_019",
+      "String": "タコのおもちゃ"
+    },
+    {
+      "Key": "ITEM_020",
+      "String": "恐竜のおもちゃ"
+    },
+    {
+      "Key": "ITEM_021",
+      "String": "白い首輪"
+    },
+    {
+      "Key": "ITEM_022",
+      "String": "スポーティな首輪"
+    },
+    {
+      "Key": "ITEM_023",
+      "String": "かわいい首輪"
+    },
+    {
+      "Key": "ITEM_024",
+      "String": "皮の首輪"
+    },
+    {
+      "Key": "ITEM_025",
+      "String": "ダイヤの首輪"
+    },
+    {
+      "Key": "ITEM_ST_C1",
+      "String": "猫ネジ"
+    },
+    {
+      "Key": "ITEM_ST_U1",
+      "String": "キャット接着剤"
+    },
+    {
+      "Key": "ITEM_ST_R1",
+      "String": "肉球ボード"
+    },
+    {
+      "Key": "ITEM_ST_E1",
+      "String": "ピカピカのペンキ"
+    },
+    {
+      "Key": "ITEM_ST_L1",
+      "String": "最高の生地"
+    },
+    {
+      "Key": "I_TRAIT_0",
+      "String": "‘<CAT_TRAIT_FRIENDLY>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_1",
+      "String": "‘<CAT_TRAIT_CHILL>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_2",
+      "String": "‘<CAT_TRAIT_PLAYFUL>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_3",
+      "String": "‘<CAT_TRAIT_SHY>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_4",
+      "String": "‘<CAT_TRAIT_CAPRICIOUS>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_5",
+      "String": "‘<CAT_TRAIT_CURIOUS>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_6",
+      "String": "‘<CAT_TRAIT_GENTLE>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_7",
+      "String": "‘<CAT_TRAIT_ASSERTIVE>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_8",
+      "String": "‘<CAT_TRAIT_GOOFY>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_9",
+      "String": "‘<CAT_TRAIT_ADVENTUROUS>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_10",
+      "String": "‘<CAT_TRAIT_CUDDLY>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_11",
+      "String": "‘<CAT_TRAIT_SLEEPY>’ タグ"
+    },
+    {
+      "Key": "I_TRAIT_12",
+      "String": "‘<CAT_TRAIT_SMART>’ タグ"
+    },
+    {
+      "Key": "ITEM_RARITY_C1",
+      "String": "<COMMON> ジェム"
+    },
+    {
+      "Key": "ITEM_RARITY_U1",
+      "String": "<UNCOMMON> ジェム"
+    },
+    {
+      "Key": "ITEM_RARITY_R1",
+      "String": "<RARE> ジェム"
+    },
+    {
+      "Key": "ITEM_RARITY_E1",
+      "String": "<EPIC> ジェム"
+    },
+    {
+      "Key": "ITEM_RARITY_L1",
+      "String": "<LEGENDARY> ジェム"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_1",
+      "String": "VIP"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_2",
+      "String": "パス"
+    },
+    {
+      "Key": "VIP_LARGE_DESCRIPTION_TITLE",
+      "String": "{0}について"
+    },
+    {
+      "Key": "DISCOVER_PROMPT",
+      "String": "ストーリーでさらなる個性の<TRAIT_PLURAL>を見つけよう"
+    },
+    {
+      "Key": "GUEST_PASS_TITLE_1",
+      "String": "ゲスト"
+    },
+    {
+      "Key": "VIP_TRAIT_DISCOVERED_FEEDBACK",
+      "String": "発見した新たな<TRAIT>:{0}"
+    },
+    {
+      "Key": "VIP_UNLOCKED_FEEDBACK",
+      "String": "おめでとう！発見したVIPお客さん:{0}"
+    },
+    {
+      "Key": "SETTINGS_TITLE",
+      "String": "設定"
+    },
+    {
+      "Key": "SETTINGS_ACCOUNT_TITLE",
+      "String": "アカウント"
+    },
+    {
+      "Key": "SETTINGS_USER_ID",
+      "String": "ユーザーID"
+    },
+    {
+      "Key": "SETTINGS_NAME",
+      "String": "名前"
+    },
+    {
+      "Key": "SETTINGS_LEVEL",
+      "String": "<LEVEL>"
+    },
+    {
+      "Key": "SETTINGS_STARTED",
+      "String": "開始"
+    },
+    {
+      "Key": "SETTINGS_UPDATED",
+      "String": "アップデート"
+    },
+    {
+      "Key": "SETTINGS_REGISTER_BUTTON",
+      "String": "登録"
+    },
+    {
+      "Key": "SETTINGS_LOGOUT_BUTTON",
+      "String": "ログアウト"
+    },
+    {
+      "Key": "SETTINGS_MUSIC_LABEL",
+      "String": "音楽"
+    },
+    {
+      "Key": "SETTINGS_SFX_LABEL",
+      "String": "効果音"
+    },
+    {
+      "Key": "SETTINGS_NOTIFICATIONS_TITLE",
+      "String": "通知"
+    },
+    {
+      "Key": "SETTINGS_CUSTOMER_DONE_LABEL",
+      "String": "<CUSTOMER_PLURAL>完了"
+    },
+    {
+      "Key": "SETTINGS_DELIVERY_READY_LABEL",
+      "String": "<BASKET><DELIVERY>準備完了"
+    },
+    {
+      "Key": "SETTINGS_BONUS_DELIVERY_READY_LABEL",
+      "String": "ボーナス<DELIVERY>準備完了"
+    },
+    {
+      "Key": "SETTINGS_HELP",
+      "String": "ヘルプ"
+    },
+    {
+      "Key": "SETTINGS_FACEBOOK_PAGE",
+      "String": "コミュニティー"
+    },
+    {
+      "Key": "SETTINGS_TWITTER_PAGE",
+      "String": "コミュニティー"
+    },
+    {
+      "Key": "SETTINGS_TERMS_OF_SERVICE",
+      "String": "利用規約"
+    },
+    {
+      "Key": "SETTINGS_PRIVACY_POLICY",
+      "String": "プライバシーポリシー"
+    },
+    {
+      "Key": "SETTINGS_HIGH_GRAPHICS_MODE",
+      "String": "高画質"
+    },
+    {
+      "Key": "SETTINGS_STATIONS_READY_LABEL",
+      "String": "<CAT_STATION_PLURAL>が準備完了"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_TITLE",
+      "String": "データを消去"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_EXPLANATION",
+      "String": "プレイヤーのみなさんの個人情報は当社にとって重要です。お客様からのご依頼により、個人情報を消去いたします。\\n\\n消去手続きを実行すると復元は不可能で、すべてのRunawayゲームのゲームデータが完全に消去されます。\\n\\nデータを消去すると購入履歴もすべて消去されるため、今まで購入したゲームアイテムや通貨を復元することはできません。\\n\\n個々のゲームデータの消去について、またはご質問はサポートまでお問い合わせください。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM1",
+      "String": "実行するとすべてのRunawayゲームのゲームデータなどを完全に消去します：\\n\\n  ● Flutter: Butterfly Sanctuary\\n  ● Flutter: Starlight\\n  ● Splash: Fish Sanctuary\\n  ● Furistas Cat Cafe\\n  ● Bird BnB\\n  ● オールドフレンズドッグゲーム\\n"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM2",
+      "String": "Runawayゲームデータを完全に消去してよろしいですか？"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_DONE",
+      "String": "すべてのデータを消去しました。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_ERROR",
+      "String": "データ消去で問題が発生しました。改めてお試しいただき、問題が解決しない場合はサポートにお問い合わせください。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_BACK",
+      "String": "セーフモードに戻る"
+    },
+    {
+      "Key": "DO_NOT_SELL_INFO_BUTTON",
+      "String": "私の個人情報を販売または共有しないでください"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_HEADER",
+      "String": "広告の関連性を高める"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_BODY",
+      "String": "より関連性の高い広告を取得し、追跡を許可することでこのゲームを無料で維持できるようにします。"
+    },
+    {
+      "Key": "IOS_ATT_PERMISSION_DESC",
+      "String": "これにより、お客様が視聴することを選択した広告をカスタマイズできるようになり、小規模なスタジオのサポートに役立ちます。 [設定] -> [プライバシー] でいつでもオフにできます。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_TITLE",
+      "String": "Facebook接続済み"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_DESC",
+      "String": "Facebookアカウントに接続されています。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_TITLE",
+      "String": "Facebook接続エラー"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_DESC",
+      "String": "このFacebookアカウントはすでに他のカフェに使われており、再度適用はできません。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_PERMISSION_EXPLANATION",
+      "String": "以前、このアプリのログイン権限を拒否しました。この許可はログインに必要です、続けますか？"
+    },
+    {
+      "Key": "NEW_GAME_LABEL",
+      "String": "新しいゲーム"
+    },
+    {
+      "Key": "LOAD_GAME_LABEL",
+      "String": "ログイン"
+    },
+    {
+      "Key": "RECOVER_LABEL",
+      "String": "復元"
+    },
+    {
+      "Key": "LOGIN_BACK_LABEL",
+      "String": "<BACK_LABEL>"
+    },
+    {
+      "Key": "LOGIN_FACEBOOK",
+      "String": "FACEBOOK"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_TITLE",
+      "String": "利用規約が更新されました"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_DESC",
+      "String": "プレイするには利用規約に同意してプライバシーポリシーをお読みいただく必要があります"
+    },
+    {
+      "Key": "GDPR_SUBMIT",
+      "String": "同意する"
+    },
+    {
+      "Key": "GDPR_ACCEPT",
+      "String": "プライバシーポリシーを読み、同意しました"
+    },
+    {
+      "Key": "GDPR_AGE_DESC",
+      "String": "I am over 16 years old - this game contains ads and purchases."
+    },
+    {
+      "Key": "LOGIN_RETRIEVE_ACCOUNT",
+      "String": "アカウント情報を取得中"
+    },
+    {
+      "Key": "LOGIN_HELP",
+      "String": "ヘルプ"
+    },
+    {
+      "Key": "LOGIN_HELP_PROMPT",
+      "String": "お困りですか？「<LOGIN_HELP>」ボタンをタップしましょう"
+    },
+    {
+      "Key": "LOGIN_LOAD_GAME_DATA",
+      "String": "ゲームデータをロード中…"
+    },
+    {
+      "Key": "LOGIN_LOGGING_IN",
+      "String": "ログイン中…"
+    },
+    {
+      "Key": "LOGIN_DOWNLOADING_GAME_DATA",
+      "String": "ゲームデータをダウンロード中…"
+    },
+    {
+      "Key": "LOGIN_CHECKING_FOR_UPDATES",
+      "String": "アップデートをチェック中…"
+    },
+    {
+      "Key": "UPDATE_REQUIRED",
+      "String": "アップデートが必要"
+    },
+    {
+      "Key": "UPDATE_REQUIRED_DESCRIPTION",
+      "String": "アップデートが利用可能です！今すぐアップデートしてあなたのカフェのエキサイティングな変更を確認しましょう！"
+    },
+    {
+      "Key": "ERROR_DESC",
+      "String": "エラーが発生しました。ゲームが再起動されて、プレイを続けられるようですが、問題が解決しない場合はお問い合わせください。"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_TITLE",
+      "String": "使用済みのソーシャルアカウント"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_DESC",
+      "String": "このソーシャルアカウントは別のセーブデータですでに使用されています。"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_TITLE",
+      "String": "ログイン失敗"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_DESC",
+      "String": "新しいアカウント作成の際にエラーが発生しました。もう一度お試しください。問題が解決しない場合は、サポートにお問い合わせください。"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_TITLE",
+      "String": "メンテナンス中"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_DESC",
+      "String": "メンテナンスを行う間、あなたのカフェのネコたちはお休みしています。数分後にもう一度お試しください。"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_TITLE",
+      "String": "メンテナンス中"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_DESC",
+      "String": "メンテナンスを行う間、あなたのカフェのネコたちはお休みしています。数分後にもう一度お試しください。"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_TITLE",
+      "String": "メンテナンス中"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_DESC",
+      "String": "メンテナンスを行う間、あなたのカフェのネコたちはお休みしています。数分後にもう一度お試しください。"
+    },
+    {
+      "Key": "ERROR_RELOAD_TITLE",
+      "String": "カフェをリロード"
+    },
+    {
+      "Key": "ERROR_RELOAD_DESC",
+      "String": "あなたのカフェがアップデートされました。OKを押してゲームをリロードしてください。"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_TITLE",
+      "String": "銀行決済保存中のエラー"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_DESC",
+      "String": "決済を保存中にエラーが発生しました"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_TITLE",
+      "String": "サーバーログインエラー"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_DESC",
+      "String": "サーバーがリクエストをログに記録できませんでした"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_TITLE",
+      "String": "購入エラー"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_DESC",
+      "String": "購入を確定できませんでした。もう一度お試しください。問題が解決しない場合は、サポートにお問い合わせください。"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_TITLE",
+      "String": "使用済みのソーシャルアカウント"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_DESC",
+      "String": "このソーシャルアカウントはすでに他のセーブデータに使われており、再度適用はできません。"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_TITLE",
+      "String": "サーバー接続エラー"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_DESC",
+      "String": "サーバーとの接続を確立できませんでした"
+    },
+    {
+      "Key": "PURCHASE_ERROR_INVALID_RECEIPT",
+      "String": "アプリストアで決済の受け取りを確認できませんでした。サポートにお問い合わせください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PRODUCT_UNAVAILABLE",
+      "String": "残念ながら、このアイテムは現在利用できません。問題が解決しない場合は、サポートにお問い合わせください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASE_PENDING",
+      "String": "すでに処理中の購入が存在します。新たな購入を行う前にこの処理が完了するのをお待ちください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASING_UNAVAILABLE",
+      "String": "現在、購入を行えません。ネットワークの接続を確認してください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_STORE_NOT_INITIALISED",
+      "String": "ストアが初期化されていません。しばらくしてからもう一度お試しいただくか、問題が解決しない場合は、サポートにお問い合わせください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_UNKNOWN_ERROR",
+      "String": "購入中にエラーが発生しました。問題が解決しない場合は、サポートにお問い合わせください。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_TRANSPORT_ERROR",
+      "String": "アプリストアに接続できません。インターネット接続を確認してもう一度お試しください。"
+    },
+    {
+      "Key": "ANDROID_NOTIFICATION_TITLE",
+      "String": "Furistasニュース"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_001",
+      "String": "ネコをなでたいお客さんが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_002",
+      "String": "お客さんが帰り、新しいお客さんが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_003",
+      "String": "お客さんが満足して帰ったよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_004",
+      "String": "お客さんが満足して帰ったよ！やった！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_005",
+      "String": "ネコを抱きしめたい新たなお客さんが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_006",
+      "String": "カフェのネコに癒されたいお客さんが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_001",
+      "String": "新しいバスケットを開けられるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_002",
+      "String": "バスケットが到着！中には何が？"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_003",
+      "String": "デリバリーが到着！開けられるのを待ってるよ。"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_004",
+      "String": "やった！デリバリーが到着したよ。"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_005",
+      "String": "聞いて！ようやくデリバリーバスケットが到着！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_006",
+      "String": "良いお知らせだよ！バスケットが開けられるよ。"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_007",
+      "String": "しっ！バスケットが開けられるみたいだよ。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_001",
+      "String": "ボーナスバスケットが到着。中には何が！？"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_002",
+      "String": "無料のデリバリーバスケットが到着！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_003",
+      "String": "ボーナスのデリバリーバスケットがカフェで待ってる！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_004",
+      "String": "ボーナス！バスケット！到着！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_005",
+      "String": "新しいデリバリーバスケットには入っているものは？"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_006",
+      "String": "新しいボーナスバスケットが開けられる！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_007",
+      "String": "ボーナスバスケットが到着！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_001",
+      "String": "ネコと遊びたい新しいお客さんとアイテムが詰まったバスケットが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_002",
+      "String": "お客さんはみんな満足して帰ったよ。バスケットを開けられる！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_003",
+      "String": "ネコを抱きしめたい新たなお客さんが待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_004",
+      "String": "新しいお客さんとバスケットが戻ってくるのを待っている！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_005",
+      "String": "新しいお客さんとバスケットが戻ってくるのを待っている！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_AND_BASKET_READY_001",
+      "String": "バスケットとボーナスバスケットの両方が開けられる！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_001",
+      "String": "今日はカフェでどんな物語が待ってるだろう？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_002",
+      "String": "今日は猫カフェにどんなお客さんがやってくるのかな？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_003",
+      "String": "今日も新しいネコたちとお友達になろう！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_004",
+      "String": "新しいネコがなでられるのを待ってるよ！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_005",
+      "String": "今日はどんなお友達と出会えるかな？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_006",
+      "String": "猫カフェを見るために、世界中から人が集まってる！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_007",
+      "String": "今日はどんなネコが仲間に加わるんだろう？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_008",
+      "String": "新しいお客さんを迎える準備はできてる？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_009",
+      "String": "新しいお客さんを迎える準備はできてる？"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_001",
+      "String": "<NOTIFICATION_24HOURS_001>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_002",
+      "String": "<NOTIFICATION_24HOURS_002>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_003",
+      "String": "<NOTIFICATION_24HOURS_003>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_004",
+      "String": "<NOTIFICATION_24HOURS_004>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_005",
+      "String": "<NOTIFICATION_24HOURS_005>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_006",
+      "String": "<NOTIFICATION_24HOURS_006>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_007",
+      "String": "<NOTIFICATION_24HOURS_007>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_008",
+      "String": "<NOTIFICATION_24HOURS_008>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_001",
+      "String": "お待たせしました。素敵な「{1}」を獲得可能な「{0}」イベントが配信開始です！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_002",
+      "String": "みなさ～ん、おしゃれな「{1}」を獲得しませんか？ 「{0}」イベント、ただいま開始です！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_003",
+      "String": "「{0}」イベントが開始しました。新登場の「{1}」は、ひっかくのに最適。入手して、ネコちゃんたちをびっくりさせてあげよう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_004",
+      "String": "「{0}」イベントに参加して、素敵な「{1}」を獲得しよう。ワクワクの体験が待ってます！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_005",
+      "String": "さあ、お楽しみの開始です。カワイイ「{1}」を獲得できる「{0}」イベント、ただいま開催中！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_001",
+      "String": "トークン2倍ボーナス！ 実施中にぜひ獲得しよう！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_002",
+      "String": "知ってましたか？？ 今ならトークンを2倍獲得できます！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_003",
+      "String": "トークン2倍ボーナス実施中！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_004",
+      "String": "トークン2倍ボーナス実施中！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_001",
+      "String": "こんにちは！ 今ならバスケットから2倍のフィッシュを獲得できます。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_002",
+      "String": "今日はフィッシュ2倍ボーナス獲得の大チャンスです！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_003",
+      "String": "フィッシュ2倍ボーナス！ フィッシュ2倍ボーナス！ フィッシュ2倍ボーナス！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_004",
+      "String": "フィッシュ2倍ボーナス！ フィッシュ2倍ボーナス！ フィッシュ2倍ボーナス！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_001",
+      "String": "なになに？ フィッシュ2倍ボーナスとトークン2倍ボーナスを実施中？最高だね！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_002",
+      "String": "トークン2倍ボーナスとフィッシュ2倍ボーナスを実施中。ぜひ参加しよう。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_003",
+      "String": "この世で一番素敵なこと？ それはもちろん、現在実施中のフィッシュ2倍＆トークン2倍ボーナス！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_001",
+      "String": "なになに？ 新登場のネコ！？ 今開催中の「{0}」イベントで、{1}を引き取ろう！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_002",
+      "String": "{1}って本当にカワイイ！ 「{0}」イベント… 開催開始！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_003",
+      "String": "「{0}」イベント開催中。参加して、新登場の{1}をカフェに引き取ろう！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_004",
+      "String": "「{0}」イベント開催中。参加して、新登場の{1}をカフェに引き取ろう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_001",
+      "String": "(・о・) 「{0}」イベントがもうすぐ終わっちゃう！今のうちに「{1}」をゲットしよう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_002",
+      "String": "(⊙.☉) なんだって？「{0}」がもうすぐ終わっちゃう？カフェにステキな「{1}」をゲットできる最後のチャンスだよ。"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_003",
+      "String": "「{1}」は逃せないよね？「{0}」イベントがもうすぐ終わっちゃうよ！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_004",
+      "String": "「{0}」イベントで「{1}」をゲットできる時間がもうすぐ終わっちゃうことをお知らせしまーす！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_005",
+      "String": "「{1}」はキミのカフェにきっとよく似合うよ。けど 「{0}」イベントの残り時間がもう少ししかない！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_001",
+      "String": "(✪‿✪)ノ 「{0}」イベントがまもなく終了！愛らしい「{1}」を引き取るチャンスをお見逃しなく！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_002",
+      "String": "この辺りで一番カッコいい猫こと「{1}」を「{0}」イベントで引き取るための時間が残りわずか！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_003",
+      "String": "「{1}」を迎え入れるための 「{0}」イベントの残り時間があとわずか！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_004",
+      "String": "「{1}」はとってもステキな猫だよ。「{0}」イベントで引き取れるけどもう時間があまりない…"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_005",
+      "String": "「{1}」は引き取れるふわふわの新しい猫。でも「{0}」イベントがもうすぐ終わっちゃう！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_001",
+      "String": "すべての<CAT_STATION_PLURAL>に誰も入ってないよ！猫たちはきっともっと遊びたがってるはず！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_002",
+      "String": "すべての猫が<CAT_STATION_PLURAL>を使い終わってるね。また列に入れるといいかも？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_003",
+      "String": "時間があるときに、空の<CAT_STATION_PLURAL>に猫を入れるのをお忘れなく！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_004",
+      "String": "むむ…、<CAT_STATION_PLURAL>に空きがあるんじゃないかな…"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_005",
+      "String": "おっと、もう時間かな？！<CAT_STATION_PLURAL>に空きがあるかチェックしよう！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_006",
+      "String": "おっと、空の<CAT_STATION>が退屈そう！猫たちを入れてあげない？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_007",
+      "String": "<CAT_STATION_PLURAL>の列に猫を入れる、それがスマートでスタイリッシュってことじゃない？"
+    },
+    {
+      "Key": "EVENT",
+      "String": "イベント"
+    },
+    {
+      "Key": "EVENT_CURRENCY_DESCRIPTION",
+      "String": "現在イベントで使用中"
+    },
+    {
+      "Key": "EVENT_REWARDS",
+      "String": "報酬"
+    },
+    {
+      "Key": "EVENT_TIME_LEFT",
+      "String": "残り時間:"
+    },
+    {
+      "Key": "EVENT_TOTAL",
+      "String": "合計"
+    },
+    {
+      "Key": "EVENT_NEXTGOAL",
+      "String": "次の目標"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_TITLE",
+      "String": "獲得した報酬"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_DESC",
+      "String": "リストに新しい家具が追加されました"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_TITLE",
+      "String": "イベント終了"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_DESC",
+      "String": "イベントは終了しました。未収得の報酬はリストに追加してあります"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_TITLE",
+      "String": "イベント完了"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_DESC",
+      "String": "おめでとう！イベントを完了しました。プレイを続けてどんどん報酬を獲得しよう"
+    },
+    {
+      "Key": "TODO_TUTORIAL",
+      "String": "まずはチュートリアルのタスクを完了しよう"
+    },
+    {
+      "Key": "TOKEN_DESCRIPTION",
+      "String": "スペースのカスタマイズに使用"
+    },
+    {
+      "Key": "HC_DESCRIPTION",
+      "String": "バスケットを急がせるのに使用"
+    },
+    {
+      "Key": "NO_CATS_AT_LEVEL_FEEDBACK",
+      "String": "現在、レベル{0}以上のネコは全員取り込み中です"
+    },
+    {
+      "Key": "NO_CATS_FEEDBACK",
+      "String": "活動可能なネコがいません！"
+    },
+    {
+      "Key": "note about buying HC",
+      "String": "ショップでもっと購入できます。"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_TITLE",
+      "String": "接続がありません"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_DESC",
+      "String": "サーバーに接続することができません。インターネット接続を確認してもう一度お試しください"
+    },
+    {
+      "Key": "VIDEO_INTERRUPTED_DESCRIPTION",
+      "String": "動画再生が中断されました。別の動画を準備中ですので、こちらをお楽しみください。"
+    },
+    {
+      "Key": "VIDEO_ERROR_DESCRIPTION",
+      "String": "動画再生でエラーが発生しました。別の動画を準備中ですが、エラーが続く場合は当社のラブリーなサポートチームまでお問い合わせください。"
+    },
+    {
+      "Key": "VIDEO_BUTTON_REWARD",
+      "String": "報酬x{0}"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_TITLE",
+      "String": "楽しいかニャ？"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_TITLE",
+      "String": "レビュー"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_TITLE",
+      "String": "フィードバック"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY",
+      "String": "Furistasをプレイしてくださり、ありがとうございます！本ゲームの感想をぜひお聞かせください"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_BODY",
+      "String": "そう聞いてとてもうれしいです！よろしければレビューを書いてくれませんか？"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_BODY",
+      "String": "それはとても残念です！フィードバックを通じて改善点を教えてくれませんか？"
+    },
+    {
+      "Key": "SNAPSHOT_TITLE",
+      "String": "思い出の瞬間をカタチに"
+    },
+    {
+      "Key": "SNAPSHOT_SUBTITLE",
+      "String": "シェアする相手"
+    },
+    {
+      "Key": "DEVICE",
+      "String": "デバイス"
+    },
+    {
+      "Key": "SNAPSHOT_SOFTGUIDENCE",
+      "String": "写真を撮るには、ボックスをドラッグしてタップしよう"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_TITLE",
+      "String": "写真のシェア完了！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_DESCRIPTION",
+      "String": "ソーシャルメディアで写真がシェアされました。"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_TITLE",
+      "String": "写真のシェアに失敗！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_DESCRIPTION",
+      "String": "何らかのエラーが発生し、写真をシェアすることができませんでした。"
+    },
+    {
+      "Key": "TAP_DRAG_PROMOT",
+      "String": "タップ/ドラッグ"
+    },
+    {
+      "Key": "SHELF_TWITTER_DESCRIPTION",
+      "String": "Twitterでフォローして、{0} <HC>を獲得しよう"
+    },
+    {
+      "Key": "SHELF_FACEBOOK_DESCRIPTION",
+      "String": "Facebookで「いいね！」を押して、{0}を獲得しよう<HC>"
+    },
+    {
+      "Key": "SHELF_INSTAGRAM_DESCRIPTION",
+      "String": "Instagramでフォローして、{0}を獲得しよう<HC>"
+    },
+    {
+      "Key": "SHELF_EMAIL_DESCRIPTION",
+      "String": "ニュースレターに登録して、{0}<HC>を獲得しよう"
+    },
+    {
+      "Key": "INPUT_EMAIL_DESCRIPTION",
+      "String": "Eメールアドレスを入力してRunaway Playのニュースレターに登録。"
+    },
+    {
+      "Key": "LIKE",
+      "String": "いいね！"
+    },
+    {
+      "Key": "FOLLOW",
+      "String": "フォロー"
+    },
+    {
+      "Key": "SIGN_UP",
+      "String": "登録"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_TITLE",
+      "String": "購入できません"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_DESC",
+      "String": "既に所持している重要なアイテムが含まれるため、このパックは購入できません。"
+    },
+    {
+      "Key": "MAX",
+      "String": "最大"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED",
+      "String": "アップデート推奨"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED_DESCRIPTION",
+      "String": "新バージョンが入手可能です！ 今すぐアップデートして、あなたのカフェのエキサイティングな変更を確認しますか？"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_TITLE",
+      "String": "{0}が足りません"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_DESCRIPTION",
+      "String": "あらら！ {0}が足りないようです。ショップで追加しますか？"
+    },
+    {
+      "Key": "FURNITURE_DRAG_REMOVE_HINT",
+      "String": "削除するには、家具を下にドラッグ"
+    },
+    {
+      "Key": "TOP_UP_ITEMS",
+      "String": "アイテム入手"
+    },
+    {
+      "Key": "CAT_AS_EVENT_REWARD",
+      "String": "{0}が引き取られるのを楽しみにしています！"
+    },
+    {
+      "Key": "CAT_CLAIMED_TITLE",
+      "String": "新たなネコを引き取りました"
+    },
+    {
+      "Key": "CAT_CLAIMED_DESCRIPTION",
+      "String": "{0}があなたのカフェのニューフェイスとして加わりました。カワイイ！"
+    },
+    {
+      "Key": "NEWS_PAGE_TITLE",
+      "String": "お知らせ"
+    },
+    {
+      "Key": "PERMISSION_DENIED_TITLE",
+      "String": "権限がありません"
+    },
+    {
+      "Key": "PERMISSION_DENIED_BODY",
+      "String": "ネコの写真を撮るには、ストレージ権限が必要です。"
+    },
+    {
+      "Key": "PERMISSION_DENIED_PERMANENTLY_BODY",
+      "String": "ネコの写真を撮るには、アプリの権限設定でFuristasにストレージ権限を付与する必要があります。"
+    },
+    {
+      "Key": "ERROR_DLC_TITLE",
+      "String": "アップデートを再試行"
+    },
+    {
+      "Key": "ERROR_DLC_DESC",
+      "String": "おっと。アップデートの取得中にエラーが発生しました。ボタンをタップして再度お試しください"
+    },
+    {
+      "Key": "NEED_HC",
+      "String": "<HC_PLURAL>が足りません"
+    },
+    {
+      "Key": "LIMITED_OFFER_HEADING",
+      "String": "期間限定サービス"
+    },
+    {
+      "Key": "LIMITED_TIME_HEADING",
+      "String": "期間限定サービス"
+    },
+    {
+      "Key": "FULL_CAFE_PHOTO",
+      "String": "カフェ全体を撮影"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_TITLE",
+      "String": "確認"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_DESCRIPTION",
+      "String": "‘{0}’を{1} <TOKEN_PLURAL>にリサイクルしますか？"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_TITLE",
+      "String": "確認"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_DESCRIPTION",
+      "String": "本当にカフェから家具をぜんぶ削除する？"
+    },
+    {
+      "Key": "FURISTAS_CLUB_MEMBERSHIP",
+      "String": "Furistasクラブメンバーシップ"
+    },
+    {
+      "Key": "EXCLUSIVE",
+      "String": "限定！"
+    },
+    {
+      "Key": "FCM_PERK1",
+      "String": "デイリー報酬"
+    },
+    {
+      "Key": "FCM_PERK2",
+      "String": "特別な限定コンテンツ"
+    },
+    {
+      "Key": "FCM_PERK3",
+      "String": "追加のバスケット保管"
+    },
+    {
+      "Key": "FCM_PERK4",
+      "String": "ショップ割引"
+    },
+    {
+      "Key": "TAP_FOR_DETAILS",
+      "String": "タップして詳しく見る"
+    },
+    {
+      "Key": "MEMBER_NO_DESCRIPTION",
+      "String": "Furistasクラブメンバーシップを購入すると、さまざまな特典が手に入るよ！"
+    },
+    {
+      "Key": "INSTANT_CURRENCY_LABEL",
+      "String": "通貨を即獲得"
+    },
+    {
+      "Key": "DAILY_BONUS_LABEL",
+      "String": "デイリー ボーナス"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT_LABEL",
+      "String": "限定のネコ"
+    },
+    {
+      "Key": "PERKS_LABEL",
+      "String": "他の 特典"
+    },
+    {
+      "Key": "FCM_OTHER_PERK1",
+      "String": "限定家具を入手可能"
+    },
+    {
+      "Key": "FCM_OTHER_PERK2",
+      "String": "最大6個のバスケットを保持"
+    },
+    {
+      "Key": "FCM_OTHER_PERK3",
+      "String": "最大3個のボーナスバスケットを保持"
+    },
+    {
+      "Key": "FCM_OTHER_PERK4",
+      "String": "ショップ割引"
+    },
+    {
+      "Key": "DAY_MEMBERSHIP",
+      "String": "{0}日間メンバーシップ："
+    },
+    {
+      "Key": "FCM_CURRENCY_READY",
+      "String": "受け取り可能なデイリー報酬"
+    },
+    {
+      "Key": "FCM_CURRENCY_UNAVAILABLE",
+      "String": "受け取り済みのデイリー報酬"
+    },
+    {
+      "Key": "DAYS_LEFT",
+      "String": "残り日数"
+    },
+    {
+      "Key": "DAY_LEFT",
+      "String": "残り日数"
+    },
+    {
+      "Key": "DAYS_LEFT_FORMATTABLE",
+      "String": "残り{0}日"
+    },
+    {
+      "Key": "CLAIM",
+      "String": "獲得"
+    },
+    {
+      "Key": "MEMBER_YES_TITLE",
+      "String": "Furistasクラブメンバーになりました！"
+    },
+    {
+      "Key": "FCM_CURRENT_MEMBER_DESCRIPTION",
+      "String": "Furistasクラブに入会いただきありがとうございます！現在、次の特典が有効になっています。"
+    },
+    {
+      "Key": "FCM_ABBREVIATION",
+      "String": "FCM"
+    },
+    {
+      "Key": "SPECIAL_DEAL",
+      "String": "特別セール"
+    },
+    {
+      "Key": "FCM_RENEW_TITLE",
+      "String": "<FURISTAS_CLUB_MEMBERSHIP>"
+    },
+    {
+      "Key": "DISCOUNT_AMOUNT",
+      "String": "本日限定サービス"
+    },
+    {
+      "Key": "FCM_RENEW_DESCRIPTION",
+      "String": "Furistasクラブに入会いただきありがとうございます！午前0時まで、追加の30日間を特別な割引価格で利用できます。"
+    },
+    {
+      "Key": "FCM_DAY_MEMBERSHIP_RENEW",
+      "String": "{0}日間メンバーシップを更新："
+    },
+    {
+      "Key": "BONUS_LABEL",
+      "String": "ボーナス！"
+    },
+    {
+      "Key": "INCENTIVISED_SHARE_FEEDBACK_DESCRIPTION",
+      "String": "あなたの写真がシェアされ、{0} <FISH_PLURAL>を獲得しました！"
+    },
+    {
+      "Key": "NO_CATS_WITH_TRAIT_FEEDBACK",
+      "String": "現在、「{0}」のネコは全員取り込み中です"
+    },
+    {
+      "Key": "NO_SPECIFIC_CAT_FEEDBACK",
+      "String": "現在、{0}は取り込み中です"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_BASKET",
+      "String": "<DELIVERY_BASKET_GREAT> 2時間"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_EXPLANATION",
+      "String": "今すぐバスケットを入手しますか？"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_TITLE",
+      "String": "イベントブースター"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_DESCRIPTION",
+      "String": "このパックがあれば、イベント終了時まで追加のイベントポイントを獲得できます！"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_AVAILABLE",
+      "String": "イベントブースト入手可能"
+    },
+    {
+      "Key": "EVENT_PACK_AVAILABLE_SHORT_DESCRIPTION",
+      "String": "{0}%ﾎﾞｰﾅｽ!"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_ACTIVE",
+      "String": "イベントブースト有効"
+    },
+    {
+      "Key": "EVENT_PACK_SHORT_DESCRIPTION",
+      "String": "{1}{0}%増"
+    },
+    {
+      "Key": "SHELF_GAME_INCENTIVE",
+      "String": "{0}をプレイして{1}<HC>を獲得しよう"
+    },
+    {
+      "Key": "RECOVER_NO_ACCOUNTS_FOUND",
+      "String": "このデバイスのアカウントが見つかりませんでした"
+    },
+    {
+      "Key": "SNAPSHOT_SIZE",
+      "String": "サイズ"
+    },
+    {
+      "Key": "OFFLINE_ERROR_TITLE",
+      "String": "オフライン中にエラー"
+    },
+    {
+      "Key": "OFFLINE_ERROR_DESC",
+      "String": "オフラインモードの エラーが発生しました。 ゲームが再起動されて、 プレイを続けられるように なるはずですが、問題が 解決しない場合は お問い合わせください。"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_TITLE",
+      "String": "ローカルデータの読み込みエラー"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_DESCRIPTION",
+      "String": "ローカルデータを読み込む際にエラーが発生しました。オンラインになってゲームの再起動を行ってください。"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_TITLE",
+      "String": "新しいデータが見つかりました"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_DESCRIPTION",
+      "String": "ローカルのセーブデータがオンラインのセーブデータの最新状態になっていません。ゲームがより新しいデータを使って再起動します。"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_TITLE",
+      "String": "オフライン決済"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_DESCRIPTION",
+      "String": "決済中にお使いのデバイスがオフラインになりました。購入は次にオンラインになったときに表示されます。"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_TITLE",
+      "String": "<OFFLINE_ERROR_TITLE>"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_DESCRIPTION",
+      "String": "オンラインになって新しくゲームを始めてください。その後でFuristasを好きなだけオフラインでプレイできます！"
+    },
+    {
+      "Key": "REWARD_VIP",
+      "String": "新しいVIP"
+    },
+    {
+      "Key": "REWARD_STATION",
+      "String": "新しい<CAT_STATION>"
+    },
+    {
+      "Key": "COLLECTED",
+      "String": "集めました！"
+    },
+    {
+      "Key": "CAT_LOUNGE",
+      "String": "キャットラウンジ"
+    },
+    {
+      "Key": "CATHEART",
+      "String": "ネコ幸福度"
+    },
+    {
+      "Key": "CATHEART_PLURAL",
+      "String": "ネコ幸福度"
+    },
+    {
+      "Key": "BOOSTER",
+      "String": "ブースト"
+    },
+    {
+      "Key": "BOOSTER_PLURAL",
+      "String": "ブースト"
+    },
+    {
+      "Key": "CAT_STATION",
+      "String": "アクティビティ"
+    },
+    {
+      "Key": "CAT_STATION_PLURAL",
+      "String": "アクティビティ"
+    },
+    {
+      "Key": "STATION_INVENTORY_MENU_TITLE",
+      "String": "<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "CAT_STATION_ITEM_DESC",
+      "String": "<CAT_STATION>のアップグレードアイテム"
+    },
+    {
+      "Key": "CAT_STATION_UPGRADE_ITEM_DESCRIPTION",
+      "String": "<CAT_STATION>のアップグレードアイテム"
+    },
+    {
+      "Key": "CAT_STATION_INFO_PANEL_TITLE",
+      "String": "<CAT_STATION>のアップグレード"
+    },
+    {
+      "Key": "CAT_STATION_INFO_REQUIREMENT_TITLE",
+      "String": "必要な材料:"
+    },
+    {
+      "Key": "CAT_STATION_INFO_NEXT_REWARD_TITLE",
+      "String": "次の報酬:"
+    },
+    {
+      "Key": "CAT_STATION_LEVEL_UNLOCKED",
+      "String": "アンロックレベル:"
+    },
+    {
+      "Key": "STATIONREWARD_QUEUEINCREASE",
+      "String": "列を{0}に増加"
+    },
+    {
+      "Key": "STATIONREWARD_BOOSTUPGRADE",
+      "String": "「{0}」ブーストをアップグレード"
+    },
+    {
+      "Key": "STATION_001_NAME",
+      "String": "グルメなごちそう"
+    },
+    {
+      "Key": "STATION_002_NAME",
+      "String": "ネズミたたき"
+    },
+    {
+      "Key": "STATION_003_NAME",
+      "String": "にゃんこカラオケ"
+    },
+    {
+      "Key": "STATION_004_NAME",
+      "String": "毛玉のバスケット"
+    },
+    {
+      "Key": "STATION_005_NAME",
+      "String": "ヨガスタジオ"
+    },
+    {
+      "Key": "STATION_006_NAME",
+      "String": "美猫の館"
+    },
+    {
+      "Key": "STATION_001_ONELINER",
+      "String": "猫にこそご馳走を"
+    },
+    {
+      "Key": "STATION_002_ONELINER",
+      "String": "最速の前脚が勝利する"
+    },
+    {
+      "Key": "STATION_003_ONELINER",
+      "String": "スターは君だニャン"
+    },
+    {
+      "Key": "STATION_004_ONELINER",
+      "String": "創造性を発揮しよう"
+    },
+    {
+      "Key": "STATION_005_ONELINER",
+      "String": "リラックスして毛づくろい…"
+    },
+    {
+      "Key": "STATION_006_ONELINER",
+      "String": "じっと見てよく考える"
+    },
+    {
+      "Key": "STATION_001_DESCRIPTION",
+      "String": "人気急上昇中のイーストキャットコーナー地区の美しい風景を望む「キャットグルメ」は、美味しいゼラチン肉と爽やかな水道水を組み合わせて、違いの分かる猫のための食事を提供してるんだ。"
+    },
+    {
+      "Key": "STATION_002_DESCRIPTION",
+      "String": "次世代のネズミシミュレーション技術（RST4）を使用している「ネズミたたき」は、比類なき没入感をを提供するために丹念に開発されたんだ。ネズミたちを叩けるのはタフな猫だけ、君にそのタフさがあるかい？"
+    },
+    {
+      "Key": "STATION_003_DESCRIPTION",
+      "String": "「にゃんこカラオケ」でお気に入りのヒット曲を歌って観衆を大いに沸かせよう！ストロボライトと美しくもよくわかんないビデオ付き。パーティーを始め、君の才能を披露しよう！"
+    },
+    {
+      "Key": "STATION_004_DESCRIPTION",
+      "String": "「毛玉のバスケット」では自分をミイラ男みたいにしちゃうとか、しっぽと毛糸に飛びかかるとか、安心安全でバラエティに富んだDIYプロジェクトを猫たちに提供するよ。子猫から職人まで、高品質のウールで夢見てきた毛糸の作品を作っちゃおう。"
+    },
+    {
+      "Key": "STATION_005_DESCRIPTION",
+      "String": "猫の健康はかけがえのないもの。キャットコーナーの「ヨガスタジオ」で日々の忙しさから離れて、体と再び優しくつながり、精神を落ち着かせ、9回の猫生を最高に生きるために必要なスペースを確保しましょう。"
+    },
+    {
+      "Key": "STATION_006_DESCRIPTION",
+      "String": "歴史的邸宅である「美猫館」は長きに渡って、我々の時代で最も優れた思想家たちを受け入れてきました。数え切れないほどの天才たちが屋上から、世界で起こっていることを見つめ、猫の人生（猫生）の謎を思索したのです。"
+    },
+    {
+      "Key": "QUEUE_SIZE",
+      "String": "列のサイズ"
+    },
+    {
+      "Key": "QUEUE_TITLE",
+      "String": "列"
+    },
+    {
+      "Key": "FULL",
+      "String": "満員"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_TITLE",
+      "String": "定員"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_DESCRIPTION",
+      "String": "これは<CAT_STATION>に同時に入れられる猫の数を示します。\\n\\n列に入っている猫は、列の前にいた猫が使用を終了すると、自動的に<CAT_STATION>を使い始めます。"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_TITLE",
+      "String": "レベル"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_DESCRIPTION",
+      "String": "これはステーションのレベルです。材料と<CATHEART_PLURAL>を使ってステーションをアップグレードすることで、定員を増やしたり、カフェの助けとなる<BOOSTER_PLURAL>を提供してくれます。"
+    },
+    {
+      "Key": "STATIONINFO_ITEM_TOOLTIP_DESCRIPTION",
+      "String": "<CAT_STATION_PLURAL>のレベルアップと<BOOSTER_PLURAL>の購入に使います。アイテムはラウンジの招き猫で<CATHEART_PLURAL>を使用することで獲得できます。"
+    },
+    {
+      "Key": "STATIONINFO_CATHEART_TOOLTIP_DESCRIPTION",
+      "String": "猫のハートはラウンジで猫を<CAT_STATION_PLURAL>に入れることで獲得できます。"
+    },
+    {
+      "Key": "STATIONINFO_UPGRADE_DENIAL_PREV_STATIONS",
+      "String": "前の<CAT_STATION>はレベル2以上である必要があります"
+    },
+    {
+      "Key": "BOOST_001_NAME",
+      "String": "追加ハート"
+    },
+    {
+      "Key": "BOOST_002_NAME",
+      "String": "追加アイテム"
+    },
+    {
+      "Key": "BOOST_003_NAME",
+      "String": "追加フィッシュ"
+    },
+    {
+      "Key": "BOOST_004_NAME",
+      "String": "高速バスケット"
+    },
+    {
+      "Key": "BOOST_001_DESC",
+      "String": "お客さんから多くハートを獲得"
+    },
+    {
+      "Key": "BOOST_002_DESC",
+      "String": "バスケットで獲得するボーナスアイテム"
+    },
+    {
+      "Key": "BOOST_003_DESC",
+      "String": "フィッシュ獲得を増加"
+    },
+    {
+      "Key": "BOOST_004_DESC",
+      "String": "バスケットのデリバリー時間を短縮"
+    },
+    {
+      "Key": "BONUS_PERCENTAGE",
+      "String": "ボーナス+{0}%"
+    },
+    {
+      "Key": "ACTIVE",
+      "String": "有効"
+    },
+    {
+      "Key": "LUCKY_CAT_MENU_BUTTON_HINT",
+      "String": "お腹を触って"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_TITLE",
+      "String": "キャットラウンジにようこそ"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION1",
+      "String": "ここは猫がアクティビティを楽しんで、リラックスできる場所だよ！"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION2",
+      "String": "ここに時間をかけていくことで、より多くのアクティビティ、限定家具、カフェの助けとなるブーストをアンロックできるんだ。"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION3",
+      "String": "画面下の指示に従ってやり方を見てみよう。"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_TITLE",
+      "String": "まとめ"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC",
+      "String": "アクティビティから<CATHEART_PLURAL>を獲得し、招き猫で使って材料を入手し、これを使ってラウンジとカフェに役立つアイテムを購入しよう！"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC2",
+      "String": "これがキャットラウンジを繁栄する猫の王国へと変化させるための基本だよ！"
+    },
+    {
+      "Key": "BOOST_INTRO_TITLE",
+      "String": "カフェブーストをアンロック"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION1",
+      "String": "アップグレードアイテムを使うことで、カフェの一時的なブーストの購入もできるんだ！"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION2",
+      "String": "ブーストはハートやフィッシュ、アイテムの獲得量を増やして、カフェの発展を助けてくれる。"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION3",
+      "String": "ブーストはキャットラウンジをアップグレードすること効果を上げられるよ。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT1",
+      "String": "<CAT_PLURAL>を<CAT_STATION_PLURAL>に入れることで獲得"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT2",
+      "String": "<CATHEART_PLURAL>を獲得して、招き猫からさらにアイテムを手に入れよう"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT3",
+      "String": "レベルの高い猫からはより多くの<CATHEART_PLURAL>が獲得できる"
+    },
+    {
+      "Key": "OFFERS",
+      "String": "オファー"
+    },
+    {
+      "Key": "SURVEY_OFFER",
+      "String": "<HC>のアンケート"
+    },
+    {
+      "Key": "SURVEY_OFFER_DESCRIPTION",
+      "String": "外部の調査グループによるアンケートに参加してキャットマネーを獲得しよう！"
+    },
+    {
+      "Key": "SEE_SURVEYS",
+      "String": "アンケートを見る"
+    },
+    {
+      "Key": "EARNED_CURRENCY_TITLE",
+      "String": "<HC>を受け取りました"
+    },
+    {
+      "Key": "EARNED_CURRENCY_DESC",
+      "String": "{0} <HC>を獲得！"
+    },
+    {
+      "Key": "LOUNGE_REWARD_TITLE",
+      "String": "招き猫ボーナス！"
+    },
+    {
+      "Key": "NEW_GAME_OFFLINE_LABEL",
+      "String": "オンラインになって新しくゲームを始めてください"
+    },
+    {
+      "Key": "VIP_INVENTORY_MENU_TITLE",
+      "String": "VIPリスト"
+    },
+    {
+      "Key": "INTERSTITIAL_INTRO_DESC",
+      "String": "次のスポンサーの提供でお送りしています…"
+    },
+    {
+      "Key": "RETAILDEMO_INTRO",
+      "String": "このバージョンの猫カフェ Furistasルは、デモ用に特別に作成されたものです"
+    },
+    {
+      "Key": "OFFERWALL",
+      "String": "<HC>のオファー"
+    },
+    {
+      "Key": "OFFERWALL_DESCRIPTION",
+      "String": "オファーに参加してキャットマネーを獲得しよう！"
+    },
+    {
+      "Key": "SEE_OFFERWALL",
+      "String": "オファーを見る"
+    },
+    {
+      "Key": "PERSONALITY_TAG",
+      "String": "‘{0}’ タグ"
+    },
+    {
+      "Key": "RARITY_GEM",
+      "String": "{0} ジェム"
+    },
+    {
+      "Key": "PERSONALITY_ITEM_DESC",
+      "String": "ネコのアップグレード用の個性アイテム"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_TITLE",
+      "String": "新アイテム"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_DESC",
+      "String": "Furistasのアイテムシステムがアップデートされて、ネコの世話に必要なアイテムが分かりやすくなりました！\\n\\nあなたが過去に獲得していたアイテムは新たなシステムに移行されました。\\n\\nこれからもお楽しみください！"
+    },
+    {
+      "Key": "ALL_CATS_REENERGIZED",
+      "String": "すべてのネコが元気になって、次にマッチングしたときにXPを獲得します。"
+    },
+    {
+      "Key": "CAT_REENERGIZED",
+      "String": "ネコが元気になりました！"
+    },
+    {
+      "Key": "LOGIN_APPLE",
+      "String": "Appleでサインイン"
+    },
+    {
+      "Key": "ACHIEVEMENTS",
+      "String": "成績"
+    },
+    {
+      "Key": "LEADERBOARDS",
+      "String": "Leaderboard"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_TITLE",
+      "String": "アカウントに接続しました"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_DESC",
+      "String": "アカウントに接続されています"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_TITLE",
+      "String": "アカウント接続に失敗"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_DESC",
+      "String": "何らかの問題により、アカウントに接続できませんでした"
+    },
+    {
+      "Key": "MAIL_RECEIVED_TITLE",
+      "String": "メールが届いています！"
+    },
+    {
+      "Key": "MAIL_RECEIVED_DESC",
+      "String": "Runawayから、あなたへのギフト:"
+    },
+    {
+      "Key": "LOGIN_BONUS_TITLE",
+      "String": "ログインボーナス"
+    },
+    {
+      "Key": "LOGIN_BONUS_DESCRIPTION",
+      "String": "毎日戻ってきて、新たな報酬を受け取りましょう！"
+    },
+    {
+      "Key": "LOGIN_BONUS_COUNTDOWN",
+      "String": "次の報酬まで{0}。"
+    },
+    {
+      "Key": "LOGIN_BONUS_COMPLETE",
+      "String": "すべての報酬を獲得しました。"
+    },
+    {
+      "Key": "LOGIN_BONUS_DAY",
+      "String": "{0}日目"
+    },
+    {
+      "Key": "NOTIFICATION_LOGINBONUS",
+      "String": "<FURISTAS_CAT_CAFE>に毎日ログインして、特別な新しいネコちゃん<CAT_NAME_068>をお迎えしましょう！"
+    },
+    {
+      "Key": "REPORT_ERROR",
+      "String": "エラーを報告する"
+    },
+    {
+      "Key": "CONTACT_SUPPORT",
+      "String": "サポートに問い合わせる"
+    },
+    {
+      "Key": "GET",
+      "String": "入手"
+    },
+    {
+      "Key": "CATEGORIES",
+      "String": "カテゴリー…"
+    },
+    {
+      "Key": "TAG_ALL",
+      "String": "すべて"
+    },
+    {
+      "Key": "TAG_CUTE",
+      "String": "キュート"
+    },
+    {
+      "Key": "TAG_SWEET",
+      "String": "スイート"
+    },
+    {
+      "Key": "TAG_ZANY",
+      "String": "ユニーク"
+    },
+    {
+      "Key": "TAG_GOTHIC",
+      "String": "ゴシック"
+    },
+    {
+      "Key": "TAG_ARTS_AND_CRAFTS",
+      "String": "アート"
+    },
+    {
+      "Key": "TAG_FANCY",
+      "String": "ファンシー"
+    },
+    {
+      "Key": "TAG_RUSTIC",
+      "String": "素朴"
+    },
+    {
+      "Key": "TAG_HOMELY",
+      "String": "家庭的"
+    },
+    {
+      "Key": "TAG_NATURE",
+      "String": "自然"
+    },
+    {
+      "Key": "TAG_PLANTS",
+      "String": "植物"
+    },
+    {
+      "Key": "TAG_ASIAN",
+      "String": "アジア"
+    },
+    {
+      "Key": "TAG_PURCHASES",
+      "String": "購入"
+    },
+    {
+      "Key": "TAG_FCM",
+      "String": "Furistasクラブ"
+    },
+    {
+      "Key": "TAG_HOLIDAY",
+      "String": "ホリデー"
+    },
+    {
+      "Key": "TAG_BASIC",
+      "String": "基本"
+    },
+    {
+      "Key": "TAG_BONUS",
+      "String": "ボーナス"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_TOKENS",
+      "String": "<TOKEN>2倍ボーナス！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_TOKENS",
+      "String": "トークン大放出"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_TOKENS",
+      "String": "ミニゲームや本日のタスクを完了したり、ネコの世話をしたりして、2倍の<TOKEN_PLURAL>を獲得しよう。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_FISH",
+      "String": "<FISH_PLURAL>ボーナス！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_FISH",
+      "String": "祝・フィッシュ2倍"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_FISH",
+      "String": "イベント開催中に、バスケットから2倍の<FISH_PLURAL>を獲得しよう。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_CURRENCY",
+      "String": "報酬2倍イベント!"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_CURRENCY",
+      "String": "リッチになるチャンス"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_CURRENCY",
+      "String": "イベント開催中に、2倍の<FISH_PLURAL>と<TOKEN_PLURAL>を獲得しよう。"
+    },
+    {
+      "Key": "EVENT_NAME_CATNIP",
+      "String": "キャットニップのカオス"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATNIP",
+      "String": "キャットニップイベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP",
+      "String": "キャットニップ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP_PLURAL",
+      "String": "キャットニップ"
+    },
+    {
+      "Key": "EVENT_DESC_CATNIP",
+      "String": "デリバリーバスケットからキャットニップを獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_MATATABI",
+      "String": "マタタビ愛好家"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MATATABI",
+      "String": "マタタビイベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI",
+      "String": "マタタビ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI_PLURAL",
+      "String": "マタタビ"
+    },
+    {
+      "Key": "EVENT_DESC_MATATABI",
+      "String": "デリバリーバスケットからマタタビ入りのネコのおやつを獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERBALL",
+      "String": "紙ボールイベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERBALL",
+      "String": "紙ボールアタック"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL_PLURAL",
+      "String": "紙ボール"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL",
+      "String": "紙ボール"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERBALL",
+      "String": "バスケットからくしゃくしゃの紙ボールを獲得して、クールな報酬と交換しよう"
+    },
+    {
+      "Key": "EVENT_NAME_LEAF",
+      "String": "落ち葉遊び"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LEAF",
+      "String": "落ち葉イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF",
+      "String": "落ち葉"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF_PLURAL",
+      "String": "落ち葉"
+    },
+    {
+      "Key": "EVENT_DESC_LEAF",
+      "String": "落ち葉を集めて豪華な報酬を獲得できるって！？それは、やらなきゃ損！デリバリーバスケットから落ち葉を獲得しよう"
+    },
+    {
+      "Key": "EVENT_NAME_MOUSECANDY",
+      "String": "お化けのおやつ"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MOUSECANDY",
+      "String": "ネズミのキャンディーコーンイベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY",
+      "String": "ネズミのキャンディーコーン"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY_PLURAL",
+      "String": "ネズミのキャンディーコーン"
+    },
+    {
+      "Key": "EVENT_DESC_MOUSECANDY",
+      "String": "デリバリーバスケットからネズミのキャンディーコーンを獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_CATORNAMENT",
+      "String": "ニャン友クリスマス"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATORNAMENT",
+      "String": "ニャン友クリスマスイベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT",
+      "String": "ネコのオーナメント"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT_PLURAL",
+      "String": "ネコのオーナメント"
+    },
+    {
+      "Key": "EVENT_DESC_CATORNAMENT",
+      "String": "デリバリーバスケットからネコのオーナメントを獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_HEARTCATNIP",
+      "String": "にゃんこバレンタイン"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_HEARTCATNIP",
+      "String": "<EVENT_NAME_HEARTCATNIP>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP",
+      "String": "ハートのキャットニップ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP_PLURAL",
+      "String": "ハートのキャットニップ"
+    },
+    {
+      "Key": "EVENT_DESC_HEARTCATNIP",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_HEARTCATNIP_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_SHAMROCK",
+      "String": "クローバーのお守り"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_SHAMROCK",
+      "String": "<EVENT_NAME_SHAMROCK>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK",
+      "String": "クローバー"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK_PLURAL",
+      "String": "クローバー"
+    },
+    {
+      "Key": "EVENT_DESC_SHAMROCK",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_SHAMROCK_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_EGG",
+      "String": "エッグハント"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_EGG",
+      "String": "<EVENT_NAME_EGG>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG",
+      "String": "卵"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG_PLURAL",
+      "String": "卵"
+    },
+    {
+      "Key": "EVENT_DESC_EGG",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_EGG_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_WORLDCATDAY",
+      "String": "世界猫の日"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_WORLDCATDAY",
+      "String": "<EVENT_NAME_WORLDCATDAY>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_DESC_WORLDCATDAY",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_HEARTCATNIP_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_MARACA",
+      "String": "アルテサニア"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARACA",
+      "String": "<EVENT_NAME_MARACA>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA",
+      "String": "マラカ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA_PLURAL",
+      "String": "マラカ"
+    },
+    {
+      "Key": "EVENT_DESC_MARACA",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_MARACA_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_GALA",
+      "String": "豪華な祝宴"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_GALA",
+      "String": "<EVENT_NAME_GALA>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_NAME_THANKSGIVING",
+      "String": "感謝祭"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_THANKSGIVING",
+      "String": "<EVENT_NAME_THANKSGIVING>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_NAME_LUNARNEWYEAR",
+      "String": "春節"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LUNARNEWYEAR",
+      "String": "<EVENT_NAME_LUNARNEWYEAR>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_NAME_POTION",
+      "String": "不気味なエリクサー"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_POTION",
+      "String": "<EVENT_NAME_POTION>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION",
+      "String": "怪しいポーション"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION_PLURAL",
+      "String": "怪しいポーション"
+    },
+    {
+      "Key": "EVENT_DESC_POTION",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_POTION_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_COLORFULFEATHER",
+      "String": "サンバのお祭り"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_COLORFULFEATHER",
+      "String": "<EVENT_NAME_COLORFULFEATHER>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER",
+      "String": "カラフルな羽根"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER_PLURAL",
+      "String": "カラフルな羽根"
+    },
+    {
+      "Key": "EVENT_DESC_COLORFULFEATHER",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_COLORFULFEATHER_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_MARSHMALLOW",
+      "String": "キュートなパーティー"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARSHMALLOW",
+      "String": "<EVENT_NAME_MARSHMALLOW>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW",
+      "String": "マシュマロ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW_PLURAL",
+      "String": "マシュマロ"
+    },
+    {
+      "Key": "EVENT_DESC_MARSHMALLOW",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_MARSHMALLOW_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_CUPCAKE",
+      "String": "スイーツ大好き"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CUPCAKE",
+      "String": "<EVENT_NAME_CUPCAKE>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE",
+      "String": "カップケーキ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE_PLURAL",
+      "String": "カップケーキ"
+    },
+    {
+      "Key": "EVENT_DESC_CUPCAKE",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_CUPCAKE_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_ZANYSPRING",
+      "String": "おもちゃで遊ぼう"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_ZANYSPRING",
+      "String": "<EVENT_NAME_ZANYSPRING>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING",
+      "String": "おもちゃスプリング"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING_PLURAL",
+      "String": "おもちゃスプリング"
+    },
+    {
+      "Key": "EVENT_DESC_ZANYSPRING",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_ZANYSPRING_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_BLACKROSE",
+      "String": "ゴシック様式"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BLACKROSE",
+      "String": "<EVENT_NAME_BLACKROSE>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE",
+      "String": "クリスタルローズ"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE_PLURAL",
+      "String": "クリスタルローズ"
+    },
+    {
+      "Key": "EVENT_DESC_BLACKROSE",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_BLACKROSE_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_PAINTBRUSH",
+      "String": "芸術品収集家"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAINTBRUSH",
+      "String": "<EVENT_NAME_PAINTBRUSH>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH",
+      "String": "絵筆"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH_PLURAL",
+      "String": "絵筆"
+    },
+    {
+      "Key": "EVENT_DESC_PAINTBRUSH",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_PAINTBRUSH_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_FANCYSPOON",
+      "String": "最高の贅沢"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_FANCYSPOON",
+      "String": "<EVENT_NAME_FANCYSPOON>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON",
+      "String": "高級スプーン"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON_PLURAL",
+      "String": "高級スプーン"
+    },
+    {
+      "Key": "EVENT_DESC_FANCYSPOON",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_FANCYSPOON_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_PORCELAINCAT",
+      "String": "エレガントでちょっぴり生意気"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PORCELAINCAT",
+      "String": "<EVENT_NAME_PORCELAINCAT>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT",
+      "String": "ネコの置物"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT_PLURAL",
+      "String": "ネコの置物"
+    },
+    {
+      "Key": "EVENT_DESC_PORCELAINCAT",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_PORCELAINCAT_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_RUSTICLURE",
+      "String": "素朴なルアー"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_RUSTICLURE",
+      "String": "<EVENT_NAME_RUSTICLURE>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE",
+      "String": "ルアー"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE_PLURAL",
+      "String": "ルアー"
+    },
+    {
+      "Key": "EVENT_DESC_RUSTICLURE",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_RUSTICLURE_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_BRASSKEY",
+      "String": "‘やっぱり家が一番’"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BRASSKEY",
+      "String": "<EVENT_NAME_BRASSKEY>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY",
+      "String": "真ちゅうの鍵"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY_PLURAL",
+      "String": "真ちゅうの鍵"
+    },
+    {
+      "Key": "EVENT_DESC_BRASSKEY",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_BRASSKEY_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE",
+      "String": "折鶴"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_2",
+      "String": "折鶴"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_3",
+      "String": "折鶴"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERCRANE",
+      "String": "<EVENT_NAME_PAPERCRANE>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE",
+      "String": "折り鶴"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE_PLURAL",
+      "String": "折り鶴"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERCRANE",
+      "String": "デリバリーバスケットから<EVENT_CURRENCY_PAPERCRANE_PLURAL>を獲得してイベントバーをいっぱいにし、ステキな報酬を手に入れよう"
+    },
+    {
+      "Key": "EVENT_NAME_OLD_FRIENDS",
+      "String": "落ち葉遊び"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_OLD_FRIENDS",
+      "String": "<EVENT_NAME_OLD_FRIENDS>イベントへようこそ！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS",
+      "String": "落ち葉"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS_PLURAL",
+      "String": "落ち葉"
+    },
+    {
+      "Key": "EVENT_DESC_OLD_FRIENDS",
+      "String": "<EVENT_CURRENCY_OLD_FRIENDS_PLURAL>を獲得して、Runawayの他のゲーム「<SHELF_OLDFRIENDS_TITLE>」をお祝いしましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_TITLE",
+      "String": "イベントブースター"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_DESCRIPTION",
+      "String": "イベントでいいスタートダッシュを切ろう！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_DESCRIPTION",
+      "String": "このパックがあれば、イベント終了時まで追加のイベントポイントを獲得できます！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_TITLE",
+      "String": "イベントコンプリーター"
+    },
+    {
+      "Key": "LEVEL_NUM",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_HUMAN",
+      "String": "<EVENT_ITEMS_TREAT_PLURAL>を<CUSTOMER_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_HUMAN",
+      "String": "<EVENT_ITEMS_PLANT_PLURAL>を<CUSTOMER_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_HUMAN",
+      "String": "<EVENT_ITEMS_TOY_PLURAL>を<CUSTOMER_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_CAT",
+      "String": "<EVENT_ITEMS_TREAT_PLURAL>を<CAT_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_CAT",
+      "String": "<EVENT_ITEMS_PLANT_PLURAL>を<CAT_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_CAT",
+      "String": "<EVENT_ITEMS_TOY_PLURAL>を<CAT_PLURAL>にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_TITLE",
+      "String": "<CUSTOMER>を手放しますか？"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_DESC",
+      "String": "新しい<CUSTOMER>が来るまで2時間かかります。"
+    },
+    {
+      "Key": "DISMISS_CAT_TITLE",
+      "String": "<CAT>を手放しますか？"
+    },
+    {
+      "Key": "DISMISS_CAT_DESC",
+      "String": "新しい<CAT>が来るまで2時間かかります。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING",
+      "String": "新しい<CUSTOMER>が到着"
+    },
+    {
+      "Key": "CAT_ARRIVING",
+      "String": "新しい<CAT>が到着"
+    },
+    {
+      "Key": "DISMISS_GENERIC_TITLE",
+      "String": "{0}を手放しますか？"
+    },
+    {
+      "Key": "DISMISS_GENERIC_DESC",
+      "String": "新しい{0}が来るまで2時間かかります。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING_GENERIC",
+      "String": "新しい{0}が到着"
+    },
+    {
+      "Key": "EVENT_HURRY",
+      "String": "お急ぎアイテム"
+    },
+    {
+      "Key": "EVENT_HURRY_PLURAL",
+      "String": "お急ぎアイテム"
+    },
+    {
+      "Key": "EVENT_HURRY_DESCRIPTION",
+      "String": "イベントパッケージをすぐにゲット"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT1",
+      "String": "イベントで使ってパッケージをすぐに完了します。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT2",
+      "String": "イベント報酬で獲得可能で、ミステリーボックスから獲得できる場合もあります。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT3",
+      "String": "ショップでもっと購入できます。"
+    },
+    {
+      "Key": "TIER_NUM",
+      "String": "ティア{0}"
+    },
+    {
+      "Key": "BONUS_CHEST_TITLE",
+      "String": "ロック中！"
+    },
+    {
+      "Key": "BONUS_CHEST_DESC",
+      "String": "ミステリーボックスを開けますか？"
+    },
+    {
+      "Key": "BONUS_CHEST_DENY",
+      "String": "やめておく"
+    },
+    {
+      "Key": "BONUS_CHEST_VIDEO",
+      "String": "動画を視聴"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT",
+      "String": "おやつ"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT_PLURAL",
+      "String": "おやつ"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT_PLURAL",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY",
+      "String": "おもちゃ"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY_PLURAL",
+      "String": "おもちゃ"
+    },
+    {
+      "Key": "CARE_EVENT_NAME",
+      "String": "お世話イベント"
+    },
+    {
+      "Key": "CARE_EVENT_ITEM_GENERIC",
+      "String": "お世話イベントアイテム"
+    },
+    {
+      "Key": "CARE_EVENT_PACKAGE_GENERIC",
+      "String": "パッケージ"
+    },
+    {
+      "Key": "CARE_EVENT_FULFILL_REQUEST",
+      "String": "リクエストを完了"
+    },
+    {
+      "Key": "EVENT_DESC_GENERIC",
+      "String": "{0}を{1}にあげて、素敵な報酬を手に入れましょう。"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT",
+      "String": "イベントXP"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT_PLURAL",
+      "String": "イベントXP"
+    },
+    {
+      "Key": "TAP_TO_CLAIM_REWARDS",
+      "String": "タップして報酬をゲット！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_1",
+      "String": "パッケージをタップしてアイテムをゲットしましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2",
+      "String": "アイテムをお客さんにあげましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2_CAT",
+      "String": "アイテムをネコにあげましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_3",
+      "String": "報酬パネルを開きましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_4",
+      "String": "報酬を受け取りましょう！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_5",
+      "String": "報酬パネルを閉じましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_6",
+      "String": "<EVENT_HURRY>を使って、パッケージをすぐに完了しましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_7",
+      "String": "パッケージをタップして、もう一度アイテムをゲットしましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8",
+      "String": "アイテムを新しいお客さんにあげましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8_CAT",
+      "String": "アイテムを新しいネコにあげましょう。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_9",
+      "String": "これでもうわかりましたね！"
+    },
+    {
+      "Key": "EVENT_BOOSTER_ACTIVE",
+      "String": "{0}倍ブースターが有効！"
+    },
+    {
+      "Key": "BUTTON_START_EVENT",
+      "String": "GO！"
+    },
+    {
+      "Key": "NEW_EVENT_STARTING",
+      "String": "新しい「{0}」イベントがスタート"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_KITCHEN",
+      "String": "キッチン"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_GREENHOUSE",
+      "String": "温室"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_WORKSHOP",
+      "String": "工房"
+    },
+    {
+      "Key": "AND_MORE",
+      "String": "その他いろいろ！"
+    },
+    {
+      "Key": "EVENT_BOOST_ALTERNATE_DESCRIPTION",
+      "String": "このイベントでXPが{0}%アップ"
+    },
+    {
+      "Key": "EXCLUSIVE_CUSTOMISATION",
+      "String": "限定<CUSTOMISATION>"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT",
+      "String": "限定<CAT>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_001",
+      "String": "イベントでアイテムを受け取れます！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_002",
+      "String": "イベントのパッケージがありますよ！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_003",
+      "String": "イベントアイテムを受け取れます！中身は何でしょう？"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_004",
+      "String": "イベントで特別な何かが待っています！チェックしてみましょう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_005",
+      "String": "イベントでアイテムの準備ができました！開けてみましょう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_006",
+      "String": "イベントにアイテムが到着！受け取りに行きましょう！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_007",
+      "String": "イベントのパッケージが待っています！今すぐ受け取りましょう！"
+    },
+    {
+      "Key": "CAN_CONTAIN",
+      "String": "出現確率："
+    },
+    {
+      "Key": "CHANCE_HURRY_ITEM",
+      "String": "{0}% <EVENT_HURRY>。"
+    },
+    {
+      "Key": "CHANCE_ITEMS",
+      "String": "{0}% アイテム{1}個。"
+    },
+    {
+      "Key": "FURNITURE_NAME_001",
+      "String": "クッション箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_002",
+      "String": "バースツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_003",
+      "String": "高級チェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_004",
+      "String": "質素なスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_005",
+      "String": "木製チェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_006",
+      "String": "カラフルマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_007",
+      "String": "カラフルマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_008",
+      "String": "ベージュクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_009",
+      "String": "青いクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_010",
+      "String": "メタルケース"
+    },
+    {
+      "Key": "FURNITURE_NAME_011",
+      "String": "はち植え"
+    },
+    {
+      "Key": "FURNITURE_NAME_012",
+      "String": "質素な本棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_013",
+      "String": "ブルークッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_014",
+      "String": "オレンジクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_015",
+      "String": "木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_016",
+      "String": "青い木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_017",
+      "String": "ちゃぶ台"
+    },
+    {
+      "Key": "FURNITURE_NAME_018",
+      "String": "基本フローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_019",
+      "String": "暗色フローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_020",
+      "String": "白いフローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_021",
+      "String": "明るいフローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_022",
+      "String": "カーペットフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_023",
+      "String": "質素なレンガの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_024",
+      "String": "コンクリート壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_025",
+      "String": "石壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_026",
+      "String": "ネコのはち植え"
+    },
+    {
+      "Key": "FURNITURE_NAME_027",
+      "String": "ぼんさい"
+    },
+    {
+      "Key": "FURNITURE_NAME_028",
+      "String": "小さなサボテン"
+    },
+    {
+      "Key": "FURNITURE_NAME_029",
+      "String": "ネコのつる"
+    },
+    {
+      "Key": "FURNITURE_NAME_030",
+      "String": "ステキな植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_031",
+      "String": "基本テーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_032",
+      "String": "チェリーの壁紙"
+    },
+    {
+      "Key": "FURNITURE_NAME_033",
+      "String": "木製パネル壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_034",
+      "String": "緑色のパネル壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_035",
+      "String": "青と白のマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_036",
+      "String": "青と白のマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_037",
+      "String": "起毛ラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_038",
+      "String": "起毛ラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_039",
+      "String": "ネコのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_040",
+      "String": "ダイヤのフローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_041",
+      "String": "ダイヤのフローリング2"
+    },
+    {
+      "Key": "FURNITURE_NAME_042",
+      "String": "細木のフローリング"
+    },
+    {
+      "Key": "FURNITURE_NAME_043",
+      "String": "丸テーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_044",
+      "String": "黄色いチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_045",
+      "String": "白いマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_046",
+      "String": "黄色いランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_047",
+      "String": "青い引き出し"
+    },
+    {
+      "Key": "FURNITURE_NAME_048",
+      "String": "ビロードのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_049",
+      "String": "ビロードのスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_050",
+      "String": "黄色いスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_051",
+      "String": "黒いスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_052",
+      "String": "ラグジュアリーなチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_053",
+      "String": "ネコ型ビーンチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_054",
+      "String": "ネコプリントの暗色クッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_055",
+      "String": "行燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_056",
+      "String": "ネコプリントの行燈"
+    },
+    {
+      "Key": "FURNITURE_NAME_057",
+      "String": "座布団"
+    },
+    {
+      "Key": "FURNITURE_NAME_058",
+      "String": "ネコ型クッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_059",
+      "String": "ゴシック様式の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_060",
+      "String": "暗色チェスト"
+    },
+    {
+      "Key": "FURNITURE_NAME_061",
+      "String": "ニャックリさんボード"
+    },
+    {
+      "Key": "FURNITURE_NAME_062",
+      "String": "ラグジュアリーなテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_063",
+      "String": "冬のネコラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_064",
+      "String": "座椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_065",
+      "String": "ゴシック様式の花柄マット"
+    },
+    {
+      "Key": "FURNITURE_NAME_066",
+      "String": "ガーゴイルネコの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_067",
+      "String": "花の妖精のランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_068",
+      "String": "装飾用ディスプレイ"
+    },
+    {
+      "Key": "FURNITURE_NAME_069",
+      "String": "こたつ"
+    },
+    {
+      "Key": "FURNITURE_NAME_070",
+      "String": "高級クッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_071",
+      "String": "畳"
+    },
+    {
+      "Key": "FURNITURE_NAME_072",
+      "String": "竹模様の緑色の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_073",
+      "String": "黒板"
+    },
+    {
+      "Key": "FURNITURE_NAME_074",
+      "String": "素朴な窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_075",
+      "String": "頑丈なネコテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_076",
+      "String": "ピンクのネコの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_077",
+      "String": "ピンクタイルのカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_078",
+      "String": "ネコの棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_079",
+      "String": "前あしの棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_080",
+      "String": "ネコ缶の山"
+    },
+    {
+      "Key": "FURNITURE_NAME_081",
+      "String": "キュートなネコのマット"
+    },
+    {
+      "Key": "FURNITURE_NAME_082",
+      "String": "眠そうなネコのランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_083",
+      "String": "前あしのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_084",
+      "String": "ウーブンチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_085",
+      "String": "カエデの盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_086",
+      "String": "アンティーク調の棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_087",
+      "String": "ちゃぶ台"
+    },
+    {
+      "Key": "FURNITURE_NAME_088",
+      "String": "壁掛けメニュー"
+    },
+    {
+      "Key": "FURNITURE_NAME_089",
+      "String": "桜の絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_090",
+      "String": "ゴシック様式の棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_091",
+      "String": "ろうそく灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_092",
+      "String": "ヴァンパイアネコの絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_093",
+      "String": "黒猫の絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_094",
+      "String": "ふしぎなカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_095",
+      "String": "カボチャのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_096",
+      "String": "カボチャのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_097",
+      "String": "カボチャの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_098",
+      "String": "前あしのポスター"
+    },
+    {
+      "Key": "FURNITURE_NAME_099",
+      "String": "魔法使いネコのイラスト"
+    },
+    {
+      "Key": "FURNITURE_NAME_100",
+      "String": "白い前あしのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_101",
+      "String": "黒い前あしのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_102",
+      "String": "ゴシック様式のネコの絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_103",
+      "String": "ネコの浮世絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_104",
+      "String": "ネコのペーパークラフト"
+    },
+    {
+      "Key": "FURNITURE_NAME_105",
+      "String": "ネコの油絵"
+    },
+    {
+      "Key": "FURNITURE_NAME_106",
+      "String": "漁師の本棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_107",
+      "String": "やる気の出るポスター"
+    },
+    {
+      "Key": "FURNITURE_NAME_108",
+      "String": "つり下げプランター"
+    },
+    {
+      "Key": "FURNITURE_NAME_109",
+      "String": "ウォールランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_110",
+      "String": "チェックのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_111",
+      "String": "冬のネコチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_112",
+      "String": "キノコのスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_113",
+      "String": "雪の結晶のクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_114",
+      "String": "チェックの卓布のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_115",
+      "String": "春柄の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_116",
+      "String": "ラブリーなビロードのソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_117",
+      "String": "フワフワの毛布"
+    },
+    {
+      "Key": "FURNITURE_NAME_118",
+      "String": "ネコのおもちゃ"
+    },
+    {
+      "Key": "FURNITURE_NAME_119",
+      "String": "花型のランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_120",
+      "String": "カラフルなサキュレント"
+    },
+    {
+      "Key": "FURNITURE_NAME_121",
+      "String": "秋の風景画"
+    },
+    {
+      "Key": "FURNITURE_NAME_122",
+      "String": "ネコTV"
+    },
+    {
+      "Key": "FURNITURE_NAME_123",
+      "String": "木製のおもちゃ箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_124",
+      "String": "ゴシック様式のチョウチョウ"
+    },
+    {
+      "Key": "FURNITURE_NAME_125",
+      "String": "爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_126",
+      "String": "前あし型の土台付き爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_127",
+      "String": "お花畑のクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_128",
+      "String": "FCM証明書"
+    },
+    {
+      "Key": "FURNITURE_NAME_129",
+      "String": "雪の結晶の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_130",
+      "String": "サーフィンネコ"
+    },
+    {
+      "Key": "FURNITURE_NAME_131",
+      "String": "卓上シャンデリア"
+    },
+    {
+      "Key": "FURNITURE_NAME_132",
+      "String": "豪華なお祝いテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_133",
+      "String": "赤いカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_134",
+      "String": "お祝いムードの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_135",
+      "String": "クリスマスの暖炉"
+    },
+    {
+      "Key": "FURNITURE_NAME_136",
+      "String": "クリスマスのネコタワー"
+    },
+    {
+      "Key": "FURNITURE_NAME_137",
+      "String": "赤いチェックのカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_138",
+      "String": "室内イルミネーションライト"
+    },
+    {
+      "Key": "FURNITURE_NAME_139",
+      "String": "ネコとハートのネオンライト"
+    },
+    {
+      "Key": "FURNITURE_NAME_140",
+      "String": "ピンクの木製パネル壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_141",
+      "String": "ローズ色の格子柄カーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_142",
+      "String": "正月用の龍飾り"
+    },
+    {
+      "Key": "FURNITURE_NAME_143",
+      "String": "正月用の亥年柄の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_144",
+      "String": "クローバーのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_145",
+      "String": "アイリッシュタビーの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_146",
+      "String": "子猫のトピアリー"
+    },
+    {
+      "Key": "FURNITURE_NAME_147",
+      "String": "イースターエッグのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_148",
+      "String": "ラグジュアリーなキャビネット"
+    },
+    {
+      "Key": "FURNITURE_NAME_149",
+      "String": "クッション付き高級ベンチ"
+    },
+    {
+      "Key": "FURNITURE_NAME_150",
+      "String": "カイエンナッツ"
+    },
+    {
+      "Key": "FURNITURE_NAME_151",
+      "String": "ネコ型プランターの観葉植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_152",
+      "String": "卵型のネコラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_153",
+      "String": "アルテサニアチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_154",
+      "String": "ニット猫サボテン"
+    },
+    {
+      "Key": "FURNITURE_NAME_155",
+      "String": "シーサー像"
+    },
+    {
+      "Key": "FURNITURE_NAME_156",
+      "String": "バステト像"
+    },
+    {
+      "Key": "FURNITURE_NAME_157",
+      "String": "マーライオン像"
+    },
+    {
+      "Key": "FURNITURE_NAME_158",
+      "String": "花火のネオンライト"
+    },
+    {
+      "Key": "FURNITURE_NAME_159",
+      "String": "モニャリザ"
+    },
+    {
+      "Key": "FURNITURE_NAME_160",
+      "String": "ワッフルクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_161",
+      "String": "ぶんぶんバチのおもちゃ"
+    },
+    {
+      "Key": "FURNITURE_NAME_162",
+      "String": "だるま"
+    },
+    {
+      "Key": "FURNITURE_NAME_163",
+      "String": "つりサキュレント"
+    },
+    {
+      "Key": "FURNITURE_NAME_164",
+      "String": "アルペンコーヒーテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_165",
+      "String": "マグカップかけ"
+    },
+    {
+      "Key": "FURNITURE_NAME_167",
+      "String": "キャットラウンジの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_171",
+      "String": "タランチュラのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_172",
+      "String": "キャットニップの大釜"
+    },
+    {
+      "Key": "FURNITURE_NAME_173",
+      "String": "心地よい暖炉"
+    },
+    {
+      "Key": "FURNITURE_NAME_174",
+      "String": "マスタード色のソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_175",
+      "String": "バードホテル時計"
+    },
+    {
+      "Key": "FURNITURE_NAME_176",
+      "String": "アールヌーボーランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_177",
+      "String": "キャットラウンジのカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_178",
+      "String": "ネコ用ハンモック"
+    },
+    {
+      "Key": "FURNITURE_NAME_179",
+      "String": "ネコの橋"
+    },
+    {
+      "Key": "FURNITURE_NAME_180",
+      "String": "立派なクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_181",
+      "String": "高級壁付きランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_182",
+      "String": "ネズミのランタン"
+    },
+    {
+      "Key": "FURNITURE_NAME_183",
+      "String": "春節の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_184",
+      "String": "丸窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_185",
+      "String": "金魚鉢"
+    },
+    {
+      "Key": "FURNITURE_NAME_186",
+      "String": "心地よいヒーター"
+    },
+    {
+      "Key": "FURNITURE_NAME_187",
+      "String": "額入りクールキャットポスター"
+    },
+    {
+      "Key": "FURNITURE_NAME_188",
+      "String": "飾り房付きビーンバッグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_189",
+      "String": "キノコのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_190",
+      "String": "カラフルなマスク"
+    },
+    {
+      "Key": "FURNITURE_NAME_191",
+      "String": "スプラッシュのクロエのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_192",
+      "String": "フラッターのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_193",
+      "String": "スターライトのスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_194",
+      "String": "マカロンのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_195",
+      "String": "オオハシの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_196",
+      "String": "甲虫のイラスト"
+    },
+    {
+      "Key": "FURNITURE_NAME_197",
+      "String": "プリンのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_198",
+      "String": "おもちゃ箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_199",
+      "String": "チェリーパイのスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_200",
+      "String": "先祖の祭壇"
+    },
+    {
+      "Key": "FURNITURE_NAME_201",
+      "String": "催眠カーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_202",
+      "String": "風船のブーケ"
+    },
+    {
+      "Key": "FURNITURE_NAME_203",
+      "String": "ディバイダー: 前"
+    },
+    {
+      "Key": "FURNITURE_NAME_204",
+      "String": "赤いカーテン"
+    },
+    {
+      "Key": "FURNITURE_NAME_205",
+      "String": "ディバイダー: 横"
+    },
+    {
+      "Key": "FURNITURE_NAME_206",
+      "String": "羊のクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_207",
+      "String": "コートラック"
+    },
+    {
+      "Key": "FURNITURE_NAME_208",
+      "String": "セルフサービスカウンター"
+    },
+    {
+      "Key": "FURNITURE_NAME_209",
+      "String": "ティーワゴン"
+    },
+    {
+      "Key": "FURNITURE_NAME_210",
+      "String": "プレゼントの山"
+    },
+    {
+      "Key": "FURNITURE_NAME_211",
+      "String": "ローズの枕"
+    },
+    {
+      "Key": "FURNITURE_NAME_212",
+      "String": "騎士のディスプレイ"
+    },
+    {
+      "Key": "FURNITURE_NAME_213",
+      "String": "チェスターフィールドソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_214",
+      "String": "ドラゴンのタマゴ"
+    },
+    {
+      "Key": "FURNITURE_NAME_215",
+      "String": "ゴシック様式の本棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_216",
+      "String": "ニワトリの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_217",
+      "String": "ゴシック様式の窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_218",
+      "String": "ドラゴンの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_219",
+      "String": "レコードプレーヤー"
+    },
+    {
+      "Key": "FURNITURE_NAME_220",
+      "String": "カエルの噴水"
+    },
+    {
+      "Key": "FURNITURE_NAME_221",
+      "String": "アシカのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_222",
+      "String": "イチゴのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_223",
+      "String": "心地よいバスケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_224",
+      "String": "木製の本棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_225",
+      "String": "チェスのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_226",
+      "String": "地球儀"
+    },
+    {
+      "Key": "FURNITURE_NAME_228",
+      "String": "流木のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_229",
+      "String": "木製の枝角"
+    },
+    {
+      "Key": "FURNITURE_NAME_230",
+      "String": "オットマン"
+    },
+    {
+      "Key": "FURNITURE_NAME_231",
+      "String": "タータンチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_232",
+      "String": "アイスクリームライト"
+    },
+    {
+      "Key": "FURNITURE_NAME_233",
+      "String": "甘いネオンサイン"
+    },
+    {
+      "Key": "FURNITURE_NAME_234",
+      "String": "ペルシャじゅうたん"
+    },
+    {
+      "Key": "FURNITURE_NAME_235",
+      "String": "スリッパラック"
+    },
+    {
+      "Key": "FURNITURE_NAME_236",
+      "String": "チョコレートのカウチ"
+    },
+    {
+      "Key": "FURNITURE_NAME_237",
+      "String": "目玉焼きのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_238",
+      "String": "貝のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_239",
+      "String": "テラリウム"
+    },
+    {
+      "Key": "FURNITURE_NAME_240",
+      "String": "マクラメのクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_241",
+      "String": "クラフトバスケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_242",
+      "String": "折り鶴"
+    },
+    {
+      "Key": "FURNITURE_NAME_243",
+      "String": "折り紙のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_244",
+      "String": "折り紙の椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_245",
+      "String": "ラベンダーのはち植え"
+    },
+    {
+      "Key": "FURNITURE_NAME_246",
+      "String": "レモンの木"
+    },
+    {
+      "Key": "FURNITURE_NAME_247",
+      "String": "チトセラン"
+    },
+    {
+      "Key": "FURNITURE_NAME_248",
+      "String": "王座のクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_249",
+      "String": "豪華なタマゴ"
+    },
+    {
+      "Key": "FURNITURE_NAME_250",
+      "String": "王家の爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_251",
+      "String": "スクラップブック"
+    },
+    {
+      "Key": "FURNITURE_NAME_252",
+      "String": "流木の爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_253",
+      "String": "紙の気球"
+    },
+    {
+      "Key": "FURNITURE_NAME_254",
+      "String": "寿司クッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_255",
+      "String": "ゴムの木"
+    },
+    {
+      "Key": "FURNITURE_NAME_256",
+      "String": "はち植えの木"
+    },
+    {
+      "Key": "FURNITURE_NAME_257",
+      "String": "シュロのはち植え"
+    },
+    {
+      "Key": "FURNITURE_NAME_258",
+      "String": "パーティーの花飾り"
+    },
+    {
+      "Key": "FURNITURE_NAME_259",
+      "String": "パーティーテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_260",
+      "String": "寿司のスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_261",
+      "String": "禅の庭園"
+    },
+    {
+      "Key": "FURNITURE_NAME_262",
+      "String": "ハーブのプランター"
+    },
+    {
+      "Key": "FURNITURE_NAME_263",
+      "String": "キュビズムの絵画"
+    },
+    {
+      "Key": "FURNITURE_NAME_264",
+      "String": "キャットの叫び"
+    },
+    {
+      "Key": "FURNITURE_NAME_265",
+      "String": "みずや"
+    },
+    {
+      "Key": "FURNITURE_NAME_266",
+      "String": "抽象的なオブジェ"
+    },
+    {
+      "Key": "FURNITURE_NAME_267",
+      "String": "木の幹のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_268",
+      "String": "キノコのランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_269",
+      "String": "古代のツボ"
+    },
+    {
+      "Key": "FURNITURE_NAME_270",
+      "String": "フォレストチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_271",
+      "String": "ヒスイの像"
+    },
+    {
+      "Key": "FURNITURE_NAME_272",
+      "String": "苔のラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_273",
+      "String": "鋼の像"
+    },
+    {
+      "Key": "FURNITURE_NAME_274",
+      "String": "考えるネコ"
+    },
+    {
+      "Key": "FURNITURE_NAME_275",
+      "String": "カエデのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_276",
+      "String": "常夏のデイ・ベッド"
+    },
+    {
+      "Key": "FURNITURE_NAME_277",
+      "String": "ピクニックのブランケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_278",
+      "String": "ピクニックのバスケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_279",
+      "String": "ピクニックのブレッドボード"
+    },
+    {
+      "Key": "FURNITURE_NAME_280",
+      "String": "自然のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_281",
+      "String": "ゴシック様式のストーブ"
+    },
+    {
+      "Key": "FURNITURE_NAME_282",
+      "String": "ゴシック様式のチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_283",
+      "String": "立派なクッション"
+    },
+    {
+      "Key": "FURNITURE_NAME_284",
+      "String": "シュロパーラー"
+    },
+    {
+      "Key": "FURNITURE_NAME_285",
+      "String": "緑とピンクのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_286",
+      "String": "緑とピンクのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_287",
+      "String": "緑とピンクのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_291",
+      "String": "森林の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_292",
+      "String": "森林のフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_293",
+      "String": "屋内の木"
+    },
+    {
+      "Key": "FURNITURE_NAME_294",
+      "String": "岩の噴水"
+    },
+    {
+      "Key": "FURNITURE_NAME_295",
+      "String": "天然木のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_296",
+      "String": "切り株のスツール"
+    },
+    {
+      "Key": "FURNITURE_NAME_297",
+      "String": "巣箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_298",
+      "String": "テント"
+    },
+    {
+      "Key": "FURNITURE_NAME_299",
+      "String": "ブランケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_300",
+      "String": "キノコのランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_301",
+      "String": "メンフィスの棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_302",
+      "String": "メンフィスのランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_303",
+      "String": "メンフィスのソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_304",
+      "String": "メンフィスのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_305",
+      "String": "メンフィスの窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_306",
+      "String": "メンフィスの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_307",
+      "String": "メンフィスの爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_308",
+      "String": "メンフィスのアート"
+    },
+    {
+      "Key": "FURNITURE_NAME_309",
+      "String": "メンフィスのフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_310",
+      "String": "メンフィスのカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_311",
+      "String": "コテージのストーブ"
+    },
+    {
+      "Key": "FURNITURE_NAME_312",
+      "String": "コテージの窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_313",
+      "String": "コテージのフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_314",
+      "String": "コテージの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_315",
+      "String": "ミシン"
+    },
+    {
+      "Key": "FURNITURE_NAME_316",
+      "String": "チョウのポスター"
+    },
+    {
+      "Key": "FURNITURE_NAME_317",
+      "String": "コテージのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_318",
+      "String": "チェック柄のブランケット"
+    },
+    {
+      "Key": "FURNITURE_NAME_319",
+      "String": "ドライハーブ"
+    },
+    {
+      "Key": "FURNITURE_NAME_320",
+      "String": "コテージの爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_321",
+      "String": "ダイナーのフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_322",
+      "String": "ダイナーの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_323",
+      "String": "ダイナーのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_324",
+      "String": "ダイナーのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_325",
+      "String": "ダイナーのフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_326",
+      "String": "バーテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_327",
+      "String": "ジュークボックス"
+    },
+    {
+      "Key": "FURNITURE_NAME_328",
+      "String": "看板"
+    },
+    {
+      "Key": "FURNITURE_NAME_329",
+      "String": "ダイナーの時計"
+    },
+    {
+      "Key": "FURNITURE_NAME_330",
+      "String": "ガムボールマシン"
+    },
+    {
+      "Key": "FURNITURE_NAME_331",
+      "String": "ポップなチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_332",
+      "String": "ポップな壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_333",
+      "String": "ポップなフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_334",
+      "String": "ポップなテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_335",
+      "String": "ポップな車"
+    },
+    {
+      "Key": "FURNITURE_NAME_336",
+      "String": "ポップなカーペット"
+    },
+    {
+      "Key": "FURNITURE_NAME_337",
+      "String": "ポップなネコのおもちゃ"
+    },
+    {
+      "Key": "FURNITURE_NAME_338",
+      "String": "ポップなランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_339",
+      "String": "ポップな鏡"
+    },
+    {
+      "Key": "FURNITURE_NAME_340",
+      "String": "ポップな窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_341",
+      "String": "苔の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_342",
+      "String": "テラリウム"
+    },
+    {
+      "Key": "FURNITURE_NAME_343",
+      "String": "モンステラ"
+    },
+    {
+      "Key": "FURNITURE_NAME_344",
+      "String": "アーケード"
+    },
+    {
+      "Key": "FURNITURE_NAME_345",
+      "String": "アーケードのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_346",
+      "String": "アーケードのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_347",
+      "String": "本の壁紙"
+    },
+    {
+      "Key": "FURNITURE_NAME_349",
+      "String": "ラウンジチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_350",
+      "String": "読書テーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_351",
+      "String": "ハンモック"
+    },
+    {
+      "Key": "FURNITURE_NAME_352",
+      "String": "ビーズカーテンの窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_353",
+      "String": "ボヘミアンのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_354",
+      "String": "ボヘミアンのソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_355",
+      "String": "ハイティーのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_356",
+      "String": "ハイティーのチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_357",
+      "String": "花瓶"
+    },
+    {
+      "Key": "FURNITURE_NAME_358",
+      "String": "花柄の壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_359",
+      "String": "地図"
+    },
+    {
+      "Key": "FURNITURE_NAME_360",
+      "String": "書き物机"
+    },
+    {
+      "Key": "FURNITURE_NAME_361",
+      "String": "蓄音機"
+    },
+    {
+      "Key": "FURNITURE_NAME_362",
+      "String": "アンティーク調の本棚"
+    },
+    {
+      "Key": "FURNITURE_NAME_363",
+      "String": "ピアノ"
+    },
+    {
+      "Key": "FURNITURE_NAME_364",
+      "String": "ドラムセット"
+    },
+    {
+      "Key": "FURNITURE_NAME_365",
+      "String": "ベース"
+    },
+    {
+      "Key": "FURNITURE_NAME_366",
+      "String": "マイク"
+    },
+    {
+      "Key": "FURNITURE_NAME_367",
+      "String": "サーフボード"
+    },
+    {
+      "Key": "FURNITURE_NAME_368",
+      "String": "救命ブイ"
+    },
+    {
+      "Key": "FURNITURE_NAME_369",
+      "String": "ビーチの壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_370",
+      "String": "ビーチのフロア"
+    },
+    {
+      "Key": "FURNITURE_NAME_371",
+      "String": "錨の爪とぎポール"
+    },
+    {
+      "Key": "FURNITURE_NAME_372",
+      "String": "ビーチタオル"
+    },
+    {
+      "Key": "FURNITURE_NAME_373",
+      "String": "ビーチチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_374",
+      "String": "ビーチのテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_375",
+      "String": "ボート"
+    },
+    {
+      "Key": "FURNITURE_NAME_377",
+      "String": "舷窓"
+    },
+    {
+      "Key": "FURNITURE_NAME_378",
+      "String": "ミニマルな木"
+    },
+    {
+      "Key": "FURNITURE_NAME_379",
+      "String": "ミニマルなテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_380",
+      "String": "ミニマルなチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_381",
+      "String": "ミニマルなネコのベッド"
+    },
+    {
+      "Key": "FURNITURE_NAME_382",
+      "String": "禅のパーテーション"
+    },
+    {
+      "Key": "FURNITURE_NAME_383",
+      "String": "禅の植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_384",
+      "String": "禅のソファ"
+    },
+    {
+      "Key": "FURNITURE_NAME_385",
+      "String": "禅のチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_386",
+      "String": "白い壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_387",
+      "String": "タイルのストーブ"
+    },
+    {
+      "Key": "FURNITURE_NAME_388",
+      "String": "和紙ランプ"
+    },
+    {
+      "Key": "FURNITURE_NAME_389",
+      "String": "北欧風のチェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_390",
+      "String": "素朴な壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_391",
+      "String": "ストリングライト"
+    },
+    {
+      "Key": "FURNITURE_NAME_392",
+      "String": "樽のテーブル"
+    },
+    {
+      "Key": "FURNITURE_NAME_393",
+      "String": "フェイクレザーのラグ"
+    },
+    {
+      "Key": "FURNITURE_NAME_394",
+      "String": "キャットタワー"
+    },
+    {
+      "Key": "FURNITURE_NAME_395",
+      "String": "キャットハウス"
+    },
+    {
+      "Key": "FURNITURE_NAME_396",
+      "String": "ネコのベッド"
+    },
+    {
+      "Key": "FURNITURE_NAME_397",
+      "String": "ネコのおもちゃ"
+    },
+    {
+      "Key": "CAT_NAME_001",
+      "String": "マフィン"
+    },
+    {
+      "Key": "CAT_NAME_002",
+      "String": "ラブ"
+    },
+    {
+      "Key": "CAT_NAME_003",
+      "String": "ぼんちゃん"
+    },
+    {
+      "Key": "CAT_NAME_004",
+      "String": "たけし"
+    },
+    {
+      "Key": "CAT_NAME_005",
+      "String": "セーラム"
+    },
+    {
+      "Key": "CAT_NAME_006",
+      "String": "ウーリー"
+    },
+    {
+      "Key": "CAT_NAME_007",
+      "String": "ホリー"
+    },
+    {
+      "Key": "CAT_NAME_008",
+      "String": "ラッド"
+    },
+    {
+      "Key": "CAT_NAME_009",
+      "String": "バブ"
+    },
+    {
+      "Key": "CAT_NAME_010",
+      "String": "シャドウ"
+    },
+    {
+      "Key": "CAT_NAME_011",
+      "String": "ウィスカー"
+    },
+    {
+      "Key": "CAT_NAME_012",
+      "String": "ヌードル"
+    },
+    {
+      "Key": "CAT_NAME_013",
+      "String": "モチ"
+    },
+    {
+      "Key": "CAT_NAME_014",
+      "String": "チャチャ"
+    },
+    {
+      "Key": "CAT_NAME_015",
+      "String": "ニンジャ"
+    },
+    {
+      "Key": "CAT_NAME_016",
+      "String": "サーシャ"
+    },
+    {
+      "Key": "CAT_NAME_017",
+      "String": "ミロ"
+    },
+    {
+      "Key": "CAT_NAME_018",
+      "String": "メーゼ"
+    },
+    {
+      "Key": "CAT_NAME_019",
+      "String": "オレオ"
+    },
+    {
+      "Key": "CAT_NAME_020",
+      "String": "ブリトニー"
+    },
+    {
+      "Key": "CAT_NAME_021",
+      "String": "ジギー"
+    },
+    {
+      "Key": "CAT_NAME_022",
+      "String": "ミルキー"
+    },
+    {
+      "Key": "CAT_NAME_023",
+      "String": "ミトン"
+    },
+    {
+      "Key": "CAT_NAME_024",
+      "String": "シナモン"
+    },
+    {
+      "Key": "CAT_NAME_025",
+      "String": "エリス"
+    },
+    {
+      "Key": "CAT_NAME_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_NAME_027",
+      "String": "ボニー"
+    },
+    {
+      "Key": "CAT_NAME_028",
+      "String": "ラムセス"
+    },
+    {
+      "Key": "CAT_NAME_029",
+      "String": "ココ"
+    },
+    {
+      "Key": "CAT_NAME_030",
+      "String": "パフ"
+    },
+    {
+      "Key": "CAT_NAME_031",
+      "String": "ジェリー"
+    },
+    {
+      "Key": "CAT_NAME_032",
+      "String": "オリ"
+    },
+    {
+      "Key": "CAT_NAME_033",
+      "String": "ジェシー"
+    },
+    {
+      "Key": "CAT_NAME_034",
+      "String": "サンドラ"
+    },
+    {
+      "Key": "CAT_NAME_035",
+      "String": "フラッフィー"
+    },
+    {
+      "Key": "CAT_NAME_036",
+      "String": "コアラ"
+    },
+    {
+      "Key": "CAT_NAME_037",
+      "String": "ウィルフォ"
+    },
+    {
+      "Key": "CAT_NAME_038",
+      "String": "クレデンス"
+    },
+    {
+      "Key": "CAT_NAME_039",
+      "String": "ビスケット"
+    },
+    {
+      "Key": "CAT_NAME_040",
+      "String": "ペッパー"
+    },
+    {
+      "Key": "CAT_NAME_041",
+      "String": "パドル"
+    },
+    {
+      "Key": "CAT_NAME_050",
+      "String": "バター"
+    },
+    {
+      "Key": "CAT_NAME_051",
+      "String": "ルナ"
+    },
+    {
+      "Key": "CAT_NAME_052",
+      "String": "ソックス"
+    },
+    {
+      "Key": "CAT_NAME_053",
+      "String": "ポッサム"
+    },
+    {
+      "Key": "CAT_NAME_054",
+      "String": "オディー"
+    },
+    {
+      "Key": "CAT_NAME_055",
+      "String": "カリスタ"
+    },
+    {
+      "Key": "CAT_NAME_056",
+      "String": "スターロード"
+    },
+    {
+      "Key": "CAT_NAME_057",
+      "String": "ゾーイ"
+    },
+    {
+      "Key": "CAT_NAME_058",
+      "String": "ダッチェス・ドラカ"
+    },
+    {
+      "Key": "CAT_NAME_059",
+      "String": "アポロ"
+    },
+    {
+      "Key": "CAT_NAME_060",
+      "String": "ヴィヴィアン"
+    },
+    {
+      "Key": "CAT_NAME_061",
+      "String": "パッチ"
+    },
+    {
+      "Key": "CAT_NAME_062",
+      "String": "チキ"
+    },
+    {
+      "Key": "CAT_NAME_063",
+      "String": "ムシュ"
+    },
+    {
+      "Key": "CAT_NAME_064",
+      "String": "チャンビー"
+    },
+    {
+      "Key": "CAT_NAME_065",
+      "String": "ドビー"
+    },
+    {
+      "Key": "CAT_NAME_066",
+      "String": "ミノス"
+    },
+    {
+      "Key": "CAT_NAME_067",
+      "String": "ヴォルフガング"
+    },
+    {
+      "Key": "CAT_NAME_068",
+      "String": "ロキ"
+    },
+    {
+      "Key": "CAT_NAME_JUHANOTUSED",
+      "String": "ユハ"
+    },
+    {
+      "Key": "CAT_NAME_SIMBANOTUSED",
+      "String": "シンバ"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_001",
+      "String": "マフィンは人なつっこいネコで、なでられるのが大好き！なでるのをやめると、前あしでやさしく叩いてまたなでてくれるようにお願いしてくるよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_002",
+      "String": "ラブは愛らしく、優しいネコだけど、昔、乱暴なオスネコと大ゲンカしてアゴを怪我しちゃったんだ！抱っこされるのが大好きで、満足してる時はのどを大きく鳴らしてよだれを垂らし、ちょっとヘンテコな笑顔を見せてくれるよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_003",
+      "String": "ぼんちゃんは体は小さくても自信満々。飼われるようになってからは、愛する者たちの世話をして、一緒にお眠りすることに大きな幸せを感じてるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_004",
+      "String": "姉のボンちゃんより倍は大きいタケシは、抱っこに最適のフカフカのニャンちゃんだよ。食いしん坊だから、他のネコの食べ物をちょくちょく盗み食いしちゃうんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_005",
+      "String": "とってもクールなセーラムは、むとんちゃくな性格でルールを気にせず我が道を突き進むよ。だから、気が付いたら周りのネコたちが怒ってた、なんてことがよくあるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_006",
+      "String": "ウーリーは新しいお客さんには怯えちゃって、何度もなでてもらってようやく落ち着くんだ。でもすごく人なつっこくてお喋りが大好きでもある。小さな声でニャアニャアと話しかけてくるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_007",
+      "String": "ホリー・ジャニス・ブレイキーは華麗なバク転をするかと思えば、舌は出しっぱなしで大量によだれを垂らしちゃう派手なネコなんだ。誰とでも仲良くするけど、イヌだけは大の苦手。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_008",
+      "String": "ラッドは忠実で礼儀正しく、お客さんがカフェに入るまで待っている紳士的なネコ。急な動きをされると驚いちゃうんだけど、カフェを訪れるすべての人になでて欲しがってるんだ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_009",
+      "String": "バブは少し寄り目なのでとってもかわいく見える特別なニャンコだよ！暗い部屋のすみで丸くなって、ツナ、サーモン、温かいミルクのおいしいゴハンを夢見るのが大好きなんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_010",
+      "String": "恥ずかしがり屋のシャドウは初めての人に会うときにウォーミングアップが欠かせない。でも仲良くなると、おとなしいながらもいたずら好きな性格を見せてくれる。よくお客さんのかばんの中に隠れてるのが見つかるはずさ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_011",
+      "String": "ウィスカーはネコたちの中でも一番のイタズラ者。他のネコをからかうのが大好きなんだ。今日も他のネコのしっぽで遊び、眠っているところに飛びかかってるはずさ。一番のお調子者の称号は誰にも渡さないよ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_012",
+      "String": "ヌードルはいつも後ろあしで立って歩き、自分を「人間」だと思い込んでるみたい。テーブルでお客さんの横に座り、不思議そうにエスプレッソマシーンの周りを歩いては、落ちてきたコーヒー豆で遊んでる。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_013",
+      "String": "モチは根っからのキレイ好きなニャンコ。毎朝起きると頭から足の先までなめてキレイにするんだ。ブラッシングをしてもらうのも大好きだけど、持ち上げられるとすぐに気が変わっちゃう。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_014",
+      "String": "カフェに音楽が流れると、チャチャはパフォーマーに早変わり。リズムに乗っておしりを振り、情熱的にダンスをしながら、お気に入りのおもちゃを追いかけるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_015",
+      "String": "ニンジャは気の合う仲間たちとゴハンを食べるのが大好きで、信頼できる仲間を見つけるためなら労力を惜しまないんだ。お目当ての誰かを見つけたら、ニャアと鳴いて特別なゲストに選ばれたことを伝えてくれる。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_016",
+      "String": "かわいくて才能にあふれるサーシャは、前世では女神としてしたわれていいたとしても驚かないよね。ここに来る前はショーに出てたんだけど、今ではその頃とは違い、よだれだらけになるまで、お気に入りのおもちゃをなめてキレイにしてる。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_017",
+      "String": "ミロを抱っこすると、まるでふかふかの毛布を抱きしめてるみたい。ミロは落ち込んでいる人の気持ちがわかるから、そんなときは一緒に遊んであげて、のどを鳴らして甘えて慰めてくれる、とっても優しいネコちゃんなんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_018",
+      "String": "忍耐と、驚きと、回転キックを通じて戦いの術を身につけたメーゼは、心優しい孤高の戦士。戦いの日々からは卒業したけれど、身づくろいをしているときなどに、ふとその頃のことを思い出すんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_019",
+      "String": "オレオは名前ほど甘いネコじゃないんだ…なでられるのは大好きだけど、ふさふさのお腹をさわられると怒っちゃうんだよね。かわいらしいけどちょっぴりコワい、オレオは欲しいものをほしいときに手に入れちゃうんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_020",
+      "String": "好奇心でいっぱいのブリトニーは、片方の耳が聞こえない。いつも外に出て、かわいらしい緑色の目であたりを見回してる。なぜかって？美味しい草を見つけて、食べるためさ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_021",
+      "String": "ジギーはトイレのタンクの上でお昼寝するのが大好きで、この場所だけは誰にもゆずってくれないんだ！いつもトイレから出されてしまうんだけど、いつの間にか必ず戻ってきてるんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_022",
+      "String": "ミルキーは一日中お気に入りの毛布を手でこねこねしていて、見ているだけとろけちゃいそうなかわいさのネコちゃんなんだ。毛布をこねこねしていないときは、お客様のふとももやまくらをこねこねしてるけど、ときには他のネコもこねこねしちゃう！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_023",
+      "String": "小さくてノミだらけだったミトンは、真のサバイバー！自分のしっぽをつかまえようとする、あくなき努力を見るだけでもミトンの意志の強さは明らかだよね。いつかきっとつかまえられるさ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_024",
+      "String": "たっぷりエサはもらってるんだけど、シナモンはいつだってお腹を空かせていて、お客さんのお皿からクッキーを盗もうとするんだ。バリスタテーブルから水を飲もうとしてることも多い、ちょっと欲張りなニャンコなんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_025",
+      "String": "エリスはギリシャの争いの神にちなんで名付けられた自尊心の高いトラブルメーカー。ひっかくのが大好きで、椅子に座る人間を押しのけてでも自分が座ろうとする。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_027",
+      "String": "ボニーはスコティッシュフォールドらしいとってもかわいい耳を持ってるよ。でも、ぺたっとした耳とぼんやりした雰囲気にだまされないように。いつだって聞き耳をたててるんだから！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_028",
+      "String": "ラムセスは一風変わったニャンちゃんで、週一回の入浴が欠かせないんだ。かまってもらうのが大好きで、誰とでも仲良くできる。優しいイヌとだって仲良くなっちゃうんだよ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_029",
+      "String": "ココは歌うようにやさしく鳴く珍しいネコで、日常のさわがしさから離れた、静かな場所が大好きなんだ。静かな場所でブラッシングしてあげれば、きっとあなたのことをいつまでも大好きでいてくれるよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_030",
+      "String": "パフは何時間も高いところでじっとしていて、カフェに入ってくるすべてのお客さんを眺めてる。そしてお客さんが出ていくときには小さくニャアと鳴くんだ。実はこれはパフが一番なでられやすい場所にいることでもあるんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_031",
+      "String": "ジェリーの足音は遠くからでも聞き分けられるんだ。おもちゃを追いかけていても、生きたネズミを追いかけていても、いつも元気いっぱいで、ネコとは思えないくらい大きな足音を立てるからね。目立たないというのはスタイルじゃないらしい。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_032",
+      "String": "オリは女王様みたいなネコ。珍しいラグドール種で、セレブのようなふるまうんだよ。欲しいものが手に入るまでニャアニャアと鳴き続けるんだよね。彼女が欲しいもの？それは誰にもわからない。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_033",
+      "String": "ジェシーはとっても誇り高いネコ。スーパーモデルのように歩き、しっぽをピンと立て、自信満々の表情を浮かべてる。ひとりでいるのが好きだけど、抱っこして欲しいときにせがんでくるのがかわいいんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_034",
+      "String": "サンドラには実はものを盗むくせがあるんだ。目を離したすきに、お客さんのストローを盗んで、グチャグチャになるまでかんでしまうんだよ。でも、このカフェでは紙のストローを使ってるから安心だね！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_035",
+      "String": "かつてフラッフィーはキャットショーに出ていて、ほとんどの時間を鎖につながれてたんだ。今は本来のいたずら好きな性格を発揮しつつ、カフェのあちこちをウロウロしてるよ。毛が一杯抜けることで散らかすのが楽しいみたいだね！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_036",
+      "String": "名前のとおり、コアラはぶら下がるのが好きで、いつも前あしでお客さんの首に抱きついてる。そのせいで、優しいお客さんの首に爪のあとが残ることもあるんだけど、実はカフェのお客さんの間では、それも密かな人気になってるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_037",
+      "String": "ウィルフォはお腹をなでられるのが大好き！いつもあお向けに寝て、誰かがなでてくれるのを待ってるよ。たまに夢を見て、自転車をこぐように後ろあしをバタつかせてるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_038",
+      "String": "クレデンスは心やさしい男の子、優しくなでる場合だけさわらせてくれる。生まれたばかりの赤ちゃんのつもりでなでてあげてね。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_039",
+      "String": "ビスケットからは片時も目が離せない。持ち上げて運ばれるのが好きで、予想もつかないときに人の肩の上に飛び乗っちゃうんだ！ビスケットは楽しい人が大好きで、すぐに芸を覚えるよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_040",
+      "String": "ペッパーは珍しいベンガル種で、何でも食べちゃうニャンコだよ。子ネコの頃にカフェのカウンターの唐辛子を食べちゃって、夜中の1時に動物病院のお世話になったことからペッパーと名付けられたんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_041",
+      "String": "パドルはかつて、多指のあしだけで人々と握手をしてたんだけど、今は引退して、前あしでお茶をすすったり、キャットフードを食べて過ごしてるんだ。パドルのことをたっぷりの愛情を込めて「スターダスト」と呼ぶお客さんもいるんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_050",
+      "String": "バターはインターネットの人気コンテストで優勝して、SNSで人気に火が付いたんだ。そんな人気者なのに、この男の子はとっても落ち着いた性格なんだよ。あごをカキカキされるのが大好きで、うれしいときはしっぽを小さな？マークの形に曲げるのを覚えておいてね。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_051",
+      "String": "ルナはいたずら好きで天真爛漫なにゃんこだよ。この子はもともと、暗くて不気味な森でひとりぼっちだったところを拾われたんだけど、今ではおもちゃで遊んだり、寝ている人の顔にやさしく触れたりして、ネコの生活を満喫できるようになってるんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_052",
+      "String": "ソックスは、追跡とダッシュの才能あふれる天性のハンター。他のどのネコよりもすばしっこいソックスは、真っ先におもちゃをゲットするよ。室内をあちこち走り回ることはもちろん、イライラとした口調とは裏腹に、実は窓際に座って屋外の鳥に話しかけるのも大好きなんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_053",
+      "String": "若かりし頃のポッサムは木登りがとりわけ大好きで、毎日のように一番高い木によじ登っていたよ。今では、カフェ専属のちっちゃなマッサージ師さながらに、お客さんの腿をやさしくマッサージしては、喜びにゴロゴロとのどを鳴らしているんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_054",
+      "String": "目が片っぽしかない不運に見まわれても、オディーは決してくじけない！木をかけ登ったり、鈴を追いかけるのが大好きな彼女だけれど、抱きしめればひざの上で幸せそうにくつろぎ始めるんだ。自分の声にも自信があるみたいで、ミャーとか、ニャーとか、ゴロゴロとか、いろいろな声であなたとのおしゃべりを楽しむよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_055",
+      "String": "カリシタは、心地よい子守り歌が大好きなネコちゃん。ベッドにいる彼女に子守り歌を歌ってあげれば、すぐとなりで眠ってくれるはず！他にも、足がたくさん付いたぬいぐるみも大好きで、クモ、タコ、ロブスター、カニ、エビとかのぬいぐるみをコレクションしてるんだ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_056",
+      "String": "知らない人に対してはシャイなスターロードだけど、いったん仲良くなるとフレンドリーなネコに早変わりするよ。親友になれば、おしゃべり好きなスターロードと何時間でもニャントークに花を咲かせたり、「取ってこい」遊びができるよ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_057",
+      "String": "ゾーイは人間と犬が大好きなんだけど、他の猫とはあまり仲が良くないんだ。そんな彼女が好きなのはお腹をなでられること、話しかけること、そして顔をなんにでも（人間の顔も含む！）なすりつけること。ゾーイはInstagramを使ってて、たくさんの熱心なファンを持ってるよ: instagram.com/munchkinzoe/"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_058",
+      "String": "狩りに出陣するダッチェス・ドラカ・ヘルスクリームが狙う獲物はつま先なんだ！愚かにもむき出しになっているつま先も、毛布の下にあるつま先も、どれ一つとして彼女からは逃げられない！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_059",
+      "String": "アポロはものを破裂させるのが大好き。イーストの袋や魚用のエサ、粉ミルク、なんだって破裂させちゃうよ。つまり、コーヒー豆には近づかせないでね！アプロはいたずら者ではあるけれど、同時にとても優しくて、おやつのためならなんでもやるよ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_060",
+      "String": "ヴィヴィアン（ヴィヴィ）はちょっと気難しい女の子で、彼女が望むようにだけ、顔と首をなでさせてくれるんだ。少し足を引きずって歩くけど、走って追いかけるのも高いところに登るのも大好き！そして優雅にちょっと舌を出すのが遊びの時間終わりの合図なのさ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_061",
+      "String": "保護される前、パッチは凍傷で耳の先が欠けてしまちゃったんだ。でも、過去の苦難を乗り越え、今では自分が必要とされるときにこそ力を発揮するコンパニオンになったよ。おっちょこちょいだけど遊ぶのが大好きで、いつだってせわしなく鳴き声をあげているんだ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_062",
+      "String": "チキはとっても真面目なネコで、冗談には一切付き合ってくれないよ！ 彼は保護者にして朝5：30の目覚まし時計という自分の仕事を真剣に受け止め、一度もサボったことがないんだ。午後5時にはおやつをあげてね。でなければ、チキは受け取るまで鳴き続けちゃうから！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_063",
+      "String": "ムシュはなまけるのが大好きななまけもの！ 中に入ったパンを食べようと、いつも袋入りのパンのビニール袋をかじっちゃうんだよね。とってもおしゃべりで、欲しいものがあるときは鳴いておねだりして何でも手に入れちゃうよ（たいていはパンだけどね）。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_064",
+      "String": "チャンビーは体が大きくて、あごの下をなでられるのが大好き。その時の喉を鳴らす音は、すっごく遠くからでも聞こえるんだよ。フサフサした布地のトレーナーの上を歩くのが大好きで、いつも口から舌がはみ出てるのが特徴だね。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_065",
+      "String": "ドビーはとっても賢いネコ。彼女は子ネコだったころから人間とコミュニケーションを取って、彼らを上手く操ることを楽しんでたんだ。しかし、それによって午前4時に何度もエサをおねだりしたことで不幸な「事故」が起きてしまった。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_066",
+      "String": "ミノスは自分のことを屈強なハンターだと思ってるけど、実際にはとっても優しい心の持ち主なんだ。彼女のお気に入りの獲物は大きな1枚の葉っぱで、彼女はそれを毎日、朝一番に人間にプレゼントするんだよ。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_067",
+      "String": "オオカミのような見た目だけど、ヴォルフガングは人なつっこくて優しいネコ… 彼の好物の鶏肉のエサの邪魔をしなければだけどね。そのひとかけらを食べるためなら、どんな障害だって乗り越えちゃうよ！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_068",
+      "String": "<CAT_NAME_068>は北欧神話のいたずら好きな神にちなんで名付けられた茶目っ気のあるネコちゃん！はみ出した紐をひっかいたり、よそ見している人間の食べ物をこっそり奪ったりすることがあるので、抜け目のないネコちゃんが問題を起こさないようにしっかり抱きしめてあげましょう！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_JUHANOTUSED",
+      "String": "ユハが座りこんでしまったら、もう誰にも動かせない！でも、なでられるのが大好きで、好きな人にはとっても忠実なネコでもあるんだよ。ただ、自分から近づいてあげなきゃならないけどね。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_SIMBANOTUSED",
+      "String": "シンバは優れた身体能力でいつもお客さんを驚かせてる。とってもかしこくて、ドアを開ける方法も習得しちゃった！でも、このあふれる才能は抱っこしてくれる誰かを探すことにしか使わないけどね！"
+    },
+    {
+      "Key": "OCCUPATION_001",
+      "String": "接客業"
+    },
+    {
+      "Key": "OCCUPATION_002",
+      "String": "会計士"
+    },
+    {
+      "Key": "OCCUPATION_003",
+      "String": "保険数理士"
+    },
+    {
+      "Key": "OCCUPATION_004",
+      "String": "はり師"
+    },
+    {
+      "Key": "OCCUPATION_005",
+      "String": "広告業"
+    },
+    {
+      "Key": "OCCUPATION_006",
+      "String": "航空技師"
+    },
+    {
+      "Key": "OCCUPATION_007",
+      "String": "パイロット"
+    },
+    {
+      "Key": "OCCUPATION_008",
+      "String": "農業コンサルタント"
+    },
+    {
+      "Key": "OCCUPATION_009",
+      "String": "農学科学者"
+    },
+    {
+      "Key": "OCCUPATION_010",
+      "String": "救急隊員"
+    },
+    {
+      "Key": "OCCUPATION_011",
+      "String": "技術者"
+    },
+    {
+      "Key": "OCCUPATION_012",
+      "String": "麻酔医"
+    },
+    {
+      "Key": "OCCUPATION_013",
+      "String": "動物画家"
+    },
+    {
+      "Key": "OCCUPATION_014",
+      "String": "樹医"
+    },
+    {
+      "Key": "OCCUPATION_015",
+      "String": "建築士"
+    },
+    {
+      "Key": "OCCUPATION_016",
+      "String": "美術教師"
+    },
+    {
+      "Key": "OCCUPATION_017",
+      "String": "アート・ディレクター"
+    },
+    {
+      "Key": "OCCUPATION_018",
+      "String": "学芸員"
+    },
+    {
+      "Key": "OCCUPATION_019",
+      "String": "聴覚学者"
+    },
+    {
+      "Key": "OCCUPATION_020",
+      "String": "自動車電機工"
+    },
+    {
+      "Key": "OCCUPATION_021",
+      "String": "パン職人"
+    },
+    {
+      "Key": "OCCUPATION_022",
+      "String": "法律家"
+    },
+    {
+      "Key": "OCCUPATION_023",
+      "String": "生化学者"
+    },
+    {
+      "Key": "OCCUPATION_024",
+      "String": "生物医学工学者"
+    },
+    {
+      "Key": "OCCUPATION_025",
+      "String": "生物工学学者"
+    },
+    {
+      "Key": "OCCUPATION_026",
+      "String": "船大工"
+    },
+    {
+      "Key": "OCCUPATION_027",
+      "String": "書籍編集者"
+    },
+    {
+      "Key": "OCCUPATION_028",
+      "String": "植物学者"
+    },
+    {
+      "Key": "OCCUPATION_029",
+      "String": "れんが職人"
+    },
+    {
+      "Key": "OCCUPATION_030",
+      "String": "建物関連"
+    },
+    {
+      "Key": "OCCUPATION_031",
+      "String": "建築検査官"
+    },
+    {
+      "Key": "OCCUPATION_032",
+      "String": "肉屋"
+    },
+    {
+      "Key": "OCCUPATION_033",
+      "String": "家具職人"
+    },
+    {
+      "Key": "OCCUPATION_034",
+      "String": "カフェ店長"
+    },
+    {
+      "Key": "OCCUPATION_035",
+      "String": "撮影技師"
+    },
+    {
+      "Key": "OCCUPATION_036",
+      "String": "カーディオ専門家"
+    },
+    {
+      "Key": "OCCUPATION_037",
+      "String": "心臓専門医"
+    },
+    {
+      "Key": "OCCUPATION_038",
+      "String": "カウンセラー"
+    },
+    {
+      "Key": "OCCUPATION_039",
+      "String": "大工"
+    },
+    {
+      "Key": "OCCUPATION_040",
+      "String": "地図製作者"
+    },
+    {
+      "Key": "OCCUPATION_041",
+      "String": "調理師"
+    },
+    {
+      "Key": "OCCUPATION_042",
+      "String": "科学エンジニア"
+    },
+    {
+      "Key": "OCCUPATION_043",
+      "String": "化学者"
+    },
+    {
+      "Key": "OCCUPATION_044",
+      "String": "ネコの世話人"
+    },
+    {
+      "Key": "OCCUPATION_045",
+      "String": "カイロプラクター"
+    },
+    {
+      "Key": "OCCUPATION_046",
+      "String": "土木技師"
+    },
+    {
+      "Key": "OCCUPATION_047",
+      "String": "心理学者"
+    },
+    {
+      "Key": "OCCUPATION_048",
+      "String": "イベント主催者"
+    },
+    {
+      "Key": "OCCUPATION_049",
+      "String": "資産保全者"
+    },
+    {
+      "Key": "OCCUPATION_050",
+      "String": "プロジェクト管理人"
+    },
+    {
+      "Key": "OCCUPATION_051",
+      "String": "料理人"
+    },
+    {
+      "Key": "OCCUPATION_052",
+      "String": "コピーライター"
+    },
+    {
+      "Key": "OCCUPATION_053",
+      "String": "グルメ料理人"
+    },
+    {
+      "Key": "OCCUPATION_054",
+      "String": "カウンセラー"
+    },
+    {
+      "Key": "OCCUPATION_055",
+      "String": "穀物農家"
+    },
+    {
+      "Key": "OCCUPATION_056",
+      "String": "カスタマーサポート"
+    },
+    {
+      "Key": "OCCUPATION_057",
+      "String": "ダンス教師"
+    },
+    {
+      "Key": "OCCUPATION_058",
+      "String": "ダンサー"
+    },
+    {
+      "Key": "OCCUPATION_059",
+      "String": "データ管理者"
+    },
+    {
+      "Key": "OCCUPATION_060",
+      "String": "歯科医"
+    },
+    {
+      "Key": "OCCUPATION_061",
+      "String": "皮ふ科医"
+    },
+    {
+      "Key": "OCCUPATION_062",
+      "String": "プログラマー"
+    },
+    {
+      "Key": "OCCUPATION_063",
+      "String": "放射線技師"
+    },
+    {
+      "Key": "OCCUPATION_064",
+      "String": "メカニック"
+    },
+    {
+      "Key": "OCCUPATION_065",
+      "String": "栄養士"
+    },
+    {
+      "Key": "OCCUPATION_066",
+      "String": "ディレクター"
+    },
+    {
+      "Key": "OCCUPATION_067",
+      "String": "介護サービス"
+    },
+    {
+      "Key": "OCCUPATION_068",
+      "String": "ダイビング講師"
+    },
+    {
+      "Key": "OCCUPATION_069",
+      "String": "ドッグ・ハンドラー"
+    },
+    {
+      "Key": "OCCUPATION_070",
+      "String": "下水工事人"
+    },
+    {
+      "Key": "OCCUPATION_071",
+      "String": "仕立屋"
+    },
+    {
+      "Key": "OCCUPATION_072",
+      "String": "教師"
+    },
+    {
+      "Key": "OCCUPATION_073",
+      "String": "エコノミスト"
+    },
+    {
+      "Key": "OCCUPATION_074",
+      "String": "電気技師"
+    },
+    {
+      "Key": "OCCUPATION_075",
+      "String": "電気技術者"
+    },
+    {
+      "Key": "OCCUPATION_076",
+      "String": "内分泌学者"
+    },
+    {
+      "Key": "OCCUPATION_077",
+      "String": "看護師"
+    },
+    {
+      "Key": "OCCUPATION_078",
+      "String": "環境研究者"
+    },
+    {
+      "Key": "OCCUPATION_079",
+      "String": "家庭支援ワーカー"
+    },
+    {
+      "Key": "OCCUPATION_080",
+      "String": "ﾌｧｯｼｮﾝﾃﾞｻﾞｲﾅｰ"
+    },
+    {
+      "Key": "OCCUPATION_081",
+      "String": "映像編集者"
+    },
+    {
+      "Key": "OCCUPATION_082",
+      "String": "ジムのオーナー"
+    },
+    {
+      "Key": "OCCUPATION_083",
+      "String": "花屋"
+    },
+    {
+      "Key": "OCCUPATION_084",
+      "String": "花き業者"
+    },
+    {
+      "Key": "OCCUPATION_085",
+      "String": "航空インストラクター"
+    },
+    {
+      "Key": "OCCUPATION_086",
+      "String": "食品技術者"
+    },
+    {
+      "Key": "OCCUPATION_087",
+      "String": "サッカー選手"
+    },
+    {
+      "Key": "OCCUPATION_088",
+      "String": "森林労働者"
+    },
+    {
+      "Key": "OCCUPATION_089",
+      "String": "家具仕上げ人"
+    },
+    {
+      "Key": "OCCUPATION_090",
+      "String": "博物館の館長"
+    },
+    {
+      "Key": "OCCUPATION_091",
+      "String": "庭師"
+    },
+    {
+      "Key": "OCCUPATION_092",
+      "String": "地質学者"
+    },
+    {
+      "Key": "OCCUPATION_093",
+      "String": "地球物理学者"
+    },
+    {
+      "Key": "OCCUPATION_094",
+      "String": "ブドウ農家"
+    },
+    {
+      "Key": "OCCUPATION_095",
+      "String": "ｸﾞﾗﾌｨｯｸﾃﾞｻﾞｲﾅｰ"
+    },
+    {
+      "Key": "OCCUPATION_096",
+      "String": "グリーンキーパー"
+    },
+    {
+      "Key": "OCCUPATION_097",
+      "String": "体操競技のコーチ"
+    },
+    {
+      "Key": "OCCUPATION_098",
+      "String": "ビューティーサロン"
+    },
+    {
+      "Key": "OCCUPATION_099",
+      "String": "美容師"
+    },
+    {
+      "Key": "OCCUPATION_100",
+      "String": "機械技師"
+    },
+    {
+      "Key": "OCCUPATION_101",
+      "String": "ヘリコプター操縦士"
+    },
+    {
+      "Key": "OCCUPATION_102",
+      "String": "乗馬インストラクター"
+    },
+    {
+      "Key": "OCCUPATION_103",
+      "String": "調教師"
+    },
+    {
+      "Key": "OCCUPATION_104",
+      "String": "薬剤師"
+    },
+    {
+      "Key": "OCCUPATION_105",
+      "String": "ホテル支配人"
+    },
+    {
+      "Key": "OCCUPATION_106",
+      "String": "人事部長"
+    },
+    {
+      "Key": "OCCUPATION_107",
+      "String": "ローカライズ専門家"
+    },
+    {
+      "Key": "OCCUPATION_108",
+      "String": "デザイナー"
+    },
+    {
+      "Key": "OCCUPATION_109",
+      "String": "保険代理人"
+    },
+    {
+      "Key": "OCCUPATION_110",
+      "String": "救急医療隊員"
+    },
+    {
+      "Key": "OCCUPATION_111",
+      "String": "ｲﾝﾃﾘｱﾃﾞｻﾞｲﾅｰ"
+    },
+    {
+      "Key": "OCCUPATION_112",
+      "String": "通訳"
+    },
+    {
+      "Key": "OCCUPATION_113",
+      "String": "宝石商"
+    },
+    {
+      "Key": "OCCUPATION_114",
+      "String": "ジャーナリスト"
+    },
+    {
+      "Key": "OCCUPATION_115",
+      "String": "主席研究員"
+    },
+    {
+      "Key": "OCCUPATION_116",
+      "String": "土地エコノミスト"
+    },
+    {
+      "Key": "OCCUPATION_117",
+      "String": "景観設計家"
+    },
+    {
+      "Key": "OCCUPATION_118",
+      "String": "図書館員"
+    },
+    {
+      "Key": "OCCUPATION_119",
+      "String": "リフト技術者"
+    },
+    {
+      "Key": "OCCUPATION_120",
+      "String": "畜産農家"
+    },
+    {
+      "Key": "OCCUPATION_121",
+      "String": "鍵師"
+    },
+    {
+      "Key": "OCCUPATION_122",
+      "String": "ﾒｲｸｱｯﾌﾟｱｰﾃｨｽﾄ"
+    },
+    {
+      "Key": "OCCUPATION_123",
+      "String": "海洋生物学者"
+    },
+    {
+      "Key": "OCCUPATION_124",
+      "String": "マーケティング専門家"
+    },
+    {
+      "Key": "OCCUPATION_125",
+      "String": "マッサージ療法士"
+    },
+    {
+      "Key": "OCCUPATION_126",
+      "String": "材料技術者"
+    },
+    {
+      "Key": "OCCUPATION_127",
+      "String": "数学者"
+    },
+    {
+      "Key": "OCCUPATION_128",
+      "String": "食肉検査官"
+    },
+    {
+      "Key": "OCCUPATION_129",
+      "String": "機械工学士"
+    },
+    {
+      "Key": "OCCUPATION_130",
+      "String": "気象学者"
+    },
+    {
+      "Key": "OCCUPATION_131",
+      "String": "微生物学者"
+    },
+    {
+      "Key": "OCCUPATION_132",
+      "String": "中学校教師"
+    },
+    {
+      "Key": "OCCUPATION_133",
+      "String": "助産師"
+    },
+    {
+      "Key": "OCCUPATION_134",
+      "String": "炭坑作業員"
+    },
+    {
+      "Key": "OCCUPATION_135",
+      "String": "農家"
+    },
+    {
+      "Key": "OCCUPATION_136",
+      "String": "マルチメディア専門家"
+    },
+    {
+      "Key": "OCCUPATION_137",
+      "String": "音楽教師"
+    },
+    {
+      "Key": "OCCUPATION_138",
+      "String": "ミュージシャン"
+    },
+    {
+      "Key": "OCCUPATION_139",
+      "String": "自然療法医"
+    },
+    {
+      "Key": "OCCUPATION_140",
+      "String": "ネットワーク分析家"
+    },
+    {
+      "Key": "OCCUPATION_141",
+      "String": "神経学者"
+    },
+    {
+      "Key": "OCCUPATION_142",
+      "String": "神経外科医"
+    },
+    {
+      "Key": "OCCUPATION_143",
+      "String": "編集者"
+    },
+    {
+      "Key": "OCCUPATION_144",
+      "String": "栄養士"
+    },
+    {
+      "Key": "OCCUPATION_145",
+      "String": "セラピスト"
+    },
+    {
+      "Key": "OCCUPATION_146",
+      "String": "検眼士"
+    },
+    {
+      "Key": "OCCUPATION_147",
+      "String": "整骨医"
+    },
+    {
+      "Key": "OCCUPATION_148",
+      "String": "小児科医"
+    },
+    {
+      "Key": "OCCUPATION_149",
+      "String": "病理学者"
+    },
+    {
+      "Key": "OCCUPATION_150",
+      "String": "写真家"
+    },
+    {
+      "Key": "OCCUPATION_151",
+      "String": "物理学者"
+    },
+    {
+      "Key": "OCCUPATION_152",
+      "String": "整形外科医"
+    },
+    {
+      "Key": "OCCUPATION_153",
+      "String": "配管工"
+    },
+    {
+      "Key": "OCCUPATION_154",
+      "String": "足治療医"
+    },
+    {
+      "Key": "OCCUPATION_155",
+      "String": "郵便局長"
+    },
+    {
+      "Key": "OCCUPATION_156",
+      "String": "小学校教師"
+    },
+    {
+      "Key": "OCCUPATION_157",
+      "String": "精神科医"
+    },
+    {
+      "Key": "OCCUPATION_158",
+      "String": "社会復帰相談員"
+    },
+    {
+      "Key": "OCCUPATION_159",
+      "String": "校長"
+    },
+    {
+      "Key": "OCCUPATION_160",
+      "String": "中等教員"
+    },
+    {
+      "Key": "OCCUPATION_161",
+      "String": "看板書き"
+    },
+    {
+      "Key": "OCCUPATION_162",
+      "String": "ｽｷｰｲﾝｽﾄﾗｸﾀｰ"
+    },
+    {
+      "Key": "OCCUPATION_163",
+      "String": "ソーシャルワーカー"
+    },
+    {
+      "Key": "OCCUPATION_164",
+      "String": "音波検査者"
+    },
+    {
+      "Key": "OCCUPATION_165",
+      "String": "音響技術者"
+    },
+    {
+      "Key": "OCCUPATION_166",
+      "String": "支援学校教師"
+    },
+    {
+      "Key": "OCCUPATION_167",
+      "String": "大使"
+    },
+    {
+      "Key": "OCCUPATION_168",
+      "String": "内科医"
+    },
+    {
+      "Key": "OCCUPATION_169",
+      "String": "医療言語聴覚士"
+    },
+    {
+      "Key": "OCCUPATION_170",
+      "String": "スポーツセンター経営"
+    },
+    {
+      "Key": "OCCUPATION_171",
+      "String": "プロスポーツ選手"
+    },
+    {
+      "Key": "OCCUPATION_172",
+      "String": "舞台主任"
+    },
+    {
+      "Key": "OCCUPATION_173",
+      "String": "統計学者"
+    },
+    {
+      "Key": "OCCUPATION_174",
+      "String": "石工"
+    },
+    {
+      "Key": "OCCUPATION_175",
+      "String": "構造工学技術者"
+    },
+    {
+      "Key": "OCCUPATION_176",
+      "String": "外科医"
+    },
+    {
+      "Key": "OCCUPATION_177",
+      "String": "測量技師"
+    },
+    {
+      "Key": "OCCUPATION_178",
+      "String": "水泳コーチ"
+    },
+    {
+      "Key": "OCCUPATION_179",
+      "String": "演出家"
+    },
+    {
+      "Key": "OCCUPATION_180",
+      "String": "レポーター"
+    },
+    {
+      "Key": "OCCUPATION_181",
+      "String": "テニスコーチ"
+    },
+    {
+      "Key": "OCCUPATION_182",
+      "String": "工具製作者"
+    },
+    {
+      "Key": "OCCUPATION_183",
+      "String": "漢方医"
+    },
+    {
+      "Key": "OCCUPATION_184",
+      "String": "大学講師"
+    },
+    {
+      "Key": "OCCUPATION_185",
+      "String": "都市設計家"
+    },
+    {
+      "Key": "OCCUPATION_186",
+      "String": "野菜栽培者"
+    },
+    {
+      "Key": "OCCUPATION_187",
+      "String": "獣医"
+    },
+    {
+      "Key": "OCCUPATION_188",
+      "String": "内装職人"
+    },
+    {
+      "Key": "OCCUPATION_189",
+      "String": "時計技師"
+    },
+    {
+      "Key": "OCCUPATION_190",
+      "String": "ウェブ管理人"
+    },
+    {
+      "Key": "OCCUPATION_191",
+      "String": "ウェブデザイナー"
+    },
+    {
+      "Key": "OCCUPATION_192",
+      "String": "ウェブ開発者"
+    },
+    {
+      "Key": "OCCUPATION_193",
+      "String": "溶接工"
+    },
+    {
+      "Key": "OCCUPATION_194",
+      "String": "福祉士"
+    },
+    {
+      "Key": "OCCUPATION_195",
+      "String": "ワイン酒造家"
+    },
+    {
+      "Key": "OCCUPATION_196",
+      "String": "動物学者"
+    },
+    {
+      "Key": "OCCUPATION_197",
+      "String": "ゲーム開発者"
+    },
+    {
+      "Key": "OCCUPATION_198",
+      "String": "Runawayプロダクトオーナー"
+    },
+    {
+      "Key": "OCCUPATION_199",
+      "String": "Runawayﾌﾟﾛｼﾞｪｸﾄ･ﾘｰﾄﾞｱｰﾃｨｽﾄ"
+    },
+    {
+      "Key": "OCCUPATION_200",
+      "String": "Runawayプログラマー"
+    },
+    {
+      "Key": "OCCUPATION_201",
+      "String": "Runawayﾌﾟﾛｼﾞｪｸﾄ･ﾘｰﾄﾞﾌﾟﾛｸﾞﾗﾏｰ"
+    },
+    {
+      "Key": "OCCUPATION_202",
+      "String": "Runawayｱｰﾃｨｽﾄ/ｱﾆﾒｰﾀｰ"
+    },
+    {
+      "Key": "OCCUPATION_203",
+      "String": "YouTube.com/Shubble"
+    },
+    {
+      "Key": "OCCUPATION_204",
+      "String": "Runawayプロダクトオーナー"
+    },
+    {
+      "Key": "OCCUPATION_205",
+      "String": "Runawayﾌﾟﾛｼﾞｪｸﾄ･ﾘｰﾄﾞｱｰﾃｨｽﾄ"
+    },
+    {
+      "Key": "OCCUPATION_206",
+      "String": "Runawayプログラマー"
+    },
+    {
+      "Key": "OCCUPATION_207",
+      "String": "Runawayﾌﾟﾛｼﾞｪｸﾄ･ﾘｰﾄﾞﾌﾟﾛｸﾞﾗﾏｰ"
+    },
+    {
+      "Key": "OCCUPATION_208",
+      "String": "Runawayｱｰﾃｨｽﾄ"
+    },
+    {
+      "Key": "OCCUPATION_209",
+      "String": "受賞歴のあるナラティブデザイナー"
+    },
+    {
+      "Key": "OCCUPATION_210",
+      "String": "Runaway CEO"
+    },
+    {
+      "Key": "OCCUPATION_211",
+      "String": "Runawayクリエイティブディレクター"
+    },
+    {
+      "Key": "OCCUPATION_212",
+      "String": "Runawayテクニカルリード"
+    },
+    {
+      "Key": "OCCUPATION_213",
+      "String": "Runaway QAリード"
+    },
+    {
+      "Key": "OCCUPATION_214",
+      "String": "Runawayマーケティングアーティスト"
+    },
+    {
+      "Key": "OCCUPATION_215",
+      "String": "Runawayコミュニティーサポート"
+    },
+    {
+      "Key": "OCCUPATION_216",
+      "String": "Runawayシステム管理者（@tom_clark）"
+    },
+    {
+      "Key": "OCCUPATION_217",
+      "String": "ゲーム配信者（@renee）"
+    },
+    {
+      "Key": "OCCUPATION_218",
+      "String": "Runawayｱｰﾃｨｽﾄ @tomGarden45"
+    },
+    {
+      "Key": "OCCUPATION_219",
+      "String": "Runawayプログラマー @buzzrick"
+    },
+    {
+      "Key": "OCCUPATION_220",
+      "String": "Runawayリサーチャー (@jonasgoodwin)"
+    },
+    {
+      "Key": "OCCUPATION_221",
+      "String": "Runawayコミュニティーマネージャー"
+    },
+    {
+      "Key": "NAME_SAM",
+      "String": "サム"
+    },
+    {
+      "Key": "NAME_LISA",
+      "String": "リサ"
+    },
+    {
+      "Key": "NAME_CARLA",
+      "String": "カーラ"
+    },
+    {
+      "Key": "NAME_ZOE",
+      "String": "ゾーイ"
+    },
+    {
+      "Key": "NAME_EMMA",
+      "String": "エマ"
+    },
+    {
+      "Key": "NAME_BRYCE",
+      "String": "ブライス"
+    },
+    {
+      "Key": "NAME_JESS",
+      "String": "ジェス"
+    },
+    {
+      "Key": "NAME_RORY",
+      "String": "ローリー"
+    },
+    {
+      "Key": "NAME_TOM",
+      "String": "トム"
+    },
+    {
+      "Key": "NAME_SIOBHAN",
+      "String": "シヴォーン"
+    },
+    {
+      "Key": "NAME_RENEE",
+      "String": "Renée"
+    },
+    {
+      "Key": "NAME_JEFF",
+      "String": "ジェフ"
+    },
+    {
+      "Key": "NAME_LILIAN",
+      "String": "リリアン"
+    },
+    {
+      "Key": "NAME_STEPHEN",
+      "String": "ステファン"
+    },
+    {
+      "Key": "NAME_JIM",
+      "String": "ジム"
+    },
+    {
+      "Key": "NAME_ALEKSIS",
+      "String": "アレクシス"
+    },
+    {
+      "Key": "NAME_LARS",
+      "String": "ラルス"
+    },
+    {
+      "Key": "NAME_JOSIAH",
+      "String": "ジョサイア"
+    },
+    {
+      "Key": "NAME_BERIC",
+      "String": "Beric"
+    },
+    {
+      "Key": "NAME_BRIDGET",
+      "String": "Bridget"
+    },
+    {
+      "Key": "NAME_SHELBY",
+      "String": "Shelby"
+    },
+    {
+      "Key": "NAME_JONAS",
+      "String": "Jonas"
+    },
+    {
+      "Key": "NAME_ADITIA",
+      "String": "Aditia"
+    },
+    {
+      "Key": "NAME_JESSE",
+      "String": "Jesse"
+    },
+    {
+      "Key": "VIP_NAME_001",
+      "String": "シェリー"
+    },
+    {
+      "Key": "VIP_OCCUPATION_001",
+      "String": "ライフスタイルブロガー"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_1",
+      "String": "観葉植物とリアリティー番組が好き。ブラックコーヒーばかり飲んでいる。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_2",
+      "String": "子どものころに飼っていたネコのマックスが最愛の友達だった。彼に自分のすべての秘密を打ち明けていた。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_3",
+      "String": "マックスの影響で若いころからベジタリアンになった。すべての動物は愛されるべきだと考えている。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_4",
+      "String": "マックスが亡くなったとき、二度とペットは飼わず、ネコの保護を始めようと考えた。カフェでは自らのネコへの愛情とカフェインへの愛情を満たしている。"
+    },
+    {
+      "Key": "VIP_NAME_002",
+      "String": "サラ"
+    },
+    {
+      "Key": "VIP_OCCUPATION_002",
+      "String": "二次元アーティスト"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_1",
+      "String": "テレビゲームが好き。やさしくて世話好きで、メールでは大量の絵文字を使用する。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_2",
+      "String": "家にこもりがちな性格で、人付き合いが少し苦手。外出するときは常に帽子をかぶり、大量の日焼け止めを使う。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_3",
+      "String": "ネコアレルギーのために以前はイヌ好きだったが、デートで初めて猫カフェにやってきて、デートの相手ではなくネコと恋に落ちた。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_4",
+      "String": "カフェに来るには抗ヒスタミン薬が必要だが、くしゃみをしてでもネコを抱きしめたいと思っている。定期的にネコをなでて、ネコに囲まれることで不安をやわらげている。"
+    },
+    {
+      "Key": "VIP_NAME_003",
+      "String": "ライリー"
+    },
+    {
+      "Key": "VIP_OCCUPATION_003",
+      "String": "バーテンダー"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_1",
+      "String": "いつもニット帽をかぶっている。ソイカプチーノが大好き。イヌよりネコがすぐれていると死ぬまで主張するつもりでいる。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_2",
+      "String": "ネコのお腹に顔を押し付けるのが大好きで、ネコがしゃべるように鳴いたときに喜びを感じる。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_3",
+      "String": "ガールフレンドと大ゲンカのすえに別れて、愛ネコ、スパークルの養育権を失った。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_4",
+      "String": "カフェのネコから幸せといやしを得ていて、いつかあなたのように猫カフェを経営したいと考えている。"
+    },
+    {
+      "Key": "VIP_NAME_004",
+      "String": "ジュンソ"
+    },
+    {
+      "Key": "VIP_OCCUPATION_004",
+      "String": "ｸﾞﾗﾌｨｯｸﾃﾞｻﾞｲﾅｰ"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_1",
+      "String": "自分のTシャツブランドのデザインとプリントに情熱を持っている。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_2",
+      "String": "これまでネコ好きではなかったが、ネットでネコが大人気なことに気づき、学習のためにカフェに来店。Tシャツのデザインにネコを採用したいと考えている。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_3",
+      "String": "ネコ調査はすぐにネコへの愛情へと変化。その変化を察した多くのネコたちは、彼が店に来ると喜びでのどをゴロゴロ鳴らしながら跳ね寄っていく。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_4",
+      "String": "快適な我が家で「調査」を行うために、少し前にシニアネコを引き取った。しかし今でもカフェに来店しては、いつもの紅茶を飲みながら、愛情を育んできたネコたちとのスキンシップを楽しんでいる。"
+    },
+    {
+      "Key": "VIP_NAME_005",
+      "String": "ジョーダン"
+    },
+    {
+      "Key": "VIP_OCCUPATION_005",
+      "String": "アシスタントシェフ"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_1",
+      "String": "週最大60時間も働くため、プライベートな時間をとても大切にしている。大抵は、彼女と一緒にアニメを観たりテレビゲームをプレイしたりしている。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_2",
+      "String": "職業上必要という理由が大きいが、その他にも、学生ローンを完済したり、日本旅行の資金を貯めるために頑張ってたくさん働いている。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_3",
+      "String": "現在は忙しい合間を縫って日本語の勉強をしており、それがきっかけで、猫カフェが日本発祥であることを知った。絶品コーヒーについても小耳に挟み、あなたのカフェに対する興味が沸騰中。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_4",
+      "String": "カフェで過ごす時間が、心からリラックスできる唯一の時間。"
+    },
+    {
+      "Key": "VIP_NAME_006",
+      "String": "スージー"
+    },
+    {
+      "Key": "VIP_OCCUPATION_006",
+      "String": "ﾒｲｸｱｯﾌﾟｱｰﾃｨｽﾄ"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_1",
+      "String": "セルフィーと、中世の歴史に関するポッドキャストが大好き。好きな色は黒。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_2",
+      "String": "独学でメイクアップアーティストになった彼女は、ソーシャルメディアでの成功と、動物に対する愛情を土台に、動物実験をしないクルーエルティフリーのメイクアップブランドを立ち上げた。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_3",
+      "String": "得意のメイクアップは、飼いネコのペブルズからヒントを得た大胆なキャットアイメイク。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_4",
+      "String": "悲しいことに、シニアネコだったペブルズが少し前に天国に行ってしまったため、無料Wi-Fiと美味しい飲み物、それから新たにできたネコ友達と親密な時間を過ごすためにカフェに通っている。"
+    },
+    {
+      "Key": "VIP_NAME_007",
+      "String": "リン"
+    },
+    {
+      "Key": "VIP_OCCUPATION_007",
+      "String": "ミュージシャン"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_1",
+      "String": "リンはカラオケとあらゆる色のヘアカラーリングが大好きで、それからもちろん、猫が何よりも大好き。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_2",
+      "String": "もともとは普通にカラオケを楽しんでいたが、「スーツを着た猫」の着想を得てからはソロ活動をすることに。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_3",
+      "String": "文学に登場する有名な猫や、頻繁に猫カフェを訪れることからインスピレーションを得ては、猫にちなんだものを何でも歌詞に取り入れようと努力している。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_4",
+      "String": "カフェの猫からインスピレーションを得て、最新曲「使い古しの爪とぎポール」をリリース。地元のラジオ局でヒットとなり、有名人の仲間入りをしたよ！"
+    },
+    {
+      "Key": "VIP_NAME_008",
+      "String": "ジェイダ"
+    },
+    {
+      "Key": "VIP_OCCUPATION_008",
+      "String": "若手医師"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_1",
+      "String": "ジェイダは、オールAの成績で大学をとんとんと卒業した秀才。複数の学位を取得したが、病気で苦しむ人を助けるために医学の道に進むことを決心した。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_2",
+      "String": "仕事がオフの時には、リサイクルショップで買い物をしたり、コーヒーをがぶがぶ飲んだり、地元の猫保護施設でボランティアをするのが大好き。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_3",
+      "String": "いつも最高に優しくて、友達だろうが他人だろうが困っている人を見たら真っ先に手を差し伸べる。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_4",
+      "String": "無私無欲で忙しいライフスタイルのため自宅で猫を飼うのは難しいことから、時間を見つけてはカフェを訪れて、猫とじゃれることを心から楽しみにしている。"
+    },
+    {
+      "Key": "VIP_NAME_009",
+      "String": "レオン"
+    },
+    {
+      "Key": "VIP_OCCUPATION_009",
+      "String": "食料品店主"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_1",
+      "String": "レオンにとっては、動物の保護が何よりも重要。正義のために戦っていないときには、自分のお店「ニャンダフル食材店」で地元の食材を販売している。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_2",
+      "String": "彼の猫のボタンは、怯えきって悲しげに鳴いているところを保護された。長い間飼育放棄されていたボタンは、ひとりぼっちでレオンのお店の下にいたんだ。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_3",
+      "String": "現在、ボタンとレオンは穏やかながらもたくさんの人達と触れ合う毎日を過ごしており、常連のお客さんたちみんなから、古い友達のように挨拶されるのを楽しみにしている。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_4",
+      "String": "レオンは、カフェに引き取られた猫たちが幸せそうにしているのを見るのが大好き。"
+    },
+    {
+      "Key": "VIP_NAME_010",
+      "String": "ルパート"
+    },
+    {
+      "Key": "VIP_OCCUPATION_010",
+      "String": "フリーランスプログラマー"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_1",
+      "String": "ルパートは社会人として型にはまった生活を送るよりも、自由に生きることを望んでいる。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_2",
+      "String": "ルパートは本当は繊細で温かい心の持ち主だが、彼の友達は彼のことを型破りだと思っている。彼は動物好きで、ディノという名前のネズミを飼っている。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_3",
+      "String": "猫とネズミは仲良くなれないと確信するルパートは、猫を飼うことでディノが不安になるのを心配している。だから、猫と遊びたくなるとこっそりカフェを訪れる。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_4",
+      "String": "カフェに来るのは、彼が持つ唯一の習慣。ここにいる猫全員のアートを作成してアートブログを開設したほど、カフェが大好きなんだ！"
+    },
+    {
+      "Key": "VIP_NAME_011",
+      "String": "ルカ"
+    },
+    {
+      "Key": "VIP_OCCUPATION_011",
+      "String": "図書館員"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_1",
+      "String": "幼いころから本の虫だったルカは、常に文学に囲まれて成長した。彼のお気に入りのジャンルは、超自然ロマンス。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_2",
+      "String": "地元の図書館にいる猫のベヒーモスは、ルカが16歳で図書館で働き始めて以来の大親友。ルカの夢は、いつかベストセラー作家になること。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_3",
+      "String": "20代前半で聴覚障害を患ったルカは、仕事の後に手話クラスで教えることを楽しんでいる。ベヒーモスは、そのクラスにいる生徒たちに撫でてもらうのが大好き。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_4",
+      "String": "生徒たちの勧めでカフェを訪れて以来、彼は処女作の執筆に取かかっている。その作品は、カフェに満ちている幸せなオーラにインスパイアされたんだって！"
+    },
+    {
+      "Key": "VIP_NAME_012",
+      "String": "ジユ"
+    },
+    {
+      "Key": "VIP_OCCUPATION_012",
+      "String": "写真家"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_1",
+      "String": "ジユは写真と絵画と詩が大好き。クリエイティブな才能に対する自信とは裏腹に、シャイで人見知りをするタイプ。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_2",
+      "String": "絵画を描くのにぴったりの、ゆったりとしたオーバーオールがお気に入り。引き取ったばかりの子猫のベルは、そのポケットの中でまったりするのが大好き。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_3",
+      "String": "創作活動中のジユは真剣そのもので、猫の絵を描くときには写真を参考にする。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_4",
+      "String": "ワッフルからエネルギーを、カフェからはインスピレーションを得たジユは、もうすぐ開催される美術展「猫の手：写真と絵と詩」に作品を展示すべく、がんばっている。"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_TITLE",
+      "String": "不明なエラー"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_DESC",
+      "String": "不明なエラーが発生しました"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_TITLE",
+      "String": "モバゲートークンクライアントエラー"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_DESC",
+      "String": "Mobage サービスでサーバーを認証する際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_TITLE",
+      "String": "ゲーム設定が見つかりません"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_DESC",
+      "String": "ゲーム設定の取得で問題が発生しました"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_TITLE",
+      "String": "メールボックスが見つかりません"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_DESC",
+      "String": "メールボックスの取得で問題が発生しました"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_TITLE",
+      "String": "メールアイテムを読み取れませんでした"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_DESC",
+      "String": "メールボックスアイテムの読み取り中に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_TITLE",
+      "String": "Oauth オブジェクトにユーザー オブジェクトが見つかりません"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_DESC",
+      "String": "ユーザーの認証に問題がありました"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_TITLE",
+      "String": "ソーシャルアカウントを削除できませんでした"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_DESC",
+      "String": "ソーシャルアカウントの削除中に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_TITLE",
+      "String": "メールアイテムの受信者が見つかりませんでした"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_DESC",
+      "String": "メールアイテムの受信者を見つける際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_TITLE",
+      "String": "アカウントの種類が指定されていません"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_DESC",
+      "String": "友達をリンクする際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_TITLE",
+      "String": "LCDクライアントが見つかりません"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_DESC",
+      "String": "認証サーバーに到達する際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_TITLE",
+      "String": "請求するアカウントが見つかりませんでした"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_DESC",
+      "String": "アカウントの要求で問題が発生しました"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_TITLE",
+      "String": "銀行パラメータが見つかりません"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_DESC",
+      "String": "銀行取引を取得する際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_TITLE",
+      "String": "銀行取引が見つかりません"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_DESC",
+      "String": "銀行取引を取得する際に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_TITLE",
+      "String": "正しいパラメータが指定されていません"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_DESC",
+      "String": "パラメータに問題がありました"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_TITLE",
+      "String": "セッションの更新に関する問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_DESC",
+      "String": "セッションに問題がありました"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_TITLE",
+      "String": "ユーザーの更新に関する問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_DESC",
+      "String": "ゲームの保存中に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_TITLE",
+      "String": "ログの作成に関する問題"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_DESC",
+      "String": "ログの作成中に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_TITLE",
+      "String": "メールアイテムの作成に関する問題"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_DESC",
+      "String": "メールアイテムの作成中に問題が発生しました"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_TITLE",
+      "String": "友達の更新に関する問題"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_DESC",
+      "String": "おっと！友達リストの更新中に問題が発生しました。次回ゲームをロードするときに再試行します。"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_TITLE",
+      "String": "通貨が見つかりませんでした"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_DESC",
+      "String": "通貨の取得で問題が発生しました"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_TITLE",
+      "String": "LCD証明書エラー"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_DESC",
+      "String": "LCD証明書の保存中にエラーが発生しました"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_TITLE",
+      "String": "LCD証明書エラー"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_DESC",
+      "String": "LCD証明書のロード中にエラーが発生しました"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_TITLE",
+      "String": "保存シーケンス番号が正しくありません"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_DESC",
+      "String": "保存番号の順序が間違っていました"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_TITLE",
+      "String": "データ保存の問題"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_DESC",
+      "String": "データなしで保存しようとしました"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_TITLE",
+      "String": "Facebookアカウントエラー"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_DESC",
+      "String": "Facebook アカウントでログイン中にエラーが発生しました。 Facebook の接続を確認して、もう一度お試しください。"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_TITLE",
+      "String": "移行エラー"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_DESC",
+      "String": "アカウントの移行中にエラーが発生しました。サポートが必要な場合は、フレンドリーなサポートチームにお問い合わせください。"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_TITLE",
+      "String": "無効なクーポン"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_DESC",
+      "String": "無効なクーポン"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_TITLE",
+      "String": "認証データの更新が必要です"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_DESC",
+      "String": "アカウントが統合されたため、authData を更新する必要があります"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_TITLE",
+      "String": "トランザクションはすでに消費されています"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_DESC",
+      "String": "この購入トランザクションはすでに消費されています"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_TITLE",
+      "String": "ユーザーデータなし"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_DESC",
+      "String": "保存するユーザー データが見つかりません"
+    },
+    {
+      "Key": "SUPPORT_EMAIL_SAVEDATA_BELOW",
+      "String": "以下の情報はプレイヤーのデータであり、ゲームの問題に対処するのに役立ちます。この上にメッセージを書いてください:"
+    },
+    {
+      "Key": "SPRITE_LOGO",
+      "String": "Sprites/Login/Logo-ja"
+    },
+    {
+      "Key": "CLAIM_COUPON",
+      "String": "クーポンコードを入力！"
+    },
+    {
+      "Key": "COUPON_TITLE",
+      "String": "クーポン"
+    },
+    {
+      "Key": "COUPON_DESCRIPTION",
+      "String": "ここでクーポンと賞品を交換しよう："
+    },
+    {
+      "Key": "COUPON_PLACEHOLDER",
+      "String": "コードを入力…"
+    },
+    {
+      "Key": "COUPON_CLAIM_BUTTON",
+      "String": "獲得"
+    },
+    {
+      "Key": "COUPON_SUCCESS_TITLE",
+      "String": "大成功！"
+    },
+    {
+      "Key": "COUPON_SUCCESS_DESC",
+      "String": "クーポンの交換に成功したよ"
+    },
+    {
+      "Key": "COUPON_INVALID_TITLE",
+      "String": "クーポンが見つかりません"
+    },
+    {
+      "Key": "COUPON_INVALID_DESC",
+      "String": "クーポンが見つかりません。\nコードが間違っているか、期限が\n切れている可能性があります。"
+    },
+    {
+      "Key": "COUPON_EXPIRED_TITLE",
+      "String": "期限切れクーポン"
+    },
+    {
+      "Key": "COUPON_EXPIRED_DESC",
+      "String": "このクーポンは期限が切れています。"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_TITLE",
+      "String": "使用済みのクーポン"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_DESC",
+      "String": "このクーポンは使用済みです。"
+    },
+    {
+      "Key": "COUPON_OFFLINE_TITLE",
+      "String": "オフライン"
+    },
+    {
+      "Key": "COUPON_OFFLINE_DESC",
+      "String": "インターネットに接続してからクーポンを入力してください。"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_001_TITLE",
+      "String": "<COMMON>ジェムパック"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_002_TITLE",
+      "String": "<UNCOMMON>ジェムパック"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_003_TITLE",
+      "String": "<RARE>ジェムパック"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_004_TITLE",
+      "String": "<EPIC>ジェムパック"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_005_TITLE",
+      "String": "<LEGENDARY>ジェムパック"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_001_TITLE",
+      "String": "特性パック1"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_002_TITLE",
+      "String": "特性パック2"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_003_TITLE",
+      "String": "特性パック3"
+    },
+    {
+      "Key": "ROTATIONAL_SHOP_PACK_TITLE",
+      "String": "<LIMITED_TIME_HEADING>"
+    },
+    {
+      "Key": "EVENT_DELIVERIES_TITLE",
+      "String": "<EVENT><DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "FURNITURE_NAME_288",
+      "String": "アフォニャート"
+    },
+    {
+      "Key": "FURNITURE_NAME_289",
+      "String": "ニャプチーノ"
+    },
+    {
+      "Key": "FURNITURE_NAME_290",
+      "String": "チェア"
+    },
+    {
+      "Key": "FURNITURE_NAME_348",
+      "String": "ブッククッション"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY2",
+      "String": "Your rating can really help support <FURISTAS_CAT_CAFE> !"
+    },
+    {
+      "Key": "YES",
+      "String": "はい！"
+    },
+    {
+      "Key": "NO",
+      "String": "いいえ"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_MINI_001_TITLE",
+      "String": "ぬいぐるみパック"
+    },
+    {
+      "Key": "FURNITURE_NAME_398",
+      "String": "クローバーのバンティング"
+    },
+    {
+      "Key": "FURNITURE_NAME_399",
+      "String": "餃子クッション"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_TITLE",
+      "String": "Facebook ログイン"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_DESCRIPTION",
+      "String": "Facebookでのログイン機能はファリスタズから削除されました。誤ってログアウトした場合も、復元メニューを使用してこのデバイスでゲームを復元できますが、データを保護したい場合は、メインメニューからRunawayアカウントを登録してください。ログインをタップし、次に登録を選択します。\n問題が発生した場合は、support@runaway.zendesk.comまでご連絡ください。"
+    }
+  ]
+}

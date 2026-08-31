@@ -1,0 +1,132 @@
+
+Karaoke.png
+size: 874,459
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Karaoke/BouncePaw
+  rotate: false
+  xy: 841, 218
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Glow
+  rotate: true
+  xy: 700, 10
+  size: 154, 95
+  orig: 156, 97
+  offset: 1, 1
+  index: -1
+Parts_Furniture/Karaoke/KaraokeMachine
+  rotate: false
+  xy: 455, 152
+  size: 230, 305
+  orig: 231, 305
+  offset: 1, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow1_1
+  rotate: false
+  xy: 841, 293
+  size: 31, 10
+  orig: 31, 10
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow1_2
+  rotate: false
+  xy: 841, 281
+  size: 31, 10
+  orig: 31, 10
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow1_3
+  rotate: false
+  xy: 841, 269
+  size: 31, 10
+  orig: 31, 10
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow1_4
+  rotate: false
+  xy: 841, 257
+  size: 31, 10
+  orig: 31, 10
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow2_1
+  rotate: false
+  xy: 617, 2
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow2_2
+  rotate: false
+  xy: 650, 2
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow2_3
+  rotate: false
+  xy: 841, 247
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Meow2_4
+  rotate: false
+  xy: 841, 237
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Mic
+  rotate: true
+  xy: 455, 43
+  size: 107, 168
+  orig: 110, 168
+  offset: 1, 0
+  index: -1
+Parts_Furniture/Karaoke/Platform
+  rotate: false
+  xy: 2, 18
+  size: 451, 439
+  orig: 456, 439
+  offset: 1, 0
+  index: -1
+Parts_Furniture/Karaoke/RainbowGlow
+  rotate: false
+  xy: 455, 5
+  size: 160, 36
+  orig: 162, 37
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Screen1
+  rotate: true
+  xy: 625, 12
+  size: 138, 73
+  orig: 138, 73
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Screen2
+  rotate: true
+  xy: 797, 26
+  size: 138, 73
+  orig: 138, 73
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Karaoke/Table
+  rotate: false
+  xy: 687, 166
+  size: 152, 137
+  orig: 152, 137
+  offset: 0, 0
+  index: -1
+Parts_Furniture/TV Frames/Off
+  rotate: false
+  xy: 687, 305
+  size: 182, 152
+  orig: 182, 152
+  offset: 0, 0
+  index: -1

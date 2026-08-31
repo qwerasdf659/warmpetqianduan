@@ -1,0 +1,46 @@
+{
+  "Items": [
+    {
+      "ID": "1",
+      "Region": "0",
+      "Blue": "100",
+      "Brown": "100",
+      "Green": "100"
+    },
+    {
+      "ID": "2",
+      "Region": "1",
+      "Blue": "0",
+      "Brown": "100",
+      "Green": "0"
+    },
+    {
+      "ID": "3",
+      "Region": "2",
+      "Blue": "5",
+      "Brown": "100",
+      "Green": "10"
+    },
+    {
+      "ID": "4",
+      "Region": "3",
+      "Blue": "0",
+      "Brown": "100",
+      "Green": "10"
+    },
+    {
+      "ID": "5",
+      "Region": "4",
+      "Blue": "0",
+      "Brown": "100",
+      "Green": "10"
+    },
+    {
+      "ID": "",
+      "Region": "",
+      "Blue": "",
+      "Brown": "",
+      "Green": ""
+    }
+  ]
+}

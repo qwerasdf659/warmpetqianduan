@@ -1,0 +1,108 @@
+{
+  "Items": [
+    {
+      "ID": 1,
+      "ExpansionLevel": 1,
+      "LevelRequired": 0,
+      "FurnitureCapacity": 10,
+      "MapID": 0,
+      "MaxCustomers": 3
+    },
+    {
+      "ID": 2,
+      "ExpansionLevel": 2,
+      "LevelRequired": 5,
+      "FurnitureCapacity": 20,
+      "MapID": 0,
+      "MaxCustomers": 4
+    },
+    {
+      "ID": 3,
+      "ExpansionLevel": 3,
+      "LevelRequired": 7,
+      "FurnitureCapacity": 30,
+      "MapID": 0,
+      "MaxCustomers": 5
+    },
+    {
+      "ID": 4,
+      "ExpansionLevel": 4,
+      "LevelRequired": 15,
+      "FurnitureCapacity": 40,
+      "MapID": 0,
+      "MaxCustomers": 6
+    },
+    {
+      "ID": 5,
+      "ExpansionLevel": 5,
+      "LevelRequired": 23,
+      "FurnitureCapacity": 50,
+      "MapID": 0,
+      "MaxCustomers": 7
+    },
+    {
+      "ID": 6,
+      "ExpansionLevel": 6,
+      "LevelRequired": 31,
+      "FurnitureCapacity": 60,
+      "MapID": 0,
+      "MaxCustomers": 8
+    },
+    {
+      "ID": 7,
+      "ExpansionLevel": 7,
+      "LevelRequired": 40,
+      "FurnitureCapacity": 70,
+      "MapID": 0,
+      "MaxCustomers": 9
+    },
+    {
+      "ID": 8,
+      "ExpansionLevel": 8,
+      "LevelRequired": 48,
+      "FurnitureCapacity": 80,
+      "MapID": 0,
+      "MaxCustomers": 10
+    },
+    {
+      "ID": 9,
+      "ExpansionLevel": 9,
+      "LevelRequired": 52,
+      "FurnitureCapacity": 90,
+      "MapID": 0,
+      "MaxCustomers": 11
+    },
+    {
+      "ID": 10,
+      "ExpansionLevel": 1,
+      "LevelRequired": 0,
+      "FurnitureCapacity": 90,
+      "MapID": 1,
+      "MaxCustomers": 0
+    },
+    {
+      "ID": 11,
+      "ExpansionLevel": 2,
+      "LevelRequired": 9,
+      "FurnitureCapacity": 100,
+      "MapID": 1,
+      "MaxCustomers": 0
+    },
+    {
+      "ID": 12,
+      "ExpansionLevel": 3,
+      "LevelRequired": 19,
+      "FurnitureCapacity": 110,
+      "MapID": 1,
+      "MaxCustomers": 0
+    },
+    {
+      "ID": 13,
+      "ExpansionLevel": 4,
+      "LevelRequired": 36,
+      "FurnitureCapacity": 120,
+      "MapID": 1,
+      "MaxCustomers": 0
+    }
+  ]
+}

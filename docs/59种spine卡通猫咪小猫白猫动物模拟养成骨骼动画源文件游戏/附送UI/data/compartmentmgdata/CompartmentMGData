@@ -1,0 +1,154 @@
+{
+  "Items": [
+    {
+      "ID": "c_01",
+      "Rewards": [
+        "SC:10",
+        "U:1",
+        "TRAIT:2",
+        "Tokens:200"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_02",
+      "Rewards": [
+        "Tokens:20",
+        "SC:20",
+        "U:1",
+        "SC:100"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_03",
+      "Rewards": [
+        "C:2",
+        "Tokens:50",
+        "SC:40",
+        "TRAIT:3"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_04",
+      "Rewards": [
+        "SC:10",
+        "TRAIT:4",
+        "Tokens:100",
+        "U:1"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_05",
+      "Rewards": [
+        "Tokens:20",
+        "SC:20",
+        "TRAIT:2",
+        "R:1"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_06",
+      "Rewards": [
+        "TRAIT:2",
+        "SC:20",
+        "U:1",
+        "SC:100"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_07",
+      "Rewards": [
+        "SC:10",
+        "C:1",
+        "SC:40",
+        "Tokens:200"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_08",
+      "Rewards": [
+        "Tokens:20",
+        "U:1",
+        "SC:40",
+        "TRAIT:3"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_09",
+      "Rewards": [
+        "SC:10",
+        "TRAIT:4",
+        "Tokens:100",
+        "U:1"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    },
+    {
+      "ID": "c_10",
+      "Rewards": [
+        "Tokens:20",
+        "SC:20",
+        "TRAIT:2",
+        "R:1"
+      ],
+      "Special": 4,
+      "ButtonCost": [
+        3,
+        5,
+        10
+      ]
+    }
+  ]
+}

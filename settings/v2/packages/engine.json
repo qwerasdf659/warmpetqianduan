@@ -149,11 +149,11 @@
             "_value": false
           },
           "spine": {
-            "_value": false,
+            "_value": true,
             "_option": "spine-3.8"
           },
           "spine-3.8": {
-            "_value": false,
+            "_value": true,
             "_flags": {
               "LOAD_SPINE_MANUALLY": false
             }
@@ -206,6 +206,7 @@
           "profiler",
           "rich-text",
           "skeletal-animation",
+          "spine-3.8",
           "tween",
           "ui"
         ],

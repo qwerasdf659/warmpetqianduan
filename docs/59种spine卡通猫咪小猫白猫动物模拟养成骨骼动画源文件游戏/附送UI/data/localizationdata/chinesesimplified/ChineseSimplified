@@ -1,0 +1,8632 @@
+{
+  "Items": [
+    {
+      "Key": "FISH",
+      "String": "鱼儿"
+    },
+    {
+      "Key": "FISH_PLURAL",
+      "String": "鱼儿"
+    },
+    {
+      "Key": "HC",
+      "String": "喵币"
+    },
+    {
+      "Key": "HC_PLURAL",
+      "String": "喵币"
+    },
+    {
+      "Key": "TOKEN",
+      "String": "代币"
+    },
+    {
+      "Key": "TOKEN_PLURAL",
+      "String": "代币"
+    },
+    {
+      "Key": "FC",
+      "String": "家具代币"
+    },
+    {
+      "Key": "FC_PLURAL",
+      "String": "家具代币"
+    },
+    {
+      "Key": "HEART",
+      "String": "爱心"
+    },
+    {
+      "Key": "HEART_PLURAL",
+      "String": "爱心"
+    },
+    {
+      "Key": "XP",
+      "String": "经验"
+    },
+    {
+      "Key": "XP_PLURAL",
+      "String": "经验"
+    },
+    {
+      "Key": "EXPERIENCE",
+      "String": "经验"
+    },
+    {
+      "Key": "FURISTAS_CAT_CAFE",
+      "String": "《绒毛猫咖啡厅》"
+    },
+    {
+      "Key": "LEVEL",
+      "String": "等级"
+    },
+    {
+      "Key": "LEVELED",
+      "String": "已晋级"
+    },
+    {
+      "Key": "LEVEL_UP",
+      "String": "晋级"
+    },
+    {
+      "Key": "CAT",
+      "String": "猫咪"
+    },
+    {
+      "Key": "CAT_PLURAL",
+      "String": "猫咪"
+    },
+    {
+      "Key": "CUSTOMER",
+      "String": "顾客"
+    },
+    {
+      "Key": "CUSTOMER_PLURAL",
+      "String": "顾客"
+    },
+    {
+      "Key": "BASKET",
+      "String": "篮子"
+    },
+    {
+      "Key": "BASKET_PLURAL",
+      "String": "篮子"
+    },
+    {
+      "Key": "DELIVERY",
+      "String": "快递"
+    },
+    {
+      "Key": "DELIVERY_PLURAL",
+      "String": "快递"
+    },
+    {
+      "Key": "CONFIRM",
+      "String": "好的"
+    },
+    {
+      "Key": "TRAIT",
+      "String": "特性"
+    },
+    {
+      "Key": "TRAIT_PLURAL",
+      "String": "特性"
+    },
+    {
+      "Key": "ITEM",
+      "String": "物品"
+    },
+    {
+      "Key": "ITEM_PLURAL",
+      "String": "物品"
+    },
+    {
+      "Key": "UNLOCK",
+      "String": "解锁"
+    },
+    {
+      "Key": "UNLOCKED",
+      "String": "已解锁"
+    },
+    {
+      "Key": "ADOPT",
+      "String": "收养"
+    },
+    {
+      "Key": "PROMOTE",
+      "String": "培养"
+    },
+    {
+      "Key": "CUSTOMISATION",
+      "String": "定制用品"
+    },
+    {
+      "Key": "CUSTOMISATION_PLURAL",
+      "String": "定制用品"
+    },
+    {
+      "Key": "ASSIGN",
+      "String": "配对"
+    },
+    {
+      "Key": "TIME_DAYS_SINGULAR",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_PLURAL",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_SHORT",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_DAYS_LETTER",
+      "String": "{0}天"
+    },
+    {
+      "Key": "TIME_HOURS_SINGULAR",
+      "String": "{0}小时"
+    },
+    {
+      "Key": "TIME_HOURS_PLURAL",
+      "String": "{0}小时"
+    },
+    {
+      "Key": "TIME_HOURS_SHORT",
+      "String": "{0}小时"
+    },
+    {
+      "Key": "TIME_HOURS_LETTER",
+      "String": "{0}小时"
+    },
+    {
+      "Key": "TIME_MINUTES_SINGULAR",
+      "String": "{0}分钟"
+    },
+    {
+      "Key": "TIME_MINUTES_PLURAL",
+      "String": "{0}分钟"
+    },
+    {
+      "Key": "TIME_MINUTES_SHORT",
+      "String": "{0}分钟"
+    },
+    {
+      "Key": "TIME_MINUTES_LETTER",
+      "String": "{0}分钟"
+    },
+    {
+      "Key": "TIME_SECONDS_SINGULAR",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_PLURAL",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_SHORT",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "TIME_SECONDS_LETTER",
+      "String": "{0}秒"
+    },
+    {
+      "Key": "BACK_LABEL",
+      "String": "返回"
+    },
+    {
+      "Key": "TAP_PROMPT",
+      "String": "点击"
+    },
+    {
+      "Key": "DRAG_PROMPT",
+      "String": "拖拽"
+    },
+    {
+      "Key": "RELEASE_PROMPT",
+      "String": "放开"
+    },
+    {
+      "Key": "LEVEL_UP_PROMPT",
+      "String": "培养"
+    },
+    {
+      "Key": "ADOPT_PROMPT",
+      "String": "收养"
+    },
+    {
+      "Key": "AD_WATCH",
+      "String": "观看"
+    },
+    {
+      "Key": "OPEN",
+      "String": "打开"
+    },
+    {
+      "Key": "COMMON",
+      "String": "常见"
+    },
+    {
+      "Key": "UNCOMMON",
+      "String": "少见"
+    },
+    {
+      "Key": "RARE",
+      "String": "罕见"
+    },
+    {
+      "Key": "EPIC",
+      "String": "史诗"
+    },
+    {
+      "Key": "LEGENDARY",
+      "String": "传奇"
+    },
+    {
+      "Key": "PERSONALITY_TOOLTIP_DESCRIPTION",
+      "String": "为这只<CAT>配对拥有相同性格的<CUSTOMER_PLURAL>，即可获得<HEART_PLURAL>奖励"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT1",
+      "String": "赚取<HEART_PLURAL>以获得更多<DELIVERY><BASKET_PLURAL>"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT2",
+      "String": "为<CAT_PLURAL>配对<CUSTOMER_PLURAL>即可赚取。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT3",
+      "String": "配对性格即可获得<HEART_PLURAL>奖励。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT1",
+      "String": "使用后可马上获取<BASKET><DELIVERY_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT2",
+      "String": "在商店中购买更多。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT1",
+      "String": "使用后可<PROMOTE><CAT_PLURAL>和<ADOPT>新<CAT_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT2",
+      "String": "通过开启<DELIVERY><BASKET_PLURAL>来赚取更多。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT1",
+      "String": "使用后可为您的咖啡厅购买<CUSTOMISATION_PLURAL>。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT2",
+      "String": "可通过咖啡厅任务赚取，好让您的<CAT_PLURAL>和<CUSTOMER_PLURAL>保持愉悦。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_XP_REWARDS_TAG",
+      "String": "下个<LEVEL>奖励："
+    },
+    {
+      "Key": "GENERIC_CAT_UNLOCKED",
+      "String": "新<CAT>"
+    },
+    {
+      "Key": "ITEM_ACQUISITION_DESCRIPTION",
+      "String": "使用后可升级您的<CAT_PLURAL>。通过开启<BASKET_PLURAL>或从商店中购买它们来获取<ITEM_PLURAL>。"
+    },
+    {
+      "Key": "PERSONALITY_DESCRIPTION",
+      "String": "为这只<CAT>配对拥有相同性格类型的<CUSTOMER_PLURAL>，即可获得<HEART_PLURAL>奖励"
+    },
+    {
+      "Key": "LEVEL_DESCRIPTION",
+      "String": "更高<LEVEL>的<CAT_PLURAL>可与<CUSTOMER_PLURAL>玩得更久，并让您赚取更多<HEART_PLURAL>"
+    },
+    {
+      "Key": "LEVEL_LOCK_TEXT",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "BONUS_BASKET_WAITING",
+      "String": "距离<BASKET>奖励还剩："
+    },
+    {
+      "Key": "BONUS_BASKET_READY_LABEL",
+      "String": "免费每日<BASKET_PLURAL>可用！"
+    },
+    {
+      "Key": "BONUS_BASKET_OPEN_PROMPT",
+      "String": "点击领取"
+    },
+    {
+      "Key": "NEW_BASKET_TITLE",
+      "String": "新<BASKET>"
+    },
+    {
+      "Key": "TAP_TO_CONTINUE",
+      "String": "点击任何地方以继续"
+    },
+    {
+      "Key": "SWIPE_PROMPT",
+      "String": "向上滑屏以开启"
+    },
+    {
+      "Key": "REWARDS_TITLE",
+      "String": "奖励"
+    },
+    {
+      "Key": "RECRUIT_PROMPT",
+      "String": "<ADOPT>"
+    },
+    {
+      "Key": "TOOLTIP_COMING_SOON",
+      "String": "即将推出。"
+    },
+    {
+      "Key": "TOOLTIP_NEED_MORE_TOKENS",
+      "String": "需要更多<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "TOOLTIP_TAP_CONFIRM",
+      "String": "再次点击以确认。"
+    },
+    {
+      "Key": "TOOLTIP_CANNOT_AFFORD",
+      "String": "资金不足，无法购买<ITEM>。"
+    },
+    {
+      "Key": "CAT_INVENTORY_MENU_TITLE",
+      "String": "<CAT_PLURAL>"
+    },
+    {
+      "Key": "CAT_PROMOTION_TITLE",
+      "String": "猫咪升级"
+    },
+    {
+      "Key": "CAT_ADOPTION_TITLE",
+      "String": "猫咪收养"
+    },
+    {
+      "Key": "ADOPT_TEXT",
+      "String": "用您的鱼儿来收养这只新猫咪！"
+    },
+    {
+      "Key": "RECRUIT_DESCRIPTION",
+      "String": "用您的<FISH>来<ADOPT>这只新<CAT>"
+    },
+    {
+      "Key": "ADOPT_CONFIRMATION_FEEDBACK",
+      "String": "耶！您的咖啡厅来了一位新朋友！"
+    },
+    {
+      "Key": "NURTURE_CONFIRMATION_FEEDBACK",
+      "String": "好棒！现在{0}可与<CUSTOMER_PLURAL>配对高达{1}以赚取{2}颗<HEART_PLURAL>"
+    },
+    {
+      "Key": "MATERIALS_REQUIRED",
+      "String": "需要："
+    },
+    {
+      "Key": "HEARTS_EARNED",
+      "String": "已赚取爱心："
+    },
+    {
+      "Key": "COST",
+      "String": "花费"
+    },
+    {
+      "Key": "PERSONALITY",
+      "String": "性格"
+    },
+    {
+      "Key": "UPGRADE_FAILED_TITLE",
+      "String": "升级失败"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON1",
+      "String": "<ITEM_PLURAL>不足"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON2",
+      "String": "<HEART_PLURAL>不足"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON3",
+      "String": "<FISH>不足"
+    },
+    {
+      "Key": "THANK_YOU",
+      "String": "谢谢您"
+    },
+    {
+      "Key": "CUDDLE_TIME",
+      "String": "拥抱时光"
+    },
+    {
+      "Key": "REWARD",
+      "String": "奖励"
+    },
+    {
+      "Key": "PLAYER_LEVELED_UP",
+      "String": "您升级了！"
+    },
+    {
+      "Key": "REWARD_FURNITURE_TOKENS",
+      "String": "<FC_PLURAL>"
+    },
+    {
+      "Key": "REWARD_FISH",
+      "String": "<FISH>"
+    },
+    {
+      "Key": "REWARD_HC",
+      "String": "<HC>"
+    },
+    {
+      "Key": "REWARD_EXPANSION",
+      "String": "更多咖啡厅空间"
+    },
+    {
+      "Key": "SHOP_MENU_TITLE",
+      "String": "商店"
+    },
+    {
+      "Key": "SHOP_CURRENT_POSSESSION",
+      "String": "目前持有："
+    },
+    {
+      "Key": "SHOP_BUY",
+      "String": "购买"
+    },
+    {
+      "Key": "SHOP_TAP_TO_CONFIRM",
+      "String": "再次点击以确认"
+    },
+    {
+      "Key": "SHOP_CANT_AFFORD",
+      "String": "资金不足，无法购买<ITEM>"
+    },
+    {
+      "Key": "SHOP_ERROR_TITLE",
+      "String": "糟糕……"
+    },
+    {
+      "Key": "SHOP_THANKS_TITLE",
+      "String": "谢谢您！"
+    },
+    {
+      "Key": "SHOP_THANKS_DESCRIPTION",
+      "String": "您的购买已完成"
+    },
+    {
+      "Key": "SHOP_PRICE_FREE",
+      "String": "免费！"
+    },
+    {
+      "Key": "CAT_UPGRADE_ITEM_PLURAL",
+      "String": "猫咪升级物品"
+    },
+    {
+      "Key": "MORE",
+      "String": "更多"
+    },
+    {
+      "Key": "SHOP_REFRESH_TIME",
+      "String": "距离新物品还剩……"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER",
+      "String": "新手包"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_001",
+      "String": "“无言以对”<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_002",
+      "String": "“举爪”<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_003",
+      "String": "“新好友”<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_004",
+      "String": "“舒适伙伴”<SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_001",
+      "String": "幸运<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_002",
+      "String": "<SHOP_PACK_TITLE_BARGAIN><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_003",
+      "String": "<RARITY_COMMON><DELIVERY_CONTENTS_ITEMS><BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_004",
+      "String": "超级<BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_SPECIAL_DEAL",
+      "String": "特惠！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BARGAIN",
+      "String": "特价商品"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_GREAT_VALUE",
+      "String": "物超所值"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_ITEM",
+      "String": "使用后可<PROMOTE><CAT_PLURAL>"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_FURNITURE",
+      "String": "用这个舒适的装饰品来装饰你的咖啡厅。"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_002",
+      "String": "<CAT_NAME_020>猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_002_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_020>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_003",
+      "String": "“<CAT_NAME_009>”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_003_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_009>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_004",
+      "String": "“<CAT_NAME_027>”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_004_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_027>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_PROGPACK_001_DESC",
+      "String": "用这捆鱼儿、喵币和代币来提升您的猫咪咖啡厅体验！"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005",
+      "String": "“脚踏实地”新手包"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005_DESC",
+      "String": "此新手包可让您提前得到小须和一堆很酷的东西。绝对物超所值！"
+    },
+    {
+      "Key": "SHOP_PACK_032_STARTER_DESC",
+      "String": "这款组合包将为您独家提供奥里，此外还包括一大堆喵币和鱼儿，能迅速提升您的咖啡厅运营能力。"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_TITLE",
+      "String": "“奥里”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供奥里，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_TITLE",
+      "String": "“恰恰”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供恰恰，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_TITLE",
+      "String": "“齐吉”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供齐吉，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_TITLE",
+      "String": "“<CAT_NAME_065>”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_065>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_TITLE",
+      "String": "“<CAT_NAME_066>”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_066>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_TITLE",
+      "String": "“<CAT_NAME_067>”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供<CAT_NAME_067>，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "PERCENT_OFF",
+      "String": "{0}%折扣！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_STARTER_DESC",
+      "String": "这款组合包将为您独家提供{0}，此外还包括一大堆喵币和鱼儿，能迅速提升您的咖啡厅运营能力。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_TITLE",
+      "String": "“{0}”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供{0}，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_TITLE",
+      "String": "喵币特惠包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_DESC",
+      "String": "这款限时特别组合包能提供相当实惠的喵币哟。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_TITLE",
+      "String": "鱼儿特惠包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_DESC",
+      "String": "闻到鱼腥味了吗？这款特别组合包为您提供价廉物美的鱼儿。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_TITLE",
+      "String": "代币大出血"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_DESC",
+      "String": "正为代币买不起心爱的家具而发愁吗？这款限时组合包能让您事半功倍。"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_TITLE",
+      "String": "进度组合包"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_DESC",
+      "String": "用这捆鱼儿、喵币和代币来提升您的猫咪咖啡厅体验！"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_TITLE",
+      "String": "“Possum”猫咪组合包"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_DESC",
+      "String": "这款组合包将为您独家提供Possum，此外还包括一大堆喵币和鱼儿。真棒！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_TITLE",
+      "String": "幸运猫咪升级物品！"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_DESC",
+      "String": "该组合包内含用于升级猫咪活动的特殊物品，它们还能让你使用咖啡厅提升效果。"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_TITLE",
+      "String": "猫咪升级物品！"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_DESC",
+      "String": "该组合包内含猫咪升级物品，折扣巨大。"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_TITLE",
+      "String": "巨型<SHOP_PACK_FURNITURE_LARGE_TITLE>包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_TITLE",
+      "String": "<SHOP_PACK_FURNITURE_TITLE>包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_001_TITLE",
+      "String": "巨型森林包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_002_TITLE",
+      "String": "巨型孟菲斯包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_003_TITLE",
+      "String": "巨型田园风包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_004_TITLE",
+      "String": "巨型餐馆包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_005_TITLE",
+      "String": "巨型流行包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_006_TITLE",
+      "String": "巨型沙滩包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_001_TITLE",
+      "String": "园艺高手包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_002_TITLE",
+      "String": "游戏厅包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_003_TITLE",
+      "String": "图书馆包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_004_TITLE",
+      "String": "波西米亚包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_005_TITLE",
+      "String": "下午茶包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_006_TITLE",
+      "String": "黑暗学院风包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_007_TITLE",
+      "String": "音乐包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_008_TITLE",
+      "String": "极简包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_009_TITLE",
+      "String": "禅意包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_010_TITLE",
+      "String": "斯堪的纳维亚包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_011_TITLE",
+      "String": "乡村包"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_012_TITLE",
+      "String": "猫咪爱好者包"
+    },
+    {
+      "Key": "DELIVERY_MENU_TITLE",
+      "String": "<DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "HOT_TIP_TITLE",
+      "String": "绒毛猫开心提示"
+    },
+    {
+      "Key": "HOT_TIP_1",
+      "String": "不知该如何赚取货币？请点击屏幕底部的图标。"
+    },
+    {
+      "Key": "HOT_TIP_2",
+      "String": "在猫咪详情页面中，您可以点击物品及图标以进一步了解它们。"
+    },
+    {
+      "Key": "HOT_TIP_3",
+      "String": "即使您无法配对其性格，最好还是将一只猫咪配对给一位顾客以获取爱心。"
+    },
+    {
+      "Key": "HOT_TIP_4",
+      "String": "提升猫咪以赚取经验并升级。"
+    },
+    {
+      "Key": "HOT_TIP_5",
+      "String": "留意商店中的奖励宝箱。商店中的物品每天都会更新。"
+    },
+    {
+      "Key": "HOT_TIP_6",
+      "String": "在您不断升级时，您将会获得更多定制咖啡厅的选项！"
+    },
+    {
+      "Key": "HOT_TIP_7",
+      "String": "要升级一只猫咪，除了需要正确物品以外，它们还得为您赚取足够爱心。"
+    },
+    {
+      "Key": "HOT_TIP_8",
+      "String": "前往“目标”页面查看可获取超棒奖励的日常挑战"
+    },
+    {
+      "Key": "HOT_TIP_9",
+      "String": "您的咖啡厅每5级都会扩大并可容纳更多顾客！"
+    },
+    {
+      "Key": "HOT_TIP_10",
+      "String": "将猫咪与顾客配对以获取爱心，即便它不是完美的性格配对。"
+    },
+    {
+      "Key": "HOT_TIP_11",
+      "String": "为客户配对猫咪以赚取更多爱心并获取更多篮子。"
+    },
+    {
+      "Key": "DELIVERY_HURRY",
+      "String": "加速"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_TITLE",
+      "String": "<HC_PLURAL>不足！"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_DESCRIPTION",
+      "String": "<HC_PLURAL>不足，您无法加速此<DELIVERY>"
+    },
+    {
+      "Key": "DELIVERY_CONTAINS",
+      "String": "包含"
+    },
+    {
+      "Key": "DELIVERY_START",
+      "String": "开始"
+    },
+    {
+      "Key": "DELIVERY_TAP_START",
+      "String": "点击开始"
+    },
+    {
+      "Key": "DELIVERY_ARRIVES_IN",
+      "String": "距离送达还剩……"
+    },
+    {
+      "Key": "DELIVERY_TAP_COLLECT",
+      "String": "<BONUS_BASKET_OPEN_PROMPT>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_BASIC",
+      "String": "基本<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GOOD",
+      "String": "优质<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GREAT",
+      "String": "高级<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_HUGE",
+      "String": "特级<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_AMAZING",
+      "String": "终极<BASKET>"
+    },
+    {
+      "Key": "DELIVERY_ON_ITS_WAY",
+      "String": "即将到达！请稍后回来"
+    },
+    {
+      "Key": "NEW_ITEM_NOTIFICATION",
+      "String": "新！"
+    },
+    {
+      "Key": "EPIC_ITEM_NOTIFICATION",
+      "String": "<LEGENDARY>！"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_NOTIFICATION",
+      "String": "<EPIC>！"
+    },
+    {
+      "Key": "REWARD_ITEM_DESCRIPTION",
+      "String": "<CAT>升级<ITEM>"
+    },
+    {
+      "Key": "SC_DESCRIPTION",
+      "String": "<CAT>升级货币"
+    },
+    {
+      "Key": "TODO_TITLE",
+      "String": "今日任务"
+    },
+    {
+      "Key": "GOALS_RESET_IN",
+      "String": "离重置剩……"
+    },
+    {
+      "Key": "GOAL_ASSIGN",
+      "String": "为{0}只猫咪<ASSIGN>顾客"
+    },
+    {
+      "Key": "GOAL_CAT_ASSIGN",
+      "String": "为{0}<ASSIGN>顾客{1}次"
+    },
+    {
+      "Key": "GOAL_TRAIT_ASSIGN",
+      "String": "<ASSIGN>{1}只拥有“{0}”性格特性的猫咪"
+    },
+    {
+      "Key": "GOAL_MINIGAME",
+      "String": "完成“{0}”小游戏{1}次"
+    },
+    {
+      "Key": "GOAL_EARN",
+      "String": "收集{0}{1}"
+    },
+    {
+      "Key": "GOAL_CAT_LEVEL_UP",
+      "String": "<PROMOTE>{0}"
+    },
+    {
+      "Key": "GOAL_CHECK_BIO",
+      "String": "查看{0}顾客资料"
+    },
+    {
+      "Key": "GOAL_OPEN_BASKETS",
+      "String": "开启{0}<BASKET_PLURAL>"
+    },
+    {
+      "Key": "GOAL_EARN_BASKETS",
+      "String": "赚取{0}<BASKET_PLURAL>"
+    },
+    {
+      "Key": "GOAL_TAKE_SNAPSHOT",
+      "String": "拍一张可爱的快照"
+    },
+    {
+      "Key": "GOAL_ALLCOMPLETE",
+      "String": "完成所有任务"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_FULL_CAFE",
+      "String": "为您的整个咖啡厅拍一张快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_RELAXING_CATS",
+      "String": "为{0}只休息中的猫咪拍一张快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_SPECIFIC_SUBJECT",
+      "String": "为{0}和一位顾客合拍一张快照"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_INTERACTION",
+      "String": "为一对配对的顾客和猫咪拍一张快照"
+    },
+    {
+      "Key": "GOAL_USE_LUCKYCAT",
+      "String": "点击幸运猫咪的肚子来获得{0}件物品"
+    },
+    {
+      "Key": "GOAL_ASSIGN_TO_STATION",
+      "String": "将{0} <CAT_PLURAL>分配到<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "GOAL_REENERGIZED",
+      "String": "使得{0} <CAT_PLURAL>变得精神抖擞"
+    },
+    {
+      "Key": "SHELF_TITLE",
+      "String": "更多Runaway制作的精彩游戏"
+    },
+    {
+      "Key": "SHELF_SALE_LABEL",
+      "String": "促销！"
+    },
+    {
+      "Key": "SHELF_NEW_EVENT_LABEL",
+      "String": "新活动"
+    },
+    {
+      "Key": "SHELF_PLAY_PROMPT",
+      "String": "畅玩"
+    },
+    {
+      "Key": "SHELF_FLUTTER_TITLE",
+      "String": "《彩翼：蝴蝶保护区》"
+    },
+    {
+      "Key": "SHELF_SPLASH_TITLE",
+      "String": "《Splash》"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_TITLE",
+      "String": "《Starlight》"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_TITLE",
+      "String": "翼彼迎"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_TITLE",
+      "String": "Old Friends Dog Game"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_TITLE",
+      "String": "Bird Kind"
+    },
+    {
+      "Key": "SHELF_FLUTTER_DESCRIPTION",
+      "String": "培养蝴蝶并照料一处漂亮的雨林"
+    },
+    {
+      "Key": "SHELF_SPLASH_DESCRIPTION",
+      "String": "当您建造您自己壮观的珊瑚礁时，您也在为脆弱的水下生态系统恢复元气"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_DESCRIPTION",
+      "String": "当您吸引华丽的飞蛾时，欣赏天黑后的雨林活跃起来"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_DESCRIPTION",
+      "String": "在一棵宁静的树上为鸟儿准备床铺和早餐吧"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_DESCRIPTION",
+      "String": "一个关于友谊的故事游戏，专为热爱狗狗的人设计。"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_DESCRIPTION",
+      "String": "帮助孤独的树精恢复神秘森林中的鸟类生命"
+    },
+    {
+      "Key": "ADVERTISEMENT",
+      "String": "广告"
+    },
+    {
+      "Key": "ENGLISH_ONLY",
+      "String": "（仅有英文版）。"
+    },
+    {
+      "Key": "HOWTO_TITLE",
+      "String": "如何……"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_TITLE",
+      "String": "配对一只<CAT>"
+    },
+    {
+      "Key": "HOWTO_MATCHPERSONALITIES_TITLE",
+      "String": "配对性格"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_01",
+      "String": "点击<CUSTOMER>"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_02",
+      "String": "从菜单中拖拽一只<CAT>"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_03",
+      "String": "将<CAT>拖拽至<CUSTOMER>"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_04",
+      "String": "配对性格可获取奖励！"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_TITLE",
+      "String": "赚取货币"
+    },
+    {
+      "Key": "HOWTO_COLLECTCURRENCY_TITLE",
+      "String": "收集货币"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_01",
+      "String": "从篮子中赚取<FISH>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_02",
+      "String": "为<CAT_PLURAL>配对<CUSTOMER_PLURAL>即可赚取<HEART_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_03",
+      "String": "完成咖啡厅任务即可赚取<TOKEN_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_04",
+      "String": "通过收养和培养猫咪即可赚取<XP_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_TITLE",
+      "String": "<PROMOTE>一只<CAT>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_01",
+      "String": "打开<CAT>清单"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_02",
+      "String": "点击一只<CAT>查看它的细节"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_03",
+      "String": "您将需要<ITEM_PLURAL>、<FISH>和已赚取足够<HEART_PLURAL>的<CAT>"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_04",
+      "String": "若符合所有条件，点击<PROMOTE>按钮！"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_TITLE",
+      "String": "开启一个<BASKET>"
+    },
+    {
+      "Key": "HOWTO_EARNBASKET_TITLE",
+      "String": "赚取一个<BASKET>"
+    },
+    {
+      "Key": "HOWTO_STARTBASKET_TITLE",
+      "String": "开始一份<BASKET>订单"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_01",
+      "String": "为<CAT_PLURAL>配对<CUSTOMER_PLURAL>以赚取<HEART_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_02",
+      "String": "收集<HEART_PLURAL>以获取<BASKET>订单"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_03",
+      "String": "一旦开始了，<BASKET_PLURAL>得花时间送达"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_04",
+      "String": "当<BASKET>送达时，点击开启"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_TITLE",
+      "String": "查看一位<CUSTOMER>的资料"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_01",
+      "String": "点击<CUSTOMER>"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_02",
+      "String": "点击信息按钮查看他们的资料"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_03",
+      "String": "若您愿意您可与世界分享<CUSTOMER>的资料"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_04",
+      "String": "留意特别回返的贵宾<CUSTOMER_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_TITLE",
+      "String": "执行咖啡厅任务"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_01",
+      "String": "您需要定期执行咖啡厅任务"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_02",
+      "String": "点击需要关注的东西即可开始"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_03",
+      "String": "完成这些任务可赚取<TOKEN_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_04",
+      "String": "<TOKEN_PLURAL>可用来定制化您的咖啡厅"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_TITLE",
+      "String": "查看状态面板信息"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_01",
+      "String": "点击屏幕底部的图标以查看更多信息"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_02",
+      "String": "您可以在很多地方这样做。"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_03",
+      "String": "若您不确定某个功能，不妨点击图标"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_04",
+      "String": "您升级时也可以看到<UNLOCKED>项目。"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_TITLE",
+      "String": "<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_01",
+      "String": "通过收养和培养猫咪即可赚取<XP_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_02",
+      "String": "赚取足够经验以<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_03",
+      "String": "每个<LEVEL>解锁新事物"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_04",
+      "String": "点击屏幕底部的经验条以查看您有多接近下次升级"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_TITLE",
+      "String": "购买<CUSTOMISATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_01",
+      "String": "点击此按钮以打开<CUSTOMISATION>模式"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_02",
+      "String": "拖拽一项<CUSTOMISATION>出来"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_03",
+      "String": "将它放至空置之处"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_04",
+      "String": "若您有足够<TOKEN_PLURAL>，您将收到购买提示"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_TITLE",
+      "String": "拍一张照"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_01",
+      "String": "点击右上角的照片按钮"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_02",
+      "String": "选择欲拍摄的时刻"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_03",
+      "String": "储存或分享照片"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_04",
+      "String": "使用“#绒毛猫”标签查看他人的发文"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_TITLE",
+      "String": "<ADOPT>一只<CAT>"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_01",
+      "String": "打开<CAT>清单"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_02",
+      "String": "点击已解锁的<CAT>轮廓"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_03",
+      "String": "若您有足够<FISH>，您可点击“<ADOPT>”"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_04",
+      "String": "好棒！新猫咪！"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "String": "放置<CUSTOMISATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_01",
+      "String": "开启<CUSTOMISATION>模式"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_02",
+      "String": "寻找您想放置的东西"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_03",
+      "String": "将东西拖拽出来。红色表示您无法放置在那"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_04",
+      "String": "若非红色，那您就可放置它！"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_TITLE",
+      "String": "拍一张快照"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_01",
+      "String": "点击“快照”按钮"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_02",
+      "String": "四处拖拽矩形以寻找最佳镜头"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_03",
+      "String": "点击矩形，拍一张照"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_04",
+      "String": "使用“#绒毛猫”标签，与社群分享"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_TITLE",
+      "String": "<CAT_LOUNGE>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_01",
+      "String": "点击猫隧道前往休息室"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_02",
+      "String": "使用<CATHEART_PLURAL>来获取物品"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_03",
+      "String": "使用物品来解锁和升级<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_04",
+      "String": "将<CAT_PLURAL>分配到<CAT_STATION_PLURAL>来赚取猫咪爱心"
+    },
+    {
+      "Key": "FIRST_TIME_TITLE",
+      "String": "欢迎来到“绒毛猫\"！"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION1",
+      "String": "欢迎来到属于您的猫咪咖啡厅！"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION2",
+      "String": "遵循画面底部的说明以开始游玩。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_TITLE",
+      "String": "做得很好"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC",
+      "String": "您现在了解了经营猫咪咖啡厅的基础。点击右下角的“目标”按钮查看今天的特别任务。"
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC2",
+      "String": "谢谢您，祝您游戏愉快！"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_001",
+      "String": "收养您的第一只猫咪（请按？按钮寻求帮助）"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN1",
+      "String": "点击顾客并为小邦配对"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET1",
+      "String": "哇有个篮子？！打开它吧"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSEWALL1",
+      "String": "点击家具按钮并选择一张壁纸"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_002",
+      "String": "收养一只新猫咪"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN2",
+      "String": "为两只猫咪配对顾客"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_COLLECT1",
+      "String": "拿起顾客留下的一张爱心便条"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_STARTBASKET1",
+      "String": "赚取爱心然后订购篮子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN3",
+      "String": "再次为两只猫咪配对顾客"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSESEAT",
+      "String": "从家具菜单中购买一张凳子或椅子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_TAPHUD1",
+      "String": "点击屏幕底部的爱心图标"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET2",
+      "String": "篮子一到就立即去打开吧"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_PLACETABLE",
+      "String": "从家具菜单中放置桌子"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_EARNHEARTS1",
+      "String": "使用小邦赚取10颗爱心"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_LEVELCAT1",
+      "String": "培养小邦至等级2"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G001",
+      "String": "培养（升级）3只猫咪"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G002",
+      "String": "为猫咪配对50名顾客以赚取爱心"
+    },
+    {
+      "Key": "TUTORIAL_STEP_G003",
+      "String": "赚取200枚代币"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_GOTOCATLOUNGE1",
+      "String": "点击猫隧道来前往猫咪休息室"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_USELUCKYCAT",
+      "String": "点击幸运猫咪的肚子来获得3件物品"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_UNLOCKSTATION",
+      "String": "通过<CAT_STATION>物品栏来解锁第一个<CAT_STATION>"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGNCATTOSTATION",
+      "String": "将一只猫咪分配到<STATION_002_NAME>站点"
+    },
+    {
+      "Key": "MINIGAME_NAME_BRUSH",
+      "String": "轻抚"
+    },
+    {
+      "Key": "MINIGAME_CAT_TITLE",
+      "String": "{0}想要关怀"
+    },
+    {
+      "Key": "MINIGAME_CAT_EXPLANATION",
+      "String": "用您的手指轻抚<CAT>"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_1",
+      "String": "快乐猫咪！"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_2",
+      "String": "咕噜噜噜"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_3",
+      "String": "满足的猫咪"
+    },
+    {
+      "Key": "MINIGAME_NAME_CLEANPAWPRINTS",
+      "String": "打扫"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE_SPILL",
+      "String": "清理洒出的饮料"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE",
+      "String": "哦{0}……"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_EXPLANATION",
+      "String": "搓揉以擦去污迹"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_1",
+      "String": "真干净啊"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_2",
+      "String": "闪闪发亮"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_3",
+      "String": "印迹消失吧"
+    },
+    {
+      "Key": "MINIGAME_NAME_COFFEE",
+      "String": "咖啡师"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_TITLE",
+      "String": "饮料订单到"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_1",
+      "String": "将配料拖拽入杯子"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_2",
+      "String": "将杯子拖拽给顾客"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_1",
+      "String": "最佳特调！"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_2",
+      "String": "嗯……"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_3",
+      "String": "美味无比"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_4",
+      "String": "精神百倍"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_1",
+      "String": "做得好"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_2",
+      "String": "太出色了"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_3",
+      "String": "好样的"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_4",
+      "String": "太棒了"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_5",
+      "String": "还真不错"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_6",
+      "String": "太厉害了"
+    },
+    {
+      "Key": "MINIGAME_NAME_SALAD",
+      "String": "沙拉艺术家"
+    },
+    {
+      "Key": "MINIGAME_SALAD_TITLE",
+      "String": "沙拉订单到"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_1",
+      "String": "将配料拖拽到盘子上"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_2",
+      "String": "将盘子拖拽给顾客"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_1",
+      "String": "真健康！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_2",
+      "String": "真好吃！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_3",
+      "String": "真美味！"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_4",
+      "String": "美味可口"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SUNDAE",
+      "String": "圣代冰淇凌艺术家"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_TITLE",
+      "String": "可口甜点"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_1",
+      "String": "将配料拖拽到杯子里"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_2",
+      "String": "将杯子拖拽给顾客"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_1",
+      "String": "哇！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_2",
+      "String": "好棒的甜品！"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_3",
+      "String": "太好吃了"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_4",
+      "String": "手艺真棒"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "MINIGAME_NAME_SMOOTHIE",
+      "String": "奶昔艺术家"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_TITLE",
+      "String": "奶昔时间到"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_1",
+      "String": "将配料拖拽到搅拌机中"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_2",
+      "String": "将杯子拖拽给顾客"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_1",
+      "String": "清爽"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_2",
+      "String": "口感爽滑"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_3",
+      "String": "营养丰富！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_4",
+      "String": "润泽心田！"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_5",
+      "String": "<THANK_YOU>！"
+    },
+    {
+      "Key": "PICK_A_COMPARTMENT",
+      "String": "选择其中一格"
+    },
+    {
+      "Key": "PLUS_ONE_REWARD",
+      "String": "额外奖励"
+    },
+    {
+      "Key": "YOU_HAVE_COLLECTED_IT_ALL",
+      "String": "已领取所有奖励"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_1",
+      "String": "选择其中一格"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_TITLE",
+      "String": "碰碰运气"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_2",
+      "String": "观看视频以获得更多选择"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_3",
+      "String": "使用喵币以获得更多选择"
+    },
+    {
+      "Key": "MINIGAME_NAME_WAFFLE",
+      "String": "华夫饼艺术家"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_TITLE",
+      "String": "放纵一下"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_1",
+      "String": "将配料拖拽到华夫饼上"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_2",
+      "String": "将完成的华夫饼拖拽给顾客"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_1",
+      "String": "奢华珍馐！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_2",
+      "String": "纯粹享受。"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_3",
+      "String": "完美的华夫饼！"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_4",
+      "String": "美味佳肴！"
+    },
+    {
+      "Key": "MINIGAME_NAME_CAT_TREAT",
+      "String": "猫食"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_TITLE",
+      "String": "猫食时间到"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_EXPLANATION",
+      "String": "将每个猫食拖拽给性格对应的猫咪"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_1",
+      "String": "真好吃"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_2",
+      "String": "猫咪好满足"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_3",
+      "String": "可口点心！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_NAME",
+      "String": "猫咪玩具"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_TITLE",
+      "String": "和{0}一起玩耍！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_EXPLANATION",
+      "String": "到处拖拽玩具！"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_1",
+      "String": "好好玩"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_2",
+      "String": "咕噜噜噜"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_3",
+      "String": "喵！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_NAME",
+      "String": "猫食捉捉捉"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_TITLE",
+      "String": "捉住猫食！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_EXPLANATION",
+      "String": "往猫咪的方向轻扔猫食"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_1",
+      "String": "扔得挺准啊！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_2",
+      "String": "干得不错！"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_3",
+      "String": "真厉害！"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_TITLE",
+      "String": "购买"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_DESCRIPTION",
+      "String": "您是否要花费{1}<TOKEN_PLURAL>购买“{0}”？"
+    },
+    {
+      "Key": "ERROR_TITLE",
+      "String": "糟糕……"
+    },
+    {
+      "Key": "CUSHION",
+      "String": "座垫"
+    },
+    {
+      "Key": "COUCH",
+      "String": "沙发"
+    },
+    {
+      "Key": "RUG",
+      "String": "毛毯"
+    },
+    {
+      "Key": "CHAIR",
+      "String": "椅子"
+    },
+    {
+      "Key": "TABLE",
+      "String": "桌子"
+    },
+    {
+      "Key": "STOOL",
+      "String": "凳子"
+    },
+    {
+      "Key": "MAT",
+      "String": "垫子"
+    },
+    {
+      "Key": "PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "CRATE",
+      "String": "箱子"
+    },
+    {
+      "Key": "SHELF",
+      "String": "架子"
+    },
+    {
+      "Key": "COUNTER",
+      "String": "柜台"
+    },
+    {
+      "Key": "CAT_TRAIT_FRIENDLY",
+      "String": "友善"
+    },
+    {
+      "Key": "CAT_TRAIT_SHY",
+      "String": "腼腆"
+    },
+    {
+      "Key": "CAT_TRAIT_PLAYFUL",
+      "String": "好玩"
+    },
+    {
+      "Key": "CAT_TRAIT_CHILL",
+      "String": "超酷"
+    },
+    {
+      "Key": "CAT_TRAIT_CAPRICIOUS",
+      "String": "善变"
+    },
+    {
+      "Key": "CAT_TRAIT_CURIOUS",
+      "String": "好奇"
+    },
+    {
+      "Key": "CAT_TRAIT_GENTLE",
+      "String": "温和"
+    },
+    {
+      "Key": "CAT_TRAIT_ASSERTIVE",
+      "String": "自信"
+    },
+    {
+      "Key": "CAT_TRAIT_GOOFY",
+      "String": "蠢萌"
+    },
+    {
+      "Key": "CAT_TRAIT_ADVENTUROUS",
+      "String": "爱冒险"
+    },
+    {
+      "Key": "CAT_TRAIT_CUDDLY",
+      "String": "惹人爱"
+    },
+    {
+      "Key": "CAT_TRAIT_SLEEPY",
+      "String": "困倦"
+    },
+    {
+      "Key": "CAT_TRAIT_SMART",
+      "String": "机灵"
+    },
+    {
+      "Key": "HAIR_TYPE_SHORT",
+      "String": "短毛"
+    },
+    {
+      "Key": "HAIR_TYPE_MEDIUM",
+      "String": "中长毛"
+    },
+    {
+      "Key": "HAIR_TYPE_LONG",
+      "String": "长毛"
+    },
+    {
+      "Key": "HAIR_TYPE_NONE",
+      "String": "无"
+    },
+    {
+      "Key": "CAT_BREED_CALICO",
+      "String": "三色"
+    },
+    {
+      "Key": "CAT_BREED_TABBY",
+      "String": "虎斑"
+    },
+    {
+      "Key": "CAT_BREED_BOMBAY",
+      "String": "孟买"
+    },
+    {
+      "Key": "CAT_BREED_PERSIAN",
+      "String": "波斯"
+    },
+    {
+      "Key": "CAT_BREED_SIBERIAN",
+      "String": "西伯利亚"
+    },
+    {
+      "Key": "CAT_BREED_TORTOISESHELL",
+      "String": "玳瑁"
+    },
+    {
+      "Key": "CAT_BREED_TUXEDO",
+      "String": "燕尾服"
+    },
+    {
+      "Key": "CAT_BREED_BOBTAIL",
+      "String": "短尾"
+    },
+    {
+      "Key": "CAT_BREED_CHANTILLY",
+      "String": "尚蒂伊"
+    },
+    {
+      "Key": "CAT_BREED_CHARTREAUX",
+      "String": "卡尔特"
+    },
+    {
+      "Key": "CAT_BREED_SIAMESE",
+      "String": "暹罗"
+    },
+    {
+      "Key": "CAT_BREED_LONGHAIR",
+      "String": "长毛"
+    },
+    {
+      "Key": "CAT_BREED_TONKINESE",
+      "String": "东奇尼"
+    },
+    {
+      "Key": "CAT_BREED_WIREHAIR",
+      "String": "硬毛"
+    },
+    {
+      "Key": "CAT_BREED_FOLD",
+      "String": "折耳"
+    },
+    {
+      "Key": "CAT_BREED_SPHYNX",
+      "String": "斯芬克斯"
+    },
+    {
+      "Key": "CAT_BREED_LAPERM",
+      "String": "挪邦"
+    },
+    {
+      "Key": "CAT_BREED_SHORTHAIR",
+      "String": "短毛"
+    },
+    {
+      "Key": "CAT_BREED_RAGDOLL",
+      "String": "布偶"
+    },
+    {
+      "Key": "CAT_BREED_EXOTIC",
+      "String": "异国"
+    },
+    {
+      "Key": "CAT_BREED_HIMALAYAN",
+      "String": "喜马拉雅"
+    },
+    {
+      "Key": "CAT_BREED_ANGORA",
+      "String": "安哥拉"
+    },
+    {
+      "Key": "CAT_BREED_CURL",
+      "String": "反耳"
+    },
+    {
+      "Key": "CAT_BREED_OCICAT",
+      "String": "欧西"
+    },
+    {
+      "Key": "CAT_BREED_BENGAL",
+      "String": "孟加拉"
+    },
+    {
+      "Key": "CAT_BREED_MAINECOON",
+      "String": "缅因猫"
+    },
+    {
+      "Key": "CAT_BREED_BICOLOUR",
+      "String": "双色猫"
+    },
+    {
+      "Key": "CAT_BREED_RUSSIANWHITE",
+      "String": "俄罗斯白猫"
+    },
+    {
+      "Key": "CAT_BREED_SNOWSHOE",
+      "String": "雪鞋猫"
+    },
+    {
+      "Key": "CAT_BREED_MUNCHKIN",
+      "String": "曼切堪猫"
+    },
+    {
+      "Key": "CAT_BREED_MIXED",
+      "String": "混种"
+    },
+    {
+      "Key": "CAT_BREED_ORIENTAL",
+      "String": "东方猫"
+    },
+    {
+      "Key": "CAT_BREED_LAMBKIN",
+      "String": "羊羔猫"
+    },
+    {
+      "Key": "CAT_BREED_LYKOI",
+      "String": "狼猫"
+    },
+    {
+      "Key": "COMMON_ITEM_DESC",
+      "String": "用来升级猫咪的<COMMON>物品"
+    },
+    {
+      "Key": "UNCOMMON_ITEM_DESC",
+      "String": "用来升级猫咪的<UNCOMMON>物品"
+    },
+    {
+      "Key": "RARE_ITEM_DESC",
+      "String": "用来升级猫咪的<RARE>物品"
+    },
+    {
+      "Key": "EPIC_ITEM_DESC",
+      "String": "用来升级猫咪的<EPIC>物品"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_DESC",
+      "String": "用来升级猫咪的<LEGENDARY>物品"
+    },
+    {
+      "Key": "BALL",
+      "String": "球"
+    },
+    {
+      "Key": "BELL",
+      "String": "铃铛"
+    },
+    {
+      "Key": "TOY",
+      "String": "玩具"
+    },
+    {
+      "Key": "FOOD",
+      "String": "食物"
+    },
+    {
+      "Key": "COLLAR",
+      "String": "项圈"
+    },
+    {
+      "Key": "ITEM_001",
+      "String": "球铃"
+    },
+    {
+      "Key": "ITEM_002",
+      "String": "海绵球"
+    },
+    {
+      "Key": "ITEM_003",
+      "String": "沙包球"
+    },
+    {
+      "Key": "ITEM_004",
+      "String": "毛线球"
+    },
+    {
+      "Key": "ITEM_005",
+      "String": "高科技球"
+    },
+    {
+      "Key": "ITEM_006",
+      "String": "铜铃"
+    },
+    {
+      "Key": "ITEM_007",
+      "String": "黄色铃铛"
+    },
+    {
+      "Key": "ITEM_008",
+      "String": "灰猫铃铛"
+    },
+    {
+      "Key": "ITEM_009",
+      "String": "橙色猫铃"
+    },
+    {
+      "Key": "ITEM_010",
+      "String": "柜台铃"
+    },
+    {
+      "Key": "ITEM_011",
+      "String": "金枪鱼罐头"
+    },
+    {
+      "Key": "ITEM_012",
+      "String": "肉冻"
+    },
+    {
+      "Key": "ITEM_013",
+      "String": "猫饼干"
+    },
+    {
+      "Key": "ITEM_014",
+      "String": "炸鱼条"
+    },
+    {
+      "Key": "ITEM_015",
+      "String": "三文鱼"
+    },
+    {
+      "Key": "ITEM_016",
+      "String": "老鼠玩具"
+    },
+    {
+      "Key": "ITEM_017",
+      "String": "蜘蛛玩具"
+    },
+    {
+      "Key": "ITEM_018",
+      "String": "鱼玩具"
+    },
+    {
+      "Key": "ITEM_019",
+      "String": "八爪鱼玩具"
+    },
+    {
+      "Key": "ITEM_020",
+      "String": "恐龙玩具"
+    },
+    {
+      "Key": "ITEM_021",
+      "String": "白色项圈"
+    },
+    {
+      "Key": "ITEM_022",
+      "String": "运动式项圈"
+    },
+    {
+      "Key": "ITEM_023",
+      "String": "可爱项圈"
+    },
+    {
+      "Key": "ITEM_024",
+      "String": "皮制项圈"
+    },
+    {
+      "Key": "ITEM_025",
+      "String": "钻石项圈"
+    },
+    {
+      "Key": "ITEM_ST_C1",
+      "String": "猫咪螺丝"
+    },
+    {
+      "Key": "ITEM_ST_U1",
+      "String": "猫咪胶水"
+    },
+    {
+      "Key": "ITEM_ST_R1",
+      "String": "爪子木板"
+    },
+    {
+      "Key": "ITEM_ST_E1",
+      "String": "闪亮之漆"
+    },
+    {
+      "Key": "ITEM_ST_L1",
+      "String": "臻品布料"
+    },
+    {
+      "Key": "I_TRAIT_0",
+      "String": "‘<CAT_TRAIT_FRIENDLY>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_1",
+      "String": "‘<CAT_TRAIT_CHILL>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_2",
+      "String": "‘<CAT_TRAIT_PLAYFUL>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_3",
+      "String": "‘<CAT_TRAIT_SHY>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_4",
+      "String": "‘<CAT_TRAIT_CAPRICIOUS>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_5",
+      "String": "‘<CAT_TRAIT_CURIOUS>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_6",
+      "String": "‘<CAT_TRAIT_GENTLE>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_7",
+      "String": "‘<CAT_TRAIT_ASSERTIVE>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_8",
+      "String": "‘<CAT_TRAIT_GOOFY>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_9",
+      "String": "‘<CAT_TRAIT_ADVENTUROUS>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_10",
+      "String": "‘<CAT_TRAIT_CUDDLY>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_11",
+      "String": "‘<CAT_TRAIT_SLEEPY>’的猫牌"
+    },
+    {
+      "Key": "I_TRAIT_12",
+      "String": "‘<CAT_TRAIT_SMART>’的猫牌"
+    },
+    {
+      "Key": "ITEM_RARITY_C1",
+      "String": "<COMMON>宝石"
+    },
+    {
+      "Key": "ITEM_RARITY_U1",
+      "String": "<UNCOMMON>宝石"
+    },
+    {
+      "Key": "ITEM_RARITY_R1",
+      "String": "<RARE>宝石"
+    },
+    {
+      "Key": "ITEM_RARITY_E1",
+      "String": "<EPIC>宝石"
+    },
+    {
+      "Key": "ITEM_RARITY_L1",
+      "String": "<LEGENDARY>宝石"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_1",
+      "String": "贵宾"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_2",
+      "String": "通行证"
+    },
+    {
+      "Key": "VIP_LARGE_DESCRIPTION_TITLE",
+      "String": "关于{0}"
+    },
+    {
+      "Key": "DISCOVER_PROMPT",
+      "String": "在接下来的故事中，发现更多<TRAIT_PLURAL>性格。"
+    },
+    {
+      "Key": "GUEST_PASS_TITLE_1",
+      "String": "顾客"
+    },
+    {
+      "Key": "VIP_TRAIT_DISCOVERED_FEEDBACK",
+      "String": "发现了新<TRAIT>：{0}"
+    },
+    {
+      "Key": "VIP_UNLOCKED_FEEDBACK",
+      "String": "恭喜！发现了贵宾顾客：{0}"
+    },
+    {
+      "Key": "SETTINGS_TITLE",
+      "String": "设置"
+    },
+    {
+      "Key": "SETTINGS_ACCOUNT_TITLE",
+      "String": "帐号"
+    },
+    {
+      "Key": "SETTINGS_USER_ID",
+      "String": "用户名"
+    },
+    {
+      "Key": "SETTINGS_NAME",
+      "String": "名字"
+    },
+    {
+      "Key": "SETTINGS_LEVEL",
+      "String": "<LEVEL>"
+    },
+    {
+      "Key": "SETTINGS_STARTED",
+      "String": "开始日期"
+    },
+    {
+      "Key": "SETTINGS_UPDATED",
+      "String": "更新日期"
+    },
+    {
+      "Key": "SETTINGS_REGISTER_BUTTON",
+      "String": "注册"
+    },
+    {
+      "Key": "SETTINGS_LOGOUT_BUTTON",
+      "String": "登出帐号"
+    },
+    {
+      "Key": "SETTINGS_MUSIC_LABEL",
+      "String": "音乐"
+    },
+    {
+      "Key": "SETTINGS_SFX_LABEL",
+      "String": "音效"
+    },
+    {
+      "Key": "SETTINGS_NOTIFICATIONS_TITLE",
+      "String": "通知"
+    },
+    {
+      "Key": "SETTINGS_CUSTOMER_DONE_LABEL",
+      "String": "<CUSTOMER_PLURAL>活动完毕"
+    },
+    {
+      "Key": "SETTINGS_DELIVERY_READY_LABEL",
+      "String": "<BASKET><DELIVERY>准备完毕"
+    },
+    {
+      "Key": "SETTINGS_BONUS_DELIVERY_READY_LABEL",
+      "String": "奖励<DELIVERY>准备完毕"
+    },
+    {
+      "Key": "SETTINGS_HELP",
+      "String": "帮助"
+    },
+    {
+      "Key": "SETTINGS_FACEBOOK_PAGE",
+      "String": "社区"
+    },
+    {
+      "Key": "SETTINGS_TWITTER_PAGE",
+      "String": "社区"
+    },
+    {
+      "Key": "SETTINGS_TERMS_OF_SERVICE",
+      "String": "服务条款"
+    },
+    {
+      "Key": "SETTINGS_PRIVACY_POLICY",
+      "String": "隐私政策"
+    },
+    {
+      "Key": "SETTINGS_HIGH_GRAPHICS_MODE",
+      "String": "高质量画面"
+    },
+    {
+      "Key": "SETTINGS_STATIONS_READY_LABEL",
+      "String": "<CAT_STATION_PLURAL>就绪"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_TITLE",
+      "String": "清除数据"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_EXPLANATION",
+      "String": "我们非常重视您的隐私。只要您提出请求，我们可删除任何个人身份数据。\\n\\n此操作无法撤消，并会导致您永久失去所有Runaway游戏进度。\\n\\n删除数据将同时删除您的全部交易记录，您将无法恢复任何购买项目。\\n\\n如有任何问题或需删除单一游戏数据，请联系客服。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM1",
+      "String": "此操作将删除您的所有Runaway游戏数据，包括但不限于：\\n\\n  ● 彩翼：培育蝴蝶\\n  ● 彩翼：之星夜\\n  ● Splash: Fish Sanctuary\\n  ● 猫咪咖啡馆\\n  ● 《翼彼迎》\\n  ● Old Friends Dog Game\\n"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM2",
+      "String": "是否确定永久删除您的Runaway游戏数据？"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_DONE",
+      "String": "成功移除所有数据。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_ERROR",
+      "String": "删除数据时出错。请再次尝试；如果问题再次发生，请联系客服。"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_BACK",
+      "String": "返回安全页面"
+    },
+    {
+      "Key": "DO_NOT_SELL_INFO_BUTTON",
+      "String": "请勿出售或分享我的个人信息"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_HEADER",
+      "String": "让您的广告更具相关性"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_BODY",
+      "String": "获取更相关的广告，并通过允许跟踪来支持保持该游戏免费。"
+    },
+    {
+      "Key": "IOS_ATT_PERMISSION_DESC",
+      "String": "这使我们能够个性化您选择观看的广告，并有助于支持我们的小型工作室。您可以随时通过“设置”->“隐私”将其关闭。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_TITLE",
+      "String": "已连接Facebook"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_DESC",
+      "String": "您的Facebook帐号已连接。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_TITLE",
+      "String": "无法连接至Facebook"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_DESC",
+      "String": "该Facebook帐号已用于另一家咖啡厅，无法使用。"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_PERMISSION_EXPLANATION",
+      "String": "您之前拒绝了此应用的登录权限。需要这个权限才能登录，您想要继续吗？"
+    },
+    {
+      "Key": "NEW_GAME_LABEL",
+      "String": "新游戏"
+    },
+    {
+      "Key": "LOAD_GAME_LABEL",
+      "String": "登录"
+    },
+    {
+      "Key": "RECOVER_LABEL",
+      "String": "恢复"
+    },
+    {
+      "Key": "LOGIN_BACK_LABEL",
+      "String": "<BACK_LABEL>"
+    },
+    {
+      "Key": "LOGIN_FACEBOOK",
+      "String": "FACEBOOK"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_TITLE",
+      "String": "我们更新了条款"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_DESC",
+      "String": "要继续游戏，你需要同意我们的《付款条款》并已阅读我们的《隐私政策》"
+    },
+    {
+      "Key": "GDPR_SUBMIT",
+      "String": "提交"
+    },
+    {
+      "Key": "GDPR_ACCEPT",
+      "String": "我已阅读并接受隐私政策。"
+    },
+    {
+      "Key": "GDPR_AGE_DESC",
+      "String": "I am over 16 years old - this game contains ads and purchases."
+    },
+    {
+      "Key": "LOGIN_RETRIEVE_ACCOUNT",
+      "String": "正在获取帐号信息"
+    },
+    {
+      "Key": "LOGIN_HELP",
+      "String": "帮助"
+    },
+    {
+      "Key": "LOGIN_HELP_PROMPT",
+      "String": "遇到了问题吗？请点击“<LOGIN_HELP>”按钮。"
+    },
+    {
+      "Key": "LOGIN_LOAD_GAME_DATA",
+      "String": "正在载入游戏数据……"
+    },
+    {
+      "Key": "LOGIN_LOGGING_IN",
+      "String": "正在登录……"
+    },
+    {
+      "Key": "LOGIN_DOWNLOADING_GAME_DATA",
+      "String": "正在下载游戏数据……"
+    },
+    {
+      "Key": "LOGIN_CHECKING_FOR_UPDATES",
+      "String": "正在检查更新……"
+    },
+    {
+      "Key": "UPDATE_REQUIRED",
+      "String": "游戏需要更新"
+    },
+    {
+      "Key": "UPDATE_REQUIRED_DESCRIPTION",
+      "String": "游戏有新更新啦！马上更新游戏，看看咖啡厅发生了什么变化！"
+    },
+    {
+      "Key": "ERROR_DESC",
+      "String": "游戏出现一个错误了。游戏将立即重启，然后就应该恢复正常。如果问题尚存，请联络我们。谢谢！"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_TITLE",
+      "String": "社交帐号已使用"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_DESC",
+      "String": "该社交帐号已用于另一个游戏存档"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_TITLE",
+      "String": "登录失败"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_DESC",
+      "String": "糟糕！创建新账号时出错了。我们再试试，如果问题尚存，请联络我们友好的支持团队。"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_TITLE",
+      "String": "游戏正在维修中"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_DESC",
+      "String": "游戏正在维修，而您咖啡厅中的猫咪也正在休息。请稍等几分钟后再试试。"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_TITLE",
+      "String": "游戏正在维修中"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_DESC",
+      "String": "游戏正在维修，而您咖啡厅中的猫咪也正在休息。请稍等几分钟后再试试。"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_TITLE",
+      "String": "游戏正在维修中"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_DESC",
+      "String": "游戏正在维修，而您咖啡厅中的猫咪也正在休息。请稍等几分钟后再试试。"
+    },
+    {
+      "Key": "ERROR_RELOAD_TITLE",
+      "String": "重新载入咖啡厅"
+    },
+    {
+      "Key": "ERROR_RELOAD_DESC",
+      "String": "您的咖啡厅已更新。点击“好的”以重新载入游戏。"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_TITLE",
+      "String": "银行交易保存出错"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_DESC",
+      "String": "对不起，保存交易时出错了"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_TITLE",
+      "String": "服务器记录错误"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_DESC",
+      "String": "服务器无法记录请求"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_TITLE",
+      "String": "购买错误"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_DESC",
+      "String": "我们无法确认您的交易。请再次尝试，若问题尚存，请联络我们优秀的支持团队寻求援助。"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_TITLE",
+      "String": "社交帐号已使用过"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_DESC",
+      "String": "该社交帐号已用于另一个游戏存档，并无法重复指定"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_TITLE",
+      "String": "服务器联络错误"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_DESC",
+      "String": "无法连接服务器。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_INVALID_RECEIPT",
+      "String": "交易凭证无法与app store核对。请联络我们可爱的支持团队。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PRODUCT_UNAVAILABLE",
+      "String": "很抱歉，该物品现在不可用。如果问题持续存在，请联络我们可爱的支持团队。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASE_PENDING",
+      "String": "已有交易正在处理中。请先等待处理完毕，再发出下一个交易请求。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASING_UNAVAILABLE",
+      "String": "此刻无法进行交易。请确保您已连接网络。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_STORE_NOT_INITIALISED",
+      "String": "商店尚未初始化，请待会儿再试。若问题尚存，请联络我们可爱的支持团队。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_UNKNOWN_ERROR",
+      "String": "交易时出现了一个错误。如果问题持续存在，请联络我们可爱的支持团队。"
+    },
+    {
+      "Key": "PURCHASE_ERROR_TRANSPORT_ERROR",
+      "String": "无法联络app store，请先确保您已连接网络，再试一次。"
+    },
+    {
+      "Key": "ANDROID_NOTIFICATION_TITLE",
+      "String": "绒毛猫新闻"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_001",
+      "String": "新来的顾客等着和猫咪相偎依呢！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_002",
+      "String": "旧客们走了，而新顾客正等着进来呢！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_003",
+      "String": "顾客们离开咖啡厅时，心中都充满了爱！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_004",
+      "String": "满意的顾客们开心地离开了咖啡厅！干的漂亮！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_005",
+      "String": "新来的顾客等着抱猫咪呢！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_006",
+      "String": "新来的顾客等着与猫咪抱抱呢！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_001",
+      "String": "有个新篮子可以打开了！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_002",
+      "String": "您的篮子到了！里面会有什么呢？"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_003",
+      "String": "有新快递送到了！你可得亲手打开哦！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_004",
+      "String": "好嘞！有快递送到了！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_005",
+      "String": "您猜怎么着？您的快递篮子到了！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_006",
+      "String": "好消息！您有个篮子可以打开了！"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_007",
+      "String": "嘿，有个篮子等着您打开。只有您能开哦。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_001",
+      "String": "您的奖励篮到了。里面是什么？"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_002",
+      "String": "免费快递篮子到了！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_003",
+      "String": "一个奖励快递篮正在咖啡厅里等着您呢！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_004",
+      "String": "奖励！篮子！到！了！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_005",
+      "String": "您刚收到的奖励篮里有什么？"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_006",
+      "String": "新的奖励篮准备好了！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_007",
+      "String": "奖励篮子到了！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_001",
+      "String": "新来的顾客等着与猫咪相偎依，而且还有一篮好东西等着您呢！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_002",
+      "String": "您所有的顾客都已开心地离开，而您也收到了一个未开的篮子！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_003",
+      "String": "新来的顾客等着抱猫咪呢！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_004",
+      "String": "新的顾客和篮子等着您回来！"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_005",
+      "String": "新的顾客和篮子等着您回来！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_AND_BASKET_READY_001",
+      "String": "您的篮子和奖励篮都已备好，可以打开了！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_001",
+      "String": "今天您的咖啡厅里又会出现什么精彩的故事呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_002",
+      "String": "今天会有什么样的新顾客来光临您的猫咪咖啡厅呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_003",
+      "String": "您今天准备好与毛茸茸的小动物结为朋友了吗？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_004",
+      "String": "有新的猫咪朋友正等着让人摸头哦 :3"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_005",
+      "String": "今天您会遇到什么样的新朋友呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_006",
+      "String": "来自全球各地的新顾客正等着去看您的猫咪咖啡厅呢！"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_007",
+      "String": "今天您又会招到什么样的新猫咪呢？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_008",
+      "String": "您准备好接待新顾客了吗？"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_009",
+      "String": "您准备好接待新顾客了吗？"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_001",
+      "String": "<NOTIFICATION_24HOURS_001>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_002",
+      "String": "<NOTIFICATION_24HOURS_002>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_003",
+      "String": "<NOTIFICATION_24HOURS_003>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_004",
+      "String": "<NOTIFICATION_24HOURS_004>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_005",
+      "String": "<NOTIFICATION_24HOURS_005>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_006",
+      "String": "<NOTIFICATION_24HOURS_006>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_007",
+      "String": "<NOTIFICATION_24HOURS_007>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_008",
+      "String": "<NOTIFICATION_24HOURS_008>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_001",
+      "String": "不用再等了。参与“{0}”活动，赚取绝妙的“{1}”，现已开始！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_002",
+      "String": "你好呀，朋友。想赢取“{1}”吗？“{0}”活动现在开始了哦！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_003",
+      "String": "“{0}”活动已经开始。您的猫咪一定会爱上这个新的“{1}”哦！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_004",
+      "String": "参与我们的“{0}”活动，就能获得绝佳的“{1}”。真让人兴奋！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_005",
+      "String": "准备狂欢吧。参与“{0}”活动，赚取可爱的“{1}”，已经开始喽！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_001",
+      "String": "双倍代币奖励！趁热打铁，赶紧买啊！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_002",
+      "String": "你猜怎么着？现在可以获得双倍代币哟！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_003",
+      "String": "已开启双倍代币奖励！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_004",
+      "String": "已开启双倍代币奖励！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_001",
+      "String": "嘿朋友，你现在能从篮子获得双倍鱼儿哦！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_002",
+      "String": "今天是享受双倍鱼儿奖励的大好日子！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_003",
+      "String": "双倍鱼儿奖励！双倍鱼儿奖励！双倍鱼儿奖励！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_004",
+      "String": "双倍鱼儿奖励！双倍鱼儿奖励！双倍鱼儿奖励！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_001",
+      "String": "什么？双倍鱼儿和双倍代币的双重奖励同时开启？哇！"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_002",
+      "String": "双倍鱼儿和双倍代币的双重奖励已同时开启。真是爽。"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_003",
+      "String": "生命中最棒的是什么？没错，就是现在开启的双倍鱼儿和双倍代币奖励！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_001",
+      "String": "什么？有新猫咪？！可赚取{1}的“{0}”活动已经开始！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_002",
+      "String": "{1}真是太萌了！“{0}”活动现在开始！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_003",
+      "String": "“{0}”活动开始了。参与活动，就能为您的咖啡厅赚取{1}这只新朋友！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_004",
+      "String": "“{0}”活动开始了。参与活动，就能为您的咖啡厅赚取{1}这只新朋友！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_001",
+      "String": "(・о・)“{0}”活动就快结束了！趁现在赶快收集“{1}”吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_002",
+      "String": "(⊙.☉)什么？？“{0}”就快结束了？这是为您的咖啡厅获取超赞“{1}”的最后机会。"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_003",
+      "String": "不觉得拥有“{1}”感觉超棒的吗？“{0}”活动就快结束啦！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_004",
+      "String": "温馨提示：收集“{1}”的“{0}”活动就快结束了！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_005",
+      "String": "您的咖啡厅里有个“{1}”的话，看上去一定很不错，但收集它的“{0}”活动就快结束了！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_001",
+      "String": "(✪‿✪)ノ“{0}”活动就快结束！别错过领养可爱“{1}”的机会！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_002",
+      "String": "这个街区最酷炫的猫咪非“{1}”莫属，可在“{0}”活动中领养它的时间已经所剩无几！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_003",
+      "String": "时间不多了！快参与“{0}”活动，迎接“{1}”进您的咖啡厅吧！"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_004",
+      "String": "“{1}”可谓是顶级猫咪，可惜领养它的“{0}”活动时间已所剩无几……"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_005",
+      "String": "最新毛茸小伙伴“{1}”现可供您领养，但“{0}”活动就快结束了！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_001",
+      "String": "看起来你的<CAT_STATION_PLURAL>全空了！你的猫咪肯定会想多玩玩！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_002",
+      "String": "嗯……你所有的猫咪都已经使用完毕你的<CAT_STATION_PLURAL>了，或许该让更多的猫咪来排队了？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_003",
+      "String": "有空的时候别忘了放一些猫咪到你空闲的<CAT_STATION_PLURAL>里！"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_004",
+      "String": "唔……不知道你的<CAT_STATION_PLURAL>还能不能再多放一些猫咪……"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_005",
+      "String": "哇啊，时候到了吗？！最好去看看你的<CAT_STATION_PLURAL>有没有空位置留给猫咪"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_006",
+      "String": "我的天，你的空闲<CAT_STATION>都快无聊得睡着了！你知不知道有没有猫咪想要跟它一起玩耍？"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_007",
+      "String": "嗨，你看起来是一个又聪明又潇洒的人！把猫咪放到<CAT_STATION_PLURAL>，不正是聪明潇洒的人会做的事吗？"
+    },
+    {
+      "Key": "EVENT",
+      "String": "活动"
+    },
+    {
+      "Key": "EVENT_CURRENCY_DESCRIPTION",
+      "String": "活动中使用的货币"
+    },
+    {
+      "Key": "EVENT_REWARDS",
+      "String": "奖励"
+    },
+    {
+      "Key": "EVENT_TIME_LEFT",
+      "String": "剩余时间："
+    },
+    {
+      "Key": "EVENT_TOTAL",
+      "String": "总计"
+    },
+    {
+      "Key": "EVENT_NEXTGOAL",
+      "String": "下个目标"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_TITLE",
+      "String": "已赚取奖励"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_DESC",
+      "String": "一件新家具已添加到您的清单"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_TITLE",
+      "String": "活动已结束"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_DESC",
+      "String": "活动已经结束。任何未领取的奖励已添加到您的清单"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_TITLE",
+      "String": "活动已完成"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_DESC",
+      "String": "恭喜，您已完成活动！继续游玩以继续赚取奖励"
+    },
+    {
+      "Key": "TODO_TUTORIAL",
+      "String": "首先，完成教程任务"
+    },
+    {
+      "Key": "TOKEN_DESCRIPTION",
+      "String": "可用来定制您的空间"
+    },
+    {
+      "Key": "HC_DESCRIPTION",
+      "String": "可用来加速篮子"
+    },
+    {
+      "Key": "NO_CATS_AT_LEVEL_FEEDBACK",
+      "String": "所有等级{0}或以上的猫咪正在忙着"
+    },
+    {
+      "Key": "NO_CATS_FEEDBACK",
+      "String": "无猫可用！"
+    },
+    {
+      "Key": "note about buying HC",
+      "String": "您可以在商店中购买更多。"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_TITLE",
+      "String": "无法连接"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_DESC",
+      "String": "我们无法连接至服务器。请检查您的连接，再试一次"
+    },
+    {
+      "Key": "VIDEO_INTERRUPTED_DESCRIPTION",
+      "String": "视频回放已中断。正在为您准备另一部视频让您欣赏。"
+    },
+    {
+      "Key": "VIDEO_ERROR_DESCRIPTION",
+      "String": "视频回放期间出现错误。正在为您准备另一部视频。若错误持续存在，请联系我们和蔼可亲的支持团队。"
+    },
+    {
+      "Key": "VIDEO_BUTTON_REWARD",
+      "String": "{0}倍奖励"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_TITLE",
+      "String": "您觉得游戏好玩吗？"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_TITLE",
+      "String": "评价"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_TITLE",
+      "String": "反馈"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY",
+      "String": "感谢您玩《绒毛猫咖啡厅》！您玩得开心吗？"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_BODY",
+      "String": "真是太棒了！您是否可以评价此游戏？"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_BODY",
+      "String": "抱歉！可否请您给予我们一些反馈，好让我们改进？"
+    },
+    {
+      "Key": "SNAPSHOT_TITLE",
+      "String": "已捕捉了这一刻"
+    },
+    {
+      "Key": "SNAPSHOT_SUBTITLE",
+      "String": "分享至……"
+    },
+    {
+      "Key": "DEVICE",
+      "String": "设备"
+    },
+    {
+      "Key": "SNAPSHOT_SOFTGUIDENCE",
+      "String": "拖动方框，然后点击以拍张快照"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_TITLE",
+      "String": "已成功分享快照！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_DESCRIPTION",
+      "String": "您的快照已分享至您的社交媒体。"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_TITLE",
+      "String": "快照分享失败！"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_DESCRIPTION",
+      "String": "发生了一些错误，导致您的快照分享失败。"
+    },
+    {
+      "Key": "TAP_DRAG_PROMOT",
+      "String": "点击/拖拽"
+    },
+    {
+      "Key": "SHELF_TWITTER_DESCRIPTION",
+      "String": "在Twitter上关注我们并赚取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_FACEBOOK_DESCRIPTION",
+      "String": "在Facebook上点赞我们并赚取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_INSTAGRAM_DESCRIPTION",
+      "String": "在Instagram上关注我们并赚取{0} <HC>"
+    },
+    {
+      "Key": "SHELF_EMAIL_DESCRIPTION",
+      "String": "订阅我们的简报并赚取{0} <HC>"
+    },
+    {
+      "Key": "INPUT_EMAIL_DESCRIPTION",
+      "String": "输入您的电邮地址以订阅Runaway Play简报。"
+    },
+    {
+      "Key": "LIKE",
+      "String": "点赞"
+    },
+    {
+      "Key": "FOLLOW",
+      "String": "关注"
+    },
+    {
+      "Key": "SIGN_UP",
+      "String": "订阅"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_TITLE",
+      "String": "无法购买"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_DESC",
+      "String": "无法购买此组合包，因为它包含一件您已拥有的重要物品。"
+    },
+    {
+      "Key": "MAX",
+      "String": "已满"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED",
+      "String": "建议更新游戏"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED_DESCRIPTION",
+      "String": "游戏有新版本啦！是否立即更新游戏，看看本次更新为您的咖啡厅添加了些什么？"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_TITLE",
+      "String": "{0}不足"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_DESCRIPTION",
+      "String": "哎呀！你好像还需要一些{0}。是否前往商店购买更多？"
+    },
+    {
+      "Key": "FURNITURE_DRAG_REMOVE_HINT",
+      "String": "往下拖拽家具来移除"
+    },
+    {
+      "Key": "TOP_UP_ITEMS",
+      "String": "获取物品"
+    },
+    {
+      "Key": "CAT_AS_EVENT_REWARD",
+      "String": "{0}正等着您的咖啡厅来收养呢！"
+    },
+    {
+      "Key": "CAT_CLAIMED_TITLE",
+      "String": "收养了新猫咪"
+    },
+    {
+      "Key": "CAT_CLAIMED_DESCRIPTION",
+      "String": "{0}以团队最新成员的身份加入了您的咖啡厅。真是个萌物！"
+    },
+    {
+      "Key": "NEWS_PAGE_TITLE",
+      "String": "新闻"
+    },
+    {
+      "Key": "PERMISSION_DENIED_TITLE",
+      "String": "权限被拒绝"
+    },
+    {
+      "Key": "PERMISSION_DENIED_BODY",
+      "String": "您必须授予储存权限，才能与猫咪拍照。"
+    },
+    {
+      "Key": "PERMISSION_DENIED_PERMANENTLY_BODY",
+      "String": "您要与猫咪拍照，必须在应用程序权限设置中允许《绒毛猫咖啡厅》使用储存权限。"
+    },
+    {
+      "Key": "ERROR_DLC_TITLE",
+      "String": "重试更新"
+    },
+    {
+      "Key": "ERROR_DLC_DESC",
+      "String": "哎呀，获取更新的时候碰到了错误。请点击按钮重试。"
+    },
+    {
+      "Key": "NEED_HC",
+      "String": "<HC_PLURAL>不足"
+    },
+    {
+      "Key": "LIMITED_OFFER_HEADING",
+      "String": "限定优惠"
+    },
+    {
+      "Key": "LIMITED_TIME_HEADING",
+      "String": "限定优惠"
+    },
+    {
+      "Key": "FULL_CAFE_PHOTO",
+      "String": "咖啡厅全照"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_TITLE",
+      "String": "确认"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_DESCRIPTION",
+      "String": "回收“{0}”以换取{1}枚<TOKEN_PLURAL>？"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_TITLE",
+      "String": "确认"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_DESCRIPTION",
+      "String": "是否确定移除咖啡厅里的所有家具？"
+    },
+    {
+      "Key": "FURISTAS_CLUB_MEMBERSHIP",
+      "String": "绒毛猫俱乐部会员"
+    },
+    {
+      "Key": "EXCLUSIVE",
+      "String": "独家！"
+    },
+    {
+      "Key": "FCM_PERK1",
+      "String": "每日奖励"
+    },
+    {
+      "Key": "FCM_PERK2",
+      "String": "特别独家内容"
+    },
+    {
+      "Key": "FCM_PERK3",
+      "String": "额外篮子容量"
+    },
+    {
+      "Key": "FCM_PERK4",
+      "String": "商店折扣"
+    },
+    {
+      "Key": "TAP_FOR_DETAILS",
+      "String": "点击了解详情"
+    },
+    {
+      "Key": "MEMBER_NO_DESCRIPTION",
+      "String": "只要购买绒毛猫俱乐部会员，您就可获得一系列惊人福利！"
+    },
+    {
+      "Key": "INSTANT_CURRENCY_LABEL",
+      "String": "立即获得货币"
+    },
+    {
+      "Key": "DAILY_BONUS_LABEL",
+      "String": "每日奖励"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT_LABEL",
+      "String": "独家猫咪"
+    },
+    {
+      "Key": "PERKS_LABEL",
+      "String": "其他惊人福利"
+    },
+    {
+      "Key": "FCM_OTHER_PERK1",
+      "String": "解锁专属家具"
+    },
+    {
+      "Key": "FCM_OTHER_PERK2",
+      "String": "可存放多达6个篮子"
+    },
+    {
+      "Key": "FCM_OTHER_PERK3",
+      "String": "可存放多达3个额外篮子"
+    },
+    {
+      "Key": "FCM_OTHER_PERK4",
+      "String": "商店折扣"
+    },
+    {
+      "Key": "DAY_MEMBERSHIP",
+      "String": "{0}天会员："
+    },
+    {
+      "Key": "FCM_CURRENCY_READY",
+      "String": "现可领取每日奖励"
+    },
+    {
+      "Key": "FCM_CURRENCY_UNAVAILABLE",
+      "String": "已领取每日奖励"
+    },
+    {
+      "Key": "DAYS_LEFT",
+      "String": "天（仅剩）"
+    },
+    {
+      "Key": "DAY_LEFT",
+      "String": "天（仅剩）"
+    },
+    {
+      "Key": "DAYS_LEFT_FORMATTABLE",
+      "String": "仅剩：{0}天"
+    },
+    {
+      "Key": "CLAIM",
+      "String": "领取"
+    },
+    {
+      "Key": "MEMBER_YES_TITLE",
+      "String": "您现在是绒毛猫俱乐部会员了！"
+    },
+    {
+      "Key": "FCM_CURRENT_MEMBER_DESCRIPTION",
+      "String": "感谢您加入绒毛猫俱乐部！您目前拥有以下福利："
+    },
+    {
+      "Key": "FCM_ABBREVIATION",
+      "String": "会员"
+    },
+    {
+      "Key": "SPECIAL_DEAL",
+      "String": "特惠"
+    },
+    {
+      "Key": "FCM_RENEW_TITLE",
+      "String": "<FURISTAS_CLUB_MEMBERSHIP>"
+    },
+    {
+      "Key": "DISCOUNT_AMOUNT",
+      "String": "今日优惠"
+    },
+    {
+      "Key": "FCM_RENEW_DESCRIPTION",
+      "String": "感谢您加入绒毛猫俱乐部！在午夜前，您能以特别优惠价来再次购买30天的会员资格。"
+    },
+    {
+      "Key": "FCM_DAY_MEMBERSHIP_RENEW",
+      "String": "续订{0}天会员资格："
+    },
+    {
+      "Key": "BONUS_LABEL",
+      "String": "额外奖励！"
+    },
+    {
+      "Key": "INCENTIVISED_SHARE_FEEDBACK_DESCRIPTION",
+      "String": "您的快照已分享，并赚得{0}条<FISH_PLURAL>！"
+    },
+    {
+      "Key": "NO_CATS_WITH_TRAIT_FEEDBACK",
+      "String": "所有“{0}”猫咪目前没空"
+    },
+    {
+      "Key": "NO_SPECIFIC_CAT_FEEDBACK",
+      "String": "{0}目前没空"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_BASKET",
+      "String": "<DELIVERY_BASKET_GREAT> 2小时"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_EXPLANATION",
+      "String": "马上获取一个篮子？"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_TITLE",
+      "String": "活动增益包"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_DESCRIPTION",
+      "String": "购买这款组合包，在活动的剩余时间里都能赚取额外活动点数！"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_AVAILABLE",
+      "String": "有活动增益可用"
+    },
+    {
+      "Key": "EVENT_PACK_AVAILABLE_SHORT_DESCRIPTION",
+      "String": "{0}%额外奖励！"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_ACTIVE",
+      "String": "活动增益启用"
+    },
+    {
+      "Key": "EVENT_PACK_SHORT_DESCRIPTION",
+      "String": "增加{0}%{1}"
+    },
+    {
+      "Key": "SHELF_GAME_INCENTIVE",
+      "String": "快来看看{0}，赢得{1}<HC>"
+    },
+    {
+      "Key": "RECOVER_NO_ACCOUNTS_FOUND",
+      "String": "本设备上未找到帐户"
+    },
+    {
+      "Key": "SNAPSHOT_SIZE",
+      "String": "大小"
+    },
+    {
+      "Key": "OFFLINE_ERROR_TITLE",
+      "String": "离线时出现错误"
+    },
+    {
+      "Key": "OFFLINE_ERROR_DESC",
+      "String": "出现了离线模式错误。游戏现将重启，随后您应可如常游玩。如果问题仍然出现，请与我们联系。谢谢！"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_TITLE",
+      "String": "加载本地数据时出错"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_DESCRIPTION",
+      "String": "当我们尝试加载本地数据时出现了错误。请上线并重新加载游戏。"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_TITLE",
+      "String": "找到更新的数据"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_DESCRIPTION",
+      "String": "您的本地存档与在线存档没有同步更新。您的游戏现将重启并使用较新的存档。"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_TITLE",
+      "String": "离线交易"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_DESCRIPTION",
+      "String": "您的设备在交易期间离线，因此您的购买将会在下次上线时出现。"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_TITLE",
+      "String": "<OFFLINE_ERROR_TITLE>"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_DESCRIPTION",
+      "String": "请上线开始新游戏，之后您便可随意在离线模式中畅玩《绒毛猫咖啡厅》！"
+    },
+    {
+      "Key": "REWARD_VIP",
+      "String": "新VIP"
+    },
+    {
+      "Key": "REWARD_STATION",
+      "String": "新<CAT_STATION>"
+    },
+    {
+      "Key": "COLLECTED",
+      "String": "已获得！"
+    },
+    {
+      "Key": "CAT_LOUNGE",
+      "String": "猫咪休息室"
+    },
+    {
+      "Key": "CATHEART",
+      "String": "猫咪幸福之心"
+    },
+    {
+      "Key": "CATHEART_PLURAL",
+      "String": "猫咪幸福之心"
+    },
+    {
+      "Key": "BOOSTER",
+      "String": "提升效果"
+    },
+    {
+      "Key": "BOOSTER_PLURAL",
+      "String": "提升效果"
+    },
+    {
+      "Key": "CAT_STATION",
+      "String": "活动"
+    },
+    {
+      "Key": "CAT_STATION_PLURAL",
+      "String": "活动"
+    },
+    {
+      "Key": "STATION_INVENTORY_MENU_TITLE",
+      "String": "<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "CAT_STATION_ITEM_DESC",
+      "String": "<CAT_STATION>升级物品"
+    },
+    {
+      "Key": "CAT_STATION_UPGRADE_ITEM_DESCRIPTION",
+      "String": "<CAT_STATION>升级物品"
+    },
+    {
+      "Key": "CAT_STATION_INFO_PANEL_TITLE",
+      "String": "<CAT_STATION>升级"
+    },
+    {
+      "Key": "CAT_STATION_INFO_REQUIREMENT_TITLE",
+      "String": "所需材料："
+    },
+    {
+      "Key": "CAT_STATION_INFO_NEXT_REWARD_TITLE",
+      "String": "下个奖励："
+    },
+    {
+      "Key": "CAT_STATION_LEVEL_UNLOCKED",
+      "String": "解锁等级："
+    },
+    {
+      "Key": "STATIONREWARD_QUEUEINCREASE",
+      "String": "将队列提升至{0}"
+    },
+    {
+      "Key": "STATIONREWARD_BOOSTUPGRADE",
+      "String": "升级“{0}”提升效果"
+    },
+    {
+      "Key": "STATION_001_NAME",
+      "String": "美味大餐"
+    },
+    {
+      "Key": "STATION_002_NAME",
+      "String": "打地鼠"
+    },
+    {
+      "Key": "STATION_003_NAME",
+      "String": "猫咪卡拉OK"
+    },
+    {
+      "Key": "STATION_004_NAME",
+      "String": "毛线球篮"
+    },
+    {
+      "Key": "STATION_005_NAME",
+      "String": "瑜伽室"
+    },
+    {
+      "Key": "STATION_006_NAME",
+      "String": "喵喵小舍"
+    },
+    {
+      "Key": "STATION_001_ONELINER",
+      "String": "给猫咪享用的美味一餐"
+    },
+    {
+      "Key": "STATION_002_ONELINER",
+      "String": "愿最快的猫咪胜出"
+    },
+    {
+      "Key": "STATION_003_ONELINER",
+      "String": "秀出你的大明星风采"
+    },
+    {
+      "Key": "STATION_004_ONELINER",
+      "String": "释放你的创意"
+    },
+    {
+      "Key": "STATION_005_ONELINER",
+      "String": "静息猫心……"
+    },
+    {
+      "Key": "STATION_006_ONELINER",
+      "String": "思索喵生"
+    },
+    {
+      "Key": "STATION_001_DESCRIPTION",
+      "String": "“美味大餐”餐厅坐落于日趋繁华和重要的“东猫角”区，绝美景致是它的一大亮点。餐厅将珍馔肉冻和清透自来水巧妙结合，打造出顶尖的美味体验，是任何喵咪美食大家均不可错过的美食星级体验。"
+    },
+    {
+      "Key": "STATION_002_DESCRIPTION",
+      "String": "“打地鼠”采用次世代鼠类模拟科技（RST4），摒弃传统，全新研发，为你带来无与伦比的沉浸式游戏体验。只有最硬核的猫咪能够打中这些地鼠。你有这个实力吗？"
+    },
+    {
+      "Key": "STATION_003_DESCRIPTION",
+      "String": "步入猫咪卡拉OK，唱响你最爱的热门金曲，高歌你最喜欢的经典歌谣，用你的歌声惊艳你的听众！特别配备闪光灯和炫目晕头的MV视频，让你的派对更为出彩。开始你的轰趴，一展你的歌喉！"
+    },
+    {
+      "Key": "STATION_004_DESCRIPTION",
+      "String": "不管是要把你自己包裹得像个木乃伊，还是追着你自己的尾巴玩，“毛线球篮”都是你下一个DIY项目可靠又全面的解决方案。不管你是猫咪还是匠人，这些一团又一团的高品质羊毛将会是你打造毛线揉杂成的小玩意儿的得力助手。释放双手，打造梦想之物吧。"
+    },
+    {
+      "Key": "STATION_005_DESCRIPTION",
+      "String": "你的喵生很重要，我们的喵角瑜伽室拥有宁静祥和的格调，是你从忙碌生活中脱身、与身体和心灵进行深度沟通的理想场所，在这里，你的九条命将得到彻底的升华。"
+    },
+    {
+      "Key": "STATION_006_DESCRIPTION",
+      "String": "放眼时光，充满历史人文气息的喵喵小舍曾接待过本时代最伟大的思想家。无数深沉思考家都曾在屋顶看台上向天空凝望，沉浸于世界的点点滴滴，凝思着生命伟大的奥秘。"
+    },
+    {
+      "Key": "QUEUE_SIZE",
+      "String": "队列大小"
+    },
+    {
+      "Key": "QUEUE_TITLE",
+      "String": "队列"
+    },
+    {
+      "Key": "FULL",
+      "String": "已满"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_TITLE",
+      "String": "容量"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_DESCRIPTION",
+      "String": "它显示的是你可以向<CAT_STATION>同时分配多少只猫咪。\\n\\n在首只猫咪之后加入的猫咪都会进入队列，并将在前头的猫咪使用完毕后自动开始使用<CAT_STATION>。"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_TITLE",
+      "String": "等级"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_DESCRIPTION",
+      "String": "它显示的是活动站点的等级。使用材料和<CATHEART_PLURAL>来升级你的站点，这将能够提升站点的容量或是为你提供<BOOSTER_PLURAL>来帮助咖啡厅经营。"
+    },
+    {
+      "Key": "STATIONINFO_ITEM_TOOLTIP_DESCRIPTION",
+      "String": "用来升级你的<CAT_STATION_PLURAL>和购买<BOOSTER_PLURAL>。在休息室的幸运猫咪那里使用<CATHEART_PLURAL>就可以获取物品。"
+    },
+    {
+      "Key": "STATIONINFO_CATHEART_TOOLTIP_DESCRIPTION",
+      "String": "将猫咪分配到休息室中的<CAT_STATION_PLURAL>来赚取猫咪爱心。"
+    },
+    {
+      "Key": "STATIONINFO_UPGRADE_DENIAL_PREV_STATIONS",
+      "String": "前一个<CAT_STATION>必须达到第2级"
+    },
+    {
+      "Key": "BOOST_001_NAME",
+      "String": "额外爱心"
+    },
+    {
+      "Key": "BOOST_002_NAME",
+      "String": "额外物品"
+    },
+    {
+      "Key": "BOOST_003_NAME",
+      "String": "额外鱼儿"
+    },
+    {
+      "Key": "BOOST_004_NAME",
+      "String": "更快的篮子"
+    },
+    {
+      "Key": "BOOST_001_DESC",
+      "String": "能从顾客那儿赚得更多爱心"
+    },
+    {
+      "Key": "BOOST_002_DESC",
+      "String": "能从篮子那儿赚得额外的物品"
+    },
+    {
+      "Key": "BOOST_003_DESC",
+      "String": "增加赚得的鱼儿"
+    },
+    {
+      "Key": "BOOST_004_DESC",
+      "String": "减少篮子的配送时间"
+    },
+    {
+      "Key": "BONUS_PERCENTAGE",
+      "String": "+{0}%额外奖励"
+    },
+    {
+      "Key": "ACTIVE",
+      "String": "生效中"
+    },
+    {
+      "Key": "LUCKY_CAT_MENU_BUTTON_HINT",
+      "String": "点点我的肚子"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_TITLE",
+      "String": "欢迎来到猫咪休息室"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION1",
+      "String": "你的猫咪可以来这儿畅玩特殊活动，放松放松！"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION2",
+      "String": "随着不断进展，你将会解锁越来越多的活动，专属家具和能够帮助咖啡厅经营的提升效果。"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION3",
+      "String": "遵循画面底部的说明来查看如何参与活动。"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_TITLE",
+      "String": "总结"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC",
+      "String": "从活动中赚取<CATHEART_PLURAL>，在幸运猫咪那儿使用它来获取材料，使用材料来为休息室和咖啡厅各种好物！"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC2",
+      "String": "以上就是为你繁忙的猫咪王国打造猫咪休息室的基础操作！"
+    },
+    {
+      "Key": "BOOST_INTRO_TITLE",
+      "String": "咖啡厅提升效果已解锁"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION1",
+      "String": "你还可以使用升级物品来为你的咖啡厅购买短时提升效果！"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION2",
+      "String": "提升效果能够让你赚取更多的爱心、鱼儿和物品，帮助你加快进度。"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION3",
+      "String": "升级猫咪站点能够改进这些提升效果。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT1",
+      "String": "将<CAT_PLURAL>分配到<CAT_STATION_PLURAL>就可赚取"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT2",
+      "String": "赚取<CATHEART_PLURAL>来从幸运猫咪那儿获得更多升级物品"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT3",
+      "String": "猫咪等级越高，能够赚取的<CATHEART_PLURAL>就越多"
+    },
+    {
+      "Key": "OFFERS",
+      "String": "有礼活动"
+    },
+    {
+      "Key": "SURVEY_OFFER",
+      "String": "<HC>问卷调查"
+    },
+    {
+      "Key": "SURVEY_OFFER_DESCRIPTION",
+      "String": "参与外部研究小组的调查，赢取喵币！"
+    },
+    {
+      "Key": "SEE_SURVEYS",
+      "String": "查看调查"
+    },
+    {
+      "Key": "EARNED_CURRENCY_TITLE",
+      "String": "已获得<HC>"
+    },
+    {
+      "Key": "EARNED_CURRENCY_DESC",
+      "String": "你获得了{0}<HC>！"
+    },
+    {
+      "Key": "LOUNGE_REWARD_TITLE",
+      "String": "幸运猫咪奖励！"
+    },
+    {
+      "Key": "NEW_GAME_OFFLINE_LABEL",
+      "String": "请上线开始新游戏"
+    },
+    {
+      "Key": "VIP_INVENTORY_MENU_TITLE",
+      "String": "VIP物品栏"
+    },
+    {
+      "Key": "INTERSTITIAL_INTRO_DESC",
+      "String": "赞助商的一句话……"
+    },
+    {
+      "Key": "RETAILDEMO_INTRO",
+      "String": "此版本的《绒毛猫咖啡厅》专门做演示之用"
+    },
+    {
+      "Key": "OFFERWALL",
+      "String": "<HC>优惠"
+    },
+    {
+      "Key": "OFFERWALL_DESCRIPTION",
+      "String": "参加优惠活动就能赢取喵币！"
+    },
+    {
+      "Key": "SEE_OFFERWALL",
+      "String": "查看优惠"
+    },
+    {
+      "Key": "PERSONALITY_TAG",
+      "String": "‘{0}’的猫牌"
+    },
+    {
+      "Key": "RARITY_GEM",
+      "String": "{0}宝石"
+    },
+    {
+      "Key": "PERSONALITY_ITEM_DESC",
+      "String": "用来升级猫咪的性格物品"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_TITLE",
+      "String": "新物品"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_DESC",
+      "String": "《绒毛猫咖啡厅》的物品系统得到了。现在查看用来培育猫咪的物品更加方便了！\\n\\n你的已有物品一杯转移至新系统 \\n\\n感谢大家对游戏的支持！"
+    },
+    {
+      "Key": "ALL_CATS_REENERGIZED",
+      "String": "所有猫咪都将变得精神抖擞，并在下次配对时获得经验值。"
+    },
+    {
+      "Key": "CAT_REENERGIZED",
+      "String": "猫咪变得精神抖擞！"
+    },
+    {
+      "Key": "LOGIN_APPLE",
+      "String": "通过 Apple 登录"
+    },
+    {
+      "Key": "ACHIEVEMENTS",
+      "String": "成就"
+    },
+    {
+      "Key": "LEADERBOARDS",
+      "String": "排行榜"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_TITLE",
+      "String": "帐号已连接"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_DESC",
+      "String": "您的帐号已连接"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_TITLE",
+      "String": "帐号连接失败"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_DESC",
+      "String": "出错了，您的帐号未能连接"
+    },
+    {
+      "Key": "MAIL_RECEIVED_TITLE",
+      "String": "新邮件！"
+    },
+    {
+      "Key": "MAIL_RECEIVED_DESC",
+      "String": "Runaway为你送上好礼："
+    },
+    {
+      "Key": "LOGIN_BONUS_TITLE",
+      "String": "登录奖励"
+    },
+    {
+      "Key": "LOGIN_BONUS_DESCRIPTION",
+      "String": "每天登录游戏，即可领取新奖励！"
+    },
+    {
+      "Key": "LOGIN_BONUS_COUNTDOWN",
+      "String": "离下个奖励还有{0}。"
+    },
+    {
+      "Key": "LOGIN_BONUS_COMPLETE",
+      "String": "所有奖励均已领取。"
+    },
+    {
+      "Key": "LOGIN_BONUS_DAY",
+      "String": "第{0}天"
+    },
+    {
+      "Key": "NOTIFICATION_LOGINBONUS",
+      "String": "继续在<FURISTAS_CAT_CAFE>签到，就能遇见一只特殊的新猫咪——<CAT_NAME_068>！"
+    },
+    {
+      "Key": "REPORT_ERROR",
+      "String": "报告错误"
+    },
+    {
+      "Key": "CONTACT_SUPPORT",
+      "String": "联系支持"
+    },
+    {
+      "Key": "GET",
+      "String": "获取"
+    },
+    {
+      "Key": "CATEGORIES",
+      "String": "类别……"
+    },
+    {
+      "Key": "TAG_ALL",
+      "String": "全部"
+    },
+    {
+      "Key": "TAG_CUTE",
+      "String": "可爱"
+    },
+    {
+      "Key": "TAG_SWEET",
+      "String": "甜美"
+    },
+    {
+      "Key": "TAG_ZANY",
+      "String": "滑稽"
+    },
+    {
+      "Key": "TAG_GOTHIC",
+      "String": "哥特"
+    },
+    {
+      "Key": "TAG_ARTS_AND_CRAFTS",
+      "String": "艺术与手工品"
+    },
+    {
+      "Key": "TAG_FANCY",
+      "String": "精美"
+    },
+    {
+      "Key": "TAG_RUSTIC",
+      "String": "乡村"
+    },
+    {
+      "Key": "TAG_HOMELY",
+      "String": "居家"
+    },
+    {
+      "Key": "TAG_NATURE",
+      "String": "自然"
+    },
+    {
+      "Key": "TAG_PLANTS",
+      "String": "植物"
+    },
+    {
+      "Key": "TAG_ASIAN",
+      "String": "亚洲"
+    },
+    {
+      "Key": "TAG_PURCHASES",
+      "String": "购买"
+    },
+    {
+      "Key": "TAG_FCM",
+      "String": "绒毛猫俱乐部"
+    },
+    {
+      "Key": "TAG_HOLIDAY",
+      "String": "节日"
+    },
+    {
+      "Key": "TAG_BASIC",
+      "String": "基础"
+    },
+    {
+      "Key": "TAG_BONUS",
+      "String": "奖励"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_TOKENS",
+      "String": "双倍<TOKEN>奖励！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_TOKENS",
+      "String": "天降代币"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_TOKENS",
+      "String": "您可通过完成小游戏、安慰您的猫咪，还有完成每日目标来赚取双倍<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_FISH",
+      "String": "<FISH_PLURAL>奖励！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_FISH",
+      "String": "双倍鱼儿大庆典"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_FISH",
+      "String": "您可在活动开启期间，从篮子里赚取双倍的<FISH_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_CURRENCY",
+      "String": "双倍奖励活动！"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_CURRENCY",
+      "String": "赚大钱的时间到了"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_CURRENCY",
+      "String": "您可在活动开启期间，赚取双倍的<FISH_PLURAL>和<TOKEN_PLURAL>。"
+    },
+    {
+      "Key": "EVENT_NAME_CATNIP",
+      "String": "猫草盛宴"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATNIP",
+      "String": "欢迎来到猫草盛宴活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP",
+      "String": "猫草"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP_PLURAL",
+      "String": "猫草"
+    },
+    {
+      "Key": "EVENT_DESC_CATNIP",
+      "String": "从快递篮子中赚取猫草来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_MATATABI",
+      "String": "天蓼狂欢"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MATATABI",
+      "String": "欢迎来到天蓼狂欢活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI",
+      "String": "金箔"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI_PLURAL",
+      "String": "金箔"
+    },
+    {
+      "Key": "EVENT_DESC_MATATABI",
+      "String": "通过快递篮子赚取天蓼猫食来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERBALL",
+      "String": "欢迎来到纸球扑乐活动！"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERBALL",
+      "String": "纸球扑乐"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL_PLURAL",
+      "String": "纸球"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL",
+      "String": "纸球"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERBALL",
+      "String": "从篮子中赚取揉成一团的纸球，并用来交换更为炫酷的奖励"
+    },
+    {
+      "Key": "EVENT_NAME_LEAF",
+      "String": "落叶之欢"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LEAF",
+      "String": "欢迎来到落叶之欢活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF",
+      "String": "落叶"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF_PLURAL",
+      "String": "落叶"
+    },
+    {
+      "Key": "EVENT_DESC_LEAF",
+      "String": "收集落叶以获取丰富奖励？何乐而不为呢？快从快递篮子中赚取落叶吧。"
+    },
+    {
+      "Key": "EVENT_NAME_MOUSECANDY",
+      "String": "恐怖糖果"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MOUSECANDY",
+      "String": "欢迎来到鼠玉米糖活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY",
+      "String": "鼠玉米糖"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY_PLURAL",
+      "String": "鼠玉米糖"
+    },
+    {
+      "Key": "EVENT_DESC_MOUSECANDY",
+      "String": "从快递篮子中赚取鼠玉米糖来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_CATORNAMENT",
+      "String": "节日友谊"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATORNAMENT",
+      "String": "欢迎来到节日友谊活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT",
+      "String": "猫咪装饰"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT_PLURAL",
+      "String": "猫咪装饰"
+    },
+    {
+      "Key": "EVENT_DESC_CATORNAMENT",
+      "String": "从快递篮子中赚取猫咪装饰来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_HEARTCATNIP",
+      "String": "小猫情人节"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_HEARTCATNIP",
+      "String": "欢迎来到<EVENT_NAME_HEARTCATNIP>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP",
+      "String": "爱心猫草"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP_PLURAL",
+      "String": "爱心猫草"
+    },
+    {
+      "Key": "EVENT_DESC_HEARTCATNIP",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_HEARTCATNIP_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_SHAMROCK",
+      "String": "四叶草幸运符"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_SHAMROCK",
+      "String": "欢迎来到<EVENT_NAME_SHAMROCK>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK",
+      "String": "四叶草"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK_PLURAL",
+      "String": "四叶草"
+    },
+    {
+      "Key": "EVENT_DESC_SHAMROCK",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_SHAMROCK_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_EGG",
+      "String": "找彩蛋"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_EGG",
+      "String": "欢迎来到<EVENT_NAME_EGG>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG",
+      "String": "彩蛋"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG_PLURAL",
+      "String": "彩蛋"
+    },
+    {
+      "Key": "EVENT_DESC_EGG",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_EGG_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_WORLDCATDAY",
+      "String": "世界猫咪日"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_WORLDCATDAY",
+      "String": "欢迎来到<EVENT_NAME_WORLDCATDAY>活动！"
+    },
+    {
+      "Key": "EVENT_DESC_WORLDCATDAY",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_HEARTCATNIP_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_MARACA",
+      "String": "工艺匠人"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARACA",
+      "String": "欢迎来到<EVENT_NAME_MARACA>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA",
+      "String": "沙锤"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA_PLURAL",
+      "String": "沙锤"
+    },
+    {
+      "Key": "EVENT_DESC_MARACA",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_MARACA_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_GALA",
+      "String": "精致盛会"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_GALA",
+      "String": "欢迎来到<EVENT_NAME_GALA>活动！"
+    },
+    {
+      "Key": "EVENT_NAME_THANKSGIVING",
+      "String": "感恩节"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_THANKSGIVING",
+      "String": "欢迎来到<EVENT_NAME_THANKSGIVING>活动！"
+    },
+    {
+      "Key": "EVENT_NAME_LUNARNEWYEAR",
+      "String": "春节"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LUNARNEWYEAR",
+      "String": "欢迎来到<EVENT_NAME_LUNARNEWYEAR>活动！"
+    },
+    {
+      "Key": "EVENT_NAME_POTION",
+      "String": "怪异秘药"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_POTION",
+      "String": "欢迎来到<EVENT_NAME_POTION>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION",
+      "String": "惊悚药水"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION_PLURAL",
+      "String": "惊悚药水"
+    },
+    {
+      "Key": "EVENT_DESC_POTION",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_POTION_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_COLORFULFEATHER",
+      "String": "桑巴庆典"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_COLORFULFEATHER",
+      "String": "欢迎来到<EVENT_NAME_COLORFULFEATHER>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER",
+      "String": "鲜艳羽毛"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER_PLURAL",
+      "String": "鲜艳羽毛"
+    },
+    {
+      "Key": "EVENT_DESC_COLORFULFEATHER",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_COLORFULFEATHER_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_MARSHMALLOW",
+      "String": "萌萌派对"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARSHMALLOW",
+      "String": "欢迎来到<EVENT_NAME_MARSHMALLOW>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW",
+      "String": "棉花糖"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW_PLURAL",
+      "String": "棉花糖"
+    },
+    {
+      "Key": "EVENT_DESC_MARSHMALLOW",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_MARSHMALLOW_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_CUPCAKE",
+      "String": "甜牙"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CUPCAKE",
+      "String": "欢迎来到<EVENT_NAME_CUPCAKE>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE",
+      "String": "纸杯蛋糕"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE_PLURAL",
+      "String": "纸杯蛋糕"
+    },
+    {
+      "Key": "EVENT_DESC_CUPCAKE",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_CUPCAKE_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_ZANYSPRING",
+      "String": "滑稽演出"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_ZANYSPRING",
+      "String": "欢迎来到<EVENT_NAME_ZANYSPRING>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING",
+      "String": "滑稽弹簧"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING_PLURAL",
+      "String": "滑稽弹簧"
+    },
+    {
+      "Key": "EVENT_DESC_ZANYSPRING",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_ZANYSPRING_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_BLACKROSE",
+      "String": "哥特"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BLACKROSE",
+      "String": "欢迎来到<EVENT_NAME_BLACKROSE>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE",
+      "String": "水晶玫瑰"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE_PLURAL",
+      "String": "水晶玫瑰"
+    },
+    {
+      "Key": "EVENT_DESC_BLACKROSE",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_BLACKROSE_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_PAINTBRUSH",
+      "String": "艺术收藏家"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAINTBRUSH",
+      "String": "欢迎来到<EVENT_NAME_PAINTBRUSH>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH",
+      "String": "画笔"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH_PLURAL",
+      "String": "画笔"
+    },
+    {
+      "Key": "EVENT_DESC_PAINTBRUSH",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_PAINTBRUSH_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_FANCYSPOON",
+      "String": "奢华生活"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_FANCYSPOON",
+      "String": "欢迎来到<EVENT_NAME_FANCYSPOON>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON",
+      "String": "漂亮汤匙"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON_PLURAL",
+      "String": "漂亮汤匙"
+    },
+    {
+      "Key": "EVENT_DESC_FANCYSPOON",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_FANCYSPOON_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_PORCELAINCAT",
+      "String": "经典时尚"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PORCELAINCAT",
+      "String": "欢迎来到<EVENT_NAME_PORCELAINCAT>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT",
+      "String": "瓷猫"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT_PLURAL",
+      "String": "瓷猫"
+    },
+    {
+      "Key": "EVENT_DESC_PORCELAINCAT",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_PORCELAINCAT_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_RUSTICLURE",
+      "String": "乡村鱼饵"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_RUSTICLURE",
+      "String": "欢迎来到<EVENT_NAME_RUSTICLURE>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE",
+      "String": "鱼饵"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE_PLURAL",
+      "String": "鱼饵"
+    },
+    {
+      "Key": "EVENT_DESC_RUSTICLURE",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_RUSTICLURE_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_BRASSKEY",
+      "String": "快乐老家"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BRASSKEY",
+      "String": "欢迎来到<EVENT_NAME_BRASSKEY>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY",
+      "String": "铜钥匙"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY_PLURAL",
+      "String": "铜钥匙"
+    },
+    {
+      "Key": "EVENT_DESC_BRASSKEY",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_BRASSKEY_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_2",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_3",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERCRANE",
+      "String": "欢迎来到<EVENT_NAME_PAPERCRANE>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE_PLURAL",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERCRANE",
+      "String": "从快递篮子中赚取<EVENT_CURRENCY_PAPERCRANE_PLURAL>来填满活动条，并获取超棒奖励"
+    },
+    {
+      "Key": "EVENT_NAME_OLD_FRIENDS",
+      "String": "落叶之欢"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_OLD_FRIENDS",
+      "String": "欢迎来到<EVENT_NAME_OLD_FRIENDS>活动！"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS",
+      "String": "落叶"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS_PLURAL",
+      "String": "落叶"
+    },
+    {
+      "Key": "EVENT_DESC_OLD_FRIENDS",
+      "String": "获得<EVENT_CURRENCY_OLD_FRIENDS_PLURAL>并帮忙致敬Runaway的另一款游戏：<SHELF_OLDFRIENDS_TITLE>。"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_TITLE",
+      "String": "活动增益包"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_DESCRIPTION",
+      "String": "在活动中起飞吧！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_DESCRIPTION",
+      "String": "购买这款组合包，在活动的剩余时间里都能赚取额外活动点数！"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_TITLE",
+      "String": "活动完赛包"
+    },
+    {
+      "Key": "LEVEL_NUM",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_HUMAN",
+      "String": "将<EVENT_ITEMS_TREAT_PLURAL>交给<CUSTOMER_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_HUMAN",
+      "String": "将<EVENT_ITEMS_PLANT_PLURAL>交给<CUSTOMER_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_HUMAN",
+      "String": "将<EVENT_ITEMS_TOY_PLURAL>交给<CUSTOMER_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_CAT",
+      "String": "将<EVENT_ITEMS_TREAT_PLURAL>交给<CAT_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_CAT",
+      "String": "将<EVENT_ITEMS_PLANT_PLURAL>交给<CAT_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_CAT",
+      "String": "将<EVENT_ITEMS_TOY_PLURAL>交给<CAT_PLURAL>，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_TITLE",
+      "String": "要让<CUSTOMER>离开吗？"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_DESC",
+      "String": "新<CUSTOMER>需要2小时才能到达。"
+    },
+    {
+      "Key": "DISMISS_CAT_TITLE",
+      "String": "要让<CAT>离开吗？"
+    },
+    {
+      "Key": "DISMISS_CAT_DESC",
+      "String": "新<CAT>需要2小时才能到达。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING",
+      "String": "新<CUSTOMER>即将抵达"
+    },
+    {
+      "Key": "CAT_ARRIVING",
+      "String": "新<CAT>即将抵达"
+    },
+    {
+      "Key": "DISMISS_GENERIC_TITLE",
+      "String": "要让{0}离开吗？"
+    },
+    {
+      "Key": "DISMISS_GENERIC_DESC",
+      "String": "新{0}需要2小时才能到达。"
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING_GENERIC",
+      "String": "新{0}即将抵达"
+    },
+    {
+      "Key": "EVENT_HURRY",
+      "String": "加速物品"
+    },
+    {
+      "Key": "EVENT_HURRY_PLURAL",
+      "String": "加速物品"
+    },
+    {
+      "Key": "EVENT_HURRY_DESCRIPTION",
+      "String": "获得即时活动包裹"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT1",
+      "String": "在活动期间使用，即可立刻完成包裹。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT2",
+      "String": "可从活动奖励获取，偶尔也能从神秘宝盒中开出。"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT3",
+      "String": "您可以在商店中购买更多。"
+    },
+    {
+      "Key": "TIER_NUM",
+      "String": "{0}阶"
+    },
+    {
+      "Key": "BONUS_CHEST_TITLE",
+      "String": "尚未解锁！"
+    },
+    {
+      "Key": "BONUS_CHEST_DESC",
+      "String": "要开打神秘宝盒吗？"
+    },
+    {
+      "Key": "BONUS_CHEST_DENY",
+      "String": "不了，谢谢"
+    },
+    {
+      "Key": "BONUS_CHEST_VIDEO",
+      "String": "观看视频"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT",
+      "String": "点心"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT_PLURAL",
+      "String": "点心"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT_PLURAL",
+      "String": "植物"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY",
+      "String": "玩具"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY_PLURAL",
+      "String": "玩具"
+    },
+    {
+      "Key": "CARE_EVENT_NAME",
+      "String": "关爱活动"
+    },
+    {
+      "Key": "CARE_EVENT_ITEM_GENERIC",
+      "String": "关爱活动物品"
+    },
+    {
+      "Key": "CARE_EVENT_PACKAGE_GENERIC",
+      "String": "包裹"
+    },
+    {
+      "Key": "CARE_EVENT_FULFILL_REQUEST",
+      "String": "完成请求"
+    },
+    {
+      "Key": "EVENT_DESC_GENERIC",
+      "String": "将{0}交给{1}，即可获得丰厚奖励。"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT",
+      "String": "活动经验值"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT_PLURAL",
+      "String": "活动经验值"
+    },
+    {
+      "Key": "TAP_TO_CLAIM_REWARDS",
+      "String": "点击即可领取奖励！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_1",
+      "String": "点击包裹领取物品。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2",
+      "String": "将物品交给顾客。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2_CAT",
+      "String": "将物品交给猫咪。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_3",
+      "String": "打开奖励面板。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_4",
+      "String": "领取奖励！"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_5",
+      "String": "关闭奖励面板。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_6",
+      "String": "使用<EVENT_HURRY>立刻完成包裹。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_7",
+      "String": "点击包裹再次领取物品。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8",
+      "String": "将物品交给新顾客。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8_CAT",
+      "String": "将物品交给新猫咪。"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_9",
+      "String": "你是从这里获得它的！"
+    },
+    {
+      "Key": "EVENT_BOOSTER_ACTIVE",
+      "String": "{0}x增益生效中！"
+    },
+    {
+      "Key": "BUTTON_START_EVENT",
+      "String": "快去看看吧！"
+    },
+    {
+      "Key": "NEW_EVENT_STARTING",
+      "String": "新的{0}活动即将开始"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_KITCHEN",
+      "String": "厨房"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_GREENHOUSE",
+      "String": "温室"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_WORKSHOP",
+      "String": "工坊"
+    },
+    {
+      "Key": "AND_MORE",
+      "String": "以及更多！"
+    },
+    {
+      "Key": "EVENT_BOOST_ALTERNATE_DESCRIPTION",
+      "String": "本活动可获得{0}%额外经验值"
+    },
+    {
+      "Key": "EXCLUSIVE_CUSTOMISATION",
+      "String": "专属<CUSTOMISATION>"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT",
+      "String": "专属<CAT>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_001",
+      "String": "活动中有可领取的物品！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_002",
+      "String": "活动中有包裹在等着您！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_003",
+      "String": "活动物品在等您领取。这次会有什么呢？"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_004",
+      "String": "活动中有特殊好礼在等着您！快来看看吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_005",
+      "String": "活动物品已就绪！快来打开看看吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_006",
+      "String": "活动物品已经抵达！快来领取好礼吧！"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_007",
+      "String": "活动包裹在等着您！快来领取吧！"
+    },
+    {
+      "Key": "CAN_CONTAIN",
+      "String": "可能包含："
+    },
+    {
+      "Key": "CHANCE_HURRY_ITEM",
+      "String": "有{0}%几率获得<EVENT_HURRY>。"
+    },
+    {
+      "Key": "CHANCE_ITEMS",
+      "String": "有{0}%几率获得{1}件物品。"
+    },
+    {
+      "Key": "FURNITURE_NAME_001",
+      "String": "座垫箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_002",
+      "String": "猫咪吧台凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_003",
+      "String": "褐色豪华椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_004",
+      "String": "质朴凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_005",
+      "String": "木椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_006",
+      "String": "鲜艳垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_007",
+      "String": "鲜艳垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_008",
+      "String": "米色座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_009",
+      "String": "蓝色座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_010",
+      "String": "金属组织器"
+    },
+    {
+      "Key": "FURNITURE_NAME_011",
+      "String": "盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_012",
+      "String": "仿古书柜"
+    },
+    {
+      "Key": "FURNITURE_NAME_013",
+      "String": "蓝色座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_014",
+      "String": "橙色条纹垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_015",
+      "String": "木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_016",
+      "String": "蓝色木箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_017",
+      "String": "咖啡桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_018",
+      "String": "基本木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_019",
+      "String": "深色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_020",
+      "String": "白色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_021",
+      "String": "浅色木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_022",
+      "String": "地毯地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_023",
+      "String": "仿古砖墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_024",
+      "String": "混凝土墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_025",
+      "String": "石墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_026",
+      "String": "可爱的猫科植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_027",
+      "String": "盆景树"
+    },
+    {
+      "Key": "FURNITURE_NAME_028",
+      "String": "小仙人掌"
+    },
+    {
+      "Key": "FURNITURE_NAME_029",
+      "String": "小猫藤蔓"
+    },
+    {
+      "Key": "FURNITURE_NAME_030",
+      "String": "迷人盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_031",
+      "String": "基本桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_032",
+      "String": "樱桃壁纸"
+    },
+    {
+      "Key": "FURNITURE_NAME_033",
+      "String": "木面板墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_034",
+      "String": "绿面板墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_035",
+      "String": "蓝白垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_036",
+      "String": "蓝白垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_037",
+      "String": "羊毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_038",
+      "String": "羊毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_039",
+      "String": "猫毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_040",
+      "String": "钻石木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_041",
+      "String": "钻石木地板 #2"
+    },
+    {
+      "Key": "FURNITURE_NAME_042",
+      "String": "伍奇木地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_043",
+      "String": "圆桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_044",
+      "String": "黄色椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_045",
+      "String": "白色垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_046",
+      "String": "黄灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_047",
+      "String": "蓝色抽屉"
+    },
+    {
+      "Key": "FURNITURE_NAME_048",
+      "String": "紫丝绒椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_049",
+      "String": "紫丝绒凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_050",
+      "String": "黄色猫凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_051",
+      "String": "黑色猫凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_052",
+      "String": "奢华椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_053",
+      "String": "小猫豆袋椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_054",
+      "String": "暗色猫咪座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_055",
+      "String": "障子台灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_056",
+      "String": "猫咪障子台灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_057",
+      "String": "拜壂座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_058",
+      "String": "猫咪座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_059",
+      "String": "哥德墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_060",
+      "String": "暗色箱子"
+    },
+    {
+      "Key": "FURNITURE_NAME_061",
+      "String": "喵灵板"
+    },
+    {
+      "Key": "FURNITURE_NAME_062",
+      "String": "奢华桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_063",
+      "String": "冬季猫毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_064",
+      "String": "无脚椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_065",
+      "String": "哥特式花垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_066",
+      "String": "猫咪石像雕"
+    },
+    {
+      "Key": "FURNITURE_NAME_067",
+      "String": "花仙子灯具"
+    },
+    {
+      "Key": "FURNITURE_NAME_068",
+      "String": "装饰摆设"
+    },
+    {
+      "Key": "FURNITURE_NAME_069",
+      "String": "暖炉桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_070",
+      "String": "花哨座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_071",
+      "String": "榻榻米地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_072",
+      "String": "绿竹墙"
+    },
+    {
+      "Key": "FURNITURE_NAME_073",
+      "String": "黑板"
+    },
+    {
+      "Key": "FURNITURE_NAME_074",
+      "String": "质朴窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_075",
+      "String": "健壮猫咪桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_076",
+      "String": "粉色猫咪墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_077",
+      "String": "粉色格子地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_078",
+      "String": "猫咪架子"
+    },
+    {
+      "Key": "FURNITURE_NAME_079",
+      "String": "猫爪架子"
+    },
+    {
+      "Key": "FURNITURE_NAME_080",
+      "String": "猫罐堆叠"
+    },
+    {
+      "Key": "FURNITURE_NAME_081",
+      "String": "可爱猫咪垫子"
+    },
+    {
+      "Key": "FURNITURE_NAME_082",
+      "String": "乏困猫咪灯具"
+    },
+    {
+      "Key": "FURNITURE_NAME_083",
+      "String": "猫爪座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_084",
+      "String": "编织椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_085",
+      "String": "枫叶盆景"
+    },
+    {
+      "Key": "FURNITURE_NAME_086",
+      "String": "古董架子"
+    },
+    {
+      "Key": "FURNITURE_NAME_087",
+      "String": "日式点心桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_088",
+      "String": "墙面菜单"
+    },
+    {
+      "Key": "FURNITURE_NAME_089",
+      "String": "樱花画作"
+    },
+    {
+      "Key": "FURNITURE_NAME_090",
+      "String": "哥德架子"
+    },
+    {
+      "Key": "FURNITURE_NAME_091",
+      "String": "蜡烛灯具"
+    },
+    {
+      "Key": "FURNITURE_NAME_092",
+      "String": "吸血鬼猫画像"
+    },
+    {
+      "Key": "FURNITURE_NAME_093",
+      "String": "黑猫画像"
+    },
+    {
+      "Key": "FURNITURE_NAME_094",
+      "String": "神秘地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_095",
+      "String": "南瓜椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_096",
+      "String": "南瓜桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_097",
+      "String": "南瓜墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_098",
+      "String": "猫爪海报"
+    },
+    {
+      "Key": "FURNITURE_NAME_099",
+      "String": "魔法猫图案"
+    },
+    {
+      "Key": "FURNITURE_NAME_100",
+      "String": "白色猫爪椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_101",
+      "String": "黑色猫爪椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_102",
+      "String": "哥德猫画像"
+    },
+    {
+      "Key": "FURNITURE_NAME_103",
+      "String": "浮世绘猫画作"
+    },
+    {
+      "Key": "FURNITURE_NAME_104",
+      "String": "纸猫吊饰"
+    },
+    {
+      "Key": "FURNITURE_NAME_105",
+      "String": "猫咪油画"
+    },
+    {
+      "Key": "FURNITURE_NAME_106",
+      "String": "渔夫书架"
+    },
+    {
+      "Key": "FURNITURE_NAME_107",
+      "String": "励志海报"
+    },
+    {
+      "Key": "FURNITURE_NAME_108",
+      "String": "吊盆"
+    },
+    {
+      "Key": "FURNITURE_NAME_109",
+      "String": "壁灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_110",
+      "String": "格子椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_111",
+      "String": "冬季猫椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_112",
+      "String": "蘑菇凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_113",
+      "String": "雪花座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_114",
+      "String": "格子桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_115",
+      "String": "春天墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_116",
+      "String": "可爱天鹅绒沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_117",
+      "String": "毛毛盖毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_118",
+      "String": "猫咪玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_119",
+      "String": "花卉台灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_120",
+      "String": "彩色花台"
+    },
+    {
+      "Key": "FURNITURE_NAME_121",
+      "String": "秋日画作"
+    },
+    {
+      "Key": "FURNITURE_NAME_122",
+      "String": "猫咪电视机"
+    },
+    {
+      "Key": "FURNITURE_NAME_123",
+      "String": "木制游乐箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_124",
+      "String": "哥特式蝴蝶玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_125",
+      "String": "猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_126",
+      "String": "猫抓杆"
+    },
+    {
+      "Key": "FURNITURE_NAME_127",
+      "String": "草原座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_128",
+      "String": "会员证书"
+    },
+    {
+      "Key": "FURNITURE_NAME_129",
+      "String": "雪花墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_130",
+      "String": "冲浪猫"
+    },
+    {
+      "Key": "FURNITURE_NAME_131",
+      "String": "立式吊灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_132",
+      "String": "闪亮庆典桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_133",
+      "String": "红色地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_134",
+      "String": "庆典墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_135",
+      "String": "节日壁炉"
+    },
+    {
+      "Key": "FURNITURE_NAME_136",
+      "String": "节日猫塔"
+    },
+    {
+      "Key": "FURNITURE_NAME_137",
+      "String": "红格子地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_138",
+      "String": "仙女灯墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_139",
+      "String": "爱心霓虹灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_140",
+      "String": "粉色木制墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_141",
+      "String": "玫瑰红交叉地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_142",
+      "String": "猪年火龙"
+    },
+    {
+      "Key": "FURNITURE_NAME_143",
+      "String": "猪年墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_144",
+      "String": "四叶草座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_145",
+      "String": "爱尔兰虎斑猫雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_146",
+      "String": "猫形修剪灌木"
+    },
+    {
+      "Key": "FURNITURE_NAME_147",
+      "String": "彩蛋桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_148",
+      "String": "奢华柜子"
+    },
+    {
+      "Key": "FURNITURE_NAME_149",
+      "String": "花哨座椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_150",
+      "String": "圭亚那栗树"
+    },
+    {
+      "Key": "FURNITURE_NAME_151",
+      "String": "猫咪盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_152",
+      "String": "彩蛋猫毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_153",
+      "String": "工艺椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_154",
+      "String": "针织仙猫掌"
+    },
+    {
+      "Key": "FURNITURE_NAME_155",
+      "String": "狮卫雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_156",
+      "String": "芭丝特雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_157",
+      "String": "水狮雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_158",
+      "String": "焰火霓虹灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_159",
+      "String": "喵娜丽莎"
+    },
+    {
+      "Key": "FURNITURE_NAME_160",
+      "String": "华夫饼座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_161",
+      "String": "嗡嗡蜜蜂玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_162",
+      "String": "达摩不倒翁"
+    },
+    {
+      "Key": "FURNITURE_NAME_163",
+      "String": "挂盆多肉"
+    },
+    {
+      "Key": "FURNITURE_NAME_164",
+      "String": "阿尔派咖啡桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_165",
+      "String": "吊挂杯子架"
+    },
+    {
+      "Key": "FURNITURE_NAME_167",
+      "String": "猫咪休息室墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_171",
+      "String": "狼蛛座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_172",
+      "String": "猫薄荷坩埚"
+    },
+    {
+      "Key": "FURNITURE_NAME_173",
+      "String": "舒适壁炉"
+    },
+    {
+      "Key": "FURNITURE_NAME_174",
+      "String": "深黄色沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_175",
+      "String": "《Bird BnB》钟"
+    },
+    {
+      "Key": "FURNITURE_NAME_176",
+      "String": "新式艺术灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_177",
+      "String": "猫咪休息室地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_178",
+      "String": "猫咪吊床"
+    },
+    {
+      "Key": "FURNITURE_NAME_179",
+      "String": "猫咪睡桥"
+    },
+    {
+      "Key": "FURNITURE_NAME_180",
+      "String": "奢华座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_181",
+      "String": "精致壁灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_182",
+      "String": "老鼠灯笼"
+    },
+    {
+      "Key": "FURNITURE_NAME_183",
+      "String": "春节墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_184",
+      "String": "圆窗"
+    },
+    {
+      "Key": "FURNITURE_NAME_185",
+      "String": "鱼碗"
+    },
+    {
+      "Key": "FURNITURE_NAME_186",
+      "String": "舒适加热器"
+    },
+    {
+      "Key": "FURNITURE_NAME_187",
+      "String": "酷猫海报"
+    },
+    {
+      "Key": "FURNITURE_NAME_188",
+      "String": "流苏豆袋"
+    },
+    {
+      "Key": "FURNITURE_NAME_189",
+      "String": "蘑菇桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_190",
+      "String": "彩色面具"
+    },
+    {
+      "Key": "FURNITURE_NAME_191",
+      "String": "斯帕什的克洛伊座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_192",
+      "String": "彩翼椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_193",
+      "String": "星夜凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_194",
+      "String": "马卡龙座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_195",
+      "String": "巨嘴鸟雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_196",
+      "String": "甲虫插画"
+    },
+    {
+      "Key": "FURNITURE_NAME_197",
+      "String": "果馅饼桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_198",
+      "String": "玩具盒"
+    },
+    {
+      "Key": "FURNITURE_NAME_199",
+      "String": "樱桃派凳子"
+    },
+    {
+      "Key": "FURNITURE_NAME_200",
+      "String": "先祖祭坛"
+    },
+    {
+      "Key": "FURNITURE_NAME_201",
+      "String": "催眠地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_202",
+      "String": "气球花束"
+    },
+    {
+      "Key": "FURNITURE_NAME_203",
+      "String": "屏风正面"
+    },
+    {
+      "Key": "FURNITURE_NAME_204",
+      "String": "红色窗帘"
+    },
+    {
+      "Key": "FURNITURE_NAME_205",
+      "String": "屏风侧面"
+    },
+    {
+      "Key": "FURNITURE_NAME_206",
+      "String": "绵羊座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_207",
+      "String": "衣帽架"
+    },
+    {
+      "Key": "FURNITURE_NAME_208",
+      "String": "自助柜台"
+    },
+    {
+      "Key": "FURNITURE_NAME_209",
+      "String": "茶具台"
+    },
+    {
+      "Key": "FURNITURE_NAME_210",
+      "String": "一堆礼物"
+    },
+    {
+      "Key": "FURNITURE_NAME_211",
+      "String": "玫瑰枕头"
+    },
+    {
+      "Key": "FURNITURE_NAME_212",
+      "String": "骑士摆设"
+    },
+    {
+      "Key": "FURNITURE_NAME_213",
+      "String": "睡椅沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_214",
+      "String": "龙蛋"
+    },
+    {
+      "Key": "FURNITURE_NAME_215",
+      "String": "哥德书架"
+    },
+    {
+      "Key": "FURNITURE_NAME_216",
+      "String": "小鸡雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_217",
+      "String": "歌德窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_218",
+      "String": "龙雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_219",
+      "String": "黑胶播放器"
+    },
+    {
+      "Key": "FURNITURE_NAME_220",
+      "String": "青蛙喷泉"
+    },
+    {
+      "Key": "FURNITURE_NAME_221",
+      "String": "海狮椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_222",
+      "String": "草莓小地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_223",
+      "String": "柔软篮子"
+    },
+    {
+      "Key": "FURNITURE_NAME_224",
+      "String": "木头书架"
+    },
+    {
+      "Key": "FURNITURE_NAME_225",
+      "String": "象棋桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_226",
+      "String": "地球仪"
+    },
+    {
+      "Key": "FURNITURE_NAME_228",
+      "String": "浮木桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_229",
+      "String": "真木鹿角"
+    },
+    {
+      "Key": "FURNITURE_NAME_230",
+      "String": "搁脚凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_231",
+      "String": "格子座椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_232",
+      "String": "冰淇淋灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_233",
+      "String": "糖果霓虹灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_234",
+      "String": "波斯地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_235",
+      "String": "拖鞋架"
+    },
+    {
+      "Key": "FURNITURE_NAME_236",
+      "String": "巧克力沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_237",
+      "String": "煎蛋地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_238",
+      "String": "贝壳桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_239",
+      "String": "植物玻璃箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_240",
+      "String": "流苏座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_241",
+      "String": "手工篮子"
+    },
+    {
+      "Key": "FURNITURE_NAME_242",
+      "String": "纸鹤"
+    },
+    {
+      "Key": "FURNITURE_NAME_243",
+      "String": "纸桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_244",
+      "String": "纸椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_245",
+      "String": "薰衣草盆栽"
+    },
+    {
+      "Key": "FURNITURE_NAME_246",
+      "String": "柠檬树"
+    },
+    {
+      "Key": "FURNITURE_NAME_247",
+      "String": "虎尾兰"
+    },
+    {
+      "Key": "FURNITURE_NAME_248",
+      "String": "王座座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_249",
+      "String": "传奇的蛋"
+    },
+    {
+      "Key": "FURNITURE_NAME_250",
+      "String": "皇家猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_251",
+      "String": "剪贴簿"
+    },
+    {
+      "Key": "FURNITURE_NAME_252",
+      "String": "浮木猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_253",
+      "String": "纸糊热气球"
+    },
+    {
+      "Key": "FURNITURE_NAME_254",
+      "String": "寿司店"
+    },
+    {
+      "Key": "FURNITURE_NAME_255",
+      "String": "橡胶树"
+    },
+    {
+      "Key": "FURNITURE_NAME_256",
+      "String": "盆景树"
+    },
+    {
+      "Key": "FURNITURE_NAME_257",
+      "String": "盆景棕榈树"
+    },
+    {
+      "Key": "FURNITURE_NAME_258",
+      "String": "派对花环"
+    },
+    {
+      "Key": "FURNITURE_NAME_259",
+      "String": "派对桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_260",
+      "String": "寿司凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_261",
+      "String": "禅意花园"
+    },
+    {
+      "Key": "FURNITURE_NAME_262",
+      "String": "香草花架"
+    },
+    {
+      "Key": "FURNITURE_NAME_263",
+      "String": "立体绘画"
+    },
+    {
+      "Key": "FURNITURE_NAME_264",
+      "String": "尖叫的猫"
+    },
+    {
+      "Key": "FURNITURE_NAME_265",
+      "String": "茶水柜"
+    },
+    {
+      "Key": "FURNITURE_NAME_266",
+      "String": "抽象雕塑"
+    },
+    {
+      "Key": "FURNITURE_NAME_267",
+      "String": "树墩桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_268",
+      "String": "蘑菇灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_269",
+      "String": "古典花瓶"
+    },
+    {
+      "Key": "FURNITURE_NAME_270",
+      "String": "森林椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_271",
+      "String": "碧玉雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_272",
+      "String": "青苔地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_273",
+      "String": "钢铁雕像"
+    },
+    {
+      "Key": "FURNITURE_NAME_274",
+      "String": "猫咪沉思者"
+    },
+    {
+      "Key": "FURNITURE_NAME_275",
+      "String": "枫叶地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_276",
+      "String": "热带风光躺椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_277",
+      "String": "野餐毯子"
+    },
+    {
+      "Key": "FURNITURE_NAME_278",
+      "String": "野餐篮子"
+    },
+    {
+      "Key": "FURNITURE_NAME_279",
+      "String": "野餐面包板"
+    },
+    {
+      "Key": "FURNITURE_NAME_280",
+      "String": "大自然桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_281",
+      "String": "哥德炉子"
+    },
+    {
+      "Key": "FURNITURE_NAME_282",
+      "String": "哥德椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_283",
+      "String": "奢华座垫"
+    },
+    {
+      "Key": "FURNITURE_NAME_284",
+      "String": "袖珍椰"
+    },
+    {
+      "Key": "FURNITURE_NAME_285",
+      "String": "薄荷花瓣桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_286",
+      "String": "薄荷花瓣毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_287",
+      "String": "薄荷花瓣椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_291",
+      "String": "森林墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_292",
+      "String": "森林地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_293",
+      "String": "室内树"
+    },
+    {
+      "Key": "FURNITURE_NAME_294",
+      "String": "岩石喷泉"
+    },
+    {
+      "Key": "FURNITURE_NAME_295",
+      "String": "自然边桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_296",
+      "String": "树桩凳"
+    },
+    {
+      "Key": "FURNITURE_NAME_297",
+      "String": "鸟舍"
+    },
+    {
+      "Key": "FURNITURE_NAME_298",
+      "String": "帐篷"
+    },
+    {
+      "Key": "FURNITURE_NAME_299",
+      "String": "毛毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_300",
+      "String": "蘑菇灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_301",
+      "String": "孟菲斯架子"
+    },
+    {
+      "Key": "FURNITURE_NAME_302",
+      "String": "孟菲斯灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_303",
+      "String": "孟菲斯沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_304",
+      "String": "孟菲斯桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_305",
+      "String": "孟菲斯窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_306",
+      "String": "孟菲斯墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_307",
+      "String": "孟菲斯猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_308",
+      "String": "孟菲斯画作"
+    },
+    {
+      "Key": "FURNITURE_NAME_309",
+      "String": "孟菲斯地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_310",
+      "String": "孟菲斯地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_311",
+      "String": "田园炉子"
+    },
+    {
+      "Key": "FURNITURE_NAME_312",
+      "String": "田园窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_313",
+      "String": "田园地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_314",
+      "String": "田园墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_315",
+      "String": "缝纫机"
+    },
+    {
+      "Key": "FURNITURE_NAME_316",
+      "String": "植物海报"
+    },
+    {
+      "Key": "FURNITURE_NAME_317",
+      "String": "田园椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_318",
+      "String": "格子地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_319",
+      "String": "干草药"
+    },
+    {
+      "Key": "FURNITURE_NAME_320",
+      "String": "田园猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_321",
+      "String": "餐馆地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_322",
+      "String": "餐馆墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_323",
+      "String": "餐馆椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_324",
+      "String": "餐馆桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_325",
+      "String": "餐馆沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_326",
+      "String": "酒吧桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_327",
+      "String": "点唱机"
+    },
+    {
+      "Key": "FURNITURE_NAME_328",
+      "String": "路标"
+    },
+    {
+      "Key": "FURNITURE_NAME_329",
+      "String": "餐馆时钟"
+    },
+    {
+      "Key": "FURNITURE_NAME_330",
+      "String": "泡泡糖机"
+    },
+    {
+      "Key": "FURNITURE_NAME_331",
+      "String": "流行椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_332",
+      "String": "流行墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_333",
+      "String": "流行地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_334",
+      "String": "流行桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_335",
+      "String": "流行汽车"
+    },
+    {
+      "Key": "FURNITURE_NAME_336",
+      "String": "流行地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_337",
+      "String": "流行猫咪玩具"
+    },
+    {
+      "Key": "FURNITURE_NAME_338",
+      "String": "流行灯具"
+    },
+    {
+      "Key": "FURNITURE_NAME_339",
+      "String": "流行镜子"
+    },
+    {
+      "Key": "FURNITURE_NAME_340",
+      "String": "流行窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_341",
+      "String": "青苔墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_342",
+      "String": "植物玻璃箱"
+    },
+    {
+      "Key": "FURNITURE_NAME_343",
+      "String": "龟背竹"
+    },
+    {
+      "Key": "FURNITURE_NAME_344",
+      "String": "游戏厅柜子"
+    },
+    {
+      "Key": "FURNITURE_NAME_345",
+      "String": "游戏厅桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_346",
+      "String": "游戏厅椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_347",
+      "String": "书籍壁纸"
+    },
+    {
+      "Key": "FURNITURE_NAME_349",
+      "String": "休闲椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_350",
+      "String": "读书桌"
+    },
+    {
+      "Key": "FURNITURE_NAME_351",
+      "String": "吊床"
+    },
+    {
+      "Key": "FURNITURE_NAME_352",
+      "String": "珠帘窗户"
+    },
+    {
+      "Key": "FURNITURE_NAME_353",
+      "String": "波西米亚地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_354",
+      "String": "波西米亚沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_355",
+      "String": "下午茶桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_356",
+      "String": "下午茶椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_357",
+      "String": "立式花瓶"
+    },
+    {
+      "Key": "FURNITURE_NAME_358",
+      "String": "花卉墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_359",
+      "String": "地图"
+    },
+    {
+      "Key": "FURNITURE_NAME_360",
+      "String": "写字台"
+    },
+    {
+      "Key": "FURNITURE_NAME_361",
+      "String": "留声机"
+    },
+    {
+      "Key": "FURNITURE_NAME_362",
+      "String": "古董书架"
+    },
+    {
+      "Key": "FURNITURE_NAME_363",
+      "String": "钢琴"
+    },
+    {
+      "Key": "FURNITURE_NAME_364",
+      "String": "架子鼓"
+    },
+    {
+      "Key": "FURNITURE_NAME_365",
+      "String": "贝斯"
+    },
+    {
+      "Key": "FURNITURE_NAME_366",
+      "String": "麦克风"
+    },
+    {
+      "Key": "FURNITURE_NAME_367",
+      "String": "冲浪板"
+    },
+    {
+      "Key": "FURNITURE_NAME_368",
+      "String": "救生圈"
+    },
+    {
+      "Key": "FURNITURE_NAME_369",
+      "String": "沙滩墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_370",
+      "String": "沙滩地板"
+    },
+    {
+      "Key": "FURNITURE_NAME_371",
+      "String": "船锚猫抓柱"
+    },
+    {
+      "Key": "FURNITURE_NAME_372",
+      "String": "沙滩毛巾"
+    },
+    {
+      "Key": "FURNITURE_NAME_373",
+      "String": "沙滩椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_374",
+      "String": "沙滩桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_375",
+      "String": "船"
+    },
+    {
+      "Key": "FURNITURE_NAME_377",
+      "String": "舷窗"
+    },
+    {
+      "Key": "FURNITURE_NAME_378",
+      "String": "极简树"
+    },
+    {
+      "Key": "FURNITURE_NAME_379",
+      "String": "极简桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_380",
+      "String": "极简椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_381",
+      "String": "极简猫床"
+    },
+    {
+      "Key": "FURNITURE_NAME_382",
+      "String": "禅意屏风"
+    },
+    {
+      "Key": "FURNITURE_NAME_383",
+      "String": "禅意植物"
+    },
+    {
+      "Key": "FURNITURE_NAME_384",
+      "String": "禅意沙发"
+    },
+    {
+      "Key": "FURNITURE_NAME_385",
+      "String": "禅意座椅"
+    },
+    {
+      "Key": "FURNITURE_NAME_386",
+      "String": "白色墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_387",
+      "String": "平铺炉子"
+    },
+    {
+      "Key": "FURNITURE_NAME_388",
+      "String": "大米灯具"
+    },
+    {
+      "Key": "FURNITURE_NAME_389",
+      "String": "斯堪的纳维亚椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_390",
+      "String": "乡村墙壁"
+    },
+    {
+      "Key": "FURNITURE_NAME_391",
+      "String": "仙女灯"
+    },
+    {
+      "Key": "FURNITURE_NAME_392",
+      "String": "圆桶桌子"
+    },
+    {
+      "Key": "FURNITURE_NAME_393",
+      "String": "人造奶牛地毯"
+    },
+    {
+      "Key": "FURNITURE_NAME_394",
+      "String": "猫咪塔"
+    },
+    {
+      "Key": "FURNITURE_NAME_395",
+      "String": "猫屋"
+    },
+    {
+      "Key": "FURNITURE_NAME_396",
+      "String": "猫床"
+    },
+    {
+      "Key": "FURNITURE_NAME_397",
+      "String": "猫咪玩具"
+    },
+    {
+      "Key": "CAT_NAME_001",
+      "String": "松饼"
+    },
+    {
+      "Key": "CAT_NAME_002",
+      "String": "可爱猫"
+    },
+    {
+      "Key": "CAT_NAME_003",
+      "String": "小邦"
+    },
+    {
+      "Key": "CAT_NAME_004",
+      "String": "武石"
+    },
+    {
+      "Key": "CAT_NAME_005",
+      "String": "塞伦"
+    },
+    {
+      "Key": "CAT_NAME_006",
+      "String": "毛里"
+    },
+    {
+      "Key": "CAT_NAME_007",
+      "String": "霍莉"
+    },
+    {
+      "Key": "CAT_NAME_008",
+      "String": "拉德"
+    },
+    {
+      "Key": "CAT_NAME_009",
+      "String": "巴布"
+    },
+    {
+      "Key": "CAT_NAME_010",
+      "String": "小影"
+    },
+    {
+      "Key": "CAT_NAME_011",
+      "String": "小须"
+    },
+    {
+      "Key": "CAT_NAME_012",
+      "String": "面条"
+    },
+    {
+      "Key": "CAT_NAME_013",
+      "String": "糯米团"
+    },
+    {
+      "Key": "CAT_NAME_014",
+      "String": "恰恰"
+    },
+    {
+      "Key": "CAT_NAME_015",
+      "String": "忍者猫"
+    },
+    {
+      "Key": "CAT_NAME_016",
+      "String": "莎莎"
+    },
+    {
+      "Key": "CAT_NAME_017",
+      "String": "米洛"
+    },
+    {
+      "Key": "CAT_NAME_018",
+      "String": "梅斯"
+    },
+    {
+      "Key": "CAT_NAME_019",
+      "String": "奥利奥"
+    },
+    {
+      "Key": "CAT_NAME_020",
+      "String": "布兰妮"
+    },
+    {
+      "Key": "CAT_NAME_021",
+      "String": "齐吉"
+    },
+    {
+      "Key": "CAT_NAME_022",
+      "String": "牛奶"
+    },
+    {
+      "Key": "CAT_NAME_023",
+      "String": "咪咪"
+    },
+    {
+      "Key": "CAT_NAME_024",
+      "String": "肉桂"
+    },
+    {
+      "Key": "CAT_NAME_025",
+      "String": "厄里斯"
+    },
+    {
+      "Key": "CAT_NAME_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_NAME_027",
+      "String": "邦尼"
+    },
+    {
+      "Key": "CAT_NAME_028",
+      "String": "拉美西斯"
+    },
+    {
+      "Key": "CAT_NAME_029",
+      "String": "可可"
+    },
+    {
+      "Key": "CAT_NAME_030",
+      "String": "泡芙"
+    },
+    {
+      "Key": "CAT_NAME_031",
+      "String": "果冻豆"
+    },
+    {
+      "Key": "CAT_NAME_032",
+      "String": "奥里"
+    },
+    {
+      "Key": "CAT_NAME_033",
+      "String": "杰西"
+    },
+    {
+      "Key": "CAT_NAME_034",
+      "String": "桑德拉"
+    },
+    {
+      "Key": "CAT_NAME_035",
+      "String": "毛毛"
+    },
+    {
+      "Key": "CAT_NAME_036",
+      "String": "考拉"
+    },
+    {
+      "Key": "CAT_NAME_037",
+      "String": "威福"
+    },
+    {
+      "Key": "CAT_NAME_038",
+      "String": "克里丹斯"
+    },
+    {
+      "Key": "CAT_NAME_039",
+      "String": "饼干"
+    },
+    {
+      "Key": "CAT_NAME_040",
+      "String": "辣椒"
+    },
+    {
+      "Key": "CAT_NAME_041",
+      "String": "大爪子"
+    },
+    {
+      "Key": "CAT_NAME_050",
+      "String": "黄油"
+    },
+    {
+      "Key": "CAT_NAME_051",
+      "String": "卢娜"
+    },
+    {
+      "Key": "CAT_NAME_052",
+      "String": "袜子"
+    },
+    {
+      "Key": "CAT_NAME_053",
+      "String": "小貂"
+    },
+    {
+      "Key": "CAT_NAME_054",
+      "String": "欧迪"
+    },
+    {
+      "Key": "CAT_NAME_055",
+      "String": "卡利斯塔"
+    },
+    {
+      "Key": "CAT_NAME_056",
+      "String": "星珏"
+    },
+    {
+      "Key": "CAT_NAME_057",
+      "String": "佐伊"
+    },
+    {
+      "Key": "CAT_NAME_058",
+      "String": "德拉克女公爵"
+    },
+    {
+      "Key": "CAT_NAME_059",
+      "String": "阿波罗"
+    },
+    {
+      "Key": "CAT_NAME_060",
+      "String": "薇薇安"
+    },
+    {
+      "Key": "CAT_NAME_061",
+      "String": "斑斑"
+    },
+    {
+      "Key": "CAT_NAME_062",
+      "String": "炽奇"
+    },
+    {
+      "Key": "CAT_NAME_063",
+      "String": "木舒"
+    },
+    {
+      "Key": "CAT_NAME_064",
+      "String": "粲比"
+    },
+    {
+      "Key": "CAT_NAME_065",
+      "String": "多比"
+    },
+    {
+      "Key": "CAT_NAME_066",
+      "String": "美浓"
+    },
+    {
+      "Key": "CAT_NAME_067",
+      "String": "沃尔夫冈"
+    },
+    {
+      "Key": "CAT_NAME_068",
+      "String": "洛基"
+    },
+    {
+      "Key": "CAT_NAME_JUHANOTUSED",
+      "String": "尤哈"
+    },
+    {
+      "Key": "CAT_NAME_SIMBANOTUSED",
+      "String": "辛巴"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_001",
+      "String": "松饼是只非常深情的猫咪，她喜欢一直被轻抚！若您停下来，她会用爪子轻轻地拍您，要您继续轻抚她。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_002",
+      "String": "尽管可爱猫十分友善不好争斗，但过去他曾和一只粗鲁的汤姆猫起了纠纷，结果他的下巴被打坏了！他非常喜爱拥抱，开心时会大声发出咕噜噜声并流出很多口水，炫耀他那迷人、但歪一边的笑容。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_003",
+      "String": "小邦是一只很有自信的小猫咪。自从被收养，她就和她亲近的人一块打盹和监督。并从中找到了极大的幸福。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_004",
+      "String": "武石的体型至少是他姐妹小邦的两倍，是只超爱拥抱的猫咪。他非常爱吃，并经常从其他猫咪的食物碗里偷吃。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_005",
+      "String": "总是泰然自若，塞伦有一个玩世不恭的态度。她无视规则与条例，并经常对怒火中烧的人感到不解。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_006",
+      "String": "毛里会对新顾客感到胆怯，只有经过多次被人轻抚才能获得他的信任。他是位非常深情和热心的交谈者，会以娇弱的喵声说话。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_007",
+      "String": "霍莉·珍尼斯·布莱基酷爱炫耀，她具备后空翻的能力，吐舌头和过度流口水。她喜爱她所遇见的每一个人，但却无条件地厌恶狗狗。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_008",
+      "String": "拉德忠心耿耿且彬彬有礼，总是会先礼让顾客进门后才进，是位真正的优雅绅士。尽管突如其来的动作会吓着他，但他还是很喜欢咖啡厅访客拍拍他的头！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_009",
+      "String": "巴布极其特别，因为她有一双微微交叉的眼睛，令她看起来更加可爱！她喜欢蜷缩在黑暗的角落里，并幻想着金枪鱼、鲑鱼和温牛奶等丰盛美食。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_010",
+      "String": "腼腆的小小影喜欢慢慢地与陌生人熟络起来。当他变得熟悉后，他那俏皮且温顺的自我就会显现，而且经常能发现他躲在顾客的购物袋里。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_011",
+      "String": "小须是一只最淘气的小无赖，她特别喜欢戏弄其它的猫咪，经常玩弄他们的尾巴，也爱在别人睡觉的时候扑向他们。小须可真是活出了淘气班级小丑的名分啊。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_012",
+      "String": "面条认为自己是“人类”，所以大家常看到她用两条后腿直立行走。她总会自行坐到顾客的桌边，或是好奇地绕着意大利浓咖啡机闲逛，不时还会去玩掉落在地上的咖啡豆。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_013",
+      "String": "糯米团有严重洁癖。她每天早上的第一个任务就是把自己从头到尾舔得干干净净的。她也非常喜欢让别人刷她的毛，但被人抱起时会变得浮躁。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_014",
+      "String": "随着音乐在咖啡厅中响起，恰恰摇身一变，成为一名舞者。他一边随着音律热情地摆动着屁股，一边追逐着他最喜爱的玩具。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_015",
+      "String": "忍者猫爱与挚友共餐，所以他从不遗余力去寻找值得信赖的同伴。每当发现别人是知己，他都会发出喵喵的叫声，表示他们已被选中成为他的特别晚餐嘉宾。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_016",
+      "String": "莎莎既可爱又聪明还有着一身的才华，前世说不定是个万人崇拜的女神呢。被收养前，她曾是只选美猫，可她现在的生活就与以前大有不同了。现在的她天天都在清理着她心爱的玩具，把它们都舔得湿漉漉的。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_017",
+      "String": "抱着米洛就像钻入暖心的被窝一样有爱。他似乎对失落的人有一种第六感，总能识别谁心情失落，并且喜欢去亲近这些人，并试着与他们玩耍或是发出深情的呼噜声来安慰他们。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_018",
+      "String": "梅斯是个软心肠的冷漠战士。他学会以自己的耐性、突袭能力和一招旋风反向踢，与其他猫咪搏斗。现已退休的他，不是在梳洗自己就是在回想以前战斗的日子。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_019",
+      "String": "奥利奥并没有她的名字听起来那么甜美。她虽然喜欢被摸头，但会攻击任何碰到她那毛茸茸肚皮的人。奥利奥既可爱但又凶狠，只要是她想得到的东西，她就一定会马上弄到爪。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_020",
+      "String": "布兰妮小时候过于好奇，导致她单耳失聪。在她外出冒险享受她最喜欢的消遣活动“啃食美味绿草”时，她那双迷人的绿眼睛时刻保持着警惕。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_021",
+      "String": "齐吉对自己睡觉的地方格外地保护，而她最爱的睡觉处之一竟然是在厕所的水箱上！尽管她老是被人赶出厕所，她总能钻到空子溜回去。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_022",
+      "String": "牛奶喜欢整天抱着毯子揉，直把人的心都融化掉了。她不在揉毯子的时候就会揉顾客的膝或是揉枕头。有时，她也会鼓起勇气，尝试去揉咖啡厅里的其它猫咪。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_023",
+      "String": "咪咪被发现的时候还是一只满身跳蚤的小野猫，她是个名副其实的幸存者！她那股坚持不懈的毅力，从她为了追到自己的尾巴所费的努力显而易见。总有一天，咪咪，你会成功的。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_024",
+      "String": "肉桂营养充足，但她还使特别的贪吃，经常会试着偷走顾客盘子里尽可能多的饼干。她也经常在咖啡桌上舔水喝。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_025",
+      "String": "调皮鬼厄里斯的名字来自于希腊的不和女神。她喜欢到处抓抓抓，让别人把椅子腾出来给她坐。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_027",
+      "String": "邦尼可爱的耳朵源于她的苏格兰折耳血统。不过别给她茫然的眼神和折合的耳朵骗了，她可什么都听得一清二楚。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_028",
+      "String": "特别喜欢每周泡澡的拉美西斯性情有些古怪，他非常喜欢吸引大家的注意力，且能与任何人结成好朋友。甚至是条善良的狗都行！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_029",
+      "String": "可可是一只会发出音乐般喵声的珍贵猫咪。喜欢待在宁静地点的她，不希望自己被卷入日常生活的忙乱中。你只要把她带到一个安宁的地方刷刷毛，她就会爱你一辈子。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_030",
+      "String": "泡芙喜欢长时间摊成猫饼趴在那里，观望着每一位进入咖啡厅的顾客，并在他们离开前轻轻喵两声。这也意味着他总霸占着最容易让人摸头的位置。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_031",
+      "String": "你可以经常听到远处果冻豆跑动的声音。无论是追玩具还是老鼠，她都会使尽吃奶的力气狂奔。以一只猫而言，她洪亮的跑动声的确让人意外。她是一只没办法悄悄行事的猫咪。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_032",
+      "String": "奥里是个名副其实的天后。身为独特的布偶猫品种，她就如大明星一般，会不停地喵喵叫，直到得到她所想要的东西。可她到底想要什么？没有人真正知道。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_033",
+      "String": "杰西是只充满骄傲的猫咪。她走路昂头挺胸、眼神高傲，像极了超模。虽说她平常不愿与别人交往，但当她想要时，她会敢于要求别人抱抱她。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_034",
+      "String": "桑德拉是个低调的盗窃癖者。她总趁顾客们不注意，就偷走他们的吸管。再经一番猛嚼后，吸管就化为碎屑了。还好咖啡厅用的是纸制吸管！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_035",
+      "String": "毛毛曾是参加猫秀大赛的猫咪，她当时的日子大部分都在铁笼和铁链的捆绑中度过。现在毛毛的顽皮性格，是咖啡厅里众所周知的。这主要是因为她掉毛掉得特别厉害。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_036",
+      "String": "顾名思义，考拉非常粘人，总是喜欢把爪子抱在客人的脖子上。虽然有时这样会在一些比较随和的顾客脖子上留下爪印，但因为考拉实在是太可爱了，所以没有顾客会怪她。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_037",
+      "String": "威福最喜欢被揉肚皮了！他常常会躺着睡觉，因为这就像是在给旁人递一张揉肚皮邀请函。他有时做梦的时候，会把腿在空中乱蹬，就像是在骑自行车一样。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_038",
+      "String": "温柔善良的小信，也只接收最温柔的轻抚。你就想象自己是在轻抚刚出生婴儿的头吧。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_039",
+      "String": "饼干是一只需要紧盯着的猫咪。他很喜欢到处被人抱着，而且会毫无警告地突然跳到人家的肩膀上！饼干非常喜欢好玩的人，也很会学习表演戏法。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_040",
+      "String": "辣椒属于罕见的孟加拉品种，她可什么都吃。她之所以这样命名，是因为她小时候在咖啡厅前台上吃了一条不知从何处来的辣椒，结果得在凌晨1点多亡命赶去看兽医。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_041",
+      "String": "大爪子曾用她多趾的大爪与市民握手。现在，已经退休了的她，喜欢用她的大爪吃猫饼干还有喝茶。有些顾客还会亲切地叫她“星尘”"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_050",
+      "String": "油油曾是网络名气猫赛的赢家，这令他成为社交媒体上的知名猫咪。尽管他是名猫，但他依然是您从未见过的高冷猫男神。他爱抓下巴，开心时会将尾巴卷成一个小问号的形状。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_051",
+      "String": "卢娜天性狂野好玩，是一只对游戏充满热忱的活泼小猫。最初，她是独自一人在阴森可怕的森林中被人发现的；但现在，她喜欢玩玩具和拍拍入睡之人的脸蛋，享受身为一只小猫的全新经历。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_052",
+      "String": "袜子拥有潜行和奔跑的天赋，是个天生的捕猎者。位于猫咪速度榜首的袜子，总能抢先抓到玩具，且经常不由自主地绕着房间跑。它还特别喜欢坐在窗口，对着窗外的鸟儿急躁地叽喳。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_053",
+      "String": "小貂小的时候，特别喜爱攀爬，它每天都要爬上最高的树。现在，它承当了咖啡厅按摩师的职务，每天负责轻轻按摩顾客的腿，一边快乐地打着咕噜。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_054",
+      "String": "尽管欧迪的遭遇坎坷且只拥有一只眼睛，但她依然乐观积极！欧迪充满活力，喜欢窜上树和追球，可她还是会在您需要拥抱时依偎在您的腿上。她也喜欢自己的声音，会开心地发出一系列的咪咪声、吱吱声、喵喵声和咕噜声来和您聊天。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_055",
+      "String": "卡利斯塔是一只喜欢优质摇篮曲的小猫。在床上唱一首摇篮曲，她就会在您的身旁安然入睡！她也喜欢有很多条腿的毛绒玩具！她的收藏品包括蜘蛛、章鱼、龙虾、螃蟹和小虾！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_056",
+      "String": "星珏在生人面前总是非常害羞，但一旦和你混熟了，她很快便会摆脱羞怯。作为她的新好友，你可以听她瞄瞄好几个小时，还能和她玩她最爱的接球游戏。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_057",
+      "String": "佐伊可喜欢人类和狗狗了，可她却跟其他猫咪合不来。它喜欢主人来挠她的肚子，跟她说话，还喜欢拿自己的小脸蛋去磨蹭各种东西（包括你的脸）。佐伊有一个Instagram账号，还有一群铁粉呢：instagram.com/munchkinzoe/"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_058",
+      "String": "“地狱咆哮”德拉克女公爵是个狠毒的角色，只要嗅到了猎物的踪迹，她就会穷追不舍，而她最喜欢的猎物就是脚指头。不管是藏在毯子下的脚趾，还是傻到没东西挡着的脚趾，都将面临女公爵的毒爪！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_059",
+      "String": "阿波罗很喜欢弄爆一包包的东西，不管是发酵粉、鱼食，还是奶粉，都是他的目标，所以一定不要让他靠近咖啡豆！尽管他一副坏小子的样子，可他其实是个很有爱心的家伙，要是你有零食可以给他吃，他可是什么都会做的哦！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_060",
+      "String": "薇薇安（薇薇）是一个很特别的女孩子，要是没她的准许，谁也别想要抚摸她的脸蛋和脖子。她走起路来有一点跛脚，但是依旧很爱到处奔跑、追逐、攀爬，尽兴疯玩之后，就会大吐舌头来给欢乐时光画上句点！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_061",
+      "String": "斑斑在获救助前，曾因为冻伤而失去了耳尖。在克服过去种种困难后，斑斑总会在最需要她的地方出现并伴随左右。这只小迷糊特别爱玩，总是喵喵喵地叫个不停。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_062",
+      "String": "炽奇是一只非常认真的猫咪，他绝不容忍任何马虎！炽奇担任着守护者的职责，他很认真对待清晨五点半的闹铃并且从未旷职。到了下午五点一定要记得喂炽奇猫食，否则他会一直喵喵叫直到吃到猫食为止！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_063",
+      "String": "木舒是只爱吃面包的小壮猫！他会咬破面包的塑料袋以吃到里头的甜美面包。这只健谈的小家伙一旦想吃东西（通常是面包），就会喵喵喵地叫个不停。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_064",
+      "String": "这只名叫粲比的大宝宝，只要她的下巴被挠对了地方，她就会发出连数英里外都能听见的咕噜声。她特别爱待在蓬松的球衣上，并且经常会伸出舌头。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_065",
+      "String": "多比是一只聪明的猫咪，她从小热爱学习如何通过按键与人类进行交流。由于她总在凌晨四点索要猫食，按键系统发生了不幸“事故”。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_066",
+      "String": "美浓总觉得自己是一名强大的猎人，但实际上她内心柔软。她情有独钟的猎物是大片的奇异叶子，她在清晨做的第一件事就是把叶子送给人类。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_067",
+      "String": "尽管沃尔夫冈的外表长得像狼，但他大多数时候都很友好、很温柔……只要别挡在他和鸡的中间就行。为了吃上美食，即使赴汤蹈火，他也在所不惜！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_068",
+      "String": "<CAT_NAME_068>的名字取自北欧神话中的恶作剧之神，它也特别调皮！大家都知道，这只猫咪不仅喜欢乱扯电线，还会偷吃人类的食物。想让这只狡猾小猫远离麻烦，就一定要给它足够的抱抱！"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_JUHANOTUSED",
+      "String": "尤哈的屁股只要一着地，这世上就没有能搬得动他的力量！尽管如此，他很爱被摸头，对他最爱的人类也相当地忠诚。可惜必须要自己到他那儿去，才能尝到做他朋友的甜头。"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_SIMBANOTUSED",
+      "String": "辛巴总能以自己优雅且敏捷的身段和极高的运动天赋惊倒众人。不止这些，他还十分聪慧，居然还学会了如何开门！然而，这些天赋只为四处找人抱抱而存在。"
+    },
+    {
+      "Key": "OCCUPATION_001",
+      "String": "酒店经理"
+    },
+    {
+      "Key": "OCCUPATION_002",
+      "String": "会计师"
+    },
+    {
+      "Key": "OCCUPATION_003",
+      "String": "保险精算师"
+    },
+    {
+      "Key": "OCCUPATION_004",
+      "String": "针灸师"
+    },
+    {
+      "Key": "OCCUPATION_005",
+      "String": "广告业"
+    },
+    {
+      "Key": "OCCUPATION_006",
+      "String": "航空工程师"
+    },
+    {
+      "Key": "OCCUPATION_007",
+      "String": "飞行员"
+    },
+    {
+      "Key": "OCCUPATION_008",
+      "String": "农业顾问"
+    },
+    {
+      "Key": "OCCUPATION_009",
+      "String": "农业科学家"
+    },
+    {
+      "Key": "OCCUPATION_010",
+      "String": "救护员"
+    },
+    {
+      "Key": "OCCUPATION_011",
+      "String": "技术员"
+    },
+    {
+      "Key": "OCCUPATION_012",
+      "String": "麻醉师"
+    },
+    {
+      "Key": "OCCUPATION_013",
+      "String": "动物肖像画家"
+    },
+    {
+      "Key": "OCCUPATION_014",
+      "String": "树艺家"
+    },
+    {
+      "Key": "OCCUPATION_015",
+      "String": "建筑师"
+    },
+    {
+      "Key": "OCCUPATION_016",
+      "String": "美术教师"
+    },
+    {
+      "Key": "OCCUPATION_017",
+      "String": "艺术总监"
+    },
+    {
+      "Key": "OCCUPATION_018",
+      "String": "艺术行政官"
+    },
+    {
+      "Key": "OCCUPATION_019",
+      "String": "听力学家"
+    },
+    {
+      "Key": "OCCUPATION_020",
+      "String": "汽车电工"
+    },
+    {
+      "Key": "OCCUPATION_021",
+      "String": "烘培师"
+    },
+    {
+      "Key": "OCCUPATION_022",
+      "String": "法律顾问"
+    },
+    {
+      "Key": "OCCUPATION_023",
+      "String": "生化学家"
+    },
+    {
+      "Key": "OCCUPATION_024",
+      "String": "生化工程师"
+    },
+    {
+      "Key": "OCCUPATION_025",
+      "String": "生物技术学家"
+    },
+    {
+      "Key": "OCCUPATION_026",
+      "String": "造船工"
+    },
+    {
+      "Key": "OCCUPATION_027",
+      "String": "图书编辑"
+    },
+    {
+      "Key": "OCCUPATION_028",
+      "String": "植物学家"
+    },
+    {
+      "Key": "OCCUPATION_029",
+      "String": "砖匠"
+    },
+    {
+      "Key": "OCCUPATION_030",
+      "String": "建设协理"
+    },
+    {
+      "Key": "OCCUPATION_031",
+      "String": "建筑检查员"
+    },
+    {
+      "Key": "OCCUPATION_032",
+      "String": "屠户"
+    },
+    {
+      "Key": "OCCUPATION_033",
+      "String": "家具木工"
+    },
+    {
+      "Key": "OCCUPATION_034",
+      "String": "咖啡馆经理"
+    },
+    {
+      "Key": "OCCUPATION_035",
+      "String": "摄影机操作员"
+    },
+    {
+      "Key": "OCCUPATION_036",
+      "String": "心脏技术员"
+    },
+    {
+      "Key": "OCCUPATION_037",
+      "String": "心脏病专家"
+    },
+    {
+      "Key": "OCCUPATION_038",
+      "String": "辅导员"
+    },
+    {
+      "Key": "OCCUPATION_039",
+      "String": "木匠"
+    },
+    {
+      "Key": "OCCUPATION_040",
+      "String": "制图师"
+    },
+    {
+      "Key": "OCCUPATION_041",
+      "String": "厨师"
+    },
+    {
+      "Key": "OCCUPATION_042",
+      "String": "化学工程师"
+    },
+    {
+      "Key": "OCCUPATION_043",
+      "String": "化学家"
+    },
+    {
+      "Key": "OCCUPATION_044",
+      "String": "猫奴"
+    },
+    {
+      "Key": "OCCUPATION_045",
+      "String": "脊椎推拿治疗者"
+    },
+    {
+      "Key": "OCCUPATION_046",
+      "String": "土木工程师"
+    },
+    {
+      "Key": "OCCUPATION_047",
+      "String": "心理学家"
+    },
+    {
+      "Key": "OCCUPATION_048",
+      "String": "活动策划员"
+    },
+    {
+      "Key": "OCCUPATION_049",
+      "String": "文物保护员"
+    },
+    {
+      "Key": "OCCUPATION_050",
+      "String": "项目经理"
+    },
+    {
+      "Key": "OCCUPATION_051",
+      "String": "炊事员"
+    },
+    {
+      "Key": "OCCUPATION_052",
+      "String": "文案人员"
+    },
+    {
+      "Key": "OCCUPATION_053",
+      "String": "美食厨师"
+    },
+    {
+      "Key": "OCCUPATION_054",
+      "String": "辅导员"
+    },
+    {
+      "Key": "OCCUPATION_055",
+      "String": "作物农夫"
+    },
+    {
+      "Key": "OCCUPATION_056",
+      "String": "客服经理"
+    },
+    {
+      "Key": "OCCUPATION_057",
+      "String": "舞蹈教师"
+    },
+    {
+      "Key": "OCCUPATION_058",
+      "String": "舞蹈员"
+    },
+    {
+      "Key": "OCCUPATION_059",
+      "String": "数据库管理员"
+    },
+    {
+      "Key": "OCCUPATION_060",
+      "String": "牙医"
+    },
+    {
+      "Key": "OCCUPATION_061",
+      "String": "皮肤科医生"
+    },
+    {
+      "Key": "OCCUPATION_062",
+      "String": "程序员"
+    },
+    {
+      "Key": "OCCUPATION_063",
+      "String": "放射科医师"
+    },
+    {
+      "Key": "OCCUPATION_064",
+      "String": "机修工"
+    },
+    {
+      "Key": "OCCUPATION_065",
+      "String": "饮食学家"
+    },
+    {
+      "Key": "OCCUPATION_066",
+      "String": "导演"
+    },
+    {
+      "Key": "OCCUPATION_067",
+      "String": "残障服务官"
+    },
+    {
+      "Key": "OCCUPATION_068",
+      "String": "潜水教练"
+    },
+    {
+      "Key": "OCCUPATION_069",
+      "String": "警犬训练员"
+    },
+    {
+      "Key": "OCCUPATION_070",
+      "String": "排水道工"
+    },
+    {
+      "Key": "OCCUPATION_071",
+      "String": "裁缝"
+    },
+    {
+      "Key": "OCCUPATION_072",
+      "String": "教师"
+    },
+    {
+      "Key": "OCCUPATION_073",
+      "String": "经济学家"
+    },
+    {
+      "Key": "OCCUPATION_074",
+      "String": "电子工程师"
+    },
+    {
+      "Key": "OCCUPATION_075",
+      "String": "电工"
+    },
+    {
+      "Key": "OCCUPATION_076",
+      "String": "内分泌学家"
+    },
+    {
+      "Key": "OCCUPATION_077",
+      "String": "护士"
+    },
+    {
+      "Key": "OCCUPATION_078",
+      "String": "环境研究者"
+    },
+    {
+      "Key": "OCCUPATION_079",
+      "String": "家庭助理员"
+    },
+    {
+      "Key": "OCCUPATION_080",
+      "String": "时装设计师"
+    },
+    {
+      "Key": "OCCUPATION_081",
+      "String": "影视编辑"
+    },
+    {
+      "Key": "OCCUPATION_082",
+      "String": "健身房老板"
+    },
+    {
+      "Key": "OCCUPATION_083",
+      "String": "花商"
+    },
+    {
+      "Key": "OCCUPATION_084",
+      "String": "花农"
+    },
+    {
+      "Key": "OCCUPATION_085",
+      "String": "飞行教练"
+    },
+    {
+      "Key": "OCCUPATION_086",
+      "String": "食品工艺师"
+    },
+    {
+      "Key": "OCCUPATION_087",
+      "String": "足球员"
+    },
+    {
+      "Key": "OCCUPATION_088",
+      "String": "林务员"
+    },
+    {
+      "Key": "OCCUPATION_089",
+      "String": "家具安装工"
+    },
+    {
+      "Key": "OCCUPATION_090",
+      "String": "博物馆馆长"
+    },
+    {
+      "Key": "OCCUPATION_091",
+      "String": "园丁"
+    },
+    {
+      "Key": "OCCUPATION_092",
+      "String": "地质学家"
+    },
+    {
+      "Key": "OCCUPATION_093",
+      "String": "地球物理学家"
+    },
+    {
+      "Key": "OCCUPATION_094",
+      "String": "葡萄栽培者"
+    },
+    {
+      "Key": "OCCUPATION_095",
+      "String": "美术设计员"
+    },
+    {
+      "Key": "OCCUPATION_096",
+      "String": "高尔夫球场管理人"
+    },
+    {
+      "Key": "OCCUPATION_097",
+      "String": "体操教练"
+    },
+    {
+      "Key": "OCCUPATION_098",
+      "String": "美容院经理"
+    },
+    {
+      "Key": "OCCUPATION_099",
+      "String": "理发师"
+    },
+    {
+      "Key": "OCCUPATION_100",
+      "String": "硬件技术员"
+    },
+    {
+      "Key": "OCCUPATION_101",
+      "String": "直升机驾驶员"
+    },
+    {
+      "Key": "OCCUPATION_102",
+      "String": "骑马教练"
+    },
+    {
+      "Key": "OCCUPATION_103",
+      "String": "驯马师"
+    },
+    {
+      "Key": "OCCUPATION_104",
+      "String": "药剂师"
+    },
+    {
+      "Key": "OCCUPATION_105",
+      "String": "酒店经理"
+    },
+    {
+      "Key": "OCCUPATION_106",
+      "String": "人力资源经理"
+    },
+    {
+      "Key": "OCCUPATION_107",
+      "String": "本地化专家"
+    },
+    {
+      "Key": "OCCUPATION_108",
+      "String": "设计师"
+    },
+    {
+      "Key": "OCCUPATION_109",
+      "String": "保险代理人"
+    },
+    {
+      "Key": "OCCUPATION_110",
+      "String": "医务辅助人员"
+    },
+    {
+      "Key": "OCCUPATION_111",
+      "String": "室内设计师"
+    },
+    {
+      "Key": "OCCUPATION_112",
+      "String": "口译员"
+    },
+    {
+      "Key": "OCCUPATION_113",
+      "String": "珠宝商"
+    },
+    {
+      "Key": "OCCUPATION_114",
+      "String": "新闻工作者"
+    },
+    {
+      "Key": "OCCUPATION_115",
+      "String": "实验室管理员"
+    },
+    {
+      "Key": "OCCUPATION_116",
+      "String": "土地经济师"
+    },
+    {
+      "Key": "OCCUPATION_117",
+      "String": "造园技师"
+    },
+    {
+      "Key": "OCCUPATION_118",
+      "String": "图书管理员"
+    },
+    {
+      "Key": "OCCUPATION_119",
+      "String": "升降机技工"
+    },
+    {
+      "Key": "OCCUPATION_120",
+      "String": "牧场主"
+    },
+    {
+      "Key": "OCCUPATION_121",
+      "String": "锁匠"
+    },
+    {
+      "Key": "OCCUPATION_122",
+      "String": "化妆师"
+    },
+    {
+      "Key": "OCCUPATION_123",
+      "String": "海洋生物学家"
+    },
+    {
+      "Key": "OCCUPATION_124",
+      "String": "营销专家"
+    },
+    {
+      "Key": "OCCUPATION_125",
+      "String": "按摩师"
+    },
+    {
+      "Key": "OCCUPATION_126",
+      "String": "材料工程师"
+    },
+    {
+      "Key": "OCCUPATION_127",
+      "String": "数学家"
+    },
+    {
+      "Key": "OCCUPATION_128",
+      "String": "肉类检查员"
+    },
+    {
+      "Key": "OCCUPATION_129",
+      "String": "机械工程师"
+    },
+    {
+      "Key": "OCCUPATION_130",
+      "String": "气象学家"
+    },
+    {
+      "Key": "OCCUPATION_131",
+      "String": "微生物学家"
+    },
+    {
+      "Key": "OCCUPATION_132",
+      "String": "初中教师"
+    },
+    {
+      "Key": "OCCUPATION_133",
+      "String": "助产士"
+    },
+    {
+      "Key": "OCCUPATION_134",
+      "String": "矿工"
+    },
+    {
+      "Key": "OCCUPATION_135",
+      "String": "农夫"
+    },
+    {
+      "Key": "OCCUPATION_136",
+      "String": "多媒体专家"
+    },
+    {
+      "Key": "OCCUPATION_137",
+      "String": "音乐教师"
+    },
+    {
+      "Key": "OCCUPATION_138",
+      "String": "音乐家"
+    },
+    {
+      "Key": "OCCUPATION_139",
+      "String": "自然疗法专家"
+    },
+    {
+      "Key": "OCCUPATION_140",
+      "String": "网络分析员"
+    },
+    {
+      "Key": "OCCUPATION_141",
+      "String": "神经科学家"
+    },
+    {
+      "Key": "OCCUPATION_142",
+      "String": "神经外科医生"
+    },
+    {
+      "Key": "OCCUPATION_143",
+      "String": "编辑"
+    },
+    {
+      "Key": "OCCUPATION_144",
+      "String": "营养师"
+    },
+    {
+      "Key": "OCCUPATION_145",
+      "String": "治疗师"
+    },
+    {
+      "Key": "OCCUPATION_146",
+      "String": "验光师"
+    },
+    {
+      "Key": "OCCUPATION_147",
+      "String": "骨科医师"
+    },
+    {
+      "Key": "OCCUPATION_148",
+      "String": "儿科医生"
+    },
+    {
+      "Key": "OCCUPATION_149",
+      "String": "病理学家"
+    },
+    {
+      "Key": "OCCUPATION_150",
+      "String": "摄影师"
+    },
+    {
+      "Key": "OCCUPATION_151",
+      "String": "物理学家"
+    },
+    {
+      "Key": "OCCUPATION_152",
+      "String": "整形外科医生"
+    },
+    {
+      "Key": "OCCUPATION_153",
+      "String": "管道工"
+    },
+    {
+      "Key": "OCCUPATION_154",
+      "String": "足科医师"
+    },
+    {
+      "Key": "OCCUPATION_155",
+      "String": "邮局经理"
+    },
+    {
+      "Key": "OCCUPATION_156",
+      "String": "小学教师"
+    },
+    {
+      "Key": "OCCUPATION_157",
+      "String": "精神病医生"
+    },
+    {
+      "Key": "OCCUPATION_158",
+      "String": "康复辅导员"
+    },
+    {
+      "Key": "OCCUPATION_159",
+      "String": "校长"
+    },
+    {
+      "Key": "OCCUPATION_160",
+      "String": "高中教师"
+    },
+    {
+      "Key": "OCCUPATION_161",
+      "String": "招牌撰写工"
+    },
+    {
+      "Key": "OCCUPATION_162",
+      "String": "滑雪教练"
+    },
+    {
+      "Key": "OCCUPATION_163",
+      "String": "社工"
+    },
+    {
+      "Key": "OCCUPATION_164",
+      "String": "超声学家"
+    },
+    {
+      "Key": "OCCUPATION_165",
+      "String": "音响技术员"
+    },
+    {
+      "Key": "OCCUPATION_166",
+      "String": "特殊教育教师"
+    },
+    {
+      "Key": "OCCUPATION_167",
+      "String": "大使"
+    },
+    {
+      "Key": "OCCUPATION_168",
+      "String": "医生"
+    },
+    {
+      "Key": "OCCUPATION_169",
+      "String": "言语病理学家"
+    },
+    {
+      "Key": "OCCUPATION_170",
+      "String": "体育中心经理"
+    },
+    {
+      "Key": "OCCUPATION_171",
+      "String": "职业运动员"
+    },
+    {
+      "Key": "OCCUPATION_172",
+      "String": "舞台经理"
+    },
+    {
+      "Key": "OCCUPATION_173",
+      "String": "统计学家"
+    },
+    {
+      "Key": "OCCUPATION_174",
+      "String": "石匠"
+    },
+    {
+      "Key": "OCCUPATION_175",
+      "String": "结构工程师"
+    },
+    {
+      "Key": "OCCUPATION_176",
+      "String": "外科医生"
+    },
+    {
+      "Key": "OCCUPATION_177",
+      "String": "勘测员"
+    },
+    {
+      "Key": "OCCUPATION_178",
+      "String": "游泳教练"
+    },
+    {
+      "Key": "OCCUPATION_179",
+      "String": "技术指导"
+    },
+    {
+      "Key": "OCCUPATION_180",
+      "String": "记者"
+    },
+    {
+      "Key": "OCCUPATION_181",
+      "String": "网球教练"
+    },
+    {
+      "Key": "OCCUPATION_182",
+      "String": "精密工具制造者"
+    },
+    {
+      "Key": "OCCUPATION_183",
+      "String": "传统中医大夫"
+    },
+    {
+      "Key": "OCCUPATION_184",
+      "String": "大学讲师"
+    },
+    {
+      "Key": "OCCUPATION_185",
+      "String": "城市规划师"
+    },
+    {
+      "Key": "OCCUPATION_186",
+      "String": "菜农"
+    },
+    {
+      "Key": "OCCUPATION_187",
+      "String": "兽医"
+    },
+    {
+      "Key": "OCCUPATION_188",
+      "String": "墙地砖铺瓦匠"
+    },
+    {
+      "Key": "OCCUPATION_189",
+      "String": "钟匠"
+    },
+    {
+      "Key": "OCCUPATION_190",
+      "String": "网站管理员"
+    },
+    {
+      "Key": "OCCUPATION_191",
+      "String": "网页设计师"
+    },
+    {
+      "Key": "OCCUPATION_192",
+      "String": "网页开发员"
+    },
+    {
+      "Key": "OCCUPATION_193",
+      "String": "焊接工"
+    },
+    {
+      "Key": "OCCUPATION_194",
+      "String": "福利工作员"
+    },
+    {
+      "Key": "OCCUPATION_195",
+      "String": "酿酒师"
+    },
+    {
+      "Key": "OCCUPATION_196",
+      "String": "动物学家"
+    },
+    {
+      "Key": "OCCUPATION_197",
+      "String": "游戏开发员"
+    },
+    {
+      "Key": "OCCUPATION_198",
+      "String": "Runaway产品负责人"
+    },
+    {
+      "Key": "OCCUPATION_199",
+      "String": "Runaway项目艺术总监"
+    },
+    {
+      "Key": "OCCUPATION_200",
+      "String": "Runaway程序员"
+    },
+    {
+      "Key": "OCCUPATION_201",
+      "String": "Runaway项目主任程序员"
+    },
+    {
+      "Key": "OCCUPATION_202",
+      "String": "Runaway美术师/动画师"
+    },
+    {
+      "Key": "OCCUPATION_203",
+      "String": "YouTube.com/Shubble"
+    },
+    {
+      "Key": "OCCUPATION_204",
+      "String": "Runaway产品负责人"
+    },
+    {
+      "Key": "OCCUPATION_205",
+      "String": "Runaway项目艺术总监"
+    },
+    {
+      "Key": "OCCUPATION_206",
+      "String": "Runaway程序员"
+    },
+    {
+      "Key": "OCCUPATION_207",
+      "String": "Runaway项目主任程序员"
+    },
+    {
+      "Key": "OCCUPATION_208",
+      "String": "Runaway美术师"
+    },
+    {
+      "Key": "OCCUPATION_209",
+      "String": "获奖叙事设计师"
+    },
+    {
+      "Key": "OCCUPATION_210",
+      "String": "Runaway CEO"
+    },
+    {
+      "Key": "OCCUPATION_211",
+      "String": "Runaway创意总监"
+    },
+    {
+      "Key": "OCCUPATION_212",
+      "String": "Runaway技术组长"
+    },
+    {
+      "Key": "OCCUPATION_213",
+      "String": "Runaway QA组长"
+    },
+    {
+      "Key": "OCCUPATION_214",
+      "String": "Runaway营销美术师"
+    },
+    {
+      "Key": "OCCUPATION_215",
+      "String": "Runaway社区支持"
+    },
+    {
+      "Key": "OCCUPATION_216",
+      "String": "Runaway系统管理（@tom_clark）"
+    },
+    {
+      "Key": "OCCUPATION_217",
+      "String": "游戏直播主（@renee）"
+    },
+    {
+      "Key": "OCCUPATION_218",
+      "String": "Runaway美术师 @tomGarden45"
+    },
+    {
+      "Key": "OCCUPATION_219",
+      "String": "Runaway程序员 @buzzrick"
+    },
+    {
+      "Key": "OCCUPATION_220",
+      "String": "Runaway研究员 (@jonasgoodwin)"
+    },
+    {
+      "Key": "OCCUPATION_221",
+      "String": "Runaway社区管理员"
+    },
+    {
+      "Key": "NAME_SAM",
+      "String": "山姆"
+    },
+    {
+      "Key": "NAME_LISA",
+      "String": "丽莎"
+    },
+    {
+      "Key": "NAME_CARLA",
+      "String": "卡尔拉"
+    },
+    {
+      "Key": "NAME_ZOE",
+      "String": "佐伊"
+    },
+    {
+      "Key": "NAME_EMMA",
+      "String": "艾玛"
+    },
+    {
+      "Key": "NAME_BRYCE",
+      "String": "布赖斯"
+    },
+    {
+      "Key": "NAME_JESS",
+      "String": "杰斯"
+    },
+    {
+      "Key": "NAME_RORY",
+      "String": "罗伊"
+    },
+    {
+      "Key": "NAME_TOM",
+      "String": "汤姆"
+    },
+    {
+      "Key": "NAME_SIOBHAN",
+      "String": "西沃恩"
+    },
+    {
+      "Key": "NAME_RENEE",
+      "String": "Renée"
+    },
+    {
+      "Key": "NAME_JEFF",
+      "String": "杰夫"
+    },
+    {
+      "Key": "NAME_LILIAN",
+      "String": "莉莉安"
+    },
+    {
+      "Key": "NAME_STEPHEN",
+      "String": "史提芬"
+    },
+    {
+      "Key": "NAME_JIM",
+      "String": "吉姆"
+    },
+    {
+      "Key": "NAME_ALEKSIS",
+      "String": "阿雷克西斯"
+    },
+    {
+      "Key": "NAME_LARS",
+      "String": "拉斯"
+    },
+    {
+      "Key": "NAME_JOSIAH",
+      "String": "约西亚"
+    },
+    {
+      "Key": "NAME_BERIC",
+      "String": "Beric"
+    },
+    {
+      "Key": "NAME_BRIDGET",
+      "String": "Bridget"
+    },
+    {
+      "Key": "NAME_SHELBY",
+      "String": "Shelby"
+    },
+    {
+      "Key": "NAME_JONAS",
+      "String": "Jonas"
+    },
+    {
+      "Key": "NAME_ADITIA",
+      "String": "Aditia"
+    },
+    {
+      "Key": "NAME_JESSE",
+      "String": "Jesse"
+    },
+    {
+      "Key": "VIP_NAME_001",
+      "String": "小樱"
+    },
+    {
+      "Key": "VIP_OCCUPATION_001",
+      "String": "生活博主"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_1",
+      "String": "喜欢在室内种植盆栽，沉迷于真人秀电视节目，且喝的黑咖啡太多了。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_2",
+      "String": "她小时候的猫咪麦斯是她最好的朋友。她会与麦斯窃窃私语，把自己的秘密都说给他听。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_3",
+      "String": "受到麦斯启发的她，从很小就开始吃素食。她希望所有动物都能感受到关怀与珍爱。"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_4",
+      "String": "麦斯过世时，她发誓不再养其它的猫，而是把时间花在拯救有需要的野猫。她会定期来到咖啡厅，补充自己对咖啡因和猫咪的需求。"
+    },
+    {
+      "Key": "VIP_NAME_002",
+      "String": "莎拉"
+    },
+    {
+      "Key": "VIP_OCCUPATION_002",
+      "String": "2D美工"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_1",
+      "String": "喜欢玩电子游戏，心地善良，发出的信息中都布满了表情符号。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_2",
+      "String": "她是个喜欢待在室内的人，还有些社交焦虑，并且总是涂上防晒霜戴着帽子出门。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_3",
+      "String": "原本因为她对猫过敏，所以是个专于狗的人。后来在一次约会时去了一家猫咪咖啡厅，就立即“坠入爱河”。爱上的是猫咪，而不是约会对象。"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_4",
+      "String": "虽然她必须先吃抗组胺药才能来咖啡厅，但为了和猫咪抱抱，打几个喷嚏也是值得的。天天抚摸着猫，与猫共处，能缓解她的焦虑症。"
+    },
+    {
+      "Key": "VIP_NAME_003",
+      "String": "赖利"
+    },
+    {
+      "Key": "VIP_OCCUPATION_003",
+      "String": "酒保"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_1",
+      "String": "总爱戴着便帽，爱喝豆奶卡布奇诺，会至死不渝地坚守“猫比狗强”的立场。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_2",
+      "String": "喜欢把脸蛋往猫咪的肚皮上蹭，这世上最爱听到就是猫咪发出类似小鸟的吱吱叫声。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_3",
+      "String": "在与女友糟糕的分手后，他失去了心爱的猫咪闪闪的抚养权。"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_4",
+      "String": "在猫咪咖啡厅中找到了欢喜与慰藉的他，也希望将来自己能开一家同样棒的猫咪咖啡厅。"
+    },
+    {
+      "Key": "VIP_NAME_004",
+      "String": "俊硕"
+    },
+    {
+      "Key": "VIP_OCCUPATION_004",
+      "String": "美术设计员"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_1",
+      "String": "俊硕的兴趣是设计及印刷自己品牌的T恤，同时他也爱喝茶和踢足球。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_2",
+      "String": "他向来都不是一位爱猫人士，但自从发现猫咪在网上的受欢迎程度后，他便来到咖啡厅以更了解它们，并尝试将猫咪融入到他的T恤设计中。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_3",
+      "String": "他单纯的研究很快就变成了喜爱。许多猫咪都认得他，它们会在他来到时，围绕着他并发出热情的呼噜声。"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_4",
+      "String": "俊硕最近收养了属于自己的年长猫咪，并在自己家里舒服地“研究”它。他仍然会为了品尝他常喝的茶而光顾咖啡厅，并和他逐渐爱上的猫咪们抱抱。"
+    },
+    {
+      "Key": "VIP_NAME_005",
+      "String": "乔丹"
+    },
+    {
+      "Key": "VIP_OCCUPATION_005",
+      "String": "厨师助理"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_1",
+      "String": "乔丹每周工作多达60个小时，并且非常珍惜自己的休息时间。他通常会观看动漫或和好友们玩电子游戏。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_2",
+      "String": "由于职业的苛求，乔丹的工作时间冗长，而且，他还得偿还学生贷款并为他的日本梦幻之旅储蓄！"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_3",
+      "String": "尽管如此忙碌，他目前正在学习日语，并发现了猫咪咖啡厅源于日本。这促使他有了光顾你咖啡厅的兴致。当然，他也听说这里有好咖啡。"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_4",
+      "String": "他唯一能松懈身心的时刻就是在咖啡厅里消磨时间。虽然开始时是一种罪恶快感，但是抚摸毛茸茸的猫友已成为了乔丹舒缓压力的活动！"
+    },
+    {
+      "Key": "VIP_NAME_006",
+      "String": "苏茜"
+    },
+    {
+      "Key": "VIP_OCCUPATION_006",
+      "String": "化妆师"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_1",
+      "String": "苏茜是天蝎座，喜欢自拍和聆听与中世纪历史相关的播客。她最喜欢的颜色是黑色。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_2",
+      "String": "她是一名白手起家的化妆师，她在社交媒体上的成功和对动物的爱，让她打造出她专属的零残忍化妆品牌。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_3",
+      "String": "她的化妆特长是大胆的猫眼妆，其灵感来自于她那只名为“鹅卵石”的猫咪。上扬眼线的轮廓如同黑曜石剑般锋利无比。"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_4",
+      "String": "好景不长，鹅卵石最近因老年过世了。因此，苏茜就到咖啡厅里使用免费的Wi-Fi、品尝美味饮料，并和她的新咖啡厅猫友们抱抱。"
+    },
+    {
+      "Key": "VIP_NAME_007",
+      "String": "凛"
+    },
+    {
+      "Key": "VIP_OCCUPATION_007",
+      "String": "音乐家"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_1",
+      "String": "凛喜欢唱卡拉OK，还把头发染成各种能想到的颜色；而当然了，她一看到猫猫就魂不守舍。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_2",
+      "String": "她平常唱K的爱好，最终启发她展开了自己的演艺事业，“扮装猫咪”。从经典音乐到清唱，她的音乐造诣可谓非常深厚。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_3",
+      "String": "凛喜欢在歌词里加进各种各样和猫咪有关的东西，她的灵感大多来自文学作品里有名的猫咪，和她经常去的咖啡厅。"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_4",
+      "String": "受咖啡里的猫咪们启发，她写出了这首新歌《猫抓柱大家族》，在本地电台节目中大受欢迎。现在她也是个人人皆知的明星啦！"
+    },
+    {
+      "Key": "VIP_NAME_008",
+      "String": "杰达"
+    },
+    {
+      "Key": "VIP_OCCUPATION_008",
+      "String": "见习医生"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_1",
+      "String": "杰达在大学里一直是位学霸，她拿到了多个学位，但最后决定决定把热情投在行医救人的事业上。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_2",
+      "String": "不工作的时候，杰达喜欢淘旧货、尽情喝咖啡，还有就是在本地的猫咪收留中心当志愿者。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_3",
+      "String": "杰达总是心地善良，不管朋友还是陌生人遇上困难，她都会抢先伸出援手。"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_4",
+      "String": "无私、繁忙的生活方式，让杰达没有时间来养自己的宠物。所以她会尽量抽时间去咖啡厅，过过抱猫瘾。"
+    },
+    {
+      "Key": "VIP_NAME_009",
+      "String": "里昂"
+    },
+    {
+      "Key": "VIP_OCCUPATION_009",
+      "String": "食品商"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_1",
+      "String": "里昂最大的志向就是保护动物，在那之外，他的工作是在自己的店“完美农产品”里卖菜。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_2",
+      "String": "他收养的猫咪名叫纽扣，他最早遇见它的时候，后者还是个弱小可怜、无人问津的小家伙，在里昂的店底下独自生活了好久。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_3",
+      "String": "里昂和纽扣现在过着安静祥和的生活，来这里的常客，都把这对搭档视作老友一般。"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_4",
+      "String": "里昂最喜欢来你的咖啡厅，看看新收留的猫咪们过得开不开心。他为多家和猫相关的慈善组织代言，也经常来咖啡厅支持和宣传它们！"
+    },
+    {
+      "Key": "VIP_NAME_010",
+      "String": "鲁珀特"
+    },
+    {
+      "Key": "VIP_OCCUPATION_010",
+      "String": "自由程序员"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_1",
+      "String": "鲁珀特对传统的“成年人的责任”不感兴趣，更喜欢自由自在地生活。他想在哪工作就在哪工作，想什么时候工作就什么时候工作。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_2",
+      "String": "鲁珀特的朋友们总觉得他有点叛逆，但他内心其实敏感又热心。他喜欢动物，还养了一只叫迪诺的宠物老鼠。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_3",
+      "String": "他本来也想养只猫，但又怕迪诺会不高兴，所以只能到咖啡厅来悄悄抱猫。"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_4",
+      "String": "来咖啡厅可以说是他唯一的固定日常。他非常喜欢这里，甚至开了一个艺术博客，专发猫猫们的同人画作！"
+    },
+    {
+      "Key": "VIP_NAME_011",
+      "String": "卢卡"
+    },
+    {
+      "Key": "VIP_OCCUPATION_011",
+      "String": "图书管理员"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_1",
+      "String": "从小为文字而着迷的卢卡，总是沉浸在文学作品的海洋里。他最喜欢的是灵异恋爱题材。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_2",
+      "String": "自从16在本地图书馆里开始工作以来，卢卡就和馆里的猫咪贝希蒙斯成了最好的朋友。他一直有个梦想，就是成为最畅销作家。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_3",
+      "String": "卢卡在二十出头的年纪失去了听力，因此后来又多了一个在下班后当手语老师的兴趣。贝希蒙斯也喜欢那些学生来摸摸它。"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_4",
+      "String": "经一个学生推荐，他来到了你的咖啡厅。乍一来，他就有了写第一篇小说的灵感！这正来自你咖啡厅里绽放出了欢乐氛围。"
+    },
+    {
+      "Key": "VIP_NAME_012",
+      "String": "智瑜"
+    },
+    {
+      "Key": "VIP_OCCUPATION_012",
+      "String": "摄影师"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_1",
+      "String": "智瑜热爱摄影、绘画和诗歌。虽然在艺术创作方面极富自信，但她在结交新朋友的时候往往非常羞涩。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_2",
+      "String": "工装裤是她的最爱，因为穿着这种裤子画画再轻松不过；她领养的小猫贝勒也最喜欢坐在裤兜里面。"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_3",
+      "String": "智瑜对待创作十分严肃，常常会用自己拍的猫咪照片来当作绘画参考。当她真正灵感勃发的时候，甚至会为见到的猫咪写诗哦！"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_4",
+      "String": "凭借你咖啡厅里的华夫饼和灵感来源，智瑜打算在最近的艺术展里展示自己的一件作品，名字就叫《爪爪：照片、画作与诗歌集》"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_TITLE",
+      "String": "未知错误"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_DESC",
+      "String": "发生未知错误"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_TITLE",
+      "String": "Mobage token客户端错误"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_DESC",
+      "String": "使用 Mobage 服务验证服务器时出现问题"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_TITLE",
+      "String": "找不到游戏设置"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_DESC",
+      "String": "获取游戏设置时出现问题"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_TITLE",
+      "String": "找不到邮箱"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_DESC",
+      "String": "获取邮箱时出现问题"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_TITLE",
+      "String": "无法读取邮件项目"
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_DESC",
+      "String": "读取邮箱项目时出现问题"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_TITLE",
+      "String": "在 Oauth 对象中找不到用户对象"
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_DESC",
+      "String": "授权用户时出现问题"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_TITLE",
+      "String": "社交帐户无法删除"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_DESC",
+      "String": "删除社交帐户时出现问题"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_TITLE",
+      "String": "找不到邮件收件人"
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_DESC",
+      "String": "查找邮件收件人时出现问题"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_TITLE",
+      "String": "未指定账户类型"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_DESC",
+      "String": "链接您的朋友时出现问题"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_TITLE",
+      "String": "未找到 LCD 客户端"
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_DESC",
+      "String": "到达身份验证服务器时出现问题"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_TITLE",
+      "String": "找不到可以领取的账户"
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_DESC",
+      "String": "认领帐户时出现问题"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_TITLE",
+      "String": "未找到银行参数"
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_DESC",
+      "String": "获取银行交易时出现问题"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_TITLE",
+      "String": "未找到银行交易"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_DESC",
+      "String": "获取银行交易时出现问题"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_TITLE",
+      "String": "未指定正确的参数"
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_DESC",
+      "String": "参数有问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_TITLE",
+      "String": "更新会话的问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_DESC",
+      "String": "会话出现问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_TITLE",
+      "String": "更新用户的问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_DESC",
+      "String": "保存游戏时出现问题"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_TITLE",
+      "String": "创建日志时出现问题"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_DESC",
+      "String": "创建日志时出现问题"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_TITLE",
+      "String": "创建邮件项目时出现问题"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_DESC",
+      "String": "创建邮件项目时出现问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_TITLE",
+      "String": "更新好友时出现问题"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_DESC",
+      "String": "哎呀！更新您的好友列表时出现问题。我们会在您下次加载游戏时重试。"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_TITLE",
+      "String": "找不到货币"
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_DESC",
+      "String": "获取货币时出现问题"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_TITLE",
+      "String": "LCD 证书错误"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_DESC",
+      "String": "保存 LCD 证书时出错"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_TITLE",
+      "String": "LCD 证书错误"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_DESC",
+      "String": "加载 LCD 证书时出错"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_TITLE",
+      "String": "保存序列号不正确"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_DESC",
+      "String": "保存编号顺序不正确"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_TITLE",
+      "String": "保存数据时出现问题"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_DESC",
+      "String": "尝试保存但没有数据"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_TITLE",
+      "String": "脸书账号错误"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_DESC",
+      "String": "使用您的 Facebook 帐户登录时出错。请检查您的 Facebook 连接并重试！"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_TITLE",
+      "String": "迁移错误"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_DESC",
+      "String": "迁移您的帐户时出错。请联系我们友好的支持团队寻求帮助"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_TITLE",
+      "String": "优惠券无效"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_DESC",
+      "String": "优惠券无效"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_TITLE",
+      "String": "需要更新身份验证数据"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_DESC",
+      "String": "帐户已合并，因此我们需要更新您的 authData"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_TITLE",
+      "String": "交易已消费"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_DESC",
+      "String": "此购买交易已被消费"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_TITLE",
+      "String": "无用户数据"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_DESC",
+      "String": "找不到要保存的用户数据"
+    },
+    {
+      "Key": "SUPPORT_EMAIL_SAVEDATA_BELOW",
+      "String": "以下信息是您的玩家数据，将帮助我们解决您游戏中的任何问题。请在此上方写下您给我们的留言："
+    },
+    {
+      "Key": "SPRITE_LOGO",
+      "String": "Sprites/Login/Logo-zh-Hans"
+    },
+    {
+      "Key": "CLAIM_COUPON",
+      "String": "在此领取优惠码！"
+    },
+    {
+      "Key": "COUPON_TITLE",
+      "String": "优惠券"
+    },
+    {
+      "Key": "COUPON_DESCRIPTION",
+      "String": "在此兑换您的优惠券："
+    },
+    {
+      "Key": "COUPON_PLACEHOLDER",
+      "String": "输入代码..."
+    },
+    {
+      "Key": "COUPON_CLAIM_BUTTON",
+      "String": "领取"
+    },
+    {
+      "Key": "COUPON_SUCCESS_TITLE",
+      "String": "已成功分享快照！"
+    },
+    {
+      "Key": "COUPON_SUCCESS_DESC",
+      "String": "优惠券领取成功"
+    },
+    {
+      "Key": "COUPON_INVALID_TITLE",
+      "String": "未找到优惠券"
+    },
+    {
+      "Key": "COUPON_INVALID_DESC",
+      "String": "我们找不到此优惠券。可能输入有误，也可能已过期。"
+    },
+    {
+      "Key": "COUPON_EXPIRED_TITLE",
+      "String": "优惠券已过期"
+    },
+    {
+      "Key": "COUPON_EXPIRED_DESC",
+      "String": "此优惠券不再可用。"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_TITLE",
+      "String": "优惠券已领取"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_DESC",
+      "String": "此优惠券已被领取。"
+    },
+    {
+      "Key": "COUPON_OFFLINE_TITLE",
+      "String": "离线"
+    },
+    {
+      "Key": "COUPON_OFFLINE_DESC",
+      "String": "请连接到互联网以领取优惠券。"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_001_TITLE",
+      "String": "<COMMON>的宝石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_002_TITLE",
+      "String": "<UNCOMMON>的宝石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_003_TITLE",
+      "String": "<RARE>的宝石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_004_TITLE",
+      "String": "<EPIC>的宝石包"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_005_TITLE",
+      "String": "<LEGENDARY>的宝石包"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_001_TITLE",
+      "String": "特性包 1"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_002_TITLE",
+      "String": "特性包 2"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_003_TITLE",
+      "String": "特性包 3"
+    },
+    {
+      "Key": "ROTATIONAL_SHOP_PACK_TITLE",
+      "String": "<LIMITED_TIME_HEADING>"
+    },
+    {
+      "Key": "EVENT_DELIVERIES_TITLE",
+      "String": "<EVENT><DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "FURNITURE_NAME_288",
+      "String": "喵芙朵"
+    },
+    {
+      "Key": "FURNITURE_NAME_289",
+      "String": "喵布奇诺"
+    },
+    {
+      "Key": "FURNITURE_NAME_290",
+      "String": "椅子"
+    },
+    {
+      "Key": "FURNITURE_NAME_348",
+      "String": "书喵枕"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY2",
+      "String": "Your rating can really help support <FURISTAS_CAT_CAFE> !"
+    },
+    {
+      "Key": "YES",
+      "String": "是！"
+    },
+    {
+      "Key": "NO",
+      "String": "不"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_MINI_001_TITLE",
+      "String": "毛绒玩具包"
+    },
+    {
+      "Key": "FURNITURE_NAME_398",
+      "String": "四叶草旗饰"
+    },
+    {
+      "Key": "FURNITURE_NAME_399",
+      "String": "饺子座垫"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_TITLE",
+      "String": "登录 Facebook"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_DESCRIPTION",
+      "String": "请注意，Furistas 已取消通过 Facebook 登录的选项。如果您不小心退出登录，仍可以通过恢复菜单在此设备上恢复您的游戏，然而，如果您希望保护您的数据，请通过主菜单注册 Runaway 登录账户，点击登录，然后注册。\n如有任何问题，请通过 support@runaway.zendesk.com 联系我们。"
+    }
+  ]
+}

@@ -1,0 +1,8632 @@
+{
+  "Items": [
+    {
+      "Key": "FISH",
+      "String": "생선"
+    },
+    {
+      "Key": "FISH_PLURAL",
+      "String": "생선"
+    },
+    {
+      "Key": "HC",
+      "String": "키티캐쉬"
+    },
+    {
+      "Key": "HC_PLURAL",
+      "String": "키티캐쉬"
+    },
+    {
+      "Key": "TOKEN",
+      "String": "코인"
+    },
+    {
+      "Key": "TOKEN_PLURAL",
+      "String": "코인"
+    },
+    {
+      "Key": "FC",
+      "String": "가구 코인"
+    },
+    {
+      "Key": "FC_PLURAL",
+      "String": "가구 코인"
+    },
+    {
+      "Key": "HEART",
+      "String": "하트"
+    },
+    {
+      "Key": "HEART_PLURAL",
+      "String": "하트"
+    },
+    {
+      "Key": "XP",
+      "String": "경험치"
+    },
+    {
+      "Key": "XP_PLURAL",
+      "String": "경험치"
+    },
+    {
+      "Key": "EXPERIENCE",
+      "String": "경험"
+    },
+    {
+      "Key": "FURISTAS_CAT_CAFE",
+      "String": "퓨리스타스 고양이 카페"
+    },
+    {
+      "Key": "LEVEL",
+      "String": "레벨"
+    },
+    {
+      "Key": "LEVELED",
+      "String": "레벨업"
+    },
+    {
+      "Key": "LEVEL_UP",
+      "String": "레벨업"
+    },
+    {
+      "Key": "CAT",
+      "String": "고양이"
+    },
+    {
+      "Key": "CAT_PLURAL",
+      "String": "고양이"
+    },
+    {
+      "Key": "CUSTOMER",
+      "String": "손님"
+    },
+    {
+      "Key": "CUSTOMER_PLURAL",
+      "String": "손님"
+    },
+    {
+      "Key": "BASKET",
+      "String": "바구니"
+    },
+    {
+      "Key": "BASKET_PLURAL",
+      "String": "바구니"
+    },
+    {
+      "Key": "DELIVERY",
+      "String": "배달"
+    },
+    {
+      "Key": "DELIVERY_PLURAL",
+      "String": "배달"
+    },
+    {
+      "Key": "CONFIRM",
+      "String": "확인"
+    },
+    {
+      "Key": "TRAIT",
+      "String": "특성"
+    },
+    {
+      "Key": "TRAIT_PLURAL",
+      "String": "특성"
+    },
+    {
+      "Key": "ITEM",
+      "String": "아이템"
+    },
+    {
+      "Key": "ITEM_PLURAL",
+      "String": "아이템"
+    },
+    {
+      "Key": "UNLOCK",
+      "String": "잠금 해제"
+    },
+    {
+      "Key": "UNLOCKED",
+      "String": "잠금 해제됨"
+    },
+    {
+      "Key": "ADOPT",
+      "String": "입양하기"
+    },
+    {
+      "Key": "PROMOTE",
+      "String": "돌보기"
+    },
+    {
+      "Key": "CUSTOMISATION",
+      "String": "꾸미기"
+    },
+    {
+      "Key": "CUSTOMISATION_PLURAL",
+      "String": "꾸미기"
+    },
+    {
+      "Key": "ASSIGN",
+      "String": "매치하기"
+    },
+    {
+      "Key": "TIME_DAYS_SINGULAR",
+      "String": "{0} 일"
+    },
+    {
+      "Key": "TIME_DAYS_PLURAL",
+      "String": "{0} 일"
+    },
+    {
+      "Key": "TIME_DAYS_SHORT",
+      "String": "{0}일"
+    },
+    {
+      "Key": "TIME_DAYS_LETTER",
+      "String": "{0}일"
+    },
+    {
+      "Key": "TIME_HOURS_SINGULAR",
+      "String": "{0} 시간"
+    },
+    {
+      "Key": "TIME_HOURS_PLURAL",
+      "String": "{0} 시간"
+    },
+    {
+      "Key": "TIME_HOURS_SHORT",
+      "String": "{0}시간"
+    },
+    {
+      "Key": "TIME_HOURS_LETTER",
+      "String": "{0}시간"
+    },
+    {
+      "Key": "TIME_MINUTES_SINGULAR",
+      "String": "{0} 분"
+    },
+    {
+      "Key": "TIME_MINUTES_PLURAL",
+      "String": "{0} 분"
+    },
+    {
+      "Key": "TIME_MINUTES_SHORT",
+      "String": "{0}분"
+    },
+    {
+      "Key": "TIME_MINUTES_LETTER",
+      "String": "{0}분"
+    },
+    {
+      "Key": "TIME_SECONDS_SINGULAR",
+      "String": "{0} 초"
+    },
+    {
+      "Key": "TIME_SECONDS_PLURAL",
+      "String": "{0} 초"
+    },
+    {
+      "Key": "TIME_SECONDS_SHORT",
+      "String": "{0}초"
+    },
+    {
+      "Key": "TIME_SECONDS_LETTER",
+      "String": "{0}초"
+    },
+    {
+      "Key": "BACK_LABEL",
+      "String": "돌아가기"
+    },
+    {
+      "Key": "TAP_PROMPT",
+      "String": "탭하기"
+    },
+    {
+      "Key": "DRAG_PROMPT",
+      "String": "드래그"
+    },
+    {
+      "Key": "RELEASE_PROMPT",
+      "String": "놓기"
+    },
+    {
+      "Key": "LEVEL_UP_PROMPT",
+      "String": "돌보기"
+    },
+    {
+      "Key": "ADOPT_PROMPT",
+      "String": "입양하기"
+    },
+    {
+      "Key": "AD_WATCH",
+      "String": "보다"
+    },
+    {
+      "Key": "OPEN",
+      "String": "열기"
+    },
+    {
+      "Key": "COMMON",
+      "String": "일반"
+    },
+    {
+      "Key": "UNCOMMON",
+      "String": "상급"
+    },
+    {
+      "Key": "RARE",
+      "String": "희귀"
+    },
+    {
+      "Key": "EPIC",
+      "String": "매우 희귀"
+    },
+    {
+      "Key": "LEGENDARY",
+      "String": "전설"
+    },
+    {
+      "Key": "PERSONALITY_TOOLTIP_DESCRIPTION",
+      "String": "이 <CAT>를 같은 성격을 가진 <CUSTOMER_PLURAL>과 매치하면 <HEART_PLURAL> 보너스를 받습니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT1",
+      "String": "더 많은 <DELIVERY> <BASKET_PLURAL>를 받으려면 <HEART_PLURAL>를 모으세요."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT2",
+      "String": "<CAT_PLURAL>를 <CUSTOMER_PLURAL>과 매치하여 획득합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HEARTS_POINT3",
+      "String": "성격을 매치하고 보너스 <HEART_PLURAL>를 받으세요."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT1",
+      "String": "<BASKET> <DELIVERY_PLURAL>를 즉시 받는데 사용합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HC_POINT2",
+      "String": "상점에서 더 구매하세요."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT1",
+      "String": "<PROMOTE> <CAT_PLURAL>와 신규 <CAT_PLURAL>를 <ADOPT>하는데 사용합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_SC_POINT2",
+      "String": "<DELIVERY> <BASKET_PLURAL>를 열어서 더 얻으세요."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT1",
+      "String": "내 카페 <CUSTOMISATION_PLURAL>를 구매하는데 사용합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_FC_POINT2",
+      "String": "내 <CAT_PLURAL>와 <CUSTOMER_PLURAL>을 만족시키는 카페 업무를 통해 획득합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_XP_REWARDS_TAG",
+      "String": "다음 <LEVEL> 보상:"
+    },
+    {
+      "Key": "GENERIC_CAT_UNLOCKED",
+      "String": "신규 <CAT>"
+    },
+    {
+      "Key": "ITEM_ACQUISITION_DESCRIPTION",
+      "String": "내 <CAT_PLURAL>를 레벨업하는 데 사용합니다. <BASKET_PLURAL>를 열거나 상점에서 구매해서 <ITEM_PLURAL> 아이템을 획득하세요."
+    },
+    {
+      "Key": "PERSONALITY_DESCRIPTION",
+      "String": "이 <CAT>를 같은 성격을 가진 <CUSTOMER_PLURAL>에게 분양하면 <HEART_PLURAL> 보너스를 받습니다."
+    },
+    {
+      "Key": "LEVEL_DESCRIPTION",
+      "String": "더 높은 <LEVEL> <CAT_PLURAL>는 <CUSTOMER_PLURAL>과 더 오래 놀 수 있고, 더 많은 <HEART_PLURAL>를 획득할 수 있습니다"
+    },
+    {
+      "Key": "LEVEL_LOCK_TEXT",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "BONUS_BASKET_WAITING",
+      "String": "보너스 <BASKET> 수령까지 남은시간:"
+    },
+    {
+      "Key": "BONUS_BASKET_READY_LABEL",
+      "String": "무료 일일 <BASKET_PLURAL>를 받으세요!"
+    },
+    {
+      "Key": "BONUS_BASKET_OPEN_PROMPT",
+      "String": "탭해서 받기"
+    },
+    {
+      "Key": "NEW_BASKET_TITLE",
+      "String": "신규 <BASKET>"
+    },
+    {
+      "Key": "TAP_TO_CONTINUE",
+      "String": "탭해서 계속하기"
+    },
+    {
+      "Key": "SWIPE_PROMPT",
+      "String": "위로 쓸어서 열기"
+    },
+    {
+      "Key": "REWARDS_TITLE",
+      "String": "보상"
+    },
+    {
+      "Key": "RECRUIT_PROMPT",
+      "String": "<ADOPT>"
+    },
+    {
+      "Key": "TOOLTIP_COMING_SOON",
+      "String": "곧 준비됩니다."
+    },
+    {
+      "Key": "TOOLTIP_NEED_MORE_TOKENS",
+      "String": "<TOKEN_PLURAL>이 더 필요합니다."
+    },
+    {
+      "Key": "TOOLTIP_TAP_CONFIRM",
+      "String": "한 번 더 탭해서 확인하세요."
+    },
+    {
+      "Key": "TOOLTIP_CANNOT_AFFORD",
+      "String": "이 <ITEM>(을)를 구매할 수 없습니다."
+    },
+    {
+      "Key": "CAT_INVENTORY_MENU_TITLE",
+      "String": "<CAT_PLURAL>"
+    },
+    {
+      "Key": "CAT_PROMOTION_TITLE",
+      "String": "고양이 업그레이드"
+    },
+    {
+      "Key": "CAT_ADOPTION_TITLE",
+      "String": "고양이 입양"
+    },
+    {
+      "Key": "ADOPT_TEXT",
+      "String": "내 생선을 써서 신규 고양이를 입양하세요."
+    },
+    {
+      "Key": "RECRUIT_DESCRIPTION",
+      "String": "내 <FISH>을 써서 이 신규 <CAT>를 <ADOPT>하세요."
+    },
+    {
+      "Key": "ADOPT_CONFIRMATION_FEEDBACK",
+      "String": "야호! 카페에 새 친구가 왔어요!"
+    },
+    {
+      "Key": "NURTURE_CONFIRMATION_FEEDBACK",
+      "String": "훌륭해요! 이제 {0}(은)는 최대 {1}까지 <CUSTOMER_PLURAL>과 매치하고 <HEART_PLURAL> {2}를 획득할 수 있어요."
+    },
+    {
+      "Key": "MATERIALS_REQUIRED",
+      "String": "필요한 것:"
+    },
+    {
+      "Key": "HEARTS_EARNED",
+      "String": "획득한 하트:"
+    },
+    {
+      "Key": "COST",
+      "String": "비용"
+    },
+    {
+      "Key": "PERSONALITY",
+      "String": "성격"
+    },
+    {
+      "Key": "UPGRADE_FAILED_TITLE",
+      "String": "할 수 없습니다."
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON1",
+      "String": "<ITEM_PLURAL>(이)가 부족합니다"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON2",
+      "String": "<HEART_PLURAL>가 부족합니다"
+    },
+    {
+      "Key": "UPGRADE_FAILED_REASON3",
+      "String": "<FISH>이 부족합니다"
+    },
+    {
+      "Key": "THANK_YOU",
+      "String": "감사합니다"
+    },
+    {
+      "Key": "CUDDLE_TIME",
+      "String": "쓰다듬기 시간"
+    },
+    {
+      "Key": "REWARD",
+      "String": "보상"
+    },
+    {
+      "Key": "PLAYER_LEVELED_UP",
+      "String": "레벨업했어요!"
+    },
+    {
+      "Key": "REWARD_FURNITURE_TOKENS",
+      "String": "<FC_PLURAL>"
+    },
+    {
+      "Key": "REWARD_FISH",
+      "String": "<FISH>"
+    },
+    {
+      "Key": "REWARD_HC",
+      "String": "<HC>"
+    },
+    {
+      "Key": "REWARD_EXPANSION",
+      "String": "더 많은 카페 공간"
+    },
+    {
+      "Key": "SHOP_MENU_TITLE",
+      "String": "상점"
+    },
+    {
+      "Key": "SHOP_CURRENT_POSSESSION",
+      "String": "보유 현황:"
+    },
+    {
+      "Key": "SHOP_BUY",
+      "String": "구매하기"
+    },
+    {
+      "Key": "SHOP_TAP_TO_CONFIRM",
+      "String": "한 번 더 탭해서 확인하세요."
+    },
+    {
+      "Key": "SHOP_CANT_AFFORD",
+      "String": "이 <ITEM>(을)를 구매할 수 없습니다."
+    },
+    {
+      "Key": "SHOP_ERROR_TITLE",
+      "String": "이런..."
+    },
+    {
+      "Key": "SHOP_THANKS_TITLE",
+      "String": "감사합니다!"
+    },
+    {
+      "Key": "SHOP_THANKS_DESCRIPTION",
+      "String": "구매가 완료되었습니다."
+    },
+    {
+      "Key": "SHOP_PRICE_FREE",
+      "String": "무료!"
+    },
+    {
+      "Key": "CAT_UPGRADE_ITEM_PLURAL",
+      "String": "고양이 업그레이드 아이템"
+    },
+    {
+      "Key": "MORE",
+      "String": "자세히"
+    },
+    {
+      "Key": "SHOP_REFRESH_TIME",
+      "String": "신규 아이템..."
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER",
+      "String": "스타터 팩"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_001",
+      "String": "꿀 먹은 벙어리 <SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_002",
+      "String": "앞발 들어 <SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_003",
+      "String": "새 친구들 <SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_004",
+      "String": "폭신한 친구들 <SHOP_PACK_TITLE_STARTER>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_001",
+      "String": "행운의 <BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_002",
+      "String": "<SHOP_PACK_TITLE_BARGAIN> <BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_003",
+      "String": "<RARITY_COMMON> <DELIVERY_CONTENTS_ITEMS> <BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BASKET_004",
+      "String": "슈퍼 <BASKET>"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_SPECIAL_DEAL",
+      "String": "특별 제안!"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_BARGAIN",
+      "String": "대박 세일"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_GREAT_VALUE",
+      "String": "최고 가성비"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_ITEM",
+      "String": "<CAT_PLURAL> <PROMOTE>에 사용"
+    },
+    {
+      "Key": "SHOP_PACK_DESCRIPTION_FURNITURE",
+      "String": "아늑한 추가 아이템으로 내 카페를 단장하세요."
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_002",
+      "String": "‘<CAT_NAME_020>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_002_DESC",
+      "String": "<CAT_NAME_020>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_003",
+      "String": "‘<CAT_NAME_009>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_003_DESC",
+      "String": "<CAT_NAME_009>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_CATPACK_004",
+      "String": "‘<CAT_NAME_027>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_CATPACK_004_DESC",
+      "String": "<CAT_NAME_027>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_PROGPACK_001_DESC",
+      "String": "생선과 키티캐쉬, 코인 묶음으로 내 고양이 카페 경험을 한껏 끌어올리세요!"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005",
+      "String": "살아남기' 스타터"
+    },
+    {
+      "Key": "SHOP_PACK_TITLE_STARTER_005_DESC",
+      "String": "다양한 멋진 것들과 위스커스를 빨리 받을 수 있게 해줍니다. 끝내주지요!"
+    },
+    {
+      "Key": "SHOP_PACK_032_STARTER_DESC",
+      "String": "오리로의 전용 액세스를 제공하며, 카페를 준비하고 운영하는데 필요한 많은 키티캐쉬와 생선이 포함되어 있습니다."
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_TITLE",
+      "String": "‘오리’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_032_CATPACK_DESC",
+      "String": "오리로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_TITLE",
+      "String": "‘차차’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_014_CATPACK_DESC",
+      "String": "차차로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_TITLE",
+      "String": "‘지기’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_021_CATPACK_DESC",
+      "String": "지기로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_TITLE",
+      "String": "‘<CAT_NAME_065>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_065_CATPACK_DESC",
+      "String": "<CAT_NAME_065>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_TITLE",
+      "String": "‘<CAT_NAME_066>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_066_CATPACK_DESC",
+      "String": "<CAT_NAME_066>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_TITLE",
+      "String": "‘<CAT_NAME_067>’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_067_CATPACK_DESC",
+      "String": "<CAT_NAME_067>로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "PERCENT_OFF",
+      "String": "{0}% 할인!"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_STARTER_DESC",
+      "String": "{0}로의 전용 액세스를 제공하며, 카페를 준비하고 운영하는데 필요한 많은 키티캐쉬와 생선이 포함되어 있습니다."
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_TITLE",
+      "String": "‘{0}’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_CATPACK_DESC",
+      "String": "{0}로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_TITLE",
+      "String": "키티캐쉬 스페셜"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_KITTYKASHPACK_DESC",
+      "String": "시간 한정 스페셜로, 키티캐쉬를 얻기 좋은 기회입니다."
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_TITLE",
+      "String": "생선 딜"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_FISHPACK_DESC",
+      "String": "생선이 필요하세요? 싼 가격에 많은 생선을 드리는 스페셜입니다."
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_TITLE",
+      "String": "코인 펑펑 쓰기"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_TOKENPACK_DESC",
+      "String": "스페셜 가구를 살 코인이 필요하세요? 시간 한정 스페셜로, 본전을 뽑고도 남습니다."
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_TITLE",
+      "String": "연속 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GENERIC_PROGRESSIONPACK_DESC",
+      "String": "생선과 키티캐쉬, 코인 묶음으로 내 고양이 카페 경험을 한껏 끌어올리세요!"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_TITLE",
+      "String": "‘Possum’ 고양이 팩"
+    },
+    {
+      "Key": "SHOP_PACK_053_CATPACK_DESC",
+      "String": "Possum로의 전용 액세스를 제공하며, 많은 양의 키티캐쉬와 생선이 포함되어 있습니다. 엄청 싸네요!"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_TITLE",
+      "String": "행운의 고양이 업그레이드 아이템!"
+    },
+    {
+      "Key": "SHOP_PACK_CATLOUNGE_ITEMS_DESC",
+      "String": "이 팩에는 고양이 활동 업그레이드와 카페 부스트에 사용할 수 있는 특별 아이템이 포함되어 있습니다."
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_TITLE",
+      "String": "고양이 업그레이드 아이템!"
+    },
+    {
+      "Key": "SHOP_PACK_CAT_UPGRADE_ITEMS_DESC",
+      "String": "엄청나게 할인된 가격에 고양이 업그레이드 아이템을 담고 있어요."
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_TITLE",
+      "String": "거대한 <SHOP_PACK_FURNITURE_LARGE_TITLE> 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_TITLE",
+      "String": "<SHOP_PACK_FURNITURE_TITLE> 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_001_TITLE",
+      "String": "거대한 숲 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_002_TITLE",
+      "String": "거대한 멤피스 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_003_TITLE",
+      "String": "거대한 시골집 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_004_TITLE",
+      "String": "거대한 식당 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_005_TITLE",
+      "String": "거대한 팝 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_LARGE_006_TITLE",
+      "String": "거대한 해변 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_001_TITLE",
+      "String": "원예가 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_002_TITLE",
+      "String": "아케이드 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_003_TITLE",
+      "String": "도서관 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_004_TITLE",
+      "String": "보헤미안 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_005_TITLE",
+      "String": "티파티 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_006_TITLE",
+      "String": "다크 아카데미아 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_007_TITLE",
+      "String": "음악 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_008_TITLE",
+      "String": "미니멀리즘 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_009_TITLE",
+      "String": "젠 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_010_TITLE",
+      "String": "스칸디나비안 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_011_TITLE",
+      "String": "교외풍 팩"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_012_TITLE",
+      "String": "고양이 애호가 팩"
+    },
+    {
+      "Key": "DELIVERY_MENU_TITLE",
+      "String": "<DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "HOT_TIP_TITLE",
+      "String": "퓨리스타스의 행복한 힌트"
+    },
+    {
+      "Key": "HOT_TIP_1",
+      "String": "코인 획득 방법이 궁금하세요? 화면 아래쪽 아이콘을 탭하세요."
+    },
+    {
+      "Key": "HOT_TIP_2",
+      "String": "고양이 세부 사항 페이지에서 아이템과 아이콘을 탭하면 정보를 알 수 있답니다."
+    },
+    {
+      "Key": "HOT_TIP_3",
+      "String": "성격은 매치하지 못하더라도, 하트를 얻으려면 고양이를 손님과 매치해야 합니다."
+    },
+    {
+      "Key": "HOT_TIP_4",
+      "String": "경험치를 얻고 레벨업을 하려면 고양이를 업그레이드하세요."
+    },
+    {
+      "Key": "HOT_TIP_5",
+      "String": "상점에 보너스 상자가 있는지 잘 보세요. 상점 아이템은 매일 변경됩니다."
+    },
+    {
+      "Key": "HOT_TIP_6",
+      "String": "레벨업을 할수록 카페를 더 많이 꾸밀 수 있어요!"
+    },
+    {
+      "Key": "HOT_TIP_7",
+      "String": "고양이를 레벨업하려면 필요한 아이템을 가지고 있어야 하며, 하트를 충분히 획득해야 합니다."
+    },
+    {
+      "Key": "HOT_TIP_8",
+      "String": "'목표' 페이지에서 멋진 상품이 기다리는 일일 과제를 확인하세요."
+    },
+    {
+      "Key": "HOT_TIP_9",
+      "String": "5 레벨마다 카페가 커져서 더 많은 손님을 받을 수 있어요!"
+    },
+    {
+      "Key": "HOT_TIP_10",
+      "String": "완벽한 성격 매치가 아니더라도 고양이를 손님에게 분양해서 하트를 얻으세요."
+    },
+    {
+      "Key": "HOT_TIP_11",
+      "String": "고양이를 손님과 매치하고 하트와 바구니를 더 획득하세요."
+    },
+    {
+      "Key": "DELIVERY_HURRY",
+      "String": "서두르세요"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_TITLE",
+      "String": "<HC_PLURAL>이 부족합니다!"
+    },
+    {
+      "Key": "DIALOGUE_LACK_KITTYKASH_DESCRIPTION",
+      "String": "이 <DELIVERY> 시간을 단축할 <HC_PLURAL>이 부족합니다."
+    },
+    {
+      "Key": "DELIVERY_CONTAINS",
+      "String": "포함"
+    },
+    {
+      "Key": "DELIVERY_START",
+      "String": "시작"
+    },
+    {
+      "Key": "DELIVERY_TAP_START",
+      "String": "탭해서 시작하기"
+    },
+    {
+      "Key": "DELIVERY_ARRIVES_IN",
+      "String": "도착 예정 시간..."
+    },
+    {
+      "Key": "DELIVERY_TAP_COLLECT",
+      "String": "<BONUS_BASKET_OPEN_PROMPT>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_BASIC",
+      "String": "기본 <BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GOOD",
+      "String": "좋은 <BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_GREAT",
+      "String": "훌륭한 <BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_HUGE",
+      "String": "거대한 <BASKET>"
+    },
+    {
+      "Key": "DELIVERY_BASKET_AMAZING",
+      "String": "놀라운 <BASKET>"
+    },
+    {
+      "Key": "DELIVERY_ON_ITS_WAY",
+      "String": "배달 중입니다! 나중에 다시 확인하세요"
+    },
+    {
+      "Key": "NEW_ITEM_NOTIFICATION",
+      "String": "뉴스!"
+    },
+    {
+      "Key": "EPIC_ITEM_NOTIFICATION",
+      "String": "<LEGENDARY>!"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_NOTIFICATION",
+      "String": "<EPIC>!"
+    },
+    {
+      "Key": "REWARD_ITEM_DESCRIPTION",
+      "String": "<CAT> 업그레이드 <ITEM>"
+    },
+    {
+      "Key": "SC_DESCRIPTION",
+      "String": "<CAT> 업그레이드 재화"
+    },
+    {
+      "Key": "TODO_TITLE",
+      "String": "오늘의 할 일"
+    },
+    {
+      "Key": "GOALS_RESET_IN",
+      "String": "초기화까지 남은 시간..."
+    },
+    {
+      "Key": "GOAL_ASSIGN",
+      "String": "{0} 고양이를 손님들에게 <ASSIGN>하세요."
+    },
+    {
+      "Key": "GOAL_CAT_ASSIGN",
+      "String": "{0}(을)를 손님들에게 {1}회 <ASSIGN>하세요."
+    },
+    {
+      "Key": "GOAL_TRAIT_ASSIGN",
+      "String": "<ASSIGN> {1}고양이를 ‘{0}’ 성격 특성에 <ASSIGN>하세요."
+    },
+    {
+      "Key": "GOAL_MINIGAME",
+      "String": "‘{0}’ 미니 게임을 {1}회 완료하세요."
+    },
+    {
+      "Key": "GOAL_EARN",
+      "String": "{0} {1}를 모으세요."
+    },
+    {
+      "Key": "GOAL_CAT_LEVEL_UP",
+      "String": "<PROMOTE> {0}"
+    },
+    {
+      "Key": "GOAL_CHECK_BIO",
+      "String": "{0} 손님 신상을 확인하세요."
+    },
+    {
+      "Key": "GOAL_OPEN_BASKETS",
+      "String": "{0} <BASKET_PLURAL>를 여세요."
+    },
+    {
+      "Key": "GOAL_EARN_BASKETS",
+      "String": "{0} <BASKET_PLURAL>를 획득하세요."
+    },
+    {
+      "Key": "GOAL_TAKE_SNAPSHOT",
+      "String": "귀여운 스냅샷 찍기"
+    },
+    {
+      "Key": "GOAL_ALLCOMPLETE",
+      "String": "모든 일을 완료하세요"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_FULL_CAFE",
+      "String": "전체 카페 스냅샷 찍기"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_RELAXING_CATS",
+      "String": "쉬고 있는 고양이 스냅샷 {0}장 찍기"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_SPECIFIC_SUBJECT",
+      "String": "손님 스냅샷 {0}장 찍기"
+    },
+    {
+      "Key": "SNAPSHOT_GOAL_INTERACTION",
+      "String": "손님과 매치된 고양이 스냅샷 찍기"
+    },
+    {
+      "Key": "GOAL_USE_LUCKYCAT",
+      "String": "행운의 고양이 배를 탭하여 아이템 {0}개를 획득하세요."
+    },
+    {
+      "Key": "GOAL_ASSIGN_TO_STATION",
+      "String": "{0} <CAT_PLURAL>를 <CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "GOAL_REENERGIZED",
+      "String": "재충전 {0} <CAT_PLURAL>"
+    },
+    {
+      "Key": "SHELF_TITLE",
+      "String": "Runaway의 더 많은 멋진 게임들"
+    },
+    {
+      "Key": "SHELF_SALE_LABEL",
+      "String": "세일!"
+    },
+    {
+      "Key": "SHELF_NEW_EVENT_LABEL",
+      "String": "신규 이벤트"
+    },
+    {
+      "Key": "SHELF_PLAY_PROMPT",
+      "String": "플레이"
+    },
+    {
+      "Key": "SHELF_FLUTTER_TITLE",
+      "String": "Flutter"
+    },
+    {
+      "Key": "SHELF_SPLASH_TITLE",
+      "String": "Splash"
+    },
+    {
+      "Key": "SHELF_STARLIGHT_TITLE",
+      "String": "스타라이트"
+    },
+    {
+      "Key": "SHELF_BIRDBNB_TITLE",
+      "String": "버드 비앤비"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_TITLE",
+      "String": "Old Friends Dog Game"
+    },
+    {
+      "Key": "SHELF_BIRDKIND_TITLE",
+      "String": "Bird Kind"
+    },
+    {
+      "Key": "SHELF_FLUTTER_DESCRIPTION",
+      "String": "나비를 키우고 아름다운 열대우림을 관리하세요."
+    },
+    {
+      "Key": "SHELF_SPLASH_DESCRIPTION",
+      "String": "아름다운 나만의 산호초를 지어 손상되기 쉬운 물속 생태계에 생명을 불어넣으세요."
+    },
+    {
+      "Key": "SHELF_STARLIGHT_DESCRIPTION",
+      "String": "아름다운 나방을 불러 모아 해가 진 뒤 생기를 찾는 열대 우림을 지켜보세요."
+    },
+    {
+      "Key": "SHELF_BIRDBNB_DESCRIPTION",
+      "String": "평온한 나무들 사이에 나만의 비앤비 숙소를 지어보세요"
+    },
+    {
+      "Key": "SHELF_OLDFRIENDS_DESCRIPTION",
+      "String": "개를 사랑하는 사람들의 우정을 다루는 스토리 게임입니다."
+    },
+    {
+      "Key": "SHELF_BIRDKIND_DESCRIPTION",
+      "String": "고독한 나무의 정령이 신비로운 숲에 새들의 생명을 회복할 수 있도록 도와주세요"
+    },
+    {
+      "Key": "ADVERTISEMENT",
+      "String": "광고"
+    },
+    {
+      "Key": "ENGLISH_ONLY",
+      "String": "(영어로만 이용 가능)."
+    },
+    {
+      "Key": "HOWTO_TITLE",
+      "String": "게임 방법..."
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_TITLE",
+      "String": "<CAT> 분양하기"
+    },
+    {
+      "Key": "HOWTO_MATCHPERSONALITIES_TITLE",
+      "String": "성격 매치하기"
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_01",
+      "String": "<CUSTOMER>을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_02",
+      "String": "메뉴에서 <CAT>를 드래그하세요."
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_03",
+      "String": "<CAT>를 <CUSTOMER> 위에 놓으세요."
+    },
+    {
+      "Key": "HOWTO_PAIRCAT_04",
+      "String": "성격을 매치하고 보너스를 받으세요!"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_TITLE",
+      "String": "토큰 획득"
+    },
+    {
+      "Key": "HOWTO_COLLECTCURRENCY_TITLE",
+      "String": "토큰 받기"
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_01",
+      "String": "바구니에서 <FISH>을 획득하세요."
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_02",
+      "String": "<CAT_PLURAL>를 <CUSTOMER_PLURAL>와 매치하여 획득하세요."
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_03",
+      "String": "카페 업무를 완료하고 <TOKEN_PLURAL>을 획득하세요."
+    },
+    {
+      "Key": "HOWTO_EARNCURRENCY_04",
+      "String": "고양이를 입양하거나 육성해서 <XP_PLURAL>를 획득하세요"
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_TITLE",
+      "String": "<CAT>를 <PROMOTE>하세요."
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_01",
+      "String": "<CAT> 인벤토리를 여세요."
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_02",
+      "String": "세부 사항을 보려면 <CAT>를 탭하세요."
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_03",
+      "String": "<ITEM_PLURAL>와 <FISH>,  <CAT>로 <HEART_PLURAL>를 획득해야 합니다."
+    },
+    {
+      "Key": "HOWTO_NURTURECAT_04",
+      "String": "조건이 모두 충족되었다면, <PROMOTE> 버튼을 탭하세요!"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_TITLE",
+      "String": "<BASKET>를 여세요."
+    },
+    {
+      "Key": "HOWTO_EARNBASKET_TITLE",
+      "String": "<BASKET>를 획득하세요."
+    },
+    {
+      "Key": "HOWTO_STARTBASKET_TITLE",
+      "String": "<BASKET> 주문 시작하기"
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_01",
+      "String": "<CAT_PLURAL>를 <CUSTOMER_PLURAL>에게 분양하고 <HEART_PLURAL>를 획득하세요."
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_02",
+      "String": "<HEART_PLURAL>를 모아서 <BASKET> 주문을 받으세요."
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_03",
+      "String": "주문이 시작되면 <BASKET_PLURAL> 배달까지는 시간이 걸립니다."
+    },
+    {
+      "Key": "HOWTO_OPENBASKET_04",
+      "String": "<BASKET>가 도착하면 탭해서 여세요."
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_TITLE",
+      "String": "<CUSTOMER> 신상 보기"
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_01",
+      "String": "<CUSTOMER>을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_02",
+      "String": "정보 버튼을 탭해서 손님 신상을 확인하세요."
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_03",
+      "String": "원할 경우 <CUSTOMER> 신상을 공유할 수 있어요."
+    },
+    {
+      "Key": "HOWTO_CUSTOMERBIO_04",
+      "String": "다시 찾아온 특별 VIP <CUSTOMER_PLURAL>을 잘 살펴보세요."
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_TITLE",
+      "String": "카페 업무 수행하기"
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_01",
+      "String": "주기적으로 카페 업무를 수행해야 합니다."
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_02",
+      "String": "시작하고자 하는 일을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_03",
+      "String": "업무를 완료하고 <TOKEN_PLURAL>을 획득하세요."
+    },
+    {
+      "Key": "HOWTO_PERFORMDUTIES_04",
+      "String": "내 카페를 꾸미는데 <TOKEN_PLURAL>을 사용합니다."
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_TITLE",
+      "String": "상태창 정보 보기"
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_01",
+      "String": "더 많은 정보를 확인하려면 화면 아래 아이콘을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_02",
+      "String": "다양한 곳에서 정보를 확인할 수 있습니다."
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_03",
+      "String": "잘 모르는 게 있을 때는 아이콘을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_VIEWINFO_04",
+      "String": "레벨업 시 <UNLOCKED> 되는 것도 확인할 수 있습니다."
+    },
+    {
+      "Key": "HOWTO_LEVELUP_TITLE",
+      "String": "<LEVEL_UP>"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_01",
+      "String": "고양이를 입양하거나 육성해서 <XP_PLURAL>를 획득하세요"
+    },
+    {
+      "Key": "HOWTO_LEVELUP_02",
+      "String": "충분한 경험치를 획득해 <LEVEL_UP>하세요."
+    },
+    {
+      "Key": "HOWTO_LEVELUP_03",
+      "String": "각 <LEVEL>에서 새로운 것들이 잠금 해제됩니다."
+    },
+    {
+      "Key": "HOWTO_LEVELUP_04",
+      "String": "레벨업이 얼마나 남았는지 확인하려면 화면 하단의 경험치 바를 탭하세요."
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_TITLE",
+      "String": "<CUSTOMISATION_PLURAL> 구매하기"
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_01",
+      "String": "<CUSTOMISATION> 모드를 시작하려면 이 버튼을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_02",
+      "String": "<CUSTOMISATION>를 드래그하세요."
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_03",
+      "String": "빈 공간에 내려놓으세요."
+    },
+    {
+      "Key": "HOWTO_BUYCUSTOMISATIONS_04",
+      "String": "<TOKEN_PLURAL>이 충분할 경우 구매 여부를 묻는 메시지가 뜹니다."
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_TITLE",
+      "String": "사진 찍기"
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_01",
+      "String": "오른쪽 상단의 사진 버튼을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_02",
+      "String": "캡처하고 싶은 순간을 선택하세요."
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_03",
+      "String": "사진을 저장하거나 공유하세요."
+    },
+    {
+      "Key": "HOWTO_TAKEPHOTO_04",
+      "String": "다른 사람들의 포스팅을 보려면 #furistas 해시태그를 사용하세요."
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_TITLE",
+      "String": "<CAT>를 <ADOPT>"
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_01",
+      "String": "<CAT> 인벤토리를 여세요."
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_02",
+      "String": "잠금 해제된 <CAT> 실루엣을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_03",
+      "String": "<FISH>이 충분하면 '<ADOPT>'을 탭할 수 있습니다."
+    },
+    {
+      "Key": "HOWTO_ADOPTCAT_04",
+      "String": "야호! 새로운 고양이에요!"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_TITLE",
+      "String": "<CUSTOMISATION_PLURAL> 배치하기"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_01",
+      "String": "<CUSTOMISATION> 모드 열기"
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_02",
+      "String": "배치하고 싶은 것을 찾으세요."
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_03",
+      "String": "밖으로 드래그하세요. 빨간색은 해당 위치에 배치하지 못한다는 뜻입니다."
+    },
+    {
+      "Key": "HOWTO_PLACECUSTOMISATION_04",
+      "String": "빨간색이 아닌 곳에는 배치할 수 있어요!"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_TITLE",
+      "String": "스냅샷 찍기"
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_01",
+      "String": "스냅샷 버튼을 탭하세요."
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_02",
+      "String": "사각형을 드래그해서 앵글을 맞추세요."
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_03",
+      "String": "사각형을 탭해서 사진을 찍으세요."
+    },
+    {
+      "Key": "HOWTO_TAKESNAPSHOT_04",
+      "String": "#퓨리타스'를 달아 SNS에 공유하세요."
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_TITLE",
+      "String": "<CAT_LOUNGE>"
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_01",
+      "String": "터널을 탭하여 라운지로 이동하세요."
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_02",
+      "String": "<CATHEART_PLURAL>를 사용하여 아이템을 획득하세요."
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_03",
+      "String": "아이템을 사용하여 <CAT_STATION_PLURAL>을 잠금 해제하고 업그레이드하세요."
+    },
+    {
+      "Key": "HOWTO_CATLOUNGE_04",
+      "String": "<CAT_PLURAL>를 <CAT_STATION_PLURAL>에 지정하고 고양이 하트를 획득하세요."
+    },
+    {
+      "Key": "FIRST_TIME_TITLE",
+      "String": "퓨리스타스에 오신 걸 환영합니다!"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION1",
+      "String": "나만의 고양이 카페에 오신 걸 환영합니다!"
+    },
+    {
+      "Key": "FIRST_TIME_DESCRIPTION2",
+      "String": "화면 아래쪽의 지시에 따라 시작하세요."
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_TITLE",
+      "String": "잘 했어요."
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC",
+      "String": "이제 내 고양이 카페 운영에 필요한 기본 지식을 배웠어요. 오늘의 스페셜 업무를 확인하려면 오른쪽 하단의 목표 버튼을 탭하세요."
+    },
+    {
+      "Key": "TUTORIAL_FINISHED_DESC2",
+      "String": "감사합니다. 가장 중요한 건 즐기는 거예요!"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_001",
+      "String": "첫 고양이를 입양하세요. (도움말은 ? 버튼을 누르세요)"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN1",
+      "String": "손님을 탭 해서 고양이와 매치하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET1",
+      "String": "와, 바구니예요?! 어서 열어봐요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSEWALL1",
+      "String": "가구 버튼을 탭해서 벽지를 선택하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ADOPT_002",
+      "String": "새로운 고양이를 입양하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN2",
+      "String": "고양이와 손님을 매치하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_COLLECT1",
+      "String": "손님이 두고 간 하트 노트를 챙기세요"
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_STARTBASKET1",
+      "String": "하트를 획득하고 바구니를 주문하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGN3",
+      "String": "다시 한번 고양이와 손님을 매치하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_CHOOSESEAT",
+      "String": "가구 메뉴에서 스툴 또는 의자를 구입하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_TAPHUD1",
+      "String": "화면 아래쪽 하트 아이콘을 탭하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_OPENBASKET2",
+      "String": "바구니가 도착하면 열어보세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_PLACETABLE",
+      "String": "가구 메뉴에서 테이블을 배치하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_EARNHEARTS1",
+      "String": "본찬으로 하트 10개를 획득하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_LEVELCAT1",
+      "String": "본찬을 레벨 2까지 육성하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_G001",
+      "String": "고양이 3마리를 돌보세요(레벨업)."
+    },
+    {
+      "Key": "TUTORIAL_STEP_G002",
+      "String": "고양이를 손님 50명과 매치해서 하트를 획득하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_G003",
+      "String": "200코인을 받으세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_GOTOCATLOUNGE1",
+      "String": "터널을 탭하여 고양이 라운지로 이동하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_USELUCKYCAT",
+      "String": "행운의 고양이 배를 탭하여 아이템 3개를 획득하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_UNLOCKSTATION",
+      "String": "<CAT_STATION> 인벤토리에서 첫 번째 <CAT_STATION>을(를) 해제하세요."
+    },
+    {
+      "Key": "TUTORIAL_STEP_T_ASSIGNCATTOSTATION",
+      "String": "<STATION_002_NAME> 스테이션에 고양이를 지정해주세요."
+    },
+    {
+      "Key": "MINIGAME_NAME_BRUSH",
+      "String": "쓰다듬기"
+    },
+    {
+      "Key": "MINIGAME_CAT_TITLE",
+      "String": "{0}(이)가 관심을 원해요."
+    },
+    {
+      "Key": "MINIGAME_CAT_EXPLANATION",
+      "String": "<CAT>(을)를 손가락으로 쓰다듬어 주세요."
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_1",
+      "String": "고양이가 행복해 해요!"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_2",
+      "String": "갸르르릉"
+    },
+    {
+      "Key": "MINIGAME_CAT_FEEDBACK_3",
+      "String": "만족한 고양이"
+    },
+    {
+      "Key": "MINIGAME_NAME_CLEANPAWPRINTS",
+      "String": "청소하기"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE_SPILL",
+      "String": "쏟아진 음료를 닦아요"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_TITLE",
+      "String": "이런 {0}..."
+    },
+    {
+      "Key": "MINIGAME_SCRUB_EXPLANATION",
+      "String": "문질러서 지저분한 것을 닦아내세요"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_1",
+      "String": "너어무 깨끗해"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_2",
+      "String": "눈부셔"
+    },
+    {
+      "Key": "MINIGAME_SCRUB_FEEDBACK_3",
+      "String": "발자국이여 안녕"
+    },
+    {
+      "Key": "MINIGAME_NAME_COFFEE",
+      "String": "바리스타"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_TITLE",
+      "String": "음료 주문"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_1",
+      "String": "재료를 머그컵으로 드래그하세요."
+    },
+    {
+      "Key": "MINIGAME_COFFEE_EXPLANATION_2",
+      "String": "머그컵을 손님에게 드래그하세요."
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_1",
+      "String": "맛이 끝내줘요!"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_2",
+      "String": "으음!"
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_3",
+      "String": "맛있어요."
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_4",
+      "String": "힘이 나요."
+    },
+    {
+      "Key": "MINIGAME_COFFEE_FEEDBACK_5",
+      "String": "<THANK_YOU>!"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_1",
+      "String": "잘 했어요"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_2",
+      "String": "대단해요"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_3",
+      "String": "멋져요"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_4",
+      "String": "최고예요"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_5",
+      "String": "훌륭해요"
+    },
+    {
+      "Key": "MINIGAME_GENERIC_FEEDBACK_6",
+      "String": "끝내줘요"
+    },
+    {
+      "Key": "MINIGAME_NAME_SALAD",
+      "String": "샐러드 아티스트"
+    },
+    {
+      "Key": "MINIGAME_SALAD_TITLE",
+      "String": "샐러드 주문"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_1",
+      "String": "재료를 접시로 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SALAD_EXPLANATION_2",
+      "String": "접시를 손님에게 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_1",
+      "String": "너무 건강해요!"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_2",
+      "String": "냠냠!!!"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_3",
+      "String": "너무 좋아요!"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_4",
+      "String": "맛있어요"
+    },
+    {
+      "Key": "MINIGAME_SALAD_FEEDBACK_5",
+      "String": "<THANK_YOU>!"
+    },
+    {
+      "Key": "MINIGAME_NAME_SUNDAE",
+      "String": "아이스크림 아티스트"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_TITLE",
+      "String": "맛있는 후식"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_1",
+      "String": "토핑을 유리컵으로 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_EXPLANATION_2",
+      "String": "유리컵을 손님에게 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_1",
+      "String": "와우!!"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_2",
+      "String": "맛있는 후식이에요!"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_3",
+      "String": "냠냠냠"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_4",
+      "String": "끝내줘요"
+    },
+    {
+      "Key": "MINIGAME_SUNDAE_FEEDBACK_5",
+      "String": "<THANK_YOU>!"
+    },
+    {
+      "Key": "MINIGAME_NAME_SMOOTHIE",
+      "String": "스무디 아티스트"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_TITLE",
+      "String": "스무디 시간"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_1",
+      "String": "토핑을 믹서기로 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_EXPLANATION_2",
+      "String": "유리컵을 손님에게 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_1",
+      "String": "힘이 나요"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_2",
+      "String": "너무 부드러워요"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_3",
+      "String": "영양 가득!"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_4",
+      "String": "힘이 불끈 불끈!"
+    },
+    {
+      "Key": "MINIGAME_SMOOTHIE_FEEDBACK_5",
+      "String": "<THANK_YOU>!"
+    },
+    {
+      "Key": "PICK_A_COMPARTMENT",
+      "String": "칸막이를 들어요"
+    },
+    {
+      "Key": "PLUS_ONE_REWARD",
+      "String": "추가 보상"
+    },
+    {
+      "Key": "YOU_HAVE_COLLECTED_IT_ALL",
+      "String": "보상을 모두 받았습니다"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_1",
+      "String": "칸막이를 들어요"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_TITLE",
+      "String": "운에 맡겨보세요"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_2",
+      "String": "추가 선택을 위해 비디오를 시청하세요"
+    },
+    {
+      "Key": "MINIGAME_COMPARTMENT_EXPLANATION_3",
+      "String": "추가 선택을 위해 키티캐쉬를 사용하세요"
+    },
+    {
+      "Key": "MINIGAME_NAME_WAFFLE",
+      "String": "와플 예술가"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_TITLE",
+      "String": "완벽한 디저트"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_1",
+      "String": "재료를 와플로 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_EXPLANATION_2",
+      "String": "완성된 와플을 손님에게 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_1",
+      "String": "대단하군요!"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_2",
+      "String": "완벽한 디저트예요"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_3",
+      "String": "완벽한 와플이네요!"
+    },
+    {
+      "Key": "MINIGAME_WAFFLE_FEEDBACK_4",
+      "String": "엄청나요!"
+    },
+    {
+      "Key": "MINIGAME_NAME_CAT_TREAT",
+      "String": "고양이 간식"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_TITLE",
+      "String": "간식 시간"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_EXPLANATION",
+      "String": "간식을 고양이 성격에 매치하여 드래그하세요"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_1",
+      "String": "냠냠냠"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_2",
+      "String": "나는 만족해"
+    },
+    {
+      "Key": "MINIGAME_CAT_TREAT_FEEDBACK_3",
+      "String": "정말 맛있어요!"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_NAME",
+      "String": "고양이 장난감"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_TITLE",
+      "String": "{0}와 놀아주세요!"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_EXPLANATION",
+      "String": "장난감을 드래그하세요!"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_1",
+      "String": "재미있어요"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_2",
+      "String": "그르릉"
+    },
+    {
+      "Key": "MINIGAME_CAT_TOY_FEEDBACK_3",
+      "String": "야옹!"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_NAME",
+      "String": "간식 잡기"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_TITLE",
+      "String": "간식을 잡아보세요!"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_EXPLANATION",
+      "String": "고양이에게 간식을 던져주세요."
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_1",
+      "String": "멋진 실력이에요!"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_2",
+      "String": "잘 잡는군요!"
+    },
+    {
+      "Key": "MINIGAME_THROW_CAT_TREAT_FEEDBACK_3",
+      "String": "놀라운 기술이에요!"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_TITLE",
+      "String": "구매하기"
+    },
+    {
+      "Key": "DIALOGUE_PURCHASE_FURNITURE_DESCRIPTION",
+      "String": "{1} <TOKEN_PLURAL>으로 ‘{0}’(을)를 구매하시겠습니까?"
+    },
+    {
+      "Key": "ERROR_TITLE",
+      "String": "이런..."
+    },
+    {
+      "Key": "CUSHION",
+      "String": "쿠션"
+    },
+    {
+      "Key": "COUCH",
+      "String": "소파"
+    },
+    {
+      "Key": "RUG",
+      "String": "러그"
+    },
+    {
+      "Key": "CHAIR",
+      "String": "의자"
+    },
+    {
+      "Key": "TABLE",
+      "String": "테이블"
+    },
+    {
+      "Key": "STOOL",
+      "String": "스툴"
+    },
+    {
+      "Key": "MAT",
+      "String": "매트"
+    },
+    {
+      "Key": "PLANT",
+      "String": "식물"
+    },
+    {
+      "Key": "CRATE",
+      "String": "상자"
+    },
+    {
+      "Key": "SHELF",
+      "String": "선반"
+    },
+    {
+      "Key": "COUNTER",
+      "String": "카운터"
+    },
+    {
+      "Key": "CAT_TRAIT_FRIENDLY",
+      "String": "친화적"
+    },
+    {
+      "Key": "CAT_TRAIT_SHY",
+      "String": "수줍음"
+    },
+    {
+      "Key": "CAT_TRAIT_PLAYFUL",
+      "String": "장난기 많음"
+    },
+    {
+      "Key": "CAT_TRAIT_CHILL",
+      "String": "진중함"
+    },
+    {
+      "Key": "CAT_TRAIT_CAPRICIOUS",
+      "String": "변덕스러움"
+    },
+    {
+      "Key": "CAT_TRAIT_CURIOUS",
+      "String": "호기심 많음"
+    },
+    {
+      "Key": "CAT_TRAIT_GENTLE",
+      "String": "온화함"
+    },
+    {
+      "Key": "CAT_TRAIT_ASSERTIVE",
+      "String": "적극적"
+    },
+    {
+      "Key": "CAT_TRAIT_GOOFY",
+      "String": "엉뚱함"
+    },
+    {
+      "Key": "CAT_TRAIT_ADVENTUROUS",
+      "String": "모험심 강함"
+    },
+    {
+      "Key": "CAT_TRAIT_CUDDLY",
+      "String": "사랑스러움"
+    },
+    {
+      "Key": "CAT_TRAIT_SLEEPY",
+      "String": "나른함"
+    },
+    {
+      "Key": "CAT_TRAIT_SMART",
+      "String": "영리함"
+    },
+    {
+      "Key": "HAIR_TYPE_SHORT",
+      "String": "단모"
+    },
+    {
+      "Key": "HAIR_TYPE_MEDIUM",
+      "String": "중모"
+    },
+    {
+      "Key": "HAIR_TYPE_LONG",
+      "String": "장모"
+    },
+    {
+      "Key": "HAIR_TYPE_NONE",
+      "String": "없음"
+    },
+    {
+      "Key": "CAT_BREED_CALICO",
+      "String": "칼리코"
+    },
+    {
+      "Key": "CAT_BREED_TABBY",
+      "String": "태비"
+    },
+    {
+      "Key": "CAT_BREED_BOMBAY",
+      "String": "봄베이"
+    },
+    {
+      "Key": "CAT_BREED_PERSIAN",
+      "String": "페르시안"
+    },
+    {
+      "Key": "CAT_BREED_SIBERIAN",
+      "String": "시베리안"
+    },
+    {
+      "Key": "CAT_BREED_TORTOISESHELL",
+      "String": "토터셀"
+    },
+    {
+      "Key": "CAT_BREED_TUXEDO",
+      "String": "턱시도"
+    },
+    {
+      "Key": "CAT_BREED_BOBTAIL",
+      "String": "밥테일"
+    },
+    {
+      "Key": "CAT_BREED_CHANTILLY",
+      "String": "찬탈리"
+    },
+    {
+      "Key": "CAT_BREED_CHARTREAUX",
+      "String": "샤트루"
+    },
+    {
+      "Key": "CAT_BREED_SIAMESE",
+      "String": "샴"
+    },
+    {
+      "Key": "CAT_BREED_LONGHAIR",
+      "String": "롱헤어"
+    },
+    {
+      "Key": "CAT_BREED_TONKINESE",
+      "String": "통키니즈"
+    },
+    {
+      "Key": "CAT_BREED_WIREHAIR",
+      "String": "와이어헤어"
+    },
+    {
+      "Key": "CAT_BREED_FOLD",
+      "String": "폴드"
+    },
+    {
+      "Key": "CAT_BREED_SPHYNX",
+      "String": "스핑크스"
+    },
+    {
+      "Key": "CAT_BREED_LAPERM",
+      "String": "라팜"
+    },
+    {
+      "Key": "CAT_BREED_SHORTHAIR",
+      "String": "숏헤어"
+    },
+    {
+      "Key": "CAT_BREED_RAGDOLL",
+      "String": "랙돌"
+    },
+    {
+      "Key": "CAT_BREED_EXOTIC",
+      "String": "엑조틱"
+    },
+    {
+      "Key": "CAT_BREED_HIMALAYAN",
+      "String": "히말라얀"
+    },
+    {
+      "Key": "CAT_BREED_ANGORA",
+      "String": "앙고라"
+    },
+    {
+      "Key": "CAT_BREED_CURL",
+      "String": "컬"
+    },
+    {
+      "Key": "CAT_BREED_OCICAT",
+      "String": "오시캣"
+    },
+    {
+      "Key": "CAT_BREED_BENGAL",
+      "String": "뱅갈"
+    },
+    {
+      "Key": "CAT_BREED_MAINECOON",
+      "String": "메인쿤"
+    },
+    {
+      "Key": "CAT_BREED_BICOLOUR",
+      "String": "바이컬러"
+    },
+    {
+      "Key": "CAT_BREED_RUSSIANWHITE",
+      "String": "러시안 화이트"
+    },
+    {
+      "Key": "CAT_BREED_SNOWSHOE",
+      "String": "스노우슈"
+    },
+    {
+      "Key": "CAT_BREED_MUNCHKIN",
+      "String": "먼치킨"
+    },
+    {
+      "Key": "CAT_BREED_MIXED",
+      "String": "믹스종"
+    },
+    {
+      "Key": "CAT_BREED_ORIENTAL",
+      "String": "오리엔탈"
+    },
+    {
+      "Key": "CAT_BREED_LAMBKIN",
+      "String": "램킨"
+    },
+    {
+      "Key": "CAT_BREED_LYKOI",
+      "String": "라이코이"
+    },
+    {
+      "Key": "COMMON_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 <COMMON> 아이템"
+    },
+    {
+      "Key": "UNCOMMON_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 <UNCOMMON> 아이템"
+    },
+    {
+      "Key": "RARE_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 <RARE> 아이템"
+    },
+    {
+      "Key": "EPIC_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 <EPIC> 아이템"
+    },
+    {
+      "Key": "LEGENDARY_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 <LEGENDARY> 아이템"
+    },
+    {
+      "Key": "BALL",
+      "String": "공"
+    },
+    {
+      "Key": "BELL",
+      "String": "방울"
+    },
+    {
+      "Key": "TOY",
+      "String": "장난감"
+    },
+    {
+      "Key": "FOOD",
+      "String": "음식"
+    },
+    {
+      "Key": "COLLAR",
+      "String": "목걸이"
+    },
+    {
+      "Key": "ITEM_001",
+      "String": "방울공"
+    },
+    {
+      "Key": "ITEM_002",
+      "String": "스펀지 공"
+    },
+    {
+      "Key": "ITEM_003",
+      "String": "털공"
+    },
+    {
+      "Key": "ITEM_004",
+      "String": "털실공"
+    },
+    {
+      "Key": "ITEM_005",
+      "String": "최첨단 공"
+    },
+    {
+      "Key": "ITEM_006",
+      "String": "구리 방울"
+    },
+    {
+      "Key": "ITEM_007",
+      "String": "노란색 방울"
+    },
+    {
+      "Key": "ITEM_008",
+      "String": "회색 고양이 방울"
+    },
+    {
+      "Key": "ITEM_009",
+      "String": "주황색 고양이 방울"
+    },
+    {
+      "Key": "ITEM_010",
+      "String": "카운터 방울"
+    },
+    {
+      "Key": "ITEM_011",
+      "String": "참치 캔"
+    },
+    {
+      "Key": "ITEM_012",
+      "String": "젤리 고기"
+    },
+    {
+      "Key": "ITEM_013",
+      "String": "고양이 비스킷"
+    },
+    {
+      "Key": "ITEM_014",
+      "String": "생선 너겟"
+    },
+    {
+      "Key": "ITEM_015",
+      "String": "연어"
+    },
+    {
+      "Key": "ITEM_016",
+      "String": "쥐 장난감"
+    },
+    {
+      "Key": "ITEM_017",
+      "String": "거미 장난감"
+    },
+    {
+      "Key": "ITEM_018",
+      "String": "물고기 장난감"
+    },
+    {
+      "Key": "ITEM_019",
+      "String": "문어 장난감"
+    },
+    {
+      "Key": "ITEM_020",
+      "String": "공룡 장난감"
+    },
+    {
+      "Key": "ITEM_021",
+      "String": "흰색 목걸이"
+    },
+    {
+      "Key": "ITEM_022",
+      "String": "스포티한 목걸이"
+    },
+    {
+      "Key": "ITEM_023",
+      "String": "귀여운 목걸이"
+    },
+    {
+      "Key": "ITEM_024",
+      "String": "가죽 목걸이"
+    },
+    {
+      "Key": "ITEM_025",
+      "String": "다이아몬드 목걸이"
+    },
+    {
+      "Key": "ITEM_ST_C1",
+      "String": "고양이 볼트"
+    },
+    {
+      "Key": "ITEM_ST_U1",
+      "String": "고양이 풀"
+    },
+    {
+      "Key": "ITEM_ST_R1",
+      "String": "발바닥 보드"
+    },
+    {
+      "Key": "ITEM_ST_E1",
+      "String": "빛나는 페인트"
+    },
+    {
+      "Key": "ITEM_ST_L1",
+      "String": "고급 천"
+    },
+    {
+      "Key": "I_TRAIT_0",
+      "String": "‘<CAT_TRAIT_FRIENDLY>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_1",
+      "String": "‘<CAT_TRAIT_CHILL>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_2",
+      "String": "‘<CAT_TRAIT_PLAYFUL>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_3",
+      "String": "‘<CAT_TRAIT_SHY>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_4",
+      "String": "‘<CAT_TRAIT_CAPRICIOUS>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_5",
+      "String": "‘<CAT_TRAIT_CURIOUS>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_6",
+      "String": "‘<CAT_TRAIT_GENTLE>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_7",
+      "String": "‘<CAT_TRAIT_ASSERTIVE>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_8",
+      "String": "‘<CAT_TRAIT_GOOFY>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_9",
+      "String": "‘<CAT_TRAIT_ADVENTUROUS>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_10",
+      "String": "‘<CAT_TRAIT_CUDDLY>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_11",
+      "String": "‘<CAT_TRAIT_SLEEPY>’ 태그"
+    },
+    {
+      "Key": "I_TRAIT_12",
+      "String": "‘<CAT_TRAIT_SMART>’ 태그"
+    },
+    {
+      "Key": "ITEM_RARITY_C1",
+      "String": "<COMMON> 보석"
+    },
+    {
+      "Key": "ITEM_RARITY_U1",
+      "String": "<UNCOMMON> 보석"
+    },
+    {
+      "Key": "ITEM_RARITY_R1",
+      "String": "<RARE> 보석"
+    },
+    {
+      "Key": "ITEM_RARITY_E1",
+      "String": "<EPIC> 보석"
+    },
+    {
+      "Key": "ITEM_RARITY_L1",
+      "String": "<LEGENDARY> 보석"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_1",
+      "String": "VIP"
+    },
+    {
+      "Key": "VIP_PASS_TITLE_2",
+      "String": "패스"
+    },
+    {
+      "Key": "VIP_LARGE_DESCRIPTION_TITLE",
+      "String": "{0} 관련"
+    },
+    {
+      "Key": "DISCOVER_PROMPT",
+      "String": "나머지 이야기에서 더 많은 성격 <TRAIT_PLURAL>을 확인하세요."
+    },
+    {
+      "Key": "GUEST_PASS_TITLE_1",
+      "String": "손님"
+    },
+    {
+      "Key": "VIP_TRAIT_DISCOVERED_FEEDBACK",
+      "String": "확인된 신규 <TRAIT>: {0}"
+    },
+    {
+      "Key": "VIP_UNLOCKED_FEEDBACK",
+      "String": "축하합니다! 발견한 VIP 손님: {0}"
+    },
+    {
+      "Key": "SETTINGS_TITLE",
+      "String": "설정"
+    },
+    {
+      "Key": "SETTINGS_ACCOUNT_TITLE",
+      "String": "계정"
+    },
+    {
+      "Key": "SETTINGS_USER_ID",
+      "String": "사용자 ID"
+    },
+    {
+      "Key": "SETTINGS_NAME",
+      "String": "이름"
+    },
+    {
+      "Key": "SETTINGS_LEVEL",
+      "String": "<LEVEL>"
+    },
+    {
+      "Key": "SETTINGS_STARTED",
+      "String": "시작함"
+    },
+    {
+      "Key": "SETTINGS_UPDATED",
+      "String": "업데이트됨"
+    },
+    {
+      "Key": "SETTINGS_REGISTER_BUTTON",
+      "String": "등록"
+    },
+    {
+      "Key": "SETTINGS_LOGOUT_BUTTON",
+      "String": "로그아웃"
+    },
+    {
+      "Key": "SETTINGS_MUSIC_LABEL",
+      "String": "음악"
+    },
+    {
+      "Key": "SETTINGS_SFX_LABEL",
+      "String": "효과음"
+    },
+    {
+      "Key": "SETTINGS_NOTIFICATIONS_TITLE",
+      "String": "알림"
+    },
+    {
+      "Key": "SETTINGS_CUSTOMER_DONE_LABEL",
+      "String": "<CUSTOMER_PLURAL> 완료"
+    },
+    {
+      "Key": "SETTINGS_DELIVERY_READY_LABEL",
+      "String": "<BASKET> <DELIVERY> 준비됨"
+    },
+    {
+      "Key": "SETTINGS_BONUS_DELIVERY_READY_LABEL",
+      "String": "보너스 <DELIVERY> 준비됨"
+    },
+    {
+      "Key": "SETTINGS_HELP",
+      "String": "도움말"
+    },
+    {
+      "Key": "SETTINGS_FACEBOOK_PAGE",
+      "String": "커뮤니티"
+    },
+    {
+      "Key": "SETTINGS_TWITTER_PAGE",
+      "String": "커뮤니티"
+    },
+    {
+      "Key": "SETTINGS_TERMS_OF_SERVICE",
+      "String": "이용 약관"
+    },
+    {
+      "Key": "SETTINGS_PRIVACY_POLICY",
+      "String": "개인 정보 보호 정책"
+    },
+    {
+      "Key": "SETTINGS_HIGH_GRAPHICS_MODE",
+      "String": "고품질 그래픽"
+    },
+    {
+      "Key": "SETTINGS_STATIONS_READY_LABEL",
+      "String": "<CAT_STATION_PLURAL> 준비 완료"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_TITLE",
+      "String": "데이터 지우기"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_EXPLANATION",
+      "String": "여러분의 개인 정보는 소중합니다 - 요청에 따라 개인 식별이 가능한 데이터는 삭제가 가능합니다.\\n\\n해당 과정은 철회가 불가능하며 모든 Runaway 게임상 모든 게임 진행 상태를 영구적으로 삭제하게 됩니다.\\n\\n자료를 삭제하면 전체 거래 내역도 삭제됩니다 - 기존에 구매하신 것들을 복구할 수 없게 됩니다.\\n\\n각 게임별 자료 삭제를 원하시거나 그 밖의 질문이 있으실 경우 고객지원팀으로 연락 주십시오."
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM1",
+      "String": "다음 게임에 국한되지 않고, 다른 게임들을 포함해 모든 Runaway 게임에서 게임 데이터를 삭제합니다.\\n\\n  ● Flutter: Butterfly Sanctuary\\n  ● Flutter: Starlight\\n  ● Splash: Fish Sanctuary\\n  ● Furistas Cat Cafe\\n  ● Bird BnB\\n  ● Old Friends Dog Game\\n"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_CONFIRM2",
+      "String": "Runaway 게임 데이터를 영구적으로 삭제하시겠습니까?"
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_DONE",
+      "String": "모든 데이터가 성공적으로 지워졌습니다."
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_ERROR",
+      "String": "데이터 삭제 시 문제가 발생했습니다. 다시 시도하시거나, 문제가 지속될 경우 고객지원팀으로 연락 주십시오."
+    },
+    {
+      "Key": "SETTINGS_ERASE_DATA_BACK",
+      "String": "안전한 곳으로 돌아가기"
+    },
+    {
+      "Key": "DO_NOT_SELL_INFO_BUTTON",
+      "String": "내 개인정보를 판매하거나 공유하지 마세요."
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_HEADER",
+      "String": "광고의 관련성을 높이세요"
+    },
+    {
+      "Key": "IOS_ATT_DIALOG_BODY",
+      "String": "추적을 허용하여 더 관련성이 높고 이 게임을 무료로 유지하는 데 도움이 되는 광고를 받으세요."
+    },
+    {
+      "Key": "IOS_ATT_PERMISSION_DESC",
+      "String": "이를 통해 귀하가 시청하기로 선택한 광고를 개인화할 수 있으며 소규모 스튜디오를 지원하는 데 도움이 됩니다. 설정 -> 개인정보 보호를 통해 언제든지 이 기능을 끌 수 있습니다."
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_TITLE",
+      "String": "Facebook 연결"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_SUCCESSFUL_DESC",
+      "String": "내 Facebook 계정에 연결되었습니다."
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_TITLE",
+      "String": "Facebook 연결 오류"
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_FAILED_DUPLICATE_DESC",
+      "String": "해당 Facebook 계정은 다른 카페에서 이미 사용 중이므로 연결할 수 없습니다."
+    },
+    {
+      "Key": "FACEBOOK_LOGIN_PERMISSION_EXPLANATION",
+      "String": "이전에 이 앱의 로그인 권한을 거부했습니다. 이 권한은 로그인 데 필요합니다. 계속하시겠습니까?"
+    },
+    {
+      "Key": "NEW_GAME_LABEL",
+      "String": "신규 게임"
+    },
+    {
+      "Key": "LOAD_GAME_LABEL",
+      "String": "로그인"
+    },
+    {
+      "Key": "RECOVER_LABEL",
+      "String": "복구"
+    },
+    {
+      "Key": "LOGIN_BACK_LABEL",
+      "String": "<BACK_LABEL>"
+    },
+    {
+      "Key": "LOGIN_FACEBOOK",
+      "String": "FACEBOOK"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_TITLE",
+      "String": "약관이 업데이트되었어요"
+    },
+    {
+      "Key": "GDPR_PRIVACY_POLICY_DESC",
+      "String": "게임을 하려면 개인 정보 보호 정책을 읽고 이용 약관에 동의해 주세요"
+    },
+    {
+      "Key": "GDPR_SUBMIT",
+      "String": "수락"
+    },
+    {
+      "Key": "GDPR_ACCEPT",
+      "String": "개인 정보 보호 정책을 읽고 동의합니다."
+    },
+    {
+      "Key": "GDPR_AGE_DESC",
+      "String": "I am over 16 years old - this game contains ads and purchases."
+    },
+    {
+      "Key": "LOGIN_RETRIEVE_ACCOUNT",
+      "String": "계정 정보 다시 불러오기"
+    },
+    {
+      "Key": "LOGIN_HELP",
+      "String": "도움말"
+    },
+    {
+      "Key": "LOGIN_HELP_PROMPT",
+      "String": "문제가 있나요? '<LOGIN_HELP>' 버튼을 탭하세요."
+    },
+    {
+      "Key": "LOGIN_LOAD_GAME_DATA",
+      "String": "게임 데이터를 불러오는 중..."
+    },
+    {
+      "Key": "LOGIN_LOGGING_IN",
+      "String": "로그인하는 중..."
+    },
+    {
+      "Key": "LOGIN_DOWNLOADING_GAME_DATA",
+      "String": "게임 데이터 다운로드 중..."
+    },
+    {
+      "Key": "LOGIN_CHECKING_FOR_UPDATES",
+      "String": "업데이트 확인 중..."
+    },
+    {
+      "Key": "UPDATE_REQUIRED",
+      "String": "업데이트 필요"
+    },
+    {
+      "Key": "UPDATE_REQUIRED_DESCRIPTION",
+      "String": "업데이트가 있어요! 내 카페의 신나는 변화를 보시려면 지금 바로 업데이트하세요!"
+    },
+    {
+      "Key": "ERROR_DESC",
+      "String": "오류가 발생했습니다. 게임을 다시 시작하면 계속 진행할 수 있습니다. 문제가 지속될 경우 알려주세요. 감사합니다!"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_TITLE",
+      "String": "이미 사용 중인 소셜 미디어 계정"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_DESC",
+      "String": "해당 소셜 미디어 계정은 다른 게임에서 이미 사용 중입니다."
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_TITLE",
+      "String": "로그인 실패"
+    },
+    {
+      "Key": "ERROR_CREATING_NEW_USER_ACCOUNT_DESC",
+      "String": "이런! 신규 계정을 만드는데 문제가 발생했습니다. 다시 시도해 보시고, 만약 문제가 지속될 경우 고객 지원팀으로 연락 주세요."
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_TITLE",
+      "String": "점검 중"
+    },
+    {
+      "Key": "ERROR_GAME_IN_MAINTENANCE_DESC",
+      "String": "점검을 하는 동안 카페의 고양이들이 휴식을 취하고 있습니다. 몇 분 후 다시 시도해주세요."
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_TITLE",
+      "String": "점검 중"
+    },
+    {
+      "Key": "ERROR_USER_MAINTENANCE_DESC",
+      "String": "점검을 하는 동안 카페의 고양이들이 휴식을 취하고 있습니다. 몇 분 후 다시 시도해주세요."
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_TITLE",
+      "String": "점검 중"
+    },
+    {
+      "Key": "ERROR_USERGAME_MAINTENANCE_DESC",
+      "String": "점검을 하는 동안 카페의 고양이들이 휴식을 취하고 있습니다. 몇 분 후 다시 시도해주세요."
+    },
+    {
+      "Key": "ERROR_RELOAD_TITLE",
+      "String": "카페 새로 고침"
+    },
+    {
+      "Key": "ERROR_RELOAD_DESC",
+      "String": "카페가 업데이트 되었어요. 확인을 눌러서 게임을 새로 고침 하세요."
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_TITLE",
+      "String": "은행 거래 저장 중 오류"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_SAVED_DESC",
+      "String": "죄송합니다. 거래를 저장하는 도중 오류가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_TITLE",
+      "String": "서버 로그 기록 오류"
+    },
+    {
+      "Key": "ERROR_LOGGING_API_CALL_DESC",
+      "String": "서버에 해당 요청을 로그할 수 없었습니다."
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_TITLE",
+      "String": "구매 오류"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_CONFIRM_FAILED_DESC",
+      "String": "요청하신 구매를 완료할 수 없으니 다시 시도해주세요. 문제가 지속될 경우, 고객 지원팀으로 문의하세요."
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_TITLE",
+      "String": "이미 사용 중인 소셜 미디어 계정"
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_EXISTS_UNMOVABLE_DESC",
+      "String": "해당 소셜 미디어 계정은 다른 게임 저장 파일에서 이미 사용 중이므로 연결할 수 없습니다."
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_TITLE",
+      "String": "서버 연결 오류"
+    },
+    {
+      "Key": "ERROR_SERVER_CONTACT_DESC",
+      "String": "서버 연결이 불가능합니다"
+    },
+    {
+      "Key": "PURCHASE_ERROR_INVALID_RECEIPT",
+      "String": "거래 영수증을 앱스토어에서 확인할 수 없습니다. 고객 지원팀으로 문의하세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_PRODUCT_UNAVAILABLE",
+      "String": "죄송하지만, 해당 아이템은 현재 이용이 불가능합니다. 문제가 지속될 경우, 고객 지원팀으로 문의하세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASE_PENDING",
+      "String": "현재 구매가 진행 중입니다. 잠시 기다리신 후 추가 구매를 진행하세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_PURCHASING_UNAVAILABLE",
+      "String": "현재 구매가 불가능합니다. 네트워크 연결 상태를 확인해주세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_STORE_NOT_INITIALISED",
+      "String": "상점이 아직 초기화되지 않았으니 다음에 다시 시도해주세요. 문제가 지속될 경우 고객 지원팀으로 문의하세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_UNKNOWN_ERROR",
+      "String": "구매 중 오류가 발생했습니다. 문제가 지속될 경우, 고객 지원팀으로 문의하세요."
+    },
+    {
+      "Key": "PURCHASE_ERROR_TRANSPORT_ERROR",
+      "String": "앱스토어에 연결할 수 없습니다. 인터넷 연결 상태를 확인한 후 다시 시도하세요."
+    },
+    {
+      "Key": "ANDROID_NOTIFICATION_TITLE",
+      "String": "퓨리스타스 뉴스"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_001",
+      "String": "새로운 손님들이 고양이들을 품에 안으려 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_002",
+      "String": "손님들은 떠났고 새로운 고양이들이 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_003",
+      "String": "손님들이 사랑을 느끼며 카페를 떠났어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_004",
+      "String": "만족한 손님들이 즐겁게 카페를 떠났어요! 잘 했어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_005",
+      "String": "새로운 손님들이 고양이들을 안으려 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMERS_LEFT_006",
+      "String": "새로운 손님들이 내 카페에서 고양이를 안으려 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_001",
+      "String": "새 바구니를 열 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_002",
+      "String": "바구니가 도착했어요! 무엇이 들어있을까요?"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_003",
+      "String": "새로운 배달이 도착했어요! 저절로 열리진 않는답니다. ^ㅅ^"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_004",
+      "String": "야호! 배달이 도착했어요."
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_005",
+      "String": "뭘까요? 배달 바구니가 드디어 도착했어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_006",
+      "String": "좋은 소식이에요! 이제 바구니를 열 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BASKET_READY_007",
+      "String": "잠시만요. 열 수 있는 바구니가 있어요. 나만을 위한 바구니랍니다."
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_001",
+      "String": "보너스 바구니가 도착했어요. 뭐가 들어있을까요?!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_002",
+      "String": "무료 배달 바구니에요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_003",
+      "String": "보너스 배달 바구니가 카페에서 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_004",
+      "String": "보너스 바구니가! 도착했어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_005",
+      "String": "이번 보너스 배달 바구니에 뭐가 들어있을까요?"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_006",
+      "String": "새 보너스 바구니를 열 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_READY_007",
+      "String": "보너스 바구니가 도착했어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_001",
+      "String": "새로운 손님들이 고양이들을 품에 안으려 기다리고 있고, 새로운 선물 바구니도 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_002",
+      "String": "손님들이 모두 행복하게 떠나서 열어볼 바구니가 생겼어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_003",
+      "String": "새로운 손님들이 고양이들을 안으려 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_004",
+      "String": "새로운 손님들과 바구니가 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CUSTOMER_AND_BASKET_READY_005",
+      "String": "새로운 손님들과 바구니가 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUSBASKET_AND_BASKET_READY_001",
+      "String": "바구니와 보너스 바구니를 모두 열 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_001",
+      "String": "오늘은 어떤 재미있는 이야기들이 카페에서 펼쳐질까요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_002",
+      "String": "오늘은 어떤 새로운 손님들이 고양이 카페를 방문할까요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_003",
+      "String": "오늘 새로운 고양이 친구들을 사귈 준비되셨나요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_004",
+      "String": "새로운 고양이 친구들이 입양을 기다리고 있어요! ^ㅅ^"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_005",
+      "String": "오늘은 어떤 새로운 친구들을 만날까요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_006",
+      "String": "세계 각국에서 온 새로운 손님들이 고양이 카페를 보려고 기다리고 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_007",
+      "String": "오늘은 어떤 새로운 고양이를 획득하게 될까요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_008",
+      "String": "새로운 손님들을 만날 준비되셨나요?"
+    },
+    {
+      "Key": "NOTIFICATION_24HOURS_009",
+      "String": "새로운 손님들을 만날 준비되셨나요?"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_001",
+      "String": "<NOTIFICATION_24HOURS_001>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_002",
+      "String": "<NOTIFICATION_24HOURS_002>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_003",
+      "String": "<NOTIFICATION_24HOURS_003>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_004",
+      "String": "<NOTIFICATION_24HOURS_004>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_005",
+      "String": "<NOTIFICATION_24HOURS_005>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_006",
+      "String": "<NOTIFICATION_24HOURS_006>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_007",
+      "String": "<NOTIFICATION_24HOURS_007>"
+    },
+    {
+      "Key": "NOTIFICATION_7DAYS_008",
+      "String": "<NOTIFICATION_24HOURS_008>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_001",
+      "String": "많이 기다리셨습니다. 끝내주는 ‘{1}’(을)를 위한 ‘{0}’ 이벤트가 시작됐어요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_002",
+      "String": "안녕하세요, 친구들. 달콤한 ‘{1}’(을)를 얻고 싶나요? ‘{0}’ 이벤트를 지금 시작합니다!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_003",
+      "String": "‘{0}’ 이벤트가 시작됐어요. 내 고양이가 꾹꾹이를 하려면 이 새로운 ‘{1}’(이)가 필요해요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_004",
+      "String": "‘{0}’ 이벤트에 참여해 끝내주는 ‘{1}’(을)를 얻으세요. 정말 신나요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_STARTING_005",
+      "String": "이제 파티를 시작해볼까요. 귀여운 ‘{1}’(을)를 위한 ‘{0}’ 이벤트를 시작합니다!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_001",
+      "String": "코인 두 배 보너스! 지금 당장 참여하세요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_002",
+      "String": "그거 아세요?? 지금 당장 코인을 두 배 얻을 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_003",
+      "String": "코인 두 배 보너스가 진행 중이에요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_TOKEN_EVENT_STARTING_004",
+      "String": "코인 두 배 보너스가 진행 중이에요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_001",
+      "String": "여러분, 지금 당장 바구니에서 생선을 두 배 얻을 수 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_002",
+      "String": "오늘은 생선 두 배 보너스를 받기 좋은 날이네요!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_003",
+      "String": "생선 두 배 보너스! 생선 두 배 보너스! 생선 두 배 보너스!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_FISH_EVENT_STARTING_004",
+      "String": "생선 두 배 보너스! 생선 두 배 보너스! 생선 두 배 보너스!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_001",
+      "String": "이게 뭐죠? 생선 두 배, 코인 두 배 보너스라고요? 와우!"
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_002",
+      "String": "코인 두 배, 생선 두 배 보너스가 시작됐어요. 너무 행복해요."
+    },
+    {
+      "Key": "NOTIFICATION_BONUS_CURRENCY_EVENT_STARTING_003",
+      "String": "인생 최고의 행복이 뭘까요? 맞아요. 생선 두 배, 코인 두 배를 바로 받는 거예요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_001",
+      "String": "이게 뭐죠? 새로운 고양이라고요?! {1}(을)를 받기 위한 ‘{0}’ 이벤트가 시작됐어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_002",
+      "String": "{1}(은)는 너무나도 귀여워요! ‘{0}’ 이벤트가 ...지금 시작해요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_003",
+      "String": "‘{0}’ 이벤트가 진행 중이에요. 플레이하고 내 카페에 새로운 친구가 될 {1}(을)를 얻으세요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_STARTING_004",
+      "String": "‘{0}’ 이벤트가 진행 중이에요. 플레이하고 내 카페에 새로운 친구가 될 {1}(을)를 얻으세요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_001",
+      "String": "(・о・) ‘{0}’ 이벤트가 거의 끝나가요! 끝나기 전에 ‘{1}’를 모으세요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_002",
+      "String": "(⊙.☉) 이게 뭐죠?? ‘{0}’ 이벤트가 거의 끝난 건가요? 멋진 ‘{1}’(을)를 내 카페에 둘 수 있는 마지막 기회입니다."
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_003",
+      "String": "‘{1}’(을)를 가진다는 게 너무 멋지지 않나요? ‘{0}’ 이벤트는 곧 끝난답니다!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_004",
+      "String": "‘{0}’ 이벤트에서 ‘{1}’(을)를 얻을 수 있는 시간이 얼마 안 남았다는 걸 알려드려요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ENDING_005",
+      "String": "‘{1}’(은)는 카페에 너무 잘 어울릴 거예요. 하지만 ‘{0}’ 이벤트에서 모을 수 있는 시간이 얼마 남지 않았어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_001",
+      "String": "(✪‿✪)ノ ‘{0}’ 이벤트가 곧 종료됩니다! 사랑스러운 ‘{1}’(을)를 입양할 기회를 놓치지 마세요"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_002",
+      "String": "‘{1}’(은)는 진짜 끝내주는 고양이예요. ‘{0}’ 이벤트에서 입양할 수 있는 시간이 얼마 남지 않았답니다!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_003",
+      "String": "‘{0}’ 이벤트에서 ‘{1}’(을)를 내 카페로 데려올 수 있는 시간이 얼마 남지 않았어요!"
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_004",
+      "String": "‘{1}’(은)는 최고의 고양이예요. ‘{0}’ 이벤트에서 입양할 수 있는 시간이 얼마 남지 않았는데..."
+    },
+    {
+      "Key": "NOTIFICATION_CATEVENT_ENDING_005",
+      "String": "‘{1}’(은)는 입양할 수 있는 최신 고양이예요. 그런데 ‘{0}’ 이벤트가 거의 끝나가네요!"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_001",
+      "String": "<CAT_STATION_PLURAL>이 모두 비었습니다! 고양이들이 더 놀고 싶어하는 얼굴인데요?"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_002",
+      "String": "이런, 모든 고양이들이 <CAT_STATION_PLURAL> 사용을 마쳤습니다. 다시 대기열에 넣어주면 좋지 않을까요?"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_003",
+      "String": "시간이 되시면 텅 빈 <CAT_STATION_PLURAL>에 고양이를 더 보내주세요!"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_004",
+      "String": "흐음... <CAT_STATION_PLURAL>에 고양이가 더 들어갈 공간이 있어 보이네요..."
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_005",
+      "String": "와, 벌써 시간이 다 됐나요? 어서 <CAT_STATION_PLURAL>에 빈 자리가 있는지 확인해봐야겠어요!"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_006",
+      "String": "이런, 텅 빈 <CAT_STATION>이(가) 참 지루해보이네요! 여기에서 놀 고양이가 있을까요?"
+    },
+    {
+      "Key": "NOTIFICATION_STATIONS_EMPTY_007",
+      "String": "저기요, 똑똑하고 매력적인 분! <CAT_STATION_PLURAL> 대기열에 고양이를 넣어주면 그 매력이 더욱 증가하지 않을까요?"
+    },
+    {
+      "Key": "EVENT",
+      "String": "이벤트"
+    },
+    {
+      "Key": "EVENT_CURRENCY_DESCRIPTION",
+      "String": "이벤트용 화폐"
+    },
+    {
+      "Key": "EVENT_REWARDS",
+      "String": "보상"
+    },
+    {
+      "Key": "EVENT_TIME_LEFT",
+      "String": "남은 시간:"
+    },
+    {
+      "Key": "EVENT_TOTAL",
+      "String": "전체"
+    },
+    {
+      "Key": "EVENT_NEXTGOAL",
+      "String": "다음"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_TITLE",
+      "String": "획득한 보상"
+    },
+    {
+      "Key": "EVENT_DIALOG_REWARD_DESC",
+      "String": "새로운 가구가 인벤토리에 추가되었습니다."
+    },
+    {
+      "Key": "EVENT_DIALOG_END_TITLE",
+      "String": "이벤트 종료"
+    },
+    {
+      "Key": "EVENT_DIALOG_END_DESC",
+      "String": "이벤트가 종료되었습니다. 남은 보상이 인벤토리에 추가되었습니다"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_TITLE",
+      "String": "이벤트 완료"
+    },
+    {
+      "Key": "EVENT_DIALOG_WIN_DESC",
+      "String": "이벤트를 완료하셨네요, 축하드려요! 플레이를 계속하고 보상을 계속 받으세요."
+    },
+    {
+      "Key": "TODO_TUTORIAL",
+      "String": "우선 튜토리얼 태스크를 완료하세요."
+    },
+    {
+      "Key": "TOKEN_DESCRIPTION",
+      "String": "내 공간을 꾸미는데 사용"
+    },
+    {
+      "Key": "HC_DESCRIPTION",
+      "String": "바구니를 빨리 받는데 사용"
+    },
+    {
+      "Key": "NO_CATS_AT_LEVEL_FEEDBACK",
+      "String": "{0} 레벨 이상 고양이들은 현재 모두 바쁩니다."
+    },
+    {
+      "Key": "NO_CATS_FEEDBACK",
+      "String": "이용 가능한 고양이가 없습니다!"
+    },
+    {
+      "Key": "note about buying HC",
+      "String": "상점에서 더 구매할 수 있습니다."
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_TITLE",
+      "String": "연결 실패"
+    },
+    {
+      "Key": "ERROR_NO_CONNECTION_DESC",
+      "String": "서버에 연결할 수 없습니다. 연결 확인 후 다시 시도하세요"
+    },
+    {
+      "Key": "VIDEO_INTERRUPTED_DESCRIPTION",
+      "String": "동영상 재생에 실패했습니다. 다른 동영상을 보실 수 있습니다."
+    },
+    {
+      "Key": "VIDEO_ERROR_DESCRIPTION",
+      "String": "동영상 재생 중 에러가 발생했습니다. 다른 동영상을 보실 수 있습니다. 에러가 지속될 경우, 고객 지원팀으로 연락하세요."
+    },
+    {
+      "Key": "VIDEO_BUTTON_REWARD",
+      "String": "{0}x 보상"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_TITLE",
+      "String": "재미있으셨나요?"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_TITLE",
+      "String": "리뷰"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_TITLE",
+      "String": "피드백"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY",
+      "String": "퓨리타스를 플레이해주셔서 감사합니다! 재미있으셨나요?"
+    },
+    {
+      "Key": "RATE_PROMPT_LIKE_BODY",
+      "String": "감사합니다! 리뷰를 남기시겠어요?"
+    },
+    {
+      "Key": "RATE_PROMPT_DISLIKE_BODY",
+      "String": "이런, 어쩌죠! 저희가 어떤 부분을 향상시킬 수 있을지 피드백을 보내주시겠어요?"
+    },
+    {
+      "Key": "SNAPSHOT_TITLE",
+      "String": "순간 캡처"
+    },
+    {
+      "Key": "SNAPSHOT_SUBTITLE",
+      "String": "공유..."
+    },
+    {
+      "Key": "DEVICE",
+      "String": "장비"
+    },
+    {
+      "Key": "SNAPSHOT_SOFTGUIDENCE",
+      "String": "박스를 드래그하고 탭해서 스냅샷을 찍으세요."
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_TITLE",
+      "String": "스냅샷이 성공적으로 공유되었습니다!"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_SUCCESS_DESCRIPTION",
+      "String": "스냅샷이 소셜 미디어에 공유되었습니다."
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_TITLE",
+      "String": "스냅샷 공유 실패!"
+    },
+    {
+      "Key": "SNAPSHOT_SHARE_FAILURE_DESCRIPTION",
+      "String": "오류가 발생해 스냅샷 공유에 실패했습니다."
+    },
+    {
+      "Key": "TAP_DRAG_PROMOT",
+      "String": "탭하기/드래그"
+    },
+    {
+      "Key": "SHELF_TWITTER_DESCRIPTION",
+      "String": "Twitter에서 팔로우하고 {0} <HC>(을)를 받으세요."
+    },
+    {
+      "Key": "SHELF_FACEBOOK_DESCRIPTION",
+      "String": "Facebook에서 좋아요 누르고 {0} <HC>(을)를 받으세요."
+    },
+    {
+      "Key": "SHELF_INSTAGRAM_DESCRIPTION",
+      "String": "Instagram 팔로우하고 {0} <HC>(을)를 받으세요."
+    },
+    {
+      "Key": "SHELF_EMAIL_DESCRIPTION",
+      "String": "뉴스레터를 신청하고 {0} <HC>(을)를 받으세요."
+    },
+    {
+      "Key": "INPUT_EMAIL_DESCRIPTION",
+      "String": "Runaway Play 뉴스레터를 신청하려면 이메일을 입력하세요."
+    },
+    {
+      "Key": "LIKE",
+      "String": "좋아요"
+    },
+    {
+      "Key": "FOLLOW",
+      "String": "팔로우"
+    },
+    {
+      "Key": "SIGN_UP",
+      "String": "신청"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_TITLE",
+      "String": "구매 불가"
+    },
+    {
+      "Key": "SHOP_CANNOT_PURCHASE_DESC",
+      "String": "이미 보유하고 있는 중요한 아이템이 포함되어 있기 때문에 해당 팩을 구매할 수 없습니다."
+    },
+    {
+      "Key": "MAX",
+      "String": "최대"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED",
+      "String": "업데이트 권유"
+    },
+    {
+      "Key": "UPDATE_RECOMMENDED_DESCRIPTION",
+      "String": "신규 버전이 있어요! 지금 업데이트하고 내 카페의 신나는 업데이트를 확인하시겠어요?"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_TITLE",
+      "String": "{0}(이)가 부족합니다"
+    },
+    {
+      "Key": "NOT_ENOUGH_CURRENCY_DESCRIPTION",
+      "String": "이런! {0}(이)가 더 필요합니다. 상점에서 더 구매하시겠습니까?"
+    },
+    {
+      "Key": "FURNITURE_DRAG_REMOVE_HINT",
+      "String": "가구를 아래로 드래그해서 삭제하세요"
+    },
+    {
+      "Key": "TOP_UP_ITEMS",
+      "String": "아이템을 받으세요"
+    },
+    {
+      "Key": "CAT_AS_EVENT_REWARD",
+      "String": "{0}(이)가 내 카페로 분양되기를 기다리고 있어요!"
+    },
+    {
+      "Key": "CAT_CLAIMED_TITLE",
+      "String": "새 고양이를 입양했어요"
+    },
+    {
+      "Key": "CAT_CLAIMED_DESCRIPTION",
+      "String": "새로운 팀 멤버로 {0}(이)가 내 카페에 들어왔어요. 너무 귀여워요!"
+    },
+    {
+      "Key": "NEWS_PAGE_TITLE",
+      "String": "뉴스"
+    },
+    {
+      "Key": "PERMISSION_DENIED_TITLE",
+      "String": "승인 거부"
+    },
+    {
+      "Key": "PERMISSION_DENIED_BODY",
+      "String": "내 고양이 사진을 찍으려면 저장 승인이 필요합니다."
+    },
+    {
+      "Key": "PERMISSION_DENIED_PERMANENTLY_BODY",
+      "String": "내 고양이 사진을 찍으려면, 앱 승인 설정에서 퓨리스타스가 저장 장치 사용을 승인해야 합니다."
+    },
+    {
+      "Key": "ERROR_DLC_TITLE",
+      "String": "업데이트를 다시 시도하세요"
+    },
+    {
+      "Key": "ERROR_DLC_DESC",
+      "String": "이런! 업데이트를 불러오는 도중 오류가 발생했습니다. 버튼을 탭해서 다시 시도하세요"
+    },
+    {
+      "Key": "NEED_HC",
+      "String": "<HC_PLURAL>이 부족합니다"
+    },
+    {
+      "Key": "LIMITED_OFFER_HEADING",
+      "String": "한정 판매"
+    },
+    {
+      "Key": "LIMITED_TIME_HEADING",
+      "String": "한정 판매"
+    },
+    {
+      "Key": "FULL_CAFE_PHOTO",
+      "String": "카페 전체 사진"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_TITLE",
+      "String": "확인"
+    },
+    {
+      "Key": "DIALOGUE_RECYCLE_FURNITURE_DESCRIPTION",
+      "String": "‘{0}’(을)를 토큰 {1}개로 바꾸시겠습니까?"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_TITLE",
+      "String": "확인"
+    },
+    {
+      "Key": "DIALOG_REMOVE_ALL_FURNITURE_DESCRIPTION",
+      "String": "내 카페에서 가구를 모두 제거하시겠습니까?"
+    },
+    {
+      "Key": "FURISTAS_CLUB_MEMBERSHIP",
+      "String": "퓨리스타스 클럽 멤버쉽"
+    },
+    {
+      "Key": "EXCLUSIVE",
+      "String": "멤버 전용!"
+    },
+    {
+      "Key": "FCM_PERK1",
+      "String": "일일 보상"
+    },
+    {
+      "Key": "FCM_PERK2",
+      "String": "특별한 멤버 전용 사항"
+    },
+    {
+      "Key": "FCM_PERK3",
+      "String": "추가 바구니 저장"
+    },
+    {
+      "Key": "FCM_PERK4",
+      "String": "상점 할인"
+    },
+    {
+      "Key": "TAP_FOR_DETAILS",
+      "String": "탭 해서 자세한 사항 보기"
+    },
+    {
+      "Key": "MEMBER_NO_DESCRIPTION",
+      "String": "퓨리스타스 클럽 멤버쉽을 구매하면, 많은 놀라운 혜택들이 있어요!"
+    },
+    {
+      "Key": "INSTANT_CURRENCY_LABEL",
+      "String": "토큰 즉시 제공"
+    },
+    {
+      "Key": "DAILY_BONUS_LABEL",
+      "String": "일일 보너스"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT_LABEL",
+      "String": "전용 고양이"
+    },
+    {
+      "Key": "PERKS_LABEL",
+      "String": "다른 멋진 혜택들"
+    },
+    {
+      "Key": "FCM_OTHER_PERK1",
+      "String": "멤버 전용 가구 이용 가능"
+    },
+    {
+      "Key": "FCM_OTHER_PERK2",
+      "String": "바구니 6개까지 저장"
+    },
+    {
+      "Key": "FCM_OTHER_PERK3",
+      "String": "보너스 바구니 3개까지 저장"
+    },
+    {
+      "Key": "FCM_OTHER_PERK4",
+      "String": "상점 할인"
+    },
+    {
+      "Key": "DAY_MEMBERSHIP",
+      "String": "{0}일 멤버쉽:"
+    },
+    {
+      "Key": "FCM_CURRENCY_READY",
+      "String": "일일 보상을 받을 수 있습니다"
+    },
+    {
+      "Key": "FCM_CURRENCY_UNAVAILABLE",
+      "String": "일일 보상을 받았습니다"
+    },
+    {
+      "Key": "DAYS_LEFT",
+      "String": "일 남음"
+    },
+    {
+      "Key": "DAY_LEFT",
+      "String": "일 남음"
+    },
+    {
+      "Key": "DAYS_LEFT_FORMATTABLE",
+      "String": "남은 날짜: {0}"
+    },
+    {
+      "Key": "CLAIM",
+      "String": "받기"
+    },
+    {
+      "Key": "MEMBER_YES_TITLE",
+      "String": "퓨리스타스 클럽 멤버가 됐어요!"
+    },
+    {
+      "Key": "FCM_CURRENT_MEMBER_DESCRIPTION",
+      "String": "퓨리스타스 클럽에 가입해주셔서 감사합니다! 현재 가능한 혜택들은 다음과 같습니다:"
+    },
+    {
+      "Key": "FCM_ABBREVIATION",
+      "String": "!!!"
+    },
+    {
+      "Key": "SPECIAL_DEAL",
+      "String": "특별 제안"
+    },
+    {
+      "Key": "FCM_RENEW_TITLE",
+      "String": "<FURISTAS_CLUB_MEMBERSHIP>"
+    },
+    {
+      "Key": "DISCOUNT_AMOUNT",
+      "String": "오늘 한정 세일"
+    },
+    {
+      "Key": "FCM_RENEW_DESCRIPTION",
+      "String": "퓨리스타스 클럽에 가입해주셔서 감사합니다! 자정까지 특별 할인 가격으로 30일을 추가할 수 있습니다."
+    },
+    {
+      "Key": "FCM_DAY_MEMBERSHIP_RENEW",
+      "String": "{0}일 멤버쉽 갱신:"
+    },
+    {
+      "Key": "BONUS_LABEL",
+      "String": "보너스!"
+    },
+    {
+      "Key": "INCENTIVISED_SHARE_FEEDBACK_DESCRIPTION",
+      "String": "스냅샷이 소셜 미디어에 공유되어 {0} <FISH_PLURAL>를 획득했습니다!"
+    },
+    {
+      "Key": "NO_CATS_WITH_TRAIT_FEEDBACK",
+      "String": "{0} 고양이들은 현재 모두 바쁩니다."
+    },
+    {
+      "Key": "NO_SPECIFIC_CAT_FEEDBACK",
+      "String": "{0} 고양이는 현재 바쁩니다."
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_BASKET",
+      "String": "<DELIVERY_BASKET_GREAT> 2시간"
+    },
+    {
+      "Key": "DELIVERY_VIDEO_BONUS_EXPLANATION",
+      "String": "지금 당장 바구니를 받을까요?"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_TITLE",
+      "String": "이벤트 부스터"
+    },
+    {
+      "Key": "EVENT_PACK_SHOP_DESCRIPTION",
+      "String": "이 팩을 사용하면, 남은 이벤트에서 추가 점수를 얻을 수 있어요!"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_AVAILABLE",
+      "String": "이벤트 부스트 가능"
+    },
+    {
+      "Key": "EVENT_PACK_AVAILABLE_SHORT_DESCRIPTION",
+      "String": "{0}% 보너스!"
+    },
+    {
+      "Key": "EVENT_PACK_STATUS_ACTIVE",
+      "String": "이벤트 부스트 실행"
+    },
+    {
+      "Key": "EVENT_PACK_SHORT_DESCRIPTION",
+      "String": "{0}% 더 많은 {1}"
+    },
+    {
+      "Key": "SHELF_GAME_INCENTIVE",
+      "String": "{1} <HC>(을)를 받으려면 {0}(을)를 확인하세요"
+    },
+    {
+      "Key": "RECOVER_NO_ACCOUNTS_FOUND",
+      "String": "해당 장치에서는 계정을 찾을 수 없습니다"
+    },
+    {
+      "Key": "SNAPSHOT_SIZE",
+      "String": "크기"
+    },
+    {
+      "Key": "OFFLINE_ERROR_TITLE",
+      "String": "오프라인 중 오류"
+    },
+    {
+      "Key": "OFFLINE_ERROR_DESC",
+      "String": "오프라인 모드 오류가 발생했습니다. 게임을 다시 시작하면 계속 진행할 수 있습니다. 문제가 지속될 경우 알려주세요. 감사합니다!"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_TITLE",
+      "String": "로컬 데이터 불러오기 오류"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NO_SAVE_DESCRIPTION",
+      "String": "귀하의 로컬 데이터 불러오기 중 오류가 발생했습니다. 온라인에서 게임을 다시 새로 고침 하세요."
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_TITLE",
+      "String": "새로운 데이터 발견"
+    },
+    {
+      "Key": "ERROR_NEWER_SAVE_DESCRIPTION",
+      "String": "저장된 로컬 데이터가 가장 최근의 온라인 저장 데이터와 일치하지 않습니다. 게임을 다시 시작해 새로운 데이터를 사용합니다."
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_TITLE",
+      "String": "오프라인 결제"
+    },
+    {
+      "Key": "ERROR_PENDING_TRANSACTION_DESCRIPTION",
+      "String": "귀하의 기기가 결제 도중 오프라인으로 전환되었지만, 온라인에 접속하시면 내 구매 내역을 확인할 수 있습니다."
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_TITLE",
+      "String": "<OFFLINE_ERROR_TITLE>"
+    },
+    {
+      "Key": "ERROR_OFFLINE_NEW_GAME_DESCRIPTION",
+      "String": "온라인에서 신규 게임을 해보세요. 그러면 퓨리스타스를 오프라인으로 언제든지 할 수 있답니다!"
+    },
+    {
+      "Key": "REWARD_VIP",
+      "String": "새 VIP"
+    },
+    {
+      "Key": "REWARD_STATION",
+      "String": "새 <CAT_STATION>"
+    },
+    {
+      "Key": "COLLECTED",
+      "String": "모은!"
+    },
+    {
+      "Key": "CAT_LOUNGE",
+      "String": "고양이 라운지"
+    },
+    {
+      "Key": "CATHEART",
+      "String": "고양이 행복"
+    },
+    {
+      "Key": "CATHEART_PLURAL",
+      "String": "고양이 행복"
+    },
+    {
+      "Key": "BOOSTER",
+      "String": "부스트"
+    },
+    {
+      "Key": "BOOSTER_PLURAL",
+      "String": "부스트"
+    },
+    {
+      "Key": "CAT_STATION",
+      "String": "활동"
+    },
+    {
+      "Key": "CAT_STATION_PLURAL",
+      "String": "활동"
+    },
+    {
+      "Key": "STATION_INVENTORY_MENU_TITLE",
+      "String": "<CAT_STATION_PLURAL>"
+    },
+    {
+      "Key": "CAT_STATION_ITEM_DESC",
+      "String": "<CAT_STATION> 업그레이드 아이템"
+    },
+    {
+      "Key": "CAT_STATION_UPGRADE_ITEM_DESCRIPTION",
+      "String": "<CAT_STATION> 업그레이드 아이템"
+    },
+    {
+      "Key": "CAT_STATION_INFO_PANEL_TITLE",
+      "String": "<CAT_STATION> 업그레이드"
+    },
+    {
+      "Key": "CAT_STATION_INFO_REQUIREMENT_TITLE",
+      "String": "필요한 재료:"
+    },
+    {
+      "Key": "CAT_STATION_INFO_NEXT_REWARD_TITLE",
+      "String": "다음 보상:"
+    },
+    {
+      "Key": "CAT_STATION_LEVEL_UNLOCKED",
+      "String": "잠금 해제한 레벨:"
+    },
+    {
+      "Key": "STATIONREWARD_QUEUEINCREASE",
+      "String": "{0}로 대기열 상승"
+    },
+    {
+      "Key": "STATIONREWARD_BOOSTUPGRADE",
+      "String": "{0} 부스트 업그레이드"
+    },
+    {
+      "Key": "STATION_001_NAME",
+      "String": "미식 만찬"
+    },
+    {
+      "Key": "STATION_002_NAME",
+      "String": "쥐 잡기"
+    },
+    {
+      "Key": "STATION_003_NAME",
+      "String": "고양이 노래방"
+    },
+    {
+      "Key": "STATION_004_NAME",
+      "String": "털실 바구니"
+    },
+    {
+      "Key": "STATION_005_NAME",
+      "String": "요가 스튜디오"
+    },
+    {
+      "Key": "STATION_006_NAME",
+      "String": "발바닥 핥기 별장"
+    },
+    {
+      "Key": "STATION_001_ONELINER",
+      "String": "고양이에 어울리는 만찬"
+    },
+    {
+      "Key": "STATION_002_ONELINER",
+      "String": "가장 빠른 고양이가 승리하기를"
+    },
+    {
+      "Key": "STATION_003_ONELINER",
+      "String": "스타가 되세요, 잠재력을 깨달으세요"
+    },
+    {
+      "Key": "STATION_004_ONELINER",
+      "String": "창의성을 발휘하세요"
+    },
+    {
+      "Key": "STATION_005_ONELINER",
+      "String": "잠시 쉬어가기 위한 발바닥..."
+    },
+    {
+      "Key": "STATION_006_ONELINER",
+      "String": "멀리 바라보며 생각에 잠기세요"
+    },
+    {
+      "Key": "STATION_001_DESCRIPTION",
+      "String": "다음에 등장할 동쪽 고양이 코너 구역을 아름답게 꾸며보세요. 미식 만찬, 침이 고이는 젤리 고기, 신선한 수돗물로 그 어떤 고양이도 기꺼이 참석할 성대한 만찬을 준비해주세요."
+    },
+    {
+      "Key": "STATION_002_DESCRIPTION",
+      "String": "차세대 쥐 시뮬레이션 기술(RST 4)인 쥐 잡기는 전례없이 몰입갑 높은 경험을 선사합니다. 가장 하드코어한 고양이만이 쥐를 잡을 수 있습니다. 과연 당신도 할 수 있을까요?"
+    },
+    {
+      "Key": "STATION_003_DESCRIPTION",
+      "String": "고양이 노래방에서 모두가 좋아하는 히트곡을 부르고 신나게 춤을 추세요! 번쩍이는 조명과 아름답고 혼란한 영상으로 파티를 시작하세요. 나의 재능을 마음껏 뽐내세요!"
+    },
+    {
+      "Key": "STATION_004_DESCRIPTION",
+      "String": "엄마 품을 찾듯 안으로 들어가거나, 꼬리로 탁탁 치거나, 털실 바구니만 있으면 차세대 DIY 프로젝트도 걱정 없습니다. 고양이에서부터 바느질 장인에 이르기까지, 이 고급 털실로 꿈꿔오던 모든 것들을 이루어보세요."
+    },
+    {
+      "Key": "STATION_005_DESCRIPTION",
+      "String": "고양이의 웰빙은 소중합니다. 고양이 웰빙을 위한 고양이 코너 요가 스튜디오에서 바쁜 하루를 보낸 뒤 잠시 자신의 몸과 마음을 정리하고, 바쁜 9개의 삶 사이에서 짧은 쉬는 시간을 누리세요."
+    },
+    {
+      "Key": "STATION_006_DESCRIPTION",
+      "String": "유서 깊은 건물인 발바닥 핥기 별장에서는 오랜 세월 많은 철학자들이 시간을 보내왔습니다. 지붕 전망대에 앉아 먼 곳을 바라보며 세상에 일어나는 일을 관망하고, 삶의 크나큰 비밀에 대해 고민해왔습니다."
+    },
+    {
+      "Key": "QUEUE_SIZE",
+      "String": "대기열 규모"
+    },
+    {
+      "Key": "QUEUE_TITLE",
+      "String": "대기열"
+    },
+    {
+      "Key": "FULL",
+      "String": "꽉 참"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_TITLE",
+      "String": "수용량"
+    },
+    {
+      "Key": "STATIONINFO_CAPACITY_TOOLTIP_DESCRIPTION",
+      "String": "이 <CAT_STATION>에 한 번에 지정할 수 있는 고양이 수입니다.\\n\\n첫 고양이 이후 고양이들은 대기열에 줄을 서며, 이전 고양이가 사용을 마치면 자동으로 <CAT_STATION>에 입장합니다."
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_TITLE",
+      "String": "레벨"
+    },
+    {
+      "Key": "STATIONINFO_LEVEL_TOOLTIP_DESCRIPTION",
+      "String": "스테이션 레벨입니다. 재료와 <CATHEART_PLURAL> 를 사용하여 스테이션을 업그레이드하면 수용량이 증가하거나 카페에서 도움을 받을 수 있는 <BOOSTER_PLURAL>가 증가합니다."
+    },
+    {
+      "Key": "STATIONINFO_ITEM_TOOLTIP_DESCRIPTION",
+      "String": "<CAT_STATION_PLURAL>의 레벨을 높이고 <BOOSTER_PLURAL>를 구매하는 데 사용합니다. 라운지에 있는 행운의 고양이에서 <CATHEART_PLURAL>를 소진하고 아이템을 획득하세요."
+    },
+    {
+      "Key": "STATIONINFO_CATHEART_TOOLTIP_DESCRIPTION",
+      "String": "라운지의 <CAT_STATION_PLURAL>에 고양이를 지정하여 고양이 하트를 획득하세요."
+    },
+    {
+      "Key": "STATIONINFO_UPGRADE_DENIAL_PREV_STATIONS",
+      "String": "이전 <CAT_STATION> 레벨이 2 이상이어야 합니다."
+    },
+    {
+      "Key": "BOOST_001_NAME",
+      "String": "추가 하트"
+    },
+    {
+      "Key": "BOOST_002_NAME",
+      "String": "추가 아이템"
+    },
+    {
+      "Key": "BOOST_003_NAME",
+      "String": "추가 생선"
+    },
+    {
+      "Key": "BOOST_004_NAME",
+      "String": "빠른 바구니"
+    },
+    {
+      "Key": "BOOST_001_DESC",
+      "String": "손님으로부터 더 많은 하트 획득"
+    },
+    {
+      "Key": "BOOST_002_DESC",
+      "String": "바구니에서 보너스 아이템 획득"
+    },
+    {
+      "Key": "BOOST_003_DESC",
+      "String": "생선 획득량 증가"
+    },
+    {
+      "Key": "BOOST_004_DESC",
+      "String": "바구니 배달 시간 감소"
+    },
+    {
+      "Key": "BONUS_PERCENTAGE",
+      "String": "+{0}% 보너스"
+    },
+    {
+      "Key": "ACTIVE",
+      "String": "활성화"
+    },
+    {
+      "Key": "LUCKY_CAT_MENU_BUTTON_HINT",
+      "String": "내 배를 눌러주세요"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_TITLE",
+      "String": "고양이 라운지에 오신 것을 환영합니다."
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION1",
+      "String": "고양이들이 들러 특별한 활동을 하며 느긋한 시간을 보내는 곳입니다!"
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION2",
+      "String": "시간이 지나면 카페에 도움이 되는 더 많은 활동, 특별 가구, 부스트가 잠금 해제됩니다."
+    },
+    {
+      "Key": "CATLOUNGE_FIRST_TIME_DESCRIPTION3",
+      "String": "화면 아래쪽의 지시에 따라 방법을 알아보세요."
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_TITLE",
+      "String": "요약"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC",
+      "String": "활동을 통해 <CATHEART_PLURAL>를 획득한 뒤 행운의 고양이에서 사용하거나 카페와 라운지에서 아이템을 구매하세요!"
+    },
+    {
+      "Key": "CATLOUNGE_TUTORIAL_FINISHED_DESC2",
+      "String": "이걸로 고양이 왕국을 만들기 위한 고양이 라운지의 기본적인 내용을 배웠습니다!"
+    },
+    {
+      "Key": "BOOST_INTRO_TITLE",
+      "String": "카페 부스트 잠금 해제"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION1",
+      "String": "업그레이드 아이템으로 카페에서 쓸 임시 부스트를 구매하세요!"
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION2",
+      "String": "더 많은 하트, 생선, 아이템을 획득하여 진행 상황을 부스트하세요."
+    },
+    {
+      "Key": "BOOST_INTRO_DESCRIPTION3",
+      "String": "이 부스트로 고양이 스테이션을 업그레이드할 수 있습니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT1",
+      "String": "<CAT_PLURAL>를 <CAT_STATION_PLURAL>에 지정하여"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT2",
+      "String": "<CATHEART_PLURAL>를 획득하고 행운의 고양이한테서 더 많은 업그레이드 아이템을 받으세요."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_CATHEARTS_POINT3",
+      "String": "높은 레벨의 고양이로부터 더 많은 <CATHEART_PLURAL>를 획득하세요."
+    },
+    {
+      "Key": "OFFERS",
+      "String": "제안"
+    },
+    {
+      "Key": "SURVEY_OFFER",
+      "String": "<HC> 설문 조사"
+    },
+    {
+      "Key": "SURVEY_OFFER_DESCRIPTION",
+      "String": "외부 연구 그룹의 설문조사에 참여하고 키티캐쉬를 획득하세요!"
+    },
+    {
+      "Key": "SEE_SURVEYS",
+      "String": "설문 조사 보기"
+    },
+    {
+      "Key": "EARNED_CURRENCY_TITLE",
+      "String": "<HC> 획득"
+    },
+    {
+      "Key": "EARNED_CURRENCY_DESC",
+      "String": "{0} <HC>를 받았습니다!"
+    },
+    {
+      "Key": "LOUNGE_REWARD_TITLE",
+      "String": "럭키캣 보너스!"
+    },
+    {
+      "Key": "NEW_GAME_OFFLINE_LABEL",
+      "String": "온라인에서 신규 게임을 해보세요"
+    },
+    {
+      "Key": "VIP_INVENTORY_MENU_TITLE",
+      "String": "VIP 인벤토리"
+    },
+    {
+      "Key": "INTERSTITIAL_INTRO_DESC",
+      "String": "스폰서들이 전하는 소식..."
+    },
+    {
+      "Key": "RETAILDEMO_INTRO",
+      "String": "퓨리스타스 고양이 카페의 이 버전은 오로지 데모 목적을 위해 특별히 제작되었습니다"
+    },
+    {
+      "Key": "OFFERWALL",
+      "String": "<HC> 혜택"
+    },
+    {
+      "Key": "OFFERWALL_DESCRIPTION",
+      "String": "혜택에 참여하고 키티캐쉬를 획득하세요!"
+    },
+    {
+      "Key": "SEE_OFFERWALL",
+      "String": "혜택 보기"
+    },
+    {
+      "Key": "PERSONALITY_TAG",
+      "String": "‘{0}’ 태그"
+    },
+    {
+      "Key": "RARITY_GEM",
+      "String": "{0} 보석"
+    },
+    {
+      "Key": "PERSONALITY_ITEM_DESC",
+      "String": "고양이 업그레이드에 사용되는 성격 아이템"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_TITLE",
+      "String": "신규 아이템"
+    },
+    {
+      "Key": "DIALOG_CONVERT_ITEMS_DESC",
+      "String": "퓨리타스의 아이템 시스템이 업데이트되었어요. 이제 내 고양이를 돌보는데 필요한 아이템을 확인하는 게 훨씬 쉬워졌어요!\\n\\n기존 아이템은 신규 아이템으로 변환되었답니다.\\n\\n감사합니다!"
+    },
+    {
+      "Key": "ALL_CATS_REENERGIZED",
+      "String": "모든 고양이들은 에너지가 다시 채워지고 다음에 매치될 때 XP를 얻게 됩니다."
+    },
+    {
+      "Key": "CAT_REENERGIZED",
+      "String": "고양이 에너지가 다시 채워졌어요!"
+    },
+    {
+      "Key": "LOGIN_APPLE",
+      "String": "Apple로 로그인"
+    },
+    {
+      "Key": "ACHIEVEMENTS",
+      "String": "목표달성"
+    },
+    {
+      "Key": "LEADERBOARDS",
+      "String": "순위표"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_TITLE",
+      "String": "계정 연결됨"
+    },
+    {
+      "Key": "EXTERNAL_LOGIN_SUCCESSFUL_DESC",
+      "String": "계정을 연결하였습니다"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_TITLE",
+      "String": "계정 연결 실패"
+    },
+    {
+      "Key": "ERROR_EXTERNAL_LOGIN_FAILED_DESC",
+      "String": "오류로 인해 계정 연결에 실패했습니다"
+    },
+    {
+      "Key": "MAIL_RECEIVED_TITLE",
+      "String": "메일이 도착했어요!"
+    },
+    {
+      "Key": "MAIL_RECEIVED_DESC",
+      "String": "Runaway에서 보낸 선물이에요:"
+    },
+    {
+      "Key": "LOGIN_BONUS_TITLE",
+      "String": "로그인 보너스"
+    },
+    {
+      "Key": "LOGIN_BONUS_DESCRIPTION",
+      "String": "매일 돌아와서 새로운 보상을 받으세요!"
+    },
+    {
+      "Key": "LOGIN_BONUS_COUNTDOWN",
+      "String": "다음 보상까지 {0} 남았습니다."
+    },
+    {
+      "Key": "LOGIN_BONUS_COMPLETE",
+      "String": "보상을 모두 받았습니다"
+    },
+    {
+      "Key": "LOGIN_BONUS_DAY",
+      "String": "{0}일 차"
+    },
+    {
+      "Key": "NOTIFICATION_LOGINBONUS",
+      "String": "<FURISTAS_CAT_CAFE>에 계속 방문하여, 특별한 신규 고양이 <CAT_NAME_068>를 만나요!"
+    },
+    {
+      "Key": "REPORT_ERROR",
+      "String": "오류 신고"
+    },
+    {
+      "Key": "CONTACT_SUPPORT",
+      "String": "지원팀에게 문의하기"
+    },
+    {
+      "Key": "GET",
+      "String": "획득:"
+    },
+    {
+      "Key": "CATEGORIES",
+      "String": "분류..."
+    },
+    {
+      "Key": "TAG_ALL",
+      "String": "전체"
+    },
+    {
+      "Key": "TAG_CUTE",
+      "String": "귀여운"
+    },
+    {
+      "Key": "TAG_SWEET",
+      "String": "달콤한"
+    },
+    {
+      "Key": "TAG_ZANY",
+      "String": "엉뚱한"
+    },
+    {
+      "Key": "TAG_GOTHIC",
+      "String": "고딕풍"
+    },
+    {
+      "Key": "TAG_ARTS_AND_CRAFTS",
+      "String": "예술/창작"
+    },
+    {
+      "Key": "TAG_FANCY",
+      "String": "고급풍"
+    },
+    {
+      "Key": "TAG_RUSTIC",
+      "String": "교외풍"
+    },
+    {
+      "Key": "TAG_HOMELY",
+      "String": "아늑한"
+    },
+    {
+      "Key": "TAG_NATURE",
+      "String": "자연"
+    },
+    {
+      "Key": "TAG_PLANTS",
+      "String": "식물"
+    },
+    {
+      "Key": "TAG_ASIAN",
+      "String": "아시아"
+    },
+    {
+      "Key": "TAG_PURCHASES",
+      "String": "구매"
+    },
+    {
+      "Key": "TAG_FCM",
+      "String": "퓨리스타스 클럽"
+    },
+    {
+      "Key": "TAG_HOLIDAY",
+      "String": "홀리데이"
+    },
+    {
+      "Key": "TAG_BASIC",
+      "String": "기본"
+    },
+    {
+      "Key": "TAG_BONUS",
+      "String": "보너스"
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_TOKENS",
+      "String": "<TOKEN> 두 배 보너스!"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_TOKENS",
+      "String": "코인이 쏟아져요"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_TOKENS",
+      "String": "미니 게임을 완료하고, 고양이들을 편안하게 해주고, 매일의 목표를 달성해 <TOKEN_PLURAL>를 두 배로 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_FISH",
+      "String": "<FISH_PLURAL> 보너스!"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_FISH",
+      "String": "생선 두 배 축하"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_FISH",
+      "String": "이벤트 기간 동안 바구니에서 <FISH_PLURAL>를 두 배로 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_DOUBLE_CURRENCY",
+      "String": "보상 두 배 이벤트!"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_DOUBLE_CURRENCY",
+      "String": "부자가 될 시간이에요"
+    },
+    {
+      "Key": "EVENT_DESC_DOUBLE_CURRENCY",
+      "String": "이벤트 기간 동안 <FISH_PLURAL>와 <TOKEN_PLURAL>를 두 배로 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_CATNIP",
+      "String": "캣닢 대란"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATNIP",
+      "String": "캣닢 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP",
+      "String": "캣닢"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATNIP_PLURAL",
+      "String": "캣닢"
+    },
+    {
+      "Key": "EVENT_DESC_CATNIP",
+      "String": "배달 바구니에서 캣닙을 먹고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_MATATABI",
+      "String": "마따따비 마니아"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MATATABI",
+      "String": "마따따비 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI",
+      "String": "반짝이 장난감"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MATATABI_PLURAL",
+      "String": "반짝이 장난감"
+    },
+    {
+      "Key": "EVENT_DESC_MATATABI",
+      "String": "배달 바구니에서 마따따비 고양이 간식을 획득해 이벤트 바를 채우고 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERBALL",
+      "String": "페이퍼볼 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERBALL",
+      "String": "페이퍼 파운스"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL_PLURAL",
+      "String": "페이퍼볼"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERBALL",
+      "String": "페이퍼볼"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERBALL",
+      "String": "바구니에서 페이퍼볼을 획득해 훨씬 더 멋진 보상으로 교환하세요."
+    },
+    {
+      "Key": "EVENT_NAME_LEAF",
+      "String": "낙엽 놀이"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LEAF",
+      "String": "낙엽 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF",
+      "String": "낙엽"
+    },
+    {
+      "Key": "EVENT_CURRENCY_LEAF_PLURAL",
+      "String": "낙엽"
+    },
+    {
+      "Key": "EVENT_DESC_LEAF",
+      "String": "낙엽을 모아서 끝내주는 상품을 받는다고요?! 안될 거 있나요? 배달 바구니에서 낙엽을 획득하세요."
+    },
+    {
+      "Key": "EVENT_NAME_MOUSECANDY",
+      "String": "무서운 간식"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MOUSECANDY",
+      "String": "생쥐 캔디 콘 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY",
+      "String": "생쥐 캔디 콘"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MOUSECANDY_PLURAL",
+      "String": "생쥐 캔디 콘"
+    },
+    {
+      "Key": "EVENT_DESC_MOUSECANDY",
+      "String": "배달 바구니에서 생쥐 캔디 콘을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_CATORNAMENT",
+      "String": "축제 속 우정"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CATORNAMENT",
+      "String": "축제 속 우정 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT",
+      "String": "고양이 장식"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CATORNAMENT_PLURAL",
+      "String": "고양이 장식"
+    },
+    {
+      "Key": "EVENT_DESC_CATORNAMENT",
+      "String": "바구니를 배달하고 고양이 장식을 받아 이벤트 막대를 채우고, 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_HEARTCATNIP",
+      "String": "고양이 발렌타인"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_HEARTCATNIP",
+      "String": "<EVENT_NAME_HEARTCATNIP> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP",
+      "String": "하트 캣닢"
+    },
+    {
+      "Key": "EVENT_CURRENCY_HEARTCATNIP_PLURAL",
+      "String": "하트 캣닢"
+    },
+    {
+      "Key": "EVENT_DESC_HEARTCATNIP",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_HEARTCATNIP_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_SHAMROCK",
+      "String": "클로버 팔찌"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_SHAMROCK",
+      "String": "<EVENT_NAME_SHAMROCK> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK",
+      "String": "클로버"
+    },
+    {
+      "Key": "EVENT_CURRENCY_SHAMROCK_PLURAL",
+      "String": "클로버"
+    },
+    {
+      "Key": "EVENT_DESC_SHAMROCK",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_SHAMROCK_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_EGG",
+      "String": "달걀 사냥"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_EGG",
+      "String": "<EVENT_NAME_EGG> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG",
+      "String": "달걀"
+    },
+    {
+      "Key": "EVENT_CURRENCY_EGG_PLURAL",
+      "String": "달걀"
+    },
+    {
+      "Key": "EVENT_DESC_EGG",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_EGG_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_WORLDCATDAY",
+      "String": "세계 고양이의 날"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_WORLDCATDAY",
+      "String": "<EVENT_NAME_WORLDCATDAY> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_DESC_WORLDCATDAY",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_HEARTCATNIP_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_MARACA",
+      "String": "수공예"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARACA",
+      "String": "<EVENT_NAME_MARACA> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA",
+      "String": "마라카스"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARACA_PLURAL",
+      "String": "마라카스"
+    },
+    {
+      "Key": "EVENT_DESC_MARACA",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_MARACA_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_GALA",
+      "String": "멋진 갈라쇼"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_GALA",
+      "String": "<EVENT_NAME_GALA> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_NAME_THANKSGIVING",
+      "String": "추수감사절"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_THANKSGIVING",
+      "String": "<EVENT_NAME_THANKSGIVING> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_NAME_LUNARNEWYEAR",
+      "String": "설날"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_LUNARNEWYEAR",
+      "String": "<EVENT_NAME_LUNARNEWYEAR> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_NAME_POTION",
+      "String": "으스스한 엘릭서"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_POTION",
+      "String": "<EVENT_NAME_POTION> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION",
+      "String": "무서운 포션"
+    },
+    {
+      "Key": "EVENT_CURRENCY_POTION_PLURAL",
+      "String": "무서운 포션"
+    },
+    {
+      "Key": "EVENT_DESC_POTION",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_POTION_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_COLORFULFEATHER",
+      "String": "삼바 축제"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_COLORFULFEATHER",
+      "String": "<EVENT_NAME_COLORFULFEATHER> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER",
+      "String": "알록달록 깃털"
+    },
+    {
+      "Key": "EVENT_CURRENCY_COLORFULFEATHER_PLURAL",
+      "String": "알록달록 깃털"
+    },
+    {
+      "Key": "EVENT_DESC_COLORFULFEATHER",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_COLORFULFEATHER_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_MARSHMALLOW",
+      "String": "귀요미 파티"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_MARSHMALLOW",
+      "String": "<EVENT_NAME_MARSHMALLOW> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW",
+      "String": "마시멜로"
+    },
+    {
+      "Key": "EVENT_CURRENCY_MARSHMALLOW_PLURAL",
+      "String": "마시멜로"
+    },
+    {
+      "Key": "EVENT_DESC_MARSHMALLOW",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_MARSHMALLOW_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_CUPCAKE",
+      "String": "단것이 좋아"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_CUPCAKE",
+      "String": "<EVENT_NAME_CUPCAKE> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE",
+      "String": "컵케이크"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CUPCAKE_PLURAL",
+      "String": "컵케이크"
+    },
+    {
+      "Key": "EVENT_DESC_CUPCAKE",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_CUPCAKE_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_ZANYSPRING",
+      "String": "엉뚱한 재미"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_ZANYSPRING",
+      "String": "<EVENT_NAME_ZANYSPRING> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING",
+      "String": "엉뚱한 스프링"
+    },
+    {
+      "Key": "EVENT_CURRENCY_ZANYSPRING_PLURAL",
+      "String": "엉뚱한 스프링"
+    },
+    {
+      "Key": "EVENT_DESC_ZANYSPRING",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_ZANYSPRING_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_BLACKROSE",
+      "String": "고딕"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BLACKROSE",
+      "String": "<EVENT_NAME_BLACKROSE> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE",
+      "String": "크리스탈 장미"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BLACKROSE_PLURAL",
+      "String": "크리스탈 장미"
+    },
+    {
+      "Key": "EVENT_DESC_BLACKROSE",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_BLACKROSE_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_PAINTBRUSH",
+      "String": "미술품 수집가"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAINTBRUSH",
+      "String": "<EVENT_NAME_PAINTBRUSH> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH",
+      "String": "페인트 붓"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAINTBRUSH_PLURAL",
+      "String": "페인트 붓"
+    },
+    {
+      "Key": "EVENT_DESC_PAINTBRUSH",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_PAINTBRUSH_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_FANCYSPOON",
+      "String": "풍성한 호화로움"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_FANCYSPOON",
+      "String": "<EVENT_NAME_FANCYSPOON> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON",
+      "String": "멋진 스푼"
+    },
+    {
+      "Key": "EVENT_CURRENCY_FANCYSPOON_PLURAL",
+      "String": "멋진 스푼"
+    },
+    {
+      "Key": "EVENT_DESC_FANCYSPOON",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_FANCYSPOON_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_PORCELAINCAT",
+      "String": "세련되고 멋진"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PORCELAINCAT",
+      "String": "<EVENT_NAME_PORCELAINCAT> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT",
+      "String": "도자기 고양이"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PORCELAINCAT_PLURAL",
+      "String": "도자기 고양이"
+    },
+    {
+      "Key": "EVENT_DESC_PORCELAINCAT",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_PORCELAINCAT_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_RUSTICLURE",
+      "String": "나무 장난감"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_RUSTICLURE",
+      "String": "<EVENT_NAME_RUSTICLURE> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE",
+      "String": "장난감"
+    },
+    {
+      "Key": "EVENT_CURRENCY_RUSTICLURE_PLURAL",
+      "String": "장난감"
+    },
+    {
+      "Key": "EVENT_DESC_RUSTICLURE",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_RUSTICLURE_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_BRASSKEY",
+      "String": "‘역시 집이 최고’"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_BRASSKEY",
+      "String": "<EVENT_NAME_BRASSKEY> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY",
+      "String": "황동 열쇠"
+    },
+    {
+      "Key": "EVENT_CURRENCY_BRASSKEY_PLURAL",
+      "String": "황동 열쇠"
+    },
+    {
+      "Key": "EVENT_DESC_BRASSKEY",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_BRASSKEY_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE",
+      "String": "오리주루"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_2",
+      "String": "오리주루"
+    },
+    {
+      "Key": "EVENT_NAME_PAPERCRANE_3",
+      "String": "오리주루"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_PAPERCRANE",
+      "String": "<EVENT_NAME_PAPERCRANE> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE",
+      "String": "종이학"
+    },
+    {
+      "Key": "EVENT_CURRENCY_PAPERCRANE_PLURAL",
+      "String": "종이학"
+    },
+    {
+      "Key": "EVENT_DESC_PAPERCRANE",
+      "String": "배달 바구니에서 <EVENT_CURRENCY_PAPERCRANE_PLURAL>을 받고 이벤트 바를 채워서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_NAME_OLD_FRIENDS",
+      "String": "낙엽 놀이"
+    },
+    {
+      "Key": "EVENT_SUBTITLE_OLD_FRIENDS",
+      "String": "<EVENT_NAME_OLD_FRIENDS> 이벤트에 오신 것을 환영합니다!"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS",
+      "String": "낙엽"
+    },
+    {
+      "Key": "EVENT_CURRENCY_OLD_FRIENDS_PLURAL",
+      "String": "낙엽"
+    },
+    {
+      "Key": "EVENT_DESC_OLD_FRIENDS",
+      "String": "<EVENT_CURRENCY_OLD_FRIENDS_PLURAL>을(를) 획득해서 Runaway의 다른 게임들 중 하나를 응원하세요: <SHELF_OLDFRIENDS_TITLE>."
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_TITLE",
+      "String": "이벤트 부스터"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_1_DESCRIPTION",
+      "String": "이벤트에서 멋진 출발을 해보아요!"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_DESCRIPTION",
+      "String": "이 팩을 사용하면, 남은 이벤트에서 추가 점수를 얻을 수 있어요!"
+    },
+    {
+      "Key": "CARE_EVENT_SHOP_PACK_2_TITLE",
+      "String": "이벤트 컴플리터"
+    },
+    {
+      "Key": "LEVEL_NUM",
+      "String": "<LEVEL> {0}"
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_HUMAN",
+      "String": "<EVENT_ITEMS_TREAT_PLURAL>을(를) <CUSTOMER_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_HUMAN",
+      "String": "<EVENT_ITEMS_PLANT_PLURAL>을(를) <CUSTOMER_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_HUMAN",
+      "String": "<EVENT_ITEMS_TOY_PLURAL>을(를) <CUSTOMER_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_DESC_KITCHEN_CAT",
+      "String": "<EVENT_ITEMS_TREAT_PLURAL>을(를) <CAT_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_DESC_GREENHOUSE_CAT",
+      "String": "<EVENT_ITEMS_PLANT_PLURAL>을(를) <CAT_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_DESC_WORKSHOP_CAT",
+      "String": "<EVENT_ITEMS_TOY_PLURAL>을(를) <CAT_PLURAL>에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_TITLE",
+      "String": "<CUSTOMER>을(를) 내보낼까요?"
+    },
+    {
+      "Key": "DISMISS_CUSTOMER_DESC",
+      "String": "새로운 <CUSTOMER>이(가) 두 시간 뒤에 도착합니다."
+    },
+    {
+      "Key": "DISMISS_CAT_TITLE",
+      "String": "<CAT>을(를) 내보낼까요?"
+    },
+    {
+      "Key": "DISMISS_CAT_DESC",
+      "String": "새로운 <CAT>이(가) 두 시간 뒤에 도착합니다."
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING",
+      "String": "새로운 <CUSTOMER> 도착 중"
+    },
+    {
+      "Key": "CAT_ARRIVING",
+      "String": "새로운 <CAT> 도착 중"
+    },
+    {
+      "Key": "DISMISS_GENERIC_TITLE",
+      "String": "{0}을(를) 내보낼까요?"
+    },
+    {
+      "Key": "DISMISS_GENERIC_DESC",
+      "String": "새로운 {0}이(가) 두 시간 뒤에 도착합니다."
+    },
+    {
+      "Key": "CUSTOMER_ARRIVING_GENERIC",
+      "String": "새로운 {0} 도착 중"
+    },
+    {
+      "Key": "EVENT_HURRY",
+      "String": "시간 단축 아이템"
+    },
+    {
+      "Key": "EVENT_HURRY_PLURAL",
+      "String": "시간 단축 아이템"
+    },
+    {
+      "Key": "EVENT_HURRY_DESCRIPTION",
+      "String": "이벤트 아이템 즉시 받기"
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT1",
+      "String": "이벤트에서 패키지를 즉시 완료하는 데 사용됩니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT2",
+      "String": "이벤트 보상, 또는 때때로 미스터리 상자에서 획득합니다."
+    },
+    {
+      "Key": "CURRENCY_TOOLTIP_DEFAULT_HURRY_POINT3",
+      "String": "상점에서 더 구매할 수 있습니다."
+    },
+    {
+      "Key": "TIER_NUM",
+      "String": "티어 {0}"
+    },
+    {
+      "Key": "BONUS_CHEST_TITLE",
+      "String": "잠겼어요!"
+    },
+    {
+      "Key": "BONUS_CHEST_DESC",
+      "String": "미스터리 상자를 열까요?"
+    },
+    {
+      "Key": "BONUS_CHEST_DENY",
+      "String": "아니요"
+    },
+    {
+      "Key": "BONUS_CHEST_VIDEO",
+      "String": "동영상 시청하기"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT",
+      "String": "간식"
+    },
+    {
+      "Key": "EVENT_ITEMS_TREAT_PLURAL",
+      "String": "간식"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT",
+      "String": "식물"
+    },
+    {
+      "Key": "EVENT_ITEMS_PLANT_PLURAL",
+      "String": "식물"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY",
+      "String": "장난감"
+    },
+    {
+      "Key": "EVENT_ITEMS_TOY_PLURAL",
+      "String": "장난감"
+    },
+    {
+      "Key": "CARE_EVENT_NAME",
+      "String": "돌보기 이벤트"
+    },
+    {
+      "Key": "CARE_EVENT_ITEM_GENERIC",
+      "String": "돌보기 이벤트 아이템"
+    },
+    {
+      "Key": "CARE_EVENT_PACKAGE_GENERIC",
+      "String": "패키지"
+    },
+    {
+      "Key": "CARE_EVENT_FULFILL_REQUEST",
+      "String": "요청 달성하기"
+    },
+    {
+      "Key": "EVENT_DESC_GENERIC",
+      "String": "{0}을(를) {1}에게 주어서 멋진 보상을 받으세요."
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT",
+      "String": "이벤트 XP"
+    },
+    {
+      "Key": "EVENT_CURRENCY_CARE_EVENT_PLURAL",
+      "String": "이벤트 XP"
+    },
+    {
+      "Key": "TAP_TO_CLAIM_REWARDS",
+      "String": "탭해서 보상을 획득하세요!"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_1",
+      "String": "패키지를 탭해서 아이템을 획득하세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2",
+      "String": "손님에게 아이템을 주세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_2_CAT",
+      "String": "고양이에게 아이템을 주세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_3",
+      "String": "보상 패널을 여세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_4",
+      "String": "보상을 획득하세요!"
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_5",
+      "String": "보상 패널을 닫으세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_6",
+      "String": "<EVENT_HURRY>을(를) 사용하여 패키지를 즉시 완료하세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_7",
+      "String": "패키지를 탭해서 아이템을 다시 획득하세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8",
+      "String": "새로운 손님에게 아이템을 주세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_8_CAT",
+      "String": "새로운 고양이에게 아이템을 주세요."
+    },
+    {
+      "Key": "CARE_EVENT_TUTORIAL_9",
+      "String": "여기서부터는 당신에게 맡길게요!"
+    },
+    {
+      "Key": "EVENT_BOOSTER_ACTIVE",
+      "String": "{0}x 부스터 실행 중!"
+    },
+    {
+      "Key": "BUTTON_START_EVENT",
+      "String": "다 함께 출발!"
+    },
+    {
+      "Key": "NEW_EVENT_STARTING",
+      "String": "새로운 {0} 이벤트가 시작됩니다"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_KITCHEN",
+      "String": "주방"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_GREENHOUSE",
+      "String": "온실"
+    },
+    {
+      "Key": "CARE_EVENT_THEME_WORKSHOP",
+      "String": "공작실"
+    },
+    {
+      "Key": "AND_MORE",
+      "String": "그 밖에도 많아요!"
+    },
+    {
+      "Key": "EVENT_BOOST_ALTERNATE_DESCRIPTION",
+      "String": "이번 이벤트에서 {0}% XP 보너스"
+    },
+    {
+      "Key": "EXCLUSIVE_CUSTOMISATION",
+      "String": "한정 제공 <CUSTOMISATION>"
+    },
+    {
+      "Key": "EXCLUSIVE_CAT",
+      "String": "한정 제공 <CAT>"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_001",
+      "String": "획득 가능한 이벤트 아이템이 있어요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_002",
+      "String": "이벤트 패키지가 기다려요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_003",
+      "String": "획득 가능한 이벤트 아이템이 있네요! 뭐가 나올까요?"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_004",
+      "String": "특별한 뭔가가 이벤트에서 기다려요! 와서 만나보세요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_005",
+      "String": "이벤트 아이템이 준비되었어요! 열어보세요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_006",
+      "String": "이벤트에 아이템이 도착했습니다! 얼른 와서 받아 가요!"
+    },
+    {
+      "Key": "NOTIFICATION_EVENT_ITEMS_READY_007",
+      "String": "이벤트 패키지가 기다려요! 지금 바로 획득하세요!"
+    },
+    {
+      "Key": "CAN_CONTAIN",
+      "String": "포함하는 콘텐츠:"
+    },
+    {
+      "Key": "CHANCE_HURRY_ITEM",
+      "String": "<EVENT_HURRY>, {0}% 확률."
+    },
+    {
+      "Key": "CHANCE_ITEMS",
+      "String": "아이템 {1}개, {0}% 확률."
+    },
+    {
+      "Key": "FURNITURE_NAME_001",
+      "String": "쿠션 깔린 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_002",
+      "String": "고양이 얼굴 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_003",
+      "String": "갈색 고급 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_004",
+      "String": "나무 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_005",
+      "String": "나무 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_006",
+      "String": "알록달록 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_007",
+      "String": "알록달록 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_008",
+      "String": "베이지 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_009",
+      "String": "파란 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_010",
+      "String": "철제 장식장"
+    },
+    {
+      "Key": "FURNITURE_NAME_011",
+      "String": "식물 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_012",
+      "String": "나무 책꽂이"
+    },
+    {
+      "Key": "FURNITURE_NAME_013",
+      "String": "파란 줄무늬 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_014",
+      "String": "주황 줄무늬 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_015",
+      "String": "나무 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_016",
+      "String": "파란 나무 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_017",
+      "String": "커피 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_018",
+      "String": "기본 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_019",
+      "String": "짙은 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_020",
+      "String": "흰색 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_021",
+      "String": "밝은 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_022",
+      "String": "카펫이 깔린 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_023",
+      "String": "투박한 벽돌 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_024",
+      "String": "콘크리트 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_025",
+      "String": "돌벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_026",
+      "String": "귀여운 고양이 식물"
+    },
+    {
+      "Key": "FURNITURE_NAME_027",
+      "String": "분재"
+    },
+    {
+      "Key": "FURNITURE_NAME_028",
+      "String": "작은 선인장"
+    },
+    {
+      "Key": "FURNITURE_NAME_029",
+      "String": "고양이 덩굴식물"
+    },
+    {
+      "Key": "FURNITURE_NAME_030",
+      "String": "화려한 식물"
+    },
+    {
+      "Key": "FURNITURE_NAME_031",
+      "String": "기본 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_032",
+      "String": "체리 무늬 벽지"
+    },
+    {
+      "Key": "FURNITURE_NAME_033",
+      "String": "나무 판자 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_034",
+      "String": "녹색 판자 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_035",
+      "String": "파랑 흰색 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_036",
+      "String": "파랑 흰색 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_037",
+      "String": "양모 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_038",
+      "String": "양모 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_039",
+      "String": "고양이 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_040",
+      "String": "다이아몬드 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_041",
+      "String": "다이아몬드 나무 바닥 #2"
+    },
+    {
+      "Key": "FURNITURE_NAME_042",
+      "String": "들쑥날쑥한 나무 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_043",
+      "String": "둥근 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_044",
+      "String": "노란색 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_045",
+      "String": "흰색 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_046",
+      "String": "노란색 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_047",
+      "String": "파란색 서랍장"
+    },
+    {
+      "Key": "FURNITURE_NAME_048",
+      "String": "벨벳 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_049",
+      "String": "벨벳 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_050",
+      "String": "노란색 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_051",
+      "String": "검은색 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_052",
+      "String": "고급스러운 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_053",
+      "String": "고양이 빈백 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_054",
+      "String": "짙은 색 고양이 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_055",
+      "String": "창호지 등"
+    },
+    {
+      "Key": "FURNITURE_NAME_056",
+      "String": "고양이 창호지 등"
+    },
+    {
+      "Key": "FURNITURE_NAME_057",
+      "String": "납작 방석 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_058",
+      "String": "고양이 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_059",
+      "String": "고딕 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_060",
+      "String": "짙은 색 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_061",
+      "String": "야옹이 보드"
+    },
+    {
+      "Key": "FURNITURE_NAME_062",
+      "String": "고급스러운 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_063",
+      "String": "겨울용 고양이 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_064",
+      "String": "등받이 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_065",
+      "String": "고딕 양식 꽃무늬 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_066",
+      "String": "고양이 괴물 석상"
+    },
+    {
+      "Key": "FURNITURE_NAME_067",
+      "String": "꽃 요정 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_068",
+      "String": "장식용 디스플레이"
+    },
+    {
+      "Key": "FURNITURE_NAME_069",
+      "String": "코타츠 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_070",
+      "String": "화려한 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_071",
+      "String": "다다미 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_072",
+      "String": "녹색 대나무 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_073",
+      "String": "칠판"
+    },
+    {
+      "Key": "FURNITURE_NAME_074",
+      "String": "나무 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_075",
+      "String": "튼튼한 고양이 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_076",
+      "String": "분홍색 고양이 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_077",
+      "String": "분홍색 타일 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_078",
+      "String": "고양이 선반"
+    },
+    {
+      "Key": "FURNITURE_NAME_079",
+      "String": "발바닥 선반"
+    },
+    {
+      "Key": "FURNITURE_NAME_080",
+      "String": "고양이 간식 더미"
+    },
+    {
+      "Key": "FURNITURE_NAME_081",
+      "String": "귀여운 고양이 매트"
+    },
+    {
+      "Key": "FURNITURE_NAME_082",
+      "String": "졸린 고양이 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_083",
+      "String": "발바닥 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_084",
+      "String": "직물 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_085",
+      "String": "단풍잎 분재"
+    },
+    {
+      "Key": "FURNITURE_NAME_086",
+      "String": "골동품 선반"
+    },
+    {
+      "Key": "FURNITURE_NAME_087",
+      "String": "일본식 간식 탁자"
+    },
+    {
+      "Key": "FURNITURE_NAME_088",
+      "String": "벽 메뉴"
+    },
+    {
+      "Key": "FURNITURE_NAME_089",
+      "String": "벚꽃 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_090",
+      "String": "고딕 선반"
+    },
+    {
+      "Key": "FURNITURE_NAME_091",
+      "String": "양초 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_092",
+      "String": "뱀파이어 고양이 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_093",
+      "String": "검은 고양이 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_094",
+      "String": "신비로운 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_095",
+      "String": "호박 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_096",
+      "String": "호박 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_097",
+      "String": "호박 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_098",
+      "String": "발바닥 포스터"
+    },
+    {
+      "Key": "FURNITURE_NAME_099",
+      "String": "마술 고양이 아트"
+    },
+    {
+      "Key": "FURNITURE_NAME_100",
+      "String": "흰 발바닥 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_101",
+      "String": "검은 발바닥 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_102",
+      "String": "고딕 고양이 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_103",
+      "String": "고양이 목판화"
+    },
+    {
+      "Key": "FURNITURE_NAME_104",
+      "String": "페이퍼 고양이"
+    },
+    {
+      "Key": "FURNITURE_NAME_105",
+      "String": "고양이 유화"
+    },
+    {
+      "Key": "FURNITURE_NAME_106",
+      "String": "어부의 책장"
+    },
+    {
+      "Key": "FURNITURE_NAME_107",
+      "String": "동기 부여 포스터"
+    },
+    {
+      "Key": "FURNITURE_NAME_108",
+      "String": "거는 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_109",
+      "String": "벽 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_110",
+      "String": "체크 무늬 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_111",
+      "String": "겨울 고양이 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_112",
+      "String": "버섯 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_113",
+      "String": "눈송이 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_114",
+      "String": "체크 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_115",
+      "String": "봄 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_116",
+      "String": "사랑스러운 벨벳 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_117",
+      "String": "푹신푹신한 장난감"
+    },
+    {
+      "Key": "FURNITURE_NAME_118",
+      "String": "고양이 장난감"
+    },
+    {
+      "Key": "FURNITURE_NAME_119",
+      "String": "꽃 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_120",
+      "String": "화려한 다육이"
+    },
+    {
+      "Key": "FURNITURE_NAME_121",
+      "String": "가을 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_122",
+      "String": "키티 비"
+    },
+    {
+      "Key": "FURNITURE_NAME_123",
+      "String": "목재 장난감 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_124",
+      "String": "고딕 나비 장난감"
+    },
+    {
+      "Key": "FURNITURE_NAME_125",
+      "String": "스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_126",
+      "String": "발자국 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_127",
+      "String": "초원 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_128",
+      "String": "FCM 인증서"
+    },
+    {
+      "Key": "FURNITURE_NAME_129",
+      "String": "눈송이 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_130",
+      "String": "서핑하는 고양이"
+    },
+    {
+      "Key": "FURNITURE_NAME_131",
+      "String": "스탠딩 샹들리에"
+    },
+    {
+      "Key": "FURNITURE_NAME_132",
+      "String": "반짝이 갈라 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_133",
+      "String": "붉은 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_134",
+      "String": "갈라 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_135",
+      "String": "축제 벽난로"
+    },
+    {
+      "Key": "FURNITURE_NAME_136",
+      "String": "축제 캣 타워"
+    },
+    {
+      "Key": "FURNITURE_NAME_137",
+      "String": "붉은색 체크 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_138",
+      "String": "요정 불 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_139",
+      "String": "러브 네온 불빛"
+    },
+    {
+      "Key": "FURNITURE_NAME_140",
+      "String": "분홍색 나무 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_141",
+      "String": "장미 십자 카페트"
+    },
+    {
+      "Key": "FURNITURE_NAME_142",
+      "String": "새해 용"
+    },
+    {
+      "Key": "FURNITURE_NAME_143",
+      "String": "새해 돼지 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_144",
+      "String": "클로버 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_145",
+      "String": "아일랜드 태비 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_146",
+      "String": "고양이 토피어리"
+    },
+    {
+      "Key": "FURNITURE_NAME_147",
+      "String": "달걀 모양 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_148",
+      "String": "고급스러운 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_149",
+      "String": "세련된 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_150",
+      "String": "파키라 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_151",
+      "String": "고양이 화분 식물"
+    },
+    {
+      "Key": "FURNITURE_NAME_152",
+      "String": "달걀 모양 고양이 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_153",
+      "String": "수공예 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_154",
+      "String": "뜨개질한 고양이 선인장"
+    },
+    {
+      "Key": "FURNITURE_NAME_155",
+      "String": "사자 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_156",
+      "String": "바스테트 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_157",
+      "String": "아쿠아라이온 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_158",
+      "String": "불꽃 네온 불빛"
+    },
+    {
+      "Key": "FURNITURE_NAME_159",
+      "String": "냥이나리자"
+    },
+    {
+      "Key": "FURNITURE_NAME_160",
+      "String": "와플 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_161",
+      "String": "왱왱 벌 장난감"
+    },
+    {
+      "Key": "FURNITURE_NAME_162",
+      "String": "달마"
+    },
+    {
+      "Key": "FURNITURE_NAME_163",
+      "String": "걸이식 다육이"
+    },
+    {
+      "Key": "FURNITURE_NAME_164",
+      "String": "알파인 커피 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_165",
+      "String": "걸이식 머그 찬장"
+    },
+    {
+      "Key": "FURNITURE_NAME_167",
+      "String": "고양이 라운지 벽지"
+    },
+    {
+      "Key": "FURNITURE_NAME_171",
+      "String": "타란튤라 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_172",
+      "String": "캣닢 솥단지"
+    },
+    {
+      "Key": "FURNITURE_NAME_173",
+      "String": "안락한 벽난로"
+    },
+    {
+      "Key": "FURNITURE_NAME_174",
+      "String": "머스타드 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_175",
+      "String": "버드 BnB 시계"
+    },
+    {
+      "Key": "FURNITURE_NAME_176",
+      "String": "아르누보 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_177",
+      "String": "고양이 라운지 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_178",
+      "String": "고양이 해먹"
+    },
+    {
+      "Key": "FURNITURE_NAME_179",
+      "String": "고양이 다리"
+    },
+    {
+      "Key": "FURNITURE_NAME_180",
+      "String": "고급 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_181",
+      "String": "멋진 성채"
+    },
+    {
+      "Key": "FURNITURE_NAME_182",
+      "String": "쥐 랜턴"
+    },
+    {
+      "Key": "FURNITURE_NAME_183",
+      "String": "구정 벽지"
+    },
+    {
+      "Key": "FURNITURE_NAME_184",
+      "String": "원형 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_185",
+      "String": "어항"
+    },
+    {
+      "Key": "FURNITURE_NAME_186",
+      "String": "안락한 벽난로"
+    },
+    {
+      "Key": "FURNITURE_NAME_187",
+      "String": "멋진 고양이 포스터 액자"
+    },
+    {
+      "Key": "FURNITURE_NAME_188",
+      "String": "테슬 빈백"
+    },
+    {
+      "Key": "FURNITURE_NAME_189",
+      "String": "버섯 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_190",
+      "String": "화려한 마스크"
+    },
+    {
+      "Key": "FURNITURE_NAME_191",
+      "String": "알록달록 클로에 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_192",
+      "String": "플러터 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_193",
+      "String": "스타라이트 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_194",
+      "String": "마카롱 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_195",
+      "String": "투칸 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_196",
+      "String": "딱정벌레 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_197",
+      "String": "플랑 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_198",
+      "String": "장난감 상자"
+    },
+    {
+      "Key": "FURNITURE_NAME_199",
+      "String": "체리파이 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_200",
+      "String": "간이 제단"
+    },
+    {
+      "Key": "FURNITURE_NAME_201",
+      "String": "몽롱한 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_202",
+      "String": "풍선 다발"
+    },
+    {
+      "Key": "FURNITURE_NAME_203",
+      "String": "칸막이: 앞"
+    },
+    {
+      "Key": "FURNITURE_NAME_204",
+      "String": "붉은 커튼"
+    },
+    {
+      "Key": "FURNITURE_NAME_205",
+      "String": "칸막이: 측면"
+    },
+    {
+      "Key": "FURNITURE_NAME_206",
+      "String": "양 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_207",
+      "String": "코트 걸이"
+    },
+    {
+      "Key": "FURNITURE_NAME_208",
+      "String": "셀프서비스 카운터"
+    },
+    {
+      "Key": "FURNITURE_NAME_209",
+      "String": "차 서빙 카트"
+    },
+    {
+      "Key": "FURNITURE_NAME_210",
+      "String": "선물 더미"
+    },
+    {
+      "Key": "FURNITURE_NAME_211",
+      "String": "장미 베개"
+    },
+    {
+      "Key": "FURNITURE_NAME_212",
+      "String": "기사 디스플레이"
+    },
+    {
+      "Key": "FURNITURE_NAME_213",
+      "String": "체스터필드 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_214",
+      "String": "드래곤 에그"
+    },
+    {
+      "Key": "FURNITURE_NAME_215",
+      "String": "고딕 책장"
+    },
+    {
+      "Key": "FURNITURE_NAME_216",
+      "String": "닭 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_217",
+      "String": "고딕 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_218",
+      "String": "드래곤 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_219",
+      "String": "레코드 플레이어"
+    },
+    {
+      "Key": "FURNITURE_NAME_220",
+      "String": "개구리 분수대"
+    },
+    {
+      "Key": "FURNITURE_NAME_221",
+      "String": "바다사자 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_222",
+      "String": "딸기 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_223",
+      "String": "폭신한 바구니"
+    },
+    {
+      "Key": "FURNITURE_NAME_224",
+      "String": "나무 책장"
+    },
+    {
+      "Key": "FURNITURE_NAME_225",
+      "String": "체스 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_226",
+      "String": "지구본"
+    },
+    {
+      "Key": "FURNITURE_NAME_228",
+      "String": "유목 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_229",
+      "String": "나무 사슴뿔"
+    },
+    {
+      "Key": "FURNITURE_NAME_230",
+      "String": "오토만"
+    },
+    {
+      "Key": "FURNITURE_NAME_231",
+      "String": "격자무늬 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_232",
+      "String": "아이스크림 전등"
+    },
+    {
+      "Key": "FURNITURE_NAME_233",
+      "String": "사탕 네온 사인"
+    },
+    {
+      "Key": "FURNITURE_NAME_234",
+      "String": "페르시안 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_235",
+      "String": "슬리퍼 보관대"
+    },
+    {
+      "Key": "FURNITURE_NAME_236",
+      "String": "초콜릿 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_237",
+      "String": "달걀 모양 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_238",
+      "String": "조가비 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_239",
+      "String": "테라리움"
+    },
+    {
+      "Key": "FURNITURE_NAME_240",
+      "String": "매듭공예 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_241",
+      "String": "소품 바구니"
+    },
+    {
+      "Key": "FURNITURE_NAME_242",
+      "String": "종이학"
+    },
+    {
+      "Key": "FURNITURE_NAME_243",
+      "String": "종이접기 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_244",
+      "String": "종이접기 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_245",
+      "String": "라벤더 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_246",
+      "String": "레몬 트리"
+    },
+    {
+      "Key": "FURNITURE_NAME_247",
+      "String": "산세베리아"
+    },
+    {
+      "Key": "FURNITURE_NAME_248",
+      "String": "왕실 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_249",
+      "String": "멋진 알"
+    },
+    {
+      "Key": "FURNITURE_NAME_250",
+      "String": "왕실 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_251",
+      "String": "스크랩북"
+    },
+    {
+      "Key": "FURNITURE_NAME_252",
+      "String": "유목 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_253",
+      "String": "페이퍼 마쉐 풍선"
+    },
+    {
+      "Key": "FURNITURE_NAME_254",
+      "String": "스시 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_255",
+      "String": "고무 나무"
+    },
+    {
+      "Key": "FURNITURE_NAME_256",
+      "String": "나무 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_257",
+      "String": "야자나무 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_258",
+      "String": "파티 가랜드"
+    },
+    {
+      "Key": "FURNITURE_NAME_259",
+      "String": "파티 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_260",
+      "String": "스시 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_261",
+      "String": "젠 가든"
+    },
+    {
+      "Key": "FURNITURE_NAME_262",
+      "String": "허브 화분"
+    },
+    {
+      "Key": "FURNITURE_NAME_263",
+      "String": "입체파 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_264",
+      "String": "절규"
+    },
+    {
+      "Key": "FURNITURE_NAME_265",
+      "String": "차 수납장"
+    },
+    {
+      "Key": "FURNITURE_NAME_266",
+      "String": "추상적인 조각"
+    },
+    {
+      "Key": "FURNITURE_NAME_267",
+      "String": "나무 그루터기 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_268",
+      "String": "버섯 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_269",
+      "String": "고대 화병"
+    },
+    {
+      "Key": "FURNITURE_NAME_270",
+      "String": "수풀 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_271",
+      "String": "옥 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_272",
+      "String": "이끼 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_273",
+      "String": "철 조각상"
+    },
+    {
+      "Key": "FURNITURE_NAME_274",
+      "String": "생각하는 고양이"
+    },
+    {
+      "Key": "FURNITURE_NAME_275",
+      "String": "단풍잎 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_276",
+      "String": "열대 침대"
+    },
+    {
+      "Key": "FURNITURE_NAME_277",
+      "String": "피크닉 담요"
+    },
+    {
+      "Key": "FURNITURE_NAME_278",
+      "String": "피크닉 바구니"
+    },
+    {
+      "Key": "FURNITURE_NAME_279",
+      "String": "피크닉 빵"
+    },
+    {
+      "Key": "FURNITURE_NAME_280",
+      "String": "자연 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_281",
+      "String": "고딕 스토브"
+    },
+    {
+      "Key": "FURNITURE_NAME_282",
+      "String": "고딕 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_283",
+      "String": "고급 쿠션"
+    },
+    {
+      "Key": "FURNITURE_NAME_284",
+      "String": "야자나무 객실"
+    },
+    {
+      "Key": "FURNITURE_NAME_285",
+      "String": "민트색 꽃잎 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_286",
+      "String": "민트색 꽃잎 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_287",
+      "String": "민트색 꽃잎 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_291",
+      "String": "숲 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_292",
+      "String": "숲 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_293",
+      "String": "실내 나무"
+    },
+    {
+      "Key": "FURNITURE_NAME_294",
+      "String": "바위 분수"
+    },
+    {
+      "Key": "FURNITURE_NAME_295",
+      "String": "통나무 테두리 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_296",
+      "String": "나무 그루터기 스툴"
+    },
+    {
+      "Key": "FURNITURE_NAME_297",
+      "String": "새집"
+    },
+    {
+      "Key": "FURNITURE_NAME_298",
+      "String": "텐트"
+    },
+    {
+      "Key": "FURNITURE_NAME_299",
+      "String": "담요"
+    },
+    {
+      "Key": "FURNITURE_NAME_300",
+      "String": "버섯 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_301",
+      "String": "멤피스 선반"
+    },
+    {
+      "Key": "FURNITURE_NAME_302",
+      "String": "멤피스 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_303",
+      "String": "멤피스 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_304",
+      "String": "멤피스 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_305",
+      "String": "멤피스 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_306",
+      "String": "멤피스 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_307",
+      "String": "멤피스 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_308",
+      "String": "멤피스 그림"
+    },
+    {
+      "Key": "FURNITURE_NAME_309",
+      "String": "멤피스 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_310",
+      "String": "멤피스 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_311",
+      "String": "시골집 스토브"
+    },
+    {
+      "Key": "FURNITURE_NAME_312",
+      "String": "시골집 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_313",
+      "String": "시골집 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_314",
+      "String": "시골집 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_315",
+      "String": "재봉틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_316",
+      "String": "식물 포스터"
+    },
+    {
+      "Key": "FURNITURE_NAME_317",
+      "String": "시골집 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_318",
+      "String": "체크무늬 담요"
+    },
+    {
+      "Key": "FURNITURE_NAME_319",
+      "String": "말린 약초"
+    },
+    {
+      "Key": "FURNITURE_NAME_320",
+      "String": "시골집 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_321",
+      "String": "식당 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_322",
+      "String": "식당 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_323",
+      "String": "식당 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_324",
+      "String": "식당 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_325",
+      "String": "식당 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_326",
+      "String": "바 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_327",
+      "String": "주크박스"
+    },
+    {
+      "Key": "FURNITURE_NAME_328",
+      "String": "도로 표지판"
+    },
+    {
+      "Key": "FURNITURE_NAME_329",
+      "String": "식당 시계"
+    },
+    {
+      "Key": "FURNITURE_NAME_330",
+      "String": "풍선껌 기계"
+    },
+    {
+      "Key": "FURNITURE_NAME_331",
+      "String": "팝 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_332",
+      "String": "팝 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_333",
+      "String": "팝 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_334",
+      "String": "팝 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_335",
+      "String": "팝 자동차"
+    },
+    {
+      "Key": "FURNITURE_NAME_336",
+      "String": "팝 카펫"
+    },
+    {
+      "Key": "FURNITURE_NAME_337",
+      "String": "팝 고양이 장난감"
+    },
+    {
+      "Key": "FURNITURE_NAME_338",
+      "String": "팝 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_339",
+      "String": "팝 거울"
+    },
+    {
+      "Key": "FURNITURE_NAME_340",
+      "String": "팝 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_341",
+      "String": "이끼 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_342",
+      "String": "테라리움"
+    },
+    {
+      "Key": "FURNITURE_NAME_343",
+      "String": "몬스테라"
+    },
+    {
+      "Key": "FURNITURE_NAME_344",
+      "String": "아케이드 캐비닛"
+    },
+    {
+      "Key": "FURNITURE_NAME_345",
+      "String": "아케이드 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_346",
+      "String": "아케이드 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_347",
+      "String": "책 벽지"
+    },
+    {
+      "Key": "FURNITURE_NAME_349",
+      "String": "라운지 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_350",
+      "String": "독서 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_351",
+      "String": "해먹"
+    },
+    {
+      "Key": "FURNITURE_NAME_352",
+      "String": "구슬 커튼 창틀"
+    },
+    {
+      "Key": "FURNITURE_NAME_353",
+      "String": "보헤미안 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_354",
+      "String": "보헤미안 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_355",
+      "String": "티파티 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_356",
+      "String": "티파티 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_357",
+      "String": "직립 꽃병"
+    },
+    {
+      "Key": "FURNITURE_NAME_358",
+      "String": "꽃무늬 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_359",
+      "String": "지도"
+    },
+    {
+      "Key": "FURNITURE_NAME_360",
+      "String": "집필용 책상"
+    },
+    {
+      "Key": "FURNITURE_NAME_361",
+      "String": "축음기"
+    },
+    {
+      "Key": "FURNITURE_NAME_362",
+      "String": "골동품 책장"
+    },
+    {
+      "Key": "FURNITURE_NAME_363",
+      "String": "피아노"
+    },
+    {
+      "Key": "FURNITURE_NAME_364",
+      "String": "드럼"
+    },
+    {
+      "Key": "FURNITURE_NAME_365",
+      "String": "콘트라베이스"
+    },
+    {
+      "Key": "FURNITURE_NAME_366",
+      "String": "마이크"
+    },
+    {
+      "Key": "FURNITURE_NAME_367",
+      "String": "서핑 보드"
+    },
+    {
+      "Key": "FURNITURE_NAME_368",
+      "String": "구명도구"
+    },
+    {
+      "Key": "FURNITURE_NAME_369",
+      "String": "해변 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_370",
+      "String": "해변 바닥"
+    },
+    {
+      "Key": "FURNITURE_NAME_371",
+      "String": "돛 스크래치 기둥"
+    },
+    {
+      "Key": "FURNITURE_NAME_372",
+      "String": "해변 수건"
+    },
+    {
+      "Key": "FURNITURE_NAME_373",
+      "String": "해변 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_374",
+      "String": "해변 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_375",
+      "String": "보트"
+    },
+    {
+      "Key": "FURNITURE_NAME_377",
+      "String": "둥근 창"
+    },
+    {
+      "Key": "FURNITURE_NAME_378",
+      "String": "미니멀리즘 나무"
+    },
+    {
+      "Key": "FURNITURE_NAME_379",
+      "String": "미니멀리즘 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_380",
+      "String": "미니멀리즘 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_381",
+      "String": "미니멀리즘 고양이 침대"
+    },
+    {
+      "Key": "FURNITURE_NAME_382",
+      "String": "젠 칸막이"
+    },
+    {
+      "Key": "FURNITURE_NAME_383",
+      "String": "젠 식물"
+    },
+    {
+      "Key": "FURNITURE_NAME_384",
+      "String": "젠 소파"
+    },
+    {
+      "Key": "FURNITURE_NAME_385",
+      "String": "젠 좌석"
+    },
+    {
+      "Key": "FURNITURE_NAME_386",
+      "String": "흰색 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_387",
+      "String": "타일 스토브"
+    },
+    {
+      "Key": "FURNITURE_NAME_388",
+      "String": "종이 램프"
+    },
+    {
+      "Key": "FURNITURE_NAME_389",
+      "String": "스칸디나비안 의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_390",
+      "String": "교외 벽"
+    },
+    {
+      "Key": "FURNITURE_NAME_391",
+      "String": "꼬마 전구"
+    },
+    {
+      "Key": "FURNITURE_NAME_392",
+      "String": "배럴 테이블"
+    },
+    {
+      "Key": "FURNITURE_NAME_393",
+      "String": "인조 소가죽 러그"
+    },
+    {
+      "Key": "FURNITURE_NAME_394",
+      "String": "고양이 타워"
+    },
+    {
+      "Key": "FURNITURE_NAME_395",
+      "String": "고양이 집"
+    },
+    {
+      "Key": "FURNITURE_NAME_396",
+      "String": "고양이 침대"
+    },
+    {
+      "Key": "FURNITURE_NAME_397",
+      "String": "고양이 장난감"
+    },
+    {
+      "Key": "CAT_NAME_001",
+      "String": "머핀"
+    },
+    {
+      "Key": "CAT_NAME_002",
+      "String": "러블리"
+    },
+    {
+      "Key": "CAT_NAME_003",
+      "String": "본찬"
+    },
+    {
+      "Key": "CAT_NAME_004",
+      "String": "냥냥이"
+    },
+    {
+      "Key": "CAT_NAME_005",
+      "String": "살렘"
+    },
+    {
+      "Key": "CAT_NAME_006",
+      "String": "울리"
+    },
+    {
+      "Key": "CAT_NAME_007",
+      "String": "홀리"
+    },
+    {
+      "Key": "CAT_NAME_008",
+      "String": "라드"
+    },
+    {
+      "Key": "CAT_NAME_009",
+      "String": "뱁스"
+    },
+    {
+      "Key": "CAT_NAME_010",
+      "String": "섀도우"
+    },
+    {
+      "Key": "CAT_NAME_011",
+      "String": "위스커스"
+    },
+    {
+      "Key": "CAT_NAME_012",
+      "String": "누들"
+    },
+    {
+      "Key": "CAT_NAME_013",
+      "String": "찹쌀떡"
+    },
+    {
+      "Key": "CAT_NAME_014",
+      "String": "차차"
+    },
+    {
+      "Key": "CAT_NAME_015",
+      "String": "닌자"
+    },
+    {
+      "Key": "CAT_NAME_016",
+      "String": "샤샤"
+    },
+    {
+      "Key": "CAT_NAME_017",
+      "String": "마일로"
+    },
+    {
+      "Key": "CAT_NAME_018",
+      "String": "미즈"
+    },
+    {
+      "Key": "CAT_NAME_019",
+      "String": "오레오"
+    },
+    {
+      "Key": "CAT_NAME_020",
+      "String": "브리트니"
+    },
+    {
+      "Key": "CAT_NAME_021",
+      "String": "지기"
+    },
+    {
+      "Key": "CAT_NAME_022",
+      "String": "밀키"
+    },
+    {
+      "Key": "CAT_NAME_023",
+      "String": "미튼"
+    },
+    {
+      "Key": "CAT_NAME_024",
+      "String": "시나몬"
+    },
+    {
+      "Key": "CAT_NAME_025",
+      "String": "에리스"
+    },
+    {
+      "Key": "CAT_NAME_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_NAME_027",
+      "String": "보니"
+    },
+    {
+      "Key": "CAT_NAME_028",
+      "String": "람세스"
+    },
+    {
+      "Key": "CAT_NAME_029",
+      "String": "코코"
+    },
+    {
+      "Key": "CAT_NAME_030",
+      "String": "퍼프"
+    },
+    {
+      "Key": "CAT_NAME_031",
+      "String": "젤리빈"
+    },
+    {
+      "Key": "CAT_NAME_032",
+      "String": "오리"
+    },
+    {
+      "Key": "CAT_NAME_033",
+      "String": "제시"
+    },
+    {
+      "Key": "CAT_NAME_034",
+      "String": "산드라"
+    },
+    {
+      "Key": "CAT_NAME_035",
+      "String": "플러피"
+    },
+    {
+      "Key": "CAT_NAME_036",
+      "String": "코알라"
+    },
+    {
+      "Key": "CAT_NAME_037",
+      "String": "윌포드"
+    },
+    {
+      "Key": "CAT_NAME_038",
+      "String": "크래던스"
+    },
+    {
+      "Key": "CAT_NAME_039",
+      "String": "쿠키"
+    },
+    {
+      "Key": "CAT_NAME_040",
+      "String": "페퍼"
+    },
+    {
+      "Key": "CAT_NAME_041",
+      "String": "패들스는"
+    },
+    {
+      "Key": "CAT_NAME_050",
+      "String": "버터스"
+    },
+    {
+      "Key": "CAT_NAME_051",
+      "String": "루나"
+    },
+    {
+      "Key": "CAT_NAME_052",
+      "String": "삭스"
+    },
+    {
+      "Key": "CAT_NAME_053",
+      "String": "포섬"
+    },
+    {
+      "Key": "CAT_NAME_054",
+      "String": "오디"
+    },
+    {
+      "Key": "CAT_NAME_055",
+      "String": "칼리스타"
+    },
+    {
+      "Key": "CAT_NAME_056",
+      "String": "스타로드"
+    },
+    {
+      "Key": "CAT_NAME_057",
+      "String": "조"
+    },
+    {
+      "Key": "CAT_NAME_058",
+      "String": "드라카 공작 부인"
+    },
+    {
+      "Key": "CAT_NAME_059",
+      "String": "아폴로"
+    },
+    {
+      "Key": "CAT_NAME_060",
+      "String": "비비안"
+    },
+    {
+      "Key": "CAT_NAME_061",
+      "String": "패치"
+    },
+    {
+      "Key": "CAT_NAME_062",
+      "String": "치키"
+    },
+    {
+      "Key": "CAT_NAME_063",
+      "String": "무슈"
+    },
+    {
+      "Key": "CAT_NAME_064",
+      "String": "첨비"
+    },
+    {
+      "Key": "CAT_NAME_065",
+      "String": "도비"
+    },
+    {
+      "Key": "CAT_NAME_066",
+      "String": "미노스"
+    },
+    {
+      "Key": "CAT_NAME_067",
+      "String": "볼프강"
+    },
+    {
+      "Key": "CAT_NAME_068",
+      "String": "로키"
+    },
+    {
+      "Key": "CAT_NAME_JUHANOTUSED",
+      "String": "주하"
+    },
+    {
+      "Key": "CAT_NAME_SIMBANOTUSED",
+      "String": "심바"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_001",
+      "String": "머핀은 아주 다정한 고양이로, 쓰다듬어주는 것을 좋아해요! 쓰다듬기를 그만두면 다시 해줄 때까지 앞발로 톡톡 칠 거예요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_002",
+      "String": "사납지 않고 사랑이 넘치는 러블리도 한때는 떠돌이 수고양이와 싸워 턱을 부러뜨린 적이 있답니다! 안기는 걸 무척 좋아하고, 행복할 때면 매력적인 비뚤어진 미소와 함께 가르릉 소리를 크게 내며 침을 흘리지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_003",
+      "String": "본찬은 자신감이 가득한 작은 고양이랍니다. 입양된 후로 줄곧 사랑하는 이들을 감독하고 함께 낮잠 자는 데서 큰 행복을 느끼고 있지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_004",
+      "String": "본찬의 두 배가 넘는 냥냥이는 껴안고 싶은 큰 공 같아요. 먹는 걸 좋아해서 종종 다른 고양이의 밥그릇을 탐내다 걸리기도 한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_005",
+      "String": "너무나도 느긋한 살렘은 '될 대로 되라지' 식입니다. 규칙이나 제재를 신경 쓰지 않아서 종종 다른 고양이들이 화난 것에 어리둥절하곤 합니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_006",
+      "String": "새로운 손님들에게는 움츠러드는 성격 탓에, 엄청나게 쓰다듬어주고 난 후에야 울리의 신임을 얻을 수 있습니다. 무척 다정하고 대화에 능하지만 조용조용하게 말한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_007",
+      "String": "뒤로 재주넘기를 하고 혀를 내밀고 침을 엄청 흘리는 홀리 제니스 블레키는 엄청난 자랑쟁이랍니다. 만나는 누구든 좋아하지만 개들은 끔찍하게 싫어한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_008",
+      "String": "라드는 놀라울 정도로 충직하고 예의가 발라 언제나 손님들이 먼저 들어갈 때까지 기다리는 진정한 신사랍니다. 갑작스러운 움직임에 놀라기는 하지만, 카페를 방문하는 이들이라면 누구라도 쓰다듬어주는 것을 좋아합니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_009",
+      "String": "눈이 살짝 안으로 몰려 정말 귀여운 뱁스는 그 덕에 특별하답니다! 좁고 어두운 구석에 몸을 웅크리고는 참치와 연어, 따뜻한 우유를 배불리 먹는 상상을 하는 것을 좋아하지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_010",
+      "String": "작고 수줍음 많은 섀도우는 모르는 사람과 친숙해지는 데 시간이 걸립니다. 친근해지면 장난기 있지만 순한 본성이 나와서 종종 손님의 쇼핑백 속에 숨어있기도 한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_011",
+      "String": "못 말리는 꼬마 악당 위스커스는 또래 고양이들을 괴롭히는 걸 좋아한답니다. 또래 고양이들이 잘 때 종종 위에서 덮치거나 꼬리를 가지고 놀지요. 위스커스는 짓궂은 오락부장이라는 별명에 딱 어울린답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_012",
+      "String": "누들은 자기가 사람이라고 생각해서 종종 뒷발로 걷습니다. 테이블에서는 손님들 옆에 앉고, 쓰러진 커피빈으로 장난을 치며 커피 머신 주변을 호기심 가득하게 돌아다닙니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_013",
+      "String": "찹쌀떡은 정리정돈에 집착합니다. 매일 아침 첫 일과는 머리부터 발끝까지 핥아서 깨끗이 하는 것입니다. 털을 빗겨주는 것도 좋아하지만, 막상 하려고 하면 꽤 변덕을 부린답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_014",
+      "String": "카페에 음악이 깔리면, 차차는 댄서가 되어 좋아하는 장난감을 쫓으며 열정과 열의를 다해 엉덩이를 씰룩거립니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_015",
+      "String": "닌자는 좋은 이들과 만찬을 즐기는 것을 좋아해서 신뢰할 수 있는 벗을 찾기 위해서라면 고생도 마다하지 않습니다. 마땅한 사람을 발견하면, 야옹 하고 울어 특별한 식사 손님으로 선택된 것을 알려준답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_016",
+      "String": "귀엽고 영리하며 재주 많은 샤샤는 과거에는 여신으로 추앙받았을 법합니다. 입양되기 전 예쁜 고양이 대회에서 상을 받기도 했는데, 침으로 뒤덮일 때까지 좋아하는 장난감을 그루밍하는 지금과는 좀 다른 날들을 보냈답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_017",
+      "String": "마일로를 껴안으며 좋아하는 포근한 담요를 껴안는 것과 같습니다. 사람들이 마음이 울적할 때면 육감적으로 아는 듯하죠. 마일로는 그럴 때면 정겹게 가르릉거리며 놀아주면서 사람들을 편안하게 해주는 것을 좋아한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_018",
+      "String": "미즈는 부드러운 마음을 가진 초연한 전사였습니다. 인내와 놀라움, 정신없는 뒷발 공격을 통해 다른 고양이들과 싸우는 법을 배웠습니다. 싸움을 그만두고 나서는 종종 그루밍을 하며 예전을 회상하곤 한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_019",
+      "String": "오레오는 이름만큼 달달하지 않답니다... 쓰다듬어주는 것을 좋아하기는 하지만, 복슬복슬한 배를 건드리면 공격한답니다. 사랑스럽지만 사나운 오레오는 원하는 게 있으면 얻어내지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_020",
+      "String": "어릴 적 너무 호기심이 왕성했던 탓에 브리트니는 한쪽 귀가 안 들린답니다. 물어뜯을 맛있는 풀을 찾는 등의 취미 생활을 위해 밖으로 모험을 나갈 때면 매혹적인 녹색 눈이 항상 초롱초롱해진답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_021",
+      "String": "잠자는 곳을 철저하게 사수하는 지기가 낮잠 자기 제일 좋아하는 장소는 변기 물탱크 위랍니다! 화장실에서 계속 쫓겨나는데도 항상 돌아간답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_022",
+      "String": "밀키는 거의 하루 종일 좋아하는 담요에 꾹꾹이를 하며 애간장을 녹입니다. 담요에 꾹꾹이를 하지 않을 때는 손님 무릎이나 쿠션에 꾹꾹이를 하며, 대담해지면 카페에 다른 고양이들에게 꾹꾹이를 할 때도 있습니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_023",
+      "String": "벼룩이 들끓는 아주 작은 새끼 고양이였던 미튼은 진정한 생존자입니다! 자기 꼬리를 쫓아서 잡으려고 끊임없이 노력하는 걸 보면 미튼의 투지를 알 수 있지요. 미튼, 언젠가는 할 수 있을 거야."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_024",
+      "String": "잘 먹고 있는 데도 불구하고 시나몬은 욕심이 너무 많아서 손님 접시에서 쿠키를 훔칠 수 있는 만큼 훔쳐 먹는답니다. 종종 바리스타 테이블에서 물을 핥아 먹기도 하지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_025",
+      "String": "그리스 신화에 나오는 불화의 여신의 이름을 딴 에리스는 거만한 말썽쟁이랍니다. 의자에 앉은 사람들을 못살게 굴어서 쫓아내고 그 자리에 앉는 걸 좋아하지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_026",
+      "String": "-"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_027",
+      "String": "보니의 사랑스럽고 귀여운 귀는 스코티시 폴드 종인 덕분이에요. 멍한 눈빛과 접힌 귀에 속지 마세요. 전부 다 듣고 있으니까요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_028",
+      "String": "매주 욕조에 몸 담그는 걸 좋아하는 특이한 고양이인 람세스는 관심을 즐기며, 어느 누구와도 잘 어울릴 수 있습니다. 심지어는 친절한 강아지와도 말이죠!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_029",
+      "String": "코코는 울음소리가 부드러운 음악 같은 귀중한 고양이에요. 왁자지껄한 일상생활에서 벗어나 조용한 곳을 선호하죠. 데리고 와서 조용히 빗질을 해주면 영원히 사랑 받을 거예요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_030",
+      "String": "퍼프는 손님들이 카페에 들어오는 것을 지켜보고 떠날 때는 나지막이 야옹 하며 인사하면서 몇 시간이나 계속해서 빈둥거리며 걸터앉아 있는 걸 좋아한답니다. 덕분에 언제나 손님들은 퍼프를 잘 쓰다듬어 줍니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_031",
+      "String": "젤리빈이 오는 소리는 멀리서도 들을 수 있답니다. 장난감을 쫓든 진짜 쥐를 쫓든 혼신의 힘을 다해 달리고, 고양이치고는 엄청나게 큰 소리로 쿵쾅거립니다. 미묘함과는 거리가 먼 녀석이죠."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_032",
+      "String": "오리는 완벽한 디바입니다. 특별한 랙돌 종으로, 원하는 것을 얻을 때까지 끊임없이 야옹 거리며 유명 인사처럼 군답니다. 오리가 원하는 게 무엇이냐고요? 그건 아무도 모른답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_033",
+      "String": "제시는 자부심이 넘치는 고양이입니다. 꼬리를 치켜든 채 의기양양한 눈빛으로 슈퍼모델처럼 걷는답니다. 보통은 혼자 만의 시간을 좋아하는 편이지만, 원할 때면 안아달라는 요구도 거침없이 하지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_034",
+      "String": "산드라는 앙증맞게 훔치는 습성이 있어요. 손님들이 다른 곳을 보고 있을 때 빨대를 훔쳐서 잘근잘근 씹어 버린답니다. 카페에서 종이 빨대를 써서 다행이에요!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_035",
+      "String": "과거 쇼캣이었던 플러피는 하루 중 대부분을 묶여있었습니다. 지금은 플러피의 장난기 많은 성격이 카페 구석구석에서 잘 드러나지요. 대부분은 털갈이를 하기 때문이에요. 엄청 많이요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_036",
+      "String": "코알라는 이름에서 알 수 있듯이 손님 목을 앞발로 감싸 매달리는 것을 좋아한답니다. 그 덕에 예상치 못하게 할퀸 자국이 남을 수 있기만, 카페 손님들이 신경 쓰기에는 너무 사랑스러울 따름입니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_037",
+      "String": "윌포드는 배를 문질러 주는 걸 좋아합니다! 누군가 와서 쓰다듬어주기를 기다리는 것처럼 늘 벌러덩 누워서 잔답니다. 가끔은 꿈을 꾸면서 자전거를 타듯이 허공에 발을 휘젓기도 하지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_038",
+      "String": "귀엽고 친절한 성격의 크래든스는 아주 조심스럽게 쓰다듬어야 합니다. 신생아의 머리를 쓰다듬는 걸 상상해보세요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_039",
+      "String": "쿠키는 한시도 눈을 뗄 수 없는 고양이입니다. 여기저기 옮겨 다니는 것을 좋아해서 손님들이 방심하고 있는 사이 어깨 위로 뛰어오른답니다! 장난기 많은 사람들을 좋아하고, 트릭을 배우는데 아주 능합니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_040",
+      "String": "페퍼는 아무거나 가리지 않고 먹는 희귀한 뱅갈종입니다. 카페 카운터에서 칠리를 먹고는 새벽 1시에 동물 병원을 급하게 찾아가야 했던 걸로 유명한 데서 이름이 붙여졌답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_041",
+      "String": "패들스는 한때 엄지발가락이 있는 앞발로 시민들과 악수를 나눴지만 지금은 은퇴해 차를 마시며 고양이 비스킷을 먹는데 앞발을 사용합니다. 어떤 손님들은 '스타더스트'라고 애정을 담아 부르기도 한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_050",
+      "String": "버터는 인터넷 인기투표에서 1위를 차지해 소셜 미디어에서 많은 이들의 주목을 받았습니다. 그러한 유명세에도 불구하고, 여전히 차분하기 그지없습니다. 뺨을 부비는 것을 좋아하고, 행복할 때면 꼬리를 물음표 모양으로 말아 표현합니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_051",
+      "String": "열정적이고 장난기 가득한 루나는 게임을 좋아하는 기운 넘치는 고양이입니다. 원래 루나는 어둡고 무서운 숲에서 홀로 발견되었습니다. 하지만 지금은 장난감을 가지고 놀고 잠든 사람들의 얼굴을 톡톡 건드리는 등의 행동들을 즐기고 있습니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_052",
+      "String": "몰래 쫓기와 달리기의 달인인 삭스는 천상 사냥꾼입니다. 고양이 중 가장 빠른 삭스는 가장 먼저 장난감을 덮치고, 여기저기 뛰어다니는 걸 좋아합니다. 즐겨하는 또 다른 행동은 창가에 앉아 창 밖의 새를 보며 못 참겠다는 듯 채터링을 하는 것이죠."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_053",
+      "String": "포섬은 어린 시절 특히 야심만만한 등반가로, 가장 큰 나무도 기어오르며 시간을 보냈습니다. 하지만 이제 포섬은 작은 카페의 신사가 되어 점잖게 손님 무릎에 누워있거나 기분 좋게 그르릉거립니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_054",
+      "String": "눈이 하나밖에 없는 불운한 현실을 헤쳐나가야 하지만, 오디는 절대 굴하지 않습니다! 에너지가 넘치는 오디는 나무를 타고 공을 쫓는 것을 좋아하지만, 안고 싶어 하는 사람이 있으면 무릎에 파고들어 안겨 있는 것도 좋아합니다. 자기가 내는 소리도 좋아해서, 온갖 소리들을 내며 대화에 동참할 것입니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_055",
+      "String": "칼리스타는 자장가 듣는 것을 좋아합니다. 잠들 때 불러주면 바로 옆에서 잠이 들 거에요! 다리가 많이 달린 인형도 좋아한답니다! 고양이, 문어, 바닷가재, 게, 새우 인형들을 가지고 있습니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_056",
+      "String": "스타로드는 새로운 사람을 보면 항상 부끄러워 하지만, 익숙해지면 금새 원래 모습을 보여줍니다. 스타로드의 새로운 친구가 된 사람은 몇 시간 동안 스타로드의 수다를 들으며 인형 물고 오기 놀이를 즐길 수 있답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_057",
+      "String": "조이는 사람과 개를 매우 좋아하지만, 다른 고양이와는 어울리지 못합니다. 배를 문질러주거나 말을 걸어주면 좋아하며, 얼굴을 모든 곳에(심지어 당신 얼굴에도요!) 비비는 것도 좋아합니다. 조이에게는 인스타그램 계정과 든든한 팬들이 있습니다:instagram.com/munchkinzoe/"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_058",
+      "String": "매서운 사냥을 즐기는 드라카 헬스크림 공작 부인의 주요 사냥감은 바로 발가락입니다. 담요 속에 숨겨도, 아주 짧은 순간 방심해도, 모두 당해버립니다!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_059",
+      "String": "아폴로는 모든 걸 폭발시킵니다. 밀가루 통, 고기밥 통, 가루 우유까지 전부 다요. 특히 절대 원두 근처에 가게 두지 마세요! 악동이긴 해도, 사랑스러운 이 고양이는 간식을 위해서라면 뭐든 할 겁니다!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_060",
+      "String": "비비안(비비)는 매우 까다로우며, 자신이 동의할 때 얼굴과 목을 쓰다듬는 것만 허용합니다. 살짝 발을 절지만, 그래도 달리기를 즐기며 쉬는 시간엔 모든 곳을 기어올라갑니다. 그리고 그때마다 장엄하게 혀를 내밀고 있죠!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_061",
+      "String": "패치는 구조되기 전 동상으로 귀 끝이 잘려 나갔어요. 패치는 과거의 시련을 딛고 자신을 필요로 하는 곳이라면 어디서든 좋은 친구가 된답니다. 이 둥글이는 노는 것과 쉴 새 없이 야옹거리는 것을 좋아한답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_062",
+      "String": "치키는 허튼소리를 참지 못하는 아주 진중한 고양이에요! 보호자를 자처하며 새벽 5시 30분에 알람을 맞추고는 절대 일을 빼먹지 않는답니다. 오후 5시에 간식을 주지 않으면 치키는 간식을 받을 때까지 울음을 멈추지 않을 거예요!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_063",
+      "String": "무슈는 식빵을 좋아하는 큰 덩치에요! 안에 든 고소한 빵을 먹으려고 식빵 봉지를 씹어댈 거예요. 말 많은 이 녀석은 무언가를 원할 때마다 울어댈 거예요 (보통은 빵이 더 먹고 싶을 때랍니다)."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_064",
+      "String": "큰 아기인 첨비는 제대로 턱을 쓰담쓰담해주면 저 멀리서도 들릴 만큼 크게 가르랑거려요. 푹신한 스웨터에 꾹꾹이 하는 데 푹 빠져있고 종종 혀를 내밀고 있는 걸 볼 수 있답니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_065",
+      "String": "도비는 영리한 아이랍니다. 어렸을 때부터 버튼을 눌러서 사람들과 대화하는 것을 배우기를 좋아했어요. 새벽 4시에 간식을 달라는 요청을 너무 많이 하자 안타깝게도 버튼 시스템이 \"고장\" 났어요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_066",
+      "String": "미노스는 자신이 거친 사냥꾼이라고 생각하지만 사실 마음이 여리답니다. 커다란 나뭇잎을 사냥해서는 아침에 사람들에게 제일 먼저 가지고 오지요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_067",
+      "String": "늑대를 닮은 외모와는 다르게 볼프강은 대체로 친근하고 점잖답니다... 닭이랑 싸울 때 끼어들지만 않는다면요. 맛있는 걸 먹기 위해서라면 뭐든지 뚫고 갈 거예요."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_068",
+      "String": "북구 설화의 장난꾸러기 신, <CAT_NAME_068>의 이름을 딴 고양이입니다! 장난기 넘치고, 때로는 충전 케이블을 찢어놓거나, 아무도 안 보는 틈에 사람의 음식을 맛보기도 한답니다. 이 영리한 고양이가 말썽부리지 않게 하려면, 틈틈이 안아주는 걸 잊지 마세요!"
+    },
+    {
+      "Key": "CAT_DESCRIPTION_JUHANOTUSED",
+      "String": "심통 난 엉덩이가 바닥에 한번 닿으면 그 무엇으로도 주하를 다시 움직이게 할 수 없답니다! 그래도 주하는 쓰다듬어주는 걸 좋아하고 자신이 좋아하는 사람들에게는 완전 충성한답니다. 주하를 움직이는 게 보상을 받는 유일한 방법인 게 안타깝습니다."
+    },
+    {
+      "Key": "CAT_DESCRIPTION_SIMBANOTUSED",
+      "String": "날렵한 우아함과 탄탄한 몸놀림으로 사람들을 놀라게 하는 심바는 아주 영리해서 문을 여는 방법까지 터득했답니다! 하지만 이런 재능은 끌어안아줄 사람을 찾는 데만 사용하지요."
+    },
+    {
+      "Key": "OCCUPATION_001",
+      "String": "서비스업 매니저"
+    },
+    {
+      "Key": "OCCUPATION_002",
+      "String": "회계사"
+    },
+    {
+      "Key": "OCCUPATION_003",
+      "String": "보험계리사"
+    },
+    {
+      "Key": "OCCUPATION_004",
+      "String": "침술사"
+    },
+    {
+      "Key": "OCCUPATION_005",
+      "String": "광고업"
+    },
+    {
+      "Key": "OCCUPATION_006",
+      "String": "항공 엔지니어"
+    },
+    {
+      "Key": "OCCUPATION_007",
+      "String": "파일럿"
+    },
+    {
+      "Key": "OCCUPATION_008",
+      "String": "농업 컨설턴트"
+    },
+    {
+      "Key": "OCCUPATION_009",
+      "String": "농업 과학자"
+    },
+    {
+      "Key": "OCCUPATION_010",
+      "String": "응급구조사"
+    },
+    {
+      "Key": "OCCUPATION_011",
+      "String": "기술자"
+    },
+    {
+      "Key": "OCCUPATION_012",
+      "String": "마취과 의사"
+    },
+    {
+      "Key": "OCCUPATION_013",
+      "String": "동물 초상화가"
+    },
+    {
+      "Key": "OCCUPATION_014",
+      "String": "수목 재배가"
+    },
+    {
+      "Key": "OCCUPATION_015",
+      "String": "건축가"
+    },
+    {
+      "Key": "OCCUPATION_016",
+      "String": "미술 교사"
+    },
+    {
+      "Key": "OCCUPATION_017",
+      "String": "아트 디렉터"
+    },
+    {
+      "Key": "OCCUPATION_018",
+      "String": "예술 행정가"
+    },
+    {
+      "Key": "OCCUPATION_019",
+      "String": "청능사"
+    },
+    {
+      "Key": "OCCUPATION_020",
+      "String": "자동차 전기 기술자"
+    },
+    {
+      "Key": "OCCUPATION_021",
+      "String": "제빵사"
+    },
+    {
+      "Key": "OCCUPATION_022",
+      "String": "법정 변호사"
+    },
+    {
+      "Key": "OCCUPATION_023",
+      "String": "생화학자"
+    },
+    {
+      "Key": "OCCUPATION_024",
+      "String": "생체공학 엔지니어"
+    },
+    {
+      "Key": "OCCUPATION_025",
+      "String": "생명공학자"
+    },
+    {
+      "Key": "OCCUPATION_026",
+      "String": "선박 건조사"
+    },
+    {
+      "Key": "OCCUPATION_027",
+      "String": "출판 편집자"
+    },
+    {
+      "Key": "OCCUPATION_028",
+      "String": "식물학자"
+    },
+    {
+      "Key": "OCCUPATION_029",
+      "String": "벽돌공"
+    },
+    {
+      "Key": "OCCUPATION_030",
+      "String": "건축 전공자"
+    },
+    {
+      "Key": "OCCUPATION_031",
+      "String": "건축 검사원"
+    },
+    {
+      "Key": "OCCUPATION_032",
+      "String": "정육점 주인"
+    },
+    {
+      "Key": "OCCUPATION_033",
+      "String": "가구공"
+    },
+    {
+      "Key": "OCCUPATION_034",
+      "String": "카페 매니저"
+    },
+    {
+      "Key": "OCCUPATION_035",
+      "String": "촬영 기사"
+    },
+    {
+      "Key": "OCCUPATION_036",
+      "String": "심장 테크니션"
+    },
+    {
+      "Key": "OCCUPATION_037",
+      "String": "심장병 전문의"
+    },
+    {
+      "Key": "OCCUPATION_038",
+      "String": "카운슬러"
+    },
+    {
+      "Key": "OCCUPATION_039",
+      "String": "목수"
+    },
+    {
+      "Key": "OCCUPATION_040",
+      "String": "지도 제작자"
+    },
+    {
+      "Key": "OCCUPATION_041",
+      "String": "요리사"
+    },
+    {
+      "Key": "OCCUPATION_042",
+      "String": "화학 공학 기술자"
+    },
+    {
+      "Key": "OCCUPATION_043",
+      "String": "화학자"
+    },
+    {
+      "Key": "OCCUPATION_044",
+      "String": "고양이 조련사"
+    },
+    {
+      "Key": "OCCUPATION_045",
+      "String": "물리 치료사"
+    },
+    {
+      "Key": "OCCUPATION_046",
+      "String": "토목 기사"
+    },
+    {
+      "Key": "OCCUPATION_047",
+      "String": "심리학자"
+    },
+    {
+      "Key": "OCCUPATION_048",
+      "String": "행사 기획자"
+    },
+    {
+      "Key": "OCCUPATION_049",
+      "String": "보존 처리 전문가"
+    },
+    {
+      "Key": "OCCUPATION_050",
+      "String": "프로젝트 매니저"
+    },
+    {
+      "Key": "OCCUPATION_051",
+      "String": "조리사"
+    },
+    {
+      "Key": "OCCUPATION_052",
+      "String": "카피라이터"
+    },
+    {
+      "Key": "OCCUPATION_053",
+      "String": "미식 조리사"
+    },
+    {
+      "Key": "OCCUPATION_054",
+      "String": "상담사"
+    },
+    {
+      "Key": "OCCUPATION_055",
+      "String": "농부"
+    },
+    {
+      "Key": "OCCUPATION_056",
+      "String": "고객 서비스 매니저"
+    },
+    {
+      "Key": "OCCUPATION_057",
+      "String": "댄스 교사"
+    },
+    {
+      "Key": "OCCUPATION_058",
+      "String": "댄서"
+    },
+    {
+      "Key": "OCCUPATION_059",
+      "String": "자료 관리자"
+    },
+    {
+      "Key": "OCCUPATION_060",
+      "String": "치과 의사"
+    },
+    {
+      "Key": "OCCUPATION_061",
+      "String": "피부과 전문의"
+    },
+    {
+      "Key": "OCCUPATION_062",
+      "String": "프로그래머"
+    },
+    {
+      "Key": "OCCUPATION_063",
+      "String": "방사선 전문의"
+    },
+    {
+      "Key": "OCCUPATION_064",
+      "String": "정비공"
+    },
+    {
+      "Key": "OCCUPATION_065",
+      "String": "영양사"
+    },
+    {
+      "Key": "OCCUPATION_066",
+      "String": "디렉터"
+    },
+    {
+      "Key": "OCCUPATION_067",
+      "String": "장애인 도우미"
+    },
+    {
+      "Key": "OCCUPATION_068",
+      "String": "다이빙 강사"
+    },
+    {
+      "Key": "OCCUPATION_069",
+      "String": "애견 핸들러"
+    },
+    {
+      "Key": "OCCUPATION_070",
+      "String": "하수구 수리공"
+    },
+    {
+      "Key": "OCCUPATION_071",
+      "String": "재봉사"
+    },
+    {
+      "Key": "OCCUPATION_072",
+      "String": "교사"
+    },
+    {
+      "Key": "OCCUPATION_073",
+      "String": "경제학자"
+    },
+    {
+      "Key": "OCCUPATION_074",
+      "String": "전기 기술자"
+    },
+    {
+      "Key": "OCCUPATION_075",
+      "String": "전기 기사"
+    },
+    {
+      "Key": "OCCUPATION_076",
+      "String": "내분비학자"
+    },
+    {
+      "Key": "OCCUPATION_077",
+      "String": "간호사"
+    },
+    {
+      "Key": "OCCUPATION_078",
+      "String": "환경 연구가"
+    },
+    {
+      "Key": "OCCUPATION_079",
+      "String": "가정 지원 도우미"
+    },
+    {
+      "Key": "OCCUPATION_080",
+      "String": "패션 디자이너"
+    },
+    {
+      "Key": "OCCUPATION_081",
+      "String": "영화, 비디오 편집자"
+    },
+    {
+      "Key": "OCCUPATION_082",
+      "String": "헬스장 관장"
+    },
+    {
+      "Key": "OCCUPATION_083",
+      "String": "플로리스트"
+    },
+    {
+      "Key": "OCCUPATION_084",
+      "String": "화훼 재배사"
+    },
+    {
+      "Key": "OCCUPATION_085",
+      "String": "비행 교관"
+    },
+    {
+      "Key": "OCCUPATION_086",
+      "String": "식품 공학자"
+    },
+    {
+      "Key": "OCCUPATION_087",
+      "String": "축구 선수"
+    },
+    {
+      "Key": "OCCUPATION_088",
+      "String": "산림 관리사"
+    },
+    {
+      "Key": "OCCUPATION_089",
+      "String": "가구 마감업자"
+    },
+    {
+      "Key": "OCCUPATION_090",
+      "String": "박물관 큐레이터"
+    },
+    {
+      "Key": "OCCUPATION_091",
+      "String": "정원사"
+    },
+    {
+      "Key": "OCCUPATION_092",
+      "String": "지질학자"
+    },
+    {
+      "Key": "OCCUPATION_093",
+      "String": "지구 물리학자"
+    },
+    {
+      "Key": "OCCUPATION_094",
+      "String": "포도 재배자"
+    },
+    {
+      "Key": "OCCUPATION_095",
+      "String": "그래픽 디자이너"
+    },
+    {
+      "Key": "OCCUPATION_096",
+      "String": "골프장 관리인"
+    },
+    {
+      "Key": "OCCUPATION_097",
+      "String": "체육관 코치"
+    },
+    {
+      "Key": "OCCUPATION_098",
+      "String": "뷰티샵 매니저"
+    },
+    {
+      "Key": "OCCUPATION_099",
+      "String": "헤어드레서"
+    },
+    {
+      "Key": "OCCUPATION_100",
+      "String": "하드웨어 테크니션"
+    },
+    {
+      "Key": "OCCUPATION_101",
+      "String": "헬리콥터 조종사"
+    },
+    {
+      "Key": "OCCUPATION_102",
+      "String": "승마 지도사"
+    },
+    {
+      "Key": "OCCUPATION_103",
+      "String": "말 조련사"
+    },
+    {
+      "Key": "OCCUPATION_104",
+      "String": "약사"
+    },
+    {
+      "Key": "OCCUPATION_105",
+      "String": "호텔 매니저"
+    },
+    {
+      "Key": "OCCUPATION_106",
+      "String": "인사팀 관리자"
+    },
+    {
+      "Key": "OCCUPATION_107",
+      "String": "현지화 전문가"
+    },
+    {
+      "Key": "OCCUPATION_108",
+      "String": "디자이너"
+    },
+    {
+      "Key": "OCCUPATION_109",
+      "String": "보험 판매원"
+    },
+    {
+      "Key": "OCCUPATION_110",
+      "String": "전문 응급구조사"
+    },
+    {
+      "Key": "OCCUPATION_111",
+      "String": "인테리어 디자이너"
+    },
+    {
+      "Key": "OCCUPATION_112",
+      "String": "통역사"
+    },
+    {
+      "Key": "OCCUPATION_113",
+      "String": "보석 세공사"
+    },
+    {
+      "Key": "OCCUPATION_114",
+      "String": "저널리스트"
+    },
+    {
+      "Key": "OCCUPATION_115",
+      "String": "연구실 매니저"
+    },
+    {
+      "Key": "OCCUPATION_116",
+      "String": "토지 경제학자"
+    },
+    {
+      "Key": "OCCUPATION_117",
+      "String": "조경사"
+    },
+    {
+      "Key": "OCCUPATION_118",
+      "String": "사서"
+    },
+    {
+      "Key": "OCCUPATION_119",
+      "String": "승강기 정비사"
+    },
+    {
+      "Key": "OCCUPATION_120",
+      "String": "축산업자"
+    },
+    {
+      "Key": "OCCUPATION_121",
+      "String": "열쇠공"
+    },
+    {
+      "Key": "OCCUPATION_122",
+      "String": "메이크업 아티스트"
+    },
+    {
+      "Key": "OCCUPATION_123",
+      "String": "해양 생물학자"
+    },
+    {
+      "Key": "OCCUPATION_124",
+      "String": "전문 영업인"
+    },
+    {
+      "Key": "OCCUPATION_125",
+      "String": "마사지 치료사"
+    },
+    {
+      "Key": "OCCUPATION_126",
+      "String": "물질 엔지니어"
+    },
+    {
+      "Key": "OCCUPATION_127",
+      "String": "수학자"
+    },
+    {
+      "Key": "OCCUPATION_128",
+      "String": "육가공업자"
+    },
+    {
+      "Key": "OCCUPATION_129",
+      "String": "기계 기술자"
+    },
+    {
+      "Key": "OCCUPATION_130",
+      "String": "기상학자"
+    },
+    {
+      "Key": "OCCUPATION_131",
+      "String": "미생물학자"
+    },
+    {
+      "Key": "OCCUPATION_132",
+      "String": "중학교 교사"
+    },
+    {
+      "Key": "OCCUPATION_133",
+      "String": "조산사"
+    },
+    {
+      "Key": "OCCUPATION_134",
+      "String": "광부"
+    },
+    {
+      "Key": "OCCUPATION_135",
+      "String": "농부"
+    },
+    {
+      "Key": "OCCUPATION_136",
+      "String": "멀티미디어 전문가"
+    },
+    {
+      "Key": "OCCUPATION_137",
+      "String": "음악 교사"
+    },
+    {
+      "Key": "OCCUPATION_138",
+      "String": "음악가"
+    },
+    {
+      "Key": "OCCUPATION_139",
+      "String": "자연요법사"
+    },
+    {
+      "Key": "OCCUPATION_140",
+      "String": "네트워크 분석가"
+    },
+    {
+      "Key": "OCCUPATION_141",
+      "String": "신경과 전문의"
+    },
+    {
+      "Key": "OCCUPATION_142",
+      "String": "신경 외과 의사"
+    },
+    {
+      "Key": "OCCUPATION_143",
+      "String": "편집자"
+    },
+    {
+      "Key": "OCCUPATION_144",
+      "String": "영양사"
+    },
+    {
+      "Key": "OCCUPATION_145",
+      "String": "치료사"
+    },
+    {
+      "Key": "OCCUPATION_146",
+      "String": "검안사"
+    },
+    {
+      "Key": "OCCUPATION_147",
+      "String": "접골사"
+    },
+    {
+      "Key": "OCCUPATION_148",
+      "String": "소아과 의사"
+    },
+    {
+      "Key": "OCCUPATION_149",
+      "String": "병리학자"
+    },
+    {
+      "Key": "OCCUPATION_150",
+      "String": "사진사"
+    },
+    {
+      "Key": "OCCUPATION_151",
+      "String": "물리학자"
+    },
+    {
+      "Key": "OCCUPATION_152",
+      "String": "성형외과 의사"
+    },
+    {
+      "Key": "OCCUPATION_153",
+      "String": "배관공"
+    },
+    {
+      "Key": "OCCUPATION_154",
+      "String": "족부 전문의"
+    },
+    {
+      "Key": "OCCUPATION_155",
+      "String": "우체국 관리인"
+    },
+    {
+      "Key": "OCCUPATION_156",
+      "String": "초등학교 교사"
+    },
+    {
+      "Key": "OCCUPATION_157",
+      "String": "정신과 의사"
+    },
+    {
+      "Key": "OCCUPATION_158",
+      "String": "재활 상담사"
+    },
+    {
+      "Key": "OCCUPATION_159",
+      "String": "학교 교장"
+    },
+    {
+      "Key": "OCCUPATION_160",
+      "String": "중등학교 교사"
+    },
+    {
+      "Key": "OCCUPATION_161",
+      "String": "간판업자"
+    },
+    {
+      "Key": "OCCUPATION_162",
+      "String": "스키 강사"
+    },
+    {
+      "Key": "OCCUPATION_163",
+      "String": "사회복지사"
+    },
+    {
+      "Key": "OCCUPATION_164",
+      "String": "임상병리사"
+    },
+    {
+      "Key": "OCCUPATION_165",
+      "String": "사운드 기술자"
+    },
+    {
+      "Key": "OCCUPATION_166",
+      "String": "특수 교사"
+    },
+    {
+      "Key": "OCCUPATION_167",
+      "String": "외교 대사"
+    },
+    {
+      "Key": "OCCUPATION_168",
+      "String": "내과 의사"
+    },
+    {
+      "Key": "OCCUPATION_169",
+      "String": "언어 병리학자"
+    },
+    {
+      "Key": "OCCUPATION_170",
+      "String": "스포츠 센터 관리인"
+    },
+    {
+      "Key": "OCCUPATION_171",
+      "String": "프로 운동 선수"
+    },
+    {
+      "Key": "OCCUPATION_172",
+      "String": "무대 감독"
+    },
+    {
+      "Key": "OCCUPATION_173",
+      "String": "통계학자"
+    },
+    {
+      "Key": "OCCUPATION_174",
+      "String": "석공"
+    },
+    {
+      "Key": "OCCUPATION_175",
+      "String": "구조 공학자"
+    },
+    {
+      "Key": "OCCUPATION_176",
+      "String": "외과 전문의"
+    },
+    {
+      "Key": "OCCUPATION_177",
+      "String": "측량사"
+    },
+    {
+      "Key": "OCCUPATION_178",
+      "String": "수영 강사"
+    },
+    {
+      "Key": "OCCUPATION_179",
+      "String": "기술 감독"
+    },
+    {
+      "Key": "OCCUPATION_180",
+      "String": "기자"
+    },
+    {
+      "Key": "OCCUPATION_181",
+      "String": "테니스 코치"
+    },
+    {
+      "Key": "OCCUPATION_182",
+      "String": "도구 제작자"
+    },
+    {
+      "Key": "OCCUPATION_183",
+      "String": "한의사"
+    },
+    {
+      "Key": "OCCUPATION_184",
+      "String": "대학 강사"
+    },
+    {
+      "Key": "OCCUPATION_185",
+      "String": "도시 설계자"
+    },
+    {
+      "Key": "OCCUPATION_186",
+      "String": "채소 재배농"
+    },
+    {
+      "Key": "OCCUPATION_187",
+      "String": "수의사"
+    },
+    {
+      "Key": "OCCUPATION_188",
+      "String": "타일공"
+    },
+    {
+      "Key": "OCCUPATION_189",
+      "String": "시계 제조공"
+    },
+    {
+      "Key": "OCCUPATION_190",
+      "String": "웹 관리자"
+    },
+    {
+      "Key": "OCCUPATION_191",
+      "String": "웹 디자이너"
+    },
+    {
+      "Key": "OCCUPATION_192",
+      "String": "웹  개발자"
+    },
+    {
+      "Key": "OCCUPATION_193",
+      "String": "용접공"
+    },
+    {
+      "Key": "OCCUPATION_194",
+      "String": "사회 사업가"
+    },
+    {
+      "Key": "OCCUPATION_195",
+      "String": "와인 제조자"
+    },
+    {
+      "Key": "OCCUPATION_196",
+      "String": "동물학자"
+    },
+    {
+      "Key": "OCCUPATION_197",
+      "String": "게임 개발자"
+    },
+    {
+      "Key": "OCCUPATION_198",
+      "String": "Runaway 제품 책임자"
+    },
+    {
+      "Key": "OCCUPATION_199",
+      "String": "Runaway 프로젝트 리드 아티스트"
+    },
+    {
+      "Key": "OCCUPATION_200",
+      "String": "Runaway 프로그래머"
+    },
+    {
+      "Key": "OCCUPATION_201",
+      "String": "Runaway 프로젝트 리드 프로그래머"
+    },
+    {
+      "Key": "OCCUPATION_202",
+      "String": "Runaway 아티스트/애니메이터"
+    },
+    {
+      "Key": "OCCUPATION_203",
+      "String": "YouTube.com/Shubble"
+    },
+    {
+      "Key": "OCCUPATION_204",
+      "String": "Runaway 제품 책임자"
+    },
+    {
+      "Key": "OCCUPATION_205",
+      "String": "Runaway 프로젝트 리드 아티스트"
+    },
+    {
+      "Key": "OCCUPATION_206",
+      "String": "Runaway 프로그래머"
+    },
+    {
+      "Key": "OCCUPATION_207",
+      "String": "Runaway 프로젝트 리드 프로그래머"
+    },
+    {
+      "Key": "OCCUPATION_208",
+      "String": "Runaway 아티스트"
+    },
+    {
+      "Key": "OCCUPATION_209",
+      "String": "수상 경력의 나레이티브 디자이너"
+    },
+    {
+      "Key": "OCCUPATION_210",
+      "String": "Runaway CEO"
+    },
+    {
+      "Key": "OCCUPATION_211",
+      "String": "Runaway 크리에이티브 디렉터"
+    },
+    {
+      "Key": "OCCUPATION_212",
+      "String": "Runaway 기술부문 총관리"
+    },
+    {
+      "Key": "OCCUPATION_213",
+      "String": "Runaway QA 총관리"
+    },
+    {
+      "Key": "OCCUPATION_214",
+      "String": "Runaway 마케팅 아티스트"
+    },
+    {
+      "Key": "OCCUPATION_215",
+      "String": "Runaway 커뮤니티 지원"
+    },
+    {
+      "Key": "OCCUPATION_216",
+      "String": "Runaway 시스템 관리 (@tom_clark)"
+    },
+    {
+      "Key": "OCCUPATION_217",
+      "String": "비디오 게임 스트리머 (@renee)"
+    },
+    {
+      "Key": "OCCUPATION_218",
+      "String": "Runaway 아티스트 @tomGarden45"
+    },
+    {
+      "Key": "OCCUPATION_219",
+      "String": "Runaway 프로그래머 @buzzrick"
+    },
+    {
+      "Key": "OCCUPATION_220",
+      "String": "Runaway 연구원 (@jonasgoodwin)"
+    },
+    {
+      "Key": "OCCUPATION_221",
+      "String": "Runaway 커뮤니티 매니저"
+    },
+    {
+      "Key": "NAME_SAM",
+      "String": "샘"
+    },
+    {
+      "Key": "NAME_LISA",
+      "String": "리사"
+    },
+    {
+      "Key": "NAME_CARLA",
+      "String": "칼라"
+    },
+    {
+      "Key": "NAME_ZOE",
+      "String": "조"
+    },
+    {
+      "Key": "NAME_EMMA",
+      "String": "엠마"
+    },
+    {
+      "Key": "NAME_BRYCE",
+      "String": "브라이스"
+    },
+    {
+      "Key": "NAME_JESS",
+      "String": "제스"
+    },
+    {
+      "Key": "NAME_RORY",
+      "String": "로리"
+    },
+    {
+      "Key": "NAME_TOM",
+      "String": "톰"
+    },
+    {
+      "Key": "NAME_SIOBHAN",
+      "String": "쇼반"
+    },
+    {
+      "Key": "NAME_RENEE",
+      "String": "Renée"
+    },
+    {
+      "Key": "NAME_JEFF",
+      "String": "제프"
+    },
+    {
+      "Key": "NAME_LILIAN",
+      "String": "릴리안"
+    },
+    {
+      "Key": "NAME_STEPHEN",
+      "String": "스티븐"
+    },
+    {
+      "Key": "NAME_JIM",
+      "String": "짐"
+    },
+    {
+      "Key": "NAME_ALEKSIS",
+      "String": "알렉시스"
+    },
+    {
+      "Key": "NAME_LARS",
+      "String": "라즈"
+    },
+    {
+      "Key": "NAME_JOSIAH",
+      "String": "조지아"
+    },
+    {
+      "Key": "NAME_BERIC",
+      "String": "Beric"
+    },
+    {
+      "Key": "NAME_BRIDGET",
+      "String": "Bridget"
+    },
+    {
+      "Key": "NAME_SHELBY",
+      "String": "Shelby"
+    },
+    {
+      "Key": "NAME_JONAS",
+      "String": "Jonas"
+    },
+    {
+      "Key": "NAME_ADITIA",
+      "String": "Aditia"
+    },
+    {
+      "Key": "NAME_JESSE",
+      "String": "Jesse"
+    },
+    {
+      "Key": "VIP_NAME_001",
+      "String": "체리"
+    },
+    {
+      "Key": "VIP_OCCUPATION_001",
+      "String": "라이프스타일 블로거"
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_1",
+      "String": "실내용 화초를 사랑하고, 리얼리티 쇼에 열광하며, 블랙 커피를 너무 많이 마십니다."
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_2",
+      "String": "어릴 적 키우던 맥스가 절친이었습니다. 비밀을 모두 맥스에게 털어놓곤 했습니다."
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_3",
+      "String": "맥스의 영향으로 어린 나이부터 채식주의자가 되었습니다. 모든 동물들이 사랑 받고 소중히 여겨지기를 바랍니다."
+    },
+    {
+      "Key": "VIP_001_DESCRIPTION_4",
+      "String": "맥스가 죽자 다시는 고양이를 키우지 않겠다 맹세하고 도움의 손길이 필요한 고양이들을 구조하는데 헌신했습니다. 카페에 와서 목말랐던 고양이의 사랑과 카페인을 주기적으로 채웁니다."
+    },
+    {
+      "Key": "VIP_NAME_002",
+      "String": "사라"
+    },
+    {
+      "Key": "VIP_OCCUPATION_002",
+      "String": "2D 아티스트"
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_1",
+      "String": "비디오 게임을 좋아하고, 매우 친절하며 자상합니다. 문자 메시지에 이모티콘을 많이 쓰려 노력합니다."
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_2",
+      "String": "늘 집에 있는 걸 좋아하고, 대인 관계를 좀 무서워 해서 밖을 나설 때면 항상 모자를 쓰고 선크림을 잔뜩 바릅니다."
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_3",
+      "String": "데이트하면서 처음 들른 고양이 카페에서 데이트 상대가 아닌 고양이와 사랑에 빠지기 전까진 고양이 알레르기 때문에 개만 좋아하는 사람이었습니다."
+    },
+    {
+      "Key": "VIP_002_DESCRIPTION_4",
+      "String": "고양이 카페를 방문하려면 항히스타민제를 복용해야 하지만, 고양이를 안는 기쁨이 재채기를 감수할만하다는 걸 알고 있습니다. 고양이들에 둘러싸여 쓰다듬는 일상이 불안을 누그러뜨립니다."
+    },
+    {
+      "Key": "VIP_NAME_003",
+      "String": "라일리"
+    },
+    {
+      "Key": "VIP_OCCUPATION_003",
+      "String": "바텐더"
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_1",
+      "String": "언제나 비니를 쓰고, 잘 만든 두유 카푸치노를 좋아합니다. 고양이가 개보다 낫다고 죽을 때까지 주장할 것입니다."
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_2",
+      "String": "얼굴을 고양이 배에 파묻는 걸 좋아합니다. 고양이들이 냥 소리를 내는 걸 세상에서 제일 좋아합니다."
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_3",
+      "String": "여자친구와 안 좋게 헤어지면서 아끼던 고양이 스파클과 비극적으로 떨어지게 되었습니다."
+    },
+    {
+      "Key": "VIP_003_DESCRIPTION_4",
+      "String": "카페 고양이들 틈에서 행복과 위안을 찾고, 언젠가는 내 카페 같은 고양이 카페를 열고자 합니다."
+    },
+    {
+      "Key": "VIP_NAME_004",
+      "String": "준서"
+    },
+    {
+      "Key": "VIP_OCCUPATION_004",
+      "String": "그래픽 디자이너"
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_1",
+      "String": "준서는 다도와 축구뿐 아니라, 자신만의 티셔츠를 디자인해서 프린트하는 것을 좋아합니다."
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_2",
+      "String": "고양이를 좋아하지 않았지만, 인터넷에서 고양이의 인기를 접하고 고양이에 대해 더 알아본 후 티셔츠 디자인에 접목시켜 보고 싶은 마음에 카페에 왔습니다."
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_3",
+      "String": "고양이를 사랑하게 되는 데까지 얼마 걸리지 않았지요. 준서가 카페에 들어서면 많은 고양이들이 알아보고 달려와서 기분 좋게 가르랑거립니다."
+    },
+    {
+      "Key": "VIP_004_DESCRIPTION_4",
+      "String": "준서는 집에서 편안하게 '알아보고' 싶은 마음에 얼마 전 성묘를 입양했습니다. 하지만 사랑하게 된 고양이들도 안아보고 차도 마시기 위해 여전히 카페를 방문합니다."
+    },
+    {
+      "Key": "VIP_NAME_005",
+      "String": "조단"
+    },
+    {
+      "Key": "VIP_OCCUPATION_005",
+      "String": "보조 요리사"
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_1",
+      "String": "조단은 주당 60시간까지 일하기 때문에 휴식 시간을 무척 소중히 여긴답니다. 보통은 친구들과 비디오 게임을 하거나 애니메이션을 보면서 휴식 시간을 보냅니다."
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_2",
+      "String": "조던이 오래 일하는 이유는 경력 때문이기도 하지만, 학비 대출금을 갚고, 바라는 일본 여행 경비를 마련하기 위해서이기도 합니다."
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_3",
+      "String": "정신없이 바쁘긴 하지만 일본어를 공부하고 있고, 고양이 카페가 일본에서 유래했다는 것도 알게 되었습니다. 커피가 맛있다고 듣기도 했지만, 고양이 카페가 일본에서 유래했다는 사실을 알고는 카페를 방문하고 싶어졌습니다."
+    },
+    {
+      "Key": "VIP_005_DESCRIPTION_4",
+      "String": "카페에서 보내는 시간은 조던이 유일하게 편히 쉬는 시간입니다. 처음에는 죄책감도 있었지만, 조던에게 냥이들을 쓰다듬는 것이 스트레스를 푸는 행동이 되어버렸답니다!"
+    },
+    {
+      "Key": "VIP_NAME_006",
+      "String": "수지"
+    },
+    {
+      "Key": "VIP_OCCUPATION_006",
+      "String": "메이크업 아티스트"
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_1",
+      "String": "수지는 셀카를 찍고 중세 역사 팟캐스트를 듣는 걸 즐기는 전갈자리 여성입니다. 가장 좋아하는 색깔은 검은색이지요."
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_2",
+      "String": "수지는 자수성가 메이크업 아티스트로 소셜 미디어에 기반한 성공과 동물에 대한 사랑을 바탕으로, 동물 실험을 거치지 않은 자신만의 메이크업 브랜드를 만들게 되었습니다."
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_3",
+      "String": "자신의 애묘인 페블에게서 영감을 받아 수지의 전문 메이크업은 과감한 캐츠아이 룩입니다. 아이라인 끝은 흑요석 검만큼 날카롭습니다."
+    },
+    {
+      "Key": "VIP_006_DESCRIPTION_4",
+      "String": "안타깝게도 페블은 나이가 들어 얼마 전 죽었습니다. 그래서 수지는 무료 와이파이와 맛있는 음료에 더해 새로운 카페 냥이 친구들을 안아보기 위해 카페에 옵니다."
+    },
+    {
+      "Key": "VIP_NAME_007",
+      "String": "린"
+    },
+    {
+      "Key": "VIP_OCCUPATION_007",
+      "String": "음악가"
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_1",
+      "String": "린은 머리를 형형색색으로 물들이고, 고양이에 푹 빠져 있는 데다, 노래방을 좋아합니다."
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_2",
+      "String": "노래방에 종종 가다 보니 결국 \"양복 입은 고양이\"라는 단독 공연을 시작하게 되었지요. 린의 음악적 영향은, 클래식 음악에서부터 몽고 전통 음악에 이르기까지 깊이 있게 깔려있습니다."
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_3",
+      "String": "린은 카페를 자주 방문하고 문학 작품에 등장하는 고양이들로부터 영감을 받으면서 고양이에 관련된 것을 가사에 담으려고 노력합니다."
+    },
+    {
+      "Key": "VIP_007_DESCRIPTION_4",
+      "String": "린은 고양이 카페에서 영감을 받아 최신곡, \"할큄은 상처를 남겨\"를 발표했습니다. 해당 곡이 지역 라디오에서 인기를 얻으면서 린은 유명한 스타가 되었답니다!"
+    },
+    {
+      "Key": "VIP_NAME_008",
+      "String": "제이다"
+    },
+    {
+      "Key": "VIP_OCCUPATION_008",
+      "String": "수련의"
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_1",
+      "String": "제이다는 올 A를 받는 뛰어난 학생입니다. 여러 가지를 전공했지만, 의학으로 사람들을 돕기로 결심했습니다."
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_2",
+      "String": "근무를 쉴 때면 제이다는 구제 쇼핑을 하거나 커피를 많이 마시고, 지역의 고양이 보호소에서 자원봉사하는 것을 좋아합니다."
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_3",
+      "String": "제이다는 항상 너무나도 친절하고, 곤경에 처한 이들에게 도움의 손길을 먼저 내밉니다. 그게 친구든 모르는 사람이든 상관없이 말이죠."
+    },
+    {
+      "Key": "VIP_008_DESCRIPTION_4",
+      "String": "헌신과 바쁜 생활 덕택에 제이다는 고양이를 키울 시간이 없어요. 손길을 기다리는 고양이들을 위해 카페를 가능한 자주 방문하려 한답니다."
+    },
+    {
+      "Key": "VIP_NAME_009",
+      "String": "레온"
+    },
+    {
+      "Key": "VIP_OCCUPATION_009",
+      "String": "식료품 매장 운영"
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_1",
+      "String": "레온은 둘째가라면 서러울 동물 챔피언입니다. 정의를 위해 싸우지 않을 때면 본인의 가게인 '완벽 제품'에서 지역 생산물을 판매합니다."
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_2",
+      "String": "레온이 입양한 고양이 버튼은 처음에 잔뜩 겁먹은 채 울면서 발견되었어요. 오랜 시간 동안 사람의 관심을 못 받았던 버튼은 레온의 가게 근처에서 살아왔어요."
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_3",
+      "String": "이제 버튼과 레온은 조용한 인사를 나누는 것을 좋아하고, 가게에 오는 단골손님들로부터 오랜 친구처럼 인사를 받고 있답니다."
+    },
+    {
+      "Key": "VIP_009_DESCRIPTION_4",
+      "String": "레온은 새로 입양되는 고양이들을 보는 즐거움을 누리기 위해 카페를 즐겨 방문합니다. 레온은 다수의 고양이 관련 자선 단체를 지지하고 있고, 그런 단체들을 후원하려고 카페에 온답니다!"
+    },
+    {
+      "Key": "VIP_NAME_010",
+      "String": "루퍼트"
+    },
+    {
+      "Key": "VIP_OCCUPATION_010",
+      "String": "프리랜서 프로그래머"
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_1",
+      "String": "루퍼트는 성인으로서 주어지는 책임들에는 관심이 없고, 자유롭게 사는 것을 좋아합니다. 자신이 좋아하는 곳에서 일을 하고, 하고 싶을 때 합니다."
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_2",
+      "String": "친구들은 루퍼트가 정말로 관심을 가지고 신경 쓰는 것에 대해서는 약간 반항적이라고 생각합니다. 루퍼트는 동물을 좋아하고, 다이노라는 애완용 쥐를 키웁니다."
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_3",
+      "String": "고양이와 쥐가 같이 어울리지 못한다고 생각하기 때문에, 고양이를 키우면 다이노가 싫어할까봐 걱정합니다. 그래서 따로 고양이들을 안아보려고 카페를 방문합니다."
+    },
+    {
+      "Key": "VIP_010_DESCRIPTION_4",
+      "String": "카페에 오는 것이 루퍼트의 유일한 하루 일과입니다. 너무 좋아한 나머지, 루퍼트는 고양이들에 대한 팬아트를 올리는 아트 블로그를 시작했습니다."
+    },
+    {
+      "Key": "VIP_NAME_011",
+      "String": "루카"
+    },
+    {
+      "Key": "VIP_OCCUPATION_011",
+      "String": "사서"
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_1",
+      "String": "루카는 어렸을 때부터 글을 좋아해서 언제나 문학 작품에 둘러싸여 살았습니다. 가장 좋아하는 장르는 초자연 로맨스입니다."
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_2",
+      "String": "지역 도서관의 고양이인 베헤모스는 루카가 16살에 일을 시작한 이후로 가장 친한 친구가 되었습니다. 루카의 꿈은 베스트셀러 작가가 되는 것입니다."
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_3",
+      "String": "루카는 20대 초반에 청각 장애를 가지게 되면서 일이 끝난 뒤 수화 교실에서 가르치는 것을 좋아합니다. 베헤모스는 루카가 가르치는 학생들이 쓰다듬어 주는 것을 좋아합니다."
+    },
+    {
+      "Key": "VIP_011_DESCRIPTION_4",
+      "String": "한 학생이 카페에 들러볼 것을 권했는데, 카페에 오기 시작하면서 루카는 첫 소설을 쓰기 시작했어요! 카페에 퍼져 있는 행복에 영감을 받았답니다."
+    },
+    {
+      "Key": "VIP_NAME_012",
+      "String": "지유"
+    },
+    {
+      "Key": "VIP_OCCUPATION_012",
+      "String": "사진사"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_1",
+      "String": "지유는 사진과 그림, 시를 좋아합니다. 지유는 창작 활동에는 자신 있지만, 새로운 사람들을 만날 때면 수줍음이 많습니다."
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_2",
+      "String": "지유는 그림 그리는 게 편해서 멜빵바지를 즐겨 입습니다. 입양한 고양이 벨은 주머니에 들어가 있는 걸 좋아한답니다."
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_3",
+      "String": "고양이 사진을 바탕으로 그림을 그릴 때면 지유는 아주 진지합니다. 영감이 충만하게 떠오르면 만나는 고양이들에 대한 시도 쓴답니다!"
+    },
+    {
+      "Key": "VIP_012_DESCRIPTION_4",
+      "String": "카페에서 먹는 와플과 떠오르는 영감을 바탕으로, '세 발바닥: 사진과 그림과 시'라는 전시회에서 작품을 선보일 계획을 세우고 있습니다."
+    },
+    {
+      "Key": "ERROR_UNKNOWN_TITLE",
+      "String": "알 수 없는 오류"
+    },
+    {
+      "Key": "ERROR_UNKNOWN_DESC",
+      "String": "알 수 없는 오류가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_TITLE",
+      "String": "Mobage 토큰클라이언트 오류"
+    },
+    {
+      "Key": "ERROR_OAUTH_TOKEN_CLIENT_ERROR_DESC",
+      "String": "Mobage 서비스로 서버를 인증하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_TITLE",
+      "String": "게임 설정을 찾을 수 없습니다"
+    },
+    {
+      "Key": "ERROR_GAME_SETTINGS_NOT_FOUND_DESC",
+      "String": "게임 설정을 가져오는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_TITLE",
+      "String": "사서함을 찾을 수 없습니다"
+    },
+    {
+      "Key": "ERROR_MAILIBOX_NOT_FOUND_DESC",
+      "String": "편지함을 가져오는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_TITLE",
+      "String": "메일항목을 읽을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_MAILITEM_NOT_FOUND_DESC",
+      "String": "편지함 항목을 읽는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_TITLE",
+      "String": "Oauth 개체에서 사용자 개체를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_USER_NOT_FOUND_IN_OUATH_DESC",
+      "String": "사용자를 승인하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_TITLE",
+      "String": "소셜 계정을 삭제할 수 없습니다."
+    },
+    {
+      "Key": "ERROR_SOCIAL_ACCOUNT_COULD_NOT_BE_REMOVED_DESC",
+      "String": "소셜 계정을 삭제하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_TITLE",
+      "String": "메일 항목 수신자를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_MAILITEM_RECEPIENT_NOT_FOUND_DESC",
+      "String": "메일 항목의 수신자를 찾는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_TITLE",
+      "String": "계정 유형이 지정되지 않았습니다."
+    },
+    {
+      "Key": "ERROR_ACCOUNT_TYPE_NOT_SPECIFIED_DESC",
+      "String": "친구를 연결하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_TITLE",
+      "String": "LCD 클라이언트를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_OAUTH_CLIENT_NOT_FOUND_DESC",
+      "String": "인증 서버에 연결하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_TITLE",
+      "String": "청구할 계정을 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_ACCOUNT_NOT_FOUND_TO_CLAIM_DESC",
+      "String": "계정을 요청하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_TITLE",
+      "String": "은행 매개변수를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_BANK_PARAMS_NOT_FOUND_DESC",
+      "String": "은행 거래를 수신하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_TITLE",
+      "String": "은행 거래를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_NOT_FOUND_DESC",
+      "String": "은행 거래를 수신하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_TITLE",
+      "String": "올바른 매개변수가 지정되지 않았습니다."
+    },
+    {
+      "Key": "ERROR_PARAMS_INCORRECT_DESC",
+      "String": "매개변수에 문제가 있었습니다."
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_TITLE",
+      "String": "세션 업데이트 문제"
+    },
+    {
+      "Key": "ERROR_UPDATING_SESSION_DESC",
+      "String": "세션에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_TITLE",
+      "String": "사용자 업데이트 문제"
+    },
+    {
+      "Key": "ERROR_UPDATING_USER_DESC",
+      "String": "게임을 저장하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_TITLE",
+      "String": "로그 생성 문제"
+    },
+    {
+      "Key": "ERROR_CREATING_LOG_DESC",
+      "String": "로그를 생성하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_TITLE",
+      "String": "우편물 생성 문제"
+    },
+    {
+      "Key": "ERROR_CREATING_MAILITEM_DESC",
+      "String": "우편물을 생성하는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_TITLE",
+      "String": "친구 업데이트 문제"
+    },
+    {
+      "Key": "ERROR_UPDATING_FRIENDS_DESC",
+      "String": "이런! 친구 목록을 업데이트하는 중에 문제가 발생했습니다. 다음에 게임을 로드할 때 다시 시도하겠습니다."
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_TITLE",
+      "String": "통화를 찾을 수 없습니다."
+    },
+    {
+      "Key": "ERROR_CURRENCY_NOT_FOUND_DESC",
+      "String": "통화를 가져오는 중에 문제가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_TITLE",
+      "String": "LCD 인증서 오류"
+    },
+    {
+      "Key": "ERROR_SAVING_CERT_DESC",
+      "String": "LCD 인증서를 저장하는 중에 오류가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_TITLE",
+      "String": "LCD 인증서 오류"
+    },
+    {
+      "Key": "ERROR_LOADING_CERT_DESC",
+      "String": "LCD 인증서를 로드하는 중 오류가 발생했습니다."
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_TITLE",
+      "String": "잘못된 저장 시퀀스 번호"
+    },
+    {
+      "Key": "ERROR_INCORRECT_SEQUENCE_DESC",
+      "String": "저장번호가 순서에 어긋났어요"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_TITLE",
+      "String": "데이터 저장 문제"
+    },
+    {
+      "Key": "ERROR_SAVE_DATA_EMPTY_DESC",
+      "String": "데이터 없이 저장을 시도했습니다."
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_TITLE",
+      "String": "페이스북 계정 오류"
+    },
+    {
+      "Key": "ERROR_FACEBOOK_LOGIN_FAILED_DESC",
+      "String": "귀하의 Facebook 계정으로 로그인하는 중에 오류가 발생했습니다. Facebook 연결을 확인하고 다시 시도해 주세요!"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_TITLE",
+      "String": "마이그레이션 오류"
+    },
+    {
+      "Key": "ERROR_MIGRATION_FAILED_DESC",
+      "String": "계정을 마이그레이션하는 중에 오류가 발생했습니다. 도움이 필요하면 친절한 지원팀에 문의하세요."
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_TITLE",
+      "String": "유효하지 않은 쿠폰"
+    },
+    {
+      "Key": "ERROR_INVALID_COUPON_DESC",
+      "String": "유효하지 않은 쿠폰"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_TITLE",
+      "String": "인증 데이터 업데이트 필요"
+    },
+    {
+      "Key": "ERROR_AUTH_DATA_UPDATE_REQUIRED_DESC",
+      "String": "계정이 병합되었으므로 authData를 업데이트해야 합니다."
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_TITLE",
+      "String": "이미 소비된 거래"
+    },
+    {
+      "Key": "ERROR_BANK_TRANS_ALREADY_CONSUMED_DESC",
+      "String": "이 구매 거래는 이미 사용되었습니다."
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_TITLE",
+      "String": "사용자 데이터 없음"
+    },
+    {
+      "Key": "ERROR_NO_USER_DATA_DESC",
+      "String": "저장할 사용자 데이터가 없습니다."
+    },
+    {
+      "Key": "SUPPORT_EMAIL_SAVEDATA_BELOW",
+      "String": "아래 정보는 귀하의 플레이어 데이터이며 귀하의 게임에서 발생하는 문제를 해결하는 데 도움이 됩니다. 이 위에 메시지를 적어주세요:"
+    },
+    {
+      "Key": "SPRITE_LOGO",
+      "String": "Sprites/Login/Logo-ko"
+    },
+    {
+      "Key": "CLAIM_COUPON",
+      "String": "여기서 쿠폰 코드를 받으세요!"
+    },
+    {
+      "Key": "COUPON_TITLE",
+      "String": "쿠폰"
+    },
+    {
+      "Key": "COUPON_DESCRIPTION",
+      "String": "여기서 쿠폰을 교환하세요:"
+    },
+    {
+      "Key": "COUPON_PLACEHOLDER",
+      "String": "코드를 입력하세요..."
+    },
+    {
+      "Key": "COUPON_CLAIM_BUTTON",
+      "String": "받기"
+    },
+    {
+      "Key": "COUPON_SUCCESS_TITLE",
+      "String": "스냅샷이 성공적으로 공유되었습니다!"
+    },
+    {
+      "Key": "COUPON_SUCCESS_DESC",
+      "String": "쿠폰 받기 성공"
+    },
+    {
+      "Key": "COUPON_INVALID_TITLE",
+      "String": "쿠폰을 찾을 수 없음"
+    },
+    {
+      "Key": "COUPON_INVALID_DESC",
+      "String": "이 쿠폰을 찾을 수 없습니다. 잘못 입력했거나, 만료된 쿠폰일 수 있습니다."
+    },
+    {
+      "Key": "COUPON_EXPIRED_TITLE",
+      "String": "만료된 쿠폰"
+    },
+    {
+      "Key": "COUPON_EXPIRED_DESC",
+      "String": "이 쿠폰은 더 이상 사용할 수 없습니다."
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_TITLE",
+      "String": "이미 받은 쿠폰"
+    },
+    {
+      "Key": "COUPON_EXHAUSTED_DESC",
+      "String": "이 쿠폰은 이미 사용되었습니다."
+    },
+    {
+      "Key": "COUPON_OFFLINE_TITLE",
+      "String": "오프라인"
+    },
+    {
+      "Key": "COUPON_OFFLINE_DESC",
+      "String": "쿠폰을 받으려면 인터넷에 연결하세요."
+    },
+    {
+      "Key": "SHOP_PACK_GEM_001_TITLE",
+      "String": "<COMMON> 보석 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_002_TITLE",
+      "String": "<UNCOMMON> 보석 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_003_TITLE",
+      "String": "<RARE> 보석 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_004_TITLE",
+      "String": "<EPIC> 보석 팩"
+    },
+    {
+      "Key": "SHOP_PACK_GEM_005_TITLE",
+      "String": "<LEGENDARY> 보석 팩"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_001_TITLE",
+      "String": "특성 팩 1"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_002_TITLE",
+      "String": "특성 팩 2"
+    },
+    {
+      "Key": "SHOP_PACK_TRAIT_003_TITLE",
+      "String": "특성 팩 3"
+    },
+    {
+      "Key": "ROTATIONAL_SHOP_PACK_TITLE",
+      "String": "<LIMITED_TIME_HEADING>"
+    },
+    {
+      "Key": "EVENT_DELIVERIES_TITLE",
+      "String": "<EVENT> <DELIVERY_PLURAL>"
+    },
+    {
+      "Key": "FURNITURE_NAME_288",
+      "String": "아포카토"
+    },
+    {
+      "Key": "FURNITURE_NAME_289",
+      "String": "캣푸치노"
+    },
+    {
+      "Key": "FURNITURE_NAME_290",
+      "String": "의자"
+    },
+    {
+      "Key": "FURNITURE_NAME_348",
+      "String": "북쿠션"
+    },
+    {
+      "Key": "RATE_PROMPT_INITIAL_BODY2",
+      "String": "Your rating can really help support <FURISTAS_CAT_CAFE> !"
+    },
+    {
+      "Key": "YES",
+      "String": "네!"
+    },
+    {
+      "Key": "NO",
+      "String": "아니요"
+    },
+    {
+      "Key": "SHOP_PACK_FURNITURE_MINI_001_TITLE",
+      "String": "봉제인형 팩"
+    },
+    {
+      "Key": "FURNITURE_NAME_398",
+      "String": "클로버 번팅"
+    },
+    {
+      "Key": "FURNITURE_NAME_399",
+      "String": "만두 쿠션"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_TITLE",
+      "String": "Facebook 로그인"
+    },
+    {
+      "Key": "FACEBOOK_REMOVAL_DESCRIPTION",
+      "String": "페이스북 로그인 기능이 퓨리스타스에서 제거되었습니다. 실수로 로그아웃한 경우에도 복구 메뉴를 사용하여 이 기기에서 게임을 복구할 수 있지만, 데이터를 보호하고 싶다면 메인 메뉴에서 Runaway 계정을 등록해 주세요. 로그인 버튼을 누른 후, 등록을 선택하시면 됩니다.\n문제가 발생하면 support@runaway.zendesk.com으로 문의해 주세요."
+    }
+  ]
+}

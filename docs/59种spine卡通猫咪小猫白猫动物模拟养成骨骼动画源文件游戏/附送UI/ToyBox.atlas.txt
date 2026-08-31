@@ -1,0 +1,20 @@
+
+ToyBox.png
+size: 276,331
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Toy Box/ToyBox_A
+  rotate: false
+  xy: 2, 97
+  size: 272, 232
+  orig: 273, 232
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Toy Box/ToyBox_B
+  rotate: false
+  xy: 2, 2
+  size: 246, 93
+  orig: 246, 93
+  offset: 0, 0
+  index: -1

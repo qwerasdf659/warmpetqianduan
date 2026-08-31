@@ -1,0 +1,27 @@
+
+Chest.png
+size: 2048, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Chest/VidReward_Box
+  rotate: true
+  xy: 2, 2
+  size: 987, 896
+  orig: 987, 896
+  offset: 0, 0
+  index: -1
+Chest/VidReward_Lid
+  rotate: true
+  xy: 900, 221
+  size: 768, 573
+  orig: 768, 573
+  offset: 0, 0
+  index: -1
+Greenhouse/Arrow
+  rotate: false
+  xy: 900, 114
+  size: 278, 105
+  orig: 278, 105
+  offset: 0, 0
+  index: -1

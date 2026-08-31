@@ -1,0 +1,204 @@
+{
+  "Items": [
+    {
+      "InstanceID": "-538736",
+      "ItemID": "FURN_013",
+      "PositionX": -1.6624999046325684,
+      "PositionY": -1.434999942779541,
+      "IsInWorld": true,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "MapID": 0
+    },
+    {
+      "InstanceID": "-538737",
+      "ItemID": "FURN_032",
+      "PositionX": 0,
+      "PositionY": 0,
+      "IsInWorld": false,
+      "IsPurchasePreview": false,
+      "IsPlaced": false,
+      "MapID": 0
+    },
+    {
+      "InstanceID": "-538738",
+      "ItemID": "FURN_034",
+      "PositionX": 0,
+      "PositionY": 0,
+      "IsInWorld": false,
+      "IsPurchasePreview": false,
+      "IsPlaced": false,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_073",
+      "PositionX": -0.0625,
+      "PositionY": 4.164999961853027,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "09895283-371c-4dad-8410-ccdcd93f3a3a",
+      "IsInWorld": true,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_074",
+      "PositionX": 1.537500023841858,
+      "PositionY": 4.164999961853027,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "23c391b7-9212-446d-adb4-c40c48723dac",
+      "IsInWorld": true,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_074",
+      "PositionX": 5.9375,
+      "PositionY": 4.164999961853027,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "b9f5ef81-979c-4940-acc6-0c9d4e2ebcdc",
+      "IsInWorld": true,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_074",
+      "PositionX": 8.33750057220459,
+      "PositionY": 4.164999961853027,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "77a723c2-3911-49e5-9257-9fbe57d2b965",
+      "IsInWorld": true,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_074",
+      "PositionX": 10.737500190734863,
+      "PositionY": 4.164999961853027,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "43a2340f-05e8-4656-a9d3-4be58beff5a4",
+      "IsInWorld": true,
+      "MapID": 0
+    },
+    {
+      "ItemID": "FURN_125",
+      "PositionX": -54.84550476074219,
+      "PositionY": -3.0349998474121094,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "7dc55087-23c4-4ce5-be6f-344b15dc4253",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "ItemID": "FURN_179",
+      "PositionX": -49.645503997802734,
+      "PositionY": -3.0349998474121094,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "d047afdd-d053-47ff-8101-b682afd680d2",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "ItemID": "FURN_178",
+      "PositionX": -55.84550857543945,
+      "PositionY": -1.0349998474121094,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "00a096ad-4d27-4b39-a4e2-dabd1ba10a4c",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "ItemID": "FURN_058",
+      "PositionX": -49.245506286621094,
+      "PositionY": -0.43499988317489624,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "3d07a045-af02-4220-903d-9df20e39934c",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "ItemID": "FURN_083",
+      "PositionX": -53.04550552368164,
+      "PositionY": 0.9650002121925354,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "e2bfe09b-7e66-4aed-a32f-4876609f37db",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "ItemID": "FURN_180",
+      "PositionX": -52.44550323486328,
+      "PositionY": -2.8350000381469727,
+      "IsPurchasePreview": false,
+      "IsPlaced": true,
+      "InstanceID": "91905d5e-d802-48f1-976e-5dcfe1ff37e8",
+      "IsInWorld": true,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "b34e7f65-10a2-439b-a461-0e556b909181",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -50.84550476074219,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "ed370cfd-cfb3-4516-a905-ddc917d0c797",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -54.04550552368164,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "d0ba0d44-75d2-443c-81e4-64e1faa4e728",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -57.645503997802734,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "b2affd9a-0f7c-431a-a5c2-cb0f6560b2e8",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -60.84550476074219,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "1e4fbd0d-7fd6-4a49-b502-9146badc0129",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -64.44551086425781,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    },
+    {
+      "InstanceID": "a7ff0e4d-1419-4aba-9520-5543d2fc25d0",
+      "IsInWorld": true,
+      "IsPlaced": true,
+      "IsPurchasePreview": false,
+      "ItemID": "FURN_184",
+      "PositionX": -67.6455078125,
+      "PositionY": 4.164999961853027,
+      "MapID": 1
+    }
+  ]
+}

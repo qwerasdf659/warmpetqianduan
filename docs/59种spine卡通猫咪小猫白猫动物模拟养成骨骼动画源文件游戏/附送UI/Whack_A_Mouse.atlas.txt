@@ -1,0 +1,34 @@
+
+Whack_A_Mouse.png
+size: 445,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Whack_A_Mouse/Mouse_Down
+  rotate: false
+  xy: 314, 26
+  size: 75, 53
+  orig: 75, 53
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Whack_A_Mouse/backcheese
+  rotate: true
+  xy: 2, 79
+  size: 443, 310
+  orig: 443, 310
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Whack_A_Mouse/frontcheese
+  rotate: true
+  xy: 314, 81
+  size: 441, 129
+  orig: 441, 129
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Whack_A_Mouse/mouse
+  rotate: true
+  xy: 2, 2
+  size: 75, 134
+  orig: 75, 134
+  offset: 0, 0
+  index: -1
