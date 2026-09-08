@@ -93,6 +93,51 @@ Get-NetTCPConnection -LocalPort 8899 -State Listen
 起来之后 `GET /pet/state` 返回 **401 是正常的**——那个接口要带 token，
 游戏会先走 `/auth/mini` 拿。能返回 401 就说明服务在正常处理请求了。
 
+## 微信小游戏主包上限 4MB，资源必须走远程
+
+**加资源时就要算包体**，别等构建时才发现。本项目「素材全部导入」后
+`assets/resources` 到了 60MB+，构建报
+`source size 63530 KB exceed max limit 4MB`，超了 15 倍。
+
+- 上限是**主包 4MB**；分包（subpackage）总量上限 20MB，
+  60MB 连分包也装不下 → **只有远程资源一条路**。
+- `assets/resources` 已经是 Bundle（`resources.meta` 里 `isBundle: true`），
+  配成远程**不用改任何代码**，`resources.load()` 调用方式不变。
+- 配置在**编辑器构建面板**做（勾「配置为远程包」+ 填资源服务器地址），
+  **别手改 `profiles/v2/packages/builder.json`**——那是编辑器的配置缓存，
+  会被覆写，改错还会让构建异常。
+- 完整步骤、Sealos 对象存储配置、白名单与验证顺序见
+  `docs/小游戏包体与远程资源配置.md`。
+
+几个必知的坑：
+
+- **桶权限要 `publicRead`**。私有桶的对象要带签名，小游戏是裸 URL 下载 → 全部 403。
+- **微信后台 `request` 和 `downloadFile` 是两个白名单**。后端 API 配前者、
+  资源下载配后者；只配了 request 的症状是「API 正常但资源全下不来」。
+- **开发者工具「不校验合法域名」会掩盖白名单问题**，本地能跑不代表真机能跑，
+  必须取消勾选再验一次。
+- **上传 `remote/` 时别多套一层**：传的是它的**内容**到桶根，
+  正确路径是 `<bucket>/resources/config.json`，能在浏览器打开返回 JSON 才算对。
+- **每次重新构建都要重传 `remote/`**。忘了传的症状是「改动没生效」，
+  极易误判成代码 bug。
+- 勾 **MD5 Cache**：文件名带内容 hash，内容变则 URL 变，
+  绕开浏览器/微信/CDN 的缓存失效问题。不勾迟早撞上「传了但读到旧文件」。
+
+减重优先级（都验证过）：删 3D 遗留 `models`/`materials` → `.json` 骨架换 `.skel`
+（省一半）→ 压缩贴图。注意 PNG 对插画类压缩有限，缩到长边 256px 的缩略图
+136 张也只从 9.02MB 降到 7.59MB。
+
+## 打开的是构建产物目录，不是工程根目录
+
+微信开发者工具报「未找到 game.json」时，先看打开的是哪个目录：
+
+- `<工程根>/` — Cocos 工程（源码，给 Cocos Creator 开），**永远没有 `game.json`**
+- `<工程根>/build/wechatgame/` — 小游戏包（构建产物，给微信开发者工具开）
+
+另外产物可能是几天前构建的，看不到最新改动很正常——
+先在编辑器构建面板重新构建，再回微信工具刷新。
+对比 `build/wechatgame/game.json` 和 `assets/scripts/**` 的修改时间就能确认。
+
 ## 预览页要强制刷新
 
 换了模型或贴图之后按 `Ctrl+Shift+R`。普通刷新会复用缓存里的旧资源——
@@ -116,6 +161,10 @@ npm install --registry=https://registry.npmmirror.com
 
 ## Windows / PowerShell 注意
 
+- **跑项目脚本前先确认 cwd**。终端的工作目录可能不在工程根
+  （工作区路径变动后会跑到 Cursor 程序目录），症状是
+  `Cannot find module 'C:\...\Programs\cursor\_research\mock-server.mjs'`。
+  给命令显式指定工作目录，别假设 cwd。
 - `curl` 是 `Invoke-WebRequest` 的别名，要用真 curl 得写 `curl.exe`
 - 传 JSON body 时 PowerShell 的引号转义很容易出错，优先写进临时文件再 `--data-binary "@file"`
 - **不要用 `node -e` 传含引号的脚本**。PowerShell 会吃掉反引号和双引号，

@@ -11,7 +11,17 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "useCompilerPlugins": false
+    "useCompilerPlugins": false,
+    "compileWorklet": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
   },
   "compileType": "game",
   "simulatorPluginLibVersion": {},
@@ -21,5 +31,6 @@
   },
   "isGameTourist": false,
   "appid": "wxe5ca9132079196c3",
-  "editorSetting": {}
+  "editorSetting": {},
+  "libVersion": "3.17.2"
 }

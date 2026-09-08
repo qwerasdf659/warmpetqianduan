@@ -12,22 +12,23 @@
  * ESM 保证被依赖模块先于依赖方求值，钩子在任何请求发出前就已注册。
  */
 
-import { _decorator, Component, Node, Label, view } from 'cc';
+import { _decorator, Component, Node, view } from 'cc';
 import { MainView } from './ui/MainView';
+import { LoadingView } from './ui/LoadingView';
 import { NetCheckView } from './ui/NetCheckView';
 import { onApiError } from './net/request';
 import { bootstrap, refreshOnShow } from './core/bootstrap';
 import { showError } from './ui/toast';
 import { onShow } from './platform/minigame';
 import { initDevConsole } from './platform/devConsole';
-import { COLOR, makeNode, makeLabel } from './ui/widgets';
+import { makeNode } from './ui/widgets';
 import { toApiError } from './net/errors';
 
 const { ccclass } = _decorator;
 
 @ccclass('Main')
 export class Main extends Component {
-  private loadingLabel: Label | null = null;
+  private loading: LoadingView | null = null;
   private mainView: MainView | null = null;
 
   onLoad() {
@@ -38,37 +39,35 @@ export class Main extends Component {
     this.boot();
   }
 
+  /**
+   * 加载界面。
+   *
+   * 定稿首页海报作整屏背景，海报里那条写死的 62% 进度条被一条实时进度条原位盖住。
+   * 具体绘制、进度映射、点击重试都在 LoadingView 里，这里只负责创建与阶段回调。
+   */
   private showLoading() {
-    this.loadingLabel = makeLabel('启动中…', this.node, {
-      size: 20,
-      color: COLOR.dim,
-      align: 'center',
-    });
-    this.loadingLabel.node.setPosition(0, 0);
+    const node = makeNode('Loading', this.node);
+    node.setPosition(0, 0);
+    this.loading = node.addComponent(LoadingView);
   }
 
   private async boot() {
     try {
       await bootstrap({
-        onProgress: (stage) => {
-          if (this.loadingLabel) this.loadingLabel.string = `${stage}…`;
-        },
-        onReady: () => this.enterMain(),
+        onProgress: (stage) => this.loading?.setStage(stage),
+        onReady: () => this.loading?.finish(() => this.enterMain()),
       });
     } catch (err) {
       // 登录失败是唯一进不去游戏的情况，给玩家一个能重试的出口，不要白屏
       const e = toApiError(err);
-      if (this.loadingLabel) this.loadingLabel.string = `${e.message}\n点击屏幕重试`;
-      this.node.once(Node.EventType.TOUCH_END, () => this.boot(), this);
+      this.loading?.fail(e.message, () => this.boot());
     }
   }
 
   private enterMain() {
     if (this.mainView) return;
-    if (this.loadingLabel) {
-      this.loadingLabel.node.destroy();
-      this.loadingLabel = null;
-    }
+    // LoadingView 会在淡出后自行销毁，这里不再持有它
+    this.loading = null;
     this.mainView = this.node.addComponent(MainView);
     this.addDebugEntry();
   }

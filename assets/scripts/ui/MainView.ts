@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 主界面：宠物状态 + 四种互动 + 冷却倒计时。
  *
  * 职责边界（规则：客户端只做表现 + 输入采集）：
@@ -67,11 +67,12 @@ const BARS: StatBar[] = [
 
 const MARGIN = 32;
 const BAR_H = 18;
-const BTN_H = 96;
+/** 互动按钮高度。96 在竖屏里过于压秤（连带把状态面板顶高、挤掉宠物），收到 76 更稳 */
+const BTN_H = 76;
 const BTN_GAP = 12;
-const BOTTOM_MARGIN = 48;
-/** 图标显示尺寸，docs/06 §6.2 */
-const ICON_SIZE = 48;
+const BOTTOM_MARGIN = 36;
+/** 图标显示尺寸，docs/06 §6.2；随按钮一起收一档，保持图标与文字的比例 */
+const ICON_SIZE = 38;
 
 /**
  * 属性条排成 2×2 而不是竖着堆四行。
@@ -81,9 +82,9 @@ const ICON_SIZE = 48;
  * 四条属性本来就是并列关系，网格排列读起来也不比竖排差。
  */
 const BAR_COLS = 2;
-const BAR_ROW_H = 44;
+const BAR_ROW_H = 38;
 const BAR_COL_GAP = 16;
-const PANEL_PAD = 18;
+const PANEL_PAD = 14;
 
 /**
  * 货币计数器做成药丸形：图标 + 数字，外面一圈厚亮边加投影。
@@ -152,8 +153,10 @@ export class MainView extends Component {
     // 2D 舞台要先建：它铺全屏背景 + 宠物节点，都排在 UI 之前（更底层），
     // 这样后面建的属性条、按钮、文字才叠在宠物之上。
     this.stage = this.node.addComponent(PetStage);
-    // 把宠物摆到 UI 留出的那块空当中心，否则可视高度一变宠物就被面板压住
-    this.stage.frameTo(this.L.petCenterY, this.L.h);
+    // 把宠物摆到 UI 留出的那块空当中心，否则可视高度一变宠物就被面板压住。
+    // 第三个参数是可拖到的最低高度：取状态面板上沿，让玩家能把猫拖到地面，
+    // 又不会沉进面板底下只露个头顶。
+    this.stage.frameTo(this.L.petCenterY, this.L.h, this.L.panelBottom + this.L.panelH);
 
     // 顺序即渲染层级，也决定能不能合批：先所有 Graphics，再所有 Sprite，最后所有 Label。
     // 三类渲染组件各自用不同的材质与图集，交叉挂载会把批次切碎（docs/06 §4.4）。
@@ -203,7 +206,7 @@ export class MainView extends Component {
     const btnY = -h / 2 + BOTTOM_MARGIN;
     const barRows = Math.ceil(BARS.length / BAR_COLS);
     const panelH = BAR_ROW_H * barRows + PANEL_PAD * 2;
-    const panelBottom = btnY + BTN_H + 24;
+    const panelBottom = btnY + BTN_H + 16;
     const panelTop = panelBottom + panelH;
     const barsTop = panelTop - PANEL_PAD - 16;
 
@@ -285,7 +288,7 @@ export class MainView extends Component {
 
     this.btnIcons = ACTIONS.map((action, i) => {
       const node = makeNode(`Icon_${action.key}`, this.node, ICON_SIZE, ICON_SIZE);
-      node.setPosition(this.buttonCenterX(i), L.btnY + BTN_H - ICON_SIZE / 2 - 10);
+      node.setPosition(this.buttonCenterX(i), L.btnY + BTN_H - ICON_SIZE / 2 - 6);
 
       const sprite = node.addComponent(Sprite);
       sprite.sizeMode = Sprite.SizeMode.CUSTOM;
@@ -535,19 +538,19 @@ export class MainView extends Component {
       const cx = this.buttonCenterX(i);
       const icon = this.btnIcons[i];
       if (icon && icon.isValid) {
-        icon.setPosition(cx, by + BTN_H - ICON_SIZE / 2 - 10);
+        icon.setPosition(cx, by + BTN_H - ICON_SIZE / 2 - 6);
       }
 
       const main = this.btnLabels[i];
       const sub = this.btnSubLabels[i];
       if (main) {
         main.color = ready ? COLOR.accentText : COLOR.dim;
-        main.node.setPosition(cx, by + 30);
+        main.node.setPosition(cx, by + 24);
       }
       if (sub) {
         sub.color = ready ? COLOR.accentText : COLOR.dim;
         sub.string = this.busy[action.key] ? '…' : remain > 0 ? `${Math.ceil(remain / 1000)}s` : '';
-        sub.node.setPosition(cx, by + 12);
+        sub.node.setPosition(cx, by + 9);
       }
     });
   }
@@ -573,7 +576,13 @@ export class MainView extends Component {
     }
 
     const data = res.data;
-    if (this.stage) this.stage.react(action);
+    if (this.stage) {
+      this.stage.react(action);
+      // 动画差异（前摇/后摇、刷毛 5 段强度）在小屏上很难肉眼分辨，
+      // 把实际播的动画链打出来，方便确认接的是专用动画而不是通用兜底。
+      const chain = this.stage.lastChain;
+      if (chain.length) console.log(`[MainView] ${action} → ${chain.join(' → ')}`);
+    }
 
     const gained = gainedText(data.gained);
     if (gained) floatText(this.node, gained, COLOR.ok, this.L.btnY + BTN_H + 40);

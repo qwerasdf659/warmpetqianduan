@@ -31,8 +31,8 @@ AI 生成图常是 `RGB` 无 alpha，预览看着透明是假象，进引擎会�
 用 flood-fill 从四角只清外部白色，**不伤脸内高光/奶油色毛发**：
 
 ```bash
-# 处理整个目录里的 PNG
-python .cursor/skills/pet-spine-asset-prep/scripts/remove_bg.py docs/pet_cat_parts
+# 处理整个目录里的 PNG（分件图建议落在 assets-src/concept/parts/）
+python .cursor/skills/pet-spine-asset-prep/scripts/remove_bg.py assets-src/concept/parts
 
 # 或指定文件；白边残留就调大阈值
 python .cursor/skills/pet-spine-asset-prep/scripts/remove_bg.py a.png b.png --thresh 80
@@ -43,16 +43,16 @@ python .cursor/skills/pet-spine-asset-prep/scripts/remove_bg.py a.png b.png --th
 ## 3. 核实透明
 
 ```bash
-python -c "from PIL import Image; im=Image.open('docs/pet_cat_parts/cat_head.png'); print(im.mode, im.getbbox())"
+python -c "from PIL import Image; im=Image.open('assets-src/concept/parts/cat_head.png'); print(im.mode, im.getbbox())"
 ```
 
 要看到 `RGBA`；`getbbox()` 明显小于整图 = 背景已清。再肉眼看一眼别把眼睛高光挖空。
 
-## 4. 绑骨（按形态选，四足没有 AI 一键）
+## 4. 绑骨（本项目只有四足，没有 AI 一键这条路）
 
-- **拟人/Q版直立** → God Mode AI / Meowa `spine-run` 自动绑，导 Spine。
 - **四足** → LoongBones 手动绑（免费，导 Spine/DragonBones）或让 agent 代码生成骨架+idle；SOON 宣称多物种但需实测。
 - LoongBones 操作坑见规则文件（导入靠拖拽、别用人形预设、自动装配要求骨名=图名）。
+- God Mode / Meowa 这类自动绑骨**写死人形**，四足用不了；「拟人主宠」方案 2026-09-07 已废弃，不要再走那条分支。
 
 ## 5. 接入 Cocos（本项目约定）
 

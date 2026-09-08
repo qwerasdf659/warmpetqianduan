@@ -51,20 +51,25 @@ const STAGE_SPEED: Record<PetGrowthStage, number> = { baby: 1.15, teen: 1.0, adu
 
 /**
  * species → Spine 骨架资源名。后端目前返回 "default"，认不出就走兜底。
- * 兜底用拟人主宠：它是养成核心，也是唯一保证有全套动画的骨架（docs/06 §5.1）。
+ *
+ * 主角是**四足猫**（2026-09-07 定，拟人主宠不做）。猫狗共用一套四足骨架，
+ * 差异只在网格剪影和花色贴图上，所以 dog 到位后动画和配饰都不用重做（docs/06 §5.1）。
+ * 兜底指向猫：dog 骨架还没产出时，认不出的 species 一律显示猫，而不是空舞台。
  */
 const SPECIES_SKELETON: Record<string, string> = { cat: 'pet_cat/Cat', dog: 'pet_dog' };
-// 临时（玩法验证）：pet_humanoid / pet_dog 骨架还没到位，兜底先指向已导入的 59 猫包，
-// 保证 mock 返回 default species 时也能直接看到骨骼动画。真实主宠到位后改回 'pet_humanoid'。
 const FALLBACK_SKELETON = 'pet_cat/Cat';
 
 /** Spine 资源统一放在 resources/spine/ 下，运行时按名字加载 SkeletonData 子资源 */
 const SPINE_DIR = 'spine';
 /**
- * 动画名兜底候选：自研主宠会统一用小写 idle/happy；接入的现成素材（如 59 猫包）
+ * 动画名兜底候选：自研素材会统一用小写 idle/happy；接入的现成素材（如 59 猫包）
  * 用的是 Idle / Pers_Playful 这类命名。按顺序取第一个存在的，省得逐个改素材。
+ *
+ * 清醒的 idle 必须排在睡姿之前。玩家打开游戏时看到的是这个动画，
+ * 睡着的猫读起来是「它不需要我」，和养成品类要的「它在等我」正好相反。
+ * Sleep_A 只作最后兜底——真没有别的循环动画时，睡着也好过定格在初始姿势。
  */
-const IDLE_CANDIDATES = ['Sleep_A', 'idle', 'Idle', 'Sit_Idle', 'Idle3'];
+const IDLE_CANDIDATES = ['idle', 'Idle', 'Sit_Idle', 'Idle3', 'Sleep_A'];
 const HAPPY_CANDIDATES = ['happy', 'Pers_Playful', 'A_Play', 'Stand_Pat'];
 /** 散步用：走路动画 + 到点停下的站立 idle（不用 Sleep，睡着走看着怪） */
 const WALK_CANDIDATES = ['Walk', 'Walk2', 'Walk_2', 'walk'];
@@ -72,6 +77,81 @@ const WANDER_IDLE_CANDIDATES = ['Idle', 'Sit_Idle', 'idle', 'Stretch'];
 /** 拖拽用：被拎起来的过渡动作 + 被抱住的循环姿势 */
 const HOLD_PICK_CANDIDATES = ['Stand_Hold_Pick_Up', 'Floor_Hold_Pick_Up', 'X_Chair_Pick_Up'];
 const HOLD_LOOP_CANDIDATES = ['Stand_Hold', 'Floor_Hold', 'Stand_Hold_Hug', 'Stand_Hold_Sleep'];
+
+/**
+ * 顾客「站立等待」类姿势候选（轻量版换外观用）。只挑不依赖椅子/地板家具的独立动画，
+ * 每次到访随机取一个存在的，制造「不同顾客不同表现」；都不存在就退回骨架第一个动画。
+ */
+const CUSTOMER_POSE_CANDIDATES = ['Idle', 'Idle3', 'Wait', 'Tap_Wait', 'Tap_Wait2', 'Look_Down', 'Idle_Look_Down'];
+
+/**
+ * 顾客换色调用的槽位分组。素材只有一套长相（换装数据在 Unity 侧、拿不到），
+ * 于是退一步用 Spine 原生的「按槽位染色」做出肤色/发色/衣服色的粗略区分。
+ * 只列真实存在的槽位名（从骨架里解析得到）；运行时 findSlot 找不到的会自动跳过。
+ */
+const CUSTOMER_SKIN_SLOTS = [
+  'Head', 'Ear', 'Neck_A', 'Neck_B', 'Nose', 'Body_Skin',
+  'L_Arm_A_Skin', 'L_Arm_B_Skin', 'R_Arm_A_Skin', 'R_Arm_B_Skin', 'R_Arm_Skin',
+  'L_Leg_A_Skin', 'L_Leg_B_Skin', 'R_Leg_A_Skin', 'R_Leg_B_Skin',
+  'L_Hand', 'L_Hand_Normal', 'L_Hand_Normal_2', 'L_Hand_Open', 'L_Hand_Cheek', 'L_Hand_Sit', 'L_Hand_Sit_B',
+  'R_Hand', 'R_Hand_Normal', 'R_Hand_Open', 'R_Hand_Cheek', 'R_Hand_Sit', 'R_Hand_Sit_B',
+  'L_Foot', 'R_Foot',
+];
+const CUSTOMER_HAIR_SLOTS = ['Hair', 'Hair_Back_Long', 'Hair_Back_Mid', 'L_Brow', 'R_Brow', 'Beard'];
+const CUSTOMER_CLOTH_SLOTS = [
+  'Body', 'Body_B', 'Collar', 'L_Shoulder', 'R_Shoulder', 'L_Arm_Sleeve', 'R_Arm_Sleeve',
+  'Bottom', 'Skirt', 'Skirt_2', 'L_Leg_A_Pants', 'L_Leg_B_Pants', 'R_Leg_A_Pants', 'R_Leg_B_Pants',
+];
+
+/**
+ * 预设色（0~255）。槽位染色是**乘法**混合：颜色乘在原图上，只能压暗、不能提亮，
+ * 所以肤色这类都取偏浅的值，避免整块发黑。第一项接近原色（等于「不改」）。
+ */
+const CUSTOMER_SKIN_TONES = [
+  [255, 255, 255], [246, 224, 205], [232, 194, 166], [206, 158, 126], [166, 118, 90], [122, 84, 63],
+];
+const CUSTOMER_HAIR_TONES = [
+  [255, 255, 255], [214, 196, 176], [176, 138, 96], [150, 96, 62], [96, 72, 62], [70, 64, 66], [186, 138, 154],
+];
+const CUSTOMER_CLOTH_TONES = [
+  [255, 255, 255], [214, 226, 236], [196, 216, 198], [236, 212, 196], [222, 196, 214], [200, 204, 226], [232, 226, 190],
+];
+
+/** 从预设色表里随机取一组 */
+function pickTone(tones: number[][]): number[] {
+  return tones[Math.floor(Math.random() * tones.length)];
+}
+
+/**
+ * 顾客换色调（轻量版）：素材只有一套长相，用「按槽正片叠底染色」做出几档肤色/衣服色。
+ * 数值是乘算 tint（0~255），底图已带色所以只能往深/偏色调，做不了更白（这是素材限制，非引擎限制）。
+ * 头发是黑色，乘算染不动，故不染。RegionToColorWeights 是 Unity 二进制读不了，这里用手挑预设。
+ */
+const CUSTOMER_SKIN_TINTS: number[][] = [
+  [255, 255, 255], // 原肤色
+  [244, 224, 206], // 白净
+  [232, 196, 168], // 暖调
+  [210, 168, 138], // 小麦
+  [180, 138, 108], // 深肤
+  [255, 222, 210], // 红润
+];
+const CUSTOMER_CLOTH_TINTS: number[][] = [
+  [255, 255, 255], // 原蓝
+  [178, 152, 210], // 偏紫
+  [150, 176, 212], // 偏靛
+  [170, 206, 206], // 偏青
+  [156, 156, 164], // 灰
+];
+/** 皮肤槽（头/耳/脖/手/脚/身体皮肤）与衣服槽（上衣/袖/肩/下装/腰带/领）的名字特征 */
+const SKIN_SLOT_RE = /Skin|Head|Ear|Neck|Foot|Hand/;
+const CLOTH_SLOT_RE = /Body|Bottom|Belt|Collar|Sleeve|Shoulder|Skirt|Pant/;
+
+/**
+ * 拖拽时宠物**向上**的可移动范围（相对基准高度）。向下的下限不用这个值，
+ * 而是由 MainView 按状态面板的真实位置传进来——写死一个数字的话，
+ * 要么像之前那样把猫压到面板下面只露头顶，要么反过来限制得过死、拖不到地面。
+ */
+const DRAG_UP_RANGE = 120;
 
 /** 散步左右端点（UI 坐标，屏幕中心为 0）与各段时长（秒） */
 const WANDER_LEFT = -180;
@@ -87,13 +167,33 @@ const PET_HIT_H = 150;
 /**
  * 四个互动按钮各自的动作候选（按顺序取第一个骨架里存在的）。
  * 只用不依赖家具/道具皮肤的独立动画，换任何皮肤都不会缺件；找不到就退回通用 happy。
+ *
+ * 按 docs/宠物Spine骨骼原理与外包说明.md §10 的「玩法需求 ↔ 现成动画」对照表排序：
+ * 专门为该玩法做的 Minigame_* 放最前，通用坐姿动作只作兜底。
  */
 const ACTION_ANIM: Record<string, string[]> = {
-  feed: ['Knead', 'Sit_Lick_Hand', 'Minigame_Treat_Correct'],
-  bath: ['Sit_Lick_Leg', 'Minigame_Brush'],
-  pet: ['Stand_Pat', 'Pers_Cuddly'],
-  play: ['Standing_Toy', 'A_Play', 'Pers_Playful'],
+  feed: ['Minigame_Treat_Correct', 'Knead', 'Sit_Lick_Hand'],
+  bath: ['Minigame_Brush', 'Sit_Lick_Leg'],
+  pet: ['Minigame_Belly_Rub', 'Minigame_Neck_Rub', 'Stand_Pat', 'Pers_Cuddly'],
+  play: ['Int_Butterfly', 'Standing_Toy', 'A_Play', 'Pers_Playful'],
 };
+
+/**
+ * 小游戏类动画带前摇/后摇（`_Pre` 凑过来 → 主体 → `_Post` 回味）。
+ * 存在就串起来播，让互动有「起手—进行—收尾」的节奏，而不是单段硬切回 idle。
+ * 命名规律见文档 §10：`Minigame_Belly_Rub` / `_Pre` / `_Post`、`Stand_Pat` / `_Pre` / `_Post`。
+ */
+const PRE_SUFFIXES = ['_Pre', '_Pre_2'];
+const POST_SUFFIXES = ['_Post', '_Post2', '_Post_2'];
+
+/**
+ * 刷毛有 5 段强度（`Minigame_Brush` / `_2`…`_5`）。连续点「洗澡」时逐级递进，
+ * 表现出「越刷越舒服」，而不是每次都播同一段。
+ */
+const BRUSH_STAGES = ['Minigame_Brush', 'Minigame_Brush_2', 'Minigame_Brush_3', 'Minigame_Brush_4', 'Minigame_Brush_5'];
+
+/** 等投喂的待机（喂食前的期待感）：Minigame_Treat_Idle / 2 / 3 */
+const TREAT_IDLE_CANDIDATES = ['Minigame_Treat_Idle', 'Minigame_Treat_Idle2', 'Minigame_Treat_Idle3'];
 
 /** 素材没有 default 皮肤时，挂载后必须显式选一套皮肤，否则骨架没有任何附件、整只不可见 */
 const DEFAULT_SKIN = '007';
@@ -119,6 +219,34 @@ const FG_MAP: Record<string, string> = {
   bg_greenhouse: 'Greenhouse_Foreground',
   bg_workshop: 'Workshop_Table',
 };
+
+/**
+ * 场景陈设（`resources/bg_layers/` 里剩下那批）。都是家具/陈设图：
+ * `Cat_*` 是猫用吧台/柜台，`Human_*` 是人用柜台/工作台，另有餐盘罩、包裹等道具。
+ *
+ * 摆在**背景之上、宠物之下**（贴着墙根），当可循环的房间装饰用。
+ * 与 FG_MAP 的前景条不同：前景条压在猫**前面**做遮挡，这里是猫**后面**的陈设。
+ */
+const DECOR_MAP: Record<string, string[]> = {
+  bg_kitchen: [
+    'Kitchen_Cat_1', 'Kitchen_Cat_2', 'Kitchen_Cat_3', 'Kitchen_Cat_4', 'Kitchen_Cat_5',
+    'Kitchen_Human_1', 'Kitchen_Human_2', 'Kitchen_Human_3', 'Kitchen_Human_4', 'Kitchen_Human_5',
+    'Kitchen_Cloche',
+  ],
+  bg_greenhouse: [
+    'Greenhouse_Cat_1', 'Greenhouse_Cat_2', 'Greenhouse_Cat_3', 'Greenhouse_Cat_4', 'Greenhouse_Cat_5',
+    'Greenhouse_Human_1', 'Greenhouse_Human_2', 'Greenhouse_Human_3', 'Greenhouse_Human_4', 'Greenhouse_Human_5',
+    'Greenhouse_Package', 'Greenhouse_Table',
+  ],
+  bg_workshop: [
+    'Workshop_Cat_1', 'Workshop_Cat_2', 'Workshop_Cat_3', 'Workshop_Cat_4', 'Workshop_Cat_5',
+    'Workshop_Human_1', 'Workshop_Human_2', 'Workshop_Human_3', 'Workshop_Human_4', 'Workshop_Human_5',
+    'Workshop_Package',
+  ],
+};
+
+/** 陈设显示高度占屏高的比例（家具原图尺寸差异大，统一按高度归一） */
+const DECOR_H_RATIO = 0.3;
 
 /**
  * 从素材包批量导入的舞台道具（互动家具 + 站点 + 特效），路径都是 spine/<名>/<名>。
@@ -153,17 +281,35 @@ const PROP_LIST = [
   'Curtain/Curtain',
   'Effect/Effect',
   'Feeding_Effect/Feeding_Effect',
+  'Box/Box',
 ];
-/** 帽子/饰品贴图 + 挂载到的骨骼名（2D 挂点：让一个 Sprite 每帧跟随该骨骼） */
-const HAT_RES = 'deco/hat_heart/spriteFrame';
+/**
+ * 饰品目录（2D 挂点：让一个 Sprite 每帧跟随头骨）。目录即清单——
+ * 用 loadDir 扫 resources/deco/accessory 下全部帽子/眼镜，别手写文件名。
+ */
+const ACCESSORY_DIR = 'deco/accessory';
 const HAT_BONE = 'Head';
 /**
  * 帽子相对头骨的偏移与缩放（都在骨架局部空间）。
  * 缩放是「目标世界缩放」，实际会再除以宠物的放大倍数（父节点 3 倍），
- * 否则帽子会被连带放大到糊脸。偏移让它落在头顶而不是盖在脸上。
+ * 否则帽子会被连带放大到糊脸。
+ *
+ * OFFSET_Y 沿头骨自身的「上」方向加（不是屏幕正上方），这样歪头时帽子不会飘出去。
+ * 59 猫包的 Head 骨骼原点在颈部附近、略偏一侧，所以还要一点横向补偿才落在头顶正中。
+ */
+/**
+ * 偏移按**骨架局部尺度**给（本素材 Head 骨实测在 (18, 37)，Head 附件原图 136×114，
+ * 附件以骨骼为中心摆放 → 头顶约在 37 + 114/2 ≈ 94）。
+ * 帽子贴在头顶略往下一点压住发际线更自然，所以取 50 上下而不是贴到 94。
  */
 const HAT_OFFSET_Y = 52;
-const HAT_SCALE = 0.5;
+const HAT_OFFSET_X = 0;
+/**
+ * 帽子原图按人头画的（约 300~450 px 宽），而猫头只有 136 单位宽，
+ * 所以缩到 ~0.35 才和猫头差不多等宽。这个值就在骨架局部空间里直接用，
+ * 不要再除以 petNode 的缩放（位置也用的是骨骼局部坐标，两者必须同一空间）。
+ */
+const HAT_SCALE = 0.35;
 
 @ccclass('PetStage')
 export class PetStage extends Component {
@@ -178,6 +324,10 @@ export class PetStage extends Component {
   private happyAnim = '';
   /** 骨架里所有动画名，react() 按互动动作挑动画时查它 */
   private animNames: string[] = [];
+  /** 刷毛强度阶段（0..4），连续点「洗澡」时逐级推进 */
+  private brushStage = -1;
+  /** 上一次互动实际排上的动画链，供界面显示确认（动画差异不易肉眼分辨） */
+  private lastActionChain: string[] = [];
   /** 散步：走路 / 停顿站立动画，以及是否正在散步 */
   private walkAnim = '';
   private wanderIdle = '';
@@ -194,6 +344,10 @@ export class PetStage extends Component {
   /** 前景遮挡层（叠在猫之上），随场景切换 */
   private fgNode: Node | null = null;
   private fgSprite: Sprite | null = null;
+  /** 场景陈设层（猫身后的家具），按场景一组、可循环切换 */
+  private decorNode: Node | null = null;
+  private decorSprite: Sprite | null = null;
+  private decorIndex = -1;
   /** 装修间地板层（墙由背景 Sprite 兼任），以及墙纸/地板贴块与当前下标 */
   private floorNode: Node | null = null;
   private floorSprite: Sprite | null = null;
@@ -204,12 +358,22 @@ export class PetStage extends Component {
   private decoLoaded = false;
   /** 顾客节点（Customer Spine + 名牌），toggleCustomer 控制 */
   private customerNode: Node | null = null;
+  /**
+   * 当前顾客的骨架与随机色调。动画里若带槽位颜色关键帧，会每帧覆盖掉我们设的颜色，
+   * 所以 update() 里持续重涂一次兜底（槽位数不多，开销可忽略）。
+   */
+  private customerSkel: sp.Skeleton | null = null;
+  private customerTones: { slots: string[]; rgb: number[] }[] = [];
   /** 全部可切换皮肤（编号皮肤）与当前下标 */
   private skinList: string[] = [];
   private skinIndex = 0;
   /** 帽子节点与它跟随的骨骼；update() 每帧把帽子对齐到骨骼世界位姿 */
   private hatNode: Node | null = null;
   private hatBone: ReturnType<sp.Skeleton['findBone']> | null = null;
+  /** 全部饰品贴图与当前下标（-1 = 不戴）。首次点击时 loadDir 扫一次后缓存 */
+  private accessories: SpriteFrame[] = [];
+  private accessoryIndex = -1;
+  private accessoriesLoaded = false;
   /** 当前舞台道具节点与它在 PROP_LIST 里的下标（-1 = 无） */
   private furnNode: Node | null = null;
   private propIndex = -1;
@@ -218,6 +382,10 @@ export class PetStage extends Component {
   private baseScale = 1;
   /** UI 预留给宠物那块区域的中心（frameTo 传入） */
   private centerY = 0;
+  /** UI 给的原始基准高度，拖拽落点以它为中心做区间约束（centerY 会被拖拽改写，它不会） */
+  private homeY = 0;
+  /** 宠物可以被拖到的最低高度（状态面板上沿附近），由 frameTo 传入 */
+  private minY = -Number.MAX_SAFE_INTEGER;
 
   /**
    * 整个 onLoad 包在 try 里：MainView 是先挂本组件、再建 UI 的，
@@ -240,7 +408,10 @@ export class PetStage extends Component {
     store.off('pet', this.syncFromStore);
     if (this.petNode) Tween.stopAllByTarget(this.petNode);
     if (this.furnNode && this.furnNode.isValid) this.furnNode.destroy();
+    this.customerSkel = null;
+    this.customerTones = [];
     if (this.customerNode && this.customerNode.isValid) this.customerNode.destroy();
+    if (this.decorNode && this.decorNode.isValid) this.decorNode.destroy();
     if (this.fgNode && this.fgNode.isValid) this.fgNode.destroy();
     if (this.bgNode && this.bgNode.isValid) this.bgNode.destroy();
     if (this.petNode && this.petNode.isValid) this.petNode.destroy();
@@ -290,6 +461,19 @@ export class PetStage extends Component {
     floor.active = false;
     this.floorNode = floor;
     this.floorSprite = floorSprite;
+
+    // 陈设层：背景之上、宠物之下，贴墙根摆家具
+    const decor = new Node('StageDecor');
+    decor.layer = Layers.Enum.UI_2D;
+    decor.addComponent(UITransform);
+    decor.parent = this.node;
+    decor.setSiblingIndex(2);
+    const decorSprite = decor.addComponent(Sprite);
+    decorSprite.sizeMode = Sprite.SizeMode.TRIMMED;
+    decorSprite.type = Sprite.Type.SIMPLE;
+    decor.active = false;
+    this.decorNode = decor;
+    this.decorSprite = decorSprite;
 
     // 前景层：排在宠物之后（更上层），但在 MainView 的 UI 之前
     const fg = new Node('StageForeground');
@@ -392,22 +576,91 @@ export class PetStage extends Component {
     });
   }
 
-  /** 换墙纸（只在装修间可见效果）。 */
+  /**
+   * 换墙纸。墙纸/地板只有「装修间」场景才铺得出来（成品房间背景是整幅画，
+   * 墙和地分不开），所以不在装修间时先自动切过去——否则点了毫无反应，
+   * 玩家没法知道是「坏了」还是「场景不对」。
+   */
   public cycleWallpaper(dir = 1) {
+    this.enterDecoScene();
     this.ensureDecoTiles(() => {
       if (!this.wallTiles.length) return;
       this.wallIndex = (this.wallIndex + dir + this.wallTiles.length) % this.wallTiles.length;
-      if (BG_LIST[this.bgIndex] === DECO_SCENE) this.applyDecoTiles();
+      this.applyDecoTiles();
     });
   }
 
-  /** 换地板（只在装修间可见效果）。 */
+  /** 换地板。同 cycleWallpaper：不在装修间时自动切过去。 */
   public cycleFloor(dir = 1) {
+    this.enterDecoScene();
     this.ensureDecoTiles(() => {
       if (!this.floorTiles.length) return;
       this.floorIndex = (this.floorIndex + dir + this.floorTiles.length) % this.floorTiles.length;
-      if (BG_LIST[this.bgIndex] === DECO_SCENE) this.applyDecoTiles();
+      this.applyDecoTiles();
     });
+  }
+
+  /**
+   * 循环切换当前场景的陈设：每点一次换下一件家具，走到末尾再点一次清空。
+   * 装修间没有配套陈设图（它是纯墙+地板），所以在那里点会提示并跳过。
+   */
+  public cycleDecor(dir = 1) {
+    const list = DECOR_MAP[BG_LIST[this.bgIndex]] || [];
+    if (!list.length) {
+      if (this.decorNode) this.decorNode.active = false;
+      this.decorIndex = -1;
+      return;
+    }
+    // 推进下标：-1(无) → 0..N-1 → -1
+    this.decorIndex = this.decorIndex + dir >= list.length ? -1 : this.decorIndex + dir;
+    this.applyDecor();
+  }
+
+  /** 按当前下标贴陈设图；下标 -1 时隐藏 */
+  private applyDecor() {
+    const node = this.decorNode;
+    const sprite = this.decorSprite;
+    if (!node || !sprite) return;
+
+    const list = DECOR_MAP[BG_LIST[this.bgIndex]] || [];
+    if (this.decorIndex < 0 || !list.length) {
+      node.active = false;
+      return;
+    }
+    const res = list[this.decorIndex];
+    resources.load(`bg_layers/${res}/spriteFrame`, SpriteFrame, (err, frame) => {
+      if (this.disposed || !node.isValid) return;
+      if (err || !frame) {
+        console.warn(`[PetStage] 陈设 ${res} 加载失败，跳过`, err);
+        node.active = false;
+        return;
+      }
+      sprite.spriteFrame = frame;
+      // 家具原图尺寸差异大，按屏高比例归一，再把底边贴到地面高度
+      const size = view.getVisibleSize();
+      const scale = (size.height * DECOR_H_RATIO) / frame.rect.height;
+      node.setScale(scale, scale, 1);
+      const h = frame.rect.height * scale;
+      node.setPosition(-size.width * 0.24, -size.height / 2 + size.height * 0.3 + h / 2, 0);
+      node.active = true;
+    });
+  }
+
+  /** 当前陈设序号（1-based，0 = 无）与本场景陈设总数，供展示层显示 */
+  public get decorNo(): number {
+    return this.decorIndex + 1;
+  }
+  public get decorCount(): number {
+    return (DECOR_MAP[BG_LIST[this.bgIndex]] || []).length;
+  }
+
+  /** 若当前不在装修间，切到装修间（墙纸/地板才有承载） */
+  private enterDecoScene() {
+    if (BG_LIST[this.bgIndex] === DECO_SCENE) return;
+    const i = BG_LIST.indexOf(DECO_SCENE);
+    if (i < 0) return;
+    this.bgIndex = i;
+    this.applyBackground(DECO_SCENE);
   }
 
   /** 循环切换场景背景（展示用）。 */
@@ -415,6 +668,9 @@ export class PetStage extends Component {
     if (!BG_LIST.length) return;
     this.bgIndex = (this.bgIndex + dir + BG_LIST.length) % BG_LIST.length;
     this.applyBackground(BG_LIST[this.bgIndex]);
+    // 陈设是按场景分组的，换场景后旧陈设不属于新场景，清掉重新开始
+    this.decorIndex = -1;
+    this.applyDecor();
   }
 
   // ---- 宠物本体 ----
@@ -452,20 +708,22 @@ export class PetStage extends Component {
       this.stopWander();
       this.playHeld();
       const p = toLocal(e);
-      if (p) node.setPosition(p.x, p.y, 0);
+      if (p) node.setPosition(p.x, this.clampStageY(p.y), 0);
     }, this);
 
     node.on(Node.EventType.TOUCH_MOVE, (e: EventTouch) => {
       if (!this.dragging) return;
       const p = toLocal(e);
-      if (p) node.setPosition(p.x, p.y, 0);
+      if (p) node.setPosition(p.x, this.clampStageY(p.y), 0);
     }, this);
 
     const end = () => {
       if (!this.dragging) return;
       this.dragging = false;
-      // 松手后从落点继续散步：以当前高度作为新的散步基准
-      this.centerY = node.position.y;
+      // 松手后从落点继续散步：以当前高度作为新的散步基准，
+      // 但要夹在基准高度附近，别让宠物停在底部面板下面只露个头
+      this.centerY = this.clampStageY(node.position.y);
+      node.setPosition(node.position.x, this.centerY, 0);
       this.startWander();
     };
     node.on(Node.EventType.TOUCH_END, end, this);
@@ -634,9 +892,23 @@ export class PetStage extends Component {
    * @param centerY    预留区域中心（UI 坐标）
    * @param _viewportH 当前可视高度（2D 下暂不需要，保留签名与调用方兼容）
    */
-  public frameTo(centerY: number, _viewportH: number) {
+  public frameTo(centerY: number, _viewportH: number, minY?: number) {
     this.centerY = centerY;
+    // 记住 UI 给的基准高度：拖拽落点要以它为中心做区间约束，
+    // 否则往下一拖就把散步基准永久压到底部面板下面，宠物再也回不来。
+    this.homeY = centerY;
+    if (typeof minY === 'number') this.minY = minY;
     if (this.petNode) this.petNode.setPosition(0, centerY, 0);
+  }
+
+  /**
+   * 把落点高度夹在允许范围内：向上不超出基准一段距离（别顶进顶部信息栏），
+   * 向下不低于 minY（状态面板上沿附近，由 MainView 按真实布局给），
+   * 这样猫能一直拖到地面、又不会沉到面板底下只露头顶。
+   */
+  private clampStageY(y: number): number {
+    const hi = this.homeY + DRAG_UP_RANGE;
+    return Math.min(hi, Math.max(this.minY, y));
   }
 
   private syncFromStore() {
@@ -677,14 +949,70 @@ export class PetStage extends Component {
       })
       .start();
 
-    if (this.skeleton) {
-      const cands = (action && ACTION_ANIM[action]) || [];
-      const name = cands.find((n) => this.animNames.indexOf(n) >= 0) || this.happyAnim;
-      if (name) {
-        this.skeleton.setAnimation(0, name, false);
-        if (this.idleAnim) this.skeleton.addAnimation(0, this.idleAnim, true, 0);
+    if (this.skeleton) this.lastActionChain = this.playActionChain(action);
+  }
+
+  /**
+   * 播一次互动动画链：`_Pre`（起手，可选）→ 主体 → `_Post`（收尾，可选）→ idle。
+   * 用 addAnimation 排队，Spine 会按顺序接着播，不需要自己算时长。
+   *
+   * 返回实际排上的动画名序列，供上层显示「这次播了什么」——
+   * 动画差异在小屏上不易察觉，没有反馈的话根本分不清有没有生效。
+   */
+  private playActionChain(action?: string): string[] {
+    const skel = this.skeleton;
+    if (!skel) return [];
+
+    const has = (n: string) => this.animNames.indexOf(n) >= 0;
+    const cands = (action && ACTION_ANIM[action]) || [];
+    let main = cands.find(has) || this.happyAnim;
+
+    // 洗澡：连续点逐级推进刷毛强度（1→5 循环），表现「越刷越舒服」
+    if (action === 'bath') {
+      const stages = BRUSH_STAGES.filter(has);
+      if (stages.length) {
+        this.brushStage = (this.brushStage + 1) % stages.length;
+        main = stages[this.brushStage];
       }
     }
+    if (!main) return [];
+
+    const chain: string[] = [];
+
+    // 前摇：优先找主体动画的 _Pre 变体
+    const pre = PRE_SUFFIXES.map((s) => main + s).find(has);
+    if (pre) {
+      skel.setAnimation(0, pre, false);
+      skel.addAnimation(0, main, false, 0);
+      chain.push(pre, main);
+    } else {
+      skel.setAnimation(0, main, false);
+      chain.push(main);
+    }
+
+    // 后摇：主体播完接一段回味
+    const post = POST_SUFFIXES.map((s) => main + s).find(has);
+    if (post) {
+      skel.addAnimation(0, post, false, 0);
+      chain.push(post);
+    }
+
+    // 喂食后先摆一会儿「等投喂」的期待姿势，再回 idle
+    if (action === 'feed') {
+      const treatIdle = TREAT_IDLE_CANDIDATES.find(has);
+      if (treatIdle) {
+        skel.addAnimation(0, treatIdle, false, 0);
+        chain.push(treatIdle);
+      }
+    }
+
+    if (this.idleAnim) skel.addAnimation(0, this.idleAnim, true, 0);
+    return chain;
+  }
+
+  /** 上一次互动实际播的动画链（调试/演示用，显示在界面上确认动画生效） */
+  public get lastChain(): string[] {
+    return this.lastActionChain;
   }
 
   private resumePlaceholderIdle() {
@@ -708,8 +1036,19 @@ export class PetStage extends Component {
     this.skinIndex = (this.skinIndex + dir + this.skinList.length) % this.skinList.length;
     const name = this.skinList[this.skinIndex];
     skel.setSkin(name);
+    // setSkin 已把槽位设回 setup pose，但多页 atlas 下保险起见重播 idle 刷新一次附件
     if (this.idleAnim) skel.setAnimation(0, this.idleAnim, true);
     return name;
+  }
+
+  /** 可切换皮肤总数（供展示层显示「第几只 / 共几只」）。0 表示骨架未就绪或无编号皮肤。 */
+  public get skinCount(): number {
+    return this.skinList.length;
+  }
+
+  /** 当前皮肤序号（1-based，便于直接显示）。无皮肤时返回 0。 */
+  public get currentSkinNo(): number {
+    return this.skinList.length ? this.skinIndex + 1 : 0;
   }
 
   /**
@@ -748,8 +1087,13 @@ export class PetStage extends Component {
       const skel = node.addComponent(sp.Skeleton);
       skel.skeletonData = data;
       skel.premultipliedAlpha = false;
-      // 道具动画名未知，直接取第一个循环播
       const rt = data.getRuntimeData && data.getRuntimeData();
+      // 有的道具（如 Box）和顾客一样：default 皮肤是空的，部件都在命名皮肤里，
+      // 不选皮肤就只出影子/不出图。取第一个非 default 皮肤兜底；没有命名皮肤时是无操作。
+      const skinNames = rt && rt.skins ? rt.skins.map((s) => s.name) : [];
+      const skin = skinNames.find((n) => n && n !== 'default') || '';
+      if (skin) skel.setSkin(skin);
+      // 道具动画名未知，直接取第一个循环播
       const anims = rt && rt.animations ? rt.animations.map((a) => a.name) : [];
       if (anims.length) skel.setAnimation(0, anims[0], true);
     });
@@ -826,18 +1170,48 @@ export class PetStage extends Component {
    * 在 update() 里每帧读头骨的世界位姿，把节点对齐过去——效果等价于挂点。
    */
   public toggleHat() {
+    this.ensureAccessories(() => {
+      if (!this.accessories.length) {
+        console.warn(`[PetStage] ${ACCESSORY_DIR} 下没有饰品贴图`);
+        return;
+      }
+      // 推进下标：-1(不戴) → 0..N-1 → -1
+      this.accessoryIndex =
+        this.accessoryIndex + 1 >= this.accessories.length ? -1 : this.accessoryIndex + 1;
+      this.applyAccessory();
+    });
+  }
+
+  /** 首次使用时扫一遍饰品目录并缓存（目录即清单，不手写文件名） */
+  private ensureAccessories(cb: () => void) {
+    if (this.accessoriesLoaded) {
+      cb();
+      return;
+    }
+    resources.loadDir(ACCESSORY_DIR, SpriteFrame, (err, frames) => {
+      if (this.disposed) return;
+      if (err) console.warn('[PetStage] 饰品目录加载失败', err);
+      this.accessories = (frames as SpriteFrame[]) || [];
+      this.accessoriesLoaded = true;
+      cb();
+    });
+  }
+
+  /** 按当前下标挂上饰品；下标为 -1 时摘掉 */
+  private applyAccessory() {
     if (this.hatNode) {
       if (this.hatNode.isValid) this.hatNode.destroy();
       this.hatNode = null;
       this.hatBone = null;
-      return;
     }
+    if (this.accessoryIndex < 0) return;
+
     const pet = this.petNode;
     const skel = this.skeleton;
     if (!pet || !skel) return;
     const bone = skel.findBone(HAT_BONE);
     if (!bone) {
-      console.warn(`[PetStage] 找不到骨骼 ${HAT_BONE}，无法挂帽子`);
+      console.warn(`[PetStage] 找不到骨骼 ${HAT_BONE}，无法挂饰品`);
       return;
     }
     this.hatBone = bone;
@@ -846,20 +1220,45 @@ export class PetStage extends Component {
     node.layer = Layers.Enum.UI_2D;
     node.addComponent(UITransform);
     node.parent = pet;
-    // 扣掉父节点（宠物）的放大倍数，得到真正的目标世界大小
-    const s = HAT_SCALE / (this.baseScale || 1);
-    node.setScale(s, s, 1);
+    // 位置用的是骨骼局部坐标（与 petNode 局部空间同源），所以缩放也在同一空间里给：
+    // 这里**不要**再除以 petNode 的放大倍数——那会让帽子相对猫头又缩小一遍。
+    node.setScale(HAT_SCALE, HAT_SCALE, 1);
     const sprite = node.addComponent(Sprite);
     sprite.sizeMode = Sprite.SizeMode.TRIMMED;
-    resources.load(HAT_RES, SpriteFrame, (err, frame) => {
-      if (!node.isValid) return;
-      if (err || !frame) {
-        console.warn('[PetStage] 帽子贴图加载失败', err);
-        return;
-      }
-      sprite.spriteFrame = frame;
-    });
+    sprite.spriteFrame = this.accessories[this.accessoryIndex];
     this.hatNode = node;
+  }
+
+  /** 当前饰品序号（1-based，0 = 没戴）与总数，供展示层显示 */
+  public get accessoryNo(): number {
+    return this.accessoryIndex + 1;
+  }
+  public get accessoryCount(): number {
+    return this.accessories.length;
+  }
+
+  /**
+   * 给一组槽位染色（Spine 原生按槽位着色，乘法混合）。
+   * 槽位名找不到就跳过——不同素材槽位命名不一，缺一个不该让整只顾客失败。
+   */
+  /** 把当前顾客的随机色调重涂一遍（每帧调用，压过动画里的颜色关键帧） */
+  private applyCustomerTones() {
+    const skel = this.customerSkel;
+    if (!skel || !skel.isValid) return;
+    for (const t of this.customerTones) this.tintSlots(skel, t.slots, t.rgb);
+  }
+
+  private tintSlots(skel: sp.Skeleton, slotNames: string[], rgb: number[]) {
+    const r = rgb[0] / 255;
+    const g = rgb[1] / 255;
+    const b = rgb[2] / 255;
+    for (const name of slotNames) {
+      const slot = skel.findSlot(name);
+      if (!slot) continue;
+      slot.color.r = r;
+      slot.color.g = g;
+      slot.color.b = b;
+    }
   }
 
   /**
@@ -870,6 +1269,8 @@ export class PetStage extends Component {
     if (this.customerNode) {
       if (this.customerNode.isValid) this.customerNode.destroy();
       this.customerNode = null;
+      this.customerSkel = null;
+      this.customerTones = [];
       return;
     }
     if (!this.spineReady()) return;
@@ -880,8 +1281,13 @@ export class PetStage extends Component {
     node.parent = this.node;
     node.setSiblingIndex(2);
     node.setPosition(-210, this.centerY - 120, 0);
-    node.setScale(0.9, 0.9, 1);
     this.customerNode = node;
+
+    // 骨架放子节点：随机体型/朝向的翻转只作用于它，名牌文字不被镜像
+    const skelNode = new Node('CustomerSkel');
+    skelNode.layer = Layers.Enum.UI_2D;
+    skelNode.addComponent(UITransform);
+    skelNode.parent = node;
 
     resources.load('spine/Customer/Customer', sp.SkeletonData, (err, data) => {
       if (this.disposed || !node.isValid) return;
@@ -891,14 +1297,49 @@ export class PetStage extends Component {
         this.customerNode = null;
         return;
       }
-      const skel = node.addComponent(sp.Skeleton);
+      const skel = skelNode.addComponent(sp.Skeleton);
       skel.skeletonData = data;
       skel.premultipliedAlpha = false;
       const rt = data.getRuntimeData && data.getRuntimeData();
+      // 顾客骨架的 default 皮肤是空的，全部部件都在命名皮肤里（本素材只有一个，名 "1"）。
+      // 和 pet_cat 一样：不选皮肤则整只没有任何附件，只剩名牌文字。取第一个非 default 皮肤挂上。
+      const skinNames = rt && rt.skins ? rt.skins.map((s) => s.name) : [];
       const anims = rt && rt.animations ? rt.animations.map((a) => a.name) : [];
-      if (anims.length) skel.setAnimation(0, anims[0], true);
+      const skin = skinNames.find((n) => n && n !== 'default') || '';
+      if (skin) skel.setSkin(skin);
 
-      // 名牌：模拟后端下发的顾客信息
+      // 轻量版「不同顾客」：素材只有一套长相，靠随机 姿势 + 朝向 + 体型 + 色调 制造差异。
+      const poses = CUSTOMER_POSE_CANDIDATES.filter((n) => anims.indexOf(n) >= 0);
+      const anim = poses.length ? poses[Math.floor(Math.random() * poses.length)] : (anims[0] || '');
+      if (anim) skel.setAnimation(0, anim, true);
+
+      const size = 0.82 + Math.random() * 0.22; // 体型 0.82~1.04
+      const face = Math.random() < 0.5 ? -1 : 1; // 朝向随机（翻 scale.x）
+      skelNode.setScale(size * face, size, 1);
+
+      // 随机肤色/发色/衣服色：按槽位染色，做出粗略的「不同人」区分。
+      // 存下来在 update() 里每帧重涂，防止动画的颜色关键帧把它覆盖掉。
+      this.customerSkel = skel;
+      this.customerTones = [
+        { slots: CUSTOMER_SKIN_SLOTS, rgb: pickTone(CUSTOMER_SKIN_TONES) },
+        { slots: CUSTOMER_HAIR_SLOTS, rgb: pickTone(CUSTOMER_HAIR_TONES) },
+        { slots: CUSTOMER_CLOTH_SLOTS, rgb: pickTone(CUSTOMER_CLOTH_TONES) },
+      ];
+      this.applyCustomerTones();
+
+      // 换色调：随机肤色档 + 衣服色档，按槽名分类染色。setSkin 已把槽色重置为白，这里染在其后。
+      const skinTint = CUSTOMER_SKIN_TINTS[Math.floor(Math.random() * CUSTOMER_SKIN_TINTS.length)];
+      const clothTint = CUSTOMER_CLOTH_TINTS[Math.floor(Math.random() * CUSTOMER_CLOTH_TINTS.length)];
+      const slotDatas = rt && rt.slots ? rt.slots : [];
+      for (const sd of slotDatas) {
+        const nm = sd.name || '';
+        const tint = SKIN_SLOT_RE.test(nm) ? skinTint : CLOTH_SLOT_RE.test(nm) ? clothTint : null;
+        if (!tint) continue;
+        const slot = skel.findSlot(nm);
+        if (slot && slot.color) slot.color.set(tint[0] / 255, tint[1] / 255, tint[2] / 255, 1);
+      }
+
+      // 名牌：模拟后端下发的顾客信息（挂在父节点，不随骨架翻转镜像）
       const c = randomCustomer();
       const label = makeLabel(`${c.name}  想要「${c.order}」`, node, {
         size: 26,
@@ -906,18 +1347,24 @@ export class PetStage extends Component {
         align: 'center',
         bold: true,
       });
-      label.node.setPosition(0, 220, 0);
+      label.node.setPosition(0, 210, 0);
     });
   }
 
   /** 每帧把帽子对齐到头骨的世界位姿（骨骼坐标与 petNode 局部空间同源）。 */
   update() {
+    this.applyCustomerTones();
+
     const node = this.hatNode;
     const bone = this.hatBone;
     if (!node || !bone || !node.isValid) return;
-    node.setPosition(bone.worldX, bone.worldY + HAT_OFFSET_Y, 0);
-    // 从骨骼世界矩阵取旋转角（度），让帽子跟着头一起歪
-    const rot = (Math.atan2(bone.c, bone.a) * 180) / Math.PI;
-    node.setRotationFromEuler(0, 0, rot);
+    // 骨骼的 worldX/worldY 是**骨架局部空间**的值（本素材整只只有 ~106 单位高），
+    // 和挂在同一父节点下的子节点局部坐标同源，所以直接用、不要再乘节点缩放。
+    //
+    // 偏移也必须按这个尺度给（几十像素在这里就是「半只猫」那么大）。
+    // 早先版本用 atan2(bone.c, bone.a) 求朝向再沿该方向偏移：这根骨骼实测 a=0、c=0.52，
+    // 算出来是 90°，于是「上」被当成了水平方向，帽子被推到腰侧——所以这里不做朝向换算，
+    // 直接加竖直偏移即可（猫头基本不大幅歪，够用且不会算飞）。
+    node.setPosition(bone.worldX + HAT_OFFSET_X, bone.worldY + HAT_OFFSET_Y, 0);
   }
 }

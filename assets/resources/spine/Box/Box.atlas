@@ -1,0 +1,20 @@
+
+Box.png
+size: 295,213
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Parts_Furniture/Box_A
+  rotate: true
+  xy: 2, 2
+  size: 209, 179
+  orig: 217, 179
+  offset: 0, 0
+  index: -1
+Parts_Furniture/Box_B
+  rotate: true
+  xy: 183, 3
+  size: 208, 110
+  orig: 208, 111
+  offset: 0, 0
+  index: -1

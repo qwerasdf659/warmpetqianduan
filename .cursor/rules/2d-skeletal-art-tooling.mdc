@@ -1,45 +1,96 @@
 ---
-description: AI 生成 2D 骨骼宠物素材的工具选型与踩坑（四足 vs 人形、Spine 接入 Cocos、去白底、LoongBones 操作）。选 AI 美术/骨骼工具、做宠物骨骼动画、处理 Spine 资源或角色分件图时读。
-globs: assets/scripts/ui/PetStage.ts,assets/resources/spine/**,docs/pet_cat_parts/**,docs/2D-Spine迁移与接入.md
+description: AI 生成 2D 骨骼宠物素材的工具选型与踩坑（四足 vs 人形、绑骨底图要求、God Mode/LoongBones 操作、去白底）。选 AI 美术/骨骼工具、做宠物骨骼动画、准备角色分件图时读。
+globs: assets/scripts/ui/PetStage.ts,assets/resources/spine/**,assets-src/**,docs/2D-Spine迁移与接入.md
 alwaysApply: false
 ---
 
 # 2D 骨骼宠物素材：AI 工具选型与踩坑
 
 本项目宠物用 **2D 骨骼（Cocos 原生 Spine，`sp.Skeleton`，见 `PetStage.ts`）**，
-形态有 **Q版拟人 + 四足**。以下是实测结论，别再从头横评一遍。
+形态**只有四足**（猫狗共用一套骨架；「Q版拟人主宠」方案 2026-09-07 已废弃）。
+以下是实测结论，别再从头横评一遍。
+接入侧（版本对齐、皮肤、挂点、素材包处理）见规则 `spine-2d-pet`。
+
+> **这条决定直接砍掉了大半工具选型。** 下表里能自动绑骨的全是人形专用，
+> 四足一个都不支持——所以本项目**没有 AI 一键绑骨这条路**，别再去评估它们。
 
 ## 铁律：四足/动物「AI 自动绑骨」目前没有成熟方案
+
 - 姿态检测模型全是拿人体训练的，动物（四足、尾巴、多物种）是全行业空白。
 - **人形能自动绑，四足基本歇菜**——选型先按形态分流，别指望一键。
 
 ## 工具能力边界（按形态选）
+
 | 工具 | 骨骼来源 | 四足 | 导 Spine | 备注 |
 | --- | --- | --- | --- | --- |
-| God Mode AI | 从图自动绑（写死人形：头/2臂/2腿/躯干） | ❌ | ✅3.5–4.2 | 拟人可用 |
-| Meowa `spine-run` | 换**固定人形模板**（2/4头身） | ❌ | ✅ | 拟人可用；`animate-run` 只出帧序列 |
+| God Mode AI | 从图自动绑（写死人形：头/2臂/2腿/躯干） | ❌ | ✅3.5–4.2 | **本项目用不上**（只做四足） |
+| Meowa `spine-run` | 换**固定人形模板**（2/4头身） | ❌ | ✅ | **本项目用不上**；`animate-run` 只出帧序列 |
 | Stretchy/See-Through/Live2D | 人形姿态/日系立绘 | ❌ | 部分 | 都偏人形 |
 | **LoongBones** | **编辑器手动绑**（任意拓扑） | ✅ | ✅（也可 DragonBones） | 免费、支持 Cocos；**AI 只辅助生成动作，不绑骨** |
 | **SOON**（极逸/SoonAnix） | AI 生成，**宣称多体态多物种** | ⚠️待实测 | ✅**4.2.43** | 二测、有门槛、未验证 |
 
-## 决策
-- **拟人/Q版直立宠物** → God Mode 或 Meowa `spine-run` 自动绑，最省。
-- **四足宠物** → ①LoongBones 手动绑 + AI 出动作；②让我**代码直接生成 Spine（骨架+idle）**；③赌 SOON 实测。四足没有免费午餐。
-- 已有资产：`docs/59种spine卡通猫咪...` 是一套现成四足猫 Spine，`PetStage.ts` 兜底就用它（`pet_cat/Cat`）；换画风优先考虑 **reskin 复用它的骨架**，比从零绑快得多。
+**导出版本注意**：本项目引擎是 `spine-3.8`，而这些工具多数默认导 4.2。
+导出时**必须手动选 3.8**，否则运行时读不了（见 `spine-2d-pet`）。
 
-## 必踩的坑（都真实发生过）
-1. **AI 生成图常是 RGB 白底、无 alpha**（预览看着透明是假象）。进 Spine/引擎会有白框。
-   必须去白底：用 skill `pet-spine-asset-prep` 的 `remove_bg.py`（从四角 flood fill，只清外部白、不伤眼睛高光）。
-   核实：`python -c "from PIL import Image;print(Image.open('x.png').mode)"`，要 `RGBA`。
-2. **Spine 版本要对齐 Cocos runtime**：SOON 导出 4.2.43，导入前确认引擎 Spine 版本能吃 4.2，否则动画不播。
-3. **`premultipliedAlpha` 白框坑**：非预乘图集要 `skel.premultipliedAlpha = false`（`PetStage.ts` 已注释；59 猫包就是直通道 alpha）。
-4. **动画命名要对上代码**：`PetStage.ts` 的 `IDLE_CANDIDATES` / `WALK_CANDIDATES` / `HAPPY_CANDIDATES` / `ACTION_ANIM`；出资源时按这些名字命名 idle/walk，或反过来改常量。
-5. **Spine 资源放 `assets/resources/spine/<name>/`**，运行时 `resources.load('spine/<name>')`。
-6. **Cocos 场景编辑器里看不到宠物是正常的**——本项目纯代码建 UI、运行时加载。要看真身得**预览运行 + 起假后端**（`node _research/mock-server.mjs`）。
+## 决策
+
+本项目只做四足，所以**上表里带自动绑骨的三行（God Mode / Meowa / Stretchy）全部用不上**。
+剩下的路只有三条：①LoongBones 手动绑 + AI 出动作；②让 agent **代码直接生成 Spine
+（骨架+idle）**；③赌 SOON 实测。**四足没有免费午餐。**
+
+- 已有资产：`docs/59种spine卡通猫咪...` 是一套现成四足猫 Spine（59 花色 = 一套骨骼
+  × 59 skins），`PetStage.ts` 就用它（`pet_cat/Cat`），而它现在是**正式主角**不是临时兜底。
+- **换画风优先 reskin 复用它的骨架**，比从零绑快得多——狗也走这条路
+  （同骨架换网格剪影与贴图，动画和配饰全部复用）。
+- ⚠️ 但它是**扒来的商业素材**，上架前必须换成原创或正版授权（见 `spine-2d-pet` 合规段
+  与《宠物Spine骨骼原理与外包说明》§1）。骨架层级可照做，要重画的是贴图。
+
+## 合规
+
+- **God Mode 不是 Spine 的替代**：它只是出 Spine 文件的加速器，发布仍需买
+  **Spine license**；换装/skins/网格需 **Pro（约 $379）**，公司年营收超 $50 万美金需 Enterprise。
+- **不用盗版/破解 Spine**（合规红线，破解版也不给发布权）。
+- **DragonBones 已荒废、Windows 端导出被封**，弃用。
+- 素材包里原作者的厂牌 LOGO（如 `Runaway-Logo`）**不能用在自己产品里**。
+
+## 绑骨底图要求（否则拆件出来四肢又短又碎、易脱节）
+
+- 四足（本项目唯一形态）：**标准侧视**，四腿 + 尾摊开、脊柱水平，
+  腿前后错开以便逐条切件。底图见 `assets-src/concept/pet_quad_rigbase.png`。
+- 通用：**无投影/无阴影**、平涂描边、纯色底、留白边、全身入画。
+- 一步产出用 skill `pet-part-rig-prep`。
+
+> 原「主宠正面 A-pose、双臂外张」那条是给拟人主宠的，方案已废弃；
+> `assets-src/concept/pet_humanoid_rigbase.png` 不再是交付输入。
+
+## God Mode 操作顺序（错一步就卡住）
+
+1. 上传底图 → 勾 **Auto-remove background** → 点 **Build rig**
+   （**必须先建骨架**，渲染按钮在建骨架前是锁死的）。
+2. 拆分校验：拆件复选框是**标记「重做」用的**，拆对了别勾；错了拖关节点 Adjust cut 或单独 Redo。
+3. 次级运动：**尾巴自动勾上是对的**（要摆），眼/耳/装饰别勾。
+4. 选模板：挑**视角 + 体型接近**的——正面猫配**正面、双手垂放**的 idle；
+   避开带披风/武器/长裙/侧身的（套上必拧）。
+5. 渲染：正面不勾 Flip；商业 IP 不勾「公开分享」（走私有扣点）。同一角色重渲免费，多挑几版。
+6. 导出选 **Spine 3.8**（对齐本项目引擎，不是默认的 4.2）。
+7. 用 God Mode 要进 **`ai-spine-animation`** 页（骨骼），不是 `ai-sprite-generator`（那是序列帧）。
 
 ## LoongBones 操作要点（loongbones.com，免费，非 DragonBones）
-- **导入靠拖拽**：图片/PSD 直接从资源管理器拖进右侧 `图片` 面板，不是点"导入"按钮。
+
+- **导入靠拖拽**：图片/PSD 直接从资源管理器拖进右侧 `图片` 面板，不是点「导入」按钮。
 - **别用「人形骨架」预设**做四足——它是双足的。四足手动建骨。
 - **手动建骨每拖一次会在上一根下面接子骨**（易建出一长串）。建同级骨前**先点 `root`**。
 - **自动装配「按名称」**：要求**骨头名 = 图片名**（如 `cat_head`），一致才自动挂。
 - 绑好后选骨旋转，图跟着动 = 装配成功。
+
+## 必踩的坑（都真实发生过）
+
+1. **AI 生成图常是 RGB 白底、无 alpha**（预览看着透明是假象），进引擎会有白框。
+   必须去白底，用 skill `pet-part-rig-prep`。
+   核实：`python -c "from PIL import Image;print(Image.open('x.png').mode)"` 要 `RGBA`。
+2. **动画命名要对上代码**：`PetStage.ts` 的 `IDLE_CANDIDATES` / `WALK_CANDIDATES` /
+   `HAPPY_CANDIDATES` / `ACTION_ANIM`；出资源时按这些名字命名，或反过来改常量。
+3. **Cocos 场景编辑器里看不到宠物是正常的**——本项目纯代码建 UI、运行时加载。
+   要看真身得**预览运行 + 起假后端**（`node _research/mock-server.mjs`）。
+4. **Spine 编辑器工程源文件（`*.spine`）不进包但要保管**。改动画、加皮肤全靠它，
+   丢了就只能从导出物逆推。放 `assets-src/`，别丢在素材包里。
