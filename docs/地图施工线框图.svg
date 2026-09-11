@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <style>
+      .wall  { fill:#F2E4D0; stroke:#4A3728; stroke-width:6; vector-effect:non-scaling-stroke; }
+      .floorA{ fill:#FBF3E6; stroke:#C9B79A; stroke-width:3; vector-effect:non-scaling-stroke; }
+      .floorB{ fill:#F5E7CF; stroke:#C9B79A; stroke-width:3; vector-effect:non-scaling-stroke; }
+      .zone  { fill:#FFFCF7; stroke:#D9A05B; stroke-width:4; vector-effect:non-scaling-stroke; }
+      .stair { fill:#E7D2AE; stroke:#B98C4E; stroke-width:3; vector-effect:non-scaling-stroke; }
+      .vp    { fill:none; stroke:#D95E50; stroke-width:5; stroke-dasharray:22 12; vector-effect:non-scaling-stroke; }
+      .load  { stroke:#5BA3D9; stroke-width:4; stroke-dasharray:16 10; vector-effect:non-scaling-stroke; }
+      .dim   { stroke:#9A8570; stroke-width:2; vector-effect:non-scaling-stroke; }
+      .tk    { fill:#4A3728; }
+      .tw    { fill:#6A523D; }
+      .tz    { fill:#4A3728; font-weight:bold; }
+      .tvp   { fill:#D95E50; font-weight:bold; }
+      .tld   { fill:#3F82B0; }
+      .hud   { fill:#FFFCF7; stroke:#D9A05B; stroke-width:3; vector-effect:non-scaling-stroke; }
+      .hudR  { fill:#F6E7CF; stroke:#C9B79A; stroke-width:2; vector-effect:non-scaling-stroke; }
+      .cap   { fill:#EFD9D6; stroke:#D95E50; stroke-width:2; stroke-dasharray:8 6; vector-effect:non-scaling-stroke; }
+      .title { fill:#4A3728; font-weight:bold; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1440" height="1180" fill="#F2E4D0"/>
+  <text x="60" y="52" class="title" font-size="30">WarmPet Family Map - Construction Wireframe</text>
+  <text x="60" y="84" class="tw" font-size="17">World 2160x3600 px  |  Viewport 720x~846 (fitWidth, real height varies)  |  origin=top-left, x-&gt;right, y-&gt;down  |  scroll X +-720, Y +-1377</text>
+
+  <!-- ================= LEFT: world map (scale 0.26) ================= -->
+  <text x="60" y="124" class="title" font-size="19">(1) World / floors / zones / load boundaries</text>
+  <g transform="translate(60,146) scale(0.26)">
+    <rect class="floorB" x="0" y="0"    width="1440" height="720"/>
+    <rect class="floorA" x="0" y="720"  width="1440" height="960"/>
+    <rect class="floorB" x="0" y="1680" width="1440" height="960"/>
+    <rect class="floorA" x="0" y="2640" width="1440" height="960"/>
+    <rect class="wall"   x="0" y="0"    width="1440" height="3600"/>
+
+    <line class="dim" x1="720" y1="720" x2="720" y2="2640"/>
+
+    <rect class="stair" x="640" y="0" width="160" height="3600"/>
+    <text x="720" y="1860" class="tw" font-size="48" text-anchor="middle" transform="rotate(-90 720 1860)">Central Stairs x:640-800</text>
+
+    <!-- ATTIC -->
+    <rect class="zone" x="60" y="80" width="1320" height="560"/>
+    <text x="720" y="320" class="tz" font-size="64" text-anchor="middle">ATTIC - Garden Terrace</text>
+    <text x="720" y="400" class="tw" font-size="44" text-anchor="middle">x:0-1440  y:0-720   race / exchange</text>
+    <!-- 3F -->
+    <rect class="zone" x="60" y="760" width="600" height="840"/>
+    <text x="360" y="1150" class="tz" font-size="56" text-anchor="middle">Nursery</text>
+    <text x="360" y="1226" class="tw" font-size="42" text-anchor="middle">gacha / pet</text>
+    <rect class="zone" x="780" y="760" width="600" height="840"/>
+    <text x="1080" y="1150" class="tz" font-size="56" text-anchor="middle">Shop / Storage</text>
+    <text x="1080" y="1226" class="tw" font-size="42" text-anchor="middle">items / wardrobe</text>
+    <!-- 2F -->
+    <rect class="zone" x="60" y="1720" width="600" height="840"/>
+    <text x="360" y="2110" class="tz" font-size="56" text-anchor="middle">Bath Room</text>
+    <text x="360" y="2186" class="tw" font-size="42" text-anchor="middle">pet.bath</text>
+    <rect class="zone" x="780" y="1720" width="600" height="840"/>
+    <text x="1080" y="2110" class="tz" font-size="56" text-anchor="middle">Care Room</text>
+    <text x="1080" y="2186" class="tw" font-size="42" text-anchor="middle">items</text>
+    <!-- 1F -->
+    <rect class="zone" x="60" y="2700" width="1320" height="840"/>
+    <text x="720" y="3050" class="tz" font-size="64" text-anchor="middle">1F - Lobby (landing screen)</text>
+    <text x="720" y="3130" class="tw" font-size="44" text-anchor="middle">pet interact feed/pet/play + home decor (6x6 grid)</text>
+
+    <line class="load" x1="0" y1="720"  x2="1440" y2="720"/>
+    <line class="load" x1="0" y1="1680" x2="1440" y2="1680"/>
+    <line class="load" x1="0" y1="2640" x2="1440" y2="2640"/>
+
+    <rect class="vp" x="360" y="2320" width="720" height="1280"/>
+  </g>
+
+  <!-- world axis ticks -->
+  <g font-size="14">
+    <text x="52"  y="142" class="tk" text-anchor="middle">0</text>
+    <text x="247" y="142" class="tk" text-anchor="middle">720</text>
+    <text x="440" y="142" class="tk" text-anchor="middle">1440</text>
+    <text x="30" y="150"  class="tk" text-anchor="end">0</text>
+    <text x="30" y="333"  class="tld" text-anchor="end">720</text>
+    <text x="30" y="583"  class="tld" text-anchor="end">1680</text>
+    <text x="30" y="832"  class="tld" text-anchor="end">2640</text>
+    <text x="30" y="1082" class="tk" text-anchor="end">3600</text>
+  </g>
+  <text x="150" y="922" class="tvp" font-size="14">PHONE VIEWPORT</text>
+  <text x="150" y="940" class="tvp" font-size="13">720x1280</text>
+
+  <!-- ================= RIGHT-TOP: HUD safe zones (scale 0.32) ================= -->
+  <text x="600" y="124" class="title" font-size="19">(2) HUD safe zones (fixed overlay, 720x1280)</text>
+  <g transform="translate(600,146) scale(0.32)">
+    <rect x="0" y="0" width="720" height="1280" fill="#F7EEDF" stroke="#4A3728" stroke-width="6" vector-effect="non-scaling-stroke"/>
+
+    <rect class="cap" x="548" y="16" width="156" height="72"/>
+    <text x="626" y="60" fill="#D95E50" font-size="28" text-anchor="middle" font-weight="bold">capsule</text>
+
+    <rect class="hud" x="16" y="104" width="516" height="96" rx="48"/>
+    <text x="40" y="162" class="tk" font-size="30">avatar / Lv / exp</text>
+    <rect class="hud" x="548" y="104" width="156" height="96" rx="20"/>
+    <text x="626" y="162" class="tk" font-size="28" text-anchor="middle">coin x2</text>
+
+    <rect class="hud" x="612" y="360" width="92" height="92" rx="20"/>
+    <rect class="hud" x="612" y="472" width="92" height="92" rx="20"/>
+    <rect class="hud" x="612" y="584" width="92" height="92" rx="20"/>
+    <text x="658" y="716" class="tw" font-size="26" text-anchor="middle">side tools</text>
+
+    <rect class="hudR" x="576" y="812" width="128" height="128" rx="24"/>
+    <text x="640" y="884" class="tw" font-size="26" text-anchor="middle">activity</text>
+
+    <rect class="hud" x="16" y="980" width="380" height="72" rx="20"/>
+    <text x="36" y="1024" class="tk" font-size="28">task progress</text>
+
+    <rect class="hud" x="16" y="1076" width="688" height="120" rx="28"/>
+    <text x="360" y="1148" class="tk" font-size="30" text-anchor="middle">Dex . Shop . Claim</text>
+
+    <rect class="hudR" x="16" y="1210" width="688" height="54" rx="27"/>
+    <text x="360" y="1246" class="tw" font-size="26" text-anchor="middle">world channel</text>
+  </g>
+
+  <g font-size="14" class="tw">
+    <text x="600" y="730">Anchor top elements to TOP, bottom elements to BOTTOM</text>
+    <text x="600" y="752">(fitWidth: visible height varies by device, never hard-code y)</text>
+    <text x="600" y="774">Top bar offset from top = topInset()+8 (avoid capsule)</text>
+    <text x="600" y="796">Bottom bar offset from bottom = 36; world channel = bottom-most</text>
+  </g>
+
+  <!-- ================= RIGHT-BOTTOM: streaming plan ================= -->
+  <text x="600" y="854" class="title" font-size="19">(3) Per-floor streaming load</text>
+  <g font-size="15" class="tw">
+    <text x="600" y="886">Assets: resources/map/[floor]/ (wall/floor/props), shipped via remote Bundle (Sealos)</text>
+    <text x="600" y="914">First entry: load 1F (Lobby) -&gt; playable immediately; preload adjacent 2F</text>
+    <text x="600" y="942">Camera crosses a load boundary (blue dashed): keep current + adjacent floor loaded</text>
+    <text x="600" y="970">Leave a floor by more than 1: unload its textures (low-end memory constraint)</text>
+    <text x="600" y="998">On-screen skeleton pets &lt;= 2: far pets degrade to static Sprite; DrawCall &lt;= 50</text>
+    <text x="600" y="1026">Enable MD5 Cache: filename carries hash so version bumps bust cache</text>
+  </g>
+
+  <!-- legend -->
+  <text x="600" y="1076" class="title" font-size="17">Legend</text>
+  <g font-size="14">
+    <rect x="600" y="1090" width="26" height="16" class="zone"/><text x="634" y="1103" class="tw">zone (tap entry)</text>
+    <rect x="800" y="1090" width="26" height="16" class="stair"/><text x="834" y="1103" class="tw">stairs</text>
+    <line x1="940" y1="1098" x2="980" y2="1098" class="vp"/><text x="988" y="1103" class="tvp">phone viewport</text>
+    <line x1="1180" y1="1098" x2="1220" y2="1098" class="load"/><text x="1228" y="1103" class="tld">load boundary</text>
+  </g>
+</svg>
