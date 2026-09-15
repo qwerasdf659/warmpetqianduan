@@ -125,6 +125,10 @@ export class ShopPanel extends Component {
    */
   private showPreview(frameName: string) {
     const modal = ModalPanel.open(this.node, frameName);
+    // 这是叠在商店之上的第二层弹窗，关它只该关自己。
+    // ModalPanel.open 的默认行为是把宿主整层销毁（给分区面板用的），这里必须覆盖掉，
+    // 否则看完一张大图整个商店就没了。
+    modal.onClose = null;
     const body = modal.body;
     if (!body) return;
 

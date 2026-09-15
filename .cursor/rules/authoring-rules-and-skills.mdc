@@ -1,0 +1,64 @@
+---
+description: 本项目写 Cursor 规则与 Skill 的格式约定（覆盖官方默认行数上限）
+alwaysApply: true
+---
+
+# 写规则与 Skill 的约定
+
+官方 `create-rule` / `create-skill` 建议的行数上限（规则 50 行、Skill 500 行）
+**在本项目放宽**：
+
+| 类型 | 位置 | 本项目上限 |
+| --- | --- | --- |
+| 规则 | `.cursor/rules/*.mdc` | **≤ 1000 行** |
+| Skill | `.cursor/skills/<name>/SKILL.md` | **≤ 1200 行** |
+
+放宽的理由：本项目的规则承载的是**实测踩坑记录**（每条都写了症状、根因、
+错误的做法），压到 50 行只能留结论、丢掉「为什么」，
+下次会照着同一个错误方向再走一遍。已经发生过：把 245 行的
+`map-scroll-view` 压到 52 行，砍掉的正是最值钱的排查细节。
+
+## 不要改 `~/.cursor/skills-cursor/`
+
+那是 Cursor 内置技能目录、**由系统托管并会自动覆盖**。我曾在那里改行数上限，
+下一次读取就被回滚了。项目级约定写在本文件里，不要去改官方文档。
+
+## 格式要求（这些仍然照官方规范）
+
+规则 frontmatter：
+
+```yaml
+---
+description: 一句话说明这条规则管什么
+alwaysApply: true      # 或 globs: **/*.ts 限定文件范围
+---
+```
+
+Skill frontmatter：
+
+```yaml
+---
+name: 小写连字符命名          # ≤64 字符
+description: 第三人称，写清 WHAT + WHEN，把触发词写全
+---
+```
+
+- **description 必须含触发词**：用户会用什么词描述这个需求就写进去，
+  中文项目要写中文触发词（如「塑料 / 割裂 / 对标竞品」）。
+- **Skill 附带脚本**放 `<skill>/scripts/`，随 skill 一起版本控制 ——
+ 别只留在 gitignore 的 `.build/` 里，换机器就没了。
+ **改了 `.build/scripts/` 下的脚本要同步回 skill**，否则下次读 skill
+ 拿到的是旧逻辑（`cutout.mjs` 改成局部容差时踩过）。
+- 官方 `create-skill` 建议 `disable-model-invocation: true`（只在点名时加载）。
+ **本项目的 skill 不加这一项** —— 它们要靠 description 里的中文触发词
+ 被自动命中，加了就等于关掉自动触发。
+- **引用层级只留一层**：SKILL.md 直接链到 `reference.md`，不要再往下嵌。
+
+## 规则与 Skill 的分工
+
+- **规则**（`alwaysApply: true`，每次自动读）：选型结论、硬约束、踩过的坑。
+  「是什么」和「为什么不能那样做」。
+- **Skill**（按需触发）：可执行的工作流、脚本清单、目标数值表。
+  「怎么做」。
+
+判断标准：需要**每次对话都记住**的进规则；只在**做某类任务时**才需要的进 Skill。

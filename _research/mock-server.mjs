@@ -55,6 +55,17 @@ const wardrobeItems = [
   { key: 'bg_beach', type: 'accessory', name: '海边夕照', slot: 'bg', price: 1200, pool: 'game', owned: false, equipped: false },
 ];
 
+/**
+ * 消耗品。effect 的键名要和 items.EFFECT_TEXT 对得上，
+ * 否则界面会把 key 原样显示出来（那正是「文案没做」的样子）。
+ */
+const consumables = [
+  { key: 'snack', name: '宠物零食', price: 60, pool: 'game', effect: { hunger: 25 }, owned: 3, sortOrder: 1 },
+  { key: 'energy', name: '能量饮', price: 120, pool: 'game', effect: { stamina: 30 }, owned: 0, sortOrder: 2 },
+  { key: 'brush', name: '洁毛刷', price: 90, pool: 'game', effect: { cleanliness: 30 }, owned: 1, sortOrder: 3 },
+  { key: 'cake', name: '生日蛋糕', price: 800, pool: 'game', effect: { mood: 40, exp: 30 }, owned: 0, sortOrder: 4 },
+];
+
 /** 各接口允许出现的字段，用来复刻 forbidNonWhitelisted */
 const ALLOWED = {
   'GET /pet/state': ['petId'],
@@ -132,6 +143,11 @@ const routes = {
         ],
       },
     ],
+    wallet: { gameCoin, marketingPoint: 200 },
+  }),
+
+  'GET /items/consumables': () => ({
+    items: consumables,
     wallet: { gameCoin, marketingPoint: 200 },
   }),
 
@@ -225,6 +241,232 @@ Object.keys(INTERACTIONS).forEach((action) => {
 
   ALLOWED[`POST /pet/${action}`] = ['bizId', 'petId'];
 });
+
+// ---- 消耗品：买 / 用 ----
+
+routes['POST /items/consumables/buy'] = (body) => {
+  const item = consumables.find((c) => c.key === body.itemKey);
+  if (!item) return { __status: 400, code: 400, message: '道具不存在' };
+  const qty = Math.max(1, Math.min(99, body.qty || 1));
+  const total = item.price * qty;
+  if (gameCoin < total) return { __status: 400, code: 400, message: '金币不足' };
+  gameCoin -= total;
+  item.owned += qty;
+  // qty 回传的是**购买后的持有量**，不是本次买了几件（对齐 types.ts BuyResult）
+  return { itemKey: item.key, qty: item.owned, wallet: { gameCoin, marketingPoint: 200 }, duplicated: false };
+};
+ALLOWED['POST /items/consumables/buy'] = ['bizId', 'itemKey', 'qty'];
+
+routes['POST /items/consumables/use'] = (body) => {
+  const item = consumables.find((c) => c.key === body.itemKey);
+  if (!item) return { __status: 400, code: 400, message: '道具不存在' };
+  if (item.owned <= 0) return { __status: 400, code: 400, message: '道具数量不足' };
+  item.owned -= 1;
+
+  const eff = item.effect;
+  if (eff.hunger) pet.hunger = Math.min(100, pet.hunger + eff.hunger);
+  if (eff.cleanliness) pet.cleanliness = Math.min(100, pet.cleanliness + eff.cleanliness);
+  if (eff.mood) pet.mood = Math.min(100, pet.mood + eff.mood);
+  if (eff.stamina) pet.stamina = Math.min(pet.staminaMax, pet.stamina + eff.stamina);
+  pet.lastSeenAt = now();
+
+  let levelUp = false;
+  if (eff.exp) {
+    pet.exp += eff.exp;
+    pet.expIntoLevel += eff.exp;
+    pet.expToNext -= eff.exp;
+    if (pet.expToNext <= 0) {
+      pet.level += 1;
+      pet.expIntoLevel = 0;
+      pet.expToNext = 100 + pet.level * 40;
+      pet.staminaMax += 2;
+      levelUp = true;
+    }
+  }
+  return { itemKey: item.key, left: item.owned, effect: { ...eff }, pet: { ...pet }, levelUp };
+};
+ALLOWED['POST /items/consumables/use'] = ['bizId', 'itemKey', 'petId'];
+
+// ---- 换装：买 / 穿 / 脱 ----
+
+/** 槽位 → itemKey。新号是空对象，前端 resolveAppearance 会补默认外观 */
+const equipped = {};
+
+routes['GET /wardrobe'] = () => ({ petId: pet.id, items: wardrobeItems, equipped: { ...equipped } });
+
+routes['POST /wardrobe/buy'] = (body) => {
+  const item = wardrobeItems.find((w) => w.key === body.itemKey);
+  if (!item) return { __status: 400, code: 400, message: '物品不存在' };
+  if (item.price === 0) return { __status: 400, code: 400, message: '该物品无需购买' };
+  if (item.owned) return { itemKey: item.key, qty: 1, wallet: { gameCoin, marketingPoint: 200 }, duplicated: true };
+  if (gameCoin < item.price) return { __status: 400, code: 400, message: '金币不足' };
+  gameCoin -= item.price;
+  item.owned = true;
+  return { itemKey: item.key, qty: 1, wallet: { gameCoin, marketingPoint: 200 }, duplicated: false };
+};
+ALLOWED['POST /wardrobe/buy'] = ['bizId', 'itemKey'];
+
+routes['POST /wardrobe/equip'] = (body) => {
+  const item = wardrobeItems.find((w) => w.key === body.itemKey);
+  if (!item) return { __status: 400, code: 400, message: '物品不存在' };
+  if (!item.owned && item.price > 0) return { __status: 400, code: 400, message: '还没有这件物品' };
+  wardrobeItems.forEach((w) => {
+    if (w.slot === item.slot) w.equipped = false;
+  });
+  item.equipped = true;
+  equipped[item.slot] = item.key;
+  return { petId: pet.id, items: wardrobeItems, equipped: { ...equipped } };
+};
+ALLOWED['POST /wardrobe/equip'] = ['itemKey', 'petId'];
+
+routes['POST /wardrobe/unequip'] = (body) => {
+  wardrobeItems.forEach((w) => {
+    if (w.slot === body.slot) w.equipped = false;
+  });
+  delete equipped[body.slot];
+  return { petId: pet.id, items: wardrobeItems, equipped: { ...equipped } };
+};
+ALLOWED['POST /wardrobe/unequip'] = ['slot', 'petId'];
+
+// ---- 扭蛋 ----
+
+let pityCount = 0;
+
+routes['POST /gacha/draw'] = (body) => {
+  const pools = routes['GET /gacha']().pools;
+  const pool = pools.find((p) => p.key === body.poolKey);
+  if (!pool) return { __status: 400, code: 400, message: '奖池不存在' };
+  const times = body.times === 10 ? 10 : 1;
+  const cost = times === 10 ? pool.costTen : pool.cost;
+  if (gameCoin < cost) return { __status: 400, code: 400, message: '金币不足' };
+  gameCoin -= cost;
+
+  // 按 odds 的百分比抽，保底到了强制出稀有——为的是能验证前端的稀有演出分支
+  const prizes = [];
+  for (let i = 0; i < times; i++) {
+    pityCount += 1;
+    const forced = pool.pity > 0 && pityCount >= pool.pity;
+    let picked;
+    if (forced) {
+      picked = pool.odds.filter((o) => o.rare)[0] || pool.odds[0];
+      pityCount = 0;
+    } else {
+      let roll = Math.random() * 100;
+      picked = pool.odds[pool.odds.length - 1];
+      for (const o of pool.odds) {
+        roll -= o.percent;
+        if (roll <= 0) {
+          picked = o;
+          break;
+        }
+      }
+      if (picked.rare) pityCount = 0;
+    }
+    const converted = picked.rare && Math.random() < 0.3;
+    if (converted) gameCoin += pool.dupeCoin;
+    prizes.push({
+      entryKey: picked.key,
+      name: picked.name,
+      kind: picked.rare ? 'collection' : 'coin',
+      amount: converted ? pool.dupeCoin : 0,
+      itemKey: null,
+      qty: 1,
+      rare: picked.rare,
+      converted,
+    });
+  }
+
+  return {
+    poolKey: pool.key,
+    times,
+    cost,
+    prizes,
+    wallet: { gameCoin, marketingPoint: 200 },
+    pity: pityCount,
+    duplicated: false,
+  };
+};
+ALLOWED['POST /gacha/draw'] = ['bizId', 'poolKey', 'times'];
+
+// ---- 赛跑 ----
+
+const races = new Map();
+let raceSeq = 0;
+
+routes['POST /race/start'] = (body) => {
+  const track = routes['GET /race/tracks']().tracks.find((t) => t.key === body.trackKey);
+  if (!track) return { __status: 400, code: 400, message: '赛道不存在' };
+  if (pet.stamina < track.staminaCost) return { __status: 400, code: 400, message: '体力不足' };
+  if (gameCoin < track.entryCoin) return { __status: 400, code: 400, message: '金币不足' };
+
+  pet.stamina -= track.staminaCost;
+  gameCoin -= track.entryCoin;
+  pet.lastSeenAt = now();
+
+  raceSeq += 1;
+  const raceId = String(1000 + raceSeq);
+  const rank = 1 + Math.floor(Math.random() * 4);
+  const finishTime = Number((track.targetTime * (0.9 + Math.random() * 0.35)).toFixed(3));
+  const grade = ['S', 'A', 'B', 'C'][rank - 1];
+  const opponents = [1, 2, 3].map((i) => Number((finishTime + i * 1.4).toFixed(3))).sort((a, b) => a - b);
+
+  const race = {
+    raceId,
+    trackKey: track.key,
+    rank,
+    totalRacers: 4,
+    finishTime,
+    grade,
+    opponentFinishTimes: opponents,
+    ghostSource: 'npc',
+    playerScore: Number((100 / finishTime).toFixed(3)),
+    staminaLeft: pet.stamina,
+    status: 'pending',
+    baseReward: track.baseReward,
+  };
+  races.set(raceId, race);
+  const out = { ...race };
+  delete out.baseReward;
+  return out;
+};
+ALLOWED['POST /race/start'] = ['bizId', 'trackKey', 'petId'];
+
+routes['POST /race/settle'] = (body) => {
+  const race = races.get(body.raceId);
+  if (!race) return { __status: 400, code: 400, message: '比赛不存在' };
+  const factor = [1, 0.6, 0.35, 0.15][race.rank - 1] || 0;
+  const rewardCoin = Math.round(race.baseReward * factor);
+  const duplicated = race.status === 'settled';
+  if (!duplicated) {
+    gameCoin += rewardCoin;
+    race.status = 'settled';
+    race.rewardCoin = rewardCoin;
+  }
+  return {
+    raceId: race.raceId,
+    rank: race.rank,
+    totalRacers: race.totalRacers,
+    finishTime: race.finishTime,
+    grade: race.grade,
+    rewardCoin: race.rewardCoin || rewardCoin,
+    gameCoin,
+    duplicated,
+  };
+};
+ALLOWED['POST /race/settle'] = ['bizId', 'raceId'];
+
+routes['POST /race/reward/double'] = (body) => {
+  const race = races.get(body.raceId);
+  if (!race) return { __status: 400, code: 400, message: '比赛不存在' };
+  if (race.status !== 'settled') return { __status: 400, code: 400, message: '该场比赛还未结算' };
+  if (race.doubled) {
+    return { raceId: race.raceId, bonusCoin: race.rewardCoin, totalRewardCoin: race.rewardCoin * 2, gameCoin, duplicated: true };
+  }
+  race.doubled = true;
+  gameCoin += race.rewardCoin;
+  return { raceId: race.raceId, bonusCoin: race.rewardCoin, totalRewardCoin: race.rewardCoin * 2, gameCoin, duplicated: false };
+};
+ALLOWED['POST /race/reward/double'] = ['bizId', 'raceId', 'adToken'];
 
 /** 离线收益领取。领过一次就清零，好验证「可领为 0 时按钮禁用」 */
 routes['POST /pet/offline/claim'] = () => {

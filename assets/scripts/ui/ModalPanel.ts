@@ -27,14 +27,31 @@ export class ModalPanel extends Component {
   /** 内容区可用尺寸，调用方排版时用 */
   public bodyW = 0;
   public bodyH = 0;
+  /**
+   * 关闭回调。宿主面板用它销毁自己那一层节点。
+   *
+   * 没有这个钩子时 close() 只销毁 Modal 节点，宿主（如 CarePanel 节点）会一直留着，
+   * 结果是「关掉面板后再点同一个分区打不开」——外层还以为面板开着。
+   */
+  public onClose: (() => void) | null = null;
 
   private root: Node | null = null;
 
-  /** 打开一个弹窗，返回实例（内容自己往 body 里加） */
+  /**
+   * 打开一个弹窗，返回实例（内容自己往 body 里加）。
+   *
+   * `parent` 传的是**宿主面板自己的节点**（如 CarePanel 的节点），
+   * 所以默认的 onClose 就是把宿主整层一起销毁——不这么做的话关掉弹窗后
+   * 宿主空节点还挂着，Main 会以为面板还开着、再点同一个分区打不开。
+   * 需要保留宿主的调用方（如嵌套的大图预览）自行覆盖 onClose。
+   */
   public static open(parent: Node, title: string): ModalPanel {
     const host = new Node('Modal');
     host.parent = parent;
     const comp = host.addComponent(ModalPanel);
+    comp.onClose = () => {
+      if (parent && parent.isValid) parent.destroy();
+    };
     comp.build(title);
     return comp;
   }
@@ -92,7 +109,11 @@ export class ModalPanel extends Component {
     tween(panel).to(0.16, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
   }
 
+  /** 关闭。先回调再销毁，回调里通常会把宿主整层一起销毁 */
   public close() {
+    const cb = this.onClose;
+    this.onClose = null;
     if (this.root && this.root.isValid) this.root.destroy();
+    if (cb) cb();
   }
 }

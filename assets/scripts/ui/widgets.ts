@@ -76,10 +76,14 @@ export const STAT_COLOR = {
 };
 
 /**
- * 顶部安全区高度（设计分辨率单位）。
+ * 顶部安全区高度（设计分辨率单位）。**把 UI 推到胶囊下方**。
  *
  * 微信胶囊按钮的坐标是屏幕物理像素，要按「设计分辨率 / 实际窗口」换算，
- * 否则不同机型上会算偏。规则明确要求顶部 UI 避让胶囊。
+ * 否则不同机型上会算偏。
+ *
+ * ⚠️ 只有**横跨整个屏幕宽度**的顶部元素才需要这个值。
+ * 靠左的元素（头像、货币条）应该用 `topInsetLeft()` —— 胶囊只在右侧，
+ * 左边和它并排完全没问题，白白让出整条胶囊高度是纯浪费。
  */
 export function topInset(): number {
   try {
@@ -89,6 +93,26 @@ export function topInset(): number {
     return getMenuButtonRect().bottom * scale + 8;
   } catch (e) {
     return 60;
+  }
+}
+
+/**
+ * 左侧顶部安全区。**只避让状态栏，不避让胶囊**。
+ *
+ * 胶囊固定在右上角，所以左上角的头像/货币条可以和它同一行。
+ * 我们曾对整个 HUD 用 `topInset()`，等于让出了 60px（屏高 7%），
+ * 比竞品**整个** HUD 还厚 —— 而竞品的头像就是和胶囊并排的。
+ *
+ * 取胶囊顶部（而不是底部）作为基准：状态栏在胶囊之上，避到那里就够了。
+ */
+export function topInsetLeft(): number {
+  try {
+    const visible = view.getVisibleSize();
+    const win = screen.windowSize;
+    const scale = win.height > 0 ? visible.height / win.height : 1;
+    return getMenuButtonRect().top * scale + 4;
+  } catch (e) {
+    return 20;
   }
 }
 

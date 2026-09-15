@@ -17,9 +17,15 @@ import { MainView } from './ui/MainView';
 import { MapView } from './ui/MapView';
 import { LoadingView } from './ui/LoadingView';
 import { NetCheckView } from './ui/NetCheckView';
+import { CarePanel } from './ui/CarePanel';
+import { BathPanel } from './ui/BathPanel';
+import { GachaPanel } from './ui/GachaPanel';
+import { WardrobePanel } from './ui/WardrobePanel';
+import { RacePanel } from './ui/RacePanel';
+import { SettingsPanel } from './ui/SettingsPanel';
 import { onApiError } from './net/request';
 import { bootstrap, refreshOnShow } from './core/bootstrap';
-import { showError, toast } from './ui/toast';
+import { showError, toast, setToastHost } from './ui/toast';
 import { onShow } from './platform/minigame';
 import { initDevConsole } from './platform/devConsole';
 import { makeNode, makeGraphics, makeLabel, fillRoundRectRim, topInset, COLOR } from './ui/widgets';
@@ -32,13 +38,22 @@ export class Main extends Component {
   private loading: LoadingView | null = null;
   private mainView: MainView | null = null;
   private entered = false;
+  /** 当前打开的分区玩法面板（弹窗层）。同时只允许一个，关掉后置空 */
+  private panel: Node | null = null;
 
   onLoad() {
     initDevConsole();
+    // 自绘 toast/确认框的挂载点。没有 wx 的环境（编辑器预览）靠它才能看见提示，
+    // 否则 showToast 只 console.log，界面上「点了没反应」= 以为按钮坏了。
+    setToastHost(this.node);
     this.watchGlobalErrors();
     this.watchAppState();
     this.showLoading();
     this.boot();
+  }
+
+  onDestroy() {
+    setToastHost(null);
   }
 
   /**
@@ -172,22 +187,80 @@ export class Main extends Component {
   }
 
   /**
-   * 分区点击路由。大厅 = 出战宠互动，直接进正式主界面（MainView 就是互动界面）；
-   * 其余玩法的界面还没做，先 toast 占位，别静默无反应（规则：静默失败=设计缺陷）。
+   * 分区点击路由。
+   *
+   * 大厅是**整屏切换**（MainView 就是互动界面，要占满屏幕）；
+   * 其余分区是**盖在地图上的弹窗**——玩法本身很轻（一屏列表就够），
+   * 盖着弹窗关掉就回到地图，不用重建整个界面。
+   *
+   * 每个分区都必须有出口：ModalPanel 自带关闭按钮 + 点遮罩关闭，
+   * 所以不会出现「进去了出不来」（规则 `map-scroll-view`：每个分区都要有出口）。
    */
   private openZone(key: string) {
     if (key === 'lobby') {
       this.scheduleOnce(() => this.showMainView(), 0);
       return;
     }
-    const NAMES: Record<string, string> = {
-      garden: '花园阳台',
-      nursery: '育婴室',
-      shop: '商店',
-      bath: '洗浴间',
-      care: '护理室',
-    };
-    toast(`『${NAMES[key] || key}』玩法开发中，敬请期待`);
+
+    // 已经开着一个面板时不再叠第二层：叠起来的遮罩会越来越黑，关也要关两次
+    if (this.panel && this.panel.isValid) return;
+
+    // 在地图输入层的触摸回调里建节点是安全的（不像销毁自己那样会拆掉派发中的节点），
+    // 但为了和 showMainView 的延后一帧保持一致的时序，这里也延后一帧。
+    this.scheduleOnce(() => this.mountZonePanel(key), 0);
+  }
+
+  /**
+   * 建分区面板。
+   *
+   * 各面板关闭时会销毁自己的节点，所以这里只记住节点、用 isValid 判断是否还开着，
+   * 不需要额外的关闭回调链。未知 key 也要有反馈，不许静默 return。
+   */
+  private mountZonePanel(key: string) {
+    if (this.panel && this.panel.isValid) return;
+
+    let comp: Component | null = null;
+    switch (key) {
+      // HUD 的「购置」和地图的「商店」分区是同一个界面，两个 key 都要认
+      case 'shop':
+      case 'buy':
+        comp = WardrobePanel.open(this.node);
+        break;
+      case 'care':
+        comp = CarePanel.open(this.node);
+        break;
+      case 'bath':
+        comp = BathPanel.open(this.node);
+        break;
+      case 'nursery':
+        comp = GachaPanel.open(this.node);
+        break;
+      case 'garden':
+        comp = RacePanel.open(this.node);
+        break;
+      case 'settings':
+        comp = SettingsPanel.open(this.node);
+        break;
+      default: {
+        // HUD 上那些还没有界面的入口（图鉴/领取/好友/相册/礼盒/挑战/音量）。
+        // 逐个列出中文名而不是甩一个 key 出去 —— 玩家看不懂 'dex' 是什么。
+        // 这里是**明确提示**而不是静默 return，两者的区别就是「没做」和「坏了」。
+        const PENDING: Record<string, string> = {
+          dex: '图鉴',
+          claim: '领取奖励',
+          daily: '每日任务',
+          gift: '礼盒',
+          challenge: '挑战',
+          friends: '好友',
+          album: '萌宠相册',
+          sound: '音量',
+        };
+        const name = PENDING[key];
+        toast(name ? `『${name}』还在开发中，敬请期待` : `『${key}』还没有对应的界面`);
+        return;
+      }
+    }
+    this.panel = comp ? comp.node : null;
   }
 
   private openSelfCheck() {

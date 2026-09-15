@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "de7c8844-b894-4421-b697-926e1ea4434e",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "de7c8844-b894-4421-b697-926e1ea4434e@6c48a",
+      "displayName": "hut_nursery",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "de7c8844-b894-4421-b697-926e1ea4434e",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "de7c8844-b894-4421-b697-926e1ea4434e@f9941",
+      "displayName": "hut_nursery",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 510,
+        "height": 499,
+        "rawWidth": 512,
+        "rawHeight": 501,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -255,
+            -249.5,
+            0,
+            255,
+            -249.5,
+            0,
+            -255,
+            249.5,
+            0,
+            255,
+            249.5,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            1,
+            500,
+            511,
+            500,
+            1,
+            1,
+            511,
+            1
+          ],
+          "nuv": [
+            0.001953125,
+            0.001996007984031936,
+            0.998046875,
+            0.001996007984031936,
+            0.001953125,
+            0.998003992015968,
+            0.998046875,
+            0.998003992015968
+          ],
+          "minPos": [
+            -255,
+            -249.5,
+            0
+          ],
+          "maxPos": [
+            255,
+            249.5,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "de7c8844-b894-4421-b697-926e1ea4434e@6c48a",
+        "atlasUuid": "",
+        "trimType": "auto"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true,
+    "redirect": "de7c8844-b894-4421-b697-926e1ea4434e@6c48a"
+  }
+}

@@ -3,17 +3,43 @@
  *
  * 后端 message 都是可直接展示的中文，所以这里不做错误码到文案的映射，
  * 只负责挑对展示形式：一般错误吐司、封禁弹窗、网络异常给重试入口。
+ *
+ * **为什么要 setToastHost**：`platform/minigame` 的 showToast/showModal 在没有 wx 的
+ * 环境（编辑器预览、浏览器）里只 console.log，屏幕上毫无变化。开发期我们几乎只跑预览，
+ * 于是「点了按钮 → 只有 toast → 什么都没发生」和「按钮坏了」表现完全一致，实测误判过。
+ * 所以在没有 wx 时退回引擎内自绘的 ToastLayer / ConfirmDialog，两端都看得见。
  */
 
 import { ApiError, toApiError } from '../net/errors';
-import { showToast, showModal } from '../platform/minigame';
+import { showToast, showModal, isMiniGame } from '../platform/minigame';
+import { ToastLayer } from './ToastLayer';
+import { ConfirmDialog } from './ConfirmDialog';
+import type { Node } from 'cc';
 import type { InteractGain } from '../net/types';
 
+/**
+ * 自绘提示的挂载点（Canvas 下的 Main 节点），由 Main.onLoad 注入一次。
+ * 没注入时退回 console —— 缺提示不该让业务流程崩（铁律：软失败不死亡）。
+ */
+let host: Node | null = null;
+
+export function setToastHost(node: Node | null): void {
+  host = node;
+}
+
 export function toast(title: string): void {
-  showToast(String(title));
+  const text = String(title);
+  if (!isMiniGame() && host && host.isValid) {
+    ToastLayer.show(host, text);
+    return;
+  }
+  showToast(text);
 }
 
 export function modal(title: string, content: string, showCancel = false): Promise<boolean> {
+  if (!isMiniGame() && host && host.isValid) {
+    return ConfirmDialog.show(host, title, content, showCancel);
+  }
   return showModal(title, content, showCancel);
 }
 
