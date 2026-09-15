@@ -25,7 +25,13 @@ import type { Zone } from './mapLayout';
  */
 export { SIGN_H };
 
-/** 按形态分派。大厅（open）是纯活动区，概念稿里那块就是空地板 + 宠物，不画 */
+/**
+ * 按形态分派。大厅（open）是纯活动区，概念稿里那块就是空地板 + 宠物，不画。
+ *
+ * ⚠️ 这一整层是**兜底**：真图到齐后 `MapView` 会把它整层隐掉。
+ * 真图里已经带了招牌，所以兜底这边也要画一块牌面（`paintSignPlate`），
+ * 否则图加载失败时文字会飘在空墙上 —— 两条路径都必须出完整画面。
+ */
 export function paintZone(g: Graphics, z: Zone): void {
   switch (z.shape) {
     case 'alcove':
@@ -41,32 +47,35 @@ export function paintZone(g: Graphics, z: Zone): void {
       paintStore(g, z);
       break;
     case 'open':
-      break;
+      return; // 大厅没有招牌，直接返回（别往下画牌面）
     default:
       paintAlcove(g, z);
   }
-}
 
-/** 招牌牌面宽度（按分区宽算，但有上限，免得宽分区的牌子太长） */
-export function signWidth(z: Zone): number {
-  return Math.min(z.w * 0.86, 132);
+  // 兜底留字横带。真图里门楣本身就是一条同色横带（不是白牌，见
+  // `mapLayout.Zone.plate` 的说明），这一层是「图没到货」时的唯一画面，
+  // 所以也画成一条**木色横带**而不是白牌 ——
+  // 字色是白色（`signInk`）、描边是深棕（`signText`），
+  // 底必须是中等明度（L≈190~220）白字才立得住，白牌会让字消失。
+  const w = z.w * 0.6;
+  const cy = z.cy + z.h / 2 - SIGN_H / 2;
+  fillRoundRect(g, z.cx - w / 2, cy - SIGN_H / 2, w, SIGN_H, 4, MAP_COLOR.roof);
 }
 
 /**
- * 招牌牌面，**画在自己的节点原点上**（不是分区坐标）。
- *
- * 为什么独立成节点：招牌必须**常驻**。它曾经画在兜底层里，
- * 真图全部到货后兜底层整层隐掉，招牌木牌跟着消失，只剩文字飘在空墙上 ——
- * 而分区图里本来就没有招牌（图里的字号我们控制不了，所以一直是代码画的）。
- *
- * 位置由 MapView 决定：图到货后贴着图的实际顶边，没图时贴分区顶边。
+ * > 曾经这里有 `signWidth(z, chars)`（按字数算牌面宽），2026-09-16 删除。
+ * > 牌面不再由代码决定宽度 —— 留字横带画在图里、宽度占图 60%，
+ * > 代码改为按 `Zone.plate.w` 读图上的实际宽度来定字号
+ * > （见 `MapView.placeSignOnArt`）。
  */
-export function paintSignPlate(g: Graphics, w: number): void {
-  const x = -w / 2;
-  const y = -SIGN_H / 2;
-  softShadow(g, x, y, w, SIGN_H, SIGN_H / 2, 4);
-  fillRoundRectRim(g, x, y, w, SIGN_H, SIGN_H / 2, MAP_COLOR.sign, 3, MAP_COLOR.roof);
-}
+
+/**
+ * > 曾经这里有个 `paintSignPlate`（代码画的木牌 + 圆钉），2026-09-16 删除。
+ * > 原因：代码画的牌面是同一块棕木牌，压在浴室(蓝瓷砖)/花园(绿藤)/育婴室(粉帐篷)
+ * > 三个完全不同的门面上，那个棕色是整屏最深最突兀的一块。
+ * > 现在牌面画进分区图里、材质随门面，代码只叠文字（见 `MapView.placeSignOnArt`）。
+ * > 兜底层的简版牌面在 `paintZone` 末尾。
+ */
 
 /**
  * 圆拱壁龛（洗浴间）。

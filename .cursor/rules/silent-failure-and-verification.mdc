@@ -129,6 +129,8 @@ Get-ChildItem "$root\library\$($u.Substring(0,2))" -Filter "$u*.png"
 
 ## 相关
 
+- **量法本身的缺陷**（指标选错、直方图分不清笔画和描边、只调颜色不问该不该有）：
+ 规则 `visual-measurement-method`。本规则管「量错对象」，那条管「量法失效」。
 - 出图侧的描边与背景纪律（含「深一到两档」这条已被推翻的结论）：
  skill `game-art-from-ai`
 - 截图测量脚本与目标数值表：skill `ui-visual-parity`

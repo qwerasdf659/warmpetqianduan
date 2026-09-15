@@ -28,7 +28,6 @@ import {
   UITransform,
   Graphics,
   Label,
-  LabelOutline,
   Color,
   UIOpacity,
   tween,
@@ -37,7 +36,7 @@ import {
   sys,
   assetManager,
 } from 'cc';
-import { makeNode, makeLabel, fillRoundRect, softShadow } from './widgets';
+import { makeNode, makeLabel, outlineLabel, fillRoundRect, softShadow } from './widgets';
 import { TOKEN_KEY, USER_ID_KEY, COOLDOWN_KEY } from '../net/config';
 
 const { ccclass } = _decorator;
@@ -218,11 +217,13 @@ export class LoadingView extends Component {
     this.setStage(STAGE_ORDER[0]);
   }
 
-  /** 文字描边，保证压在花哨的海报上任何位置都读得清 */
+  /**
+   * 文字描边，保证压在花哨的海报上任何位置都读得清。
+   * 实现收敛到 `widgets.outlineLabel`（地图招牌也用同一套），
+   * 这里保留薄封装是因为本文件有五处调用、参数顺序固定。
+   */
   private outline(label: Label, color: Color, width: number) {
-    const o = label.node.addComponent(LabelOutline);
-    o.color = color;
-    o.width = width;
+    outlineLabel(label, color, width);
   }
 
   /**

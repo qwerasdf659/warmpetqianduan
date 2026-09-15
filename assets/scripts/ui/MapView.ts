@@ -34,6 +34,7 @@ import {
   makeNode,
   makeGraphics,
   makeLabel,
+  outlineLabel,
   fillRoundRect,
   fillRoundRectRim,
   softShadow,
@@ -50,7 +51,9 @@ import {
   paintContactShadows,
   paintPetShadow,
 } from './mapRoom';
-import { paintZone, paintSignPlate, signWidth, SIGN_H } from './mapZones';
+// 牌面（现在是「留字横带」）画在分区图里，代码只叠文字，
+// 所以不再需要 `paintSignPlate` / `signWidth`
+import { paintZone, SIGN_H } from './mapZones';
 import { placeArt } from './mapArt';
 
 const { ccclass } = _decorator;
@@ -71,6 +74,17 @@ const WALK_CANDIDATES = ['Walk', 'Walk2', 'Walk_2', 'walk'];
 
 /** 顶部提示文案 */
 const HINT_TEXT = '左右拖动查看 · 点小屋进入玩法';
+
+/**
+ * 招牌文字的**目标**字号（2026-09-16：19 → 23，放大 1.2 倍）。
+ *
+ * 只是目标：牌面装不下时 `placeSignOnArt` 会按牌面实测宽度回缩，
+ * 所以实际字号可能小于这个值。想让字真的变大，得先把牌面做大 ——
+ * 牌面现在只占屏宽 13.9%（竞品 22.8%），瓶颈在图里招牌画得太小。
+ */
+const SIGN_FONT = 23;
+/** 回缩下限：再小就读不清了，宁可让字轻微出牌也不要缩到看不见 */
+const SIGN_FONT_MIN = 17;
 
 @ccclass('MapView')
 export class MapView extends Component {
@@ -208,15 +222,14 @@ export class MapView extends Component {
     this.artTotal = zoneArts.length + PROPS.length + 1; // +1 = 楼梯
 
     zoneArts.forEach((z) => {
+      // **不再扣 SIGN_H**：招牌已经画进图里了，图的高度就是「门面 + 招牌」的整体。
+      // 扣掉的话图会被压扁、招牌那部分挤在顶上。
       placeArt(layer, `map/alcoves/${z.art}`, {
-        w: z.w, h: z.h - SIGN_H, x: z.cx, y: z.cy - z.h / 2, anchor: 'bottom',
+        w: z.w, h: z.h, x: z.cx, y: z.cy - z.h / 2, anchor: 'bottom',
       }, (n) => {
-        // 图等比缩放后顶边往往比分区框低二三十像素，招牌要贴上去而不是
-        // 留在分区顶边 —— 那段空隙就是「招牌和小屋不贴合」的来源
-        if (n && n.isValid) {
-          const tr = n.getComponent(UITransform);
-          if (tr) this.placeSign(z.key, n.position.y + tr.height / 2);
-        }
+        // 文字要落到图上那块空白牌面的中心，所以必须等图到货、
+        // 知道它的实际渲染尺寸之后才能定位
+        if (n && n.isValid) this.placeSignOnArt(z, n);
         this.onArtDone(!!n);
       });
     });
@@ -265,14 +278,17 @@ export class MapView extends Component {
   // ---- 文字：分区名 + 副标题 ----
 
   /**
-   * 分区招牌：**木牌 + 文字打包成一个节点**，挂在常驻的 signLayer 上。
+   * 分区招牌的**文字**。牌面本身已经画进分区图里了，这里只叠字。
    *
-   * 打包的理由是「牌和字必须一起动」。它们曾经分属两层（牌在兜底层、
-   * 字在 label 层），结果兜底层一隐，牌没了、字还在，成了一行飘在空墙上的字。
+   * 改成这样的原因：代码画的牌面是同一块棕木牌，压在浴室(蓝瓷砖)、
+   * 花园(绿藤)、育婴室(粉帐篷)三个完全不同的门面上 ——
+   * 那个棕色是整屏最深最突兀的一块，读成「一大块棕色直接贴上去」。
+   * 竞品每块牌子的材质都随门面（且藤蔓和牌子有互相遮挡、两块牌面取色不同，
+   * 说明是画进图里的），所以我们也把牌子交给美术图，代码只管文字。
    *
-   * 位置默认按分区顶边给，图到货后由 `placeSign` 贴到**图的实际顶边**上 ——
-   * 图是等比缩放的，顶边往往比分区框低二三十像素，不跟着调整字就会离壁龛很远
-   * （参考图里招牌是压在壁龛顶上的，这段空隙正是「不贴合」的来源）。
+   * 位置由图上量出来的 `z.plate` 决定（见 `mapLayout.Zone.plate`），
+   * 图到货后在 `placeSignOnArt` 里按图的实际渲染尺寸换算。
+   * 图没到货时先按分区顶边放一个兜底位置 —— 不放的话文字会堆在原点。
    */
   private buildSigns(L: StageLayout) {
     const parent = this.signLayer;
@@ -281,47 +297,106 @@ export class MapView extends Component {
     L.zones.forEach((z) => {
       // 大厅是纯活动区、没有招牌，标题放在地板下沿
       if (z.shape === 'open') {
+        // 同样要描边：这行字直接压在地板上，`dim` 色落在浅米色地板上对比不足。
+        // 顺带把颜色提到 text（比 dim 深一档）—— 它是分区名，不是次要说明。
         const lbl = makeLabel(z.name, parent, {
-          size: 15, color: COLOR.dim, align: 'center',
+          size: 15, color: COLOR.text, align: 'center',
         });
         lbl.node.setPosition(0, L.bottom + 10);
+        // 宽度 1：15 号字用 2 就会让笔画间的描边糊在一起（同招牌那条注释）
+        outlineLabel(lbl, MAP_COLOR.subOutline, 1);
         return;
       }
 
-      const w = signWidth(z);
-      const host = makeNode(`Sign_${z.key}`, parent, w, SIGN_H);
-      // 招牌**不能跟着壁龛顶部跑进 HUD 或跑出屏幕**。壁龛高度反复调过
-      // （110→174→268→201），`z.cy + z.h/2` 一度算到 y=406、屏幕顶只有 423。
-      // 所以永远取「壁龛顶」和「HUD 下缘之下一点」中更低的那个 —— 这个 clamp
-      // 让招牌在任何壁龛尺寸下都可读，改 ZONE_H 时不用回来改这里。
+      const host = makeNode(`Sign_${z.key}`, parent, 60, SIGN_H);
+      // 兜底位置：图没到货时按分区顶边放。
+      // clamp 到 HUD 下缘之下 —— 壁龛高度反复调过（110→174→268→201），
+      // `z.cy + z.h/2` 一度算到 y=406 而屏幕顶只有 423。
       const signY = Math.min(z.cy + z.h / 2 - SIGN_H / 2, L.top - SIGN_H / 2 - 6);
       host.setPosition(z.cx, signY, 0);
       this.signHosts[z.key] = host;
 
-      // 先 Graphics 再 Label：兄弟次序即层级，反过来牌面会盖住文字
-      const g = makeGraphics('plate', host);
-      paintSignPlate(g, w);
+      // 只有文字，没有 Graphics 牌面 —— 牌子在图里。
+      //
+      // **描边宽度 1，不能再大。** 描边宽 3 时相邻笔画的描边会糊在一起，
+      // 把字与字之间的牌面全填满 —— 实测整条扫描线上最亮只出现一次 249、
+      // 其余全在 102~168，读成「一片棕色背影」（用户原话）。
+      // 竞品的同一条线上 240/237/224 反复出现，说明笔画之间是干净的牌面色。
+      //
+      // ⚠️ 这是「按指标调参」的反面教材：宽度从 2 加到 3 时
+      // 「过渡像素占比」从 29.2% 涨到 56.4%，看着像改好了，
+      // 涨的其实是糊成一片的棕色。**指标涨了不等于画面对了，必须回头看图。**
+      //
+      // 现在字体本身是圆体 Bold、笔画已经有肉，描边只需要一点点用来
+      // 压住牌面的浅色、避免字发飘，不再承担「加重」的任务。
+      // **白字 + 深棕描边**，对齐竞品实测（量法见 `MAP_COLOR.signInk`）。
+      // 横带底色各不相同（粉布 217 / 绿藤 219 / 木色 190），
+      // 白字配深描边在这三种底上都成立。
+      // 描边只给 1：宽了会让相邻笔画糊成一片，读成「一坨棕色」（踩过）。
       const name = makeLabel(z.name, host, {
-        size: 17, color: COLOR.title, align: 'center', bold: true,
+        size: SIGN_FONT, color: MAP_COLOR.signInk, align: 'center', bold: true,
       });
       name.node.setPosition(0, 0);
+      outlineLabel(name, MAP_COLOR.signText, 1);
 
-      // 副标题挂在分区下沿外侧，不进招牌节点（它不跟着招牌移动）
-      const sub = makeLabel(z.sub, parent, { size: 12, color: COLOR.dim, align: 'center' });
+      // 副标题挂在分区下沿外侧，不进招牌节点（它不跟着招牌移动）。
+      // 它压在**地板**上（分区下沿已越界到地板），所以也要描边，
+      // 否则浅色小字落在浅色地板上几乎读不出来。
+      const sub = makeLabel(z.sub, parent, { size: 12, color: COLOR.text, align: 'center' });
       sub.node.setPosition(z.cx, z.cy - z.h / 2 - 12);
+      // 12 号字更小、笔画更密，描边只能给 1 —— 给 2 会整块糊成一坨
+      outlineLabel(sub, MAP_COLOR.subOutline, 1);
     });
   }
 
   /**
-   * 图到货后把招牌压到图的顶边上（重叠 6px，读作「钉在门楣上」）。
+   * 图到货后把文字落到**图上那块空白牌面**的中心。
    *
-   * 同样要 clamp：`artTop` 可能落在 HUD 里甚至屏幕外（壁龛尺寸调过多轮）。
+   * 换算用图的**实际渲染尺寸**（`placeArt` 等比缩放过，通常小于分区框），
+   * 不能用 `z.w`/`z.h` —— 那是目标框，图往往比它小，用它算会偏。
+   *
+   * `plate.cy` 是从图**顶部**往下的比例，而节点坐标是中心原点、y 向上，
+   * 所以要 `artTop - artH * cy`。这个方向很容易写反，写反的表现是
+   * 文字跑到图的下半部分（压在浴缸/草地上）。
    */
-  private placeSign(key: string, artTop: number) {
-    const host = this.signHosts[key];
+  private placeSignOnArt(z: Zone, artNode: Node) {
+    const host = this.signHosts[z.key];
     if (!host || !host.isValid || !this.L) return;
-    const y = Math.min(artTop - SIGN_H / 2 + 6, this.L.top - SIGN_H / 2 - 6);
-    host.setPosition(host.position.x, y, 0);
+    const tr = artNode.getComponent(UITransform);
+    if (!tr) return;
+
+    const artW = tr.width;
+    const artH = tr.height;
+    const artTop = artNode.position.y + artH / 2;
+
+    // 没量过牌面的分区退回「贴图顶边」的老行为，保证仍有画面
+    const p = z.plate;
+    if (!p) {
+      const y = Math.min(artTop - SIGN_H / 2 + 6, this.L.top - SIGN_H / 2 - 6);
+      host.setPosition(host.position.x, y, 0);
+      return;
+    }
+
+    const x = artNode.position.x + (p.cx - 0.5) * artW;
+    const y = artTop - artH * p.cy;
+    host.setPosition(x, y, 0);
+
+    // 字号按牌面实测宽度定。牌面宽度是画死的（图里那块奶白区），
+    // 三字名（洗浴间）和四字名（宠物花园）需要的宽度差三分之一，
+    // 而四张图的牌面宽占比也不同（0.325~0.560），所以必须逐个算。
+    //
+    // **下限 17 而不是 13**：缩到 13 号在手机上根本读不清，
+    // 那时宁可让字轻微出牌 —— 招牌的作用是让玩家认出入口，可读性优先。
+    const label = host.getComponentInChildren(Label);
+    if (label) {
+      // 留 4% 边距即可（原来 8%）。牌面本来就小，边距吃掉的是字的空间；
+      // 竞品的字左右几乎顶到牌边。
+      const avail = artW * p.w * 0.96;
+      const fit = Math.floor(avail / z.name.length);
+      // 不超过目标字号、不低于下限
+      label.fontSize = Math.max(SIGN_FONT_MIN, Math.min(SIGN_FONT, fit));
+      label.lineHeight = label.fontSize + 4;
+    }
   }
 
   // ---- Spine 猫 ----

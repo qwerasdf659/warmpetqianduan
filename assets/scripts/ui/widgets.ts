@@ -14,6 +14,9 @@
 import {
   Node,
   Label,
+  LabelOutline,
+  TTFFont,
+  resources,
   UITransform,
   Graphics,
   Color,
@@ -116,6 +119,50 @@ export function topInsetLeft(): number {
   }
 }
 
+/**
+ * 全局界面字体（Resource Han Rounded CN Bold，思源黑体的圆角衍生版）。
+ *
+ * **为什么要自带字体**：系统黑体笔画细、末端是方的，`isBold` 只是伪加粗。
+ * 实测招牌文字区域的「过渡像素占比」只有竞品的三分之一
+ * （19.7% vs 57.7%，量法见 skill `ui-visual-parity`），
+ * 观感就是「文本框贴上去的」而不是「画进画面里的」。
+ * 圆体 Bold 的笔画本身有肉，这是靠参数补不出来的。
+ *
+ * 体积：完整字库 13.3MB → 子集化后 **237KB**（只保留工程实际用到的 775 个字符）。
+ * 子集化流程见 `.build/scripts/subset-font.mjs`，
+ * **加了新文案要重跑一次**，否则新字会变成空白/方框（不报错）。
+ *
+ * 许可：SIL OFL 1.1，允许嵌入与随游戏分发，许可证随字体放在
+ * `assets/resources/fonts/LICENSE-ResourceHanRounded.txt`（OFL 要求保留）。
+ */
+const UI_FONT_PATH = 'fonts/rhr-bold';
+let uiFont: TTFFont | null = null;
+/** 字体到货前建的 Label，到货后要回填 —— 否则它们会一直是系统字体 */
+const pendingLabels: Label[] = [];
+
+/**
+ * 预加载界面字体。**在 bootstrap 阶段调一次**，早于任何界面创建。
+ *
+ * 失败时不抛异常、不阻塞启动：字体是观感增强，不是功能依赖。
+ * 加载不到就继续用系统字体，界面照样可用 —— 这是铁律「软失败不死亡」。
+ */
+export function preloadUIFont(done?: () => void): void {
+  resources.load(UI_FONT_PATH, TTFFont, (err, font) => {
+    if (err || !font) {
+      console.warn('[widgets] 界面字体加载失败，退回系统字体', err);
+    } else {
+      uiFont = font;
+      // 回填已建好的 Label。字体是异步来的，而加载界面的文字在它之前就建好了，
+      // 不回填的话首屏那几行永远是系统字体、和后面的界面不一致。
+      for (const lb of pendingLabels) {
+        if (lb && lb.isValid) lb.font = font;
+      }
+    }
+    pendingLabels.length = 0;
+    if (done) done();
+  });
+}
+
 export function makeNode(name: string, parent: Node, width = 0, height = 0): Node {
   const node = new Node(name);
   // new Node() 默认是 DEFAULT 层（3D 层）。UI 节点必须显式标成 UI_2D，
@@ -147,7 +194,15 @@ export function makeLabel(text: string, parent: Node, opts: LabelOptions = {}): 
   label.fontSize = opts.size || 14;
   label.lineHeight = (opts.size || 14) + 4;
   label.color = opts.color || COLOR.text;
-  label.isBold = !!opts.bold;
+  // 自带圆体已经是 Bold 字重，再叠伪粗会糊成一团（小字尤其明显）。
+  // 所以 `bold` 只在退回系统字体时生效 —— 那时它是唯一的加重手段。
+  label.isBold = !!opts.bold && !uiFont;
+  if (uiFont) {
+    label.font = uiFont;
+  } else {
+    // 字体还没到货：先记下来，`preloadUIFont` 的回调里统一回填
+    pendingLabels.push(label);
+  }
   label.horizontalAlign =
     opts.align === 'right'
       ? Label.HorizontalAlign.RIGHT
@@ -168,6 +223,23 @@ export function makeLabel(text: string, parent: Node, opts: LabelOptions = {}): 
   // 这样调用方传的坐标就是文字那一侧的边，而不是文字的中心。
   tr.setAnchorPoint(opts.align === 'right' ? 1 : opts.align === 'center' ? 0.5 : 0, 0.5);
   return label;
+}
+
+/**
+ * 文字描边。**这是「字画进画面里」和「字贴在画面上」的分界。**
+ *
+ * 实测竞品招牌文字区域：笔画像素(亮度<110) 4.8%、字与底之间的过渡像素 68.2%；
+ * 我们没描边的版本是 0.0% 和 2.6% —— 纯色细笔画直接从字色跳到牌面色，
+ * 没有任何过渡，于是读成「文本框贴上去的」。
+ * 加描边等于给每个笔画补一圈过渡像素，同时把字从牌面上摘出来。
+ *
+ * `width` 是**半径**而不是直径，2 就已经很明显；小字给 2、标题给 3。
+ * 描边色要用**同色系更深一档**，不要用黑色（会脏，见 skill game-art-from-ai）。
+ */
+export function outlineLabel(label: Label, color: Color, width = 2): void {
+  const o = label.node.addComponent(LabelOutline);
+  o.color = color;
+  o.width = width;
 }
 
 /**

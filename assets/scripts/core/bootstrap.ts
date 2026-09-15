@@ -14,6 +14,7 @@ import { request, onApiError } from '../net/request';
 import { takeReplayableOps, clearPending } from '../net/bizid';
 import { toApiError } from '../net/errors';
 import store from './store';
+import { preloadUIFont } from '../ui/widgets';
 import type { ApiError } from '../net/errors';
 import type { PetStateView } from '../net/types';
 
@@ -63,6 +64,12 @@ export async function bootstrap(hooks: BootstrapHooks = {}) {
       if (err.isBanned) onBanned(err);
     });
   }
+
+  // 界面字体：**不 await**，让它和网络请求并行下载。
+  // 237KB 的本地资源通常比首个请求先回来，而即便没回来也不影响流程 ——
+  // 先建好的 Label 会在字体到货后被回填（见 widgets.preloadUIFont）。
+  // 放在最前面发起是为了尽早开始，不是为了等它。
+  preloadUIFont();
 
   // 对表失败不阻塞进游戏，只是本地衰减预测会不准
   progress('对时中');

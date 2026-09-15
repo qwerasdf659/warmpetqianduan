@@ -109,12 +109,22 @@ function paintFloor(g: Graphics, L: StageLayout): void {
  * 少了这一道墙和地就像两块色纸拼在一起。
  */
 function paintSkirt(g: Graphics, L: StageLayout): void {
-  fillRoundRect(g, -L.worldW / 2, L.wallBottom, L.worldW, SKIRT_H, 0, MAP_COLOR.skirt);
-  // 上沿压条：用**比踢脚板只深一点**的 skirtLine，绝不能用描边色 line。
-  // 曾用 line（140,106,74 深棕）画这一道，结果是一条深色横线横贯整屏、
-  // 把画面切成上下两半 —— 这就是「割裂感」最直接的来源。
-  // 参考图的墙地交界几乎看不出线，视线是滑过去的。
-  fillRoundRect(g, -L.worldW / 2, L.wallBottom + SKIRT_H - 3, L.worldW, 3, 0, MAP_COLOR.skirtLine);
+  // **竞品在墙地交界处根本没有踢脚板。** 实测那一行的主色是
+  // rgb(254,236,216) L≈239~243（近白米色），且没有任何颜色占到该行 6% 以上
+  // —— 说明是墙纸直接过渡到地板的淡色差，不是一条实心带。
+  //
+  // 我们原来画的是 skirt(222,194,156) L=198 + skirtLine(202,170,130) L=175，
+  // 横贯整个世界宽、**占了将近半行像素**，用户看到的就是「一片棕色」。
+  //
+  // ⚠️ 这条带的存在本身就是错的，不是配色问题。
+  // 之前只把压条从深棕 `line` 换成浅一点的 `skirtLine`，
+  // 却没质疑「该不该有这条带」—— 改了颜色、留了病根。
+  // 上面那句注释「参考图的墙地交界几乎看不出线」当时就写对了，
+  // 但画出来的是 L=198 的实心带，和墙纸 L=233 差 35 级。认知和实现脱节。
+  //
+  // 现在只留一道**极淡**的过渡：3px、用 wallPaw（比墙面只深一点点）。
+  // 目的是给出「墙到这里为止」的暗示，而不是画一块板子。
+  fillRoundRect(g, -L.worldW / 2, L.wallBottom, L.worldW, 3, 0, MAP_COLOR.wallPaw);
 }
 
 /**
