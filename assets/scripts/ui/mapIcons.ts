@@ -242,6 +242,60 @@ export function paintTrophy(g: Graphics, r: number, tint: Color): void {
   g.fill();
 }
 
+// 需求气泡图标的配色
+const NEED_FISH_BODY = new Color(232, 176, 118, 255);
+const NEED_FISH_FIN = new Color(224, 138, 128, 255);
+const NEED_WATER = new Color(110, 170, 214, 255);
+const NEED_BALL = new Color(238, 143, 160, 255);
+const NEED_BALL_LINE = new Color(255, 252, 247, 255);
+
+/** 需求：鱼（喂食）。侧身鱼形 —— 椭圆身 + 三角尾 + 圆眼 */
+export function paintFish(g: Graphics, r: number): void {
+  g.fillColor = NEED_FISH_BODY;
+  g.ellipse(-r * 0.1, 0, r * 0.72, r * 0.44);
+  g.fill();
+  // 尾鳍
+  g.fillColor = NEED_FISH_FIN;
+  g.circle(r * 0.66, r * 0.28, r * 0.24);
+  g.circle(r * 0.66, -r * 0.28, r * 0.24);
+  g.fill();
+  g.fillColor = NEED_FISH_BODY;
+  g.circle(r * 0.5, 0, r * 0.28);
+  g.fill();
+  // 眼
+  g.fillColor = COLOR.title;
+  g.circle(-r * 0.42, r * 0.06, r * 0.09);
+  g.fill();
+}
+
+/** 需求：水滴（洗澡）。上尖下圆 —— 一个圆 + 顶上一个小三角近似 */
+export function paintDrop(g: Graphics, r: number): void {
+  g.fillColor = NEED_WATER;
+  g.circle(0, -r * 0.22, r * 0.5);
+  // 尖头用一串收窄的小圆凑
+  g.circle(0, r * 0.16, r * 0.34);
+  g.circle(0, r * 0.42, r * 0.18);
+  g.circle(0, r * 0.58, r * 0.08);
+  g.fill();
+  // 高光
+  g.fillColor = NEED_BALL_LINE;
+  g.circle(-r * 0.16, -r * 0.28, r * 0.12);
+  g.fill();
+}
+
+/** 需求：毛线球（陪玩）。粉球 + 两道白色缠线 */
+export function paintYarn(g: Graphics, r: number): void {
+  g.fillColor = NEED_BALL;
+  g.circle(0, 0, r * 0.6);
+  g.fill();
+  // 缠线：两条错开的细带
+  g.fillColor = NEED_BALL_LINE;
+  g.rect(-r * 0.58, -r * 0.1, r * 1.16, r * 0.08);
+  g.rect(-r * 0.42, r * 0.24, r * 0.9, r * 0.08);
+  g.rect(-r * 0.42, -r * 0.42, r * 0.9, r * 0.08);
+  g.fill();
+}
+
 /**
  * 每个图标的专属色。
  *

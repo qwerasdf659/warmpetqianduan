@@ -1,0 +1,105 @@
+---
+description: 代码画的 UI（Graphics/Label/节点树）没显示、显示空白、或「点哪都跳转」这类交互 bug 的排查纪律。用户说「为什么空白 / 没显示 / 点哪都跳 / 改了没生效」，或改完 MapView/HUD/互动条这类纯代码 UI 时读。
+alwaysApply: true
+---
+
+# 代码画的 UI：空白 / 不显示 / 误触的排查
+
+`silent-failure-and-verification` 管的是**美术资源**（PNG/library 缓存）没上屏；
+本规则管的是**代码画的 UI**（Graphics 简笔、Label、运行时建的节点树）没显示、
+显示空白、或点击命中错位。两类的排查入口不同，别混。
+
+下面每条都在 2026-09-16-17 这轮「气泡空白 + 点哪都跳转」里真实发生过。
+
+## 铁律：截图看不出的，读运行时节点树
+
+代码 UI 的失败**长得都一样**（空白、少一块、点了没反应），
+光看截图会连着猜错好几轮。**唯一可靠的是读运行时真值**：节点在不在、
+`active`、子节点数、`contentSize`、世界坐标。模板见 skill `ui-runtime-probe`。
+
+判据速查：
+
+| 读到的真值 | 结论 |
+| --- | --- |
+| 节点树里根本没有这个节点 | 建节点的代码没跑（查可选回调 `if(cb)cb(...)`、early return） |
+| 有节点但 `children.length === 0` | 内容没画进去（画图函数没被调，或被 `removeAllChildren` 清掉没重画） |
+| `active === false` | 被某个刷新分支隐藏了 |
+| `contentSize` 为 0 | 触摸命中不到（Graphics/Label 不撑 UITransform，拖动却照样能用） |
+| 世界坐标超出 `[0, vw]` / `[0, vh]` | 画在屏幕外 |
+| 子节点齐全、坐标正常、仍空白 | 尺寸太小 / 颜色和底色一样 / 被兄弟层盖住 |
+
+## emoji / 特殊字符在本项目必然变空白
+
+界面用**子集化字体**（思源圆体，只保留工程用到的 ~775 字，见 `ui-font-subset`）。
+**emoji 和任何没进子集的字符渲染成空白，且不报错。**
+
+气泡里塞 `🐟💧🎾` 就是这么空的。正解是**画矢量图标**（`mapIcons.ts` 里的
+`paintFish`/`paintDrop`/`paintYarn` 那种纯 Graphics 简笔），不是字符 ——
+这条和 `map-scroll-view`「图标别用 emoji」「安卓低端机字形缺失」是同一件事。
+
+加了新中文文案要**重跑字体子集化**，否则新字也是空白（见 `ui-font-subset`）。
+
+## 「首刷」不能只靠「签名变化」触发
+
+带 `update()` + 签名去重的刷新（`if (sig === lastSig) return`）有个**首帧陷阱**：
+如果数据在**建节点时就已到位**，首帧算出的签名直接等于最终值、被存进 `lastSig`，
+之后 `sig === lastSig` 永远命中，刷新函数**再也不跑** → 内容一次没画。
+
+气泡就栽在这：`update()` 每帧跑、`lastPetSig` 也更新了，但探针读到
+`bubbleNeed='' iconKids=0`（图标从没画）。手动调一次刷新 → 立刻 `need='hunger' kids=1`，
+证明逻辑对、只是**没被触发**。
+
+两条一起上：
+
+1. **建完节点立刻主动刷一次**，不依赖 update 的签名时序。
+2. 刷新里加**幂等兜底**：`if (需要显示 && (需求变了 || 内容层为空)) 重画`。
+   只判「需求变了」会因为标志位已设而永远跳过补画。
+
+```ts
+// buildXxx() 末尾：
+this.refreshXxx();          // ← 不要只依赖 update 的 sig 触发首刷
+
+// refreshXxx() 里：
+const missing = !host || !host.isValid || host.children.length === 0;
+if (show && (this.lastKey !== key || missing)) {
+  this.lastKey = key;
+  this.drawXxx(key);        // 内容层被清空时也补画
+}
+```
+
+## 铺满整屏的「兜底可点区」会吃掉所有点击
+
+命中检测取第一个匹配时，任何一块 `w=worldW, h=floorH` 的兜底分区都会
+**截胡落在具体区域之外的每一次点击**。地图的 `lobby` 分区就让「点哪都跳转到
+互动界面」——用户拖地图看房间，手一松就换了界面。
+
+- **空点击就该什么都不做。** 可看的内容（地图、立绘）没命中任何目标时，
+  回落到某个界面 = 「拖着看会被弹走」。
+- 需要那块区域的功能就**内联进当前界面**（互动条搬进地图底部），
+  而不是做成一个「铺满地板、点了跳走」的隐形入口。
+- 详见 `map-scroll-view`「不要放铺满地板的兜底分区」。
+
+## 改完代码，编辑器编译经常滞后（会骗过截图）
+
+Cocos 编辑器编译**滞后甚至卡死**，实测卡过 20 分钟以上。此时：
+
+- 截图是旧画面，但**看起来就像你的改动没生效** —— 极易误判成代码 bug，
+  照着改第二轮。
+- **判据：搜编译产物里有没有你这次加的新符号/新注释**，不是看时间戳
+  （chunk 是 hash 命名，内容变了时间戳可能不变）：
+
+```powershell
+$dir = "temp\programming\packer-driver\targets\preview\chunks"
+Get-ChildItem $dir -Recurse -File -Filter *.js |
+  Select-String -Pattern "你这次新加的函数名或独特注释" -List
+# 搜不到 = 还是旧编译，别急着改代码，先等编译 / 重新导入
+```
+
+- 编译卡死超 10 分钟：关 Cocos → 删 `temp/` `library/` `build/` → 重开
+  （**不删 `.meta`**，见 `cocos-toolchain`）。
+- 预览标签页要 **`Ctrl+Shift+R`** 强制刷新，普通刷新复用旧 JS。
+
+## 完整可执行流程
+
+在 skill `ui-runtime-probe`（按需触发）：节点树探针模板、气泡/互动条的
+现成探针脚本、编译产物核对、强制刷新清单。

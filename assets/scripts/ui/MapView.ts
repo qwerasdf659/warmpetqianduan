@@ -57,6 +57,7 @@ import {
 // 所以不再需要 `paintSignPlate` / `signWidth`
 import { paintZone, SIGN_H } from './mapZones';
 import { placeArt } from './mapArt';
+import { paintFish, paintDrop, paintYarn } from './mapIcons';
 import { MapActionBar } from './MapActionBar';
 import type { PetAction } from '../net/types';
 
@@ -132,7 +133,10 @@ export class MapView extends Component {
 
   // 宠物头顶气泡与脚下状态条（跟随宠物 x，但不受其缩放/翻转影响）
   private bubbleNode: Node | null = null;
-  private bubbleLabel: Label | null = null;
+  /** 气泡里的图标层（每次刷新按最紧缺的需求重画） */
+  private bubbleIconHost: Node | null = null;
+  /** 上一次画的需求 key，没变就不重画气泡图标 */
+  private bubbleNeed = '';
   private statusBarHost: Node | null = null;
   /** 猫脚下的接地阴影，跟随宠物 x */
   private petShadow: Node | null = null;
@@ -486,8 +490,12 @@ export class MapView extends Component {
     bg.circle(0, -bh / 2 - 4, 6);
     bg.fill();
 
-    this.bubbleLabel = makeLabel('', bubble, { size: 22, color: COLOR.title, align: 'center' });
-    this.bubbleLabel.node.setPosition(0, 0);
+    // 气泡里画**矢量图标**（鱼 / 水滴 / 毛线球），不是 emoji 字符。
+    // 旧版塞 `🐟💧🎾`：界面用的是子集化字体，emoji 不在子集里 → 渲染成空白、
+    // 且不报错（规则 `ui-font-subset`「新字变空白/方框」）。即便用系统字体，
+    // emoji 字形也由系统决定，安卓低端机整个缺字（规则 `map-scroll-view`：图标别用 emoji）。
+    this.bubbleIconHost = makeNode('icon', bubble, 24, 24);
+    this.bubbleIconHost.setPosition(0, 2);
     this.bubbleNode = bubble;
 
     this.statusBarHost = new Node('PetStatus');
@@ -499,6 +507,12 @@ export class MapView extends Component {
     paintPetShadow(makeGraphics('g', shadow), 62);
     shadow.setSiblingIndex(petNode.getSiblingIndex());
     this.petShadow = shadow;
+
+    // **建完立刻刷一次**，不依赖 update 的 sig 时序（规则 `ui-runtime-verification`
+    // 「首刷不能只靠签名变化」）：如果宠物数据在建气泡时就已到位，首帧 sig 直接等于
+    // 最终值、被当成 lastPetSig 存下，`sig === lastPetSig` 命中、refreshPetOverlay
+    // 再也不跑 → 气泡图标一直没画（实测 need='' iconKids=0，手动调 refresh 才出）。
+    this.refreshPetOverlay();
   }
 
   /** 在地板 x 范围内随机走一段 → 站立 idle → 停一下 → 再走 */
@@ -583,10 +597,11 @@ export class MapView extends Component {
       return;
     }
 
+    // need 决定画哪个图标；ratio 是该项的健康度（越低越紧缺）
     const needs = [
-      { glyph: '🐟', lack: 100 - p.hunger, ratio: p.hunger / 100 },
-      { glyph: '💧', lack: 100 - p.cleanliness, ratio: p.cleanliness / 100 },
-      { glyph: '🎾', lack: 100 - p.mood, ratio: p.mood / 100 },
+      { need: 'hunger', lack: 100 - p.hunger, ratio: p.hunger / 100 },
+      { need: 'clean', lack: 100 - p.cleanliness, ratio: p.cleanliness / 100 },
+      { need: 'play', lack: 100 - p.mood, ratio: p.mood / 100 },
     ];
     needs.sort((a, b) => b.lack - a.lack);
     const worst = needs[0];
@@ -595,7 +610,15 @@ export class MapView extends Component {
       // 阈值 60：低于此才提需求，否则气泡会常驻、失去提示意义
       const show = worst.ratio < 0.6;
       bubble.active = show;
-      if (show && this.bubbleLabel) this.bubbleLabel.string = worst.glyph;
+      // 需求项变化、**或图标层还是空的**时重画。
+      // 加「图标层为空」这个条件是保险：万一首刷时序错开、图标没画上，
+      // 下一次刷新会补画，而不是因为 `bubbleNeed` 已被设值就永远跳过。
+      const iconHost = this.bubbleIconHost;
+      const iconMissing = !iconHost || !iconHost.isValid || iconHost.children.length === 0;
+      if (show && (this.bubbleNeed !== worst.need || iconMissing)) {
+        this.bubbleNeed = worst.need;
+        this.drawBubbleIcon(worst.need);
+      }
     }
 
     if (host && host.isValid) {
@@ -609,6 +632,18 @@ export class MapView extends Component {
         fillRoundRect(g, -w / 2, -h / 2, w * r, h, h / 2, r <= 0.2 ? COLOR.danger : COLOR.accent);
       }
     }
+  }
+
+  /** 按最紧缺的需求画气泡图标：饱食→鱼、清洁→水滴、心情→毛线球 */
+  private drawBubbleIcon(need: string) {
+    const host = this.bubbleIconHost;
+    if (!host || !host.isValid) return;
+    host.removeAllChildren();
+    const g = makeGraphics('g', host);
+    const r = 11;
+    if (need === 'hunger') paintFish(g, r);
+    else if (need === 'clean') paintDrop(g, r);
+    else paintYarn(g, r);
   }
 
   // ---- 交互：点击命中分区 ----

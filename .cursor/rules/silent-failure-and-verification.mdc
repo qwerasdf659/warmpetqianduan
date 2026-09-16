@@ -134,4 +134,7 @@ Get-ChildItem "$root\library\$($u.Substring(0,2))" -Filter "$u*.png"
 - 出图侧的描边与背景纪律（含「深一到两档」这条已被推翻的结论）：
  skill `game-art-from-ai`
 - 截图测量脚本与目标数值表：skill `ui-visual-parity`
-- 确认改动生效的完整流程与脚本：skill `asset-change-verification`
+- 确认**美术资源**改动生效的完整流程：skill `asset-change-verification`
+- **代码画的 UI**（Graphics/Label/节点树）空白/不显示/点哪都跳：
+ 规则 `ui-runtime-verification` + skill `ui-runtime-probe`。
+ 本规则管「PNG 没上屏」，那条管「节点没画出来 / 没触发刷新」。
