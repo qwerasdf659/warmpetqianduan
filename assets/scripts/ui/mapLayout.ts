@@ -191,7 +191,8 @@ export function bl(r: Rect): [number, number] {
 }
 
 /** 分区形态。每种在 mapZones.ts 里都必须有实现，漏一个那块墙会空着 */
-export type ZoneShape = 'alcove' | 'arch' | 'tent' | 'store' | 'open';
+// 曾有 `'open'`（大厅），它是一块铺满地板的可点区域 —— 已随「互动内联到地图」去掉
+export type ZoneShape = 'alcove' | 'arch' | 'tent' | 'store';
 
 export interface Zone extends Rect {
   key: string;
@@ -305,7 +306,16 @@ export interface StageLayout {
  */
 const HUD_TOP = 44;
 /** 底部 HUD 占位：任务条 44 + 圆入口 56 + 间隙，和 MapHud 的排布对齐 */
-const HUD_BOTTOM = 134;
+export const HUD_BOTTOM = 134;
+/**
+ * 内联互动条占位（`MapActionBar`：四个按钮 46 + 三条属性条 29 + 间隙）。
+ *
+ * `MapActionBar` 自己按 `HUD_BOTTOM` 往上排，这个数只用来**把宠物抬起来** ——
+ * 猫站在 `petY = bottom + floorH * 0.30`，小屏（vh 640）上那条线落在互动条里面，
+ * 猫连同它脚下的状态条会被压在按钮后面。校验用
+ * `.build/scripts/check-actionbar.mjs`（几档屏高都要过）。
+ */
+export const ACTION_BAR_H = 92;
 /**
  * 墙面占**屏幕高度**的比例（不是舞台高度）。
  *
@@ -517,13 +527,15 @@ export function computeLayout(): StageLayout {
       cx: wl + 10 + 152 / 2, cy: storeCy, w: 152, h: storeH,
       plate: { cy: 0.249, cx: 0.5, w: 0.60 },
     },
-    // 大厅 = 地板中间那块空地，宠物就站在这里。放在数组**最后**，
-    // 因为它和护理室/楼梯有重叠，命中检测取第一个匹配 → 具体分区优先于大厅。
-    {
-      key: 'lobby', name: '大厅客厅', sub: '互动 + 装修', shape: 'open', art: '',
-      cx: 0, cy: (wallBottom + bottom) / 2, w: worldW, h: floorH,
-    },
   ];
+  // 注意这里**没有 lobby 分区**。
+  //
+  // 原来有一条 `w: worldW, h: floorH` 的大厅分区铺满整个地板，
+  // 命中检测取第一个匹配 → 落在四个壁龛之外的**任何**一次点击都命中它、
+  // 整屏切到 MainView。玩家的感受是「点哪都跳走，地图没法看」。
+  //
+  // 互动（喂食/洗澡/抚摸/陪玩）改为**内联在地图底部**（`MapActionBar`），
+  // 大厅不再是一个「要跳进去的地方」，所以这条分区连同 shape `'open'` 一起去掉。
 
   /**
    * 楼梯。**故意往右推出屏幕，让升上去的那一头被右边缘裁掉。**
@@ -558,7 +570,13 @@ export function computeLayout(): StageLayout {
 
   // 宠物走在**后排家具之前、前排小物件之后**那条带子上。
   // 站得比后排家具低 → 自然读成「在家具前面」，不需要额外的排序逻辑。
-  const petY = bottom + floorH * 0.30;
+  //
+  // **下限由互动条决定，不能只按 floorH 比例算。** 比例式在 846 高屏上给出
+  // -134（互动条上沿 -197，还剩 53px），但 vh=640 时算到 -78 而互动条上沿是 -94 ——
+  // 猫连同脚下状态条整个陷进按钮里。所以取「比例位置」和「互动条上沿 + 余量」的较高者。
+  // 余量 22 = 状态条偏移 10 + 12 视觉间隙。
+  const petFloor = bottom + ACTION_BAR_H + 22;
+  const petY = Math.max(bottom + floorH * 0.30, petFloor);
   // 横向让开护理室（世界左端 ~0.14）与楼梯（世界右端 ~0.86）
   const petMinX = wl + worldW * 0.20;
   const petMaxX = wl + worldW * 0.80;

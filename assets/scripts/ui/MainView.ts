@@ -40,7 +40,6 @@ import { expProgress, describeMood, isMaxLevel } from '../core/predict';
 import store from '../core/store';
 import { OfflineDialog } from './OfflineDialog';
 import { PetStage } from './PetStage';
-import { ShowcasePanel } from './ShowcasePanel';
 import type { PetAction, PetStateView } from '../net/types';
 
 const { ccclass } = _decorator;
@@ -165,10 +164,6 @@ export class MainView extends Component {
     this.buildIcons();
     this.buildLabels();
     this.buildHitAreas();
-
-    // 玩法验证用的展示按钮（换猫/换场景/家具/帽子）。最后挂，保证在最上层可点。
-    const showcase = this.node.addComponent(ShowcasePanel);
-    showcase.stage = this.stage;
 
     store.on('pet', this.onStoreChanged, this);
     store.on('wallet', this.onStoreChanged, this);

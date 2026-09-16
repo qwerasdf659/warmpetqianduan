@@ -82,11 +82,10 @@ export class Main extends Component {
   }
 
   /**
-   * 开机加载完成后的落地界面。
+   * 开机加载完成后的落地界面 = **家庭地图**（规则 `first-screen-and-loading`）。
    *
-   * 原型阶段：直接落到「双向滚动地图原型」，地图内点「返回」进正式主界面；
-   * 主界面右上角长按可再回到地图。海报/加载/登录一切照常，不受影响。
-   * 验收完地图后，把 showMapPrototype() 改成 showMainView() 即恢复默认落主界面。
+   * 地图自带互动条与全部分区入口，所以它不再是「原型」而是正式落地界面，
+   * 也没有「返回上一层」。`MainView` 退居调试用，靠右上角长按进入。
    */
   private enterMain() {
     if (this.entered) return;
@@ -169,8 +168,8 @@ export class Main extends Component {
   }
 
   /**
-   * 双向滚动地图原型：临时替换当前界面，地图内点「返回」回主界面。
-   * 走完正常 bootstrap 之后才展示，所以海报/加载/登录一切照常。
+   * 家庭地图：正式落地界面。走完正常 bootstrap 之后才展示，
+   * 所以海报/加载/登录一切照常。
    */
   private showMapPrototype() {
     if (this.node.getComponent(MapView)) return;
@@ -180,27 +179,22 @@ export class Main extends Component {
     }
     this.node.removeAllChildren();
     const map = this.node.addComponent(MapView);
-    // 「返回」与「点击大厅」都会销毁当前地图节点，必须延后一帧执行，
-    // 否则是在地图输入层的触摸回调里销毁它自己，事件派发中途拆节点会报错。
-    map.onBack = () => this.scheduleOnce(() => this.showMainView(), 0);
     map.onOpenZone = (key) => this.openZone(key);
   }
 
   /**
    * 分区点击路由。
    *
-   * 大厅是**整屏切换**（MainView 就是互动界面，要占满屏幕）；
-   * 其余分区是**盖在地图上的弹窗**——玩法本身很轻（一屏列表就够），
+   * 全部是**盖在地图上的弹窗**——玩法本身很轻（一屏列表就够），
    * 盖着弹窗关掉就回到地图，不用重建整个界面。
    *
    * 每个分区都必须有出口：ModalPanel 自带关闭按钮 + 点遮罩关闭，
    * 所以不会出现「进去了出不来」（规则 `map-scroll-view`：每个分区都要有出口）。
    */
   private openZone(key: string) {
-    if (key === 'lobby') {
-      this.scheduleOnce(() => this.showMainView(), 0);
-      return;
-    }
+    // 注意这里**没有 lobby 这一支**。互动已经内联在地图底部（`MapActionBar`），
+    // 大厅不再是「要跳进去的地方」，铺满地板的那条 lobby 分区也一并去掉了 ——
+    // 它让任何一次落在壁龛之外的点击都整屏切走。
 
     // 已经开着一个面板时不再叠第二层：叠起来的遮罩会越来越黑，关也要关两次
     if (this.panel && this.panel.isValid) return;

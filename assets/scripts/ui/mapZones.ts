@@ -46,8 +46,6 @@ export function paintZone(g: Graphics, z: Zone): void {
     case 'store':
       paintStore(g, z);
       break;
-    case 'open':
-      return; // 大厅没有招牌，直接返回（别往下画牌面）
     default:
       paintAlcove(g, z);
   }

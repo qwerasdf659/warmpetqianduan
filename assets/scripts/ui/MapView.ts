@@ -9,10 +9,12 @@
  * - `mapLayout.ts` 算布局与配色（一切 y 由可视高度现算，不写死）
  * - `mapRoom.ts` 画环境与装饰（墙、地、楼梯、窗帘、相框、地毯、花盆、气球、木马）
  * - `mapZones.ts` 画可点分区（壁龛 / 拱门 / 帐篷 / 药柜）
+ * - `MapActionBar.ts` 底部内联互动条（四种互动 + 属性条）
  * - 本文件负责组装、Spine 猫、点击命中、HUD 挂载
  *
- * 层级用容器节点固定：art（Graphics 全部）→ pet（猫）→ label（文字）→ input → hud。
- * 顺序即渲染层级，所以文字永远压在图形之上。
+ * 层级用容器节点固定：art（Graphics 全部）→ pet（猫）→ label（文字）→ input
+ * → hud → actionBar。顺序即渲染层级，所以文字永远压在图形之上，
+ * 而互动条要排在**输入层之后**（输入层铺满整屏，压在按钮上就点不动了）。
  */
 
 import {
@@ -55,6 +57,8 @@ import {
 // 所以不再需要 `paintSignPlate` / `signWidth`
 import { paintZone, SIGN_H } from './mapZones';
 import { placeArt } from './mapArt';
+import { MapActionBar } from './MapActionBar';
+import type { PetAction } from '../net/types';
 
 const { ccclass } = _decorator;
 
@@ -72,8 +76,22 @@ const DEFAULT_SKIN = '007';
 const IDLE_CANDIDATES = ['idle', 'Idle', 'Sit_Idle', 'Idle3', 'Sleep_A'];
 const WALK_CANDIDATES = ['Walk', 'Walk2', 'Walk_2', 'walk'];
 
+/**
+ * 互动动作 → 动画候选表，和 `PetStage.ACTION_ANIM` 保持一致。
+ *
+ * 这里**不做**前摇/后摇串播和刷毛 5 段递进（`PetStage` 那套）——
+ * 地图上的猫同时在跑散步 tween，动画链越长越容易和走路打架。
+ * 单段 + 接回 idle 已经够给出「点到了」的反馈。
+ */
+const ACTION_ANIM: Record<string, string[]> = {
+  feed: ['Minigame_Treat_Correct', 'Knead', 'Sit_Lick_Hand'],
+  bath: ['Minigame_Brush', 'Sit_Lick_Leg'],
+  pet: ['Minigame_Belly_Rub', 'Minigame_Neck_Rub', 'Stand_Pat', 'Pers_Cuddly'],
+  play: ['Int_Butterfly', 'Standing_Toy', 'A_Play', 'Pers_Playful'],
+};
+
 /** 顶部提示文案 */
-const HINT_TEXT = '左右拖动查看 · 点小屋进入玩法';
+const HINT_TEXT = '左右拖动查看 · 点招牌进入玩法';
 
 /**
  * 招牌文字的**目标**字号（2026-09-16：19 → 23，放大 1.2 倍）。
@@ -88,9 +106,12 @@ const SIGN_FONT_MIN = 17;
 
 @ccclass('MapView')
 export class MapView extends Component {
-  /** 返回主界面回调，由 Main 注入 */
-  onBack: (() => void) | null = null;
-  /** 点击某个分区回调（传分区 key），由 Main 注入以打开对应玩法 */
+  /**
+   * 点击某个分区回调（传分区 key），由 Main 注入以打开对应玩法。
+   *
+   * 曾有一个 `onBack`（回 MainView）。地图是落地界面、没有上一层，
+   * 而互动已经内联到底部（`MapActionBar`），所以「返回」按钮和它一起去掉了。
+   */
   onOpenZone: ((key: string) => void) | null = null;
 
   private L: StageLayout | null = null;
@@ -126,6 +147,8 @@ export class MapView extends Component {
   private catSkel: sp.Skeleton | null = null;
   private catIdle = '';
   private catWalk = '';
+  /** 骨架里所有动画名。`reactCat` 按互动动作挑动画时查它（写死名字会静默不播） */
+  private catAnims: string[] = [];
 
   onLoad() {
     const L = computeLayout();
@@ -156,8 +179,10 @@ export class MapView extends Component {
     this.buildCat(L);
     this.setupInput(L);
     this.buildHint(L);
-    this.buildBackButton(L);
     this.buildHud();
+    // 互动条**最后挂**：兄弟次序即渲染层级，早挂会被输入层吃掉点击。
+    // 同理它必须在 setupInput 之后 —— 输入层铺满整屏，压在按钮上就点不动了。
+    this.buildActionBar();
 
     // 初始位置**不要贴在边界上**：贴边的话往那个方向拖完全没反应，
     // 玩家第一感受就是「地图坏了」（旧的滚动版踩过这个坑）。
@@ -295,19 +320,6 @@ export class MapView extends Component {
     if (!parent) return;
 
     L.zones.forEach((z) => {
-      // 大厅是纯活动区、没有招牌，标题放在地板下沿
-      if (z.shape === 'open') {
-        // 同样要描边：这行字直接压在地板上，`dim` 色落在浅米色地板上对比不足。
-        // 顺带把颜色提到 text（比 dim 深一档）—— 它是分区名，不是次要说明。
-        const lbl = makeLabel(z.name, parent, {
-          size: 15, color: COLOR.text, align: 'center',
-        });
-        lbl.node.setPosition(0, L.bottom + 10);
-        // 宽度 1：15 号字用 2 就会让笔画间的描边糊在一起（同招牌那条注释）
-        outlineLabel(lbl, MAP_COLOR.subOutline, 1);
-        return;
-      }
-
       const host = makeNode(`Sign_${z.key}`, parent, 60, SIGN_H);
       // 兜底位置：图没到货时按分区顶边放。
       // clamp 到 HUD 下缘之下 —— 壁龛高度反复调过（110→174→268→201），
@@ -428,6 +440,7 @@ export class MapView extends Component {
       const runtime = data.getRuntimeData && data.getRuntimeData();
       const anims = runtime && runtime.animations ? runtime.animations.map((a) => a.name) : [];
       const skins = runtime && runtime.skins ? runtime.skins.map((s) => s.name) : [];
+      this.catAnims = anims;
       this.catIdle = IDLE_CANDIDATES.find((n) => anims.indexOf(n) >= 0) || '';
       this.catWalk = WALK_CANDIDATES.find((n) => anims.indexOf(n) >= 0) || '';
 
@@ -669,9 +682,10 @@ export class MapView extends Component {
   }
 
   /**
-   * 命中检测。`L.zones` 里大厅（open）排在最后且铺满整个地板，
-   * 所以取**第一个**匹配就等于「具体分区优先于大厅」——顺序是语义的一部分，
-   * 往数组里加分区时新的要插在大厅之前。
+   * 命中检测。**没命中任何分区就什么都不做**（不是「回落到大厅」）。
+   *
+   * 这里以前会命中一块铺满整个地板的「大厅」分区 → 整屏切到 MainView，
+   * 结果是点空地板也跳走。空点击不做事是对的：地图本身就是可看的内容。
    */
   private handleTap(x: number, y: number) {
     if (!this.L) return;
@@ -690,23 +704,44 @@ export class MapView extends Component {
     this.hintLabel = hint;
   }
 
-  private buildBackButton(L: StageLayout) {
-    const w = 84;
-    const h = 34;
-    const btn = makeNode('MapBack', this.node, w, h);
-    // 和 HUD 的顶部一行错开：返回按钮压在舞台上沿左侧，不和头像抢位置
-    btn.setPosition(-L.vw / 2 + 10 + w / 2, L.top + 14);
+  /**
+   * 底部内联互动条（四种互动 + 三条属性条）。
+   *
+   * 这块以前是整屏的 `MainView`，靠点地板上那块铺满 `floorH` 的「大厅」分区进去。
+   * 那条分区让**任何一次落在壁龛之外的点击都跳走**，而它换来的只是四个按钮 ——
+   * 所以按钮搬到这里，大厅分区和「返回」按钮一起去掉（地图就是落地界面，
+   * 没有可返回的上一层）。
+   *
+   * 互动成功后让地图上这只猫也演一下：没有反馈的话玩家分不清「点到了」和「没点到」。
+   */
+  private buildActionBar() {
+    const host = makeNode('MapActionBar', this.node);
+    const bar = host.addComponent(MapActionBar);
+    bar.onReact = (action: PetAction) => this.reactCat(action);
+  }
 
-    const g = makeGraphics('bg', btn);
-    fillRoundRectRim(g, -w / 2, -h / 2, w, h, h / 2, COLOR.accent, 2);
-    const lbl = makeLabel('返回', btn, {
-      size: 16, color: COLOR.accentText, align: 'center', bold: true,
-    });
-    lbl.node.setPosition(0, 0);
+  /**
+   * 互动后的猫：挤压一下 + 播对应动画，播完接回 idle。
+   *
+   * 比 `PetStage.react` 简化 —— 地图上的猫在散步 tween 里，直接 `Tween.stopAllByTarget`
+   * 会把散步一起停掉，所以只缩放不动位置，散步继续跑。
+   */
+  private reactCat(action: PetAction) {
+    const pet = this.catNode;
+    if (!pet || !pet.isValid) return;
 
-    btn.on(Node.EventType.TOUCH_END, () => {
-      if (this.onBack) this.onBack();
-    });
+    // 只播动画，不碰 tween：位置由 catStep 的 tween 管着，
+    // 在这里 stopAllByTarget 会把散步永久停掉（猫再也不动了）。
+    const skel = this.catSkel;
+    if (skel) {
+      const cands = ACTION_ANIM[action] || [];
+      const main = cands.find((n) => this.catAnims.indexOf(n) >= 0);
+      if (main) {
+        skel.setAnimation(0, main, false);
+        // 排队接回 idle，不用自己算时长（Spine 会按顺序接着播）
+        if (this.catIdle) skel.addAnimation(0, this.catIdle, true, 0);
+      }
+    }
   }
 
   /**
