@@ -79,22 +79,39 @@ function paintPawGlyph(g: Graphics, cx: number, cy: number, r: number): void {
  * 一次 fill 收掉所有格子，不要每格 fill 一次 —— 那会把 DrawCall 打爆。
  */
 function paintFloor(g: Graphics, L: StageLayout): void {
-  const h = L.wallBottom - L.bottom;
-  fillRoundRect(g, -L.worldW / 2, L.bottom, L.worldW, h, 0, MAP_COLOR.floor);
+  // 地板**视觉上一直铺到屏幕最底**（-vh/2），不止到 L.bottom。
+  // L.bottom 是底部 HUD 带的上沿、也是内容（宠物/道具/分区）的排布下限；
+  // 但那条 HUD 带的背景过去是空的，拖到边角会露出底色。现在把地板铺满到屏幕底，
+  // HUD 按钮浮在地板上 —— 底部区域归地板，墙不变。
+  // ⚠️ 只改**绘制范围**，不动 L.bottom：动了会把宠物/道具推进 HUD 区。
+  const floorBottom = -L.vh / 2;
+  const h = L.wallBottom - floorBottom;
+  fillRoundRect(g, -L.worldW / 2, floorBottom, L.worldW, h, 0, MAP_COLOR.floor);
 
+  // 竞品地板不是「等边菱形棋盘全铺」，那样又方又密、读成呆板的方格。
+  // 实测竞品几何：
+  //   - 菱形是**横向拉宽的扁菱形**（水平周期≈113 vs 竖直周期≈78，比例≈1.45:1）；
+  //   - 暗块**稀疏点缀**在亮底上、块之间留大片亮底间隔（暗块只占周期约 1/3），
+  //     不是亮暗各半填满。
+  // 所以这里画一批**独立的小扁菱形**（只画暗块，亮块=底色），错位网格排布，
+  // 之间留白 —— 一次 fill 收掉，不打爆 DrawCall。菱形也从屏幕底 floorBottom 起铺。
   g.fillColor = MAP_COLOR.floorTile;
-  const half = TILE / 2;
+  const periodX = TILE * 2;      // 水平周期（菱形中心横向间距）
+  const periodY = TILE * 1.4;    // 竖直周期（比水平小 → 视觉上行更密）
+  const rx = TILE * 0.465;       // 菱形半宽（扁：宽 > 高）；在 0.62 基础上缩小 25%
+  const ry = TILE * 0.315;       // 菱形半高；在 0.42 基础上缩小 25%
   const left = -L.worldW / 2;
-  for (let row = 0; row * half < h; row++) {
-    const cy = L.bottom + row * half + half;
-    if (cy - half > L.wallBottom) break;
-    const offset = row % 2 === 0 ? 0 : half;
-    for (let col = -1; left + col * TILE + offset < L.worldW / 2 + TILE; col++) {
-      const cx = left + col * TILE + offset;
-      g.moveTo(cx, cy + half);
-      g.lineTo(cx + half, cy);
-      g.lineTo(cx, cy - half);
-      g.lineTo(cx - half, cy);
+  const right = L.worldW / 2;
+  for (let row = 0; ; row++) {
+    const cy = floorBottom + row * periodY + periodY / 2;
+    if (cy - ry > L.wallBottom) break;
+    // 每隔一行横向错开半个周期 → 菱形交错而非对齐成正网格
+    const offset = row % 2 === 0 ? 0 : periodX / 2;
+    for (let cx = left + offset; cx < right + periodX; cx += periodX) {
+      g.moveTo(cx, cy + ry);
+      g.lineTo(cx + rx, cy);
+      g.lineTo(cx, cy - ry);
+      g.lineTo(cx - rx, cy);
       g.close();
     }
   }
@@ -109,22 +126,15 @@ function paintFloor(g: Graphics, L: StageLayout): void {
  * 少了这一道墙和地就像两块色纸拼在一起。
  */
 function paintSkirt(g: Graphics, L: StageLayout): void {
-  // **竞品在墙地交界处根本没有踢脚板。** 实测那一行的主色是
-  // rgb(254,236,216) L≈239~243（近白米色），且没有任何颜色占到该行 6% 以上
-  // —— 说明是墙纸直接过渡到地板的淡色差，不是一条实心带。
+  // 墙地交界画一条**浅木色踢脚线**（用户要求恢复、但颜色改浅）。
   //
-  // 我们原来画的是 skirt(222,194,156) L=198 + skirtLine(202,170,130) L=175，
-  // 横贯整个世界宽、**占了将近半行像素**，用户看到的就是「一片棕色」。
-  //
-  // ⚠️ 这条带的存在本身就是错的，不是配色问题。
-  // 之前只把压条从深棕 `line` 换成浅一点的 `skirtLine`，
-  // 却没质疑「该不该有这条带」—— 改了颜色、留了病根。
-  // 上面那句注释「参考图的墙地交界几乎看不出线」当时就写对了，
-  // 但画出来的是 L=198 的实心带，和墙纸 L=233 差 35 级。认知和实现脱节。
-  //
-  // 现在只留一道**极淡**的过渡：3px、用 wallPaw（比墙面只深一点点）。
-  // 目的是给出「墙到这里为止」的暗示，而不是画一块板子。
-  fillRoundRect(g, -L.worldW / 2, L.wallBottom, L.worldW, 3, 0, MAP_COLOR.wallPaw);
+  // ⚠️ 量法教训：之前拿单点竖扫、正好落在壁龛地垫阴影上，误判「有 13px 深木带」，
+  // 深色画出来太突兀。多点复扫后普通交界处其实是亮米色。所以踢脚线要**浅**：
+  // 用 skirt（222,194,156，比墙深一点点的浅木色），给「墙到地有个收边」的暗示，
+  // 而不是一条压得住画面的深带。
+  // 用户要求踢脚线放大约 1.5 倍：7 → 11。
+  const bandH = 11;
+  fillRoundRect(g, -L.worldW / 2, L.wallBottom - bandH, L.worldW, bandH, 0, MAP_COLOR.skirt);
 }
 
 /**

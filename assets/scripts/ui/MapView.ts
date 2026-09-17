@@ -9,12 +9,15 @@
  * - `mapLayout.ts` 算布局与配色（一切 y 由可视高度现算，不写死）
  * - `mapRoom.ts` 画环境与装饰（墙、地、楼梯、窗帘、相框、地毯、花盆、气球、木马）
  * - `mapZones.ts` 画可点分区（壁龛 / 拱门 / 帐篷 / 药柜）
- * - `MapActionBar.ts` 底部内联互动条（四种互动 + 属性条）
- * - 本文件负责组装、Spine 猫、点击命中、HUD 挂载
+ * - 本文件负责组装、Spine 猫、点击命中、HUD 挂载、以及**点宠物互动**
+ *
+ * **互动改为「点宠物」触发**（2026-09-17）：原来底部有一条内联互动条
+ * （`MapActionBar`，四按钮 + 属性条），现已移除。做哪种互动由猫头顶气泡
+ * 当前显示的需求决定（饱食低→喂食 / 清洁低→洗澡 / 心情低→陪玩 / 都健康→抚摸），
+ * 玩家点一下猫就完成对应功能，见 `interactWithPet` / `currentPetAction`。
  *
  * 层级用容器节点固定：art（Graphics 全部）→ pet（猫）→ label（文字）→ input
- * → hud → actionBar。顺序即渲染层级，所以文字永远压在图形之上，
- * 而互动条要排在**输入层之后**（输入层铺满整屏，压在按钮上就点不动了）。
+ * → hud。顺序即渲染层级，所以文字永远压在图形之上。
  */
 
 import {
@@ -22,7 +25,10 @@ import {
   Component,
   Node,
   Label,
+  Color,
+  Graphics,
   UITransform,
+  UIOpacity,
   view,
   EventTouch,
   resources,
@@ -40,6 +46,7 @@ import {
   fillRoundRect,
   fillRoundRectRim,
   softShadow,
+  floatText,
 } from './widgets';
 import { MapHud } from './MapHud';
 import store from '../core/store';
@@ -57,8 +64,13 @@ import {
 // 所以不再需要 `paintSignPlate` / `signWidth`
 import { paintZone, SIGN_H } from './mapZones';
 import { placeArt } from './mapArt';
+import { PetGrid } from './mapPathfind';
+import type { Vec2, ObstacleBox } from './mapPathfind';
+import { PROP_MASKS } from './mapPropMasks';
 import { paintFish, paintDrop, paintYarn } from './mapIcons';
-import { MapActionBar } from './MapActionBar';
+import { interact } from '../core/actions';
+import { showError, toast, gainedText } from './toast';
+import * as cooldown from '../core/cooldown';
 import type { PetAction } from '../net/types';
 
 const { ccclass } = _decorator;
@@ -74,6 +86,17 @@ const CAT_PATH = 'spine/pet_cat/Cat';
  */
 const BASE_SCALE = 0.85;
 const DEFAULT_SKIN = '007';
+/**
+ * 调试网格开关：画出寻路栅格（障碍格红色半透明 / 可走格绿色细线）+ 猫的当前路径。
+ * 用来肉眼核对道具占位和猫的行走轨迹。**上线前置 false。**
+ */
+const DEBUG_GRID = false;
+/** 长按宠物多久(秒)进入「拖动宠物」模式 */
+const LONG_PRESS_SEC = 0.4;
+/** 需求提示阈值：某项健康度低于此才在气泡里提示 */
+const NEED_THRESHOLD = 0.5;
+/** 多项需求同时偏低时，气泡轮流显示的间隔（秒） */
+const NEED_CYCLE_SEC = 2.5;
 const IDLE_CANDIDATES = ['idle', 'Idle', 'Sit_Idle', 'Idle3', 'Sleep_A'];
 const WALK_CANDIDATES = ['Walk', 'Walk2', 'Walk_2', 'walk'];
 
@@ -137,6 +160,12 @@ export class MapView extends Component {
   private bubbleIconHost: Node | null = null;
   /** 上一次画的需求 key，没变就不重画气泡图标 */
   private bubbleNeed = '';
+  /** 当前低于阈值（<50%）的需求，缺得越多排越前；多个时在 update() 里轮流显示 */
+  private lowNeeds: string[] = [];
+  /** 轮流显示的当前下标 */
+  private needCycleIdx = 0;
+  /** 轮流显示的计时器（秒） */
+  private needCycleTimer = 0;
   private statusBarHost: Node | null = null;
   /** 猫脚下的接地阴影，跟随宠物 x */
   private petShadow: Node | null = null;
@@ -153,6 +182,25 @@ export class MapView extends Component {
   private catWalk = '';
   /** 骨架里所有动画名。`reactCat` 按互动动作挑动画时查它（写死名字会静默不播） */
   private catAnims: string[] = [];
+  /** 点宠物互动的进行中标志（按 action key），防连点重复发请求 */
+  private actionBusy: Record<string, boolean> = {};
+  /** 满地板寻路栅格（标了立体家具障碍，猫按它绕行） */
+  private petGrid: PetGrid | null = null;
+  /**
+   * 立体家具的实际渲染节点，寻路障碍从它们的真实边界推导（不靠布局表重算）。
+   * `solid`=true 的是实心落地结构（护理室店面/楼梯），挡住大部分高度；
+   * 其余细高家具只挡底座。
+   */
+  private obstacleNodes: Array<{ node: Node; art: string }> = [];
+  /** 防抖：道具是并发加载的，收齐一批再重建一次栅格 */
+  private gridRebuildScheduled = false;
+  /** 长按拖动宠物状态 */
+  private draggingPet = false;
+  private longPressTimer = 0;
+  private longPressArmed = false;
+  /** 调试网格叠加层（画栅格 + 障碍格 + 猫当前路径），随地图一起拖动 */
+  private debugLayer: Node | null = null;
+  private debugPathG: Graphics | null = null;
 
   onLoad() {
     const L = computeLayout();
@@ -184,9 +232,6 @@ export class MapView extends Component {
     this.setupInput(L);
     this.buildHint(L);
     this.buildHud();
-    // 互动条**最后挂**：兄弟次序即渲染层级，早挂会被输入层吃掉点击。
-    // 同理它必须在 setupInput 之后 —— 输入层铺满整屏，压在按钮上就点不动了。
-    this.buildActionBar();
 
     // 初始位置**不要贴在边界上**：贴边的话往那个方向拖完全没反应，
     // 玩家第一感受就是「地图坏了」（旧的滚动版踩过这个坑）。
@@ -204,9 +249,16 @@ export class MapView extends Component {
    * 调用顺序即叠放顺序，装饰必须在房间之后、分区之前。
    */
   private paintStage(parent: Node, L: StageLayout) {
-    // 房间本体（墙/地/墙裙）永远显示 —— 它没有对应的贴图，不是兜底
+    // 房间本体（墙/地/墙裙）永远显示 —— 它没有对应的贴图，不是兜底。
+    //
+    // ⚠️ 打底色必须按**世界宽 worldW** 铺，不是屏幕宽 vw。
+    // 这个 Graphics 挂在 worldRoot 下、会跟着地图横向拖动；只铺一屏宽(vw)的话，
+    // 拖到最左/最右时它的边缘离开屏幕对侧，露出后面的空白（相机清屏的深色）——
+    // 就是「拖到边角落有褐色缺口」。墙/地板本来就按 worldW 铺，这里对齐即可。
+    // 横向留一点余量(+TILE*2)，纵向从屏幕底一直铺到顶，彻底不漏边。
     const room = makeGraphics('Room', parent);
-    fillRoundRect(room, -L.vw / 2, -L.vh / 2, L.vw, L.vh, 0, COLOR.bg);
+    const bgW = L.worldW + 120;
+    fillRoundRect(room, -bgW / 2, -L.vh / 2, bgW, L.vh, 0, COLOR.bg);
     paintRoom(room, L);
 
     // 有贴图对应的那部分单独一层，图到齐后整层隐掉（见 onArtDone）
@@ -259,6 +311,11 @@ export class MapView extends Component {
         // 文字要落到图上那块空白牌面的中心，所以必须等图到货、
         // 知道它的实际渲染尺寸之后才能定位
         if (n && n.isValid) this.placeSignOnArt(z, n);
+        // 护理室店面是落地大件（key='care'），也要当障碍 —— 用它的实际节点边界
+        if (n && n.isValid && z.key === 'care' && z.art) {
+          this.obstacleNodes.push({ node: n, art: z.art });
+          this.rebuildGridSoon();
+        }
         this.onArtDone(!!n);
       });
     });
@@ -293,7 +350,16 @@ export class MapView extends Component {
       // `art` 省略时等于 key —— 通用道具（绿植/坐垫）一图多用，不必重复出图
       placeArt(layer, `map/props/prop_${p.art || p.key}`, {
         w: p.w, h: p.h, x, y, anchor: p.anchor || 'center',
-      }, (n) => this.onArtDone(!!n));
+      }, (n) => {
+        // 立体家具（非 flat 的地面道具）→ 收集它的**实际渲染节点**，
+        // 稍后用真实边界重建寻路障碍（不靠布局表的目标框重算，避免和缩放后
+        // 的实际尺寸对不上 —— 那正是「护理室上面两行标错」的根因）。
+        if (n && n.isValid && p.on === 'floor' && !p.flat) {
+          this.obstacleNodes.push({ node: n, art: `prop_${p.art || p.key}` });
+          this.rebuildGridSoon();
+        }
+        this.onArtDone(!!n);
+      });
     });
 
     // 不再乘 1.15/1.1：`L.stair` 现在已按图的实际长宽比算好，
@@ -301,7 +367,15 @@ export class MapView extends Component {
     placeArt(layer, 'map/props/prop_stairs', {
       w: L.stair.w, h: L.stair.h, x: L.stair.cx,
       y: L.stair.cy - L.stair.h / 2, anchor: 'bottom',
-    }, (n) => this.onArtDone(!!n));
+    }, (n) => {
+      // 楼梯是落地大件 → 障碍，用实际节点边界
+      // 楼梯也走统一的「按图 alpha 遮罩」路线（prop_stairs 的遮罩就是斜楼梯形状）
+      if (n && n.isValid) {
+        this.obstacleNodes.push({ node: n, art: 'prop_stairs' });
+        this.rebuildGridSoon();
+      }
+      this.onArtDone(!!n);
+    });
   }
 
   // ---- 文字：分区名 + 副标题 ----
@@ -428,7 +502,12 @@ export class MapView extends Component {
 
     const petNode = makeNode('MapPet', this.petLayer);
     this.catNode = petNode;
-    petNode.setPosition(0, L.petY, 0);
+    // 满地板寻路栅格。障碍从道具**实际渲染节点**的边界推导（见 rebuildGrid），
+    // 此刻道具可能还没加载完，先建一个无障碍的栅格让猫能动，加载完再 rebuild。
+    this.petGrid = new PetGrid(L, this.collectObstacleBoxes());
+    if (DEBUG_GRID) this.buildDebugGrid();
+    const spawn = this.petGrid.randomFreePoint() || { x: 0, y: L.petY };
+    petNode.setPosition(spawn.x, spawn.y, 0);
 
     resources.load(CAT_PATH, sp.SkeletonData, (err, data) => {
       if (this.disposed || !petNode.isValid) return;
@@ -496,6 +575,8 @@ export class MapView extends Component {
     // emoji 字形也由系统决定，安卓低端机整个缺字（规则 `map-scroll-view`：图标别用 emoji）。
     this.bubbleIconHost = makeNode('icon', bubble, 24, 24);
     this.bubbleIconHost.setPosition(0, 2);
+    // 轮播切换时靠这个组件做淡入淡出（改 opacity，不动节点树）
+    this.bubbleIconHost.addComponent(UIOpacity);
     this.bubbleNode = bubble;
 
     this.statusBarHost = new Node('PetStatus');
@@ -515,29 +596,183 @@ export class MapView extends Component {
     this.refreshPetOverlay();
   }
 
-  /** 在地板 x 范围内随机走一段 → 站立 idle → 停一下 → 再走 */
+  /**
+   * 满地板 2D 游走：随机选一个空位 → A* 找一条绕开家具的路 → 沿路点逐段走 →
+   * 到了停下 idle 一会儿 → 再走。看起来像活的、懂得避障。
+   *
+   * 逐段走用 `tween` 串联：每段单独设时长（按段长），并在每段起点按走向翻朝向
+   * （Walk 素材默认朝左，往右走翻 scale.x）。整条路径播放期间保持 Walk 动画，
+   * 全部走完才接回 idle。
+   */
   private catStep() {
-    if (this.disposed || !this.catNode || !this.L) return;
+    if (this.disposed || !this.catNode || !this.L || !this.petGrid) return;
+    // 正在被玩家拖动时不自己走（否则和手指打架）；松手后 endDragPet 会重启散步
+    if (this.draggingPet) return;
 
-    const L = this.L;
-    const cur = this.catNode.position.x;
-    const target = L.petMinX + Math.random() * (L.petMaxX - L.petMinX);
-    const dir = target >= cur ? 1 : -1;
-    const dur = Math.max(0.6, Math.abs(target - cur) / 70);
+    const pet = this.catNode;
+    const from: Vec2 = { x: pet.position.x, y: pet.position.y };
+    const dest = this.petGrid.randomFreePoint();
+    if (!dest) { this.scheduleOnce(() => this.catStep(), 1.5); return; }
 
-    const s = BASE_SCALE;
-    // Walk 默认朝左，往右走(dir>0)才翻转
-    this.catNode.setScale(dir > 0 ? -s : s, s, 1);
+    const path = this.petGrid.findPath(from, dest);
+    if (!path.length) { this.scheduleOnce(() => this.catStep(), 1 + Math.random()); return; }
+
+    if (DEBUG_GRID) this.drawDebugPath(from, path);
     if (this.catSkel && this.catWalk) this.catSkel.setAnimation(0, this.catWalk, true);
 
-    tween(this.catNode)
-      .to(dur, { position: new Vec3(target, L.petY, 0) }, { easing: 'linear' })
-      .call(() => {
-        if (this.catSkel && this.catIdle) this.catSkel.setAnimation(0, this.catIdle, true);
-      })
+    const s = BASE_SCALE;
+    const SPEED = 70; // px/s，和旧版一致
+    let t = tween(pet);
+    // 逐段：时长和朝向都从**连续路点**算（不能读运行时 position，
+    // 因为 tween 链是同步搭好的、那时 position 还没动，读到的全是起点）。
+    let prev = from;
+    for (const wp of path) {
+      const dx = wp.x - prev.x;
+      const dist = Math.hypot(wp.x - prev.x, wp.y - prev.y);
+      const dur = Math.max(0.2, dist / SPEED);
+      const flipRight = dx > 0.5;
+      const flipLeft = dx < -0.5;
+      t = t
+        .call(() => {
+          // Walk 默认朝左；往右走翻正。几乎纯竖直移动(dx≈0)时保持上一朝向。
+          if (flipRight) pet.setScale(-s, s, 1);
+          else if (flipLeft) pet.setScale(s, s, 1);
+        })
+        .to(dur, { position: new Vec3(wp.x, wp.y, 0) }, { easing: 'linear' });
+      prev = wp;
+    }
+    t.call(() => {
+      if (this.catSkel && this.catIdle) this.catSkel.setAnimation(0, this.catIdle, true);
+    })
       .delay(1 + Math.random() * 2)
       .call(() => this.catStep())
       .start();
+  }
+
+  // ---- 调试网格 ----
+
+  /**
+   * 画寻路栅格叠加：障碍格填红色半透明、可走格描绿色细线，方便肉眼核对
+   * 道具占位（障碍是家具包围盒按猫半径膨胀后的格子）。挂在 worldRoot 下、
+   * 随地图一起拖动，画在宠物层之前（不挡猫）。DEBUG_GRID=false 时不建。
+   */
+  private buildDebugGrid() {
+    if (!this.petGrid || !this.worldRoot) return;
+    const layer = makeNode('DebugGrid', this.worldRoot);
+    // 排在宠物层之前，别盖住猫
+    if (this.petLayer) layer.setSiblingIndex(this.petLayer.getSiblingIndex());
+    this.debugLayer = layer;
+
+    const g = makeGraphics('grid', layer);
+    const { cell, cols, rows } = this.petGrid.debugInfo;
+    // 数字标签单独挂一个子节点层，压在方格之上
+    const numHost = makeNode('gridNums', layer);
+    this.petGrid.forEachCell((c, r, blocked, center) => {
+      const x = center.x - cell / 2;
+      const y = center.y - cell / 2;
+      if (blocked) {
+        // 障碍格：红色半透明填充
+        g.fillColor = new Color(220, 90, 80, 90);
+        g.rect(x + 1, y + 1, cell - 2, cell - 2);
+        g.fill();
+      } else {
+        // 可行走格：蓝色半透明方格填充（用户要求）
+        g.fillColor = new Color(80, 150, 230, 80);
+        g.rect(x + 1, y + 1, cell - 2, cell - 2);
+        g.fill();
+      }
+      // 编号：从**左到右、上到下**、从 1 递增。
+      // 栅格 r=0 在底部，所以顶行是 r=rows-1 → 顶左编号 1。
+      const num = (rows - 1 - r) * cols + c + 1;
+      const lbl = makeLabel(String(num), numHost, {
+        size: 9, color: COLOR.text, align: 'center',
+      });
+      lbl.node.setPosition(center.x, center.y, 0);
+    });
+
+    // 路径单独一层，每次走新路重画
+    const pg = makeGraphics('path', layer);
+    this.debugPathG = pg;
+  }
+
+  /** 画猫这一趟的路径折线（起点 + 各路点），红点标目标 */
+  private drawDebugPath(from: Vec2, path: Vec2[]) {
+    const g = this.debugPathG;
+    if (!g || !g.isValid) return;
+    g.clear();
+    // 路径用橙色，和蓝色可走格区分开
+    g.lineWidth = 3;
+    g.strokeColor = new Color(240, 140, 40, 240);
+    g.moveTo(from.x, from.y);
+    for (const wp of path) g.lineTo(wp.x, wp.y);
+    g.stroke();
+    // 目标点画个小圆
+    const end = path[path.length - 1];
+    g.fillColor = new Color(240, 140, 40, 240);
+    g.circle(end.x, end.y, 5);
+    g.fill();
+  }
+
+  // ---- 障碍：从道具实际渲染边界推导 ----
+
+  /**
+   * 从已收集的道具节点读**真实渲染边界** → 障碍框（世界坐标）。
+   * 这些节点都挂在 worldRoot 下（和寻路同一空间），position 就是世界坐标，
+   * UITransform 的 width/height 是 placeArt 缩放后的**实际尺寸**，所以障碍
+   * 和画面永远对得上 —— 以后用户自行放的道具也自动生成正确障碍，零手调。
+   */
+  private collectObstacleBoxes(): ObstacleBox[] {
+    const boxes: ObstacleBox[] = [];
+    for (const o of this.obstacleNodes) {
+      const n = o.node;
+      if (!n || !n.isValid) continue;
+      const tr = n.getComponent(UITransform);
+      if (!tr) continue;
+      boxes.push({
+        cx: n.position.x, cy: n.position.y, hw: tr.width / 2, hh: tr.height / 2,
+        // 按图的 alpha 遮罩标障碍的**整体真实形状**（用户要求「按整体」）。
+        // 遮罩由构建期脚本从 PNG 自动生成（PROP_MASKS），运营加新图重跑即可、零手配。
+        mask: this.maskFor(o.art),
+      });
+    }
+    return boxes;
+  }
+
+  /** 由道具图名取 alpha 遮罩，返回 (u,v)→是否实体 的采样函数；无遮罩返回 undefined（退回矩形底座） */
+  private maskFor(art: string): ((u: number, v: number) => boolean) | undefined {
+    const m = PROP_MASKS[art];
+    if (!m) return undefined;
+    const cols = m.cols;
+    const rows = m.rows;
+    const nrows = rows.length;
+    return (u: number, v: number) => {
+      // u,v ∈ [0,1]，v 自上而下（rows[0] 是图最上一行）
+      const c = Math.max(0, Math.min(cols - 1, Math.floor(u * cols)));
+      const r = Math.max(0, Math.min(nrows - 1, Math.floor(v * nrows)));
+      return rows[r].charCodeAt(c) === 49; // '1'
+    };
+  }
+
+  /** 防抖重建栅格：道具并发加载，收到一批回调只在下一帧重建一次 */
+  private rebuildGridSoon() {
+    if (this.gridRebuildScheduled) return;
+    this.gridRebuildScheduled = true;
+    this.scheduleOnce(() => {
+      this.gridRebuildScheduled = false;
+      this.rebuildGrid();
+    }, 0);
+  }
+
+  /** 用当前障碍框重建寻路栅格，并刷新调试网格 */
+  private rebuildGrid() {
+    if (this.disposed || !this.L) return;
+    this.petGrid = new PetGrid(this.L, this.collectObstacleBoxes());
+    if (DEBUG_GRID) {
+      if (this.debugLayer && this.debugLayer.isValid) this.debugLayer.destroy();
+      this.debugLayer = null;
+      this.debugPathG = null;
+      this.buildDebugGrid();
+    }
   }
 
   // ---- 每帧：气泡/状态条跟随宠物 ----
@@ -546,27 +781,64 @@ export class MapView extends Component {
    * 只跟 x 与固定的垂直偏移，**不读宠物的 scale** ——
    * 宠物靠翻 scale.x 换向，跟着它算会让气泡在转身时左右横跳。
    */
-  update() {
+  update(dt: number) {
     const pet = this.catNode;
     if (!pet || !pet.isValid || !this.L) return;
 
-    // 偏移跟着 BASE_SCALE 走：猫从 1.6 倍缩到 0.85 倍后，
-    // 原来 +108 的气泡会飘在猫头顶很高的空处
+    // 长按待命中：累计按住时长，到点进入拖动宠物模式
+    if (this.longPressArmed && !this.draggingPet) {
+      this.longPressTimer += dt;
+      if (this.longPressTimer >= LONG_PRESS_SEC) this.beginDragPet();
+    }
+
+    // 猫现在满地板 2D 游走，y 会变 —— 气泡/状态条/阴影要跟**当前 x 和 y**，
+    // 不能再用固定的 L.petY（否则猫走到后排时这些附件还留在原来那条线上）。
+    // 偏移跟着 BASE_SCALE 走：猫从 1.6 缩到 0.85 后，原来 +108 的气泡会飘太高。
     const x = pet.position.x;
+    const y = pet.position.y;
     if (this.bubbleNode && this.bubbleNode.isValid) {
-      this.bubbleNode.setPosition(x, this.L.petY + 106 * BASE_SCALE, 0);
+      this.bubbleNode.setPosition(x, y + 106 * BASE_SCALE, 0);
     }
     if (this.statusBarHost && this.statusBarHost.isValid) {
-      this.statusBarHost.setPosition(x, this.L.petY - 10, 0);
+      this.statusBarHost.setPosition(x, y - 10, 0);
     }
     if (this.petShadow && this.petShadow.isValid) {
-      this.petShadow.setPosition(x, this.L.petY + 3, 0);
+      this.petShadow.setPosition(x, y + 3, 0);
     }
 
     const sig = this.buildPetSig();
-    if (sig === this.lastPetSig) return;
-    this.lastPetSig = sig;
-    this.refreshPetOverlay();
+    if (sig !== this.lastPetSig) {
+      this.lastPetSig = sig;
+      this.refreshPetOverlay();
+    }
+
+    // 多项需求同时偏低时轮流显示：计时到点就切下一项、淡出旧图标再淡入新的。
+    // 只有一项（或没有）时不用切，计时器保持归零。
+    if (this.lowNeeds.length > 1) {
+      this.needCycleTimer += dt;
+      if (this.needCycleTimer >= NEED_CYCLE_SEC) {
+        this.needCycleTimer = 0;
+        this.needCycleIdx = (this.needCycleIdx + 1) % this.lowNeeds.length;
+        this.fadeToNeed(this.lowNeeds[this.needCycleIdx]);
+      }
+    }
+  }
+
+  /** 轮播切换：淡出当前图标 → 换成新需求 → 淡入 */
+  private fadeToNeed(need: string) {
+    const host = this.bubbleIconHost;
+    if (!host || !host.isValid) return;
+    const op = host.getComponent(UIOpacity);
+    if (!op) {
+      this.showBubbleNeed(need);
+      return;
+    }
+    Tween.stopAllByTarget(op);
+    tween(op)
+      .to(0.18, { opacity: 0 })
+      .call(() => this.showBubbleNeed(need))
+      .to(0.18, { opacity: 255 })
+      .start();
   }
 
   /** 只把「看得出来的变化」编进签名：四项属性各取整 */
@@ -584,8 +856,9 @@ export class MapView extends Component {
   /**
    * 刷新气泡内容与状态条。
    *
-   * 气泡显示**最紧缺的那一项**需求（概念稿里是一条鱼 / 一滴水这种图标）。
-   * 四项都健康时把气泡隐掉 —— 挂一个空白气泡比没有气泡更让人困惑。
+   * 气泡显示**所有低于阈值（<50%）的需求**：只有一项就固定显示它；
+   * 多项同时偏低时，把它们收进 `lowNeeds`，由 update() 每 NEED_CYCLE_SEC 轮流切一个。
+   * 三项都健康时把气泡隐掉 —— 挂一个空白气泡比没有气泡更让人困惑。
    */
   private refreshPetOverlay() {
     const p = store.petView;
@@ -594,30 +867,44 @@ export class MapView extends Component {
 
     if (!p) {
       if (bubble && bubble.isValid) bubble.active = false;
+      this.lowNeeds = [];
       return;
     }
 
     // need 决定画哪个图标；ratio 是该项的健康度（越低越紧缺）
     const needs = [
-      { need: 'hunger', lack: 100 - p.hunger, ratio: p.hunger / 100 },
-      { need: 'clean', lack: 100 - p.cleanliness, ratio: p.cleanliness / 100 },
-      { need: 'play', lack: 100 - p.mood, ratio: p.mood / 100 },
+      { need: 'hunger', ratio: p.hunger / 100 },
+      { need: 'clean', ratio: p.cleanliness / 100 },
+      { need: 'play', ratio: p.mood / 100 },
     ];
-    needs.sort((a, b) => b.lack - a.lack);
+    // 缺得越多排越前 → 轮流显示时从最紧缺的开始
+    needs.sort((a, b) => a.ratio - b.ratio);
     const worst = needs[0];
 
+    // 低于阈值的都收进来；用于气泡的轮流显示
+    const low = needs.filter((n) => n.ratio < NEED_THRESHOLD).map((n) => n.need);
+    // 集合变了才重置轮播下标与计时，避免每次刷新都跳回第一项
+    if (low.join(',') !== this.lowNeeds.join(',')) {
+      this.lowNeeds = low;
+      this.needCycleIdx = 0;
+      this.needCycleTimer = 0;
+      // 可能有一次轮播淡出没走完就换了集合，把图标透明度收回来
+      const op = this.bubbleIconHost?.getComponent(UIOpacity);
+      if (op) {
+        Tween.stopAllByTarget(op);
+        op.opacity = 255;
+      }
+    }
+
     if (bubble && bubble.isValid) {
-      // 阈值 60：低于此才提需求，否则气泡会常驻、失去提示意义
-      const show = worst.ratio < 0.6;
+      const show = this.lowNeeds.length > 0;
       bubble.active = show;
-      // 需求项变化、**或图标层还是空的**时重画。
-      // 加「图标层为空」这个条件是保险：万一首刷时序错开、图标没画上，
-      // 下一次刷新会补画，而不是因为 `bubbleNeed` 已被设值就永远跳过。
-      const iconHost = this.bubbleIconHost;
-      const iconMissing = !iconHost || !iconHost.isValid || iconHost.children.length === 0;
-      if (show && (this.bubbleNeed !== worst.need || iconMissing)) {
-        this.bubbleNeed = worst.need;
-        this.drawBubbleIcon(worst.need);
+      if (show) {
+        // 从当前下标取要显示的需求（可能是轮播到的某一项）
+        const cur = this.lowNeeds[Math.min(this.needCycleIdx, this.lowNeeds.length - 1)];
+        this.showBubbleNeed(cur);
+      } else {
+        this.bubbleNeed = '';
       }
     }
 
@@ -632,6 +919,21 @@ export class MapView extends Component {
         fillRoundRect(g, -w / 2, -h / 2, w * r, h, h / 2, r <= 0.2 ? COLOR.danger : COLOR.accent);
       }
     }
+  }
+
+  /**
+   * 显示指定需求的气泡图标。
+   *
+   * 需求项变化、**或图标层还是空的**时才重画（加「图标层为空」是保险：
+   * 万一首刷时序错开、图标没画上，下一次会补画，而不是因为 `bubbleNeed`
+   * 已被设值就永远跳过）。
+   */
+  private showBubbleNeed(need: string) {
+    const iconHost = this.bubbleIconHost;
+    const iconMissing = !iconHost || !iconHost.isValid || iconHost.children.length === 0;
+    if (this.bubbleNeed === need && !iconMissing) return;
+    this.bubbleNeed = need;
+    this.drawBubbleIcon(need);
   }
 
   /** 按最紧缺的需求画气泡图标：饱食→鱼、清洁→水滴、心情→毛线球 */
@@ -668,36 +970,89 @@ export class MapView extends Component {
     }
 
     let moved = 0;
-    input.on(Node.EventType.TOUCH_START, () => {
+    input.on(Node.EventType.TOUCH_START, (e: EventTouch) => {
       moved = 0;
+      this.draggingPet = false;
+      this.longPressArmed = false;
+      // 按在猫身上 → 起长按计时（LONG_PRESS_SEC 后进入拖动宠物模式）
+      const local = this.toWorldLocal(e);
+      if (local && this.hitPet(local.x, local.y)) {
+        this.longPressArmed = true;
+        this.longPressTimer = 0;
+      }
     });
     input.on(Node.EventType.TOUCH_MOVE, (e: EventTouch) => {
       const world = this.worldRoot;
       if (!world) return;
       const d = e.getDelta();
       moved += Math.abs(d.x) + Math.abs(d.y);
-      const nx = Math.max(L.minX, Math.min(L.maxX, world.position.x + d.x));
-      // 只改 x：纵向不滚
-      world.setPosition(nx, world.position.y, 0);
 
-      // 撞边界要给反馈 —— 手势有输入但画面不动，不提示的话玩家以为「地图坏了」
+      // 拖动宠物模式：猫跟手指走（吸附到可走点在松手时做），不平移地图
+      if (this.draggingPet) {
+        const local = this.toWorldLocal(e);
+        if (local && this.catNode && this.catNode.isValid) {
+          this.catNode.setPosition(local.x, local.y, 0);
+        }
+        return;
+      }
+      // 手指移动超过阈值就取消长按待命（变成普通拖地图）
+      if (moved >= 12) this.longPressArmed = false;
+
+      const nx = Math.max(L.minX, Math.min(L.maxX, world.position.x + d.x));
+      world.setPosition(nx, world.position.y, 0); // 只改 x：纵向不滚
       if (Math.abs(d.x) > 1 && nx === world.position.x) {
         this.flashEdge(d.x > 0 ? 'left' : 'right');
       }
     });
     input.on(Node.EventType.TOUCH_END, (e: EventTouch) => {
+      if (this.draggingPet) { this.endDragPet(e); return; }
+      this.longPressArmed = false;
       // 位移超过阈值算拖动，不触发点击（和 panelKit 的 TAP_SLOP 保持一致）
       if (moved >= 12) return;
-      const p = e.getUILocation();
-      const world = this.worldRoot;
-      if (!world) return;
-      const tr = world.getComponent(UITransform);
-      if (!tr) return;
-      // 转到**世界节点**的局部空间：这样拖动之后命中依然正确。
-      // 转 this.node 就错了 —— 那是不动的层，拖过之后会整体偏掉。
-      const local = tr.convertToNodeSpaceAR(new Vec3(p.x, p.y, 0));
-      this.handleTap(local.x, local.y);
+      const local = this.toWorldLocal(e);
+      if (local) this.handleTap(local.x, local.y);
     });
+    input.on(Node.EventType.TOUCH_CANCEL, (e: EventTouch) => {
+      if (this.draggingPet) this.endDragPet(e);
+      this.longPressArmed = false;
+    });
+  }
+
+  /** UI 触点 → worldRoot 局部坐标（和宠物/道具同一空间）。拖动后命中仍正确。 */
+  private toWorldLocal(e: EventTouch): { x: number; y: number } | null {
+    const world = this.worldRoot;
+    if (!world) return null;
+    const tr = world.getComponent(UITransform);
+    if (!tr) return null;
+    const p = e.getUILocation();
+    const local = tr.convertToNodeSpaceAR(new Vec3(p.x, p.y, 0));
+    return { x: local.x, y: local.y };
+  }
+
+  /** 进入拖动宠物模式：停掉散步 tween，气泡等附件会在 update 里继续跟随。 */
+  private beginDragPet() {
+    if (!this.catNode || !this.catNode.isValid) return;
+    this.draggingPet = true;
+    this.longPressArmed = false;
+    // 停掉散步/互动 tween，避免和手指拖动打架
+    Tween.stopAllByTarget(this.catNode);
+    // 播 idle（被拎起来的猫不走路）
+    if (this.catSkel && this.catIdle) this.catSkel.setAnimation(0, this.catIdle, true);
+    if (DEBUG_GRID && this.debugPathG) this.debugPathG.clear();
+  }
+
+  /** 松手：把猫吸附到最近的可走点，然后恢复自由散步。 */
+  private endDragPet(e: EventTouch) {
+    this.draggingPet = false;
+    const pet = this.catNode;
+    if (!pet || !pet.isValid || !this.petGrid) return;
+    const local = this.toWorldLocal(e);
+    const cur = local || { x: pet.position.x, y: pet.position.y };
+    // findPath 的起点会自动吸附到最近可走格；借它把落点纠正到合法位置
+    const snapped = this.petGrid.snapToFree(cur.x, cur.y);
+    pet.setPosition(snapped.x, snapped.y, 0);
+    // 隔一会儿再自己走，别一松手立刻窜出去
+    this.scheduleOnce(() => this.catStep(), 0.8);
   }
 
   /**
@@ -724,8 +1079,30 @@ export class MapView extends Component {
    */
   private handleTap(x: number, y: number) {
     if (!this.L) return;
+    // 先判断是否点在宠物身上 → 执行互动（喂食/洗澡/陪玩/抚摸，按头顶需求）。
+    // 分区命中在后：宠物在地板中段，一般不和壁龛重叠，但先判宠物更符合直觉。
+    if (this.hitPet(x, y)) {
+      this.interactWithPet();
+      return;
+    }
     const zone = this.L.zones.find((z: Zone) => hit(z, x, y));
     if (zone && this.onOpenZone) this.onOpenZone(zone.key);
+  }
+
+  /**
+   * 宠物命中：猫是 Spine、不撑 UITransform，所以按它的**运行时 x + 布局 petY**
+   * 圈一个矩形手动判定，不依赖节点尺寸（同 spine-2d-pet「骨骼渲染不撑 UITransform」）。
+   * 命中框比猫略大一圈，手指点起来才不费劲。
+   */
+  private hitPet(x: number, y: number): boolean {
+    const pet = this.catNode;
+    if (!pet || !pet.isValid) return false;
+    // 用猫的**当前** position（满地板游走，y 一直在变），不能用固定 L.petY
+    const cx = pet.position.x;
+    const cy = pet.position.y;
+    const halfW = 70;   // 猫约 90px 高、稍窄，命中框给宽松点
+    const halfH = 80;
+    return x >= cx - halfW && x <= cx + halfW && y >= cy - 20 && y <= cy + halfH;
   }
 
   // ---- 固定 HUD ----
@@ -740,19 +1117,61 @@ export class MapView extends Component {
   }
 
   /**
-   * 底部内联互动条（四种互动 + 三条属性条）。
+   * 点宠物执行互动（取代原来的底部互动条）。
    *
-   * 这块以前是整屏的 `MainView`，靠点地板上那块铺满 `floorH` 的「大厅」分区进去。
-   * 那条分区让**任何一次落在壁龛之外的点击都跳走**，而它换来的只是四个按钮 ——
-   * 所以按钮搬到这里，大厅分区和「返回」按钮一起去掉（地图就是落地界面，
-   * 没有可返回的上一层）。
+   * 做哪件事由**猫头顶气泡当前显示的需求**决定：
+   * - 饱食低 → 喂食、清洁低 → 洗澡、心情低 → 陪玩（多项低时气泡在轮播，
+   *   点到哪个就做哪个，和玩家看到的图标一致）；
+   * - 三项都健康（气泡隐藏）→ 抚摸（日常撸猫，涨亲密度）。
    *
-   * 互动成功后让地图上这只猫也演一下：没有反馈的话玩家分不清「点到了」和「没点到」。
+   * 冷却中**静默不做事、不弹提示**。原来那条「还要等 15s」的 toast 是给
+   * 底部常驻按钮用的（按钮一直亮着像能点，冷却不提示就像坏了）；改成点宠物
+   * 之后没有那种「按了没反应」的按钮了，冷却时安安静静不响应才自然
+   * （尤其点一只没需求的猫时，玩家根本不知道有什么在冷却，弹提示反而突兀）。
+   *
+   * 网络链路和原 `MapActionBar.onInteract` 一致：发请求 → 按返回值播表现。
+   * 服务端才是权威，本地只负责不发明知会失败的请求。
    */
-  private buildActionBar() {
-    const host = makeNode('MapActionBar', this.node);
-    const bar = host.addComponent(MapActionBar);
-    bar.onReact = (action: PetAction) => this.reactCat(action);
+  private async interactWithPet() {
+    const action = this.currentPetAction();
+    if (this.actionBusy[action]) return;
+
+    // 冷却中：静默返回，不弹「还要等 Ns」
+    if (!cooldown.isReady(store.activePetId, action)) return;
+
+    this.actionBusy[action] = true;
+    const res = await interact(action);
+    this.actionBusy[action] = false;
+
+    if (!res.ok) {
+      showError(res.error);
+      return;
+    }
+
+    this.reactCat(action);
+
+    const gained = gainedText(res.data.gained);
+    // 飘字放在猫头顶上方 —— 用猫当前 y（满地板游走），不是固定 petY
+    const pet = this.catNode;
+    const y = pet && pet.isValid ? pet.position.y + 140 : (this.L ? this.L.petY + 140 : 0);
+    if (gained) floatText(this.node, gained, COLOR.ok, y);
+    if (res.data.capped) toast('今日收益已达上限，明天再来');
+    if (res.data.levelUp) floatText(this.node, '升级啦！', COLOR.warn, y + 30);
+  }
+
+  /**
+   * 当前该做哪种互动：跟着气泡显示的需求走。
+   * `lowNeeds` 为空（三项都健康、气泡隐藏）时回落到抚摸。
+   * need 的命名和 `refreshPetOverlay` 一致：hunger/clean/play。
+   */
+  private currentPetAction(): PetAction {
+    const need = this.lowNeeds.length
+      ? this.lowNeeds[Math.min(this.needCycleIdx, this.lowNeeds.length - 1)]
+      : '';
+    if (need === 'hunger') return 'feed';
+    if (need === 'clean') return 'bath';
+    if (need === 'play') return 'play';
+    return 'pet';
   }
 
   /**

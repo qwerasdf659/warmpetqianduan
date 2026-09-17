@@ -75,9 +75,33 @@ export const MAP_COLOR = {
    * 我们曾把地板调到 S22（比墙还黄），关系正好反了，
    * 画面因此显得「闷」。地板要压饱和、提明度。
    */
-  floor: new Color(250, 244, 236, 255),
-  /** 地板菱形格：通道差约 10，和墙面条纹同一个克制标准 */
-  floorTile: new Color(241, 232, 220, 255),
+  /**
+   * ⚠️ 地板底色**必须比墙暗一点**（暖沙米色），不是近白。
+   *
+   * 实测竞品「墙地明度差 -9.4」（地板比墙**暗**），我们曾用 250,244,236（近白、
+   * V245），量出来「墙地差 +7.1」—— 关系正好反了，地板比墙还亮，视觉上
+   * 「发白、往上飘」，用户反馈「地板太白、反差太大」。墙是 233,208,172
+   * （感知明度≈211），这里取≈202、比墙暗约 9，跟竞品一致，画面重心才压得住。
+   */
+  /**
+   * ⚠️ 地板底色 = **亮的暖原木米色**，不是灰、也不是近白。
+   *
+   * 实测竞品干净地板区（多点平均）≈ rgb(248,235,220)：明度高(≈238)、
+   * 且明显偏暖(R 比 B 高约 28)。踩过两个方向相反的错：
+   * - 250,244,236（近白、偏中性）→ 用户「太白、反差大」；
+   * - 210,202,190（压暗又降饱和）→ 用户「发灰」，因为**采样量错了区域**
+   *   （取到带阴影的暗部，误得 204,197,187 的灰色，数据自洽但结论错，
+   *    见规则 visual-measurement-method「采样坐标不能靠肉眼猜」）。
+   * 正解：明度回到高档、保住暖调（R>G>B 且 R-B≈26）。
+   */
+  floor: new Color(246, 233, 216, 255),
+  /**
+   * 地板上稀疏点缀的**暗菱形**（亮底就是 floor 底色）。
+   * 竞品实测两档明度差仅约 5（243↔238）、都是暖原木米色，对比极淡很柔和。
+   * 底色是 246,233,216，这里取深约 3~4 的暖米色（多次反馈都说要更浅，
+   * 已接近竞品的极淡对比：差约 5）。再浅就基本看不出菱形了。
+   */
+  floorTile: new Color(242, 229, 212, 255),
   /** 壁龛内壁 / 白瓷 */
   hut: new Color(255, 252, 247, 255),
   /**
@@ -283,11 +307,17 @@ export interface StageLayout {
   zones: Zone[];
   /** 楼梯（纯装饰，没有玩法，所以不是 Zone） */
   stair: Rect;
-  /** 宠物站立的 y（脚底） */
+  /** 宠物站立的 y（脚底）—— 初始生成位置，游走后由寻路自己更新 */
   petY: number;
   /** 宠物可游走的 x 范围 */
   petMinX: number;
   petMaxX: number;
+  /**
+   * 宠物可游走的 y 范围（脚底）。猫现在满地板 2D 游走：
+   * petMinY = 靠前（下、靠近底部 HUD），petMaxY = 靠后（上、靠近墙地交界）。
+   */
+  petMinY: number;
+  petMaxY: number;
 }
 
 /**
@@ -489,7 +519,12 @@ export function computeLayout(): StageLayout {
   // 地面上的护理室与楼梯：贴舞台下沿
   const floorH = wallBottom - bottom;
   const storeH = Math.min(176, floorH * 0.62);
-  const storeCy = bottom + storeH / 2;
+  // 护理室店面**整体抬起 STORE_LIFT**，让它底边离开底部 HUD 上沿（bottom）。
+  // 之前 storeCy = bottom + storeH/2，店面底边正好压在 bottom（=底部圆入口/积分条
+  // 所在的那条线）上，柜体下半截和底部 HUD 撞在一起，露出一块褐色被面板半遮 ——
+  // 用户看到的「护理室下面的褐色缺口」就是这个。抬起 48px 后店面浮在 HUD 之上。
+  const STORE_LIFT = 48;
+  const storeCy = bottom + STORE_LIFT + storeH / 2;
 
   /**
    * 分区按**世界宽**（1.6 屏）铺开，不是按视口宽。
@@ -571,21 +606,30 @@ export function computeLayout(): StageLayout {
   // 宠物走在**后排家具之前、前排小物件之后**那条带子上。
   // 站得比后排家具低 → 自然读成「在家具前面」，不需要额外的排序逻辑。
   //
-  // **下限由互动条决定，不能只按 floorH 比例算。** 比例式在 846 高屏上给出
-  // -134（互动条上沿 -197，还剩 53px），但 vh=640 时算到 -78 而互动条上沿是 -94 ——
-  // 猫连同脚下状态条整个陷进按钮里。所以取「比例位置」和「互动条上沿 + 余量」的较高者。
-  // 余量 22 = 状态条偏移 10 + 12 视觉间隙。
-  const petFloor = bottom + ACTION_BAR_H + 22;
-  const petY = Math.max(bottom + floorH * 0.30, petFloor);
-  // 横向让开护理室（世界左端 ~0.14）与楼梯（世界右端 ~0.86）
-  const petMinX = wl + worldW * 0.20;
-  const petMaxX = wl + worldW * 0.80;
+  // 底部互动条已移除（改为「点宠物互动」），猫不再需要为它让出 ACTION_BAR_H
+  // 那一大块，可以站得更低、更贴地板中段。仍留一点余量避免它脚下的状态条
+  // 压到底部 HUD（任务条 + 圆入口，已由 bottom 计入）。
+  // 余量 40 = 状态条偏移 10 + 视觉间隙 + 半个猫身冗余。
+  const petFloor = bottom + 40;
+  const petY = Math.max(bottom + floorH * 0.24, petFloor);
+  // 整个地板都可游走：横向铺满世界宽（护理室店面/楼梯这两个落地大件由寻路模块
+  // 单独标成障碍），纵向从**接近屏幕最底**到接近墙地交界。
+  //
+  // 下沿放到 HUD 带里（-vh/2 + 余量）而不是停在 bottom：竞品就是这么做的 ——
+  // HUD 按钮固定在屏幕角落、渲染在宠物层之上，宠物在整个地板（含按钮后面）走动，
+  // 按钮浮在上层挡一下没关系，因为地图可拖动、想看被挡处拖一下即可。
+  // 我们的 HUD 挂在 this.node（不随地图滚）、且在宠物层之后挂 → 天然盖在猫上面，
+  // 点击也优先给按钮。所以猫可以走到最下方。
+  const petMinX = wl + worldW * 0.02;
+  const petMaxX = wl + worldW * 0.98;
+  const petMinY = -vh / 2 + 40;
+  const petMaxY = wallBottom - floorH * 0.05;
 
   return {
     vw, vh, worldW, minX: -maxX, maxX, top, bottom,
     // 墙纸铺到屏幕最顶端，不避让 HUD
     wallTop: vh / 2,
-    wallBottom, hangBottom, zones, stair, petY, petMinX, petMaxX,
+    wallBottom, hangBottom, zones, stair, petY, petMinX, petMaxX, petMinY, petMaxY,
   };
 }
 
@@ -620,6 +664,12 @@ export interface PropSlot {
   h: number;
   /** 'bottom' 表示底边坐在 ry 那条线上（落地物件用），默认居中 */
   anchor?: 'center' | 'bottom';
+  /**
+   * 是否是**平铺物**（地毯 / 坐垫 / 食盆）—— 猫可以从上面走过去，不算寻路障碍。
+   * 省略 = 立体家具（灯 / 柜 / 花盆 / 爬架 / 木马），是障碍，猫要绕开。
+   * 只对 `on: 'floor'` 有意义。
+   */
+  flat?: boolean;
 }
 
 /**
@@ -653,7 +703,10 @@ export const PROPS: PropSlot[] = [
   // ry 以 wallBottom 为 0、**top（HUD 下缘）为 1**，挂件不能顶进 HUD。
   // 分区加宽后左侧空档只剩 192px（x -576~-384），放不下窗户+挂钟两件，
   // 所以挂钟挪到右侧那片 326px 的空墙，和相框分开一点。
-  { key: 'window', on: 'wall', rx: 0.083, ry: 0.42, w: 88, h: 77 },
+  // 窗户放大（88x77 → 140x123，约 1.6 倍）。图近正方(380x384)，placeArt 等比缩放，
+  // w/h 同比放大才不变形。ry 抬到 0.52：ry 以 wallBottom 为 0、HUD 下缘为 1，
+  // 值越大越往上 —— 之前 0.38 让窗户底部快贴到墙地交界的踢脚线，抬上去留出间隙。
+  { key: 'window', on: 'wall', rx: 0.095, ry: 0.52, w: 140, h: 123 },
   { key: 'clock', on: 'wall', rx: 0.955, ry: 0.60, w: 40, h: 47 },
   // 相框改成**单个竖框**（285x384）。原来让模型画「两个并排」，
   // 它给的是一整块实心木板 —— 四角不透明、外圈 95% 实心，
@@ -669,8 +722,9 @@ export const PROPS: PropSlot[] = [
   // 摆法照家具的常识：**高家具靠后墙排一行，小物件散在前面**。
   // 这样既避开了两个占位物，又不会全挤在同一条线上。
 
-  // 地毯排在最前 → 后面的家具压在它上面。图是 384x244
-  { key: 'rug', on: 'floor', rx: 0.5, ry: 0.26, w: 290, h: 184 },
+  // 地毯排在最前 → 后面的家具压在它上面。图是 384x244。
+  // flat：地毯是平铺物，猫可以从上面走过，不算寻路障碍。
+  { key: 'rug', on: 'floor', rx: 0.5, ry: 0.26, w: 290, h: 184, flat: true },
 
   // 地面道具的摆位由 `.build/scripts/floor-fill.mjs` 算出来，不是目测的。
   // 那个脚本把地板按 x/y 分档、列出每档被谁覆盖，一眼看出哪里空。
@@ -695,12 +749,13 @@ export const PROPS: PropSlot[] = [
   { key: 'shelf2', on: 'floor', art: 'shelf', rx: 0.78, ry: 0.54, w: 68, h: 67, anchor: 'bottom' },
 
   // 中段（填 ry 0.3~0.5 那条空带）：一个坐垫 + 一株绿植，散在地毯两侧
-  { key: 'cushion2', on: 'floor', art: 'cushion', rx: 0.72, ry: 0.36, w: 78, h: 47, anchor: 'bottom' },
+  // 坐垫平铺、猫可踩过；绿植是花盆、算障碍。
+  { key: 'cushion2', on: 'floor', art: 'cushion', rx: 0.72, ry: 0.36, w: 78, h: 47, anchor: 'bottom', flat: true },
   { key: 'plant3', on: 'floor', art: 'plant', rx: 0.20, ry: 0.34, w: 42, h: 53, anchor: 'bottom' },
 
-  // 前排小物件（宠物脚边的日用品）
-  { key: 'cushion', on: 'floor', rx: 0.26, ry: 0.09, w: 92, h: 55, anchor: 'bottom' },
-  { key: 'bowls', on: 'floor', rx: 0.44, ry: 0.07, w: 84, h: 32, anchor: 'bottom' },
+  // 前排小物件（宠物脚边的日用品）—— 坐垫、食盆都是平铺物，猫可踩过
+  { key: 'cushion', on: 'floor', rx: 0.26, ry: 0.09, w: 92, h: 55, anchor: 'bottom', flat: true },
+  { key: 'bowls', on: 'floor', rx: 0.44, ry: 0.07, w: 84, h: 32, anchor: 'bottom', flat: true },
 ];
 
 /** 点是否落在矩形内 */
